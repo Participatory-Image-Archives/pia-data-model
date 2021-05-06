@@ -7,12 +7,111 @@
       "PIA IIIF Manifest Boilerplate 1: IIIF Manifest with a single image"
     ]
   },
+  "metadata": [
+    {
+      "label": {
+        "de": [
+          "Titel"
+        ]
+      },
+      "value": {
+        "de": [
+          "[Schwyzer Fasnacht]"
+        ]
+      }
+    },
+    {
+      "label": {
+        "de": [
+          "Hersteller"
+        ]
+      },
+      "value": {
+        "de": [
+          "Brunner, Ernst"
+        ]
+      }
+    },
+    {
+      "label": {
+        "de": [
+          "Datum"
+        ]
+      },
+      "value": {
+        "de": [
+          "1937"
+        ]
+      }
+    },
+    {
+      "label": {
+        "de": [
+          "Ort"
+        ]
+      },
+      "value": {
+        "de": [
+          "Schwyz"
+        ]
+      }
+    },
+    {
+      "label": {
+        "de": [
+          "Sammlung"
+        ]
+      },
+      "value": {
+        "de": [
+          "SGV_12 Ernst Brunner"
+        ]
+      }
+    },
+    {
+      "label": {
+        "de": [
+          "Objekttyp"
+        ]
+      },
+      "value": {
+        "de": [
+          "Negativ schwarz/weiss, 6x6 cm"
+        ]
+      }
+    },
+    {
+      "label": {
+        "en": [
+          "Signatur"
+        ]
+      },
+      "value": {
+        "en": [
+          "SGV_12N_00001. Alte Bildnumer: AA 1"
+        ]
+      }
+    }
+  ],
+  "rights": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "requiredStatement": {
+    "label": {
+      "de": [
+        "Copyright"
+      ]
+    },
+    "value": {
+      "de": [
+        "Schweizerische Gesellschaft für Volkskunde (SGV). <a href=\"https://creativecommons.org/licenses/by-nc-nd/4.0/\">CC BY-NC-ND 4.0</a> <a href=\"https://creativecommons.org/licenses/by-nc-nd/4.0/\" title\"CC BY-NC-ND 4.0\"><img src=\"https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png\"/></a></span>"
+      ]
+    }  
+  },
   "items": [
     {
       "id": "https://pia-something.ch/iiif/boilerplate01/canvas/p1",
       "type": "Canvas",
-      "height": 1800,
-      "width": 1200,
+      "height": 4190,
+      "width": 4252,
       "items": [
         {
           "id": "https://pia-something.ch/iiif/boilerplate01/canvas/p1/1",
@@ -23,11 +122,11 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "http://iiif.io/api/presentation/2.1/example/fixtures/resources/page1-full.png",
+                "id": "https://data.dasch.swiss/core/sendlocdata.php?res=422236&qtype=full&reduce=0",
                 "type": "Image",
                 "format": "image/png",
-                "height": 1800,
-                "width": 1200
+                "height": 4190,
+                "width": 4252
               },
               "target": "https://pia-something.ch/iiif/boilerplate01/canvas/p1/1"
             }
