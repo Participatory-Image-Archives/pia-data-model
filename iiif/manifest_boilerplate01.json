@@ -7,6 +7,14 @@
       "PIA IIIF Manifest Boilerplate 1: IIIF Manifest with a single image"
     ]
   },
+  "summary": {
+    "en": [
+      "One image of the Schwyzer Fasnacht in 1937 photographed by Ernst Brunner"
+    ],
+    "de": [
+      "Ein Bild der Schwyzer Fasnacht im Jahr 1937 fotografiert von Ernst Brunner"
+    ]
+  },
   "metadata": [
     {
       "label": {
@@ -102,8 +110,11 @@
     },
     "value": {
       "de": [
-        "<span>Schweizerische Gesellschaft für Volkskunde (SGV). <a href=\"https://creativecommons.org/licenses/by-nc-nd/4.0/\" title\"CC BY-NC-ND 4.0\"><img src=\"https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png\"/></a></span>"
-      ]
+        "<span>Schweizerische Gesellschaft für Volkskunde (SGV) <a href=\"https://creativecommons.org/licenses/by-nc-nd/4.0/\" title\"CC BY-NC-ND 4.0\"><img src=\"https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png\"/></a></span>"
+      ],
+      "en": [
+        "<span>Swiss Society for Folklore Studies (SSFS) <a href=\"https://creativecommons.org/licenses/by-nc-nd/4.0/\" title\"CC BY-NC-ND 4.0\"><img src=\"https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png\"/></a></span>"
+      ],
     }  
   },
   "items": [
@@ -124,7 +135,7 @@
               "body": {
                 "id": "https://data.dasch.swiss/core/sendlocdata.php?res=422236&qtype=full&reduce=0",
                 "type": "Image",
-                "format": "image/png",
+                "format": "image/jpg",
                 "height": 4190,
                 "width": 4252
               },
