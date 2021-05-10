@@ -121,7 +121,11 @@
     {
       "id": "https://pia-something.ch/iiif/boilerplate01/canvas/p1",
       "type": "Canvas",
-      "label": "SGV_12N_00001",
+      "label": {
+    "none": [
+      "SGV_12N_00001"
+    ]
+  },
       "height": 4190,
       "width": 4252,
       "items": [
