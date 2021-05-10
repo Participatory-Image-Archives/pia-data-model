@@ -8,5 +8,7 @@ Some references to create IIIF Manifests and Collections compliant with the IIIF
 - Specification: https://iiif.io/api/presentation/3.0/
 - Cookbook recipes: https://iiif.io/api/cookbook/
 - Imagine Rio - which has deployed V2 and V3 Manifests and Collections: https://images.imaginerio.org/
+- Create V2.1 Manifests with a Ruby Script: https://gist.github.com/jeffreycwitt/c3898946158ffdfff2d1c43f11666517
+- IIIF Prezi 2 to 3: https://www.npmjs.com/package/iiif-prezi2to3
 - Build-iiif: https://github.com/edsilv/biiif
 - Build-iiif template: https://github.com/edsilv/biiif-template
