@@ -1,6 +1,8 @@
 # PIA Data Model
 Data model for the _Participatory Knowledge Practices in Analogue and Digital Image Archives_ (PIA) project. This repository is tied to the user stories and use cases listed on https://github.com/Participatory-Image-Archives/pia-stories. 
 
+The PIA Data Flows and Outputs can be viewed (still in process) at the following URL: https://miro.com/app/board/o9J_lBA-SNI=/
+
 ## IIIF
 
 Some references to create IIIF Manifests and Collections compliant with the IIIF Presentation API 3.0: 
