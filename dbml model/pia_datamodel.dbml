@@ -31,6 +31,8 @@ Table Keyword {
   name varchar
   description varchar
   origin varchar
+  aat_id int
+  aat_url varchar
 }
 
 Table Images_Keywords {
@@ -48,20 +50,25 @@ Table Comment {
 
 Table Geography {
   id int [pk]
+  label varchar
   geonames_id int
   geonames_url varchar
-  label varchar
-  
+  latitude float
+  longitude float
 }
 
 Table ObjectType {
   id int [pk]
   label varchar
+  aat_id int
+  aat_url varchar
 }
 
 Table Model {
   id int [pk]
   label varchar
+  aat_id int
+  aat_url varchar
 }
 
 Table Format {
@@ -73,6 +80,12 @@ Table Format {
 Table Person {
   id int [pk]
   name varchar
+  gnd_id int
+  gnd_url varchar
+  birthplace id [ref: - Geography.id]
+  deathplace id [ref: - Geography.id]
+  job_title varchar
+  description text
 }
 
 Table Images_Content {
@@ -91,24 +104,23 @@ Table Images_Copyright {
 }
 
 // Collections
+Table Collection {
+  id int [pk]
+
+  Note: 'Brunner, Kreis, Atlas, etc'
+}
 Table Album {
   id int [pk]
-}
+  collection int [ref: - Collection.id]
+  description text
+  comment varchar
+  signature varchar
 
+  Note: 'Right now not defined, if representing physical or virtual album'
+}
 Table Images_Album {
   image_id int [ref: > Image.id]
   album_id int [ref: > Album.id]
-}
-Table Collection {
-  id int [pk]
-}
-//Table Images_Collection {
-//  image_id int [ref: > Image.id]
-//  collection_id int [ref: - Collection.id]
-//}
-Table Album_Collection {
-  album_id int [ref: > Album.id]
-  collection_id int [ref: > Collection.id]
 }
 
 // Document and Context Objects
