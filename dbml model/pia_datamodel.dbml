@@ -1,0 +1,152 @@
+// dbml documentation: https://www.dbml.org/
+// produce docs from dbml files: https://dbdocs.io/
+
+// Brunner, Kreis - Image-centered
+Table Image {
+  id int [pk]
+  oldnr varchar
+  collection int [ref: > Collection.id]
+  signature varchar
+  title varchar
+  original_title varchar
+  date varchar
+  exact_date date
+  exact_time time
+  daterange_start date
+  daterange_end date
+  sequence_number varchar
+  
+  subject int [ref: - Subject.id]
+  comment int [ref: - Comment.id]
+  geography int [ref: > Geography.id]
+  object_type int [ref: > ObjectType.id]
+  model int [ref: > Model.id]
+  format int [ref: > Format.id]
+
+  documents int [ref: < Document.id]
+}
+
+Table Keyword {
+  id int [pk]
+  name varchar
+  description varchar
+  origin varchar
+}
+
+Table Images_Keywords {
+  image_id int [ref: > Image.id]
+  keyword_id int [ref: > Keyword.id]
+}
+
+Table Subject {
+  id int [pk]
+}
+
+Table Comment {
+  id int [pk]
+}
+
+Table Geography {
+  id int [pk]
+  geonames_id int
+  geonames_url varchar
+  label varchar
+  
+}
+
+Table ObjectType {
+  id int [pk]
+  label varchar
+}
+
+Table Model {
+  id int [pk]
+  label varchar
+}
+
+Table Format {
+  id int [pk]
+  label varchar
+}
+
+
+Table Person {
+  id int [pk]
+  name varchar
+}
+
+Table Images_Content {
+  image_id int [ref: > Image.id]
+  person_id int [ref: > Person.id]
+}
+
+Table Images_People {
+  image_id int [ref: > Image.id]
+  person_id int [ref: > Person.id]
+}
+
+Table Images_Copyright {
+  image_id int [ref: > Image.id]
+  person_id int [ref: > Person.id]
+}
+
+// Collections
+Table Album {
+  id int [pk]
+}
+
+Table Images_Album {
+  image_id int [ref: > Image.id]
+  album_id int [ref: > Album.id]
+}
+Table Collection {
+  id int [pk]
+}
+//Table Images_Collection {
+//  image_id int [ref: > Image.id]
+//  collection_id int [ref: - Collection.id]
+//}
+Table Album_Collection {
+  album_id int [ref: > Album.id]
+  collection_id int [ref: > Collection.id]
+}
+
+// Document and Context Objects
+// Notes, Protocols, etc
+Table Document {
+  id int [pk]
+  object_type int [ref: > ObjectType.id]
+  model int [ref: > Model.id]
+  format int [ref: > Format.id]
+}
+
+// Atlas or Map based Model
+Table Map {
+  id int [pk]
+}
+
+Table MapEntry {
+  id int [pk]
+  map int [ref: - Map.id]
+  map_geography int [ref: - MapGeography.id]
+  map_legend_entry int [ref: - MapLegendEntry.id]
+  documents int [ref: < Document.id]
+}
+
+Table MapGeography {
+  id int [pk]
+  geography int [ref: - Geography.id]
+}
+
+Table MapLegend {
+  id int [pk]
+}
+
+Table MapLegendEntry {
+  id int [pk]
+}
+
+Table MapLegend_MapLegendEntries {
+  map_legend_entry_id int [ref: > MapLegendEntry.id]
+  map_legend_id int [ref: - MapLegend.id]
+}
