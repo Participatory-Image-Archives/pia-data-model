@@ -139,7 +139,7 @@ Table Map {
 
 Table MapEntry {
   id int [pk]
-  map int [ref: - Map.id]
+  map int [ref: > Map.id]
   map_geography int [ref: - MapGeography.id]
   map_legend_entry int [ref: - MapLegendEntry.id]
   documents int [ref: < Document.id]
