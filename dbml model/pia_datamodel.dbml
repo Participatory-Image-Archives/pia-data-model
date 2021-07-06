@@ -3,33 +3,31 @@
 
 // Brunner, Kreis - Image-centered
 Table Image {
-  id int [pk]
+  id int [pk, increment]
+  salsah_id int
   oldnr varchar
   collection int [ref: > Collection.id]
   signature varchar
   title varchar
   original_title varchar
   date varchar
+  daterange_start varchar
+  daterange_end varchar
   exact_date date
   exact_time time
-  daterange_start date
-  daterange_end date
   sequence_number varchar
   
-  subject int [ref: - Subject.id]
   comment int [ref: - Comment.id]
   geography int [ref: > Geography.id]
-  object_type int [ref: > ObjectType.id]
+  objecttype int [ref: > ObjectType.id]
   model int [ref: > Model.id]
   format int [ref: > Format.id]
-
-  documents int [ref: < Document.id]
 }
 
 Table Keyword {
-  id int [pk]
-  name varchar
-  description varchar
+  id int [pk, increment]
+  label varchar
+  comment varchar
   origin varchar
   aat_id int
   aat_url varchar
@@ -40,16 +38,13 @@ Table Images_Keywords {
   keyword_id int [ref: > Keyword.id]
 }
 
-Table Subject {
-  id int [pk]
-}
-
 Table Comment {
-  id int [pk]
+  id int [pk, increment]
+  comment text
 }
 
 Table Geography {
-  id int [pk]
+  id int [pk, increment]
   label varchar
   geonames_id int
   geonames_url varchar
@@ -58,32 +53,35 @@ Table Geography {
 }
 
 Table ObjectType {
-  id int [pk]
+  id int [pk, increment]
   label varchar
+  comment varchar
   aat_id int
   aat_url varchar
 }
 
 Table Model {
-  id int [pk]
+  id int [pk, increment]
   label varchar
+  comment varchar
   aat_id int
   aat_url varchar
 }
 
 Table Format {
-  id int [pk]
+  id int [pk, increment]
   label varchar
+  comment varchar
 }
 
 
 Table Person {
-  id int [pk]
+  id int [pk, increment]
   name varchar
   gnd_id int
   gnd_url varchar
-  birthplace id [ref: - Geography.id]
-  deathplace id [ref: - Geography.id]
+  birthplace int [ref: > Geography.id]
+  deathplace int [ref: > Geography.id]
   job_title varchar
   description text
 }
@@ -105,12 +103,12 @@ Table Images_Copyright {
 
 // Collections
 Table Collection {
-  id int [pk]
+  id int [pk, increment]
 
   Note: 'Brunner, Kreis, Atlas, etc'
 }
 Table Album {
-  id int [pk]
+  id int [pk, increment]
   collection int [ref: - Collection.id]
   description text
   comment varchar
@@ -126,36 +124,35 @@ Table Images_Album {
 // Document and Context Objects
 // Notes, Protocols, etc
 Table Document {
-  id int [pk]
+  id int [pk, increment]
   object_type int [ref: > ObjectType.id]
   model int [ref: > Model.id]
   format int [ref: > Format.id]
 }
 
-// Atlas or Map based Model
+// Map based Model (comming from Atlas)
 Table Map {
-  id int [pk]
+  id int [pk, increment]
 }
 
 Table MapEntry {
-  id int [pk]
+  id int [pk, increment]
   map int [ref: > Map.id]
   map_geography int [ref: - MapGeography.id]
   map_legend_entry int [ref: - MapLegendEntry.id]
-  documents int [ref: < Document.id]
 }
 
 Table MapGeography {
-  id int [pk]
+  id int [pk, increment]
   geography int [ref: - Geography.id]
 }
 
 Table MapLegend {
-  id int [pk]
+  id int [pk, increment]
 }
 
 Table MapLegendEntry {
-  id int [pk]
+  id int [pk, increment]
 }
 
 Table MapLegend_MapLegendEntries {
