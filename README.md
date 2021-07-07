@@ -1,16 +1,18 @@
 # PIA Data Model
 Data model for the _Participatory Knowledge Practices in Analogue and Digital Image Archives_ (PIA) project. This repository is tied to the user stories and use cases listed on https://github.com/Participatory-Image-Archives/pia-stories. 
 
-The PIA Data Flows and Outputs can be viewed (still in process) at the following URL: https://miro.com/app/board/o9J_l_66_DQ=/
+This repository is structured in the following manner: 
+- `data-curation`: curated extracts of the SGV (_Schweizerische Gesellschaft für Volkskunde_) metadata
+- `dbml model`: logical structure of the PIA database and SQL extract
+- `iiif`: IIIF Manifest boilerplates, architecture overview and scripts to create IIIF-compliant resources
+- `ontology`: current SGV ontology and RDF Data Model (in progress - not yet available)
+- `salsah-export`: metadata extracted from https://salsah.org. All resource types' metadata from the SGV have been extracted, except for Images where only two collections relevant to the PIA project are available. In most folders can be found two XML files (unresolved and resolved properties) as well as a CSV file.
 
-## IIIF
+## Data Model Diagrams and Flowcharts
 
-Some references to create IIIF Manifests and Collections compliant with the IIIF Presentation API 3.0: 
+We use Miro to create diagrams and flowcharts. Here are some work-in-progress designs that can be viewed:
 
-- Specification: https://iiif.io/api/presentation/3.0/
-- Cookbook recipes: https://iiif.io/api/cookbook/
-- Imagine Rio - which has deployed V2 and V3 Manifests and Collections: https://images.imaginerio.org/
-- Create V2.1 Manifests with a Ruby Script: https://gist.github.com/jeffreycwitt/c3898946158ffdfff2d1c43f11666517
-- IIIF Prezi 2 to 3: https://www.npmjs.com/package/iiif-prezi2to3
-- Build-iiif: https://github.com/edsilv/biiif
-- Build-iiif template: https://github.com/edsilv/biiif-template
+- PIA Data Flows and Outputs: https://miro.com/app/board/o9J_l_66_DQ=/
+- RDF Data Model: https://miro.com/app/board/o9J_l87sD7U=/
+
+
