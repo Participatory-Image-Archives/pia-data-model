@@ -1,6 +1,6 @@
 -- SQL dump generated using DBML (dbml-lang.org)
 -- Database: PostgreSQL
--- Generated at: 2021-07-06T12:11:59.281Z
+-- Generated at: 2021-07-08T08:54:36.976Z
 
 CREATE TABLE "Image" (
   "id" SERIAL PRIMARY KEY,
@@ -25,7 +25,9 @@ CREATE TABLE "Image" (
 
 CREATE TABLE "Keyword" (
   "id" SERIAL PRIMARY KEY,
+  "salsah_id" int,
   "label" varchar,
+  "alt_label" varchar[],
   "comment" varchar,
   "origin" varchar,
   "aat_id" int,

@@ -26,8 +26,10 @@ Table Image {
 
 Table Keyword {
   id int [pk, increment]
+  salsah_id int
   label varchar
-  comment varchar
+  alt_label "varchar[]"
+  description varchar
   origin varchar
   aat_id int
   aat_url varchar
