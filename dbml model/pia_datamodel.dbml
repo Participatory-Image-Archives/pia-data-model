@@ -1,5 +1,5 @@
 // dbml documentation: https://www.dbml.org/
-// produce docs from dbml files: https://dbdocs.io/
+// schema documentation https://dbdocs.io/thgie/pia_datamodel
 
 // DROP SCHEMA public CASCADE;
 // CREATE SCHEMA public;
@@ -10,8 +10,9 @@ Table Image {
   salsah_id int
   oldnr varchar
   signature varchar
-  title varchar
-  original_title varchar
+  title varchar[]
+  original_title varchar[]
+  
   date date[]
   salsah_date varchar
   sequence_number varchar
@@ -122,6 +123,8 @@ Table Collection {
   label varchar
   signature varchar
   description text
+  default_image varchar
+  embedded_video varchar
 
   date date[]
   salsah_date varchar[]
