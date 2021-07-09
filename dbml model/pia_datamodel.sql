@@ -1,6 +1,6 @@
 -- SQL dump generated using DBML (dbml-lang.org)
 -- Database: PostgreSQL
--- Generated at: 2021-07-08T08:54:36.976Z
+-- Generated at: 2021-07-09T08:23:34.853Z
 
 CREATE TABLE "Image" (
   "id" SERIAL PRIMARY KEY,
@@ -10,11 +10,8 @@ CREATE TABLE "Image" (
   "signature" varchar,
   "title" varchar,
   "original_title" varchar,
-  "date" varchar,
-  "daterange_start" varchar,
-  "daterange_end" varchar,
-  "exact_date" date,
-  "exact_time" time,
+  "date" date[],
+  "salsah_date" varchar,
   "sequence_number" varchar,
   "comment" int,
   "geography" int,
@@ -28,7 +25,7 @@ CREATE TABLE "Keyword" (
   "salsah_id" int,
   "label" varchar,
   "alt_label" varchar[],
-  "comment" varchar,
+  "description" varchar,
   "origin" varchar,
   "aat_id" int,
   "aat_url" varchar
@@ -41,7 +38,7 @@ CREATE TABLE "Images_Keywords" (
 
 CREATE TABLE "Comment" (
   "id" SERIAL PRIMARY KEY,
-  "comment" text
+  "comment" varchar[]
 );
 
 CREATE TABLE "Geography" (
@@ -77,13 +74,23 @@ CREATE TABLE "Format" (
 
 CREATE TABLE "Person" (
   "id" SERIAL PRIMARY KEY,
+  "salsah_id" int,
   "name" varchar,
+  "alt_name" varchar[],
+  "title" varchar,
+  "family" varchar,
   "gnd_id" int,
   "gnd_url" varchar,
   "birthplace" int,
   "deathplace" int,
-  "job_title" varchar,
-  "description" text
+  "birthdate" date[],
+  "deathdate" date[],
+  "salsah_birthdate" varchar,
+  "salsah_deathdate" varchar,
+  "job" varchar[],
+  "description" text,
+  "literature" varchar[],
+  "comment" int
 );
 
 CREATE TABLE "Images_Content" (
@@ -173,6 +180,8 @@ ALTER TABLE "Images_Keywords" ADD FOREIGN KEY ("keyword_id") REFERENCES "Keyword
 ALTER TABLE "Person" ADD FOREIGN KEY ("birthplace") REFERENCES "Geography" ("id");
 
 ALTER TABLE "Person" ADD FOREIGN KEY ("deathplace") REFERENCES "Geography" ("id");
+
+ALTER TABLE "Person" ADD FOREIGN KEY ("comment") REFERENCES "Comment" ("id");
 
 ALTER TABLE "Images_Content" ADD FOREIGN KEY ("image_id") REFERENCES "Image" ("id");
 

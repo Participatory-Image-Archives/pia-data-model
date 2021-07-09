@@ -10,11 +10,8 @@ Table Image {
   signature varchar
   title varchar
   original_title varchar
-  date varchar
-  daterange_start varchar
-  daterange_end varchar
-  exact_date date
-  exact_time time
+  date date[]
+  salsah_date varchar
   sequence_number varchar
   
   comment int [ref: - Comment.id]
@@ -42,7 +39,7 @@ Table Images_Keywords {
 
 Table Comment {
   id int [pk, increment]
-  comment text
+  comment varchar[]
 }
 
 Table Geography {
@@ -79,13 +76,23 @@ Table Format {
 
 Table Person {
   id int [pk, increment]
+  salsah_id int
   name varchar
+  alt_name varchar[]
+  title varchar
+  family varchar
   gnd_id int
   gnd_url varchar
   birthplace int [ref: > Geography.id]
   deathplace int [ref: > Geography.id]
-  job_title varchar
+  birthdate date[]
+  deathdate date[]
+  salsah_birthdate varchar
+  salsah_deathdate varchar
+  job varchar[]
   description text
+  literature varchar[]
+  comment int [ref: - Comment.id]
 }
 
 Table Images_Content {
