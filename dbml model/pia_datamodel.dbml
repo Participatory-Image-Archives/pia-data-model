@@ -134,6 +134,7 @@ Table Album {
   objecttype int [ref: > ObjectType.id]
   collection int [ref: - Collection.id]
   comment int [ref: - Comment.id]
+  indexing int [ref: - Comment.id]
 }
 Table Albums_People {
   album_id int [ref: > Album.id]

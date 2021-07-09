@@ -1,6 +1,6 @@
 -- SQL dump generated using DBML (dbml-lang.org)
 -- Database: PostgreSQL
--- Generated at: 2021-07-09T09:23:09.993Z
+-- Generated at: 2021-07-09T09:48:21.435Z
 
 CREATE TABLE "Image" (
   "id" SERIAL PRIMARY KEY,
@@ -123,7 +123,8 @@ CREATE TABLE "Album" (
   "salsah_date" varchar[],
   "objecttype" int,
   "collection" int,
-  "comment" int
+  "comment" int,
+  "indexing" int
 );
 
 CREATE TABLE "Albums_People" (
@@ -211,6 +212,8 @@ ALTER TABLE "Album" ADD FOREIGN KEY ("objecttype") REFERENCES "ObjectType" ("id"
 ALTER TABLE "Album" ADD FOREIGN KEY ("collection") REFERENCES "Collection" ("id");
 
 ALTER TABLE "Album" ADD FOREIGN KEY ("comment") REFERENCES "Comment" ("id");
+
+ALTER TABLE "Album" ADD FOREIGN KEY ("indexing") REFERENCES "Comment" ("id");
 
 ALTER TABLE "Albums_People" ADD FOREIGN KEY ("album_id") REFERENCES "Album" ("id");
 
