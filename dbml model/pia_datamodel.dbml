@@ -9,7 +9,6 @@ Table Image {
   id int [pk, increment]
   salsah_id int
   oldnr varchar
-  collection int [ref: > Collection.id]
   signature varchar
   title varchar
   original_title varchar
@@ -19,6 +18,7 @@ Table Image {
   
   comment int [ref: - Comment.id]
   geography int [ref: > Geography.id]
+  collection int [ref: - Collection.id]
   objecttype int [ref: > ObjectType.id]
   model int [ref: > Model.id]
   format int [ref: > Format.id]
@@ -116,8 +116,23 @@ Table Images_Copyright {
 // Collections
 Table Collection {
   id int [pk, increment]
+  salsah_id int
 
-  Note: 'Brunner, Kreis, Atlas, etc'
+  title varchar[]
+  label varchar
+  signature varchar
+  description text
+
+  date date[]
+  salsah_date varchar[]
+
+  literature varchar[]
+  comment int [ref: - Comment.id]
+  indexing int [ref: - Comment.id]
+}
+Table Collections_People {
+  collection_id int [ref: > Collection.id]
+  person_id int [ref: > Person.id]
 }
 Table Album {
   id int [pk, increment]
@@ -140,9 +155,9 @@ Table Albums_People {
   album_id int [ref: > Album.id]
   person_id int [ref: > Person.id]
 }
-Table Images_Album {
-  image_id int [ref: > Image.id]
+Table Albums_Images {
   album_id int [ref: > Album.id]
+  image_id int [ref: > Image.id]
 }
 
 // Document and Context Objects
