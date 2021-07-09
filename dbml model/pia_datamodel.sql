@@ -1,6 +1,6 @@
 -- SQL dump generated using DBML (dbml-lang.org)
 -- Database: PostgreSQL
--- Generated at: 2021-07-09T08:23:34.853Z
+-- Generated at: 2021-07-09T09:23:09.993Z
 
 CREATE TABLE "Image" (
   "id" SERIAL PRIMARY KEY,
@@ -114,10 +114,21 @@ CREATE TABLE "Collection" (
 
 CREATE TABLE "Album" (
   "id" SERIAL PRIMARY KEY,
-  "collection" int,
+  "salsah_id" int,
+  "title" varchar,
+  "label" varchar,
+  "signature" varchar,
   "description" text,
-  "comment" varchar,
-  "signature" varchar
+  "date" date[],
+  "salsah_date" varchar[],
+  "objecttype" int,
+  "collection" int,
+  "comment" int
+);
+
+CREATE TABLE "Albums_People" (
+  "album_id" int,
+  "person_id" int
 );
 
 CREATE TABLE "Images_Album" (
@@ -195,7 +206,15 @@ ALTER TABLE "Images_Copyright" ADD FOREIGN KEY ("image_id") REFERENCES "Image" (
 
 ALTER TABLE "Images_Copyright" ADD FOREIGN KEY ("person_id") REFERENCES "Person" ("id");
 
+ALTER TABLE "Album" ADD FOREIGN KEY ("objecttype") REFERENCES "ObjectType" ("id");
+
 ALTER TABLE "Album" ADD FOREIGN KEY ("collection") REFERENCES "Collection" ("id");
+
+ALTER TABLE "Album" ADD FOREIGN KEY ("comment") REFERENCES "Comment" ("id");
+
+ALTER TABLE "Albums_People" ADD FOREIGN KEY ("album_id") REFERENCES "Album" ("id");
+
+ALTER TABLE "Albums_People" ADD FOREIGN KEY ("person_id") REFERENCES "Person" ("id");
 
 ALTER TABLE "Images_Album" ADD FOREIGN KEY ("image_id") REFERENCES "Image" ("id");
 
@@ -220,5 +239,3 @@ ALTER TABLE "MapLegend_MapLegendEntries" ADD FOREIGN KEY ("map_legend_entry_id")
 ALTER TABLE "MapLegend_MapLegendEntries" ADD FOREIGN KEY ("map_legend_id") REFERENCES "MapLegend" ("id");
 
 COMMENT ON TABLE "Collection" IS 'Brunner, Kreis, Atlas, etc';
-
-COMMENT ON TABLE "Album" IS 'Right now not defined, if representing physical or virtual album';

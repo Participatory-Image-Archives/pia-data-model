@@ -1,6 +1,9 @@
 // dbml documentation: https://www.dbml.org/
 // produce docs from dbml files: https://dbdocs.io/
 
+// DROP SCHEMA public CASCADE;
+// CREATE SCHEMA public;
+
 // Brunner, Kreis - Image-centered
 Table Image {
   id int [pk, increment]
@@ -118,12 +121,23 @@ Table Collection {
 }
 Table Album {
   id int [pk, increment]
-  collection int [ref: - Collection.id]
-  description text
-  comment varchar
-  signature varchar
+  salsah_id int
 
-  Note: 'Right now not defined, if representing physical or virtual album'
+  title varchar
+  label varchar
+  signature varchar
+  description text
+
+  date date[]
+  salsah_date varchar[]
+
+  objecttype int [ref: > ObjectType.id]
+  collection int [ref: - Collection.id]
+  comment int [ref: - Comment.id]
+}
+Table Albums_People {
+  album_id int [ref: > Album.id]
+  person_id int [ref: > Person.id]
 }
 Table Images_Album {
   image_id int [ref: > Image.id]
