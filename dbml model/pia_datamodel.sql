@@ -1,6 +1,6 @@
 -- SQL dump generated using DBML (dbml-lang.org)
 -- Database: PostgreSQL
--- Generated at: 2021-07-09T12:25:39.229Z
+-- Generated at: 2021-07-09T14:16:22.372Z
 
 CREATE TABLE "Image" (
   "id" SERIAL PRIMARY KEY,
@@ -15,9 +15,15 @@ CREATE TABLE "Image" (
   "comment" int,
   "geography" int,
   "collection" int,
+  "verso" int,
   "objecttype" int,
   "model" int,
   "format" int
+);
+
+CREATE TABLE "References_Images" (
+  "image_a" int,
+  "image_b" int
 );
 
 CREATE TABLE "Keyword" (
@@ -195,6 +201,8 @@ ALTER TABLE "Image" ADD FOREIGN KEY ("comment") REFERENCES "Comment" ("id");
 ALTER TABLE "Image" ADD FOREIGN KEY ("geography") REFERENCES "Geography" ("id");
 
 ALTER TABLE "Image" ADD FOREIGN KEY ("collection") REFERENCES "Collection" ("id");
+
+ALTER TABLE "Image" ADD FOREIGN KEY ("verso") REFERENCES "Image" ("id");
 
 ALTER TABLE "Image" ADD FOREIGN KEY ("objecttype") REFERENCES "ObjectType" ("id");
 
