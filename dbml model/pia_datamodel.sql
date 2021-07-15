@@ -1,32 +1,37 @@
 -- SQL dump generated using DBML (dbml-lang.org)
 -- Database: PostgreSQL
--- Generated at: 2021-07-06T12:11:59.281Z
+-- Generated at: 2021-07-09T14:16:22.372Z
 
 CREATE TABLE "Image" (
   "id" SERIAL PRIMARY KEY,
   "salsah_id" int,
   "oldnr" varchar,
-  "collection" int,
   "signature" varchar,
   "title" varchar,
   "original_title" varchar,
-  "date" varchar,
-  "daterange_start" varchar,
-  "daterange_end" varchar,
-  "exact_date" date,
-  "exact_time" time,
+  "date" date[],
+  "salsah_date" varchar,
   "sequence_number" varchar,
   "comment" int,
   "geography" int,
+  "collection" int,
+  "verso" int,
   "objecttype" int,
   "model" int,
   "format" int
 );
 
+CREATE TABLE "References_Images" (
+  "image_a" int,
+  "image_b" int
+);
+
 CREATE TABLE "Keyword" (
   "id" SERIAL PRIMARY KEY,
+  "salsah_id" int,
   "label" varchar,
-  "comment" varchar,
+  "alt_label" varchar[],
+  "description" varchar,
   "origin" varchar,
   "aat_id" int,
   "aat_url" varchar
@@ -39,7 +44,7 @@ CREATE TABLE "Images_Keywords" (
 
 CREATE TABLE "Comment" (
   "id" SERIAL PRIMARY KEY,
-  "comment" text
+  "comment" varchar[]
 );
 
 CREATE TABLE "Geography" (
@@ -75,13 +80,23 @@ CREATE TABLE "Format" (
 
 CREATE TABLE "Person" (
   "id" SERIAL PRIMARY KEY,
+  "salsah_id" int,
   "name" varchar,
+  "alt_name" varchar[],
+  "title" varchar,
+  "family" varchar,
   "gnd_id" int,
   "gnd_url" varchar,
   "birthplace" int,
   "deathplace" int,
-  "job_title" varchar,
-  "description" text
+  "birthdate" date[],
+  "deathdate" date[],
+  "salsah_birthdate" varchar,
+  "salsah_deathdate" varchar,
+  "job" varchar[],
+  "description" text,
+  "literature" varchar[],
+  "comment" int
 );
 
 CREATE TABLE "Images_Content" (
@@ -100,20 +115,49 @@ CREATE TABLE "Images_Copyright" (
 );
 
 CREATE TABLE "Collection" (
-  "id" SERIAL PRIMARY KEY
+  "id" SERIAL PRIMARY KEY,
+  "salsah_id" int,
+  "title" varchar[],
+  "label" varchar,
+  "signature" varchar,
+  "description" text,
+  "default_image" varchar,
+  "embedded_video" varchar,
+  "date" date[],
+  "salsah_date" varchar[],
+  "literature" varchar[],
+  "comment" int,
+  "indexing" int
+);
+
+CREATE TABLE "Collections_People" (
+  "collection_id" int,
+  "person_id" int
 );
 
 CREATE TABLE "Album" (
   "id" SERIAL PRIMARY KEY,
-  "collection" int,
+  "salsah_id" int,
+  "title" varchar,
+  "label" varchar,
+  "signature" varchar,
   "description" text,
-  "comment" varchar,
-  "signature" varchar
+  "date" date[],
+  "salsah_date" varchar[],
+  "objecttype" int,
+  "collection" int,
+  "comment" int,
+  "indexing" int
 );
 
-CREATE TABLE "Images_Album" (
-  "image_id" int,
-  "album_id" int
+CREATE TABLE "Albums_People" (
+  "album_id" int,
+  "person_id" int
+);
+
+CREATE TABLE "Albums_Images" (
+  "album_id" int,
+  "image_id" int
 );
 
 CREATE TABLE "Document" (
@@ -152,11 +196,13 @@ CREATE TABLE "MapLegend_MapLegendEntries" (
   "map_legend_id" int
 );
 
-ALTER TABLE "Image" ADD FOREIGN KEY ("collection") REFERENCES "Collection" ("id");
-
 ALTER TABLE "Image" ADD FOREIGN KEY ("comment") REFERENCES "Comment" ("id");
 
 ALTER TABLE "Image" ADD FOREIGN KEY ("geography") REFERENCES "Geography" ("id");
+
+ALTER TABLE "Image" ADD FOREIGN KEY ("collection") REFERENCES "Collection" ("id");
+
+ALTER TABLE "Image" ADD FOREIGN KEY ("verso") REFERENCES "Image" ("id");
 
 ALTER TABLE "Image" ADD FOREIGN KEY ("objecttype") REFERENCES "ObjectType" ("id");
 
@@ -172,6 +218,8 @@ ALTER TABLE "Person" ADD FOREIGN KEY ("birthplace") REFERENCES "Geography" ("id"
 
 ALTER TABLE "Person" ADD FOREIGN KEY ("deathplace") REFERENCES "Geography" ("id");
 
+ALTER TABLE "Person" ADD FOREIGN KEY ("comment") REFERENCES "Comment" ("id");
+
 ALTER TABLE "Images_Content" ADD FOREIGN KEY ("image_id") REFERENCES "Image" ("id");
 
 ALTER TABLE "Images_Content" ADD FOREIGN KEY ("person_id") REFERENCES "Person" ("id");
@@ -184,11 +232,29 @@ ALTER TABLE "Images_Copyright" ADD FOREIGN KEY ("image_id") REFERENCES "Image" (
 
 ALTER TABLE "Images_Copyright" ADD FOREIGN KEY ("person_id") REFERENCES "Person" ("id");
 
+ALTER TABLE "Collection" ADD FOREIGN KEY ("comment") REFERENCES "Comment" ("id");
+
+ALTER TABLE "Collection" ADD FOREIGN KEY ("indexing") REFERENCES "Comment" ("id");
+
+ALTER TABLE "Collections_People" ADD FOREIGN KEY ("collection_id") REFERENCES "Collection" ("id");
+
+ALTER TABLE "Collections_People" ADD FOREIGN KEY ("person_id") REFERENCES "Person" ("id");
+
+ALTER TABLE "Album" ADD FOREIGN KEY ("objecttype") REFERENCES "ObjectType" ("id");
+
 ALTER TABLE "Album" ADD FOREIGN KEY ("collection") REFERENCES "Collection" ("id");
 
-ALTER TABLE "Images_Album" ADD FOREIGN KEY ("image_id") REFERENCES "Image" ("id");
+ALTER TABLE "Album" ADD FOREIGN KEY ("comment") REFERENCES "Comment" ("id");
 
-ALTER TABLE "Images_Album" ADD FOREIGN KEY ("album_id") REFERENCES "Album" ("id");
+ALTER TABLE "Album" ADD FOREIGN KEY ("indexing") REFERENCES "Comment" ("id");
+
+ALTER TABLE "Albums_People" ADD FOREIGN KEY ("album_id") REFERENCES "Album" ("id");
+
+ALTER TABLE "Albums_People" ADD FOREIGN KEY ("person_id") REFERENCES "Person" ("id");
+
+ALTER TABLE "Albums_Images" ADD FOREIGN KEY ("album_id") REFERENCES "Album" ("id");
+
+ALTER TABLE "Albums_Images" ADD FOREIGN KEY ("image_id") REFERENCES "Image" ("id");
 
 ALTER TABLE "Document" ADD FOREIGN KEY ("object_type") REFERENCES "ObjectType" ("id");
 
@@ -207,7 +273,3 @@ ALTER TABLE "MapGeography" ADD FOREIGN KEY ("geography") REFERENCES "Geography" 
 ALTER TABLE "MapLegend_MapLegendEntries" ADD FOREIGN KEY ("map_legend_entry_id") REFERENCES "MapLegendEntry" ("id");
 
 ALTER TABLE "MapLegend_MapLegendEntries" ADD FOREIGN KEY ("map_legend_id") REFERENCES "MapLegend" ("id");
-
-COMMENT ON TABLE "Collection" IS 'Brunner, Kreis, Atlas, etc';
-
-COMMENT ON TABLE "Album" IS 'Right now not defined, if representing physical or virtual album';

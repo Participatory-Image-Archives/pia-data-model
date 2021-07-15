@@ -1,33 +1,43 @@
 // dbml documentation: https://www.dbml.org/
-// produce docs from dbml files: https://dbdocs.io/
+// schema documentation https://dbdocs.io/thgie/pia_datamodel
+
+// DROP SCHEMA public CASCADE;
+// CREATE SCHEMA public;
 
 // Brunner, Kreis - Image-centered
 Table Image {
   id int [pk, increment]
   salsah_id int
   oldnr varchar
-  collection int [ref: > Collection.id]
   signature varchar
   title varchar
   original_title varchar
-  date varchar
-  daterange_start varchar
-  daterange_end varchar
-  exact_date date
-  exact_time time
+  
+  date date[]
+  salsah_date varchar
   sequence_number varchar
   
   comment int [ref: - Comment.id]
   geography int [ref: > Geography.id]
+  collection int [ref: - Collection.id]
+  verso int [ref: - Image.id]
+
   objecttype int [ref: > ObjectType.id]
   model int [ref: > Model.id]
   format int [ref: > Format.id]
 }
 
+Table References_Images {
+  image_a int
+  image_b int
+}
+
 Table Keyword {
   id int [pk, increment]
+  salsah_id int
   label varchar
-  comment varchar
+  alt_label "varchar[]"
+  description varchar
   origin varchar
   aat_id int
   aat_url varchar
@@ -40,7 +50,7 @@ Table Images_Keywords {
 
 Table Comment {
   id int [pk, increment]
-  comment text
+  comment varchar[]
 }
 
 Table Geography {
@@ -77,13 +87,23 @@ Table Format {
 
 Table Person {
   id int [pk, increment]
+  salsah_id int
   name varchar
+  alt_name varchar[]
+  title varchar
+  family varchar
   gnd_id int
   gnd_url varchar
   birthplace int [ref: > Geography.id]
   deathplace int [ref: > Geography.id]
-  job_title varchar
+  birthdate date[]
+  deathdate date[]
+  salsah_birthdate varchar
+  salsah_deathdate varchar
+  job varchar[]
   description text
+  literature varchar[]
+  comment int [ref: - Comment.id]
 }
 
 Table Images_Content {
@@ -104,21 +124,50 @@ Table Images_Copyright {
 // Collections
 Table Collection {
   id int [pk, increment]
+  salsah_id int
 
-  Note: 'Brunner, Kreis, Atlas, etc'
+  title varchar[]
+  label varchar
+  signature varchar
+  description text
+  default_image varchar
+  embedded_video varchar
+
+  date date[]
+  salsah_date varchar[]
+
+  literature varchar[]
+  comment int [ref: - Comment.id]
+  indexing int [ref: - Comment.id]
+}
+Table Collections_People {
+  collection_id int [ref: > Collection.id]
+  person_id int [ref: > Person.id]
 }
 Table Album {
   id int [pk, increment]
-  collection int [ref: - Collection.id]
-  description text
-  comment varchar
-  signature varchar
+  salsah_id int
 
-  Note: 'Right now not defined, if representing physical or virtual album'
+  title varchar
+  label varchar
+  signature varchar
+  description text
+
+  date date[]
+  salsah_date varchar[]
+
+  objecttype int [ref: > ObjectType.id]
+  collection int [ref: - Collection.id]
+  comment int [ref: - Comment.id]
+  indexing int [ref: - Comment.id]
 }
-Table Images_Album {
-  image_id int [ref: > Image.id]
+Table Albums_People {
   album_id int [ref: > Album.id]
+  person_id int [ref: > Person.id]
+}
+Table Albums_Images {
+  album_id int [ref: > Album.id]
+  image_id int [ref: > Image.id]
 }
 
 // Document and Context Objects
