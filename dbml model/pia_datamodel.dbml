@@ -244,7 +244,7 @@ Table MapEntry {
 
 Table Place {
   id int [pk, increment]
-  salsah_id int
+  asv_id varchar
   label varchar
   collection int [ref: - Collection.id]
   location int [ref: > Location.id]

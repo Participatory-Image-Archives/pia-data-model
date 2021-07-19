@@ -1,6 +1,6 @@
 -- SQL dump generated using DBML (dbml-lang.org)
 -- Database: PostgreSQL
--- Generated at: 2021-07-19T09:08:44.221Z
+-- Generated at: 2021-07-19T10:55:24.942Z
 
 CREATE TABLE "Image" (
   "id" SERIAL PRIMARY KEY,
@@ -217,7 +217,7 @@ CREATE TABLE "MapEntry" (
 
 CREATE TABLE "Place" (
   "id" SERIAL PRIMARY KEY,
-  "salsah_id" int,
+  "asv_id" varchar,
   "label" varchar,
   "collection" int,
   "location" int,
