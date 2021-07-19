@@ -1,6 +1,6 @@
 -- SQL dump generated using DBML (dbml-lang.org)
 -- Database: PostgreSQL
--- Generated at: 2021-07-09T14:16:22.372Z
+-- Generated at: 2021-07-19T09:08:44.221Z
 
 CREATE TABLE "Image" (
   "id" SERIAL PRIMARY KEY,
@@ -13,12 +13,14 @@ CREATE TABLE "Image" (
   "salsah_date" varchar,
   "sequence_number" varchar,
   "comment" int,
-  "geography" int,
+  "location" int,
   "collection" int,
   "verso" int,
   "objecttype" int,
   "model" int,
-  "format" int
+  "format" int,
+  "created_at" timestamp,
+  "updated_at" timestamp
 );
 
 CREATE TABLE "References_Images" (
@@ -34,7 +36,9 @@ CREATE TABLE "Keyword" (
   "description" varchar,
   "origin" varchar,
   "aat_id" int,
-  "aat_url" varchar
+  "aat_url" varchar,
+  "created_at" timestamp,
+  "updated_at" timestamp
 );
 
 CREATE TABLE "Images_Keywords" (
@@ -44,16 +48,20 @@ CREATE TABLE "Images_Keywords" (
 
 CREATE TABLE "Comment" (
   "id" SERIAL PRIMARY KEY,
-  "comment" varchar[]
+  "comment" varchar[],
+  "created_at" timestamp,
+  "updated_at" timestamp
 );
 
-CREATE TABLE "Geography" (
+CREATE TABLE "Location" (
   "id" SERIAL PRIMARY KEY,
   "label" varchar,
   "geonames_id" int,
   "geonames_url" varchar,
   "latitude" float,
-  "longitude" float
+  "longitude" float,
+  "created_at" timestamp,
+  "updated_at" timestamp
 );
 
 CREATE TABLE "ObjectType" (
@@ -61,7 +69,9 @@ CREATE TABLE "ObjectType" (
   "label" varchar,
   "comment" varchar,
   "aat_id" int,
-  "aat_url" varchar
+  "aat_url" varchar,
+  "created_at" timestamp,
+  "updated_at" timestamp
 );
 
 CREATE TABLE "Model" (
@@ -69,13 +79,17 @@ CREATE TABLE "Model" (
   "label" varchar,
   "comment" varchar,
   "aat_id" int,
-  "aat_url" varchar
+  "aat_url" varchar,
+  "created_at" timestamp,
+  "updated_at" timestamp
 );
 
 CREATE TABLE "Format" (
   "id" SERIAL PRIMARY KEY,
   "label" varchar,
-  "comment" varchar
+  "comment" varchar,
+  "created_at" timestamp,
+  "updated_at" timestamp
 );
 
 CREATE TABLE "Person" (
@@ -96,7 +110,9 @@ CREATE TABLE "Person" (
   "job" varchar[],
   "description" text,
   "literature" varchar[],
-  "comment" int
+  "comment" int,
+  "created_at" timestamp,
+  "updated_at" timestamp
 );
 
 CREATE TABLE "Images_Content" (
@@ -127,7 +143,9 @@ CREATE TABLE "Collection" (
   "salsah_date" varchar[],
   "literature" varchar[],
   "comment" int,
-  "indexing" int
+  "indexing" int,
+  "created_at" timestamp,
+  "updated_at" timestamp
 );
 
 CREATE TABLE "Collections_People" (
@@ -147,7 +165,9 @@ CREATE TABLE "Album" (
   "objecttype" int,
   "collection" int,
   "comment" int,
-  "indexing" int
+  "indexing" int,
+  "created_at" timestamp,
+  "updated_at" timestamp
 );
 
 CREATE TABLE "Albums_People" (
@@ -164,41 +184,65 @@ CREATE TABLE "Document" (
   "id" SERIAL PRIMARY KEY,
   "object_type" int,
   "model" int,
-  "format" int
+  "format" int,
+  "created_at" timestamp,
+  "updated_at" timestamp
 );
 
 CREATE TABLE "Map" (
-  "id" SERIAL PRIMARY KEY
+  "id" SERIAL PRIMARY KEY,
+  "label" varchar,
+  "legend" int,
+  "created_at" timestamp,
+  "updated_at" timestamp
+);
+
+CREATE TABLE "MapLayer" (
+  "id" SERIAL PRIMARY KEY,
+  "label" varchar,
+  "map" int,
+  "created_at" timestamp,
+  "updated_at" timestamp
 );
 
 CREATE TABLE "MapEntry" (
   "id" SERIAL PRIMARY KEY,
+  "label" varchar,
   "map" int,
-  "map_geography" int,
-  "map_legend_entry" int
+  "map_location" int,
+  "map_legend_entry" int,
+  "created_at" timestamp,
+  "updated_at" timestamp
 );
 
-CREATE TABLE "MapGeography" (
+CREATE TABLE "Place" (
   "id" SERIAL PRIMARY KEY,
-  "geography" int
+  "salsah_id" int,
+  "label" varchar,
+  "collection" int,
+  "location" int,
+  "created_at" timestamp,
+  "updated_at" timestamp
 );
 
-CREATE TABLE "MapLegend" (
-  "id" SERIAL PRIMARY KEY
+CREATE TABLE "Legend" (
+  "id" SERIAL PRIMARY KEY,
+  "label" varchar,
+  "created_at" timestamp,
+  "updated_at" timestamp
 );
 
-CREATE TABLE "MapLegendEntry" (
-  "id" SERIAL PRIMARY KEY
-);
-
-CREATE TABLE "MapLegend_MapLegendEntries" (
-  "map_legend_entry_id" int,
-  "map_legend_id" int
+CREATE TABLE "LegendEntry" (
+  "id" SERIAL PRIMARY KEY,
+  "label" varchar,
+  "legend" int,
+  "created_at" timestamp,
+  "updated_at" timestamp
 );
 
 ALTER TABLE "Image" ADD FOREIGN KEY ("comment") REFERENCES "Comment" ("id");
 
-ALTER TABLE "Image" ADD FOREIGN KEY ("geography") REFERENCES "Geography" ("id");
+ALTER TABLE "Image" ADD FOREIGN KEY ("location") REFERENCES "Location" ("id");
 
 ALTER TABLE "Image" ADD FOREIGN KEY ("collection") REFERENCES "Collection" ("id");
 
@@ -214,9 +258,9 @@ ALTER TABLE "Images_Keywords" ADD FOREIGN KEY ("image_id") REFERENCES "Image" ("
 
 ALTER TABLE "Images_Keywords" ADD FOREIGN KEY ("keyword_id") REFERENCES "Keyword" ("id");
 
-ALTER TABLE "Person" ADD FOREIGN KEY ("birthplace") REFERENCES "Geography" ("id");
+ALTER TABLE "Person" ADD FOREIGN KEY ("birthplace") REFERENCES "Location" ("id");
 
-ALTER TABLE "Person" ADD FOREIGN KEY ("deathplace") REFERENCES "Geography" ("id");
+ALTER TABLE "Person" ADD FOREIGN KEY ("deathplace") REFERENCES "Location" ("id");
 
 ALTER TABLE "Person" ADD FOREIGN KEY ("comment") REFERENCES "Comment" ("id");
 
@@ -262,14 +306,20 @@ ALTER TABLE "Document" ADD FOREIGN KEY ("model") REFERENCES "Model" ("id");
 
 ALTER TABLE "Document" ADD FOREIGN KEY ("format") REFERENCES "Format" ("id");
 
+ALTER TABLE "Map" ADD FOREIGN KEY ("legend") REFERENCES "Legend" ("id");
+
+ALTER TABLE "MapLayer" ADD FOREIGN KEY ("map") REFERENCES "Map" ("id");
+
 ALTER TABLE "MapEntry" ADD FOREIGN KEY ("map") REFERENCES "Map" ("id");
 
-ALTER TABLE "MapEntry" ADD FOREIGN KEY ("map_geography") REFERENCES "MapGeography" ("id");
+ALTER TABLE "MapEntry" ADD FOREIGN KEY ("map_location") REFERENCES "Place" ("id");
 
-ALTER TABLE "MapEntry" ADD FOREIGN KEY ("map_legend_entry") REFERENCES "MapLegendEntry" ("id");
+ALTER TABLE "MapEntry" ADD FOREIGN KEY ("map_legend_entry") REFERENCES "LegendEntry" ("id");
 
-ALTER TABLE "MapGeography" ADD FOREIGN KEY ("geography") REFERENCES "Geography" ("id");
+ALTER TABLE "Place" ADD FOREIGN KEY ("collection") REFERENCES "Collection" ("id");
 
-ALTER TABLE "MapLegend_MapLegendEntries" ADD FOREIGN KEY ("map_legend_entry_id") REFERENCES "MapLegendEntry" ("id");
+ALTER TABLE "Place" ADD FOREIGN KEY ("location") REFERENCES "Location" ("id");
 
-ALTER TABLE "MapLegend_MapLegendEntries" ADD FOREIGN KEY ("map_legend_id") REFERENCES "MapLegend" ("id");
+ALTER TABLE "LegendEntry" ADD FOREIGN KEY ("legend") REFERENCES "Legend" ("id");
+
+COMMENT ON TABLE "Place" IS 'This entity captures the Concept of the ASV Gemeinde but doesn"t describe an actual location with coordinates.';

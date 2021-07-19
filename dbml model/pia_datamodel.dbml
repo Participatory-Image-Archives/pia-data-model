@@ -18,13 +18,16 @@ Table Image {
   sequence_number varchar
   
   comment int [ref: - Comment.id]
-  geography int [ref: > Geography.id]
+  location int [ref: > Location.id]
   collection int [ref: - Collection.id]
   verso int [ref: - Image.id]
 
   objecttype int [ref: > ObjectType.id]
   model int [ref: > Model.id]
   format int [ref: > Format.id]
+
+  created_at timestamp
+  updated_at timestamp
 }
 
 Table References_Images {
@@ -36,11 +39,14 @@ Table Keyword {
   id int [pk, increment]
   salsah_id int
   label varchar
-  alt_label "varchar[]"
+  alt_label varchar[]
   description varchar
   origin varchar
   aat_id int
   aat_url varchar
+
+  created_at timestamp
+  updated_at timestamp
 }
 
 Table Images_Keywords {
@@ -51,15 +57,21 @@ Table Images_Keywords {
 Table Comment {
   id int [pk, increment]
   comment varchar[]
+  
+  created_at timestamp
+  updated_at timestamp
 }
 
-Table Geography {
+Table Location {
   id int [pk, increment]
   label varchar
   geonames_id int
   geonames_url varchar
   latitude float
   longitude float
+
+  created_at timestamp
+  updated_at timestamp
 }
 
 Table ObjectType {
@@ -68,6 +80,9 @@ Table ObjectType {
   comment varchar
   aat_id int
   aat_url varchar
+  
+  created_at timestamp
+  updated_at timestamp
 }
 
 Table Model {
@@ -76,12 +91,18 @@ Table Model {
   comment varchar
   aat_id int
   aat_url varchar
+  
+  created_at timestamp
+  updated_at timestamp
 }
 
 Table Format {
   id int [pk, increment]
   label varchar
   comment varchar
+  
+  created_at timestamp
+  updated_at timestamp
 }
 
 
@@ -94,8 +115,8 @@ Table Person {
   family varchar
   gnd_id int
   gnd_url varchar
-  birthplace int [ref: > Geography.id]
-  deathplace int [ref: > Geography.id]
+  birthplace int [ref: > Location.id]
+  deathplace int [ref: > Location.id]
   birthdate date[]
   deathdate date[]
   salsah_birthdate varchar
@@ -104,6 +125,9 @@ Table Person {
   description text
   literature varchar[]
   comment int [ref: - Comment.id]
+  
+  created_at timestamp
+  updated_at timestamp
 }
 
 Table Images_Content {
@@ -139,6 +163,9 @@ Table Collection {
   literature varchar[]
   comment int [ref: - Comment.id]
   indexing int [ref: - Comment.id]
+  
+  created_at timestamp
+  updated_at timestamp
 }
 Table Collections_People {
   collection_id int [ref: > Collection.id]
@@ -160,6 +187,9 @@ Table Album {
   collection int [ref: - Collection.id]
   comment int [ref: - Comment.id]
   indexing int [ref: - Comment.id]
+  
+  created_at timestamp
+  updated_at timestamp
 }
 Table Albums_People {
   album_id int [ref: > Album.id]
@@ -177,34 +207,67 @@ Table Document {
   object_type int [ref: > ObjectType.id]
   model int [ref: > Model.id]
   format int [ref: > Format.id]
+  
+  created_at timestamp
+  updated_at timestamp
 }
 
 // Map based Model (comming from Atlas)
 Table Map {
   id int [pk, increment]
+  label varchar
+  legend int [ref: - Legend.id]
+
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table MapLayer {
+  id int [pk, increment]
+  label varchar
+  map int [ref: - Map.id]
+
+  created_at timestamp
+  updated_at timestamp
 }
 
 Table MapEntry {
   id int [pk, increment]
+  label varchar
   map int [ref: > Map.id]
-  map_geography int [ref: - MapGeography.id]
-  map_legend_entry int [ref: - MapLegendEntry.id]
+  map_location int [ref: - Place.id]
+  map_legend_entry int [ref: - LegendEntry.id]
+
+  created_at timestamp
+  updated_at timestamp
 }
 
-Table MapGeography {
+Table Place {
   id int [pk, increment]
-  geography int [ref: - Geography.id]
+  salsah_id int
+  label varchar
+  collection int [ref: - Collection.id]
+  location int [ref: > Location.id]
+
+  created_at timestamp
+  updated_at timestamp
+
+  Note: 'This entity captures the Concept of the ASV Gemeinde but doesn\'t describe an actual location with coordinates.'
 }
 
-Table MapLegend {
+Table Legend {
   id int [pk, increment]
+  label varchar
+
+  created_at timestamp
+  updated_at timestamp
 }
 
-Table MapLegendEntry {
+Table LegendEntry {
   id int [pk, increment]
-}
-
-Table MapLegend_MapLegendEntries {
-  map_legend_entry_id int [ref: > MapLegendEntry.id]
-  map_legend_id int [ref: - MapLegend.id]
+  label varchar
+  legend int [ref: > Legend.id]
+  
+  created_at timestamp
+  updated_at timestamp
 }
