@@ -70,6 +70,8 @@ Table Location {
   latitude float
   longitude float
 
+  place_id int [ref: - Place.id]
+
   created_at timestamp
   updated_at timestamp
 }
@@ -216,7 +218,8 @@ Table Document {
 Table Map {
   id int [pk, increment]
   label varchar
-  legend int [ref: - Legend.id]
+
+  legend_id int [ref: - Legend.id]
 
   created_at timestamp
   updated_at timestamp
@@ -234,9 +237,10 @@ Table MapLayer {
 Table MapEntry {
   id int [pk, increment]
   label varchar
-  map int [ref: > Map.id]
-  map_location int [ref: - Place.id]
-  map_legend_entry int [ref: - LegendEntry.id]
+
+  map_id int [ref: > Map.id]
+  place_id int
+  legend_entry_id int
 
   created_at timestamp
   updated_at timestamp
@@ -246,8 +250,9 @@ Table Place {
   id int [pk, increment]
   asv_id varchar
   label varchar
-  collection int [ref: - Collection.id]
-  location int [ref: > Location.id]
+
+  collection_id int
+  location_id int [ref: - Location.id]
 
   created_at timestamp
   updated_at timestamp
@@ -266,7 +271,8 @@ Table Legend {
 Table LegendEntry {
   id int [pk, increment]
   label varchar
-  legend int [ref: > Legend.id]
+
+  legend_id int [ref: > Legend.id]
   
   created_at timestamp
   updated_at timestamp

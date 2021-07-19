@@ -1,6 +1,6 @@
 -- SQL dump generated using DBML (dbml-lang.org)
 -- Database: PostgreSQL
--- Generated at: 2021-07-19T10:55:24.942Z
+-- Generated at: 2021-07-19T12:26:16.090Z
 
 CREATE TABLE "Image" (
   "id" SERIAL PRIMARY KEY,
@@ -60,6 +60,7 @@ CREATE TABLE "Location" (
   "geonames_url" varchar,
   "latitude" float,
   "longitude" float,
+  "place_id" int,
   "created_at" timestamp,
   "updated_at" timestamp
 );
@@ -192,7 +193,7 @@ CREATE TABLE "Document" (
 CREATE TABLE "Map" (
   "id" SERIAL PRIMARY KEY,
   "label" varchar,
-  "legend" int,
+  "legend_id" int,
   "created_at" timestamp,
   "updated_at" timestamp
 );
@@ -208,9 +209,9 @@ CREATE TABLE "MapLayer" (
 CREATE TABLE "MapEntry" (
   "id" SERIAL PRIMARY KEY,
   "label" varchar,
-  "map" int,
-  "map_location" int,
-  "map_legend_entry" int,
+  "map_id" int,
+  "place_id" int,
+  "legend_entry_id" int,
   "created_at" timestamp,
   "updated_at" timestamp
 );
@@ -219,8 +220,8 @@ CREATE TABLE "Place" (
   "id" SERIAL PRIMARY KEY,
   "asv_id" varchar,
   "label" varchar,
-  "collection" int,
-  "location" int,
+  "collection_id" int,
+  "location_id" int,
   "created_at" timestamp,
   "updated_at" timestamp
 );
@@ -235,7 +236,7 @@ CREATE TABLE "Legend" (
 CREATE TABLE "LegendEntry" (
   "id" SERIAL PRIMARY KEY,
   "label" varchar,
-  "legend" int,
+  "legend_id" int,
   "created_at" timestamp,
   "updated_at" timestamp
 );
@@ -257,6 +258,8 @@ ALTER TABLE "Image" ADD FOREIGN KEY ("format") REFERENCES "Format" ("id");
 ALTER TABLE "Images_Keywords" ADD FOREIGN KEY ("image_id") REFERENCES "Image" ("id");
 
 ALTER TABLE "Images_Keywords" ADD FOREIGN KEY ("keyword_id") REFERENCES "Keyword" ("id");
+
+ALTER TABLE "Location" ADD FOREIGN KEY ("place_id") REFERENCES "Place" ("id");
 
 ALTER TABLE "Person" ADD FOREIGN KEY ("birthplace") REFERENCES "Location" ("id");
 
@@ -306,20 +309,14 @@ ALTER TABLE "Document" ADD FOREIGN KEY ("model") REFERENCES "Model" ("id");
 
 ALTER TABLE "Document" ADD FOREIGN KEY ("format") REFERENCES "Format" ("id");
 
-ALTER TABLE "Map" ADD FOREIGN KEY ("legend") REFERENCES "Legend" ("id");
+ALTER TABLE "Map" ADD FOREIGN KEY ("legend_id") REFERENCES "Legend" ("id");
 
 ALTER TABLE "MapLayer" ADD FOREIGN KEY ("map") REFERENCES "Map" ("id");
 
-ALTER TABLE "MapEntry" ADD FOREIGN KEY ("map") REFERENCES "Map" ("id");
+ALTER TABLE "MapEntry" ADD FOREIGN KEY ("map_id") REFERENCES "Map" ("id");
 
-ALTER TABLE "MapEntry" ADD FOREIGN KEY ("map_location") REFERENCES "Place" ("id");
+ALTER TABLE "Place" ADD FOREIGN KEY ("location_id") REFERENCES "Location" ("id");
 
-ALTER TABLE "MapEntry" ADD FOREIGN KEY ("map_legend_entry") REFERENCES "LegendEntry" ("id");
-
-ALTER TABLE "Place" ADD FOREIGN KEY ("collection") REFERENCES "Collection" ("id");
-
-ALTER TABLE "Place" ADD FOREIGN KEY ("location") REFERENCES "Location" ("id");
-
-ALTER TABLE "LegendEntry" ADD FOREIGN KEY ("legend") REFERENCES "Legend" ("id");
+ALTER TABLE "LegendEntry" ADD FOREIGN KEY ("legend_id") REFERENCES "Legend" ("id");
 
 COMMENT ON TABLE "Place" IS 'This entity captures the Concept of the ASV Gemeinde but doesn"t describe an actual location with coordinates.';
