@@ -1,0 +1,24 @@
+@prefix schema: <http://schema.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://example.org/pia/object/1234>
+  a schema:CreativeWork ;
+  schema:name "[Schwyzer Fasnacht]" ;
+  schema:temporal "1937"^^xsd:gYear ;
+  schema:identifier "SGV_12N_00001", "AA 1" ;
+  schema:keywords "Fasnacht", "Greiflet", "Brauch", "Kind", "Winter", "Schnee", "Tabakspfeife" ;
+  schema:material "http://vocab.getty.edu/aat/300128343" ;
+  schema:license "https://creativecommons.org/licenses/by-nc-nd/4.0/" ;
+  schema:spatial "https://example.org/pia/place/1234" ;
+  schema:image "https://example.org/pia/iiif/1234/full/max/0/default.jpg" ;
+  schema:thumbnailUrl "https://example.org/pia/iiif/1234/full/350,/0/default.jpg" .
+
+<https://example.org/pia/place/1234>
+  a schema:Place ;
+  schema:geo schema:GeoCoordinates ;
+  schema:name "Schwyz" ;
+  schema:sameAs "http://sws.geonames.org/2658665" .
+
+schema:GeoCoordinates
+  schema:latitude 47.02076 ;
+  schema:longitude 8.65414 .

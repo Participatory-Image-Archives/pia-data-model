@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:schema="http://schema.org/">
+
+  <schema:CreativeWork rdf:about="https://example.org/pia/object/1234">
+    <schema:name>[Schwyzer Fasnacht]</schema:name>
+    <schema:temporal rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1937</schema:temporal>
+    <schema:identifier>SGV_12N_00001</schema:identifier>
+    <schema:identifier>AA 1</schema:identifier>
+    <schema:keywords>Fasnacht</schema:keywords>
+    <schema:keywords>Greiflet</schema:keywords>
+    <schema:keywords>Brauch</schema:keywords>
+    <schema:keywords>Kind</schema:keywords>
+    <schema:keywords>Winter</schema:keywords>
+    <schema:keywords>Schnee</schema:keywords>
+    <schema:keywords>Tabakspfeife</schema:keywords>
+    <schema:material>http://vocab.getty.edu/aat/300128343</schema:material>
+    <schema:license>https://creativecommons.org/licenses/by-nc-nd/4.0/</schema:license>
+    <schema:spatial>https://example.org/pia/place/1234</schema:spatial>
+    <schema:image>https://example.org/pia/iiif/1234/full/max/0/default.jpg</schema:image>
+    <schema:thumbnailUrl>https://example.org/pia/iiif/1234/full/350,/0/default.jpg</schema:thumbnailUrl>
+  </schema:CreativeWork>
+
+  <schema:Place rdf:about="https://example.org/pia/place/1234">
+    <schema:geo>
+      <rdf:Description rdf:about="http://schema.org/GeoCoordinates">
+        <schema:latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">47.02076</schema:latitude>
+        <schema:longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.65414</schema:longitude>
+      </rdf:Description>
+    </schema:geo>
+
+    <schema:name>Schwyz</schema:name>
+    <schema:sameAs>http://sws.geonames.org/2658665</schema:sameAs>
+  </schema:Place>
+
+</rdf:RDF>
