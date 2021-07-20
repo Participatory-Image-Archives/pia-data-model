@@ -238,13 +238,15 @@ Table MapEntry {
   id int [pk, increment]
   label varchar
 
-  map_id int [ref: > Map.id]
+  map_id int
   place_id int
   legend_entry_id int
 
   created_at timestamp
   updated_at timestamp
 }
+
+Ref: Map.id < MapEntry.map_id [delete: cascade]
 
 Table Place {
   id int [pk, increment]
@@ -264,16 +266,23 @@ Table Legend {
   id int [pk, increment]
   label varchar
 
+  map_id int
+
   created_at timestamp
   updated_at timestamp
 }
+
+Ref: Map.id - Legend.map_id [delete: cascade]
 
 Table LegendEntry {
   id int [pk, increment]
   label varchar
 
-  legend_id int [ref: > Legend.id]
+  icon varchar
+  legend_id int
   
   created_at timestamp
   updated_at timestamp
 }
+
+Ref: Legend.id < LegendEntry.legend_id [delete: cascade]

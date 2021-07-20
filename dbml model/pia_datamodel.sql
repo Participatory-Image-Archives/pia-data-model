@@ -1,6 +1,6 @@
 -- SQL dump generated using DBML (dbml-lang.org)
 -- Database: PostgreSQL
--- Generated at: 2021-07-19T12:26:16.090Z
+-- Generated at: 2021-07-20T11:05:30.207Z
 
 CREATE TABLE "Image" (
   "id" SERIAL PRIMARY KEY,
@@ -229,6 +229,7 @@ CREATE TABLE "Place" (
 CREATE TABLE "Legend" (
   "id" SERIAL PRIMARY KEY,
   "label" varchar,
+  "map_id" int,
   "created_at" timestamp,
   "updated_at" timestamp
 );
@@ -236,6 +237,7 @@ CREATE TABLE "Legend" (
 CREATE TABLE "LegendEntry" (
   "id" SERIAL PRIMARY KEY,
   "label" varchar,
+  "icon" varchar,
   "legend_id" int,
   "created_at" timestamp,
   "updated_at" timestamp
@@ -313,10 +315,12 @@ ALTER TABLE "Map" ADD FOREIGN KEY ("legend_id") REFERENCES "Legend" ("id");
 
 ALTER TABLE "MapLayer" ADD FOREIGN KEY ("map") REFERENCES "Map" ("id");
 
-ALTER TABLE "MapEntry" ADD FOREIGN KEY ("map_id") REFERENCES "Map" ("id");
+ALTER TABLE "MapEntry" ADD FOREIGN KEY ("map_id") REFERENCES "Map" ("id") ON DELETE CASCADE;
 
 ALTER TABLE "Place" ADD FOREIGN KEY ("location_id") REFERENCES "Location" ("id");
 
-ALTER TABLE "LegendEntry" ADD FOREIGN KEY ("legend_id") REFERENCES "Legend" ("id");
+ALTER TABLE "Legend" ADD FOREIGN KEY ("map_id") REFERENCES "Map" ("id") ON DELETE CASCADE;
+
+ALTER TABLE "LegendEntry" ADD FOREIGN KEY ("legend_id") REFERENCES "Legend" ("id") ON DELETE CASCADE;
 
 COMMENT ON TABLE "Place" IS 'This entity captures the Concept of the ASV Gemeinde but doesn"t describe an actual location with coordinates.';
