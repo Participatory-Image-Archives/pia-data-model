@@ -6,7 +6,7 @@ This repository is structured in the following manner:
 - `dbml model`: logical structure of the PIA database and SQL extract
 - `iiif`: IIIF Manifest boilerplates, architecture overview and scripts to create IIIF-compliant resources
 - `ontology`: current SGV ontology and RDF Data Model (in progress - not yet available)
-- `salsah-export`: metadata extracted from https://salsah.org. All resource types' metadata from the SGV have been extracted, except for Images where only two collections relevant to the PIA project are available. In most folders can be found two XML files (unresolved and resolved properties) as well as a CSV file.
+- `salsah-export`: metadata extracted from https://salsah.org for the purpose of populating the PIA Database. All resource types' metadata from the SGV have been extracted, except for `Images` where only two collections relevant to the PIA project are available (SGV_10 and SGV_12). In most folders can be found two XML files (unresolved and resolved properties) as well as a CSV file. In this directory are also available the Geonames and properties containing JSON files extracted from the Salsah API, a CSV which comprises all ASV (SGV_05) places as well as the current SGV ontology. 
 
 ## Data Model Diagrams and Flowcharts
 
