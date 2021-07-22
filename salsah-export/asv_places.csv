@@ -1,0 +1,415 @@
+asv id,latitude,longitude,name,desc,color,source,precision
+1,46.173856,6.021339,Cartigny,"Cartigny, GENÈVE, CH",,MapQuest,city/town
+2,46.201756,6.146601,Genf,"Geneva, GENÈVE, CH",,MapQuest,city/town
+3,46.232841,6.081779,Meyrin,"Meyrin, GENÈVE, CH",,MapQuest,city/town
+4,46.264418,6.157064,Genthod,"Genthod, GENÈVE, CH",,MapQuest,city/town
+5,46.236763,6.269155,Jussy,"Jussy, GENÈVE, CH",,MapQuest,city/town
+6,46.316338,6.192951,Coppet,"Coppet, VAUD, CH",,MapQuest,city/town
+7,47.595602,8.783005,Nyon-Prangins,"Neunforn, THURGAU, CH",,MapQuest,city/town
+8,46.446839,6.157778,St. Cergue,"Saint-Cergue, VAUD, CH",,MapQuest,city/town
+9,46.459061,6.341098,Rolle,"Rolle, VAUD, CH",,MapQuest,city/town
+10,46.509327,6.498317,Morges,"Morges, VAUD, CH",,MapQuest,city/town
+11,46.521827,6.632703,Lausanne,"Lausanne, VAUD, CH",,MapQuest,city/town
+12,46.503277,6.686788,Lutry,"Lutry, VAUD, CH",,MapQuest,city/town
+13,46.463078,6.84289,Vevey,"Vevey, VAUD, CH",,MapQuest,city/town
+14,46.406472,6.971561,Villeneuve,"Villeneuve, VAUD, CH",,MapQuest,city/town
+15,46.317901,6.968893,Aigle,"Aigle, VAUD, CH",,MapQuest,city/town
+16,46.29897,7.05646,Villars s. Ollon,"Sentier du Victoria, Ollon, Vaud, CH",,MapQuest,street
+17,46.247375,7.010776,Bex,"Bex, VAUD, CH",,MapQuest,city/town
+18,46.255457,6.953783,Monthey,"Monthey, VALAIS - WALLIS, CH",,MapQuest,city/town
+19,46.175679,6.868767,Champéry,"Champéry, VALAIS - WALLIS, CH",,MapQuest,city/town
+20,46.083415,6.975772,Finhaut,"Finhaut, VALAIS - WALLIS, CH",,MapQuest,city/town
+21,46.103115,7.072735,Martigny,"Martigny, VALAIS - WALLIS, CH",,MapQuest,city/town
+22,46.030068,7.145363,Orsières,"Orsières, VALAIS - WALLIS, CH",,MapQuest,city/town
+23,46.075744,7.075126,Le Châble,"Les Valettes, VALAIS - WALLIS, CH",,MapQuest,city/town
+24,46.11273,7.495707,Evolène,"Evolène, VALAIS - WALLIS, CH",,MapQuest,city/town
+25,46.024452,8.932552,Vissoie,"Vezia, TICINO, CH",,MapQuest,city/town
+26,46.292252,7.53232,Sierre,"Sierre, VALAIS - WALLIS, CH",,MapQuest,city/town
+27,46.346379,7.537519,Mollens,"Mollens, CH",,MapQuest,city/town
+28,46.231175,7.35888,Sitten,"Sion, VALAIS - WALLIS, CH",,MapQuest,city/town
+29,46.212346,7.259116,Ardon,"Ardon, VALAIS - WALLIS, CH",,MapQuest,city/town
+30,46.34906,7.05266,Ormont-La Forclaz,"Route de la Forclaz, Ormont-Dessous, Vaud, CH",,MapQuest,street
+31,46.473958,7.13056,Château-d'Oex,"Château-d'Œx, VAUD, CH",,MapQuest,city/town
+32,46.487127,7.042571,Montbovon,"Montbovon, FRIBOURG, CH",,MapQuest,city/town
+33,46.45513,6.89805,Brent s. Montreux,"Route de Brent, Montreux, Vaud, CH",,MapQuest,street
+34,46.526529,6.899654,Châtel-St-Denis,"Châtel-Saint-Denis, FRIBOURG, CH",,MapQuest,city/town
+35,46.570924,6.827467,Oron-la-Ville,"Oron-La-Ville, VAUD, CH",,MapQuest,city/town
+36,46.587613,6.764993,Mézières,"Mézières, VAUD, CH",,MapQuest,city/town
+37,46.548288,6.393457,Froideville,"Froideville, VAUD, CH",,MapQuest,city/town
+38,46.50881,6.30707,Gimel,"Gimel, VAUD, CH",,MapQuest,city/town
+39,46.604664,6.23377,Le Sentier,"Le Chenit, VAUD, CH",,MapQuest,city/town
+40,46.619407,6.411548,L'Isle,"L'Isle, VAUD, CH",,MapQuest,city/town
+41,46.61695,6.47243,Cossonay-La Chaux,"La Place, La Chaux (Cossonay), Vaud, CH",,MapQuest,street
+42,46.638116,6.634695,Echallens,"Echallens, VAUD, CH",,MapQuest,city/town
+43,46.619839,6.821521,Rue,"Rue, FRIBOURG, CH",,MapQuest,city/town
+44,46.628415,6.938665,La Joux,"La Joux, FRIBOURG, CH",,MapQuest,city/town
+45,46.614624,7.059381,Bulle,"Bulle, FRIBOURG, CH",,MapQuest,city/town
+46,46.5838,7.082668,Gruyères,"Gruyères, FRIBOURG, CH",,MapQuest,city/town
+47,46.61987,7.164581,Charmey,"Charmey, FRIBOURG, CH",,MapQuest,city/town
+48,46.698611,6.923026,Romont,"Romont, FRIBOURG, CH",,MapQuest,city/town
+49,46.696658,7.139348,La Roche,"La Roche, FRIBOURG, CH",,MapQuest,city/town
+50,46.709179,6.840827,Lucens,"Lucens, VAUD, CH",,MapQuest,city/town
+51,46.668066,6.800348,Moudon,"Moudon, VAUD, CH",,MapQuest,city/town
+52,46.675524,6.682709,Fey,"Fey, VAUD, CH",,MapQuest,city/town
+53,46.70625,6.56957,Chavornay,"Chavornay, VAUD, CH",,MapQuest,city/town
+54,46.724144,6.531794,Orbe,"Orbe, VAUD, CH",,MapQuest,city/town
+55,46.688355,6.389407,Vaulion,"Vaulion, VAUD, CH",,MapQuest,city/town
+56,46.712171,6.378848,Vallorbe,"Vallorbe, VAUD, CH",,MapQuest,city/town
+57,46.822185,6.501059,Ste-Croix,"Sainte-Croix, VAUD, CH",,MapQuest,city/town
+58,46.808316,6.641661,Grandson,"Grandson, VAUD, CH",,MapQuest,city/town
+59,46.798316,6.744502,Yvonand,"Yvonand, VAUD, CH",,MapQuest,city/town
+60,46.749316,6.80876,Combremont-le-Petit,"Combremont-Le-Petit, VAUD, CH",,MapQuest,city/town
+61,46.851196,6.84968,Estavayer,"Estavayer-Le-Lac, FRIBOURG, CH",,MapQuest,city/town
+62,46.820805,6.939126,Payerne,"Payerne, VAUD, CH",,MapQuest,city/town
+63,46.765379,7.016702,Lentigny,"La Brillaz, FRIBOURG, CH",,MapQuest,city/town
+64,46.803004,7.151289,Freiburg,"Freiburg, FRIBOURG, CH",,MapQuest,city/town
+65,46.865777,7.122228,Courtepin,"Courtepin, FRIBOURG, CH",,MapQuest,city/town
+66,46.879575,7.040941,Avenches,"Avenches, VAUD, CH",,MapQuest,city/town
+67,46.891352,6.982473,St-Aubin,"Saint-Aubin, CH",,MapQuest,city/town
+68,46.89,6.905693,Chevroux,"Chevroux, VAUD, CH",,MapQuest,city/town
+69,46.891352,6.982473,St-Aubin,"Saint-Aubin, CH",,MapQuest,city/town
+70,46.337627,8.013465,Buttes,"Bitsch, VALAIS - WALLIS, CH",,MapQuest,city/town
+71,46.904458,6.482069,Les Verrières,"Les Verrières, NEUCHÂTEL, CH",,MapQuest,city/town
+72,46.882748,6.725756,Môtiers,"Mutrux, VAUD, CH",,MapQuest,city/town
+73,46.955169,6.837271,Boudry,"Boudry, NEUCHÂTEL, CH",,MapQuest,city/town
+74,46.956468,7.018542,Cudrefin,"Cudrefin, VAUD, CH",,MapQuest,city/town
+75,46.989583,6.929264,Neuchâtel,"Neuchâtel, NEUCHÂTEL, CH",,MapQuest,city/town
+76,46.999085,6.731711,Les Ponts-de-Martel,"Les Ponts-De-Martel, NEUCHÂTEL, CH",,MapQuest,city/town
+77,46.982125,6.605188,La Brévine,"La Brévine, NEUCHÂTEL, CH",,MapQuest,city/town
+78,47.055591,6.745454,Le Locle,"Le Locle, NEUCHÂTEL, CH",,MapQuest,city/town
+79,47.059454,6.905384,Cernier,"Cernier, NEUCHÂTEL, CH",,MapQuest,city/town
+80,47.007635,7.28664,Landeron,"Landerswil, BERN - BERNE, CH",,MapQuest,city/town
+81,47.082839,7.066159,Lignières,"Lignières, NEUCHÂTEL, CH",,MapQuest,city/town
+82,47.113691,7.084579,Nods,"Nods, BERN - BERNE, CH",,MapQuest,city/town
+83,47.111833,6.838226,La Chaux-de-Fonds,"La Chaux-De-Fonds, NEUCHÂTEL, CH",,MapQuest,city/town
+84,47.151775,6.997197,St-Imier,"Saint-Imier, BERN - BERNE, CH",,MapQuest,city/town
+85,47.196789,7.170578,Sonceboz,"Sonceboz-Sombeval, BERN - BERNE, CH",,MapQuest,city/town
+86,47.235771,7.224765,Reconvilier,"Reconvilier, BERN - BERNE, CH",,MapQuest,city/town
+87,47.223677,7.103022,Tramelan-Dessus,"Tramelan, BERN - BERNE, CH",,MapQuest,city/town
+88,47.2558,6.996359,Saignelégier,"Saignelégier, JURA, CH",,MapQuest,city/town
+89,47.303311,7.224096,Undervelier,"Undervelier, JURA, CH",,MapQuest,city/town
+90,47.279614,7.370419,Moutier,"Moutier, BERN - BERNE, CH",,MapQuest,city/town
+91,47.338851,7.515419,Mervelier,"Mervelier, JURA, CH",,MapQuest,city/town
+92,47.361961,7.354039,Delémont,"Delémont, JURA, CH",,MapQuest,city/town
+93,47.337022,7.24424,Bassecourt,"Bassecourt, JURA, CH",,MapQuest,city/town
+94,47.349307,7.120853,St-Ursanne,"Clos du Doubs, JURA, CH",,MapQuest,city/town
+95,47.417049,7.07578,Porrentruy,"Porrentruy, JURA, CH",,MapQuest,city/town
+96,47.373123,6.896769,Damvant,"Damvant, JURA, CH",,MapQuest,city/town
+97,47.498184,7.012558,Boncourt,"Boncourt, JURA, CH",,MapQuest,city/town
+98,47.476701,7.152302,Bonfol,"Bonfol, JURA, CH",,MapQuest,city/town
+99,47.558108,7.587826,Basel,"Basel, BASEL-CITY, CH",,MapQuest,city/town
+100,47.554386,7.792291,Rheinfelden,"Rheinfelden, ARGOVIA, CH",,MapQuest,city/town
+101,47.19917,9.228339,Stein,"Stein, ST. GALLEN, CH",,MapQuest,city/town
+102,47.560462,8.06017,Laufenburg,"Laufenburg, ARGOVIA, CH",,MapQuest,city/town
+103,47.507508,8.020307,Frick,"Frick, ARGOVIA, CH",,MapQuest,city/town
+104,47.519201,7.694474,Pratteln,"Pratteln, BASEL-LANDSCHAFT, CH",,MapQuest,city/town
+105,47.498317,7.561237,Therwil,"Therwil, BASEL-LANDSCHAFT, CH",,MapQuest,city/town
+106,47.481348,7.622783,Dornach,"Dornach, SOLOTHURN, CH",,MapQuest,city/town
+107,47.483972,7.734778,Liestal,"Liestal, BASEL-LANDSCHAFT, CH",,MapQuest,city/town
+108,47.463477,7.812564,Sissach,"Sissach, BASEL-LANDSCHAFT, CH",,MapQuest,city/town
+109,47.440539,7.907641,Wenslingen,"Wenslingen, BASEL-LANDSCHAFT, CH",,MapQuest,city/town
+110,47.43671,8.099952,Thalheim,"Thalheim, ARGOVIA, CH",,MapQuest,city/town
+111,47.44735,8.13773,Schinznach,"Schinznach, CH",,MapQuest,city/town
+112,47.392715,8.044445,Aarau,"Aarau, ARGOVIA, CH",,MapQuest,city/town
+113,47.363788,7.967003,Gösgen,"Kraftwerkstrasse, Däniken, Amtei Olten-Gösgen, Solothurn, CH",,MapQuest,address
+114,47.395816,7.854695,Läufelfingen,"Läufelfingen, BASEL-LANDSCHAFT, CH",,MapQuest,city/town
+115,47.397426,7.691818,Reigoldswil,"Reigoldswil, BASEL-LANDSCHAFT, CH",,MapQuest,city/town
+116,47.39474,7.619266,Nunningen,"Nunningen, SOLOTHURN, CH",,MapQuest,city/town
+117,47.42241,7.502002,Laufen,"Laufen, BASEL-LANDSCHAFT, CH",,MapQuest,city/town
+118,47.426237,7.417565,Kleinlützel,"Kleinlützel, SOLOTHURN, CH",,MapQuest,city/town
+119,47.280649,7.525223,Welschenrohr,"Welschenrohr, SOLOTHURN, CH",,MapQuest,city/town
+120,47.314037,7.694776,Balsthal,"Balsthal, SOLOTHURN, CH",,MapQuest,city/town
+121,47.333129,7.836512,Hägendorf,"Hägendorf, SOLOTHURN, CH",,MapQuest,city/town
+122,47.320642,7.89936,Aarburg,"Aarburg, ARGOVIA, CH",,MapQuest,city/town
+123,47.288491,7.945826,Zofingen,"Zofingen, ARGOVIA, CH",,MapQuest,city/town
+124,47.305452,8.052795,Schöftland,"Schöftland, ARGOVIA, CH",,MapQuest,city/town
+125,47.310784,8.115696,Unterkulm,"Unterkulm, ARGOVIA, CH",,MapQuest,city/town
+126,47.235197,8.076748,Triengen,"Triengen, LUZERN, CH",,MapQuest,city/town
+127,47.213567,7.990113,Dagmersellen,"Dagmersellen, LUZERN, CH",,MapQuest,city/town
+128,47.234607,7.816166,Roggwil,"Roggwil, BERN - BERNE, CH",,MapQuest,city/town
+129,47.266248,7.692307,Niederbipp,"Niederbipp, BERN - BERNE, CH",,MapQuest,city/town
+130,47.199531,7.585984,Derendingen,"Derendingen, SOLOTHURN, CH",,MapQuest,city/town
+131,47.208136,7.538405,Solothurn,"Solothurn, SOLOTHURN, CH",,MapQuest,city/town
+132,47.196838,7.396587,Grenchen,"Grenchen, SOLOTHURN, CH",,MapQuest,city/town
+133,47.521079,8.330138,Lengnau,"Lengnau, ARGOVIA, CH",,MapQuest,city/town
+134,47.142045,7.258567,Biel,"Biel/Bienne, BERN - BERNE, CH",,MapQuest,city/town
+135,47.447666,7.668458,Büren,"Büren, CH",,MapQuest,city/town
+136,47.129051,7.559255,Utzenstorf,"Utzenstorf, BERN - BERNE, CH",,MapQuest,city/town
+137,47.188131,7.705705,Herzogenbuchsee,"Herzogenbuchsee, BERN - BERNE, CH",,MapQuest,city/town
+138,47.136393,7.813343,Rohrbach,"Rohrbach, BERN - BERNE, CH",,MapQuest,city/town
+139,47.121518,7.99659,Willisau,"Willisau, LUZERN, CH",,MapQuest,city/town
+140,47.177483,8.109794,Sursee,"Sursee, LUZERN, CH",,MapQuest,city/town
+141,47.05747,8.073151,Wolhusen,"Wolhusen, LUZERN, CH",,MapQuest,city/town
+142,47.057067,7.91394,Luthern,"Luthern, LUZERN, CH",,MapQuest,city/town
+143,47.028565,7.744983,Sumiswald,"Sumiswald, BERN - BERNE, CH",,MapQuest,city/town
+144,47.058688,7.623159,Burgdorf,"Burgdorf, BERN - BERNE, CH",,MapQuest,city/town
+145,47.090408,7.447345,Messen,"Messen, SOLOTHURN, CH",,MapQuest,city/town
+146,47.044335,7.2753,Aarberg,"Aarberg, BERN - BERNE, CH",,MapQuest,city/town
+147,47.112581,7.171505,Twann,"Twann, BERN - BERNE, CH",,MapQuest,city/town
+148,47.005886,7.105626,Ins,"Ins, BERN - BERNE, CH",,MapQuest,city/town
+149,46.976132,7.197283,Kerzers,"Kerzers, FRIBOURG, CH",,MapQuest,city/town
+150,47.021332,7.45192,Münchenbuchsee,"Münchenbuchsee, BERN - BERNE, CH",,MapQuest,city/town
+151,46.992113,8.064519,Entlebuch,"Entlebuch, LUZERN, CH",,MapQuest,city/town
+152,46.913477,7.937008,Escholzmatt,"Escholzmatt, LUZERN, CH",,MapQuest,city/town
+153,46.922889,7.846683,Trubschachen,"Trubschachen, BERN - BERNE, CH",,MapQuest,city/town
+154,46.948276,7.451501,Bern,"Berne, BERN - BERNE, CH",,MapQuest,city/town
+155,46.928408,7.116332,Murten,"Murten, FRIBOURG, CH",,MapQuest,city/town
+156,46.892804,7.175773,Gurmels,"Gurmels, FRIBOURG, CH",,MapQuest,city/town
+157,46.851196,7.190354,Düdingen,"Düdingen, FRIBOURG, CH",,MapQuest,city/town
+158,46.903302,7.239642,Laupen,"Laupen, BERN - BERNE, CH",,MapQuest,city/town
+159,46.875973,7.278834,Wünnewil,"Wünnewil-Flamatt, FRIBOURG, CH",,MapQuest,city/town
+160,46.88978,7.498388,Belp,"Belp, BERN - BERNE, CH",,MapQuest,city/town
+161,46.873978,7.563194,Münsingen,"Münsingen, BERN - BERNE, CH",,MapQuest,city/town
+162,46.874873,7.796291,Eggiwil,"Eggiwil, BERN - BERNE, CH",,MapQuest,city/town
+163,46.730728,8.051004,Brienz,"Brienz, BERN - BERNE, CH",,MapQuest,city/town
+164,46.716429,7.71607,Sigriswil,"Sigriswil, BERN - BERNE, CH",,MapQuest,city/town
+165,46.758283,7.628086,Thun,"Thun, BERN - BERNE, CH",,MapQuest,city/town
+166,46.793095,7.602917,Heimberg,"Heimberg, BERN - BERNE, CH",,MapQuest,city/town
+167,46.767234,7.50719,Wattenwil,"Wattenwil, BERN - BERNE, CH",,MapQuest,city/town
+168,46.82128,7.376392,Elisried-Schwarzenburg,"Elisried, BERN - BERNE, CH",,MapQuest,city/town
+169,46.761502,7.210014,Giffers,"Giffers, FRIBOURG, CH",,MapQuest,city/town
+170,46.741454,7.28651,Plaffeien,"Plaffeien, FRIBOURG, CH",,MapQuest,city/town
+171,46.611395,7.276131,Jaun,"Jaun, FRIBOURG, CH",,MapQuest,city/town
+172,47.301611,8.591533,Erlenbach,"Erlenbach, ZURICH, CH",,MapQuest,city/town
+173,46.691947,7.677466,Spiez,"Spiez, BERN - BERNE, CH",,MapQuest,city/town
+174,46.685523,7.858514,Interlaken,"Interlaken, BERN - BERNE, CH",,MapQuest,city/town
+175,46.624273,8.036746,Grindelwald,"Grindelwald, BERN - BERNE, CH",,MapQuest,city/town
+176,46.737906,8.205257,Hasliberg,"Hasliberg, BERN - BERNE, CH",,MapQuest,city/town
+177,46.6557,8.289223,Guttannen,"Guttannen, BERN - BERNE, CH",,MapQuest,city/town
+178,46.559458,7.892932,Mürren,"Mürren, BERN - BERNE, CH",,MapQuest,city/town
+179,46.587502,7.643833,Frutigen,"Frutigen, BERN - BERNE, CH",,MapQuest,city/town
+180,46.553261,7.373806,Zweisimmen,"Zweisimmen, BERN - BERNE, CH",,MapQuest,city/town
+181,47.327748,9.22689,Saanen-Gstaad,"Schönengrund, APPENZELL AUSSERRHODEN, CH",,MapQuest,city/town
+182,46.38512,7.269732,Gsteig,"Gsteig, BERN - BERNE, CH",,MapQuest,city/town
+183,46.455888,7.441698,Lenk,"Lenk, BERN - BERNE, CH",,MapQuest,city/town
+184,46.492721,7.558762,Adelboden,"Adelboden, BERN - BERNE, CH",,MapQuest,city/town
+185,46.497587,7.675664,Kandersteg,"Kandersteg, BERN - BERNE, CH",,MapQuest,city/town
+186,46.403995,7.78361,Wiler,"Wiler, CH",,MapQuest,city/town
+187,46.538811,8.363232,Oberwald,"Obergoms, VALAIS - WALLIS, CH",,MapQuest,city/town
+188,47.279614,7.370419,Münster,"Moutier, BERN - BERNE, CH",,MapQuest,city/town
+189,46.806592,9.257625,Lax,"Laax, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+190,46.36457,8.184374,Binn,"Binn, VALAIS - WALLIS, CH",,MapQuest,city/town
+191,46.316346,7.987947,Brig,"Brig-Glis, VALAIS - WALLIS, CH",,MapQuest,city/town
+192,46.291311,7.881192,Visp,"Visp, VALAIS - WALLIS, CH",,MapQuest,city/town
+193,46.273178,7.86562,Zeneggen,"Zeneggen, VALAIS - WALLIS, CH",,MapQuest,city/town
+194,46.309934,7.799589,Raron,"Raron, VALAIS - WALLIS, CH",,MapQuest,city/town
+195,46.301121,7.701742,Turtmann,"Turtmann, VALAIS - WALLIS, CH",,MapQuest,city/town
+196,46.314982,7.645981,Leuk,"Leuk, CH",,MapQuest,city/town
+197,46.022227,7.7494,Zermatt,"Zermatt, VALAIS - WALLIS, CH",,MapQuest,city/town
+198,46.127844,7.937005,Saas-Grund,"Saas-Grund, VALAIS - WALLIS, CH",,MapQuest,city/town
+199,47.139085,6.966539,Simpeln,"Sonvilier, BERN - BERNE, CH",,MapQuest,city/town
+200,47.748379,8.482756,Schleitheim,"Schleitheim, SCHAFFHAUSEN, CH",,MapQuest,city/town
+201,47.734522,8.57974,Hemmenthal,"Hemmental, SCHAFFHAUSEN, CH",,MapQuest,city/town
+202,47.74595,8.706769,Thayngen,"Thayngen, SCHAFFHAUSEN, CH",,MapQuest,city/town
+203,47.687532,8.749267,Diessenhofen,"Diessenhofen, THURGAU, CH",,MapQuest,city/town
+204,47.696049,8.634513,Schaffhausen,"Schaffhausen, SCHAFFHAUSEN, CH",,MapQuest,city/town
+205,47.696528,8.457861,Hallau,"Hallau, SCHAFFHAUSEN, CH",,MapQuest,city/town
+206,47.586562,8.294469,Zurzach,"Bad Zurzach, ARGOVIA, CH",,MapQuest,city/town
+207,47.581005,8.250009,Klingnau,"Klingnau, ARGOVIA, CH",,MapQuest,city/town
+208,46.879645,7.663077,Oberendingen,"Oberhünigen, BERN - BERNE, CH",,MapQuest,city/town
+209,47.568452,8.418364,Kaiserstuhl,"Kaiserstuhl, ARGOVIA, CH",,MapQuest,city/town
+210,47.573321,8.523983,Eglisau,"Eglisau, ZURICH, CH",,MapQuest,city/town
+211,47.595333,8.679434,Andelfingen,"Andelfingen, ZURICH, CH",,MapQuest,city/town
+212,47.661371,8.858237,Stammheim,"Stein am Rhein, SCHAFFHAUSEN, CH",,MapQuest,city/town
+213,47.19917,9.228339,Stein,"Stein, ST. GALLEN, CH",,MapQuest,city/town
+214,47.665343,8.981525,Steckborn,"Steckborn, THURGAU, CH",,MapQuest,city/town
+215,47.646425,9.172556,Kreuzlingen,"Kreuzlingen, THURGAU, CH",,MapQuest,city/town
+216,47.61241,9.260705,Altnau,"Altnau, THURGAU, CH",,MapQuest,city/town
+217,47.565445,9.377604,Romanshorn,"Romanshorn, THURGAU, CH",,MapQuest,city/town
+218,47.47763,9.501998,Rorschach,"Rorschach, ST. GALLEN, CH",,MapQuest,city/town
+219,47.472164,9.579488,Rheineck,"Rheineck, ST. GALLEN, CH",,MapQuest,city/town
+220,47.442172,9.532089,Heiden,"Heiden, APPENZELL AUSSERRHODEN, CH",,MapQuest,city/town
+221,47.425059,9.376588,St. Gallen,"Sankt Gallen, ST. GALLEN, CH",,MapQuest,city/town
+222,47.492723,9.239655,Bischofszell,"Bischofszell, THURGAU, CH",,MapQuest,city/town
+223,47.552354,9.150166,Bürglen,"Bürglen, THURGAU, CH",,MapQuest,city/town
+224,47.601993,9.002021,Müllheim,"Müllheim, THURGAU, CH",,MapQuest,city/town
+225,47.607393,8.871922,Hüttwilen,"Hüttwilen, THURGAU, CH",,MapQuest,city/town
+226,47.556228,8.896399,Frauenfeld,"Frauenfeld, THURGAU, CH",,MapQuest,city/town
+227,47.499169,8.72915,Winterthur,"Winterthur, ZURICH, CH",,MapQuest,city/town
+228,47.52018,8.541784,Bülach,"Bülach, ZURICH, CH",,MapQuest,city/town
+229,47.505042,8.378573,Niederweningen,"Niederweningen, ZURICH, CH",,MapQuest,city/town
+230,47.482463,8.208566,Brugg,"Brugg, ARGOVIA, CH",,MapQuest,city/town
+231,47.473683,8.308682,Baden,"Baden, ARGOVIA, CH",,MapQuest,city/town
+232,47.162763,9.476409,Buchs,"Buchs, ST. GALLEN, CH",,MapQuest,city/town
+233,47.32158,8.640893,Wangen,"Wangen, ZURICH, CH",,MapQuest,city/town
+234,47.473149,8.675324,Brütten,"Brütten, ZURICH, CH",,MapQuest,city/town
+235,47.494137,8.868881,Elgg,"Elgg, ZURICH, CH",,MapQuest,city/town
+236,47.49093,8.955449,Wängi,"Wängi, THURGAU, CH",,MapQuest,city/town
+237,47.465441,9.04232,Wil ,"Wil, ST. GALLEN, CH",,MapQuest,city/town
+238,47.414613,9.186149,Flawil,"Flawil, ST. GALLEN, CH",,MapQuest,city/town
+239,47.409509,9.026701,Kirchberg,"Kirchberg, ST. GALLEN, CH",,MapQuest,city/town
+240,47.416183,8.969802,Fischingen,"Fischingen, THURGAU, CH",,MapQuest,city/town
+241,47.436668,8.849538,Turbenthal,"Turbenthal, ZURICH, CH",,MapQuest,city/town
+242,47.406883,8.402089,Dietikon,"Dietikon, ZURICH, CH",,MapQuest,city/town
+243,47.419513,8.274659,Mellingen,"Mellingen, ARGOVIA, CH",,MapQuest,city/town
+244,47.387237,8.182851,Lenzburg,"Lenzburg, ARGOVIA, CH",,MapQuest,city/town
+245,47.325259,8.207879,Seengen,"Seengen, ARGOVIA, CH",,MapQuest,city/town
+246,47.309921,8.24856,Sarmenstorf,"Sarmenstorf, ARGOVIA, CH",,MapQuest,city/town
+247,47.351952,8.439633,Birmensdorf,"Birmensdorf, CH",,MapQuest,city/town
+248,47.368559,8.540443,Zürich,"Zurich, ZURICH, CH",,MapQuest,city/town
+249,47.28194,8.761328,Grüningen,"Grüningen, ZURICH, CH",,MapQuest,city/town
+250,47.36975,8.781494,Pfäffikon,"Pfäffikon, ZURICH, CH",,MapQuest,city/town
+251,47.387266,8.911653,Sternenberg,"Sternenberg, ZURICH, CH",,MapQuest,city/town
+252,47.334051,8.923409,Fischenthal,"Fischenthal, ZURICH, CH",,MapQuest,city/town
+253,47.323322,9.088184,Lichtensteig,"Lichtensteig, ST. GALLEN, CH",,MapQuest,city/town
+254,47.317503,9.283723,Urnäsch,"Urnäsch, APPENZELL AUSSERRHODEN, CH",,MapQuest,city/town
+255,47.38555,9.278757,Herisau,"Herisau, APPENZELL AUSSERRHODEN, CH",,MapQuest,city/town
+256,47.329546,9.409806,Appenzell,"Appenzell, APPENZELL INNERRHODEN, CH",,MapQuest,city/town
+257,47.36252,9.454257,Gais,"Gais, APPENZELL AUSSERRHODEN, CH",,MapQuest,city/town
+258,47.378347,9.541277,Altstätten,"Altstätten, ST. GALLEN, CH",,MapQuest,city/town
+259,47.424902,9.610214,Berneck,"Berneck, ST. GALLEN, CH",,MapQuest,city/town
+260,47.293517,9.536884,Rüthi,"Rüthi, ST. GALLEN, CH",,MapQuest,city/town
+261,47.29707,9.456126,Brüllisau,"Brulisau, APPENZELL INNERRHODEN, CH",,MapQuest,city/town
+262,47.263534,9.123356,Ebnat,"Ebnat-Kappel, ST. GALLEN, CH",,MapQuest,city/town
+263,47.225064,8.985608,Uznach,"Uznach, ST. GALLEN, CH",,MapQuest,city/town
+264,46.88018,7.460581,Wald,"Wald, BERN - BERNE, CH",,MapQuest,city/town
+265,47.22692,8.824546,Rapperswil,"Rapperswil-Jona, ST. GALLEN, CH",,MapQuest,city/town
+266,47.26942,8.64259,Meilen,"Meilen, ZURICH, CH",,MapQuest,city/town
+267,47.260692,8.597683,Horgen,"Horgen, ZURICH, CH",,MapQuest,city/town
+268,47.039177,8.783416,Oberiberg,"Oberiberg, Schwyz, SCHWYZ, CH",,MapQuest,city/town
+269,47.243488,8.46367,Mettmenstetten,"Mettmenstetten, ZURICH, CH",,MapQuest,city/town
+270,47.275661,8.337783,Muri,"Muri, ARGOVIA, CH",,MapQuest,city/town
+271,47.253968,8.182824,Reinach,"Reinach, ARGOVIA, CH",,MapQuest,city/town
+272,47.207637,8.192439,Beromünster,"Beromünster, LUZERN, CH",,MapQuest,city/town
+273,47.135911,8.191616,Sempach,"Sempach, LUZERN, CH",,MapQuest,city/town
+274,47.166536,8.289971,Hochdorf,"Hochdorf, LUZERN, CH",,MapQuest,city/town
+275,47.183174,8.461948,Cham,"Cham, ZUG, CH",,MapQuest,city/town
+276,47.171581,8.519437,Zug,"Zug, ZUG, CH",,MapQuest,city/town
+277,45.964336,8.910374,Ägeri,"Agra, TICINO, CH",,MapQuest,city/town
+278,47.216704,8.608991,Hirzel,"Hirzel, ZURICH, CH",,MapQuest,city/town
+279,47.192159,8.677586,Samstagern,"Samstagern, ZURICH, CH",,MapQuest,city/town
+280,47.192383,8.852383,Lachen,"Lachen, SCHWYZ, CH",,MapQuest,city/town
+281,47.152156,9.028029,Bilten,"Bilten, GLARUS, CH",,MapQuest,city/town
+282,47.149632,9.141123,Amden,"Amden, ST. GALLEN, CH",,MapQuest,city/town
+283,47.117211,9.150077,Obstalden,"Obstalden, GLARUS, CH",,MapQuest,city/town
+284,47.123646,9.314992,Wallenstadt,"Walenstadt, ST. GALLEN, CH",,MapQuest,city/town
+285,47.197238,9.315907,Wildhaus,"Wildhaus, ST. GALLEN, CH",,MapQuest,city/town
+286,47.162763,9.476409,Buchs,"Buchs, ST. GALLEN, CH",,MapQuest,city/town
+287,46.421903,6.927504,Vaduz,"Veytaux, VAUD, CH",,MapQuest,city/town
+288,47.048815,9.439378,Sargans,"Sargans, ST. GALLEN, CH",,MapQuest,city/town
+289,46.995494,9.071341,Schwanden,"Schwanden, GLARUS, CH",,MapQuest,city/town
+290,47.042212,9.067404,Glarus,"Glarus, GLARUS, CH",,MapQuest,city/town
+291,47.12861,8.75003,Einsiedeln,"Einsiedeln, Einsiedeln, SCHWYZ, CH",,MapQuest,city/town
+292,47.104726,8.674844,Rothenthurm,"Rothenthurm, Schwyz, SCHWYZ, CH",,MapQuest,city/town
+293,47.064455,8.523867,Arth,"Arth, Schwyz, SCHWYZ, CH",,MapQuest,city/town
+294,47.114951,8.392331,Root,"Root, LUZERN, CH",,MapQuest,city/town
+295,47.050545,8.305468,Luzern,"Lucerne, LUZERN, CH",,MapQuest,city/town
+296,47.033975,8.437964,Weggis,"Weggis, LUZERN, CH",,MapQuest,city/town
+297,47.021185,8.65356,Schwyz,"Schwyz, Schwyz, SCHWYZ, CH",,MapQuest,city/town
+298,46.974668,8.765803,Muotathal,"Muotathal, Schwyz, SCHWYZ, CH",,MapQuest,city/town
+299,46.9186,8.997365,Linthal,"Linthal, GLARUS, CH",,MapQuest,city/town
+300,46.918888,9.17194,Elm,"Elm, GLARUS, CH",,MapQuest,city/town
+301,46.989184,9.344335,Weisstannen,"Weisstannen, ST. GALLEN, CH",,MapQuest,city/town
+302,47.007729,9.530923,Maienfeld,"Maienfeld, Landquart, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+303,46.968932,9.690048,Schiers,"Schiers, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+304,46.969343,9.814077,St. Antönien,"St. Antönien, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+305,46.87979,9.860831,Klosters,"Klosters, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+306,46.936996,9.566524,Zizers,"Zizers, Landquart, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+307,46.421903,6.927504,Vättis,"Veytaux, VAUD, CH",,MapQuest,city/town
+308,46.863934,8.770358,Unterschächen,"Unterschächen, URI, CH",,MapQuest,city/town
+309,46.886467,8.638399,Altdorf,"Altdorf, URI, CH",,MapQuest,city/town
+310,46.910246,8.562013,Isenthal,"Isenthal, URI, CH",,MapQuest,city/town
+311,46.967117,8.474879,Beckenried,"Beckenried, NIDWALDEN, CH",,MapQuest,city/town
+312,46.957061,8.366103,Stans,"Stans, NIDWALDEN, CH",,MapQuest,city/town
+313,46.941166,8.273683,Alpnach,"Alpnach, OBWALDEN, CH",,MapQuest,city/town
+314,46.895673,8.246149,Sarnen,"Sarnen, OBWALDEN, CH",,MapQuest,city/town
+315,46.78573,8.160728,Lungern,"Lungern, OBWALDEN, CH",,MapQuest,city/town
+316,46.82235,8.4044,Engelberg,"Engelberg, OBWALDEN, CH",,MapQuest,city/town
+317,46.771079,8.670326,Amsteg,"Amsteg, URI, CH",,MapQuest,city/town
+318,46.707128,8.59944,Wassen,"Wassen, URI, CH",,MapQuest,city/town
+319,46.63405,8.594815,Andermatt,"Andermatt, URI, CH",,MapQuest,city/town
+320,46.681934,8.774525,Sedrun,"Sedrun, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+321,46.704175,8.854979,Mustèr,"Disentis/Mustér, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+322,46.000619,8.935122,Surrhein-Sumvitg,"Sorengo, TICINO, CH",,MapQuest,city/town
+323,46.767563,9.062285,Breil,"Breil/Brigels, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+324,46.723594,9.0721,Obersaxen,"Obersaxen, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+325,46.775575,9.205496,Ilanz,"Ilanz, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+326,46.833244,9.283456,Flims,"Flims, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+327,46.835127,9.450686,Domat,"Domat/Ems, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+328,46.855515,9.525407,Chur,"Chur, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+329,46.820889,9.712358,Langwies,"Langwies, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+330,46.796174,9.823727,Davos,"Davos, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+331,46.944242,10.360084,Samnaun,"Samnaun, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+332,46.869185,10.425427,Tschlin,"Tschlin, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+333,46.796281,10.29763,Scuol,"Scuol, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+334,46.749376,10.079741,Susch,"Susch, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+335,46.707128,8.59944,Wiesen,"Wassen, URI, CH",,MapQuest,city/town
+336,46.779725,9.678136,Arosa,"Arosa, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+337,46.778453,9.542968,Churwalden,"Churwalden, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+338,46.737668,9.455233,Almens,"Almens, Hinterrhein, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+339,46.280528,8.984788,Präz-Dalin,"Prosito, TICINO, CH",,MapQuest,city/town
+340,46.719281,9.173128,Villa,"Vella, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+341,46.681809,9.316042,Safien,"Safien, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+342,46.697852,9.439328,Thusis,"Thusis, Hinterrhein, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+343,46.183916,6.122405,Lansch,"Lancy, GENÈVE, CH",,MapQuest,city/town
+344,46.673779,9.685972,Filisur,"Filisur, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+345,46.630287,9.746505,Bravuogn,"Bergün, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+346,46.697984,10.094331,Zernez,"Zernez, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+347,46.610637,10.374508,Müstair,"Val Müstair, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+348,46.601289,9.960804,Zuoz,"Zuoz, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+349,46.53324,9.874586,Samedan,"Samedan, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+350,46.624059,9.5757,Salouf,"Salouf, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+351,46.602267,9.426968,Andeer,"Andeer, Hinterrhein, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+352,46.616304,9.180174,Vals,"Vals, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+353,46.552813,9.323308,Splügen,"Splügen, Hinterrhein, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+354,46.520932,9.442989,Innerferrera,"Innerferrera, Hinterrhein, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+355,46.700161,9.43322,Cresta-Avers,"Cresta, Hinterrhein, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+356,46.468984,9.650616,Bivio,"Bivio, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+357,46.400734,9.787215,Segl,"Sils im Engadin/Segl, CH",,MapQuest,city/town
+358,46.326467,10.058155,Poschaivo,"Poschiavo, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+359,14.65875,121.08861,Cassacia,"Switzerland, National Capital Region, PH",,MapQuest,street
+360,46.341328,9.538848,Soglio,"Soglio, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+361,46.503674,8.935742,Olivone,"Blenio, TICINO, CH",,MapQuest,city/town
+362,46.529031,8.608605,Airolo,"Airolo, TICINO, CH",,MapQuest,city/town
+363,46.50874,8.52004,Villa-Bedretto,"Zona Villa, Bedretto, Ticino, CH",,MapQuest,street
+364,46.072128,8.98702,Osco,"Oggio, TICINO, CH",,MapQuest,city/town
+365,46.402034,8.875963,Giornico,"Giornico, TICINO, CH",,MapQuest,city/town
+366,46.247375,7.010776,Bosco,"Bex, VAUD, CH",,MapQuest,city/town
+367,46.31696,8.601822,Cevio,"Cevio, TICINO, CH",,MapQuest,city/town
+368,46.350274,8.786556,Sonogno,"Sonogno, TICINO, CH",,MapQuest,city/town
+369,46.360627,8.971402,Biasca,"Biasca, TICINO, CH",,MapQuest,city/town
+370,46.373769,9.126101,Rossa,"Rossa, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+371,46.394012,9.232881,Mesocco,"Mesocco, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+372,46.210009,9.12782,Roveredo,"Roveredo, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+373,46.191862,9.020456,Bellinzona,"Bellinzona, TICINO, CH",,MapQuest,city/town
+374,46.2475,8.706678,Maggia,"Maggia, TICINO, CH",,MapQuest,city/town
+375,46.205611,8.582133,Russo,"Onsernone, TICINO, CH",,MapQuest,city/town
+376,46.155455,8.657804,Intragna,"Intragna, TICINO, CH",,MapQuest,city/town
+377,46.1707,8.796838,Locarno,"Locarno, TICINO, CH",,MapQuest,city/town
+378,46.094379,8.825932,Indemini,"Indemini, TICINO, CH",,MapQuest,city/town
+379,46.132302,8.993756,Isone,"Isone, TICINO, CH",,MapQuest,city/town
+380,46.092819,9.054817,Colla,"Colla, TICINO, CH",,MapQuest,city/town
+381,46.060855,8.950757,Ponte-Capriasca,"Ponte Capriasca, TICINO, CH",,MapQuest,city/town
+382,46.00501,8.952028,Lugano,"Lugano, TICINO, CH",,MapQuest,city/town
+383,45.985096,8.869119,Pura,"Pura, TICINO, CH",,MapQuest,city/town
+384,45.970147,8.859033,Ponte-Tresa,"Ponte Tresa, TICINO, CH",,MapQuest,city/town
+385,45.933078,8.988456,Rovio,"Rovio, TICINO, CH",,MapQuest,city/town
+386,45.903163,9.04269,Muggio,"Muggio, TICINO, CH",,MapQuest,city/town
+387,45.87099,8.987346,Mendrisio,"Mendrisio, TICINO, CH",,MapQuest,city/town
+107a,47.473646,7.759114,Lausen,"Lausen, BASEL-LANDSCHAFT, CH",,MapQuest,city/town
+109a,47.432333,7.93486,Oltingen,"Oltingen, BASEL-LANDSCHAFT, CH",,MapQuest,city/town
+10a,46.52643,6.41416,Yens s. Morges,"Chemin Sus-Paquier, Yens, Vaud, CH",,MapQuest,street
+116a,47.437887,7.527901,Zwingen,"Zwingen, BASEL-LANDSCHAFT, CH",,MapQuest,city/town
+124a,47.275507,8.070291,Kirchleerau,"Kirchleerau, ARGOVIA, CH",,MapQuest,city/town
+12a,46.489499,6.725328,Cully,"Cully, VAUD, CH",,MapQuest,city/town
+14a,46.335757,6.888581,Vouvry,"Vouvry, VALAIS - WALLIS, CH",,MapQuest,city/town
+178a,46.593904,7.907802,Lauterbrunnen,"Lauterbrunnen, BERN - BERNE, CH",,MapQuest,city/town
+17a,46.253918,6.216459,St. Maurice,"Saint-Maurice, GENÈVE, CH",,MapQuest,city/town
+188a,46.444112,8.202735,Blitzingen,"Blitzingen, VALAIS - WALLIS, CH",,MapQuest,city/town
+189a,46.372964,8.092535,Grengiols,"Grengiols, VALAIS - WALLIS, CH",,MapQuest,city/town
+193a,46.258989,7.903012,Visperterminen,"Visperterminen, VALAIS - WALLIS, CH",,MapQuest,city/town
+194a,46.293619,7.781218,Eischoll,"Eischoll, VALAIS - WALLIS, CH",,MapQuest,city/town
+196a,46.311489,7.574243,Salgesch,"Salgesch, VALAIS - WALLIS, CH",,MapQuest,city/town
+203a,47.706995,8.812202,Ramsen,"Ramsen, SCHAFFHAUSEN, CH",,MapQuest,city/town
+258a,47.385951,9.655604,Diepoldsau,"Diepoldsau, ST. GALLEN, CH",,MapQuest,city/town
+28a,46.253535,7.34776,Savièse,"Savièse, VALAIS - WALLIS, CH",,MapQuest,city/town
+2a,46.21577,6.033089,Satigny,"Satigny, GENÈVE, CH",,MapQuest,city/town
+328a,46.833396,9.646881,St. Peter,"Sankt Peter-Pagig, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+387a,45.85212,8.98462,Villa di Coldrerio,"Via San Giorgio, Coldrerio, Ticino, CH",,MapQuest,street
+42a,46.630918,6.728038,Peney-le-Jorat,"Peney-Le-Jorat, VAUD, CH",,MapQuest,city/town
+56a,46.72119,6.5362,Rances s. Orbe,"Granges-Saint-Martin, Orbe, Vaud, CH",,MapQuest,street
+57a,46.829049,6.59485,Novalles,"Novalles, VAUD, CH",,MapQuest,city/town
+57b,47.01303,6.69865,La Chaux s. Ste-Croix,"La Croix, La Chaux-du-Milieu, Neuchâtel, CH",,MapQuest,street
+74a,46.719281,9.173128,Vuilly,"Vella, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+76a,47.014548,6.704515,La Chaux-du-Milieu,"La Chaux-Du-Milieu, NEUCHÂTEL, CH",,MapQuest,city/town
+7a,46.409451,6.177917,Gingins,"Gingins, VAUD, CH",,MapQuest,city/town
