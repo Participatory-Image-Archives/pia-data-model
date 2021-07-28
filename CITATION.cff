@@ -7,7 +7,7 @@ authors:
   given-names: "Julien Antoine"
   orcid: "https://orcid.org/0000-0002-4711-5759"
 title: "pia-data-model"
-version: 0.1
+version: 0.1.1
 doi:
 date-released: 2021-07-28
 url: "https://github.com/Participatory-Image-Archives/salsah-export"
