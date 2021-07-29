@@ -18,7 +18,7 @@ We use Miro to create diagrams and flowcharts. Here are some work-in-progress de
 - RDF Data Model: https://miro.com/app/board/o9J_l87sD7U=/
 
 ### To cite this repository
-Demleitner A., Raemy J.A. (2021). pia-data-model (version 0.1.1). DOI: https://doi.org/10.5281/zenodo.5142606
+Demleitner A., Raemy J.A. (2021). PIA Data Model (version 0.1.1). DOI: https://doi.org/10.5281/zenodo.5142606
 [![DOI](https://zenodo.org/badge/363361989.svg)](https://zenodo.org/badge/latestdoi/363361989) 
 
 Or, alternatively, use the "Cite this repository" function 
