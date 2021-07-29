@@ -7,6 +7,7 @@ authors:
   given-names: "Julien Antoine"
   orcid: "https://orcid.org/0000-0002-4711-5759"
 title: "PIA Data Model"
+license: "MIT License"
 version: 0.1.1
 doi: 10.5281/zenodo.5142606
 date-released: 2021-07-28
