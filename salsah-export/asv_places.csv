@@ -5,7 +5,7 @@ asv id,latitude,longitude,name,desc,color,source,precision
 4,46.264418,6.157064,Genthod,"Genthod, GENÈVE, CH",,MapQuest,city/town
 5,46.236763,6.269155,Jussy,"Jussy, GENÈVE, CH",,MapQuest,city/town
 6,46.316338,6.192951,Coppet,"Coppet, VAUD, CH",,MapQuest,city/town
-7,47.595602,8.783005,Nyon-Prangins,"Neunforn, THURGAU, CH",,MapQuest,city/town
+7,46.393030,6.250580,Nyon-Prangins,"Nyon-Prangins, CH",,MapQuest,city/town
 8,46.446839,6.157778,St. Cergue,"Saint-Cergue, VAUD, CH",,MapQuest,city/town
 9,46.459061,6.341098,Rolle,"Rolle, VAUD, CH",,MapQuest,city/town
 10,46.509327,6.498317,Morges,"Morges, VAUD, CH",,MapQuest,city/town
@@ -23,7 +23,7 @@ asv id,latitude,longitude,name,desc,color,source,precision
 22,46.030068,7.145363,Orsières,"Orsières, VALAIS - WALLIS, CH",,MapQuest,city/town
 23,46.075744,7.075126,Le Châble,"Les Valettes, VALAIS - WALLIS, CH",,MapQuest,city/town
 24,46.11273,7.495707,Evolène,"Evolène, VALAIS - WALLIS, CH",,MapQuest,city/town
-25,46.024452,8.932552,Vissoie,"Vezia, TICINO, CH",,MapQuest,city/town
+25,46.215200,7.585690,Vissoie,"Vezia, TICINO, CH",,MapQuest,city/town
 26,46.292252,7.53232,Sierre,"Sierre, VALAIS - WALLIS, CH",,MapQuest,city/town
 27,46.346379,7.537519,Mollens,"Mollens, CH",,MapQuest,city/town
 28,46.231175,7.35888,Sitten,"Sion, VALAIS - WALLIS, CH",,MapQuest,city/town
@@ -179,7 +179,7 @@ asv id,latitude,longitude,name,desc,color,source,precision
 178,46.559458,7.892932,Mürren,"Mürren, BERN - BERNE, CH",,MapQuest,city/town
 179,46.587502,7.643833,Frutigen,"Frutigen, BERN - BERNE, CH",,MapQuest,city/town
 180,46.553261,7.373806,Zweisimmen,"Zweisimmen, BERN - BERNE, CH",,MapQuest,city/town
-181,47.327748,9.22689,Saanen-Gstaad,"Schönengrund, APPENZELL AUSSERRHODEN, CH",,MapQuest,city/town
+181,46.472930,7.286370,Saanen-Gstaad,"Schönengrund, APPENZELL AUSSERRHODEN, CH",,MapQuest,city/town
 182,46.38512,7.269732,Gsteig,"Gsteig, BERN - BERNE, CH",,MapQuest,city/town
 183,46.455888,7.441698,Lenk,"Lenk, BERN - BERNE, CH",,MapQuest,city/town
 184,46.492721,7.558762,Adelboden,"Adelboden, BERN - BERNE, CH",,MapQuest,city/town
@@ -197,7 +197,7 @@ asv id,latitude,longitude,name,desc,color,source,precision
 196,46.314982,7.645981,Leuk,"Leuk, CH",,MapQuest,city/town
 197,46.022227,7.7494,Zermatt,"Zermatt, VALAIS - WALLIS, CH",,MapQuest,city/town
 198,46.127844,7.937005,Saas-Grund,"Saas-Grund, VALAIS - WALLIS, CH",,MapQuest,city/town
-199,47.139085,6.966539,Simpeln,"Sonvilier, BERN - BERNE, CH",,MapQuest,city/town
+199,46.195630,8.055270,Simpeln,"Sonvilier, BERN - BERNE, CH",,MapQuest,city/town
 200,47.748379,8.482756,Schleitheim,"Schleitheim, SCHAFFHAUSEN, CH",,MapQuest,city/town
 201,47.734522,8.57974,Hemmenthal,"Hemmental, SCHAFFHAUSEN, CH",,MapQuest,city/town
 202,47.74595,8.706769,Thayngen,"Thayngen, SCHAFFHAUSEN, CH",,MapQuest,city/town
@@ -210,7 +210,7 @@ asv id,latitude,longitude,name,desc,color,source,precision
 209,47.568452,8.418364,Kaiserstuhl,"Kaiserstuhl, ARGOVIA, CH",,MapQuest,city/town
 210,47.573321,8.523983,Eglisau,"Eglisau, ZURICH, CH",,MapQuest,city/town
 211,47.595333,8.679434,Andelfingen,"Andelfingen, ZURICH, CH",,MapQuest,city/town
-212,47.661371,8.858237,Stammheim,"Stein am Rhein, SCHAFFHAUSEN, CH",,MapQuest,city/town
+212,47.6342305,8.7903122,Stammheim,"Stammheim, CH",,MapQuest,city/town
 213,47.19917,9.228339,Stein,"Stein, ST. GALLEN, CH",,MapQuest,city/town
 214,47.665343,8.981525,Steckborn,"Steckborn, THURGAU, CH",,MapQuest,city/town
 215,47.646425,9.172556,Kreuzlingen,"Kreuzlingen, THURGAU, CH",,MapQuest,city/town
@@ -285,7 +285,7 @@ asv id,latitude,longitude,name,desc,color,source,precision
 284,47.123646,9.314992,Wallenstadt,"Walenstadt, ST. GALLEN, CH",,MapQuest,city/town
 285,47.197238,9.315907,Wildhaus,"Wildhaus, ST. GALLEN, CH",,MapQuest,city/town
 286,47.162763,9.476409,Buchs,"Buchs, ST. GALLEN, CH",,MapQuest,city/town
-287,46.421903,6.927504,Vaduz,"Veytaux, VAUD, CH",,MapQuest,city/town
+287,47.1392862,9.5227962,Vaduz,"Veytaux, VAUD, CH",,MapQuest,city/town
 288,47.048815,9.439378,Sargans,"Sargans, ST. GALLEN, CH",,MapQuest,city/town
 289,46.995494,9.071341,Schwanden,"Schwanden, GLARUS, CH",,MapQuest,city/town
 290,47.042212,9.067404,Glarus,"Glarus, GLARUS, CH",,MapQuest,city/town
@@ -305,7 +305,7 @@ asv id,latitude,longitude,name,desc,color,source,precision
 304,46.969343,9.814077,St. Antönien,"St. Antönien, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
 305,46.87979,9.860831,Klosters,"Klosters, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
 306,46.936996,9.566524,Zizers,"Zizers, Landquart, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
-307,46.421903,6.927504,Vättis,"Veytaux, VAUD, CH",,MapQuest,city/town
+307,46.9098162,9.4415215,Vättis,"Vättis, CH",,MapQuest,city/town
 308,46.863934,8.770358,Unterschächen,"Unterschächen, URI, CH",,MapQuest,city/town
 309,46.886467,8.638399,Altdorf,"Altdorf, URI, CH",,MapQuest,city/town
 310,46.910246,8.562013,Isenthal,"Isenthal, URI, CH",,MapQuest,city/town
@@ -341,7 +341,7 @@ asv id,latitude,longitude,name,desc,color,source,precision
 340,46.719281,9.173128,Villa,"Vella, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
 341,46.681809,9.316042,Safien,"Safien, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
 342,46.697852,9.439328,Thusis,"Thusis, Hinterrhein, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
-343,46.183916,6.122405,Lansch,"Lancy, GENÈVE, CH",,MapQuest,city/town
+343,46.685401,9.5625528,Lantsch,"Lantsch, CH",,MapQuest,city/town
 344,46.673779,9.685972,Filisur,"Filisur, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
 345,46.630287,9.746505,Bravuogn,"Bergün, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
 346,46.697984,10.094331,Zernez,"Zernez, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
@@ -410,6 +410,6 @@ asv id,latitude,longitude,name,desc,color,source,precision
 56a,46.72119,6.5362,Rances s. Orbe,"Granges-Saint-Martin, Orbe, Vaud, CH",,MapQuest,street
 57a,46.829049,6.59485,Novalles,"Novalles, VAUD, CH",,MapQuest,city/town
 57b,47.01303,6.69865,La Chaux s. Ste-Croix,"La Croix, La Chaux-du-Milieu, Neuchâtel, CH",,MapQuest,street
-74a,46.719281,9.173128,Vuilly,"Vella, GRAUBÜNDEN - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
+74a,46.952336700000004,7.075442816257885,Vuilly,"Vuilly - GRIGIONI - GRISCHUN, CH",,MapQuest,city/town
 76a,47.014548,6.704515,La Chaux-du-Milieu,"La Chaux-Du-Milieu, NEUCHÂTEL, CH",,MapQuest,city/town
 7a,46.409451,6.177917,Gingins,"Gingins, VAUD, CH",,MapQuest,city/town
