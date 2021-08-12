@@ -1,0 +1,12 @@
+@prefix schema: <https://schema.org/> .
+
+<http://data.pia.ch/1234>
+  a <https://schema.org/Place> ;
+  schema:name "Basel"@de, "Bâle"@fr ;
+  schema:identifier "99" ;
+  schema:sameAs <http://sws.geonames.org/2661604> ;
+  schema:geo [
+    a schema:GeoCoordinates ;
+    schema:latitude "47.558108" ;
+    schema:longitude "7.587826"
+  ] .
