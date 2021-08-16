@@ -42,7 +42,19 @@ cd dbml\ model/
 dbml2sql pia_datamodel.dbml
 ````
 
-The process generates the sql file which than can be used to setup a database.
+The process generates the sql file which than can be used to setup a database. Don't forget to add usage rights to your postgresql user.
+
+```bash
+sudo -u postgres -i
+psql
+create database pia;
+exit;
+psql pia < pia_populated.sql
+psql
+\c pia
+grant all privileges on all tables in schema public to {user};
+grant all privileges on all sequences in schema public to {user};
+```
 
 ## Licenses and citation
 ### To cite this repository

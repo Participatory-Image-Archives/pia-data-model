@@ -1,0 +1,304 @@
+// dbml documentation: https://www.dbml.org/
+// schema documentation https://dbdocs.io/thgie/pia_datamodel
+
+// DROP SCHEMA public CASCADE;
+// CREATE SCHEMA public;
+
+// Brunner, Kreis - Image-centered
+Table Image {
+  id int [pk, increment]
+  salsah_id int
+  oldnr varchar
+  signature varchar
+  title varchar
+  original_title varchar
+  
+  date date[]
+  salsah_date varchar
+  sequence_number varchar
+  
+  comment int [ref: - Comment.id]
+  location int [ref: > Location.id]
+  collection int [ref: - Collection.id]
+  verso int [ref: - Image.id]
+
+  objecttype int [ref: > ObjectType.id]
+  model int [ref: > Model.id]
+  format int [ref: > Format.id]
+
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table References_Images {
+  image_a int
+  image_b int
+}
+
+Table Keyword {
+  id int [pk, increment]
+  salsah_id int
+  label varchar
+  alt_label varchar[]
+  description varchar
+  origin varchar
+  aat_id int
+  aat_url varchar
+
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table Images_Keywords {
+  image_id int [ref: > Image.id]
+  keyword_id int [ref: > Keyword.id]
+}
+
+Table Comment {
+  id int [pk, increment]
+  comment varchar[]
+  
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table Location {
+  id int [pk, increment]
+  label varchar
+  geonames_id int
+  geonames_url varchar
+  latitude float
+  longitude float
+
+  place_id int [ref: - Place.id]
+
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table ObjectType {
+  id int [pk, increment]
+  label varchar
+  comment varchar
+  aat_id int
+  aat_url varchar
+  
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table Model {
+  id int [pk, increment]
+  label varchar
+  comment varchar
+  aat_id int
+  aat_url varchar
+  
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table Format {
+  id int [pk, increment]
+  label varchar
+  comment varchar
+  
+  created_at timestamp
+  updated_at timestamp
+}
+
+
+Table Person {
+  id int [pk, increment]
+  salsah_id int
+  name varchar
+  alt_name varchar[]
+  title varchar
+  family varchar
+  gnd_id int
+  gnd_url varchar
+  birthplace int [ref: > Location.id]
+  deathplace int [ref: > Location.id]
+  birthdate date[]
+  deathdate date[]
+  salsah_birthdate varchar
+  salsah_deathdate varchar
+  job varchar[]
+  description text
+  literature varchar[]
+  comment int [ref: - Comment.id]
+  
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table Images_Content {
+  image_id int [ref: > Image.id]
+  person_id int [ref: > Person.id]
+}
+
+Table Images_People {
+  image_id int [ref: > Image.id]
+  person_id int [ref: > Person.id]
+}
+
+Table Images_Copyright {
+  image_id int [ref: > Image.id]
+  person_id int [ref: > Person.id]
+}
+
+// Collections
+Table Collection {
+  id int [pk, increment]
+  salsah_id int
+
+  title varchar[]
+  label varchar
+  signature varchar
+  description text
+  default_image varchar
+  embedded_video varchar
+
+  date date[]
+  salsah_date varchar[]
+
+  literature varchar[]
+  comment int [ref: - Comment.id]
+  indexing int [ref: - Comment.id]
+  
+  created_at timestamp
+  updated_at timestamp
+}
+Table Collections_People {
+  collection_id int [ref: > Collection.id]
+  person_id int [ref: > Person.id]
+}
+Table Album {
+  id int [pk, increment]
+  salsah_id int
+
+  title varchar
+  label varchar
+  signature varchar
+  description text
+
+  date date[]
+  salsah_date varchar[]
+
+  objecttype int [ref: > ObjectType.id]
+  collection int [ref: - Collection.id]
+  comment int [ref: - Comment.id]
+  indexing int [ref: - Comment.id]
+  
+  created_at timestamp
+  updated_at timestamp
+}
+Table Albums_People {
+  album_id int [ref: > Album.id]
+  person_id int [ref: > Person.id]
+}
+Table Albums_Images {
+  album_id int [ref: > Album.id]
+  image_id int [ref: > Image.id]
+}
+
+// Document and Context Objects
+// Notes, Protocols, etc
+Table Document {
+  id int [pk, increment]
+  object_type int [ref: > ObjectType.id]
+  model int [ref: > Model.id]
+  format int [ref: > Format.id]
+  
+  created_at timestamp
+  updated_at timestamp
+}
+
+// Map based Model (comming from Atlas)
+Table Map {
+  id int [pk, increment]
+  label varchar
+  description varchar
+
+  legend_id int [ref: - Legend.id]
+
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table MapLayer {
+  id int [pk, increment]
+  label varchar
+  map int [ref: - Map.id]
+
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table MapEntry {
+  id int [pk, increment]
+  label varchar
+  description varchar
+
+  type int
+  complex_data varchar
+
+  map_id int
+  place_id int [ref: - Place.id]
+  location_id int
+  legend_entry_id int [ref: - LegendEntry.id]
+
+  created_at timestamp
+  updated_at timestamp
+
+  Note: '''
+    Type can be either:
+      0: place, refering to a place and getting coordinates from there
+      1: precise, which is a marker placed on the map by hand; leading to the creation of a location
+      2: complex, which is mutiple markers, a shape or line or an image; stores the information in complex_data
+      3: image, image placed by hand; stores information in complex_data
+  '''
+}
+
+Ref: Map.id < MapEntry.map_id [delete: cascade]
+
+Table Place {
+  id int [pk, increment]
+  asv_id varchar
+  label varchar
+
+  collection_id int
+  location_id int [ref: - Location.id]
+
+  created_at timestamp
+  updated_at timestamp
+
+  Note: '''
+    A Place is an unprecise concept related to geography.
+  '''
+}
+
+Table Legend {
+  id int [pk, increment]
+  label varchar
+
+  map_id int
+
+  created_at timestamp
+  updated_at timestamp
+}
+
+Ref: Map.id - Legend.map_id [delete: cascade]
+
+Table LegendEntry {
+  id int [pk, increment]
+  label varchar
+
+  icon varchar
+  legend_id int
+  
+  created_at timestamp
+  updated_at timestamp
+}
+
+Ref: Legend.id < LegendEntry.legend_id [delete: cascade]
