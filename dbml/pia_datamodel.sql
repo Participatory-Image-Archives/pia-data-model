@@ -1,6 +1,6 @@
 -- SQL dump generated using DBML (dbml-lang.org)
 -- Database: PostgreSQL
--- Generated at: 2021-08-16T13:23:55.090Z
+-- Generated at: 2021-08-18T13:37:11.398Z
 
 CREATE TABLE "Image" (
   "id" SERIAL PRIMARY KEY,
@@ -9,6 +9,8 @@ CREATE TABLE "Image" (
   "signature" varchar,
   "title" varchar,
   "original_title" varchar,
+  "file_name" varchar,
+  "original_file_name" varchar,
   "date" date[],
   "salsah_date" varchar,
   "sequence_number" varchar,
@@ -213,6 +215,7 @@ CREATE TABLE "MapEntry" (
   "description" varchar,
   "type" int,
   "complex_data" varchar,
+  "image_id" int,
   "map_id" int,
   "place_id" int,
   "location_id" int,
@@ -319,6 +322,8 @@ ALTER TABLE "Document" ADD FOREIGN KEY ("format") REFERENCES "Format" ("id");
 ALTER TABLE "Map" ADD FOREIGN KEY ("legend_id") REFERENCES "Legend" ("id");
 
 ALTER TABLE "MapLayer" ADD FOREIGN KEY ("map") REFERENCES "Map" ("id");
+
+ALTER TABLE "MapEntry" ADD FOREIGN KEY ("image_id") REFERENCES "Image" ("id");
 
 ALTER TABLE "MapEntry" ADD FOREIGN KEY ("place_id") REFERENCES "Place" ("id");
 

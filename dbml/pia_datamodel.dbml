@@ -13,6 +13,9 @@ Table Image {
   title varchar
   original_title varchar
   
+  file_name varchar
+  original_file_name varchar
+  
   date date[]
   salsah_date varchar
   sequence_number varchar
@@ -242,6 +245,7 @@ Table MapEntry {
 
   type int
   complex_data varchar
+  image_id int [ref: - Image.id]
 
   map_id int
   place_id int [ref: - Place.id]
