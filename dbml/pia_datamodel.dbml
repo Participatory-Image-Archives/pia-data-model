@@ -250,7 +250,7 @@ Table MapEntry {
   map_id int
   place_id int [ref: - Place.id]
   location_id int
-  legend_entry_id int [ref: - LegendEntry.id]
+  legend_entry_ids int[]
 
   created_at timestamp
   updated_at timestamp
@@ -299,6 +299,8 @@ Table LegendEntry {
   label varchar
 
   icon varchar
+  icon_file_name varchar
+  original_icon_file_name varchar
   legend_id int
   
   created_at timestamp

@@ -1,6 +1,6 @@
 -- SQL dump generated using DBML (dbml-lang.org)
 -- Database: PostgreSQL
--- Generated at: 2021-08-18T13:37:11.398Z
+-- Generated at: 2021-08-19T13:50:49.616Z
 
 CREATE TABLE "Image" (
   "id" SERIAL PRIMARY KEY,
@@ -219,7 +219,7 @@ CREATE TABLE "MapEntry" (
   "map_id" int,
   "place_id" int,
   "location_id" int,
-  "legend_entry_id" int,
+  "legend_entry_ids" int[],
   "created_at" timestamp,
   "updated_at" timestamp
 );
@@ -246,6 +246,8 @@ CREATE TABLE "LegendEntry" (
   "id" SERIAL PRIMARY KEY,
   "label" varchar,
   "icon" varchar,
+  "icon_file_name" varchar,
+  "original_icon_file_name" varchar,
   "legend_id" int,
   "created_at" timestamp,
   "updated_at" timestamp
@@ -326,8 +328,6 @@ ALTER TABLE "MapLayer" ADD FOREIGN KEY ("map") REFERENCES "Map" ("id");
 ALTER TABLE "MapEntry" ADD FOREIGN KEY ("image_id") REFERENCES "Image" ("id");
 
 ALTER TABLE "MapEntry" ADD FOREIGN KEY ("place_id") REFERENCES "Place" ("id");
-
-ALTER TABLE "MapEntry" ADD FOREIGN KEY ("legend_entry_id") REFERENCES "LegendEntry" ("id");
 
 ALTER TABLE "MapEntry" ADD FOREIGN KEY ("map_id") REFERENCES "Map" ("id") ON DELETE CASCADE;
 
