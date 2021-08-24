@@ -4,8 +4,92 @@
 // DROP SCHEMA public CASCADE;
 // CREATE SCHEMA public;
 
-// Brunner, Kreis - Image-centered
-Table Image {
+// basic ontology entities
+Table locations {
+  id int [pk, increment]
+  label varchar
+  geonames_id int
+  geonames_url varchar
+  latitude float
+  longitude float
+
+  place_id int [ref: - places.id]
+
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table places {
+  id int [pk, increment]
+  asv_id varchar
+  label varchar
+
+  collection_id int
+  location_id int [ref: - locations.id]
+
+  created_at timestamp
+  updated_at timestamp
+
+  Note: '''
+    A Place is an unprecise concept related to geography.
+  '''
+}
+
+Table dates {
+  id int [pk, increment]
+  date date
+  date_string varchar
+  type int
+
+  created_at timestamp
+  updated_at timestamp
+
+  Note: '''
+    Type can be either:
+      1: date, a simple date with unclear definition (often it designates)
+      2: start_date, in case of a daterange
+      3: end_date, in case of a daterange
+      4: birth_date, for a person
+      5: death_date, for a person
+  '''
+}
+
+Table keywords {
+  id int [pk, increment]
+  salsah_id int
+  label varchar
+  description varchar
+  origin varchar
+  aat_id int
+  aat_url varchar
+
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table alt_labels {
+  id int [pk, increment]
+  label varchar
+
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table keyword_alt_label {
+  keyword_id int
+  alt_label_id int
+}
+
+Table comments {
+  id int [pk, increment]
+  comment varchar
+  
+  created_at timestamp
+  updated_at timestamp
+}
+
+// sgv specific entities
+Table images {
   id int [pk, increment]
   salsah_id int
   oldnr varchar
@@ -16,70 +100,61 @@ Table Image {
   file_name varchar
   original_file_name varchar
   
-  date date[]
   salsah_date varchar
   sequence_number varchar
   
-  comment int [ref: - Comment.id]
-  location int [ref: > Location.id]
-  collection int [ref: - Collection.id]
-  verso int [ref: - Image.id]
+  location int [ref: > locations.id]
+  collection int [ref: - collections.id]
+  verso int [ref: - images.id]
 
-  objecttype int [ref: > ObjectType.id]
-  model int [ref: > Model.id]
-  format int [ref: > Format.id]
+  objecttype int [ref: > object_types.id]
+  model int [ref: > models.id]
+  format int [ref: > formats.id]
 
   created_at timestamp
   updated_at timestamp
+
+  Note: '''
+    An image can have
+    - dates
+    - people, displayed or as copyright
+    - references to other images
+    - keywords
+    - comments
+  '''
 }
 
-Table References_Images {
+Table image_date {
+  image_id int
+  date_id int
+}
+
+Table image_person {
+  image_id int
+  person_id int
+}
+
+Table image_copyright {
+  image_id int
+  person_id int
+}
+
+Table image_image {
   image_a int
   image_b int
 }
 
-Table Keyword {
-  id int [pk, increment]
-  salsah_id int
-  label varchar
-  alt_label varchar[]
-  description varchar
-  origin varchar
-  aat_id int
-  aat_url varchar
-
-  created_at timestamp
-  updated_at timestamp
+Table image_keyword {
+  image_id int [ref: > images.id]
+  keyword_id int [ref: > keywords.id]
 }
 
-Table Images_Keywords {
-  image_id int [ref: > Image.id]
-  keyword_id int [ref: > Keyword.id]
+Table image_comment {
+  image_id int
+  comment_id int
 }
 
-Table Comment {
-  id int [pk, increment]
-  comment varchar[]
-  
-  created_at timestamp
-  updated_at timestamp
-}
-
-Table Location {
-  id int [pk, increment]
-  label varchar
-  geonames_id int
-  geonames_url varchar
-  latitude float
-  longitude float
-
-  place_id int [ref: - Place.id]
-
-  created_at timestamp
-  updated_at timestamp
-}
-
-Table ObjectType {
+Table object_types {
   id int [pk, increment]
   label varchar
   comment varchar
@@ -90,7 +165,7 @@ Table ObjectType {
   updated_at timestamp
 }
 
-Table Model {
+Table models {
   id int [pk, increment]
   label varchar
   comment varchar
@@ -101,7 +176,7 @@ Table Model {
   updated_at timestamp
 }
 
-Table Format {
+Table formats {
   id int [pk, increment]
   label varchar
   comment varchar
@@ -110,73 +185,106 @@ Table Format {
   updated_at timestamp
 }
 
-
-Table Person {
+Table people {
   id int [pk, increment]
   salsah_id int
   name varchar
-  alt_name varchar[]
+
   title varchar
   family varchar
   gnd_id int
   gnd_url varchar
-  birthplace int [ref: > Location.id]
-  deathplace int [ref: > Location.id]
-  birthdate date[]
-  deathdate date[]
-  salsah_birthdate varchar
-  salsah_deathdate varchar
-  job varchar[]
+  birthplace int
+  deathplace int
+
   description text
-  literature varchar[]
-  comment int [ref: - Comment.id]
   
   created_at timestamp
   updated_at timestamp
 }
 
-Table Images_Content {
-  image_id int [ref: > Image.id]
-  person_id int [ref: > Person.id]
+Table person_date {
+  person_id int
+  date_id int
 }
 
-Table Images_People {
-  image_id int [ref: > Image.id]
-  person_id int [ref: > Person.id]
+Table person_comment {
+  person_id int
+  comment_id int
 }
 
-Table Images_Copyright {
-  image_id int [ref: > Image.id]
-  person_id int [ref: > Person.id]
+Table jobs {
+  id int [pk, increment]
+  label varchar
+  
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table literatures {
+  id int [pk, increment]
+  label varchar
+  
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table person_job {
+  person_id int
+  job_id int
+}
+
+Table person_literature {
+  person_id int
+  literature_id int
+}
+
+Table person_alt_label {
+  person_id int
+  alt_label_id int
 }
 
 // Collections
-Table Collection {
+Table collections {
   id int [pk, increment]
   salsah_id int
 
-  title varchar[]
   label varchar
   signature varchar
   description text
   default_image varchar
   embedded_video varchar
-
-  date date[]
-  salsah_date varchar[]
-
-  literature varchar[]
-  comment int [ref: - Comment.id]
-  indexing int [ref: - Comment.id]
   
   created_at timestamp
   updated_at timestamp
 }
-Table Collections_People {
-  collection_id int [ref: > Collection.id]
-  person_id int [ref: > Person.id]
+
+Table collection_comment {
+  collection_id int
+  comment_id int
 }
-Table Album {
+
+Table collection_person {
+  collection_id int
+  person_id int
+}
+
+Table collection_literature {
+  collection_id int
+  literature_id int
+}
+
+Table collection_date {
+  collection_id int
+  date_id int
+}
+
+Table collection_alt_label {
+  collection_id int
+  alt_label_id int
+}
+
+Table albums {
   id int [pk, increment]
   salsah_id int
 
@@ -185,72 +293,75 @@ Table Album {
   signature varchar
   description text
 
-  date date[]
-  salsah_date varchar[]
-
-  objecttype int [ref: > ObjectType.id]
-  collection int [ref: - Collection.id]
-  comment int [ref: - Comment.id]
-  indexing int [ref: - Comment.id]
+  objecttype int [ref: > object_types.id]
+  collection int [ref: - collections.id]
   
   created_at timestamp
   updated_at timestamp
 }
-Table Albums_People {
-  album_id int [ref: > Album.id]
-  person_id int [ref: > Person.id]
+Table album_date {
+  album_id int
+  date_id int
 }
-Table Albums_Images {
-  album_id int [ref: > Album.id]
-  image_id int [ref: > Image.id]
+Table album_person {
+  album_id int [ref: > albums.id]
+  person_id int [ref: > people.id]
+}
+Table album_image {
+  album_id int [ref: > albums.id]
+  image_id int [ref: > images.id]
+}
+
+Table album_comment {
+  album_id int
+  comment_id int
 }
 
 // Document and Context Objects
 // Notes, Protocols, etc
-Table Document {
+Table documents {
   id int [pk, increment]
-  object_type int [ref: > ObjectType.id]
-  model int [ref: > Model.id]
-  format int [ref: > Format.id]
+  object_type int [ref: > object_types.id]
+  model int [ref: > models.id]
+  format int [ref: > formats.id]
   
   created_at timestamp
   updated_at timestamp
 }
 
 // Map based Model (comming from Atlas)
-Table Map {
+Table maps {
   id int [pk, increment]
   label varchar
   description varchar
 
-  legend_id int [ref: - Legend.id]
+  map_key_id int [ref: - map_keys.id]
 
   created_at timestamp
   updated_at timestamp
 }
 
-Table MapLayer {
+Table map_layers {
   id int [pk, increment]
   label varchar
-  map int [ref: - Map.id]
+  map int [ref: - maps.id]
 
   created_at timestamp
   updated_at timestamp
 }
 
-Table MapEntry {
+Table map_entries {
   id int [pk, increment]
   label varchar
   description varchar
 
   type int
   complex_data varchar
-  image_id int [ref: - Image.id]
+  image_id int [ref: - images.id]
 
   map_id int
-  place_id int [ref: - Place.id]
+  place_id int [ref: - places.id]
   location_id int
-  legend_entry_ids int[]
 
   created_at timestamp
   updated_at timestamp
@@ -264,25 +375,10 @@ Table MapEntry {
   '''
 }
 
-Ref: Map.id < MapEntry.map_id [delete: cascade]
+Ref: maps.id < map_entries.map_id [delete: cascade]
 
-Table Place {
-  id int [pk, increment]
-  asv_id varchar
-  label varchar
-
-  collection_id int
-  location_id int [ref: - Location.id]
-
-  created_at timestamp
-  updated_at timestamp
-
-  Note: '''
-    A Place is an unprecise concept related to geography.
-  '''
-}
-
-Table Legend {
+// map keys aka legend
+Table map_keys {
   id int [pk, increment]
   label varchar
 
@@ -292,19 +388,24 @@ Table Legend {
   updated_at timestamp
 }
 
-Ref: Map.id - Legend.map_id [delete: cascade]
+Ref: maps.id - map_keys.map_id [delete: cascade]
 
-Table LegendEntry {
+Table map_key_entries {
   id int [pk, increment]
   label varchar
 
   icon varchar
   icon_file_name varchar
   original_icon_file_name varchar
-  legend_id int
+  map_key_id int
   
   created_at timestamp
   updated_at timestamp
 }
 
-Ref: Legend.id < LegendEntry.legend_id [delete: cascade]
+Ref: map_keys.id < map_key_entries.map_key_id [delete: cascade]
+
+Table map_entry_map_key_entry {
+  map_entry_id int
+  map_key_entry_id int
+}
