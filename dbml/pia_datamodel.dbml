@@ -1,10 +1,48 @@
-// dbml documentation: https://www.dbml.org/
-// schema documentation https://dbdocs.io/thgie/pia_datamodel
+Project PIA {
+  Note: '''
+    # PIA
 
-// DROP SCHEMA public CASCADE;
-// CREATE SCHEMA public;
+    ## Tables
 
+    *basics entities*
+    - locations
+    - places
+    - people
+    - dates
+    - keywords
+    - comments
+    - documents
+
+    *slightly more specific entities*
+    - jobs
+    - literatures
+
+    *sgv*
+    - collections
+    - albums
+    - images
+    - object_types
+    - models
+    - formats
+
+    *mapping/asv*
+    - maps
+    - map_layers
+    - map_entries
+    - map_keys
+    - map_key_entries
+
+    To drop the schema:
+
+      DROP SCHEMA public CASCADE;
+      CREATE SCHEMA public;
+  '''
+}
+
+//
 // basic ontology entities
+//
+
 Table locations {
   id int [pk, increment]
   label varchar
@@ -17,6 +55,10 @@ Table locations {
 
   created_at timestamp
   updated_at timestamp
+
+  Note: '''
+    “Location” is defined as “the specific area where a place is situated.”
+  '''
 }
 
 Table places {
@@ -31,7 +73,7 @@ Table places {
   updated_at timestamp
 
   Note: '''
-    A Place is an unprecise concept related to geography.
+    See locations.
   '''
 }
 
@@ -76,8 +118,8 @@ Table alt_labels {
 }
 
 Table keyword_alt_label {
-  keyword_id int
-  alt_label_id int
+  keyword_id int [ref: - keywords.id]
+  alt_label_id int [ref: - alt_labels.id]
 }
 
 Table comments {
@@ -88,7 +130,83 @@ Table comments {
   updated_at timestamp
 }
 
+Table documents {
+  id int [pk, increment]
+  object_type int [ref: > object_types.id]
+  model int [ref: > models.id]
+  format int [ref: > formats.id]
+  
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table people {
+  id int [pk, increment]
+  salsah_id int
+  name varchar
+
+  title varchar
+  family varchar
+  gnd_id int
+  gnd_url varchar
+  birthplace int
+  deathplace int
+
+  description text
+  
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table person_date {
+  person_id int [ref: - people.id]
+  date_id int [ref: - dates.id]
+}
+
+Table person_comment {
+  person_id int [ref: - people.id]
+  comment_id int [ref: - comments.id]
+}
+
+Table person_job {
+  person_id int [ref: - people.id]
+  job_id int [ref: - jobs.id]
+}
+
+Table person_literature {
+  person_id int [ref: - people.id]
+  literature_id int [ref: - literatures.id]
+}
+
+Table person_alt_label {
+  person_id int [ref: - people.id]
+  alt_label_id int [ref: - alt_labels.id]
+}
+
+//
+// slightly more specific entities
+//
+
+Table jobs {
+  id int [pk, increment]
+  label varchar
+  
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table literatures {
+  id int [pk, increment]
+  label varchar
+  
+  created_at timestamp
+  updated_at timestamp
+}
+
+//
 // sgv specific entities
+//
+
 Table images {
   id int [pk, increment]
   salsah_id int
@@ -125,33 +243,33 @@ Table images {
 }
 
 Table image_date {
-  image_id int
-  date_id int
+  image_id int [ref: - images.id]
+  date_id int [ref: - dates.id]
 }
 
 Table image_person {
-  image_id int
-  person_id int
+  image_id int [ref: - images.id]
+  person_id int [ref: - people.id]
 }
 
 Table image_copyright {
-  image_id int
-  person_id int
+  image_id int [ref: - images.id]
+  person_id int [ref: - people.id]
 }
 
 Table image_image {
-  image_a int
-  image_b int
+  image_a int [ref: - images.id]
+  image_b int [ref: - images.id]
 }
 
 Table image_keyword {
-  image_id int [ref: > images.id]
-  keyword_id int [ref: > keywords.id]
+  image_id int [ref: - images.id]
+  keyword_id int [ref: - keywords.id]
 }
 
 Table image_comment {
-  image_id int
-  comment_id int
+  image_id int [ref: - images.id]
+  comment_id int [ref: - comments.id]
 }
 
 Table object_types {
@@ -185,66 +303,9 @@ Table formats {
   updated_at timestamp
 }
 
-Table people {
-  id int [pk, increment]
-  salsah_id int
-  name varchar
-
-  title varchar
-  family varchar
-  gnd_id int
-  gnd_url varchar
-  birthplace int
-  deathplace int
-
-  description text
-  
-  created_at timestamp
-  updated_at timestamp
-}
-
-Table person_date {
-  person_id int
-  date_id int
-}
-
-Table person_comment {
-  person_id int
-  comment_id int
-}
-
-Table jobs {
-  id int [pk, increment]
-  label varchar
-  
-  created_at timestamp
-  updated_at timestamp
-}
-
-Table literatures {
-  id int [pk, increment]
-  label varchar
-  
-  created_at timestamp
-  updated_at timestamp
-}
-
-Table person_job {
-  person_id int
-  job_id int
-}
-
-Table person_literature {
-  person_id int
-  literature_id int
-}
-
-Table person_alt_label {
-  person_id int
-  alt_label_id int
-}
-
-// Collections
+//
+// collections and albums
+//
 Table collections {
   id int [pk, increment]
   salsah_id int
@@ -260,28 +321,28 @@ Table collections {
 }
 
 Table collection_comment {
-  collection_id int
-  comment_id int
+  collection_id int [ref: - collections.id]
+  comment_id int [ref: - comments.id]
 }
 
 Table collection_person {
-  collection_id int
-  person_id int
+  collection_id int [ref: - collections.id]
+  person_id int [ref: - people.id]
 }
 
 Table collection_literature {
-  collection_id int
-  literature_id int
+  collection_id int [ref: - collections.id]
+  literature_id int [ref: - literatures.id]
 }
 
 Table collection_date {
-  collection_id int
-  date_id int
+  collection_id int [ref: - collections.id]
+  date_id int [ref: - dates.id]
 }
 
 Table collection_alt_label {
-  collection_id int
-  alt_label_id int
+  collection_id int [ref: - collections.id]
+  alt_label_id int [ref: - alt_labels.id]
 }
 
 Table albums {
@@ -300,36 +361,27 @@ Table albums {
   updated_at timestamp
 }
 Table album_date {
-  album_id int
-  date_id int
+  album_id int [ref: - albums.id]
+  date_id int [ref: - dates.id]
 }
 Table album_person {
-  album_id int [ref: > albums.id]
-  person_id int [ref: > people.id]
+  album_id int [ref: - albums.id]
+  person_id int [ref: - people.id]
 }
 Table album_image {
-  album_id int [ref: > albums.id]
-  image_id int [ref: > images.id]
+  album_id int [ref: - albums.id]
+  image_id int [ref: - images.id]
 }
 
 Table album_comment {
-  album_id int
-  comment_id int
+  album_id int [ref: - albums.id]
+  comment_id int [ref: - comments.id]
 }
 
-// Document and Context Objects
-// Notes, Protocols, etc
-Table documents {
-  id int [pk, increment]
-  object_type int [ref: > object_types.id]
-  model int [ref: > models.id]
-  format int [ref: > formats.id]
-  
-  created_at timestamp
-  updated_at timestamp
-}
+//
+// mapping, asv
+//
 
-// Map based Model (comming from Atlas)
 Table maps {
   id int [pk, increment]
   label varchar
@@ -406,6 +458,6 @@ Table map_key_entries {
 Ref: map_keys.id < map_key_entries.map_key_id [delete: cascade]
 
 Table map_entry_map_key_entry {
-  map_entry_id int
-  map_key_entry_id int
+  map_entry_id int [ref: - map_entries.id]
+  map_key_entry_id int [ref: - map_key_entries.id]
 }
