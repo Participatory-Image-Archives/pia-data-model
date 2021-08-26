@@ -32,6 +32,10 @@ Project PIA {
     - map_keys
     - map_key_entries
 
+    Conventions
+    - tables: lower case, snake case, plural
+    - pivot tables: 
+
     To drop the schema:
 
       DROP SCHEMA public CASCADE;
@@ -118,8 +122,8 @@ Table alt_labels {
 }
 
 Table keyword_alt_label {
-  keyword_id int [ref: - keywords.id]
-  alt_label_id int [ref: - alt_labels.id]
+  keyword_id int
+  alt_label_id int
 }
 
 Table comments {
@@ -132,9 +136,11 @@ Table comments {
 
 Table documents {
   id int [pk, increment]
-  object_type int [ref: > object_types.id]
-  model int [ref: > models.id]
-  format int [ref: > formats.id]
+  label varchar
+  
+  object_type_id int [ref: > object_types.id]
+  model_id int [ref: > models.id]
+  format_id int [ref: > formats.id]
   
   created_at timestamp
   updated_at timestamp
@@ -156,31 +162,40 @@ Table people {
   
   created_at timestamp
   updated_at timestamp
+
+  Note: '''
+    A person can have
+    - dates (dates, birth, death)
+    - comments
+    - jobs
+    - related literature
+    - alternative names (alt_labels)
+  '''
 }
 
 Table person_date {
-  person_id int [ref: - people.id]
-  date_id int [ref: - dates.id]
+  person_id int
+  date_id int
 }
 
 Table person_comment {
-  person_id int [ref: - people.id]
-  comment_id int [ref: - comments.id]
+  person_id int
+  comment_id int
 }
 
 Table person_job {
-  person_id int [ref: - people.id]
-  job_id int [ref: - jobs.id]
+  person_id int
+  job_id int
 }
 
 Table person_literature {
-  person_id int [ref: - people.id]
-  literature_id int [ref: - literatures.id]
+  person_id int
+  literature_id int
 }
 
 Table person_alt_label {
-  person_id int [ref: - people.id]
-  alt_label_id int [ref: - alt_labels.id]
+  person_id int
+  alt_label_id int
 }
 
 //
@@ -220,14 +235,14 @@ Table images {
   
   salsah_date varchar
   sequence_number varchar
-  
-  location int [ref: > locations.id]
-  collection int [ref: - collections.id]
-  verso int [ref: - images.id]
 
-  objecttype int [ref: > object_types.id]
-  model int [ref: > models.id]
-  format int [ref: > formats.id]
+  collection_id int [ref: > collections.id]
+  location_id int [ref: > locations.id]
+
+  verso_id int [ref: - images.id]
+  object_type_id int [ref: > object_types.id]
+  model_id int [ref: > models.id]
+  format_id int [ref: > formats.id]
 
   created_at timestamp
   updated_at timestamp
@@ -243,33 +258,37 @@ Table images {
 }
 
 Table image_date {
-  image_id int [ref: - images.id]
-  date_id int [ref: - dates.id]
+  image_id int 
+  date_id int
+
+  Note: '''
+    TODO: Should years be described as date ranges? (zb 1937 => 1937-01-01 - 1937-12-31)
+  '''
 }
 
 Table image_person {
-  image_id int [ref: - images.id]
-  person_id int [ref: - people.id]
+  image_id int
+  person_id int
 }
 
 Table image_copyright {
-  image_id int [ref: - images.id]
-  person_id int [ref: - people.id]
+  image_id int
+  person_id int
 }
 
 Table image_image {
-  image_a int [ref: - images.id]
-  image_b int [ref: - images.id]
+  image_a int
+  image_b int
 }
 
 Table image_keyword {
-  image_id int [ref: - images.id]
-  keyword_id int [ref: - keywords.id]
+  image_id int
+  keyword_id int
 }
 
 Table image_comment {
-  image_id int [ref: - images.id]
-  comment_id int [ref: - comments.id]
+  image_id int
+  comment_id int
 }
 
 Table object_types {
@@ -318,31 +337,35 @@ Table collections {
   
   created_at timestamp
   updated_at timestamp
+
+  Note: '''
+    A collection represents the SGV collections, iE SGV_012 für Brunner
+  '''
 }
 
 Table collection_comment {
-  collection_id int [ref: - collections.id]
-  comment_id int [ref: - comments.id]
+  collection_id int
+  comment_id int
 }
 
 Table collection_person {
-  collection_id int [ref: - collections.id]
-  person_id int [ref: - people.id]
+  collection_id int
+  person_id int
 }
 
 Table collection_literature {
-  collection_id int [ref: - collections.id]
-  literature_id int [ref: - literatures.id]
+  collection_id int
+  literature_id int
 }
 
 Table collection_date {
-  collection_id int [ref: - collections.id]
-  date_id int [ref: - dates.id]
+  collection_id int
+  date_id int
 }
 
 Table collection_alt_label {
-  collection_id int [ref: - collections.id]
-  alt_label_id int [ref: - alt_labels.id]
+  collection_id int
+  alt_label_id int
 }
 
 Table albums {
@@ -354,28 +377,31 @@ Table albums {
   signature varchar
   description text
 
-  objecttype int [ref: > object_types.id]
-  collection int [ref: - collections.id]
+  object_type_id int [ref: > object_types.id]
+  collection_id int [ref: - collections.id]
   
   created_at timestamp
   updated_at timestamp
 }
+
 Table album_date {
-  album_id int [ref: - albums.id]
-  date_id int [ref: - dates.id]
+  album_id int
+  date_id int
 }
+
 Table album_person {
-  album_id int [ref: - albums.id]
-  person_id int [ref: - people.id]
+  album_id int
+  person_id int
 }
+
 Table album_image {
-  album_id int [ref: - albums.id]
-  image_id int [ref: - images.id]
+  album_id int
+  image_id int
 }
 
 Table album_comment {
-  album_id int [ref: - albums.id]
-  comment_id int [ref: - comments.id]
+  album_id int
+  comment_id int
 }
 
 //
@@ -391,16 +417,27 @@ Table maps {
 
   created_at timestamp
   updated_at timestamp
+
+  Note: '''
+    A map can have
+    
+    - layers
+    - a map key (legend)
+    - entries
+  '''
 }
 
 Table map_layers {
   id int [pk, increment]
   label varchar
-  map int [ref: - maps.id]
+
+  map_id int
 
   created_at timestamp
   updated_at timestamp
 }
+
+Ref: maps.id < map_layers.map_id [delete: cascade]
 
 Table map_entries {
   id int [pk, increment]
@@ -409,10 +446,10 @@ Table map_entries {
 
   type int
   complex_data varchar
-  image_id int [ref: - images.id]
+  image_id int
 
   map_id int
-  place_id int [ref: - places.id]
+  place_id int
   location_id int
 
   created_at timestamp
@@ -458,6 +495,6 @@ Table map_key_entries {
 Ref: map_keys.id < map_key_entries.map_key_id [delete: cascade]
 
 Table map_entry_map_key_entry {
-  map_entry_id int [ref: - map_entries.id]
-  map_key_entry_id int [ref: - map_key_entries.id]
+  map_entry_id int
+  map_key_entry_id int
 }

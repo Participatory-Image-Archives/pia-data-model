@@ -1,6 +1,6 @@
 -- SQL dump generated using DBML (dbml-lang.org)
 -- Database: PostgreSQL
--- Generated at: 2021-08-24T11:44:07.678Z
+-- Generated at: 2021-08-26T13:28:54.379Z
 
 CREATE TABLE "locations" (
   "id" SERIAL PRIMARY KEY,
@@ -66,9 +66,9 @@ CREATE TABLE "comments" (
 
 CREATE TABLE "documents" (
   "id" SERIAL PRIMARY KEY,
-  "object_type" int,
-  "model" int,
-  "format" int,
+  "object_type_id" int,
+  "model_id" int,
+  "format_id" int,
   "created_at" timestamp,
   "updated_at" timestamp
 );
@@ -138,12 +138,12 @@ CREATE TABLE "images" (
   "original_file_name" varchar,
   "salsah_date" varchar,
   "sequence_number" varchar,
-  "location" int,
-  "collection" int,
-  "verso" int,
-  "objecttype" int,
-  "model" int,
-  "format" int,
+  "collection_id" int,
+  "location_id" int,
+  "verso_id" int,
+  "object_type_id" int,
+  "model_id" int,
+  "format_id" int,
   "created_at" timestamp,
   "updated_at" timestamp
 );
@@ -250,8 +250,8 @@ CREATE TABLE "albums" (
   "label" varchar,
   "signature" varchar,
   "description" text,
-  "objecttype" int,
-  "collection" int,
+  "object_type_id" int,
+  "collection_id" int,
   "created_at" timestamp,
   "updated_at" timestamp
 );
@@ -288,7 +288,7 @@ CREATE TABLE "maps" (
 CREATE TABLE "map_layers" (
   "id" SERIAL PRIMARY KEY,
   "label" varchar,
-  "map" int,
+  "map_id" int,
   "created_at" timestamp,
   "updated_at" timestamp
 );
@@ -335,129 +335,37 @@ ALTER TABLE "locations" ADD FOREIGN KEY ("place_id") REFERENCES "places" ("id");
 
 ALTER TABLE "places" ADD FOREIGN KEY ("location_id") REFERENCES "locations" ("id");
 
-ALTER TABLE "keyword_alt_label" ADD FOREIGN KEY ("keyword_id") REFERENCES "keywords" ("id");
+ALTER TABLE "documents" ADD FOREIGN KEY ("object_type_id") REFERENCES "object_types" ("id");
 
-ALTER TABLE "keyword_alt_label" ADD FOREIGN KEY ("alt_label_id") REFERENCES "alt_labels" ("id");
+ALTER TABLE "documents" ADD FOREIGN KEY ("model_id") REFERENCES "models" ("id");
 
-ALTER TABLE "documents" ADD FOREIGN KEY ("object_type") REFERENCES "object_types" ("id");
+ALTER TABLE "documents" ADD FOREIGN KEY ("format_id") REFERENCES "formats" ("id");
 
-ALTER TABLE "documents" ADD FOREIGN KEY ("model") REFERENCES "models" ("id");
+ALTER TABLE "images" ADD FOREIGN KEY ("collection_id") REFERENCES "collections" ("id");
 
-ALTER TABLE "documents" ADD FOREIGN KEY ("format") REFERENCES "formats" ("id");
+ALTER TABLE "images" ADD FOREIGN KEY ("location_id") REFERENCES "locations" ("id");
 
-ALTER TABLE "person_date" ADD FOREIGN KEY ("person_id") REFERENCES "people" ("id");
+ALTER TABLE "images" ADD FOREIGN KEY ("verso_id") REFERENCES "images" ("id");
 
-ALTER TABLE "person_date" ADD FOREIGN KEY ("date_id") REFERENCES "dates" ("id");
+ALTER TABLE "images" ADD FOREIGN KEY ("object_type_id") REFERENCES "object_types" ("id");
 
-ALTER TABLE "person_comment" ADD FOREIGN KEY ("person_id") REFERENCES "people" ("id");
+ALTER TABLE "images" ADD FOREIGN KEY ("model_id") REFERENCES "models" ("id");
 
-ALTER TABLE "person_comment" ADD FOREIGN KEY ("comment_id") REFERENCES "comments" ("id");
+ALTER TABLE "images" ADD FOREIGN KEY ("format_id") REFERENCES "formats" ("id");
 
-ALTER TABLE "person_job" ADD FOREIGN KEY ("person_id") REFERENCES "people" ("id");
+ALTER TABLE "albums" ADD FOREIGN KEY ("object_type_id") REFERENCES "object_types" ("id");
 
-ALTER TABLE "person_job" ADD FOREIGN KEY ("job_id") REFERENCES "jobs" ("id");
-
-ALTER TABLE "person_literature" ADD FOREIGN KEY ("person_id") REFERENCES "people" ("id");
-
-ALTER TABLE "person_literature" ADD FOREIGN KEY ("literature_id") REFERENCES "literatures" ("id");
-
-ALTER TABLE "person_alt_label" ADD FOREIGN KEY ("person_id") REFERENCES "people" ("id");
-
-ALTER TABLE "person_alt_label" ADD FOREIGN KEY ("alt_label_id") REFERENCES "alt_labels" ("id");
-
-ALTER TABLE "images" ADD FOREIGN KEY ("location") REFERENCES "locations" ("id");
-
-ALTER TABLE "images" ADD FOREIGN KEY ("collection") REFERENCES "collections" ("id");
-
-ALTER TABLE "images" ADD FOREIGN KEY ("verso") REFERENCES "images" ("id");
-
-ALTER TABLE "images" ADD FOREIGN KEY ("objecttype") REFERENCES "object_types" ("id");
-
-ALTER TABLE "images" ADD FOREIGN KEY ("model") REFERENCES "models" ("id");
-
-ALTER TABLE "images" ADD FOREIGN KEY ("format") REFERENCES "formats" ("id");
-
-ALTER TABLE "image_date" ADD FOREIGN KEY ("image_id") REFERENCES "images" ("id");
-
-ALTER TABLE "image_date" ADD FOREIGN KEY ("date_id") REFERENCES "dates" ("id");
-
-ALTER TABLE "image_person" ADD FOREIGN KEY ("image_id") REFERENCES "images" ("id");
-
-ALTER TABLE "image_person" ADD FOREIGN KEY ("person_id") REFERENCES "people" ("id");
-
-ALTER TABLE "image_copyright" ADD FOREIGN KEY ("image_id") REFERENCES "images" ("id");
-
-ALTER TABLE "image_copyright" ADD FOREIGN KEY ("person_id") REFERENCES "people" ("id");
-
-ALTER TABLE "image_image" ADD FOREIGN KEY ("image_a") REFERENCES "images" ("id");
-
-ALTER TABLE "image_image" ADD FOREIGN KEY ("image_b") REFERENCES "images" ("id");
-
-ALTER TABLE "image_keyword" ADD FOREIGN KEY ("image_id") REFERENCES "images" ("id");
-
-ALTER TABLE "image_keyword" ADD FOREIGN KEY ("keyword_id") REFERENCES "keywords" ("id");
-
-ALTER TABLE "image_comment" ADD FOREIGN KEY ("image_id") REFERENCES "images" ("id");
-
-ALTER TABLE "image_comment" ADD FOREIGN KEY ("comment_id") REFERENCES "comments" ("id");
-
-ALTER TABLE "collection_comment" ADD FOREIGN KEY ("collection_id") REFERENCES "collections" ("id");
-
-ALTER TABLE "collection_comment" ADD FOREIGN KEY ("comment_id") REFERENCES "comments" ("id");
-
-ALTER TABLE "collection_person" ADD FOREIGN KEY ("collection_id") REFERENCES "collections" ("id");
-
-ALTER TABLE "collection_person" ADD FOREIGN KEY ("person_id") REFERENCES "people" ("id");
-
-ALTER TABLE "collection_literature" ADD FOREIGN KEY ("collection_id") REFERENCES "collections" ("id");
-
-ALTER TABLE "collection_literature" ADD FOREIGN KEY ("literature_id") REFERENCES "literatures" ("id");
-
-ALTER TABLE "collection_date" ADD FOREIGN KEY ("collection_id") REFERENCES "collections" ("id");
-
-ALTER TABLE "collection_date" ADD FOREIGN KEY ("date_id") REFERENCES "dates" ("id");
-
-ALTER TABLE "collection_alt_label" ADD FOREIGN KEY ("collection_id") REFERENCES "collections" ("id");
-
-ALTER TABLE "collection_alt_label" ADD FOREIGN KEY ("alt_label_id") REFERENCES "alt_labels" ("id");
-
-ALTER TABLE "albums" ADD FOREIGN KEY ("objecttype") REFERENCES "object_types" ("id");
-
-ALTER TABLE "albums" ADD FOREIGN KEY ("collection") REFERENCES "collections" ("id");
-
-ALTER TABLE "album_date" ADD FOREIGN KEY ("album_id") REFERENCES "albums" ("id");
-
-ALTER TABLE "album_date" ADD FOREIGN KEY ("date_id") REFERENCES "dates" ("id");
-
-ALTER TABLE "album_person" ADD FOREIGN KEY ("album_id") REFERENCES "albums" ("id");
-
-ALTER TABLE "album_person" ADD FOREIGN KEY ("person_id") REFERENCES "people" ("id");
-
-ALTER TABLE "album_image" ADD FOREIGN KEY ("album_id") REFERENCES "albums" ("id");
-
-ALTER TABLE "album_image" ADD FOREIGN KEY ("image_id") REFERENCES "images" ("id");
-
-ALTER TABLE "album_comment" ADD FOREIGN KEY ("album_id") REFERENCES "albums" ("id");
-
-ALTER TABLE "album_comment" ADD FOREIGN KEY ("comment_id") REFERENCES "comments" ("id");
+ALTER TABLE "albums" ADD FOREIGN KEY ("collection_id") REFERENCES "collections" ("id");
 
 ALTER TABLE "maps" ADD FOREIGN KEY ("map_key_id") REFERENCES "map_keys" ("id");
 
-ALTER TABLE "map_layers" ADD FOREIGN KEY ("map") REFERENCES "maps" ("id");
-
-ALTER TABLE "map_entries" ADD FOREIGN KEY ("image_id") REFERENCES "images" ("id");
-
-ALTER TABLE "map_entries" ADD FOREIGN KEY ("place_id") REFERENCES "places" ("id");
+ALTER TABLE "map_layers" ADD FOREIGN KEY ("map_id") REFERENCES "maps" ("id") ON DELETE CASCADE;
 
 ALTER TABLE "map_entries" ADD FOREIGN KEY ("map_id") REFERENCES "maps" ("id") ON DELETE CASCADE;
 
 ALTER TABLE "map_keys" ADD FOREIGN KEY ("map_id") REFERENCES "maps" ("id") ON DELETE CASCADE;
 
 ALTER TABLE "map_key_entries" ADD FOREIGN KEY ("map_key_id") REFERENCES "map_keys" ("id") ON DELETE CASCADE;
-
-ALTER TABLE "map_entry_map_key_entry" ADD FOREIGN KEY ("map_entry_id") REFERENCES "map_entries" ("id");
-
-ALTER TABLE "map_entry_map_key_entry" ADD FOREIGN KEY ("map_key_entry_id") REFERENCES "map_key_entries" ("id");
 
 COMMENT ON TABLE "locations" IS '“Location” is defined as “the specific area where a place is situated.”';
 
@@ -470,12 +378,29 @@ COMMENT ON TABLE "dates" IS 'Type can be either:
   4: birth_date, for a person
   5: death_date, for a person';
 
+COMMENT ON TABLE "people" IS 'A person can have
+- dates (dates, birth, death)
+- comments
+- jobs
+- related literature
+- alternative names (alt_labels)';
+
 COMMENT ON TABLE "images" IS 'An image can have
 - dates
 - people, displayed or as copyright
 - references to other images
 - keywords
 - comments';
+
+COMMENT ON TABLE "image_date" IS 'TODO: Should years be described as date ranges? (zb 1937 => 1937-01-01 - 1937-12-31)';
+
+COMMENT ON TABLE "collections" IS 'A collection represents the SGV collections, iE SGV_012 für Brunner';
+
+COMMENT ON TABLE "maps" IS 'A map can have
+
+- layers
+- a map key (legend)
+- entries';
 
 COMMENT ON TABLE "map_entries" IS 'Type can be either:
   0: place, refering to a place and getting coordinates from there
