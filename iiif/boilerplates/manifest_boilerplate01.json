@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/manifest_boilerplate01.json",
+  "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate01.json",
   "type": "Manifest",
   "label": {
     "en": [
