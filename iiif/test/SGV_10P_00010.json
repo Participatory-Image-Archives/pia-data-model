@@ -158,7 +158,7 @@
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://github.com/Participatory-Image-Archives/pia-data-model/blob/main/iiif/test/SGV_10P_00010_r-detections.jpg",
+                "id": "https://github.com/Participatory-Image-Archives/pia-data-model/raw/main/iiif/test/SGV_10P_00010_r-detections.jpg",
                 "type": "Image",
                 "format": "image/jpg",
                 "height": 7136,
