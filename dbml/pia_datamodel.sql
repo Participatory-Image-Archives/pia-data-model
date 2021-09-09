@@ -1,6 +1,6 @@
 -- SQL dump generated using DBML (dbml-lang.org)
 -- Database: PostgreSQL
--- Generated at: 2021-08-26T13:28:54.379Z
+-- Generated at: 2021-09-07T11:14:22.732Z
 
 CREATE TABLE "locations" (
   "id" SERIAL PRIMARY KEY,
@@ -66,6 +66,7 @@ CREATE TABLE "comments" (
 
 CREATE TABLE "documents" (
   "id" SERIAL PRIMARY KEY,
+  "label" varchar,
   "object_type_id" int,
   "model_id" int,
   "format_id" int,
@@ -280,7 +281,6 @@ CREATE TABLE "maps" (
   "id" SERIAL PRIMARY KEY,
   "label" varchar,
   "description" varchar,
-  "map_key_id" int,
   "created_at" timestamp,
   "updated_at" timestamp
 );
@@ -293,31 +293,15 @@ CREATE TABLE "map_layers" (
   "updated_at" timestamp
 );
 
-CREATE TABLE "map_entries" (
-  "id" SERIAL PRIMARY KEY,
-  "label" varchar,
-  "description" varchar,
-  "type" int,
-  "complex_data" varchar,
-  "image_id" int,
+CREATE TABLE "map_linked_map_layer" (
   "map_id" int,
-  "place_id" int,
-  "location_id" int,
-  "created_at" timestamp,
-  "updated_at" timestamp
+  "map_layer_id" int
 );
 
 CREATE TABLE "map_keys" (
   "id" SERIAL PRIMARY KEY,
   "label" varchar,
   "map_id" int,
-  "created_at" timestamp,
-  "updated_at" timestamp
-);
-
-CREATE TABLE "map_key_entries" (
-  "id" SERIAL PRIMARY KEY,
-  "label" varchar,
   "icon" varchar,
   "icon_file_name" varchar,
   "original_icon_file_name" varchar,
@@ -326,9 +310,23 @@ CREATE TABLE "map_key_entries" (
   "updated_at" timestamp
 );
 
-CREATE TABLE "map_entry_map_key_entry" (
+CREATE TABLE "map_entries" (
+  "id" SERIAL PRIMARY KEY,
+  "label" varchar,
+  "description" varchar,
+  "type" int,
+  "complex_data" varchar,
+  "image_id" int,
+  "map_layer_id" int,
+  "place_id" int,
+  "location_id" int,
+  "created_at" timestamp,
+  "updated_at" timestamp
+);
+
+CREATE TABLE "map_entry_map_key" (
   "map_entry_id" int,
-  "map_key_entry_id" int
+  "map_key_id" int
 );
 
 ALTER TABLE "locations" ADD FOREIGN KEY ("place_id") REFERENCES "places" ("id");
@@ -357,15 +355,9 @@ ALTER TABLE "albums" ADD FOREIGN KEY ("object_type_id") REFERENCES "object_types
 
 ALTER TABLE "albums" ADD FOREIGN KEY ("collection_id") REFERENCES "collections" ("id");
 
-ALTER TABLE "maps" ADD FOREIGN KEY ("map_key_id") REFERENCES "map_keys" ("id");
-
-ALTER TABLE "map_layers" ADD FOREIGN KEY ("map_id") REFERENCES "maps" ("id") ON DELETE CASCADE;
-
-ALTER TABLE "map_entries" ADD FOREIGN KEY ("map_id") REFERENCES "maps" ("id") ON DELETE CASCADE;
-
 ALTER TABLE "map_keys" ADD FOREIGN KEY ("map_id") REFERENCES "maps" ("id") ON DELETE CASCADE;
 
-ALTER TABLE "map_key_entries" ADD FOREIGN KEY ("map_key_id") REFERENCES "map_keys" ("id") ON DELETE CASCADE;
+ALTER TABLE "map_entries" ADD FOREIGN KEY ("map_layer_id") REFERENCES "map_layers" ("id") ON DELETE CASCADE;
 
 COMMENT ON TABLE "locations" IS '“Location” is defined as “the specific area where a place is situated.”';
 
@@ -386,7 +378,7 @@ COMMENT ON TABLE "people" IS 'A person can have
 - alternative names (alt_labels)';
 
 COMMENT ON TABLE "images" IS 'An image can have
-- dates
+- dates 
 - people, displayed or as copyright
 - references to other images
 - keywords
@@ -399,11 +391,10 @@ COMMENT ON TABLE "collections" IS 'A collection represents the SGV collections, 
 COMMENT ON TABLE "maps" IS 'A map can have
 
 - layers
-- a map key (legend)
+- map keys (legend)
 - entries';
 
 COMMENT ON TABLE "map_entries" IS 'Type can be either:
-  0: place, refering to a place and getting coordinates from there
   1: precise, which is a marker placed on the map by hand; leading to the creation of a location
   2: complex, which is mutiple markers, a shape or line or an image; stores the information in complex_data
   3: image, image placed by hand; stores information in complex_data';

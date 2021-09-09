@@ -34,7 +34,7 @@ Project PIA {
 
     Conventions
     - tables: lower case, snake case, plural
-    - pivot tables: 
+    - pivot tables: {single}_{single}
 
     To drop the schema:
 
@@ -249,7 +249,7 @@ Table images {
 
   Note: '''
     An image can have
-    - dates
+    - dates 
     - people, displayed or as copyright
     - references to other images
     - keywords
@@ -413,8 +413,6 @@ Table maps {
   label varchar
   description varchar
 
-  map_key_id int [ref: - map_keys.id]
-
   created_at timestamp
   updated_at timestamp
 
@@ -422,11 +420,12 @@ Table maps {
     A map can have
     
     - layers
-    - a map key (legend)
+    - map keys (legend)
     - entries
   '''
 }
 
+// map layers
 Table map_layers {
   id int [pk, increment]
   label varchar
@@ -437,34 +436,10 @@ Table map_layers {
   updated_at timestamp
 }
 
-Ref: maps.id < map_layers.map_id [delete: cascade]
-
-Table map_entries {
-  id int [pk, increment]
-  label varchar
-  description varchar
-
-  type int
-  complex_data varchar
-  image_id int
-
+Table map_linked_map_layer {
   map_id int
-  place_id int
-  location_id int
-
-  created_at timestamp
-  updated_at timestamp
-
-  Note: '''
-    Type can be either:
-      0: place, refering to a place and getting coordinates from there
-      1: precise, which is a marker placed on the map by hand; leading to the creation of a location
-      2: complex, which is mutiple markers, a shape or line or an image; stores the information in complex_data
-      3: image, image placed by hand; stores information in complex_data
-  '''
+  map_layer_id int
 }
-
-Ref: maps.id < map_entries.map_id [delete: cascade]
 
 // map keys aka legend
 Table map_keys {
@@ -472,16 +447,6 @@ Table map_keys {
   label varchar
 
   map_id int
-
-  created_at timestamp
-  updated_at timestamp
-}
-
-Ref: maps.id - map_keys.map_id [delete: cascade]
-
-Table map_key_entries {
-  id int [pk, increment]
-  label varchar
 
   icon varchar
   icon_file_name varchar
@@ -492,9 +457,36 @@ Table map_key_entries {
   updated_at timestamp
 }
 
-Ref: map_keys.id < map_key_entries.map_key_id [delete: cascade]
+Ref: maps.id - map_keys.map_id [delete: cascade]
 
-Table map_entry_map_key_entry {
+Table map_entries {
+  id int [pk, increment]
+  label varchar
+  description varchar
+
+  type int
+  complex_data varchar
+  image_id int
+
+  map_layer_id int
+
+  place_id int
+  location_id int
+
+  created_at timestamp
+  updated_at timestamp
+
+  Note: '''
+    Type can be either:
+      1: precise, which is a marker placed on the map by hand; leading to the creation of a location
+      2: complex, which is mutiple markers, a shape or line or an image; stores the information in complex_data
+      3: image, image placed by hand; stores information in complex_data
+  '''
+}
+
+Ref: map_layers.id < map_entries.map_layer_id [delete: cascade]
+
+Table map_entry_map_key {
   map_entry_id int
-  map_key_entry_id int
+  map_key_id int
 }
