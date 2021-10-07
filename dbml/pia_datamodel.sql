@@ -1,6 +1,6 @@
 -- SQL dump generated using DBML (dbml-lang.org)
 -- Database: PostgreSQL
--- Generated at: 2021-09-07T11:14:22.732Z
+-- Generated at: 2021-10-07T06:57:26.774Z
 
 CREATE TABLE "locations" (
   "id" SERIAL PRIMARY KEY,
@@ -135,12 +135,11 @@ CREATE TABLE "images" (
   "signature" varchar,
   "title" varchar,
   "original_title" varchar,
+  "location_id" int,
   "file_name" varchar,
   "original_file_name" varchar,
   "salsah_date" varchar,
   "sequence_number" varchar,
-  "collection_id" int,
-  "location_id" int,
   "verso_id" int,
   "object_type_id" int,
   "model_id" int,
@@ -179,6 +178,11 @@ CREATE TABLE "image_comment" (
   "comment_id" int
 );
 
+CREATE TABLE "image_collection" (
+  "image_id" int,
+  "collection_id" int
+);
+
 CREATE TABLE "object_types" (
   "id" SERIAL PRIMARY KEY,
   "label" varchar,
@@ -215,6 +219,7 @@ CREATE TABLE "collections" (
   "description" text,
   "default_image" varchar,
   "embedded_video" varchar,
+  "origin" varchar,
   "created_at" timestamp,
   "updated_at" timestamp
 );
@@ -252,9 +257,13 @@ CREATE TABLE "albums" (
   "signature" varchar,
   "description" text,
   "object_type_id" int,
-  "collection_id" int,
   "created_at" timestamp,
   "updated_at" timestamp
+);
+
+CREATE TABLE "album_collection" (
+  "album_id" int,
+  "collection_id" int
 );
 
 CREATE TABLE "album_date" (
@@ -339,8 +348,6 @@ ALTER TABLE "documents" ADD FOREIGN KEY ("model_id") REFERENCES "models" ("id");
 
 ALTER TABLE "documents" ADD FOREIGN KEY ("format_id") REFERENCES "formats" ("id");
 
-ALTER TABLE "images" ADD FOREIGN KEY ("collection_id") REFERENCES "collections" ("id");
-
 ALTER TABLE "images" ADD FOREIGN KEY ("location_id") REFERENCES "locations" ("id");
 
 ALTER TABLE "images" ADD FOREIGN KEY ("verso_id") REFERENCES "images" ("id");
@@ -352,8 +359,6 @@ ALTER TABLE "images" ADD FOREIGN KEY ("model_id") REFERENCES "models" ("id");
 ALTER TABLE "images" ADD FOREIGN KEY ("format_id") REFERENCES "formats" ("id");
 
 ALTER TABLE "albums" ADD FOREIGN KEY ("object_type_id") REFERENCES "object_types" ("id");
-
-ALTER TABLE "albums" ADD FOREIGN KEY ("collection_id") REFERENCES "collections" ("id");
 
 ALTER TABLE "map_keys" ADD FOREIGN KEY ("map_id") REFERENCES "maps" ("id") ON DELETE CASCADE;
 
@@ -382,11 +387,13 @@ COMMENT ON TABLE "images" IS 'An image can have
 - people, displayed or as copyright
 - references to other images
 - keywords
-- comments';
+- comments
+- a location
+
+…can be
+- in several collections (original salsah, newly made ones)';
 
 COMMENT ON TABLE "image_date" IS 'TODO: Should years be described as date ranges? (zb 1937 => 1937-01-01 - 1937-12-31)';
-
-COMMENT ON TABLE "collections" IS 'A collection represents the SGV collections, iE SGV_012 für Brunner';
 
 COMMENT ON TABLE "maps" IS 'A map can have
 
