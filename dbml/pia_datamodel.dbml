@@ -422,6 +422,7 @@ Table maps {
   id int [pk, increment]
   label varchar
   description varchar
+  tiles int
 
   created_at timestamp
   updated_at timestamp

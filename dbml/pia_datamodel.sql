@@ -1,6 +1,6 @@
 -- SQL dump generated using DBML (dbml-lang.org)
 -- Database: PostgreSQL
--- Generated at: 2021-10-07T06:57:26.774Z
+-- Generated at: 2021-10-17T12:38:56.352Z
 
 CREATE TABLE "locations" (
   "id" SERIAL PRIMARY KEY,
@@ -290,6 +290,7 @@ CREATE TABLE "maps" (
   "id" SERIAL PRIMARY KEY,
   "label" varchar,
   "description" varchar,
+  "tiles" int,
   "created_at" timestamp,
   "updated_at" timestamp
 );
