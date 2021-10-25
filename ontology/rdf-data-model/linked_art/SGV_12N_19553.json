@@ -1,8 +1,8 @@
 {
   "@context": "https://linked.art/ns/v1/linked-art.json",
-  "id": "https://linked.art/example/digital/0",
+  "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/ontology/rdf-data-model/linked_art/SGV_12N_19553.json",
   "type": "DigitalObject",
-  "_label": "Digital Image of Self-Portrait of Van Gogh",
+  "_label": "Digital image of [Katze auf einer Mauer]",
   "classified_as": [
     {
       "id": "http://vocab.getty.edu/aat/300215302",
@@ -12,8 +12,15 @@
   ],
   "identified_by": [
     {
-      "type": "Name",
-      "content": "Self-Portrait Dedicated to Paul Gauguin"
+      "type": "Identifier",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300417447",
+          "type": "Type",
+          "_label": "Creator-Assigned Number"
+        }
+      ],
+      "content": "HV 53"
     },
     {
       "type": "Identifier",
@@ -24,7 +31,7 @@
           "_label": "Owner-Assigned Number"
         }
       ],
-      "content": "47174896"
+      "content": "SGV_12N_19553"
     }
   ],
   "dimension": [
@@ -37,7 +44,7 @@
           "_label": "Height"
         }
       ],
-      "value": 2550,
+      "value": 4599,
       "unit": {
         "id": "http://vocab.getty.edu/aat/300266190",
         "type": "MeasurementUnit",
@@ -53,7 +60,7 @@
           "_label": "Width"
         }
       ],
-      "value": 2087,
+      "value": 4408,
       "unit": {
         "id": "http://vocab.getty.edu/aat/300266190",
         "type": "MeasurementUnit",
@@ -63,28 +70,28 @@
   ],
   "part_of": [
     {
-      "id": "https://iiif.harvardartmuseums.org/manifests/object/299843",
+      "id": "https://pia-iiif.dhlab.unibas.ch/server/441788/manifest.json",
       "type": "DigitalObject",
       "_label": "IIIF Manifest"
     }
   ],
   "member_of": [
     {
-      "id": "https://linked.art/example/set/0",
+      "id": "https://linkedart.pia.ch/SGV_12",
       "type": "Set",
-      "_label": "Images of Self-Portraits of Van Gogh"
+      "_label": "SGV_12 Ernst Brunner"
     }
   ],
   "access_point": [
     {
-      "id": "https://ids.lib.harvard.edu/ids/iiif/47174896/full/full/0/default.jpg",
+      "id": "https://pia-iiif.dhlab.unibas.ch/SGV_12/SGV_12N_19553.jp2/full/max/0/default.jpg",
       "type": "DigitalObject"
     }
   ],
   "digitally_shows": [
     {
       "type": "VisualItem",
-      "_label": "Visual Content of Self-Portrait of Van Gogh"
+      "_label": "Visual Content of [Katze auf einer Mauer]"
     }
   ],
   "format": "image/jpeg",
@@ -94,13 +101,13 @@
       "_label": "IIIF Service",
       "access_point": [
         {
-          "id": "https://ids.lib.harvard.edu/ids/iiif/47174896",
+          "id": "https://pia-iiif.dhlab.unibas.ch/SGV_12/SGV_12N_19553.jp2",
           "type": "DigitalObject"
         }
       ],
       "conforms_to": [
         {
-          "id": "https://iiif.io/api/image/2/context.json",
+          "id": "https://iiif.io/api/image/3/context.json",
           "type": "InformationObject"
         }
       ]
@@ -110,16 +117,16 @@
     "type": "Creation",
     "carried_out_by": [
       {
-        "id": "https://linked.art/example/group/harvardartmuseums.org",
+        "id": "https://pia.ch",
         "type": "Group",
-        "_label": "Harvard Art Museums"
+        "_label": "Participatory Knowledge Practices in Analogue and Digital Image Archives (PIA)"
       }
     ],
     "used_specific_object": [
       {
-        "id": "https://harvardartmuseums.org/collections/object/299843",
+        "id": "https://pia.ch/collections/object/441788",
         "type": "HumanMadeObject",
-        "_label": "Self-Portrait of Van Gogh"
+        "_label": "[Katze auf einer Mauer]"
       }
     ]
   }
