@@ -1,0 +1,234 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https:///pia-iiif.dhlab.unibas.ch/server/SGV_10P_00010/manifest.json",
+  "type": "Manifest",
+  "label": {
+    "de": [
+      "SGV_10P_00010 und Geisterbilder"
+    ]
+  },
+  "summary": {
+    "en": [
+      "One image of the Schwyzer Fasnacht in 1937 photographed by Ernst Brunner"
+    ],
+    "de": [
+      "Ein Bild der Schwyzer Fasnacht im Jahr 1937 fotografiert von Ernst Brunner"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "de": [
+          "Titel"
+        ]
+      },
+      "value": {
+        "de": [
+          "[Schwyzer Fasnacht]"
+        ]
+      }
+    },
+    {
+      "label": {
+        "de": [
+          "Hersteller"
+        ]
+      },
+      "value": {
+        "de": [
+          "Brunner, Ernst"
+        ]
+      }
+    },
+    {
+      "label": {
+        "de": [
+          "Datum"
+        ]
+      },
+      "value": {
+        "de": [
+          "1937"
+        ]
+      }
+    },
+    {
+      "label": {
+        "de": [
+          "Ort"
+        ]
+      },
+      "value": {
+        "de": [
+          "Schwyz"
+        ]
+      }
+    },
+    {
+      "label": {
+        "de": [
+          "Sammlung"
+        ]
+      },
+      "value": {
+        "de": [
+          "SGV_12 Ernst Brunner"
+        ]
+      }
+    },
+    {
+      "label": {
+        "de": [
+          "Objekttyp"
+        ]
+      },
+      "value": {
+        "de": [
+          "Negativ schwarz/weiss, 6x6 cm"
+        ]
+      }
+    },
+    {
+      "label": {
+        "de": [
+          "Signatur"
+        ]
+      },
+      "value": {
+        "de": [
+          "SGV_10P_00010. Alte Bildnumer: AA 1"
+        ]
+      }
+    },
+    {
+      "label": {
+        "de": [
+          "Alte Bildnummer"
+        ]
+      },
+      "value": {
+        "de": [
+          "AA 1"
+        ]
+      }
+    }
+  ],
+  "rights": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "requiredStatement": {
+    "label": {
+      "de": [
+        "Copyright"
+      ]
+    },
+    "value": {
+      "de": [
+        "Schweizerische Gesellschaft für Volkskunde (SGV). CC BY-NC-ND 4.0"
+      ],
+      "fr": [
+        "Socité Suisse des Traditions populaires (SSTP). CC BY-NC-ND 4.0"
+      ],
+      "it": [
+        "SocietàSvizzera per le Tradizioni Popolari (SSTP). CC BY-NC-ND 4.0"
+      ],
+      "en": [
+        "Swiss Society for Folklore Studies (SSFS). CC BY-NC-ND 4.0"
+      ]
+    }
+  },
+  "logo": [
+        {
+          "id": "https://pia-iiif.dhlab.unibas.ch/SGV_logo.jp2/full/max/0/default.jpg",
+          "type": "Image",
+          "format": "image/jpeg",
+          "height": 149,
+          "width": 500,
+          "service": [
+            {
+              "id": "https://pia-iiif.dhlab.unibas.ch/SGV_logo.jp2",
+              "type": "ImageService3",
+              "profile": "level2"
+            }
+          ]
+        }
+      ],
+  "items": [
+    {
+      "id": "https://pia-iiif.dhlab.unibas.ch/server/SGV_10P_00010/canvas/p1",
+      "type": "Canvas",
+      "label": {
+    "none": [
+      "SGV_10P_00010_r"
+    ]
+  },
+      "height": 4252,
+      "width": 4190,
+      "items": [
+        {
+          "id": "https://pia-iiif.dhlab.unibas.ch/server/SGV_10P_00010/canvas/p1/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://pia-iiif.dhlab.unibas.ch/server/SGV_10P_00010/annotation/p0001-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://pia-iiif.dhlab.unibas.ch/SGV_10/SGV_10P_00010_r.jp2/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 4252,
+                "width": 4190,
+                "service": [
+                  {
+                    "id": "https://pia-iiif.dhlab.unibas.ch/SGV_10/SGV_10P_00010_r.jp2",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              },
+              "target": "https://pia-iiif.dhlab.unibas.ch/server/SGV_10P_00010/canvas/p1/1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "https://pia-iiif.dhlab.unibas.ch/server/SGV_10P_00010/canvas/p2",
+      "type": "Canvas",
+      "label": {
+    "none": [
+      "SGV_10P_00010_v"
+    ]
+  },
+      "height": 4252,
+      "width": 4190,
+      "items": [
+        {
+          "id": "https://pia-iiif.dhlab.unibas.ch/server/canvas/p2/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://pia-iiif.dhlab.unibas.ch/server/SGV_10P_00010/annotation/p0001-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://pia-iiif.dhlab.unibas.ch/SGV_10/SGV_10P_00010_v.jp2/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 4252,
+                "width": 4190,
+                "service": [
+                  {
+                    "id": "https://pia-iiif.dhlab.unibas.ch/SGV_10/SGV_10P_00010_v.jp2",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              },
+              "target": "https://pia-iiif.dhlab.unibas.ch/server/SGV_10P_00010/canvas/p1/1"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
