@@ -1,0 +1,133 @@
+{
+  "@context": "https://linked.art/ns/v1/linked-art.json",
+  "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/ontology/rdf-data-model/linked_art/SGV_12N_19553.json",
+  "type": "DigitalObject",
+  "_label": "Digital image of [Katze auf einer Mauer]",
+  "classified_as": [
+    {
+      "id": "http://vocab.getty.edu/aat/300215302",
+      "type": "Type",
+      "_label": "Digital Image"
+    }
+  ],
+  "identified_by": [
+    {
+      "type": "Identifier",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300417447",
+          "type": "Type",
+          "_label": "Creator-Assigned Number"
+        }
+      ],
+      "content": "HV 53"
+    },
+    {
+      "type": "Identifier",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300404621",
+          "type": "Type",
+          "_label": "Owner-Assigned Number"
+        }
+      ],
+      "content": "SGV_12N_19553"
+    }
+  ],
+  "dimension": [
+    {
+      "type": "Dimension",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300055644",
+          "type": "Type",
+          "_label": "Height"
+        }
+      ],
+      "value": 4599,
+      "unit": {
+        "id": "http://vocab.getty.edu/aat/300266190",
+        "type": "MeasurementUnit",
+        "_label": "pixels"
+      }
+    },
+    {
+      "type": "Dimension",
+      "classified_as": [
+        {
+          "id": "http://vocab.getty.edu/aat/300055647",
+          "type": "Type",
+          "_label": "Width"
+        }
+      ],
+      "value": 4408,
+      "unit": {
+        "id": "http://vocab.getty.edu/aat/300266190",
+        "type": "MeasurementUnit",
+        "_label": "pixels"
+      }
+    }
+  ],
+  "part_of": [
+    {
+      "id": "https://pia-iiif.dhlab.unibas.ch/server/441788/manifest.json",
+      "type": "DigitalObject",
+      "_label": "IIIF Manifest"
+    }
+  ],
+  "member_of": [
+    {
+      "id": "https://linkedart.pia.ch/SGV_12",
+      "type": "Set",
+      "_label": "SGV_12 Ernst Brunner"
+    }
+  ],
+  "access_point": [
+    {
+      "id": "https://pia-iiif.dhlab.unibas.ch/SGV_12/SGV_12N_19553.jp2/full/max/0/default.jpg",
+      "type": "DigitalObject"
+    }
+  ],
+  "digitally_shows": [
+    {
+      "type": "VisualItem",
+      "_label": "Visual Content of [Katze auf einer Mauer]"
+    }
+  ],
+  "format": "image/jpeg",
+  "digitally_available_via": [
+    {
+      "type": "DigitalService",
+      "_label": "IIIF Service",
+      "access_point": [
+        {
+          "id": "https://pia-iiif.dhlab.unibas.ch/SGV_12/SGV_12N_19553.jp2",
+          "type": "DigitalObject"
+        }
+      ],
+      "conforms_to": [
+        {
+          "id": "https://iiif.io/api/image/3/context.json",
+          "type": "InformationObject"
+        }
+      ]
+    }
+  ],
+  "created_by": {
+    "type": "Creation",
+    "carried_out_by": [
+      {
+        "id": "https://pia.ch",
+        "type": "Group",
+        "_label": "Participatory Knowledge Practices in Analogue and Digital Image Archives (PIA)"
+      }
+    ],
+    "used_specific_object": [
+      {
+        "id": "https://pia.ch/collections/object/441788",
+        "type": "HumanMadeObject",
+        "_label": "[Katze auf einer Mauer]"
+      }
+    ]
+  }
+}
