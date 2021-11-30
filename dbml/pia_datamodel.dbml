@@ -234,6 +234,7 @@ Table images {
   
   file_name varchar
   original_file_name varchar
+  base_path varchar
   
   salsah_date varchar
   sequence_number varchar
@@ -424,6 +425,8 @@ Table maps {
   description varchar
   tiles int
 
+  origin varchar
+
   created_at timestamp
   updated_at timestamp
 
@@ -491,7 +494,8 @@ Table map_entries {
     Type can be either:
       1: precise, which is a marker placed on the map by hand; leading to the creation of a location
       2: complex, which is mutiple markers, a shape or line or an image; stores the information in complex_data
-      3: image, image placed by hand; stores information in complex_data
+      3: image, overlaying the map; stores information in complex_data
+      4: image, as marker; leading to the creation of a location
   '''
 }
 
@@ -500,4 +504,27 @@ Ref: map_layers.id < map_entries.map_layer_id [delete: cascade]
 Table map_entry_map_key {
   map_entry_id int
   map_key_id int
+}
+
+//
+// pia specific applications and relations
+//
+Table pia_docs {
+  id int [pk, increment]
+  label varchar
+  description varchar
+  content varchar
+
+  created_at timestamp
+  updated_at timestamp
+}
+
+Table pia_doc_collection {
+  pia_doc_id int
+  collection_id int
+}
+
+Table map_collection {
+  map_id int
+  collection_id int
 }

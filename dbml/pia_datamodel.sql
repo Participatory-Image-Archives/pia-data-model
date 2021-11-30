@@ -1,6 +1,6 @@
 -- SQL dump generated using DBML (dbml-lang.org)
 -- Database: PostgreSQL
--- Generated at: 2021-10-17T12:38:56.352Z
+-- Generated at: 2021-11-30T17:12:40.483Z
 
 CREATE TABLE "locations" (
   "id" SERIAL PRIMARY KEY,
@@ -138,6 +138,7 @@ CREATE TABLE "images" (
   "location_id" int,
   "file_name" varchar,
   "original_file_name" varchar,
+  "base_path" varchar,
   "salsah_date" varchar,
   "sequence_number" varchar,
   "verso_id" int,
@@ -291,6 +292,7 @@ CREATE TABLE "maps" (
   "label" varchar,
   "description" varchar,
   "tiles" int,
+  "origin" varchar,
   "created_at" timestamp,
   "updated_at" timestamp
 );
@@ -337,6 +339,25 @@ CREATE TABLE "map_entries" (
 CREATE TABLE "map_entry_map_key" (
   "map_entry_id" int,
   "map_key_id" int
+);
+
+CREATE TABLE "pia_docs" (
+  "id" SERIAL PRIMARY KEY,
+  "label" varchar,
+  "description" varchar,
+  "content" varchar,
+  "created_at" timestamp,
+  "updated_at" timestamp
+);
+
+CREATE TABLE "pia_doc_collection" (
+  "pia_doc_id" int,
+  "collection_id" int
+);
+
+CREATE TABLE "map_collection" (
+  "map_id" int,
+  "collection_id" int
 );
 
 ALTER TABLE "locations" ADD FOREIGN KEY ("place_id") REFERENCES "places" ("id");
@@ -405,4 +426,5 @@ COMMENT ON TABLE "maps" IS 'A map can have
 COMMENT ON TABLE "map_entries" IS 'Type can be either:
   1: precise, which is a marker placed on the map by hand; leading to the creation of a location
   2: complex, which is mutiple markers, a shape or line or an image; stores the information in complex_data
-  3: image, image placed by hand; stores information in complex_data';
+  3: image, overlaying the map; stores information in complex_data
+  4: image, as marker; leading to the creation of a location';
