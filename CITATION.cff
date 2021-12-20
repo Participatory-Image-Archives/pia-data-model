@@ -3,12 +3,12 @@ message: "If you use this software, please cite it as below."
 authors:
 - family-names: "Demleitner"
   given-names: "Adrian"
+  orcid: "https://orcid.org/0000-0001-9918-7300"
 - family-names: "Raemy"
   given-names: "Julien Antoine"
   orcid: "https://orcid.org/0000-0002-4711-5759"
 title: "PIA Data Model"
-license: "MIT License"
-version: 0.1.1
+version: 0.2.3
 doi: 10.5281/zenodo.5142606
-date-released: 2021-07-28
-url: "https://github.com/Participatory-Image-Archives/salsah-export"
+date-released: 2021-12-12
+url: "https://github.com/Participatory-Image-Archives/pia-data-model"
