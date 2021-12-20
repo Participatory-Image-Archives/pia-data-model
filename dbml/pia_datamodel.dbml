@@ -54,6 +54,7 @@ Table locations {
   geonames_url varchar
   latitude float
   longitude float
+  provenance varchar
 
   place_id int [ref: - places.id]
 

@@ -1,6 +1,6 @@
 -- SQL dump generated using DBML (dbml-lang.org)
 -- Database: PostgreSQL
--- Generated at: 2021-11-30T17:12:40.483Z
+-- Generated at: 2021-12-20T13:42:21.059Z
 
 CREATE TABLE "locations" (
   "id" SERIAL PRIMARY KEY,
@@ -9,6 +9,7 @@ CREATE TABLE "locations" (
   "geonames_url" varchar,
   "latitude" float,
   "longitude" float,
+  "provenance" varchar,
   "place_id" int,
   "created_at" timestamp,
   "updated_at" timestamp
