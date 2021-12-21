@@ -3500,7 +3500,7 @@
                         "hasLinkTo",
                         "schema:isPartOf"
                     ],
-                    "object": "sgv:Dataset", "sgv:Collection", "sgv:Object",
+                    "object": "sgv:Dataset", "sgv:Collection", "sgv:Object", "sgv:Album",
                     "labels": {
                         "en": "Is part of",
                         "de": "Teil von",
