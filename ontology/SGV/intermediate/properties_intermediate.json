@@ -882,7 +882,6 @@
         "labels": {
             "en": "Employee(s)",
             "de": "Mitarbeiter",
-            "fr": "Employ\u00e9-e-s",
         },
         "gui_element": "Searchbox"
     },
