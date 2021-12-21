@@ -178,7 +178,12 @@
             "hasLinkTo",
             "schema:isPartOf"
         ],
-        "object": "sgv:Album",
+        "object": [
+          "sgv:Album",
+          "sgv:Object",
+          "sgv:Dataset",
+          "sgv:Collection"
+        ],
         "labels": {
             "en": "Is part of",
             "de": "Teil von",
@@ -1426,7 +1431,12 @@
             "hasLinkTo",
             "schema:subjectOf"
         ],
-        "object": "sgv:Object",
+        "object": [
+          "sgv:Object",
+          "sgv:Dataset",
+          "sgv:Collection",
+          "sgv:Event"
+        ],
         "labels": {
             "en": "Subject Of",
             "de": "Subjekt von",
