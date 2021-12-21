@@ -830,7 +830,7 @@
         },
         "super": "skos:Concept",
         "comments": {
-          "en": "This resource supersedes sgv:Subject",
+          "en": "This resource supersedes sgv:Subject"
       },
         "cardinalities": [
             {
@@ -915,7 +915,7 @@
         },
         "super": "dct:Agent",
         "comments": {
-          "en": "This resource supersedes sgv:Persons",
+          "en": "This resource supersedes sgv:Persons"
       },
         "cardinalities": [
             {
