@@ -1,0 +1,1217 @@
+[
+    {
+        "name": "Image",
+        "labels": {
+            "en": "Image",
+            "de": "Bild",
+            "fr": "Image",
+            "it": "Immagine"
+        },
+        "super": "StillImageRepresentation", "schema:ImageObject",
+        "comments": {
+          "en": "This resource will be deprecated in favour of sgv:Object",
+      },
+        "cardinalities": [
+            {
+                "propname": ":hasSignature",
+                "cardinality": 1,
+                "gui_order": 1
+            },
+            {
+                "propname": ":hasTitle",
+                "cardinality": "0-n",
+                "gui_order": 2
+            },
+            {
+                "propname": ":hasDate",
+                "cardinality": "0-n",
+                "gui_order": 3
+            },
+            {
+                "propname": ":hasGeography",
+                "cardinality": "0-1",
+                "gui_order": 4
+            },
+            {
+                "propname": ":hasCreator",
+                "cardinality": "0-n",
+                "gui_order": 5
+            },
+            {
+                "propname": ":hasContent",
+                "cardinality": "0-n",
+                "gui_order": 6
+            },
+            {
+                "propname": ":hasKeywords",
+                "cardinality": "0-n",
+                "gui_order": 7
+            },
+            {
+                "propname": ":hasConcept",
+                "cardinality": "0-n",
+                "gui_order": 8
+            },
+            {
+                "propname": ":hasComment",
+                "cardinality": "0-n",
+                "gui_order": 9
+            },
+            {
+                "propname": ":hasOldNr",
+                "cardinality": "0-1",
+                "gui_order": 10
+            },
+            {
+                "propname": ":isPartOfCollection",
+                "cardinality": "0-n",
+                "gui_order": 11
+            },
+            {
+                "propname": ":isPartOf",
+                "cardinality": "0-n",
+                "gui_order": 12
+            },
+            {
+                "propname": ":hasObjectType",
+                "cardinality": "0-n",
+                "gui_order": 13
+            },
+            {
+                "propname": ":hasMedium",
+                "cardinality": "0-n",
+                "gui_order": 14
+            },
+            {
+                "propname": ":hasFormat",
+                "cardinality": "0-n",
+                "gui_order": 15
+            },
+            {
+                "propname": ":hasCopyrightHolder",
+                "cardinality": "0-n",
+                "gui_order": 16
+            },
+            {
+                "propname": ":isVisuallySimilarTo",
+                "cardinality": "0-n",
+                "gui_order": 17
+            },
+            {
+                "propname": ":hasOnAlbumPage",
+                "cardinality": "0-1",
+                "gui_order": 18
+            },
+            {
+                "propname": ":isPartOfAlbum",
+                "cardinality": "0-1",
+                "gui_order": 19
+            },
+            {
+                "propname": ":hasVerso",
+                "cardinality": "0-1",
+                "gui_order": 20
+            },
+            {
+                "propname": ":hasSeqNr",
+                "cardinality": "0-1",
+                "gui_order": 21
+            }
+        ]
+    },
+    {
+        "name": "Film",
+        "labels": {
+            "en": "Film",
+            "de": "Film",
+            "fr": "Film",
+            "it": "Film"
+        },
+        "super": "MovingImageRepresentation", "schema:VideoObject",
+        "comments": {
+          "en": "This resource will be deprecated in favour of sgv:Object",
+      },
+        "cardinalities": [
+            {
+                "propname": ":hasSignature",
+                "cardinality": 1,
+                "gui_order": 1
+            },
+            {
+                "propname": ":hasTitle",
+                "cardinality": "0-1",
+                "gui_order": 2
+            },
+            {
+                "propname": ":hasDate",
+                "cardinality": "0-1",
+                "gui_order": 3
+            },
+            {
+                "propname": ":hasGeography",
+                "cardinality": "0-n",
+                "gui_order": 4
+            },
+            {
+                "propname": ":hasCreator",
+                "cardinality": "0-n",
+                "gui_order": 5
+            },
+            {
+                "propname": ":hasContent",
+                "cardinality": "0-n",
+                "gui_order": 6
+            },
+            {
+                "propname": ":hasOldNr",
+                "cardinality": "0-1",
+                "gui_order": 7
+            },
+            {
+                "propname": ":hasComment",
+                "cardinality": "0-n",
+                "gui_order": 8
+            },
+            {
+                "propname": ":hasConcept",
+                "cardinality": "0-n",
+                "gui_order": 9
+            },
+            {
+                "propname": ":hasObjectType",
+                "cardinality": "0-n",
+                "gui_order": 10
+            },
+            {
+                "propname": ":hasMedium",
+                "cardinality": "0-n",
+                "gui_order": 11
+            },
+            {
+                "propname": ":hasKeywords",
+                "cardinality": "0-n",
+                "gui_order": 12
+            },
+            {
+                "propname": ":isInLanguage",
+                "cardinality": "0-n",
+                "gui_order": 13
+            },
+            {
+                "propname": ":hasDuration",
+                "cardinality": "0-1",
+                "gui_order": 14
+            },
+            {
+                "propname": ":hasFps",
+                "cardinality": "0-1",
+                "gui_order": 15
+            },
+            {
+                "propname": ":isPartOfCollection",
+                "cardinality": "1-n",
+                "gui_order": 16
+            },
+            {
+                "propname": ":hasCopyrightHolder",
+                "cardinality": "0-n",
+                "gui_order": 17
+            }
+        ]
+    },
+    {
+        "name": "Tonbildschau",
+        "labels": {
+            "en": "Audio-visual show",
+            "de": "Tonbildschau",
+            "fr": "Diaporama",
+            "it": "Spettacolo audiovisivo"
+        },
+        "super": "Resource", "schema:CreativeWork",
+        "comments": {
+          "en": "This resource will be deprecated in favour of sgv:Object",
+      },
+        "cardinalities": [
+            {
+                "propname": ":hasSignature",
+                "cardinality": 1,
+                "gui_order": 1
+            },
+            {
+                "propname": ":hasTitle",
+                "cardinality": "1-n",
+                "gui_order": 2
+            },
+            {
+                "propname": ":hasDate",
+                "cardinality": "0-1",
+                "gui_order": 3
+            },
+            {
+                "propname": ":hasComment",
+                "cardinality": "0-n",
+                "gui_order": 4
+            }
+        ]
+    },
+    {
+        "name": "Sequence",
+        "labels": {
+            "en": "Sequence",
+            "de": "Sequenz",
+            "fr": "S\u00e9quence",
+            "it": "Sequenza"
+        },
+        "super": "Resource", "schema:Thing",
+        "comments": {
+          "en": "This resource will be probably deprecated",
+      },
+        "cardinalities": [
+            {
+                "propname": ":hasTitle",
+                "cardinality": "0-1",
+                "gui_order": 1
+            },
+            {
+                "propname": ":hasContent",
+                "cardinality": 1,
+                "gui_order": 2
+            },
+            {
+                "propname": ":isPartOfFilm",
+                "cardinality": 1,
+                "gui_order": 3
+            },
+            {
+                "propname": ":hasInterval",
+                "cardinality": "0-n",
+                "gui_order": 4
+            },
+            {
+                "propname": ":hasDescription",
+                "cardinality": "0-1",
+                "gui_order": 5
+            }
+        ]
+    },
+    {
+        "name": "Album",
+        "labels": {
+            "en": "Album",
+            "de": "Album",
+            "fr": "Album",
+            "it": "Album"
+        },
+        "super": "Resource", "schema:CreativeWork",
+        "comments": {
+          "en": "This resource will be deprecated in favour of sgv:Object",
+      },
+        "cardinalities": [
+            {
+                "propname": ":hasSignature",
+                "cardinality": 1,
+                "gui_order": 1
+            },
+            {
+                "propname": ":hasTitle",
+                "cardinality": "1-n",
+                "gui_order": 2
+            },
+            {
+                "propname": ":hasCreator",
+                "cardinality": "0-n",
+                "gui_order": 3
+            },
+            {
+                "propname": ":hasDate",
+                "cardinality": "0-1",
+                "gui_order": 4
+            },
+            {
+                "propname": ":hasDescription",
+                "cardinality": "0-1",
+                "gui_order": 5
+            },
+            {
+                "propname": ":hasIndexing",
+                "cardinality": "0-1",
+                "gui_order": 6
+            },
+            {
+                "propname": ":isPartOfCollection",
+                "cardinality": "0-1",
+                "gui_order": 7
+            },
+            {
+                "propname": ":hasComment",
+                "cardinality": "0-n",
+                "gui_order": 8
+            },
+            {
+                "propname": ":hasObjectType",
+                "cardinality": "0-n",
+                "gui_order": 9
+            }
+        ]
+    },
+    {
+        "name": "Object",
+        "labels": {
+            "en": "Object",
+            "de": "Objekt",
+            "fr": "Objet",
+            "it": "Oggetto"
+        },
+        "super": "Resource", "schema:CreativeWork",
+        "cardinalities": [
+            {
+                "propname": ":hasSignature",
+                "cardinality": 1,
+                "gui_order": 1
+            },
+            {
+                "propname": ":hasTitle",
+                "cardinality": "0-1",
+                "gui_order": 2
+            },
+            {
+                "propname": ":hasDate",
+                "cardinality": "0-n",
+                "gui_order": 3
+            },
+            {
+                "propname": ":hasGeography",
+                "cardinality": "0-1",
+                "gui_order": 4
+            },
+            {
+                "propname": ":hasCreator",
+                "cardinality": "0-n",
+                "gui_order": 5
+            },
+            {
+                "propname": ":hasContent",
+                "cardinality": "0-n",
+                "gui_order": 6
+            },
+            {
+                "propname": ":hasKeywords",
+                "cardinality": "0-n",
+                "gui_order": 7
+            },
+            {
+                "propname": ":hasConcept",
+                "cardinality": "0-n",
+                "gui_order": 8
+            },
+            {
+                "propname": ":hasOldNr",
+                "cardinality": "0-1",
+                "gui_order": 9
+            },
+            {
+                "propname": ":isPartOf",
+                "cardinality": "0-n",
+                "gui_order": 10
+            },
+            {
+                "propname": ":hasObjectType",
+                "cardinality": "0-n",
+                "gui_order": 11
+            },
+            {
+                "propname": ":hasMedium",
+                "cardinality": "0-n",
+                "gui_order": 12
+            },
+            {
+                "propname": ":hasFormat",
+                "cardinality": "0-n",
+                "gui_order": 13
+            },
+            {
+                "propname": ":hasCopyrightHolder",
+                "cardinality": "0-n",
+                "gui_order": 14
+            },
+            {
+                "propname": ":isVisuallySimilarTo",
+                "cardinality": "0-n",
+                "gui_order": 15
+            },
+            {
+                "propname": ":hasOnAlbumPage",
+                "cardinality": "0-1",
+                "gui_order": 16
+            },
+            {
+                "propname": ":hasVerso",
+                "cardinality": "0-1",
+                "gui_order": 17
+            },
+            {
+                "propname": ":hasSeqNr",
+                "cardinality": "0-1",
+                "gui_order": 18
+            },
+            {
+                "propname": ":hasDescription",
+                "cardinality": "0-n",
+                "gui_order": 19
+            },
+            {
+                "propname": ":isInLanguage",
+                "cardinality": "0-n",
+                "gui_order": 20
+            },
+            {
+                "propname": ":hasDuration",
+                "cardinality": "0-1",
+                "gui_order": 21
+            },
+            {
+                "propname": ":hasFps",
+                "cardinality": "0-1",
+                "gui_order": 22
+            },
+            {
+                "propname": ":hasInterval",
+                "cardinality": "0-1",
+                "gui_order": 23
+            },
+            {
+                "propname": ":isPartOfFilm",
+                "cardinality": "0-1",
+                "gui_order": 24
+            },
+            {
+                "propname": ":hasPlace",
+                "cardinality": "0-1",
+                "gui_order": 25
+            },
+            {
+                "propname": ":hasPart",
+                "cardinality": "0-n",
+                "gui_order": 26
+            },
+            {
+                "propname": ":recordedAt",
+                "cardinality": "0-n",
+                "gui_order": 27
+            },
+            {
+                "propname": ":hasContributor",
+                "cardinality": "0-n",
+                "gui_order": 28
+            },
+            {
+                "propname": ":hasPiaUrl",
+                "cardinality": "0-1",
+                "gui_order": 29
+            },
+            {
+                "propname": ":hasDaschUrl",
+                "cardinality": "0-1",
+                "gui_order": 30
+            },
+            {
+                "propname": ":hasDateCreated",
+                "cardinality": "0-1",
+                "gui_order": 31
+            },
+            {
+                "propname": ":hasDateModified",
+                "cardinality": "0-1",
+                "gui_order": 32
+            },
+            {
+                "propname": ":hasDatePublished",
+                "cardinality": "0-1",
+                "gui_order": 33
+            },
+            {
+                "propname": ":hasCreativeWorkStatus",
+                "cardinality": "0-1",
+                "gui_order": 34
+            },
+            {
+                "propname": ":relatedLink",
+                "cardinality": "0-n",
+                "gui_order": 35
+            },
+            {
+                "propname": ":hasLicense",
+                "cardinality": "0-1",
+                "gui_order": 36
+            },
+            {
+                "propname": ":hasContentUrl",
+                "cardinality": "0-n",
+                "gui_order": 37
+            },
+            {
+                "propname": ":hasThumbnailUrl",
+                "cardinality": "0-n",
+                "gui_order": 38
+            },
+            {
+                "propname": ":hasComment",
+                "cardinality": "0-n",
+                "gui_order": 39
+            }
+        ]
+    },
+    {
+        "name": "Dataset",
+        "labels": {
+            "en": "Dataset",
+            "de": "Datensatz",
+            "fr": "Set de donn\u00e9es",
+            "it": "Dataset"
+        },
+        "super": "Resource", "schema:Dataset",
+        "cardinalities": [
+            {
+                "propname": ":hasTitle",
+                "cardinality": "0-1",
+                "gui_order": 1
+            },
+            {
+                "propname": ":hasCreator",
+                "cardinality": "0-n",
+                "gui_order": 2
+            },
+            {
+                "propname": ":hasContent",
+                "cardinality": "0-n",
+                "gui_order": 3
+            },
+            {
+                "propname": ":hasKeywords",
+                "cardinality": "0-n",
+                "gui_order": 4
+            },
+            {
+                "propname": ":hasConcept",
+                "cardinality": "0-n",
+                "gui_order": 5
+            },
+            {
+                "propname": ":isPartOf",
+                "cardinality": "0-n",
+                "gui_order": 6
+            },
+            {
+                "propname": ":hasObjectType",
+                "cardinality": "0-n",
+                "gui_order": 7
+            },
+            {
+                "propname": ":hasCopyrightHolder",
+                "cardinality": "0-n",
+                "gui_order": 8
+            },
+            {
+                "propname": ":hasDescription",
+                "cardinality": "0-n",
+                "gui_order": 9
+            },
+            {
+                "propname": ":hasPlace",
+                "cardinality": "0-1",
+                "gui_order": 10
+            },
+            {
+                "propname": ":hasPart",
+                "cardinality": "0-n",
+                "gui_order": 11
+            },
+            {
+                "propname": ":recordedAt",
+                "cardinality": "0-n",
+                "gui_order": 12
+            },
+            {
+                "propname": ":hasContributor",
+                "cardinality": "0-n",
+                "gui_order": 13
+            },
+            {
+                "propname": ":hasPiaUrl",
+                "cardinality": 1,
+                "gui_order": 14
+            },
+            {
+                "propname": ":hasDateCreated",
+                "cardinality": "0-1",
+                "gui_order": 15
+            },
+            {
+                "propname": ":hasDateModified",
+                "cardinality": "0-1",
+                "gui_order": 16
+            },
+            {
+                "propname": ":hasDatePublished",
+                "cardinality": "0-1",
+                "gui_order": 17
+            },
+            {
+                "propname": ":hasCreativeWorkStatus",
+                "cardinality": "0-1",
+                "gui_order": 18
+            },
+            {
+                "propname": ":relatedLink",
+                "cardinality": "0-n",
+                "gui_order": 19
+            },
+            {
+                "propname": ":hasLicense",
+                "cardinality": "0-1",
+                "gui_order": 20
+            }
+        ]
+    },
+    {
+        "name": "Collection",
+        "labels": {
+            "en": "Collection",
+            "de": "Sammlung",
+            "fr": "Collection",
+            "it": "Collezione"
+        },
+        "super": "Resource", "schema:Collection",
+        "cardinalities": [
+            {
+                "propname": ":hasSignature",
+                "cardinality": 1,
+                "gui_order": 1
+            },
+            {
+                "propname": ":hasTitle",
+                "cardinality": "1-n",
+                "gui_order": 2
+            },
+            {
+                "propname": ":hasCreator",
+                "cardinality": "0-n",
+                "gui_order": 3
+            },
+            {
+                "propname": ":hasDate",
+                "cardinality": "0-1",
+                "gui_order": 4
+            },
+            {
+                "propname": ":hasDescription",
+                "cardinality": "0-1",
+                "gui_order": 5
+            },
+            {
+                "propname": ":hasIndexing",
+                "cardinality": "0-1",
+                "gui_order": 6
+            },
+            {
+                "propname": ":hasRestoration",
+                "cardinality": "0-1",
+                "gui_order": 7
+            },
+            {
+                "propname": ":hasComment",
+                "cardinality": "0-n",
+                "gui_order": 8
+            },
+            {
+                "propname": ":hasLiterature",
+                "cardinality": "0-n",
+                "gui_order": 9
+            },
+            {
+                "propname": ":hasArchiveLocation",
+                "cardinality": "0-n",
+                "gui_order": 10
+            },
+            {
+                "propname": ":hasDefaultImage",
+                "cardinality": "0-1",
+                "gui_order": 11
+            },
+            {
+                "propname": ":hasDefaultVideo",
+                "cardinality": "0-1",
+                "gui_order": 12
+            },
+            {
+                "propname": ":hasKeywords",
+                "cardinality": "0-n",
+                "gui_order": 13
+            },
+            {
+                "propname": ":hasCopyrightHolder",
+                "cardinality": "0-n",
+                "gui_order": 14
+            },
+            {
+                "propname": ":hasKeywords",
+                "cardinality": "0-n",
+                "gui_order": 15
+            },
+            {
+                "propname": ":hasConcept",
+                "cardinality": "0-n",
+                "gui_order": 16
+            },
+            {
+                "propname": ":hasPlace",
+                "cardinality": "0-1",
+                "gui_order": 17
+            },
+            {
+                "propname": ":hasPart",
+                "cardinality": "0-n",
+                "gui_order": 18
+            },
+            {
+                "propname": ":recordedAt",
+                "cardinality": "0-n",
+                "gui_order": 19
+            },
+            {
+                "propname": ":hasContributor",
+                "cardinality": "0-n",
+                "gui_order": 20
+            },
+            {
+                "propname": ":hasPiaUrl",
+                "cardinality": "0-1",
+                "gui_order": 21
+            },
+            {
+                "propname": ":hasDaschUrl",
+                "cardinality": "0-1",
+                "gui_order": 22
+            },
+            {
+                "propname": ":hasDateCreated",
+                "cardinality": "0-1",
+                "gui_order": 23
+            },
+            {
+                "propname": ":hasDateModified",
+                "cardinality": "0-1",
+                "gui_order": 24
+            },
+            {
+                "propname": ":hasDatePublished",
+                "cardinality": "0-1",
+                "gui_order": 25
+            },
+            {
+                "propname": ":hasCreativeWorkStatus",
+                "cardinality": "0-1",
+                "gui_order": 26
+            },
+            {
+                "propname": ":relatedLink",
+                "cardinality": "0-n",
+                "gui_order": 27
+            }
+        ]
+    },
+    {
+        "name": "Concept",
+        "labels": {
+            "en": "Concept",
+            "de": "Konzepte",
+            "fr": "Concept",
+            "it": "Concetto"
+        },
+        "super": "Resource", "skos:Concept",
+        "comments": {
+          "en": "This resource supersedes sgv:Subject",
+      },
+        "cardinalities": [
+            {
+                "propname": ":hasName",
+                "cardinality": "1-n",
+                "gui_order": 1
+            },
+            {
+                "propname": ":hasDescription",
+                "cardinality": "0-1",
+                "gui_order": 2
+            },
+            {
+                "propname": ":hasPiaUrl",
+                "cardinality": "0-1",
+                "gui_order": 3
+            },
+            {
+                "propname": ":hasPrefLabel",
+                "cardinality": "0-1",
+                "gui_order": 4
+            },
+            {
+                "propname": ":hasAltLabel",
+                "cardinality": "0-n",
+                "gui_order": 5
+            },
+            {
+                "propname": ":hasScopeNote",
+                "cardinality": "0-n",
+                "gui_order": 6
+            },
+            {
+                "propname": ":hasBroaderConcept",
+                "cardinality": "0-1",
+                "gui_order": 7
+            },
+            {
+                "propname": ":hasNarrowerConcept",
+                "cardinality": "0-n",
+                "gui_order": 8
+            },
+            {
+                "propname": ":inScheme",
+                "cardinality": "0-1",
+                "gui_order": 9
+            },
+            {
+                "propname": ":topConceptOf",
+                "cardinality": "0-n",
+                "gui_order": 10
+            },
+            {
+                "propname": ":hasCloseMatch",
+                "cardinality": "0-n",
+                "gui_order": 11
+            },
+            {
+                "propname": ":hasRelatedConcept",
+                "cardinality": "0-n",
+                "gui_order": 12
+            },
+            {
+                "propname": ":sameAs",
+                "cardinality": "0-n",
+                "gui_order": 13
+            },
+            {
+                "propname": ":isSubjectOf",
+                "cardinality": "0-n",
+                "gui_order": 14
+            }
+        ]
+    },
+    {
+        "name": "Agent",
+        "labels": {
+            "en": "Agent",
+            "de": "Agent",
+            "fr": "Agent",
+            "it": "Agente"
+        },
+        "super": "Resource", "dct:Agent",
+        "comments": {
+          "en": "This resource supersedes sgv:Persons",
+      },
+        "cardinalities": [
+            {
+                "propname": ":hasName",
+                "cardinality": "1-n",
+                "gui_order": 1
+            },
+            {
+                "propname": ":hasDescription",
+                "cardinality": "0-1",
+                "gui_order": 2
+            },
+            {
+                "propname": ":relatedTo",
+                "cardinality": "0-1",
+                "gui_order": 3
+            },
+            {
+                "propname": ":hasJobTitle",
+                "cardinality": "0-n",
+                "gui_order": 4
+            },
+            {
+                "propname": ":hasBirthDate",
+                "cardinality": "0-1",
+                "gui_order": 5
+            },
+            {
+                "propname": ":hasBirthPlace",
+                "cardinality": "0-1",
+                "gui_order": 6
+            },
+            {
+                "propname": ":hasDeathDate",
+                "cardinality": "0-1",
+                "gui_order": 7
+            },
+            {
+                "propname": ":hasDeathPlace",
+                "cardinality": "0-1",
+                "gui_order": 8
+            },
+            {
+                "propname": ":hasComment",
+                "cardinality": "0-n",
+                "gui_order": 9
+            },
+            {
+                "propname": ":hasLiterature",
+                "cardinality": "0-n",
+                "gui_order": 10
+            },
+            {
+                "propname": ":hasPiaUrl",
+                "cardinality": "0-1",
+                "gui_order": 11
+            },
+            {
+                "propname": ":isMemberOf",
+                "cardinality": "0-n",
+                "gui_order": 12
+            },
+            {
+                "propname": ":hasEmployee",
+                "cardinality": "0-n",
+                "gui_order": 13
+            },
+            {
+                "propname": ":hasChildren",
+                "cardinality": "0-n",
+                "gui_order": 14
+            },
+            {
+                "propname": ":hasParent",
+                "cardinality": "0-n",
+                "gui_order": 15
+            },
+            {
+                "propname": ":hasSpouse",
+                "cardinality": "0-n",
+                "gui_order": 16
+            },
+            {
+                "propname": ":hasSibling",
+                "cardinality": "0-n",
+                "gui_order": 17
+            },
+            {
+                "propname": ":hasColleague",
+                "cardinality": "0-n",
+                "gui_order": 18
+            },
+            {
+                "propname": ":knows",
+                "cardinality": "0-n",
+                "gui_order": 19
+            },
+            {
+                "propname": ":performerIn",
+                "cardinality": "0-n",
+                "gui_order": 20
+            },
+            {
+                "propname": ":isLocated",
+                "cardinality": "0-n",
+                "gui_order": 21
+            },
+            {
+                "propname": ":hasLegalName",
+                "cardinality": "0-1",
+                "gui_order": 22
+            },
+            {
+                "propname": ":hasGivenName",
+                "cardinality": "0-1",
+                "gui_order": 23
+            },
+            {
+                "propname": ":hasFamilyName",
+                "cardinality": "0-1",
+                "gui_order": 24
+            },
+            {
+                "propname": ":hasNationality",
+                "cardinality": "0-n",
+                "gui_order": 25
+            },
+            {
+                "propname": ":sameAs",
+                "cardinality": "0-n",
+                "gui_order": 26
+            },
+            {
+                "propname": ":hasAdditionalType",
+                "cardinality": "0-1",
+                "gui_order": 27
+            },
+            {
+                "propname": ":isSubjectOf",
+                "cardinality": "0-n",
+                "gui_order": 28
+            }
+        ]
+    },
+    {
+        "name": "Event",
+        "labels": {
+            "en": "Event",
+            "de": "Event",
+            "fr": "Ev\u00e9nement",
+            "it": "Evento"
+        },
+        "super": "Resource", "schema:Event",
+        "cardinalities": [
+            {
+                "propname": ":hasConcept",
+                "cardinality": "0-n",
+                "gui_order": 1
+            },
+            {
+                "propname": ":hasName",
+                "cardinality": "1-n",
+                "gui_order": 2
+            },
+            {
+                "propname": ":hasDescription",
+                "cardinality": "0-n",
+                "gui_order": 3
+            },
+            {
+                "propname": ":hasDuration",
+                "cardinality": "0-1",
+                "gui_order": 4
+            },
+            {
+                "propname": ":hasContributor",
+                "cardinality": "0-n",
+                "gui_order": 5
+            },
+            {
+                "propname": ":hasPiaUrl",
+                "cardinality": 1,
+                "gui_order": 6
+            },
+            {
+                "propname": ":hasStartDate",
+                "cardinality": "0-1",
+                "gui_order": 7
+            },
+            {
+                "propname": ":hasEndDate",
+                "cardinality": "0-1",
+                "gui_order": 8
+            },
+            {
+                "propname": ":hasEventStatus",
+                "cardinality": "0-1",
+                "gui_order": 9
+            },
+            {
+                "propname": ":hasOrganizer",
+                "cardinality": "0-n",
+                "gui_order": 10
+            },
+            {
+                "propname": ":hasSubEvent",
+                "cardinality": "0-n",
+                "gui_order": 11
+            },
+            {
+                "propname": ":hasSuperEvent",
+                "cardinality": "0-1",
+                "gui_order": 12
+            },
+            {
+                "propname": ":hasEventType",
+                "cardinality": "0-n",
+                "gui_order": 13
+            },
+            {
+                "propname": ":recordedIn",
+                "cardinality": "0-n",
+                "gui_order": 14
+            },
+            {
+                "propname": ":hasWorkFeatured",
+                "cardinality": "0-n",
+                "gui_order": 15
+            }
+        ]
+    },
+    {
+        "name": "Place",
+        "labels": {
+            "en": "Place",
+            "de": "Ort",
+            "fr": "Lieu",
+            "it": "Luogo"
+        },
+        "super": "Resource", "schema:Place",
+        "cardinalities": [
+            {
+                "propname": ":hasName",
+                "cardinality": 1,
+                "gui_order": 1
+            },
+            {
+                "propname": ":hasDescription",
+                "cardinality": "0-n",
+                "gui_order": 2
+            },
+            {
+                "propname": ":hasAlternateName",
+                "cardinality": "0-n",
+                "gui_order": 3
+            },
+            {
+                "propname": ":hasPiaUrl",
+                "cardinality": 1,
+                "gui_order": 4
+            },
+            {
+                "propname": ":hasAtlasId",
+                "cardinality": "0-1",
+                "gui_order": 5
+            },
+            {
+                "propname": ":hasAddress",
+                "cardinality": "0-1",
+                "gui_order": 6
+            },
+            {
+                "propname": ":containedInPlace",
+                "cardinality": "0-1",
+                "gui_order": 7
+            },
+            {
+                "propname": ":containsPlace",
+                "cardinality": "0-n",
+                "gui_order": 8
+            },
+            {
+                "propname": ":hasLatitude",
+                "cardinality": "0-1",
+                "gui_order": 9
+            },
+            {
+                "propname": ":hasLongitude",
+                "cardinality": "0-1",
+                "gui_order": 10
+            },
+            {
+                "propname": ":sameAs",
+                "cardinality": "0-n",
+                "gui_order": 11
+            }
+        ]
+    }
+]
