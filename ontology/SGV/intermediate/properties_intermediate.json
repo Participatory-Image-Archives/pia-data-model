@@ -881,7 +881,7 @@
         "object": "sgv:Agent",
         "labels": {
             "en": "Employee(s)",
-            "de": "Mitarbeiter",
+            "de": "Mitarbeiter"
         },
         "gui_element": "Searchbox"
     },
