@@ -7,9 +7,9 @@
             "fr": "Image",
             "it": "Immagine"
         },
-        "super": "StillImageRepresentation", "schema:ImageObject",
+        "super": "schema:ImageObject",
         "comments": {
-          "en": "This resource will be deprecated in favour of sgv:Object",
+          "en": "This resource will be deprecated in favour of sgv:Object"
       },
         "cardinalities": [
             {
@@ -127,9 +127,9 @@
             "fr": "Film",
             "it": "Film"
         },
-        "super": "MovingImageRepresentation", "schema:VideoObject",
+        "super": "schema:VideoObject",
         "comments": {
-          "en": "This resource will be deprecated in favour of sgv:Object",
+          "en": "This resource will be deprecated in favour of sgv:Object"
       },
         "cardinalities": [
             {
@@ -227,9 +227,9 @@
             "fr": "Diaporama",
             "it": "Spettacolo audiovisivo"
         },
-        "super": "Resource", "schema:CreativeWork",
+        "super": "schema:CreativeWork",
         "comments": {
-          "en": "This resource will be deprecated in favour of sgv:Object",
+          "en": "This resource will be deprecated in favour of sgv:Object"
       },
         "cardinalities": [
             {
@@ -262,9 +262,9 @@
             "fr": "S\u00e9quence",
             "it": "Sequenza"
         },
-        "super": "Resource", "schema:Thing",
+        "super": "Resource",
         "comments": {
-          "en": "This resource will be probably deprecated",
+          "en": "This resource will be probably deprecated"
       },
         "cardinalities": [
             {
@@ -302,9 +302,9 @@
             "fr": "Album",
             "it": "Album"
         },
-        "super": "Resource", "schema:CreativeWork",
+        "super": "schema:CreativeWork",
         "comments": {
-          "en": "This resource will be deprecated in favour of sgv:Object",
+          "en": "This resource will be deprecated in favour of sgv:Object"
       },
         "cardinalities": [
             {
@@ -362,7 +362,7 @@
             "fr": "Objet",
             "it": "Oggetto"
         },
-        "super": "Resource", "schema:CreativeWork",
+        "super": "schema:CreativeWork",
         "cardinalities": [
             {
                 "propname": ":hasSignature",
@@ -569,7 +569,7 @@
             "fr": "Set de donn\u00e9es",
             "it": "Dataset"
         },
-        "super": "Resource", "schema:Dataset",
+        "super": "schema:Dataset",
         "cardinalities": [
             {
                 "propname": ":hasTitle",
@@ -681,7 +681,7 @@
             "fr": "Collection",
             "it": "Collezione"
         },
-        "super": "Resource", "schema:Collection",
+        "super": "schema:Collection",
         "cardinalities": [
             {
                 "propname": ":hasSignature",
@@ -828,7 +828,7 @@
             "fr": "Concept",
             "it": "Concetto"
         },
-        "super": "Resource", "skos:Concept",
+        "super": "skos:Concept",
         "comments": {
           "en": "This resource supersedes sgv:Subject",
       },
@@ -913,7 +913,7 @@
             "fr": "Agent",
             "it": "Agente"
         },
-        "super": "Resource", "dct:Agent",
+        "super": "dct:Agent",
         "comments": {
           "en": "This resource supersedes sgv:Persons",
       },
@@ -1068,7 +1068,7 @@
             "fr": "Ev\u00e9nement",
             "it": "Evento"
         },
-        "super": "Resource", "schema:Event",
+        "super": "schema:Event",
         "cardinalities": [
             {
                 "propname": ":hasConcept",
@@ -1155,7 +1155,7 @@
             "fr": "Lieu",
             "it": "Luogo"
         },
-        "super": "Resource", "schema:Place",
+        "super": "schema:Place",
         "cardinalities": [
             {
                 "propname": ":hasName",
