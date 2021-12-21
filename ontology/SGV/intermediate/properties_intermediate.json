@@ -1426,10 +1426,7 @@
             "hasLinkTo",
             "schema:subjectOf"
         ],
-        "object": ["sgv:Object", 
-                   "sgv:Dataset", "sgv:Collection", 
-                   "sgv:Event"
-                   ]
+        "object": "sgv:Object",
         "labels": {
             "en": "Subject Of",
             "de": "Subjekt von",
