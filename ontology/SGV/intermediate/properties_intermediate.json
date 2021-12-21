@@ -178,7 +178,7 @@
             "hasLinkTo",
             "schema:isPartOf"
         ],
-        "object": "sgv:Dataset", "sgv:Collection", "sgv:Object",
+        "object": "sgv:Album",
         "labels": {
             "en": "Is part of",
             "de": "Teil von",
