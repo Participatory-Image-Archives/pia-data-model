@@ -3400,7 +3400,7 @@
                     "gui_element": "Searchbox"
                 },
                 {
-                    "name": "hasRepresentation",
+                    "name": "isRepresentationOf",
                     "super": [
                         "hasLinkTo",
                         "edm:isRepresentationOf"
@@ -4807,7 +4807,7 @@
                             "gui_order": 5
                         },
                         {
-                            "propname": ":hasRepresentation",
+                            "propname": ":isRepresentationOf",
                             "cardinality": "0-n",
                             "gui_order": 6
                         },
@@ -4927,7 +4927,7 @@
                             "gui_order": 5
                         },
                         {
-                            "propname": ":hasRepresentation",
+                            "propname": ":isRepresentationOf",
                             "cardinality": "0-n",
                             "gui_order": 6
                         },
@@ -5042,7 +5042,7 @@
                             "gui_order": 1
                         },
                         {
-                            "propname": ":hasRepresentation",
+                            "propname": ":isRepresentationOf",
                             "cardinality": 1,
                             "gui_order": 2
                         },
@@ -5159,7 +5159,7 @@
                             "gui_order": 5
                         },
                         {
-                            "propname": ":hasRepresentation",
+                            "propname": ":isRepresentationOf",
                             "cardinality": "0-n",
                             "gui_order": 6
                         },
@@ -5351,7 +5351,7 @@
                             "gui_order": 2
                         },
                         {
-                            "propname": ":hasRepresentation",
+                            "propname": ":isRepresentationOf",
                             "cardinality": "0-n",
                             "gui_order": 3
                         },

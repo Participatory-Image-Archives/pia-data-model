@@ -78,7 +78,7 @@
         "gui_element": "Searchbox"
     },
     {
-        "name": "hasRepresentation",
+        "name": "isRepresentationOf",
         "super": [
             "hasLinkTo",
             "edm:isRepresentationOf"
