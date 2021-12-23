@@ -111,6 +111,7 @@
         "name": "hasConcept",
         "super": [
             "hasLinkTo",
+            "edm:isRepresentationOf",
             "schema:about"
         ],
         "object": "sgv:Concept",
