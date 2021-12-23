@@ -3403,6 +3403,7 @@
                     "name": "hasContent",
                     "super": [
                         "hasLinkTo",
+                        "edm:isRepresentationOf",
                         "schema:about"
                     ],
                     "object": "sgv:Agent",
