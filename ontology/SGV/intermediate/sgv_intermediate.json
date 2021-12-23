@@ -3407,10 +3407,10 @@
                     ],
                     "object": "sgv:Agent",
                     "labels": {
-                        "en": "Depicted persons/institutions",
-                        "de": "Abgebildete \nPersonen/Institutionen",
-                        "fr": "Personnes/Institutions figurant sur la photo",
-                        "it": "Persone/istituzioni raffigurate"
+                      "en": "Depicted persons/institutions",
+                      "de": "Abgebildete \nPersonen/Institutionen",
+                      "fr": "Personnes/Institutions repr\u00e9sent\u00e9es",
+                      "it": "Persone/istituzioni rappresentate"
                     },
                     "gui_element": "Searchbox"
                 },
