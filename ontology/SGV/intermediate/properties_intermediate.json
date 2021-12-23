@@ -78,10 +78,10 @@
         "gui_element": "Searchbox"
     },
     {
-        "name": "hasContent",
+        "name": "hasRepresentation",
         "super": [
             "hasLinkTo",
-            "schema:about"
+            "edm:isRepresentationOf"
         ],
         "object": "sgv:Agent",
         "labels": {
@@ -111,7 +111,6 @@
         "name": "hasConcept",
         "super": [
             "hasLinkTo",
-            "edm:isRepresentationOf",
             "schema:about"
         ],
         "object": "sgv:Concept",

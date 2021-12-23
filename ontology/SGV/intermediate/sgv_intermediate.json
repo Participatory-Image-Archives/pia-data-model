@@ -3400,11 +3400,10 @@
                     "gui_element": "Searchbox"
                 },
                 {
-                    "name": "hasContent",
+                    "name": "hasRepresentation",
                     "super": [
                         "hasLinkTo",
-                        "edm:isRepresentationOf",
-                        "schema:about"
+                        "edm:isRepresentationOf"
                     ],
                     "object": "sgv:Agent",
                     "labels": {
@@ -4808,7 +4807,7 @@
                             "gui_order": 5
                         },
                         {
-                            "propname": ":hasContent",
+                            "propname": ":hasRepresentation",
                             "cardinality": "0-n",
                             "gui_order": 6
                         },
@@ -4928,7 +4927,7 @@
                             "gui_order": 5
                         },
                         {
-                            "propname": ":hasContent",
+                            "propname": ":hasRepresentation",
                             "cardinality": "0-n",
                             "gui_order": 6
                         },
@@ -5043,7 +5042,7 @@
                             "gui_order": 1
                         },
                         {
-                            "propname": ":hasContent",
+                            "propname": ":hasRepresentation",
                             "cardinality": 1,
                             "gui_order": 2
                         },
@@ -5160,7 +5159,7 @@
                             "gui_order": 5
                         },
                         {
-                            "propname": ":hasContent",
+                            "propname": ":hasRepresentation",
                             "cardinality": "0-n",
                             "gui_order": 6
                         },
@@ -5352,7 +5351,7 @@
                             "gui_order": 2
                         },
                         {
-                            "propname": ":hasContent",
+                            "propname": ":hasRepresentation",
                             "cardinality": "0-n",
                             "gui_order": 3
                         },
