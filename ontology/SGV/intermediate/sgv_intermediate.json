@@ -1,6 +1,6 @@
 {
    "prefixes": {
-      "sgv": "http://api.test.dasch.swiss/ontology/0812/yourproject/v2",
+      "sgv": "http://api.test.dasch.swiss/ontology/0812/sgv/v2",
       "dct": "http://purl.org/dc/terms/",
       "edm": "http://www.europeana.eu/schemas/edm/",
       "ebucore": "http://www.ebu.ch/metadata/ontologies/ebucore/ebucore",
