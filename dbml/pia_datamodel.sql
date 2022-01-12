@@ -1,6 +1,6 @@
 -- SQL dump generated using DBML (dbml-lang.org)
 -- Database: PostgreSQL
--- Generated at: 2021-12-20T13:42:21.059Z
+-- Generated at: 2022-01-12T07:47:44.176Z
 
 CREATE TABLE "locations" (
   "id" SERIAL PRIMARY KEY,
@@ -68,11 +68,21 @@ CREATE TABLE "comments" (
 CREATE TABLE "documents" (
   "id" SERIAL PRIMARY KEY,
   "label" varchar,
-  "object_type_id" int,
-  "model_id" int,
-  "format_id" int,
+  "file_name" varchar,
+  "original_file_name" varchar,
+  "base_path" varchar,
   "created_at" timestamp,
   "updated_at" timestamp
+);
+
+CREATE TABLE "document_collection" (
+  "document_id" int,
+  "collection_id" int
+);
+
+CREATE TABLE "document_image" (
+  "document_id" int,
+  "image_id" int
 );
 
 CREATE TABLE "people" (
@@ -364,12 +374,6 @@ CREATE TABLE "map_collection" (
 ALTER TABLE "locations" ADD FOREIGN KEY ("place_id") REFERENCES "places" ("id");
 
 ALTER TABLE "places" ADD FOREIGN KEY ("location_id") REFERENCES "locations" ("id");
-
-ALTER TABLE "documents" ADD FOREIGN KEY ("object_type_id") REFERENCES "object_types" ("id");
-
-ALTER TABLE "documents" ADD FOREIGN KEY ("model_id") REFERENCES "models" ("id");
-
-ALTER TABLE "documents" ADD FOREIGN KEY ("format_id") REFERENCES "formats" ("id");
 
 ALTER TABLE "images" ADD FOREIGN KEY ("location_id") REFERENCES "locations" ("id");
 

@@ -139,12 +139,22 @@ Table documents {
   id int [pk, increment]
   label varchar
   
-  object_type_id int [ref: > object_types.id]
-  model_id int [ref: > models.id]
-  format_id int [ref: > formats.id]
+  file_name varchar
+  original_file_name varchar
+  base_path varchar
   
   created_at timestamp
   updated_at timestamp
+}
+
+Table document_collection {
+  document_id int
+  collection_id int
+}
+
+Table document_image {
+  document_id int
+  image_id int
 }
 
 Table people {
