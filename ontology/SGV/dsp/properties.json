@@ -432,7 +432,8 @@
         "labels": {
             "en": "Archive location",
             "de": "Standortverwaltung",
-            "fr": "Lieu de conservation "
+            "fr": "Lieu de conservation",
+            "it": "Luogo di conservazione"
         },
         "gui_element": "List",
         "gui_attributes": {

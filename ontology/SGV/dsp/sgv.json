@@ -3477,31 +3477,12 @@
                     "gui_element": "SimpleText"
                 },
                 {
-                    "name": "isPartOfCollection",
-                    "super": [
-                        "hasLinkTo",
-                        "schema:isPartOf"
-                    ],
-                    "object": "sgv:Collection",
-                    "labels": {
-                        "en": "Collection",
-                        "de": "Sammlung",
-                        "fr": "Collection",
-                        "it": "Collezione"
-                    },
-                    "comments": {
-                          "en": "This property will be deprecated in favour of isPartOf"
-                        },
-                    "gui_element": "Searchbox"
-                },
-                {
                     "name": "isPartOf",
                     "super": [
                         "hasLinkTo",
                         "schema:isPartOf"
                     ],
                     "object": [
-                      "sgv:Album",
                       "sgv:Object",
                       "sgv:Dataset",
                       "sgv:Collection"
@@ -3589,7 +3570,7 @@
                         "hasLinkTo",
                         "edm:isRelatedTo"
                     ],
-                    "object": "sgv:Image",
+                    "object": "sgv:Object",
                     "labels": {
                         "en": "Visually similar pictures",
                         "de": "\u00c4hnliche Bilder",
@@ -3603,7 +3584,7 @@
                     "super": [
                         "hasLinkTo"
                     ],
-                    "object": "sgv:Image",
+                    "object": "sgv:Object",
                     "labels": {
                         "en": "On the same album page",
                         "de": "Auf derselben Albumseite",
@@ -3636,7 +3617,7 @@
                         "hasLinkTo",
                         "edm:isRelatedTo"
                     ],
-                    "object": "sgv:Image",
+                    "object": "sgv:Object",
                     "labels": {
                         "en": "Verso",
                         "de": "Verso",
@@ -3844,7 +3825,8 @@
                     "labels": {
                         "en": "Archive location",
                         "de": "Standortverwaltung",
-                        "fr": "Lieu de conservation "
+                        "fr": "Lieu de conservation",
+                        "it": "Luogo di conservazione"
                     },
                     "comments": {
                           "en": "This property isn't really leveraged at the moment. It could be an opportunity to use it when the SSFS Photo Archive will have to be moved out."
@@ -3860,7 +3842,7 @@
                         "hasLinkTo",
                         "schema:workExample"
                     ],
-                    "object": "sgv:Image",
+                    "object": "sgv:Object",
                     "labels": {
                         "en": "Example image",
                         "de": "Bildverkn\u00fcpfung"
@@ -3873,7 +3855,7 @@
                         "hasLinkTo",
                         "schema:workExample"
                     ],
-                    "object": "sgv:Film",
+                    "object": "sgv:Object",
                     "labels": {
                         "en": "Example video",
                         "de": "Video Verkn\u00fcpfung"
@@ -3938,23 +3920,6 @@
                         "fr": "Temps d'intervalle"
                     },
                     "gui_element": "Interval"
-                },
-                {
-                    "name": "isPartOfFilm",
-                    "super": [
-                        "hasLinkTo",
-                        "schema:isPartOf"
-                    ],
-                    "object": "sgv:Film",
-                    "labels": {
-                        "en": "is Part Of (Film)",
-                        "de": "Teil von (Film)",
-                        "fr": "Fait partie de (Film)"
-                    },
-                    "comments": {
-                          "en": "This property will be deprecated in favour of isPartOf"
-                        },
-                    "gui_element": "Searchbox"
                 },
                 {
                     "name": "hasAlternateName",
@@ -4769,361 +4734,6 @@
             ],
             "resources": [
                 {
-                    "name": "Image",
-                    "labels": {
-                        "en": "Image",
-                        "de": "Bild",
-                        "fr": "Image",
-                        "it": "Immagine"
-                    },
-                    "super": "schema:ImageObject",
-                    "comments": {
-                      "en": "This resource will be deprecated in favour of sgv:Object"
-                  },
-                    "cardinalities": [
-                        {
-                            "propname": ":hasSignature",
-                            "cardinality": 1,
-                            "gui_order": 1
-                        },
-                        {
-                            "propname": ":hasTitle",
-                            "cardinality": "0-n",
-                            "gui_order": 2
-                        },
-                        {
-                            "propname": ":hasDate",
-                            "cardinality": "0-n",
-                            "gui_order": 3
-                        },
-                        {
-                            "propname": ":hasGeography",
-                            "cardinality": "0-1",
-                            "gui_order": 4
-                        },
-                        {
-                            "propname": ":hasCreator",
-                            "cardinality": "0-n",
-                            "gui_order": 5
-                        },
-                        {
-                            "propname": ":isRepresentationOf",
-                            "cardinality": "0-n",
-                            "gui_order": 6
-                        },
-                        {
-                            "propname": ":hasKeywords",
-                            "cardinality": "0-n",
-                            "gui_order": 7
-                        },
-                        {
-                            "propname": ":hasConcept",
-                            "cardinality": "0-n",
-                            "gui_order": 8
-                        },
-                        {
-                            "propname": ":hasComment",
-                            "cardinality": "0-n",
-                            "gui_order": 9
-                        },
-                        {
-                            "propname": ":hasOldNr",
-                            "cardinality": "0-1",
-                            "gui_order": 10
-                        },
-                        {
-                            "propname": ":isPartOfCollection",
-                            "cardinality": "0-n",
-                            "gui_order": 11
-                        },
-                        {
-                            "propname": ":isPartOf",
-                            "cardinality": "0-n",
-                            "gui_order": 12
-                        },
-                        {
-                            "propname": ":hasObjectType",
-                            "cardinality": "0-n",
-                            "gui_order": 13
-                        },
-                        {
-                            "propname": ":hasMedium",
-                            "cardinality": "0-n",
-                            "gui_order": 14
-                        },
-                        {
-                            "propname": ":hasFormat",
-                            "cardinality": "0-n",
-                            "gui_order": 15
-                        },
-                        {
-                            "propname": ":hasCopyrightHolder",
-                            "cardinality": "0-n",
-                            "gui_order": 16
-                        },
-                        {
-                            "propname": ":isVisuallySimilarTo",
-                            "cardinality": "0-n",
-                            "gui_order": 17
-                        },
-                        {
-                            "propname": ":hasOnAlbumPage",
-                            "cardinality": "0-1",
-                            "gui_order": 18
-                        },
-                        {
-                            "propname": ":isPartOfAlbum",
-                            "cardinality": "0-1",
-                            "gui_order": 19
-                        },
-                        {
-                            "propname": ":hasVerso",
-                            "cardinality": "0-1",
-                            "gui_order": 20
-                        },
-                        {
-                            "propname": ":hasSeqNr",
-                            "cardinality": "0-1",
-                            "gui_order": 21
-                        }
-                    ]
-                },
-                {
-                    "name": "Film",
-                    "labels": {
-                        "en": "Film",
-                        "de": "Film",
-                        "fr": "Film",
-                        "it": "Film"
-                    },
-                    "super": "schema:VideoObject",
-                    "comments": {
-                      "en": "This resource will be deprecated in favour of sgv:Object"
-                  },
-                    "cardinalities": [
-                        {
-                            "propname": ":hasSignature",
-                            "cardinality": 1,
-                            "gui_order": 1
-                        },
-                        {
-                            "propname": ":hasTitle",
-                            "cardinality": "0-1",
-                            "gui_order": 2
-                        },
-                        {
-                            "propname": ":hasDate",
-                            "cardinality": "0-1",
-                            "gui_order": 3
-                        },
-                        {
-                            "propname": ":hasGeography",
-                            "cardinality": "0-n",
-                            "gui_order": 4
-                        },
-                        {
-                            "propname": ":hasCreator",
-                            "cardinality": "0-n",
-                            "gui_order": 5
-                        },
-                        {
-                            "propname": ":isRepresentationOf",
-                            "cardinality": "0-n",
-                            "gui_order": 6
-                        },
-                        {
-                            "propname": ":hasOldNr",
-                            "cardinality": "0-1",
-                            "gui_order": 7
-                        },
-                        {
-                            "propname": ":hasComment",
-                            "cardinality": "0-n",
-                            "gui_order": 8
-                        },
-                        {
-                            "propname": ":hasConcept",
-                            "cardinality": "0-n",
-                            "gui_order": 9
-                        },
-                        {
-                            "propname": ":hasObjectType",
-                            "cardinality": "0-n",
-                            "gui_order": 10
-                        },
-                        {
-                            "propname": ":hasMedium",
-                            "cardinality": "0-n",
-                            "gui_order": 11
-                        },
-                        {
-                            "propname": ":hasKeywords",
-                            "cardinality": "0-n",
-                            "gui_order": 12
-                        },
-                        {
-                            "propname": ":isInLanguage",
-                            "cardinality": "0-n",
-                            "gui_order": 13
-                        },
-                        {
-                            "propname": ":hasDuration",
-                            "cardinality": "0-1",
-                            "gui_order": 14
-                        },
-                        {
-                            "propname": ":hasFps",
-                            "cardinality": "0-1",
-                            "gui_order": 15
-                        },
-                        {
-                            "propname": ":isPartOfCollection",
-                            "cardinality": "1-n",
-                            "gui_order": 16
-                        },
-                        {
-                            "propname": ":hasCopyrightHolder",
-                            "cardinality": "0-n",
-                            "gui_order": 17
-                        }
-                    ]
-                },
-                {
-                    "name": "Tonbildschau",
-                    "labels": {
-                        "en": "Audio-visual show",
-                        "de": "Tonbildschau",
-                        "fr": "Diaporama",
-                        "it": "Spettacolo audiovisivo"
-                    },
-                    "super": "schema:CreativeWork",
-                    "comments": {
-                      "en": "This resource will be deprecated in favour of sgv:Object"
-                  },
-                    "cardinalities": [
-                        {
-                            "propname": ":hasSignature",
-                            "cardinality": 1,
-                            "gui_order": 1
-                        },
-                        {
-                            "propname": ":hasTitle",
-                            "cardinality": "1-n",
-                            "gui_order": 2
-                        },
-                        {
-                            "propname": ":hasDate",
-                            "cardinality": "0-1",
-                            "gui_order": 3
-                        },
-                        {
-                            "propname": ":hasComment",
-                            "cardinality": "0-n",
-                            "gui_order": 4
-                        }
-                    ]
-                },
-                {
-                    "name": "Sequence",
-                    "labels": {
-                        "en": "Sequence",
-                        "de": "Sequenz",
-                        "fr": "S\u00e9quence",
-                        "it": "Sequenza"
-                    },
-                    "super": "Resource",
-                    "comments": {
-                      "en": "This resource will be probably deprecated"
-                  },
-                    "cardinalities": [
-                        {
-                            "propname": ":hasTitle",
-                            "cardinality": "0-1",
-                            "gui_order": 1
-                        },
-                        {
-                            "propname": ":isRepresentationOf",
-                            "cardinality": 1,
-                            "gui_order": 2
-                        },
-                        {
-                            "propname": ":isPartOfFilm",
-                            "cardinality": 1,
-                            "gui_order": 3
-                        },
-                        {
-                            "propname": ":hasInterval",
-                            "cardinality": "0-n",
-                            "gui_order": 4
-                        },
-                        {
-                            "propname": ":hasDescription",
-                            "cardinality": "0-1",
-                            "gui_order": 5
-                        }
-                    ]
-                },
-                {
-                    "name": "Album",
-                    "labels": {
-                        "en": "Album",
-                        "de": "Album",
-                        "fr": "Album",
-                        "it": "Album"
-                    },
-                    "super": "schema:CreativeWork",
-                    "comments": {
-                      "en": "This resource will be deprecated in favour of sgv:Object"
-                  },
-                    "cardinalities": [
-                        {
-                            "propname": ":hasSignature",
-                            "cardinality": 1,
-                            "gui_order": 1
-                        },
-                        {
-                            "propname": ":hasTitle",
-                            "cardinality": "1-n",
-                            "gui_order": 2
-                        },
-                        {
-                            "propname": ":hasCreator",
-                            "cardinality": "0-n",
-                            "gui_order": 3
-                        },
-                        {
-                            "propname": ":hasDate",
-                            "cardinality": "0-1",
-                            "gui_order": 4
-                        },
-                        {
-                            "propname": ":hasDescription",
-                            "cardinality": "0-1",
-                            "gui_order": 5
-                        },
-                        {
-                            "propname": ":hasIndexing",
-                            "cardinality": "0-1",
-                            "gui_order": 6
-                        },
-                        {
-                            "propname": ":isPartOfCollection",
-                            "cardinality": "0-1",
-                            "gui_order": 7
-                        },
-                        {
-                            "propname": ":hasComment",
-                            "cardinality": "0-n",
-                            "gui_order": 8
-                        },
-                        {
-                            "propname": ":hasObjectType",
-                            "cardinality": "0-n",
-                            "gui_order": 9
-                        }
-                    ]
-                },
-                {
                     "name": "Object",
                     "labels": {
                         "en": "Object",
@@ -5249,11 +4859,6 @@
                             "gui_order": 23
                         },
                         {
-                            "propname": ":isPartOfFilm",
-                            "cardinality": "0-1",
-                            "gui_order": 24
-                        },
-                        {
                             "propname": ":hasPlace",
                             "cardinality": "0-1",
                             "gui_order": 25
@@ -5327,6 +4932,16 @@
                             "propname": ":hasComment",
                             "cardinality": "0-n",
                             "gui_order": 39
+                        },
+                        {
+                            "propname": ":hasArchiveLocation",
+                            "cardinality": "0-n",
+                            "gui_order": 40
+                        },
+                        {
+                            "propname": ":hasIndexing",
+                            "cardinality": "0-1",
+                            "gui_order": 41
                         }
                     ]
                 },
@@ -5439,6 +5054,11 @@
                             "propname": ":hasLicense",
                             "cardinality": "0-1",
                             "gui_order": 20
+                        },
+                        {
+                            "propname": ":hasArchiveLocation",
+                            "cardinality": "0-n",
+                            "gui_order": 21
                         }
                     ]
                 },
@@ -5598,9 +5218,6 @@
                         "it": "Concetto"
                     },
                     "super": "skos:Concept",
-                    "comments": {
-                      "en": "This resource supersedes sgv:Subject"
-                  },
                     "cardinalities": [
                         {
                             "propname": ":hasName",
@@ -5683,9 +5300,6 @@
                         "it": "Agente"
                     },
                     "super": "dct:Agent",
-                    "comments": {
-                      "en": "This resource supersedes sgv:Persons"
-                  },
                     "cardinalities": [
                         {
                             "propname": ":hasName",
@@ -5837,7 +5451,7 @@
                         "fr": "Ev\u00e9nement",
                         "it": "Evento"
                     },
-                    "super": "schema:Event",
+                    "super": "Schema:Event",
                     "cardinalities": [
                         {
                             "propname": ":hasConcept",
@@ -5924,7 +5538,7 @@
                         "fr": "Lieu",
                         "it": "Luogo"
                     },
-                    "super": "schema:Place",
+                    "super": "Schema:Place",
                     "cardinalities": [
                         {
                             "propname": ":hasName",
