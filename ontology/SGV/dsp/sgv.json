@@ -3367,24 +3367,6 @@
                     "gui_element": "Date"
                 },
                 {
-                    "name": "hasGeography",
-                    "super": [
-                        "hasValue",
-                        "schema:spatial"
-                    ],
-                    "object": "GeonameValue",
-                    "labels": {
-                        "en": "Place",
-                        "de": "Ort",
-                        "fr": "Lieu",
-                        "it": "Luogo"
-                    },
-                    "comments": {
-                          "en": "This property will be deprecated in favour of hasPlace"
-                        },
-                    "gui_element": "Geonames"
-                },
-                {
                     "name": "hasCreator",
                     "super": [
                         "hasLinkTo",
@@ -3719,20 +3701,17 @@
                 {
                     "name": "hasBirthPlace",
                     "super": [
-                        "hasValue",
+                        "hasLinkTo",
                         "schema:birthPlace"
                     ],
-                    "object": "GeonameValue",
+                    "object": "sgv:Place",
                     "labels": {
                         "en": "Birth place",
                         "de": "geboren/gegr\u00fcndet in",
                         "fr": "Lieu de naissance",
                         "it": "Luogo di nascita"
                     },
-                    "comments": {
-                          "en": "This property will no longer be linked to Geonames but to sgv:Place, which will provide more information"
-                        },
-                    "gui_element": "Geonames"
+                    "gui_element": "Searchbox"
                 },
                 {
                     "name": "hasDeathDate",
@@ -3752,20 +3731,17 @@
                 {
                     "name": "hasDeathPlace",
                     "super": [
-                        "hasValue",
+                        "hasLinkTo",
                         "schema:deathPlace"
                     ],
-                    "object": "GeonameValue",
+                    "object": "sgv:Place",
                     "labels": {
                         "en": "Death place",
                         "de": "verstorben/aufgel\u00f6st in",
                         "fr": "Lieu de mort",
                         "it": "Luogo di morte"
                     },
-                    "comments": {
-                          "en": "This property will no longer be linked to Geonames but to sgv:Place, which will provide more information"
-                        },
-                    "gui_element": "Geonames"
+                    "gui_element": "Searchbox"
                 },
                 {
                     "name": "hasLiterature",
@@ -4757,11 +4733,6 @@
                             "propname": ":hasDate",
                             "cardinality": "0-n",
                             "gui_order": 3
-                        },
-                        {
-                            "propname": ":hasGeography",
-                            "cardinality": "0-1",
-                            "gui_order": 4
                         },
                         {
                             "propname": ":hasCreator",

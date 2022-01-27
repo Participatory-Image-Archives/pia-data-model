@@ -42,20 +42,6 @@
         "gui_element": "Date"
     },
     {
-        "name": "hasGeography",
-        "super": [
-            "hasValue"
-        ],
-        "object": "GeonameValue",
-        "labels": {
-            "en": "Place",
-            "de": "Ort",
-            "fr": "Lieu",
-            "it": "Luogo"
-        },
-        "gui_element": "Geonames"
-    },
-    {
         "name": "hasCreator",
         "super": [
             "hasLinkTo"
