@@ -2,7 +2,8 @@
     {
         "name": "hasSignature",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:identifier"
         ],
         "object": "TextValue",
         "labels": {
@@ -16,7 +17,8 @@
     {
         "name": "hasTitle",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:name"
         ],
         "object": "TextValue",
         "labels": {
@@ -30,7 +32,8 @@
     {
         "name": "hasDate",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:temporal"
         ],
         "object": "DateValue",
         "labels": {
@@ -44,7 +47,8 @@
     {
         "name": "hasCreator",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:creator"
         ],
         "object": "sgv:Agent",
         "labels": {
@@ -58,21 +62,23 @@
     {
         "name": "isRepresentationOf",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "edm:isRepresentationOf"
         ],
         "object": "sgv:Agent",
         "labels": {
-            "en": "Depicted persons/institutions",
-            "de": "Abgebildete \nPersonen/Institutionen",
-            "fr": "Personnes/Institutions repr\u00e9sent\u00e9es",
-            "it": "Persone/Istituzioni rappresentate"
+          "en": "Depicted persons/institutions",
+          "de": "Abgebildete \nPersonen/Institutionen",
+          "fr": "Personnes/Institutions repr\u00e9sent\u00e9es",
+          "it": "Persone/istituzioni rappresentate"
         },
         "gui_element": "Searchbox"
     },
     {
         "name": "hasKeywords",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:keywords"
         ],
         "object": "TextValue",
         "labels": {
@@ -86,7 +92,8 @@
     {
         "name": "hasConcept",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:about"
         ],
         "object": "sgv:Concept",
         "labels": {
@@ -109,12 +116,16 @@
             "fr": "Commentaires",
             "it": "Commentaires"
         },
+        "comments": {
+              "en": "This property cannot be mapped to existing vocabularies. It may be deprecated in the future"
+            },
         "gui_element": "Textarea"
     },
     {
         "name": "hasOldNr",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:identifier"
         ],
         "object": "TextValue",
         "labels": {
@@ -128,9 +139,14 @@
     {
         "name": "isPartOf",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:isPartOf"
         ],
-        "object": "sgv:Collection",
+        "object": [
+          "sgv:Object",
+          "sgv:Dataset",
+          "sgv:Collection"
+        ],
         "labels": {
             "en": "Is part of",
             "de": "Teil von",
@@ -142,7 +158,8 @@
     {
         "name": "hasObjectType",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:material"
         ],
         "object": "ListValue",
         "labels": {
@@ -159,7 +176,8 @@
     {
         "name": "hasMedium",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:artMedium"
         ],
         "object": "ListValue",
         "labels": {
@@ -176,7 +194,8 @@
     {
         "name": "hasFormat",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:size"
         ],
         "object": "ListValue",
         "labels": {
@@ -193,7 +212,8 @@
     {
         "name": "hasCopyrightHolder",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:copyrightHolder"
         ],
         "object": "sgv:Agent",
         "labels": {
@@ -207,7 +227,8 @@
     {
         "name": "isVisuallySimilarTo",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "edm:isRelatedTo"
         ],
         "object": "sgv:Object",
         "labels": {
@@ -233,9 +254,28 @@
         "gui_element": "Searchbox"
     },
     {
+        "name": "isPartOfAlbum",
+        "super": [
+            "hasLinkTo",
+            "schema:isPartOf"
+        ],
+        "object": "sgv:Album",
+        "labels": {
+            "en": "Album",
+            "de": "Album",
+            "fr": "Album",
+            "it": "Album"
+        },
+        "comments": {
+              "en": "This property will be deprecated in favour of isPartOf"
+            },
+        "gui_element": "Searchbox"
+    },
+    {
         "name": "hasVerso",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "edm:isRelatedTo"
         ],
         "object": "sgv:Object",
         "labels": {
@@ -263,7 +303,8 @@
     {
         "name": "hasName",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:name"
         ],
         "object": "TextValue",
         "labels": {
@@ -272,12 +313,16 @@
             "fr": "Nom",
             "it": "Nome"
         },
+        "comments": {
+              "en": "This property will no longer be used in sgv:Concept and both hasPrefLabel and hasAltLabel will be leveraged"
+            },
         "gui_element": "SimpleText"
     },
     {
         "name": "hasDescription",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:description"
         ],
         "object": "TextValue",
         "labels": {
@@ -291,11 +336,12 @@
     {
         "name": "relatedTo",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:relatedTo"
         ],
         "object": "sgv:Agent",
         "labels": {
-            "en": "Related to",
+            "en": "Related to (Person)",
             "de": "Relativ zu",
             "fr": "Relatif \u00e0"
         },
@@ -304,7 +350,8 @@
     {
         "name": "hasJobTitle",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:jobTitle"
         ],
         "object": "TextValue",
         "labels": {
@@ -317,7 +364,8 @@
     {
         "name": "hasBirthDate",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:birthDate"
         ],
         "object": "DateValue",
         "labels": {
@@ -331,21 +379,23 @@
     {
         "name": "hasBirthPlace",
         "super": [
-            "hasValue"
+            "hasLinkTo",
+            "schema:birthPlace"
         ],
-        "object": "GeonameValue",
+        "object": "sgv:Place",
         "labels": {
             "en": "Birth place",
             "de": "geboren/gegr\u00fcndet in",
             "fr": "Lieu de naissance",
             "it": "Luogo di nascita"
         },
-        "gui_element": "Geonames"
+        "gui_element": "Searchbox"
     },
     {
         "name": "hasDeathDate",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:deathDate"
         ],
         "object": "DateValue",
         "labels": {
@@ -359,16 +409,17 @@
     {
         "name": "hasDeathPlace",
         "super": [
-            "hasValue"
+            "hasLinkTo",
+            "schema:deathPlace"
         ],
-        "object": "GeonameValue",
+        "object": "sgv:Place",
         "labels": {
             "en": "Death place",
             "de": "verstorben/aufgel\u00f6st in",
             "fr": "Lieu de mort",
             "it": "Luogo di morte"
         },
-        "gui_element": "Geonames"
+        "gui_element": "Searchbox"
     },
     {
         "name": "hasLiterature",
@@ -381,6 +432,9 @@
             "de": "Literatur",
             "fr": "Litt\u00e9rature"
         },
+        "comments": {
+              "en": "This property cannot be mapped to existing vocabularies. It may be deprecated in the future"
+            },
         "gui_element": "SimpleText"
     },
     {
@@ -394,6 +448,9 @@
             "de": "Erschliessungsprotokoll",
             "fr": "Notes de catalogage et d'indexation"
         },
+        "comments": {
+              "en": "This property cannot be mapped to existing vocabularies. It may be deprecated in the future"
+            },
         "gui_element": "Richtext"
     },
     {
@@ -407,12 +464,16 @@
             "de": "Restaurierungsprotokoll",
             "fr": "Notes de conservation et restauration"
         },
+        "comments": {
+              "en": "This property cannot be mapped to existing vocabularies. It may be deprecated in the future"
+            },
         "gui_element": "Textarea"
     },
     {
         "name": "hasArchiveLocation",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:spatial"
         ],
         "object": "ListValue",
         "labels": {
@@ -421,6 +482,9 @@
             "fr": "Lieu de conservation",
             "it": "Luogo di conservazione"
         },
+        "comments": {
+              "en": "This property isn't really leveraged at the moment. It could be an opportunity to use it when the SSFS Photo Archive will have to be moved out."
+            },
         "gui_element": "List",
         "gui_attributes": {
             "hlist": "Standorte"
@@ -429,7 +493,8 @@
     {
         "name": "hasDefaultImage",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:workExample"
         ],
         "object": "sgv:Object",
         "labels": {
@@ -441,7 +506,8 @@
     {
         "name": "hasDefaultVideo",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:workExample"
         ],
         "object": "sgv:Object",
         "labels": {
@@ -453,7 +519,8 @@
     {
         "name": "isInLanguage",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:inLanguage"
         ],
         "object": "ListValue",
         "labels": {
@@ -469,7 +536,8 @@
     {
         "name": "hasDuration",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:duration"
         ],
         "object": "TextValue",
         "labels": {
@@ -482,7 +550,8 @@
     {
         "name": "hasFps",
         "super": [
-            "hasValue"
+            "hasValue",
+            "ebucore:frameRate"
         ],
         "object": "DecimalValue",
         "labels": {
@@ -509,7 +578,8 @@
     {
         "name": "hasAlternateName",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:alternateName"
         ],
         "object": "TextValue",
         "labels": {
@@ -522,7 +592,8 @@
     {
         "name": "hasPlace",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:spatial"
         ],
         "object": "sgv:Place",
         "labels": {
@@ -536,7 +607,8 @@
     {
         "name": "hasPart",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:hasPart"
         ],
         "object": "sgv:Object",
         "labels": {
@@ -550,7 +622,8 @@
     {
         "name": "recordedAt",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:recordedAt"
         ],
         "object": "sgv:Event",
         "labels": {
@@ -563,7 +636,8 @@
     {
         "name": "hasContributor",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:contributor"
         ],
         "object": "sgv:Agent",
         "labels": {
@@ -577,7 +651,8 @@
     {
         "name": "hasPiaUrl",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:url"
         ],
         "object": "UriValue",
         "labels": {
@@ -591,7 +666,8 @@
     {
         "name": "hasDaschUrl",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:url"
         ],
         "object": "UriValue",
         "labels": {
@@ -605,7 +681,8 @@
     {
         "name": "hasDateCreated",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:dateCreated"
         ],
         "object": "DateValue",
         "labels": {
@@ -619,7 +696,8 @@
     {
         "name": "hasDateModified",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:dateModified"
         ],
         "object": "DateValue",
         "labels": {
@@ -633,7 +711,8 @@
     {
         "name": "hasDatePublished",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:datePublished"
         ],
         "object": "DateValue",
         "labels": {
@@ -647,7 +726,8 @@
     {
         "name": "hasStartDate",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:startDate"
         ],
         "object": "DateValue",
         "labels": {
@@ -661,7 +741,8 @@
     {
         "name": "hasEndDate",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:endDate"
         ],
         "object": "DateValue",
         "labels": {
@@ -675,7 +756,8 @@
     {
         "name": "hasCreativeWorkStatus",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:CreativeWorkStatus"
         ],
         "object": "ListValue",
         "labels": {
@@ -692,7 +774,8 @@
     {
         "name": "hasEventStatus",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:eventStatus"
         ],
         "object": "ListValue",
         "labels": {
@@ -709,7 +792,8 @@
     {
         "name": "hasOrganizer",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:organizer"
         ],
         "object": "sgv:Agent",
         "labels": {
@@ -723,7 +807,8 @@
     {
         "name": "isMemberOf",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:memberOf"
         ],
         "object": "sgv:Agent",
         "labels": {
@@ -736,7 +821,8 @@
     {
         "name": "hasEmployee",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:employee"
         ],
         "object": "sgv:Agent",
         "labels": {
@@ -748,7 +834,8 @@
     {
         "name": "hasChildren",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:children"
         ],
         "object": "sgv:Agent",
         "labels": {
@@ -762,7 +849,8 @@
     {
         "name": "hasParent",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:parent"
         ],
         "object": "sgv:Agent",
         "labels": {
@@ -776,7 +864,8 @@
     {
         "name": "hasSpouse",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:spouse"
         ],
         "object": "sgv:Agent",
         "labels": {
@@ -790,7 +879,8 @@
     {
         "name": "hasSibling",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:sibling"
         ],
         "object": "sgv:Agent",
         "labels": {
@@ -804,7 +894,8 @@
     {
         "name": "hasColleague",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:colleague"
         ],
         "object": "sgv:Agent",
         "labels": {
@@ -818,7 +909,8 @@
     {
         "name": "knows",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:knows"
         ],
         "object": "sgv:Agent",
         "labels": {
@@ -831,7 +923,8 @@
     {
         "name": "performerIn",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:performerIn"
         ],
         "object": "sgv:Event",
         "labels": {
@@ -844,7 +937,8 @@
     {
         "name": "isLocated",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:location"
         ],
         "object": "sgv:Place",
         "labels": {
@@ -858,7 +952,8 @@
     {
         "name": "hasLegalName",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:legalName"
         ],
         "object": "TextValue",
         "labels": {
@@ -871,7 +966,8 @@
     {
         "name": "hasGivenName",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:givenName"
         ],
         "object": "TextValue",
         "labels": {
@@ -885,7 +981,8 @@
     {
         "name": "hasFamilyName",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:familyName"
         ],
         "object": "TextValue",
         "labels": {
@@ -899,7 +996,8 @@
     {
         "name": "hasNationality",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:nationality"
         ],
         "object": "TextValue",
         "labels": {
@@ -913,7 +1011,8 @@
     {
         "name": "hasAtlasId",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:identifier"
         ],
         "object": "TextValue",
         "labels": {
@@ -927,7 +1026,8 @@
     {
         "name": "hasAddress",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:address"
         ],
         "object": "TextValue",
         "labels": {
@@ -941,7 +1041,8 @@
     {
         "name": "containedInPlace",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:containedInPlace"
         ],
         "object": "sgv:Place",
         "labels": {
@@ -954,7 +1055,8 @@
     {
         "name": "containsPlace",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:containsPlace"
         ],
         "object": "sgv:Place",
         "labels": {
@@ -967,7 +1069,8 @@
     {
         "name": "hasLatitude",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:latitude"
         ],
         "object": "DecimalValue",
         "labels": {
@@ -981,7 +1084,8 @@
     {
         "name": "hasLongitude",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:longitude"
         ],
         "object": "DecimalValue",
         "labels": {
@@ -995,7 +1099,8 @@
     {
         "name": "hasPrefLabel",
         "super": [
-            "hasValue"
+            "hasValue",
+            "skos:prefLabel"
         ],
         "object": "TextValue",
         "labels": {
@@ -1008,7 +1113,8 @@
     {
         "name": "hasAltLabel",
         "super": [
-            "hasValue"
+            "hasValue",
+            "skos:altLabel"
         ],
         "object": "TextValue",
         "labels": {
@@ -1021,7 +1127,8 @@
     {
         "name": "hasScopeNote",
         "super": [
-            "hasValue"
+            "hasValue",
+            "skos:scopeNote"
         ],
         "object": "TextValue",
         "labels": {
@@ -1032,7 +1139,8 @@
     {
         "name": "hasBroaderConcept",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "skos:broader"
         ],
         "object": "sgv:Concept",
         "labels": {
@@ -1043,7 +1151,8 @@
     {
         "name": "hasNarrowerConcept",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "skos:narrower"
         ],
         "object": "sgv:Concept",
         "labels": {
@@ -1054,7 +1163,8 @@
     {
         "name": "inScheme",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "skos:inScheme"
         ],
         "object": "sgv:Concept",
         "labels": {
@@ -1065,7 +1175,8 @@
     {
         "name": "topConceptOf",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "skos:topConceptOf"
         ],
         "object": "sgv:Concept",
         "labels": {
@@ -1076,7 +1187,8 @@
     {
         "name": "hasCloseMatch",
         "super": [
-            "hasValue"
+            "hasValue",
+            "skos:closeMatch"
         ],
         "object": "UriValue",
         "labels": {
@@ -1087,7 +1199,8 @@
     {
         "name": "hasRelatedConcept",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "skos:related"
         ],
         "object": "sgv:Concept",
         "labels": {
@@ -1100,7 +1213,8 @@
     {
         "name": "hasSubEvent",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:subEvent"
         ],
         "object": "sgv:Event",
         "labels": {
@@ -1113,7 +1227,8 @@
     {
         "name": "hasSuperEvent",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:superEvent"
         ],
         "object": "sgv:Event",
         "labels": {
@@ -1139,7 +1254,8 @@
     {
         "name": "recordedIn",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:recordedIn"
         ],
         "object": "sgv:Object",
         "labels": {
@@ -1152,7 +1268,8 @@
     {
         "name": "hasWorkFeatured",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:workFeatured"
         ],
         "object": "sgv:Object",
         "labels": {
@@ -1165,7 +1282,8 @@
     {
         "name": "sameAs",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:sameAs"
         ],
         "object": "UriValue",
         "labels": {
@@ -1178,7 +1296,8 @@
     {
         "name": "relatedLink",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:relatedLink"
         ],
         "object": "UriValue",
         "labels": {
@@ -1191,7 +1310,8 @@
     {
         "name": "hasLicense",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:license"
         ],
         "object": "UriValue",
         "labels": {
@@ -1204,7 +1324,8 @@
     {
         "name": "hasContentUrl",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:contentUrl"
         ],
         "object": "UriValue",
         "labels": {
@@ -1217,7 +1338,8 @@
     {
         "name": "hasThumbnailUrl",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:thumbnailUrl"
         ],
         "object": "UriValue",
         "labels": {
@@ -1230,7 +1352,8 @@
     {
         "name": "hasAdditionalType",
         "super": [
-            "hasValue"
+            "hasValue",
+            "schema:additionalType"
         ],
         "object": "ListValue",
         "labels": {
@@ -1246,9 +1369,15 @@
     {
         "name": "isSubjectOf",
         "super": [
-            "hasLinkTo"
+            "hasLinkTo",
+            "schema:subjectOf"
         ],
-        "object": "sgv:Object",
+        "object": [
+          "sgv:Object",
+          "sgv:Dataset",
+          "sgv:Collection",
+          "sgv:Event"
+        ],
         "labels": {
             "en": "Subject Of",
             "de": "Subjekt von",
