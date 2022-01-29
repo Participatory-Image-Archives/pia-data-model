@@ -254,24 +254,6 @@
         "gui_element": "Searchbox"
     },
     {
-        "name": "isPartOfAlbum",
-        "super": [
-            "hasLinkTo",
-            "schema:isPartOf"
-        ],
-        "object": "sgv:Album",
-        "labels": {
-            "en": "Album",
-            "de": "Album",
-            "fr": "Album",
-            "it": "Album"
-        },
-        "comments": {
-              "en": "This property will be deprecated in favour of isPartOf"
-            },
-        "gui_element": "Searchbox"
-    },
-    {
         "name": "hasVerso",
         "super": [
             "hasLinkTo",
