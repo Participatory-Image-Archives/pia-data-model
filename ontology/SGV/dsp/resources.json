@@ -120,7 +120,7 @@
                 "gui_order": 22
             },
             {
-                "propname": ":isPartOf",
+                "propname": ":hasIndexing",
                 "cardinality": "0-1",
                 "gui_order": 23
             },
@@ -203,11 +203,6 @@
                 "propname": ":hasArchiveLocation",
                 "cardinality": "0-n",
                 "gui_order": 39
-            },
-            {
-                "propname": ":hasIndexing",
-                "cardinality": "0-1",
-                "gui_order": 40
             }
         ]
     },
