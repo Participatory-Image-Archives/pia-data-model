@@ -5012,6 +5012,11 @@
                             "propname": ":hasArchiveLocation",
                             "cardinality": "0-n",
                             "gui_order": 21
+                        },
+                        {
+                            "propname": ":hasDaschUrl",
+                            "cardinality": "0-1",
+                            "gui_order": 22
                         }
                     ]
                 },
