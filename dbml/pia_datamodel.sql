@@ -1,6 +1,6 @@
 -- SQL dump generated using DBML (dbml-lang.org)
 -- Database: PostgreSQL
--- Generated at: 2022-01-31T09:58:45.150Z
+-- Generated at: 2022-02-01T10:07:14.109Z
 
 CREATE TABLE "locations" (
   "id" SERIAL PRIMARY KEY,
@@ -9,7 +9,7 @@ CREATE TABLE "locations" (
   "geonames_url" varchar,
   "latitude" float,
   "longitude" float,
-  "provenance" varchar,
+  "origin" varchar,
   "place_id" int,
   "created_at" timestamp,
   "updated_at" timestamp
@@ -261,18 +261,14 @@ CREATE TABLE "collection_alt_label" (
   "alt_label_id" int
 );
 
-CREATE TABLE "set" (
+CREATE TABLE "sets" (
   "id" SERIAL PRIMARY KEY,
   "label" varchar,
   "description" varchar,
   "signatures" varchar,
+  "collection_id" int,
   "created_at" timestamp,
   "updated_at" timestamp
-);
-
-CREATE TABLE "collection_set" (
-  "collection_id" int,
-  "set_id" int
 );
 
 CREATE TABLE "albums" (
@@ -398,6 +394,8 @@ ALTER TABLE "images" ADD FOREIGN KEY ("object_type_id") REFERENCES "object_types
 ALTER TABLE "images" ADD FOREIGN KEY ("model_id") REFERENCES "models" ("id");
 
 ALTER TABLE "images" ADD FOREIGN KEY ("format_id") REFERENCES "formats" ("id");
+
+ALTER TABLE "sets" ADD FOREIGN KEY ("collection_id") REFERENCES "collections" ("id") ON DELETE CASCADE;
 
 ALTER TABLE "albums" ADD FOREIGN KEY ("object_type_id") REFERENCES "object_types" ("id");
 

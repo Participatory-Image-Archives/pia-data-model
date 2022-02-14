@@ -54,7 +54,7 @@ Table locations {
   geonames_url varchar
   latitude float
   longitude float
-  provenance varchar
+  origin varchar
 
   place_id int [ref: - places.id]
 
@@ -386,20 +386,19 @@ Table collection_alt_label {
   alt_label_id int
 }
 
-Table set {
+Table sets {
   id int [pk, increment]
   label varchar
   description varchar
   signatures varchar
 
+  collection_id int
+
   created_at timestamp
   updated_at timestamp
 }
 
-Table collection_set {
-  collection_id int
-  set_id int
-}
+Ref: collections.id - sets.collection_id [delete: cascade]
 
 Table albums {
   id int [pk, increment]
