@@ -4706,7 +4706,7 @@
                     "cardinalities": [
                         {
                             "propname": ":hasSignature",
-                            "cardinality": 1,
+                            "cardinality": "1",
                             "gui_order": 1
                         },
                         {
@@ -4981,7 +4981,7 @@
                         },
                         {
                             "propname": ":hasPiaUrl",
-                            "cardinality": 1,
+                            "cardinality": "0-1",
                             "gui_order": 14
                         },
                         {
@@ -5041,7 +5041,7 @@
                     "cardinalities": [
                         {
                             "propname": ":hasSignature",
-                            "cardinality": 1,
+                            "cardinality": "1",
                             "gui_order": 1
                         },
                         {
@@ -5431,7 +5431,7 @@
                         },
                         {
                             "propname": ":hasName",
-                            "cardinality": "1-n",
+                            "cardinality": "1",
                             "gui_order": 2
                         },
                         {
@@ -5451,7 +5451,7 @@
                         },
                         {
                             "propname": ":hasPiaUrl",
-                            "cardinality": 1,
+                            "cardinality": "0-1",
                             "gui_order": 6
                         },
                         {
@@ -5516,7 +5516,7 @@
                     "cardinalities": [
                         {
                             "propname": ":hasName",
-                            "cardinality": 1,
+                            "cardinality": "1",
                             "gui_order": 1
                         },
                         {
@@ -5531,7 +5531,7 @@
                         },
                         {
                             "propname": ":hasPiaUrl",
-                            "cardinality": 1,
+                            "cardinality": "0-1",
                             "gui_order": 4
                         },
                         {
