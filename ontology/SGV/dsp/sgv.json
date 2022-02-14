@@ -3424,7 +3424,7 @@
                         "fr": "Concept",
                         "it": "Concetto"
                     },
-                    "gui_element": null
+                    "gui_element": "Searchbox"
                 },
                 {
                     "name": "hasComment",
