@@ -3424,7 +3424,7 @@
                         "fr": "Concept",
                         "it": "Concetto"
                     },
-                    "gui_element": null
+                    "gui_element": "Searchbox"
                 },
                 {
                     "name": "hasComment",
@@ -4699,11 +4699,14 @@
                         "fr": "Objet",
                         "it": "Oggetto"
                     },
-                    "super": "schema:CreativeWork",
+                    "super": [
+                      "Resource",
+                      "schema:CreativeWork"
+                      ],
                     "cardinalities": [
                         {
                             "propname": ":hasSignature",
-                            "cardinality": 1,
+                            "cardinality": "1",
                             "gui_order": 1
                         },
                         {
@@ -4906,7 +4909,10 @@
                         "fr": "Set de donn\u00e9es",
                         "it": "Dataset"
                     },
-                    "super": "schema:Dataset",
+                    "super": [
+                      "Resource",
+                      "schema:Dataset"
+                      ],
                     "cardinalities": [
                         {
                             "propname": ":hasTitle",
@@ -4975,7 +4981,7 @@
                         },
                         {
                             "propname": ":hasPiaUrl",
-                            "cardinality": 1,
+                            "cardinality": "0-1",
                             "gui_order": 14
                         },
                         {
@@ -5028,11 +5034,14 @@
                         "fr": "Collection",
                         "it": "Collezione"
                     },
-                    "super": "schema:Collection",
+                    "super": [
+                      "Resource",
+                      "schema:Collection"
+                      ],
                     "cardinalities": [
                         {
                             "propname": ":hasSignature",
-                            "cardinality": 1,
+                            "cardinality": "1",
                             "gui_order": 1
                         },
                         {
@@ -5175,7 +5184,10 @@
                         "fr": "Concept",
                         "it": "Concetto"
                     },
-                    "super": "skos:Concept",
+                    "super": [
+                      "Resource",
+                      "skos:Concept"
+                      ],
                     "cardinalities": [
                         {
                             "propname": ":hasDescription",
@@ -5252,7 +5264,10 @@
                         "fr": "Agent",
                         "it": "Agente"
                     },
-                    "super": "dct:Agent",
+                    "super": [
+                      "Resource",
+                      "dct:Agent"
+                      ],
                     "cardinalities": [
                         {
                             "propname": ":hasName",
@@ -5404,7 +5419,10 @@
                         "fr": "Ev\u00e9nement",
                         "it": "Evento"
                     },
-                    "super": "Schema:Event",
+                    "super": [
+                      "Resource",
+                      "schema:Event"
+                      ],
                     "cardinalities": [
                         {
                             "propname": ":hasConcept",
@@ -5413,7 +5431,7 @@
                         },
                         {
                             "propname": ":hasName",
-                            "cardinality": "1-n",
+                            "cardinality": "1",
                             "gui_order": 2
                         },
                         {
@@ -5433,7 +5451,7 @@
                         },
                         {
                             "propname": ":hasPiaUrl",
-                            "cardinality": 1,
+                            "cardinality": "0-1",
                             "gui_order": 6
                         },
                         {
@@ -5491,11 +5509,14 @@
                         "fr": "Lieu",
                         "it": "Luogo"
                     },
-                    "super": "Schema:Place",
+                    "super": [
+                      "Resource",
+                      "schema:Place"
+                    ],
                     "cardinalities": [
                         {
                             "propname": ":hasName",
-                            "cardinality": 1,
+                            "cardinality": "1",
                             "gui_order": 1
                         },
                         {
@@ -5510,7 +5531,7 @@
                         },
                         {
                             "propname": ":hasPiaUrl",
-                            "cardinality": 1,
+                            "cardinality": "0-1",
                             "gui_order": 4
                         },
                         {
