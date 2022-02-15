@@ -1,0 +1,3228 @@
+{
+    "Standorte": {
+        "id": "http://rdfh.ch/lists/0812/6jlyqZvZRyu7Oskk-H8kXw",
+        "nodes": [
+            {
+                "labels": {
+                    "de": "Spalenvorstadt 2/Erdgeschoss"
+                },
+                "name": "H_3140",
+                "nodes": [
+                    {
+                        "labels": {
+                            "de": "B.055 B\u00fcro Bibliothek"
+                        },
+                        "name": "H_3141",
+                        "nodes": [
+                            {
+                                "labels": {
+                                    "de": "Tisch B.055.1.1"
+                                },
+                                "name": "H_3148"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Tisch B.055.1.2"
+                                },
+                                "name": "H_3149"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Tisch B.055.1.3"
+                                },
+                                "name": "H_3150"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Tisch B.055.2.1"
+                                },
+                                "name": "H_3151"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Tisch B.055.2.2"
+                                },
+                                "name": "H_3152"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Tisch B.055.2.3"
+                                },
+                                "name": "H_3153"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Tisch B.055.2.4"
+                                },
+                                "name": "H_3491"
+                            }
+                        ]
+                    },
+                    {
+                        "labels": {
+                            "de": "B.056 Lesesaal/Bibliothek"
+                        },
+                        "name": "H_3142",
+                        "nodes": [
+                            {
+                                "labels": {
+                                    "de": "Regal B.056.1.1"
+                                },
+                                "name": "H_3172",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3189"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3190"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3191"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3192"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5"
+                                        },
+                                        "name": "H_3193"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6"
+                                        },
+                                        "name": "H_3194"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 7"
+                                        },
+                                        "name": "H_3493"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal B.056.1.2"
+                                },
+                                "name": "H_3171",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3195"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3196"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3197"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3198"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5"
+                                        },
+                                        "name": "H_3199"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6"
+                                        },
+                                        "name": "H_3200"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 7"
+                                        },
+                                        "name": "H_3494"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 8"
+                                        },
+                                        "name": "H_3495"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal B.056.1.3"
+                                },
+                                "name": "H_3169",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3201"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3202"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3203"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3204"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5"
+                                        },
+                                        "name": "H_3205"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6"
+                                        },
+                                        "name": "H_3206"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 7"
+                                        },
+                                        "name": "H_3496"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 8"
+                                        },
+                                        "name": "H_3497"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal B.056.2.1"
+                                },
+                                "name": "H_3170",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3207"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3208"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3209"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3210"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5"
+                                        },
+                                        "name": "H_3211"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6"
+                                        },
+                                        "name": "H_3212"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 7"
+                                        },
+                                        "name": "H_3499"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 8"
+                                        },
+                                        "name": "H_3500"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 9"
+                                        },
+                                        "name": "H_3501"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 10"
+                                        },
+                                        "name": "H_3502"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal B.056.2.2"
+                                },
+                                "name": "H_3492",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3503"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3504"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3505"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3506"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5"
+                                        },
+                                        "name": "H_3507"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6"
+                                        },
+                                        "name": "H_3508"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 7"
+                                        },
+                                        "name": "H_3509"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 8"
+                                        },
+                                        "name": "H_3510"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 9"
+                                        },
+                                        "name": "H_3511"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 10"
+                                        },
+                                        "name": "H_3512"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Tisch B.056.3.1"
+                                },
+                                "name": "H_3161"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Tisch B.056.3.2"
+                                },
+                                "name": "H_3162"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Tisch B.056.3.3"
+                                },
+                                "name": "H_3163"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Tisch B.056.3.4"
+                                },
+                                "name": "H_3164"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Tisch B.056.3.5"
+                                },
+                                "name": "H_3165"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Tisch B.056.3.6"
+                                },
+                                "name": "H_3166"
+                            }
+                        ]
+                    },
+                    {
+                        "labels": {
+                            "de": "B.057 Projektraum"
+                        },
+                        "name": "H_3143",
+                        "nodes": [
+                            {
+                                "labels": {
+                                    "de": "Planschrank B.057.1.1"
+                                },
+                                "name": "H_3173",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 1"
+                                        },
+                                        "name": "H_3175"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 2"
+                                        },
+                                        "name": "H_3176"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 3"
+                                        },
+                                        "name": "H_3177"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 4"
+                                        },
+                                        "name": "H_3178"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 5"
+                                        },
+                                        "name": "H_3179"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 6"
+                                        },
+                                        "name": "H_3180"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 7"
+                                        },
+                                        "name": "H_3181"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 8"
+                                        },
+                                        "name": "H_3182"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 9"
+                                        },
+                                        "name": "H_3183"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 10"
+                                        },
+                                        "name": "H_3184"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 11 (gross)"
+                                        },
+                                        "name": "H_3185"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 12 (gross)"
+                                        },
+                                        "name": "H_3186"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 13 (gross)"
+                                        },
+                                        "name": "H_3187"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 14 (gross)"
+                                        },
+                                        "name": "H_3188"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "labels": {
+                            "de": "B.058 Doktoranden"
+                        },
+                        "name": "H_3144",
+                        "nodes": [
+                            {
+                                "labels": {
+                                    "de": "Regal B.058.1.1"
+                                },
+                                "name": "H_3219",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3233"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3234"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3235"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3236"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5"
+                                        },
+                                        "name": "H_3237"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6"
+                                        },
+                                        "name": "H_3238"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal B.058.1.2"
+                                },
+                                "name": "H_3220",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3239"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3240"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3241"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3242"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5"
+                                        },
+                                        "name": "H_3243"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6"
+                                        },
+                                        "name": "H_3244"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal B.058.1.3"
+                                },
+                                "name": "H_3221",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3245"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3246"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3247"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3248"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5"
+                                        },
+                                        "name": "H_3249"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6"
+                                        },
+                                        "name": "H_3250"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Schachtel 1"
+                                },
+                                "name": "H_3224"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Schachtel 2"
+                                },
+                                "name": "H_3225"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Schachtel 3"
+                                },
+                                "name": "H_3226"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Tisch B.058.2.1"
+                                },
+                                "name": "H_3227"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Tisch B.058.2.2"
+                                },
+                                "name": "H_3228"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Tisch B.058.3.1"
+                                },
+                                "name": "H_3229"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Tisch B.058.3.2"
+                                },
+                                "name": "H_3230"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Tisch B.058.3.3"
+                                },
+                                "name": "H_3231"
+                            }
+                        ]
+                    },
+                    {
+                        "labels": {
+                            "de": "B.060 Sammlung Institut"
+                        },
+                        "name": "H_3146",
+                        "nodes": [
+                            {
+                                "labels": {
+                                    "de": "Regal B.060.2.1"
+                                },
+                                "name": "H_3263",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3294"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3295"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3296"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3297"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal B.060.2.2"
+                                },
+                                "name": "H_3264",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3298"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3299"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3300"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3301"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5"
+                                        },
+                                        "name": "H_3302"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6"
+                                        },
+                                        "name": "H_3303"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 7"
+                                        },
+                                        "name": "H_3304"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal B.060.2.3"
+                                },
+                                "name": "H_3265",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3305"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3306"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3307"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3308"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5"
+                                        },
+                                        "name": "H_3309"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal B.060.2.4"
+                                },
+                                "name": "H_3266",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3310"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3311"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3312"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3313"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5"
+                                        },
+                                        "name": "H_3314"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6"
+                                        },
+                                        "name": "H_3315"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 7"
+                                        },
+                                        "name": "H_3316"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal B.060.2.5"
+                                },
+                                "name": "H_3267",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3317"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3318"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3319"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3320"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal B.060.2.6"
+                                },
+                                "name": "H_3268",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3321"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3322"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3323"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3324"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal B.060.3.1"
+                                },
+                                "name": "H_3269",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3325"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3326"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3327"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3328"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5"
+                                        },
+                                        "name": "H_3329"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6"
+                                        },
+                                        "name": "H_3330"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 7"
+                                        },
+                                        "name": "H_3331"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 8"
+                                        },
+                                        "name": "H_3332"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal B.060.3.2"
+                                },
+                                "name": "H_3270",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3333"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3334"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3335"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3336"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5"
+                                        },
+                                        "name": "H_3337"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6"
+                                        },
+                                        "name": "H_3338"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 7"
+                                        },
+                                        "name": "H_3339"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 8"
+                                        },
+                                        "name": "H_3340"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal B.060.3.3"
+                                },
+                                "name": "H_3271",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3341"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3342"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3343"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3344"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5"
+                                        },
+                                        "name": "H_3345"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6"
+                                        },
+                                        "name": "H_3346"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal B.060.4.1"
+                                },
+                                "name": "H_3272",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3347"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3348"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3349"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3350"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5"
+                                        },
+                                        "name": "H_3351"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6"
+                                        },
+                                        "name": "H_3352"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 7"
+                                        },
+                                        "name": "H_3353"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal B.060.4.2"
+                                },
+                                "name": "H_3273",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3354"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3356"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3357"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3358"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5"
+                                        },
+                                        "name": "H_3359"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6"
+                                        },
+                                        "name": "H_3360"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 7"
+                                        },
+                                        "name": "H_3361"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal B.060.5.1"
+                                },
+                                "name": "H_3274",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3362"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3363"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3364"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3365"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5"
+                                        },
+                                        "name": "H_3366"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6"
+                                        },
+                                        "name": "H_3367"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 7"
+                                        },
+                                        "name": "H_3368"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal B.060.5.2"
+                                },
+                                "name": "H_3275",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3369"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3370"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3371"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3372"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5"
+                                        },
+                                        "name": "H_3373"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6"
+                                        },
+                                        "name": "H_3374"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 7"
+                                        },
+                                        "name": "H_3375"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal/Schrank B.060.6.1"
+                                },
+                                "name": "H_3276",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3376"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3377"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3 (im Schrank)"
+                                        },
+                                        "name": "H_3378"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4 (im Schrank)"
+                                        },
+                                        "name": "H_3379"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5 (im Schrank)"
+                                        },
+                                        "name": "H_3380"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6 (im Schrank)"
+                                        },
+                                        "name": "H_3381"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 7 (im Schrank)"
+                                        },
+                                        "name": "H_3382"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 8 (im Schrank)"
+                                        },
+                                        "name": "H_3383"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal/Schrank B.060.6.2"
+                                },
+                                "name": "H_3277",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3384"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3385"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3 (im Schrank)"
+                                        },
+                                        "name": "H_3386"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4 (im Schrank)"
+                                        },
+                                        "name": "H_3387"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5 (im Schrank)"
+                                        },
+                                        "name": "H_3388"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6 (im Schrank)"
+                                        },
+                                        "name": "H_3389"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 7 (im Schrank)"
+                                        },
+                                        "name": "H_3390"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 8 (im Schrank)"
+                                        },
+                                        "name": "H_3391"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal B.060.7.1"
+                                },
+                                "name": "H_3278",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3392"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3393"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3394"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3395"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5"
+                                        },
+                                        "name": "H_3396"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6"
+                                        },
+                                        "name": "H_3397"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 7"
+                                        },
+                                        "name": "H_3398"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal B.060.7.2"
+                                },
+                                "name": "H_3279",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3399"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3400"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3401"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3402"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5"
+                                        },
+                                        "name": "H_3403"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6"
+                                        },
+                                        "name": "H_3404"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 7"
+                                        },
+                                        "name": "H_3405"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal B.060.8.1"
+                                },
+                                "name": "H_3280",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3406"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3407"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3408"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3409"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5"
+                                        },
+                                        "name": "H_3410"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6"
+                                        },
+                                        "name": "H_3411"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 7"
+                                        },
+                                        "name": "H_3412"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 8"
+                                        },
+                                        "name": "H_3413"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal B.060.8.2"
+                                },
+                                "name": "H_3281",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3414"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3415"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3416"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3417"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5"
+                                        },
+                                        "name": "H_3418"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6"
+                                        },
+                                        "name": "H_3419"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 7"
+                                        },
+                                        "name": "H_3420"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 8"
+                                        },
+                                        "name": "H_3421"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal B.060.9.1"
+                                },
+                                "name": "H_3282",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3422"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3423"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3424"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3425"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5"
+                                        },
+                                        "name": "H_3426"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6"
+                                        },
+                                        "name": "H_3427"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 7"
+                                        },
+                                        "name": "H_3428"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 8"
+                                        },
+                                        "name": "H_3429"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal B.060.9.2"
+                                },
+                                "name": "H_3285",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3430"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3431"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3"
+                                        },
+                                        "name": "H_3432"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4"
+                                        },
+                                        "name": "H_3433"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5"
+                                        },
+                                        "name": "H_3434"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6"
+                                        },
+                                        "name": "H_3435"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 7"
+                                        },
+                                        "name": "H_3436"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 8"
+                                        },
+                                        "name": "H_3437"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal/Schrank B.060.10.1"
+                                },
+                                "name": "H_3286",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3438"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3439"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3 (im Schrank)"
+                                        },
+                                        "name": "H_3440"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4 (im Schrank)"
+                                        },
+                                        "name": "H_3441"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5 (im Schrank)"
+                                        },
+                                        "name": "H_3442"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6 (im Schrank)"
+                                        },
+                                        "name": "H_3443"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 7 (im Schrank)"
+                                        },
+                                        "name": "H_3444"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 8 (im Schrank)"
+                                        },
+                                        "name": "H_3445"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Regal/Schrank B.060.10.2"
+                                },
+                                "name": "H_3287",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 1"
+                                        },
+                                        "name": "H_3446"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 2"
+                                        },
+                                        "name": "H_3447"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 3 (im Schrank)"
+                                        },
+                                        "name": "H_3448"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 4 (im Schrank)"
+                                        },
+                                        "name": "H_3449"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 5 (im Schrank)"
+                                        },
+                                        "name": "H_3450"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 6 (im Schrank)"
+                                        },
+                                        "name": "H_3451"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 7 (im Schrank)"
+                                        },
+                                        "name": "H_3452"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 8 (im Schrank)"
+                                        },
+                                        "name": "H_3453"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Tablar 9 (im Schrank)"
+                                        },
+                                        "name": "H_3454"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Registraturschrank B.060.11.1"
+                                },
+                                "name": "H_3288",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 1"
+                                        },
+                                        "name": "H_3455"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 2"
+                                        },
+                                        "name": "H_3456"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 3"
+                                        },
+                                        "name": "H_3457"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 4"
+                                        },
+                                        "name": "H_3458"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 5"
+                                        },
+                                        "name": "H_3459"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 6"
+                                        },
+                                        "name": "H_3460"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 7"
+                                        },
+                                        "name": "H_3461"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 8"
+                                        },
+                                        "name": "H_3462"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Registraturschrank B.060.11.2"
+                                },
+                                "name": "H_3289",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 1"
+                                        },
+                                        "name": "H_3463"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 2"
+                                        },
+                                        "name": "H_3464"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 3"
+                                        },
+                                        "name": "H_3465"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 4"
+                                        },
+                                        "name": "H_3466"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 5"
+                                        },
+                                        "name": "H_3467"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 6"
+                                        },
+                                        "name": "H_3468"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 7"
+                                        },
+                                        "name": "H_3469"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 8"
+                                        },
+                                        "name": "H_3470"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Registraturschrank B.060.11.3"
+                                },
+                                "name": "H_3290",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 1"
+                                        },
+                                        "name": "H_3471"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 2"
+                                        },
+                                        "name": "H_3472"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 3"
+                                        },
+                                        "name": "H_3473"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 4"
+                                        },
+                                        "name": "H_3474"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 5"
+                                        },
+                                        "name": "H_3475"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 6"
+                                        },
+                                        "name": "H_3476"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Registraturschrank B.060.11.4"
+                                },
+                                "name": "H_3291",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 1"
+                                        },
+                                        "name": "H_3477"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 2"
+                                        },
+                                        "name": "H_3478"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 3"
+                                        },
+                                        "name": "H_3479"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 4"
+                                        },
+                                        "name": "H_3480"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 5"
+                                        },
+                                        "name": "H_3481"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 6"
+                                        },
+                                        "name": "H_3482"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Registraturschrank B.060.11.5"
+                                },
+                                "name": "H_3292",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 1"
+                                        },
+                                        "name": "H_3483"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 2"
+                                        },
+                                        "name": "H_3484"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 3"
+                                        },
+                                        "name": "H_3485"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 4"
+                                        },
+                                        "name": "H_3486"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Registraturschrank B.060.11.6"
+                                },
+                                "name": "H_3293",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 1"
+                                        },
+                                        "name": "H_3487"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 2"
+                                        },
+                                        "name": "H_3488"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 3"
+                                        },
+                                        "name": "H_3489"
+                                    },
+                                    {
+                                        "labels": {
+                                            "de": "Schublade 4"
+                                        },
+                                        "name": "H_3490"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "additionaltypes": {
+        "id": "http://rdfh.ch/lists/0812/NYa5WI6RS0aGhJjP2KByTw",
+        "nodes": [
+            {
+                "labels": {
+                    "de": "Person",
+                    "en": "Person",
+                    "fr": "Personne",
+                    "it": "Persona"
+                },
+                "name": "person"
+            },
+            {
+                "labels": {
+                    "de": "Organisation",
+                    "en": "Organization",
+                    "fr": "Organisation",
+                    "it": "Organizzazione"
+                },
+                "name": "organization"
+            },
+            {
+                "labels": {
+                    "de": "Gruppe",
+                    "en": "Group",
+                    "fr": "Groupe",
+                    "it": "Gruppo"
+                },
+                "name": "group"
+            }
+        ]
+    },
+    "eventstatus": {
+        "id": "http://rdfh.ch/lists/0812/cZTBl-tWT06lL5xUwX53wg",
+        "nodes": [
+            {
+                "labels": {
+                    "de": "Geplant",
+                    "en": "Scheduled"
+                },
+                "name": "scheduled"
+            },
+            {
+                "labels": {
+                    "de": "Laufend",
+                    "en": "Ongoing"
+                },
+                "name": "ongoing"
+            },
+            {
+                "labels": {
+                    "de": "Abgesagt",
+                    "en": "Cancelled"
+                },
+                "name": "cancelled"
+            },
+            {
+                "labels": {
+                    "de": "Erledigt",
+                    "en": "Done"
+                },
+                "name": "done"
+            }
+        ]
+    },
+    "format": {
+        "id": "http://rdfh.ch/lists/0812/RN4jIEbcRpe5gZ8QGapf7g",
+        "nodes": [
+            {
+                "labels": {
+                    "de": "10 x 13 cm"
+                },
+                "name": "S_1834"
+            },
+            {
+                "labels": {
+                    "de": "10 x 15 cm"
+                },
+                "name": "S_1815"
+            },
+            {
+                "labels": {
+                    "de": "12 x 16 cm"
+                },
+                "name": "S_1925"
+            },
+            {
+                "labels": {
+                    "de": "13 x 18 cm"
+                },
+                "name": "S_1816"
+            },
+            {
+                "labels": {
+                    "de": "18 x 24 cm"
+                },
+                "name": "S_1817"
+            },
+            {
+                "labels": {
+                    "de": "20 x 25 cm"
+                },
+                "name": "S_1818"
+            },
+            {
+                "labels": {
+                    "de": "24 x 30 cm"
+                },
+                "name": "S_1820"
+            },
+            {
+                "labels": {
+                    "de": "24 x 36 cm"
+                },
+                "name": "S_2004"
+            },
+            {
+                "labels": {
+                    "de": "30 x 40 cm"
+                },
+                "name": "S_1821"
+            },
+            {
+                "labels": {
+                    "de": "35 mm (Kleinbild)"
+                },
+                "name": "S_1809"
+            },
+            {
+                "labels": {
+                    "de": "35 x 37 mm"
+                },
+                "name": "S_13499"
+            },
+            {
+                "labels": {
+                    "de": "4 x 6 cm"
+                },
+                "name": "S_13498"
+            },
+            {
+                "labels": {
+                    "de": "4,5 x 10,8 cm"
+                },
+                "name": "S_1842"
+            },
+            {
+                "labels": {
+                    "de": "40 x 50 cm"
+                },
+                "name": "S_1822"
+            },
+            {
+                "labels": {
+                    "de": "40 x 60 cm"
+                },
+                "name": "S_1823"
+            },
+            {
+                "labels": {
+                    "de": "50 x 70 cm"
+                },
+                "name": "S_1824"
+            },
+            {
+                "labels": {
+                    "de": "6 x 13 cm"
+                },
+                "name": "S_1846"
+            },
+            {
+                "labels": {
+                    "de": "6 x 6 cm"
+                },
+                "name": "S_1810"
+            },
+            {
+                "labels": {
+                    "de": "6 x 7 cm"
+                },
+                "name": "S_1811"
+            },
+            {
+                "labels": {
+                    "de": "6 x 8 cm"
+                },
+                "name": "S_1863"
+            },
+            {
+                "labels": {
+                    "de": "6 x 9 cm"
+                },
+                "name": "S_1812"
+            },
+            {
+                "labels": {
+                    "de": "7 x 11 cm"
+                },
+                "name": "S_1862"
+            },
+            {
+                "labels": {
+                    "de": "7,5 x 10 cm"
+                },
+                "name": "S_1833"
+            },
+            {
+                "labels": {
+                    "de": "8 x 8 cm"
+                },
+                "name": "S_1845"
+            },
+            {
+                "labels": {
+                    "de": "8,5 x 10 cm"
+                },
+                "name": "S_1829"
+            },
+            {
+                "labels": {
+                    "de": "9 x 12 cm"
+                },
+                "name": "S_1813"
+            },
+            {
+                "labels": {
+                    "de": "9 x 13 cm"
+                },
+                "name": "S_1814"
+            },
+            {
+                "labels": {
+                    "de": "9 x 14 cm"
+                },
+                "name": "S_1860"
+            },
+            {
+                "labels": {
+                    "de": "9 x 18 cm"
+                },
+                "name": "S_1847"
+            },
+            {
+                "labels": {
+                    "de": "9 x 9 cm"
+                },
+                "name": "S_1861"
+            },
+            {
+                "labels": {
+                    "de": "< 10 x 15 cm"
+                },
+                "name": "S_1849"
+            },
+            {
+                "labels": {
+                    "de": "> 10 x 15 cm"
+                },
+                "name": "S_1848"
+            },
+            {
+                "labels": {
+                    "de": "> 50 x 70 cm"
+                },
+                "name": "S_1825"
+            },
+            {
+                "labels": {
+                    "de": "Carte de cabinet"
+                },
+                "name": "S_1827"
+            },
+            {
+                "labels": {
+                    "de": "Carte de visite"
+                },
+                "name": "S_1826"
+            },
+            {
+                "labels": {
+                    "de": "DIN A4"
+                },
+                "name": "S_1819"
+            },
+            {
+                "labels": {
+                    "de": "Stereo gross (9 x 18 cm)"
+                },
+                "name": "S_11077"
+            },
+            {
+                "labels": {
+                    "de": "Stereo klein (4,5 x 10,8 cm)"
+                },
+                "name": "S_11075"
+            },
+            {
+                "labels": {
+                    "de": "Stereo mittel (6 x 13 cm)"
+                },
+                "name": "S_11076"
+            },
+            {
+                "labels": {
+                    "de": "--"
+                },
+                "name": "S_13243"
+            },
+            {
+                "labels": {
+                    "de": "16mm"
+                },
+                "name": "S_13228"
+            },
+            {
+                "labels": {
+                    "de": "16mm, Lichtton"
+                },
+                "name": "S_13332"
+            },
+            {
+                "labels": {
+                    "de": "16mm, Magnetton"
+                },
+                "name": "S_13331"
+            },
+            {
+                "labels": {
+                    "de": "16mm, stumm"
+                },
+                "name": "S_13333"
+            },
+            {
+                "labels": {
+                    "de": "35mm"
+                },
+                "name": "S_13229"
+            },
+            {
+                "labels": {
+                    "de": "8mm"
+                },
+                "name": "S_13227"
+            },
+            {
+                "labels": {
+                    "de": "DVD"
+                },
+                "name": "S_13230"
+            }
+        ]
+    },
+    "objectstatus": {
+        "id": "http://rdfh.ch/lists/0812/4DNW2riFQqirfEO5bYxwYQ",
+        "nodes": [
+            {
+                "labels": {
+                    "de": "Zu pr\u00fen",
+                    "en": "To be reviewed"
+                },
+                "name": "tobereviewed"
+            },
+            {
+                "labels": {
+                    "de": "Wird gerade evaluiert",
+                    "en": "Under review"
+                },
+                "name": "underreview"
+            },
+            {
+                "labels": {
+                    "de": "Abgelehnt",
+                    "en": "Rejected"
+                },
+                "name": "rejected"
+            },
+            {
+                "labels": {
+                    "de": "Validiert",
+                    "en": "Approved"
+                },
+                "name": "approved"
+            }
+        ]
+    },
+    "objecttype": {
+        "id": "http://rdfh.ch/lists/0812/rwhlOIEfRXOHddXAbR7o6g",
+        "nodes": [
+            {
+                "labels": {
+                    "de": "Alben"
+                },
+                "name": "S_11216"
+            },
+            {
+                "labels": {
+                    "de": "Albumseiten"
+                },
+                "name": "S_11362"
+            },
+            {
+                "labels": {
+                    "de": "Aquarell"
+                },
+                "name": "S_12742"
+            },
+            {
+                "labels": {
+                    "de": "Briefe"
+                },
+                "name": "S_11221"
+            },
+            {
+                "labels": {
+                    "de": "Buchhaltung"
+                },
+                "name": "S_11224"
+            },
+            {
+                "labels": {
+                    "de": "Cartes de Cabinet"
+                },
+                "name": "S_11213"
+            },
+            {
+                "labels": {
+                    "de": "Cartes de Visite"
+                },
+                "name": "S_11214"
+            },
+            {
+                "labels": {
+                    "de": "Diapositive"
+                },
+                "name": "S_11210"
+            },
+            {
+                "labels": {
+                    "de": "Faltkarten"
+                },
+                "name": "S_11265"
+            },
+            {
+                "labels": {
+                    "de": "Filme"
+                },
+                "name": "S_11228"
+            },
+            {
+                "labels": {
+                    "de": "Fotografien"
+                },
+                "name": "S_11208"
+            },
+            {
+                "labels": {
+                    "de": "Fotografien in Passepartouts"
+                },
+                "name": "S_11327"
+            },
+            {
+                "labels": {
+                    "de": "Fotografische Ausr\u00fcstung"
+                },
+                "name": "S_11230"
+            },
+            {
+                "labels": {
+                    "de": "Gedruckte Illustrationen"
+                },
+                "name": "S_11225"
+            },
+            {
+                "labels": {
+                    "de": "Gem\u00e4lde"
+                },
+                "name": "S_11226"
+            },
+            {
+                "labels": {
+                    "de": "Gerahmte Fotografien"
+                },
+                "name": "S_11217"
+            },
+            {
+                "labels": {
+                    "de": "Kolorierte Drucke"
+                },
+                "name": "S_13294"
+            },
+            {
+                "labels": {
+                    "de": "Kolorierte Fotografien"
+                },
+                "name": "S_13357"
+            },
+            {
+                "labels": {
+                    "de": "Kontaktabz\u00fcge von 35-mm-Filmen"
+                },
+                "name": "S_11275"
+            },
+            {
+                "labels": {
+                    "de": "Korrespondenzen"
+                },
+                "name": "S_11220"
+            },
+            {
+                "labels": {
+                    "de": "Kupferstich"
+                },
+                "name": "S_12741"
+            },
+            {
+                "labels": {
+                    "de": "Landkarten"
+                },
+                "name": "S_11227"
+            },
+            {
+                "labels": {
+                    "de": "Negative"
+                },
+                "name": "S_11211"
+            },
+            {
+                "labels": {
+                    "de": "Notizb\u00fccher"
+                },
+                "name": "S_11223"
+            },
+            {
+                "labels": {
+                    "de": "Panoramabilder"
+                },
+                "name": "S_11257"
+            },
+            {
+                "labels": {
+                    "de": "Positive"
+                },
+                "name": "S_11209"
+            },
+            {
+                "labels": {
+                    "de": "Postkarten"
+                },
+                "name": "S_11215"
+            },
+            {
+                "labels": {
+                    "de": "Retuschierte Fotografien"
+                },
+                "name": "S_11266"
+            },
+            {
+                "labels": {
+                    "de": "Schattenriss"
+                },
+                "name": "S_11274"
+            },
+            {
+                "labels": {
+                    "de": "Schriftliches Material"
+                },
+                "name": "S_11218"
+            },
+            {
+                "labels": {
+                    "de": "Stereofotografien"
+                },
+                "name": "S_11212"
+            },
+            {
+                "labels": {
+                    "de": "Tageb\u00fccher"
+                },
+                "name": "S_11219"
+            },
+            {
+                "labels": {
+                    "de": "Tonmaterialien"
+                },
+                "name": "S_11229"
+            },
+            {
+                "labels": {
+                    "de": "Zeichnung (Bleistift)"
+                },
+                "name": "S_12743"
+            },
+            {
+                "labels": {
+                    "de": "Zeichnung (Farbstift)"
+                },
+                "name": "S_12744"
+            },
+            {
+                "labels": {
+                    "de": "Zeichnung (Tusche)"
+                },
+                "name": "S_12948"
+            },
+            {
+                "labels": {
+                    "de": "Zeitungsartikel"
+                },
+                "name": "S_11222"
+            }
+        ]
+    },
+    "sprache": {
+        "id": "http://rdfh.ch/lists/0812/2LIVEooWTde062J8UL15hw",
+        "nodes": [
+            {
+                "labels": {
+                    "de": "deutsch"
+                },
+                "name": "de"
+            },
+            {
+                "labels": {
+                    "de": "dialekt"
+                },
+                "name": "dial"
+            },
+            {
+                "labels": {
+                    "de": "englisch"
+                },
+                "name": "eng"
+            },
+            {
+                "labels": {
+                    "de": "franz\u00f6sisch"
+                },
+                "name": "fr"
+            },
+            {
+                "labels": {
+                    "de": "italienisch"
+                },
+                "name": "it"
+            },
+            {
+                "labels": {
+                    "de": "stumm"
+                },
+                "name": "stumm"
+            }
+        ]
+    },
+    "technology": {
+        "id": "http://rdfh.ch/lists/0812/b7mE1rvYR-yfgOO8qw922A",
+        "nodes": [
+            {
+                "labels": {
+                    "de": "Negativ"
+                },
+                "name": "H_1175",
+                "nodes": [
+                    {
+                        "labels": {
+                            "de": "schwarz/weiss"
+                        },
+                        "name": "H_1177",
+                        "nodes": [
+                            {
+                                "labels": {
+                                    "de": "Gelatinetrockenplatte"
+                                },
+                                "name": "H_1179"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Nasskollodiumplatte"
+                                },
+                                "name": "H_1183"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Celluloseacetatfilm"
+                                },
+                                "name": "H_1185"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Cellulosenitratfilm"
+                                },
+                                "name": "H_1186"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Polyesterfilm"
+                                },
+                                "name": "H_1187"
+                            }
+                        ]
+                    },
+                    {
+                        "labels": {
+                            "de": "farbig"
+                        },
+                        "name": "H_1178",
+                        "nodes": [
+                            {
+                                "labels": {
+                                    "de": "Cellusloseacetatfilm-Farbe"
+                                },
+                                "name": "H_1181"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Polyesterfilm-Farbe"
+                                },
+                                "name": "H_1182"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "labels": {
+                    "de": "Positiv"
+                },
+                "name": "H_1176",
+                "nodes": [
+                    {
+                        "labels": {
+                            "de": "Digitaldruck"
+                        },
+                        "name": "H_1188",
+                        "nodes": [
+                            {
+                                "labels": {
+                                    "de": "Elektrostatische Verfahren (Laser, Xerox)"
+                                },
+                                "name": "H_1194"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Thermografische Verfahren"
+                                },
+                                "name": "H_1195"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Inkjet Verfahren"
+                                },
+                                "name": "H_1196"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Andere Digitaldruckverfahren"
+                                },
+                                "name": "H_1197"
+                            }
+                        ]
+                    },
+                    {
+                        "labels": {
+                            "de": "Farbfotografie"
+                        },
+                        "name": "H_1189",
+                        "nodes": [
+                            {
+                                "labels": {
+                                    "de": "Farbrasterverfahren"
+                                },
+                                "name": "H_1198",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Lumi\u00e8re Autochromplatte"
+                                        },
+                                        "name": "H_2629"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Chromogener Abzug auf Kunststoff"
+                                },
+                                "name": "H_1199"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Chromogener Abzug auf Barytpapier"
+                                },
+                                "name": "H_1200"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Silberfarbstoff-Bleichverfahren (Cibachrome/Ilfochrome)"
+                                },
+                                "name": "H_1201"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Farb-Polaroid (Silber-Diffusionsverfahren) "
+                                },
+                                "name": "H_1202"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Farbdiapositiv (Kodachrome)"
+                                },
+                                "name": "H_1203"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Farbdiapositiv (E6-Verfahren)"
+                                },
+                                "name": "H_1204"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Farbdiapositiv"
+                                },
+                                "name": "H_4562"
+                            }
+                        ]
+                    },
+                    {
+                        "labels": {
+                            "de": "Fotomechanische Verfahren"
+                        },
+                        "name": "H_1190",
+                        "nodes": [
+                            {
+                                "labels": {
+                                    "de": "Heliograv\u00fcre (Rotograv\u00fcre, Fotograv\u00fcre)"
+                                },
+                                "name": "H_1206"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Fotolithographie"
+                                },
+                                "name": "H_1207"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Autotypie (Letterpress Halftone)"
+                                },
+                                "name": "H_1208"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Rastertiefdruck"
+                                },
+                                "name": "H_2631"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Lichtdruck (Kollotypie)"
+                                },
+                                "name": "H_1209"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Offset"
+                                },
+                                "name": "H_1210"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Woodburytypie"
+                                },
+                                "name": "H_1211"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Andere fotomechanische Verfahren"
+                                },
+                                "name": "H_1212"
+                            }
+                        ]
+                    },
+                    {
+                        "labels": {
+                            "de": "Edeldruckverfahren"
+                        },
+                        "name": "H_1191",
+                        "nodes": [
+                            {
+                                "labels": {
+                                    "de": "Brom\u00f6ldruck"
+                                },
+                                "name": "H_1213"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Brom\u00f6lumdruck"
+                                },
+                                "name": "H_1214"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Cyanotypie"
+                                },
+                                "name": "H_1228"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Gummidruck"
+                                },
+                                "name": "H_1229"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Kohledruck"
+                                },
+                                "name": "H_1230"
+                            },
+                            {
+                                "labels": {
+                                    "de": "\u00d6lpigmentdruck"
+                                },
+                                "name": "H_1231"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Platindruck/Platinotypie"
+                                },
+                                "name": "H_1232"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Andere Edeldruckverfahren"
+                                },
+                                "name": "H_1233"
+                            }
+                        ]
+                    },
+                    {
+                        "labels": {
+                            "de": "Silberbasierte SW-Verfahren auf Papier"
+                        },
+                        "name": "H_1192",
+                        "nodes": [
+                            {
+                                "labels": {
+                                    "de": "Salzpapier"
+                                },
+                                "name": "H_2630"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Albuminpapier"
+                                },
+                                "name": "H_1216",
+                                "nodes": [
+                                    {
+                                        "labels": {
+                                            "de": "Crystoleum"
+                                        },
+                                        "name": "H_2724"
+                                    }
+                                ]
+                            },
+                            {
+                                "labels": {
+                                    "de": "Silbergelatineabzug DOP auf Barytpapier"
+                                },
+                                "name": "H_1217"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Silbergelatineabzug DOP auf Kunststoff"
+                                },
+                                "name": "H_1218"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Silbergelatineabzug POP"
+                                },
+                                "name": "H_1219"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Kollodiumabzug matt (gold-/platingetont)"
+                                },
+                                "name": "H_1220"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Kollodiumabzug glanz"
+                                },
+                                "name": "H_1221"
+                            },
+                            {
+                                "labels": {
+                                    "de": "SW-Polaroid (Silber-Diffusionsverfahren)"
+                                },
+                                "name": "H_1223"
+                            }
+                        ]
+                    },
+                    {
+                        "labels": {
+                            "de": "SW-Diapositiv auf Glas"
+                        },
+                        "name": "H_1235",
+                        "nodes": [
+                            {
+                                "labels": {
+                                    "de": "koloriert"
+                                },
+                                "name": "H_1236"
+                            }
+                        ]
+                    },
+                    {
+                        "labels": {
+                            "de": "SW-Diapositiv auf Film"
+                        },
+                        "name": "H_1237"
+                    },
+                    {
+                        "labels": {
+                            "de": "Unikatverfahren"
+                        },
+                        "name": "H_1193",
+                        "nodes": [
+                            {
+                                "labels": {
+                                    "de": "Ambrotypie"
+                                },
+                                "name": "H_1225"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Daguerreotypie"
+                                },
+                                "name": "H_1226"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Ferrotypie",
+                                    "en": "Tintype"
+                                },
+                                "name": "H_1227"
+                            },
+                            {
+                                "labels": {
+                                    "de": "Pannotypie"
+                                },
+                                "name": "H_2623"
+                            }
+                        ]
+                    },
+                    {
+                        "labels": {
+                            "de": "Andere Druckverfahren"
+                        },
+                        "name": "H_5296"
+                    }
+                ]
+            },
+            {
+                "comments": {
+                    "de": "Film-Format",
+                    "fr": "Format du film"
+                },
+                "labels": {
+                    "de": "Film"
+                },
+                "name": "H_5297",
+                "nodes": [
+                    {
+                        "labels": {
+                            "de": "16mm, schwarz/weiss, stumm"
+                        },
+                        "name": "H_5304"
+                    },
+                    {
+                        "labels": {
+                            "de": "16mm, schwarz/weiss und farbig, Magnetton"
+                        },
+                        "name": "H_5308"
+                    },
+                    {
+                        "labels": {
+                            "de": "16mm, schwarz/weiss, Magnetton"
+                        },
+                        "name": "H_5307"
+                    },
+                    {
+                        "labels": {
+                            "de": "16mm, farbig, Magnetton"
+                        },
+                        "name": "H_5309"
+                    },
+                    {
+                        "labels": {
+                            "de": "16mm, farbig, Lichtton"
+                        },
+                        "name": "H_5310"
+                    },
+                    {
+                        "labels": {
+                            "de": "HDV, farbig"
+                        },
+                        "name": "H_5314"
+                    },
+                    {
+                        "labels": {
+                            "de": "Digital (XDCAM), farbig"
+                        },
+                        "name": "H_5315"
+                    }
+                ]
+            }
+        ]
+    }
+}
