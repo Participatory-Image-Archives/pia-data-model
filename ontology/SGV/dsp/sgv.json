@@ -567,45 +567,42 @@
                   "en": "Languages",
                   "fr": "Langues"
               },
+            "comments": {
+                "de": "Sprache der Ressource"
+            },
               "nodes": [
                   {
-                      "name": "S_13244",
-                      "labels": {
-                          "de": "--"
-                      }
-                  },
-                  {
-                      "name": "S_13232",
+                      "name": "de",
                       "labels": {
                           "de": "deutsch"
                       }
                   },
                   {
-                      "name": "S_13236",
+                      "name": "dial",
                       "labels": {
                           "de": "dialekt"
                       }
                   },
                   {
-                      "name": "S_13235",
+                      "name": "eng",
                       "labels": {
                           "de": "englisch"
                       }
                   },
                   {
-                      "name": "S_13233",
+                      "name": "fr",
                       "labels": {
                           "de": "franz\u00f6sisch"
                       }
                   },
                   {
-                      "name": "S_13234",
+                      "name": "it",
                       "labels": {
                           "de": "italienisch"
                       }
                   },
                   {
-                      "name": "S_13231",
+                      "name": "stumm",
                       "labels": {
                           "de": "stumm"
                       }
@@ -615,9 +612,12 @@
           {
               "name": "additionaltypes",
               "labels": {
-                  "de": "Zusatztypen zu sgv:Agent",
-                  "en": "Additional Types for sgv:Agent",
-                  "fr": "Types additionnels pour sgv:Agent"
+                  "de": "Zusatztypen zu :Agent",
+                  "en": "Additional Types for :Agent",
+                  "fr": "Types additionnels pour :Agent"
+              },
+              "comments": {
+                  "de": "Liste, um den Typ von Agent anzugeben. "
               },
               "nodes": [
                   {
@@ -655,6 +655,9 @@
                   "de": "Status des Events",
                   "en": "Event Status"
               },
+              "comments": {
+                  "de": "Liste, um die Art des Events anzugeben. "
+              },
               "nodes": [
                   {
                       "name": "scheduled",
@@ -691,6 +694,9 @@
               "labels": {
                   "de": "Status des Objekts",
                   "en": "Object Status"
+              },
+              "comments": {
+                  "de": "Liste, um den Status des Objekts anzugeben. "
               },
               "nodes": [
                   {
@@ -2847,6 +2853,10 @@
                   "fr": "Technique / Media",
                   "it": "Supporto"
               },
+              "comments": {
+                  "de": "Fototechnik oder Vorlage des Objekts",
+                  "fr": "Technique ou media de l'objet"
+              },
               "nodes": [
                   {
                       "name": "H_1175",
@@ -3257,6 +3267,10 @@
                       "name": "H_5297",
                       "labels": {
                           "de": "Film"
+                      },
+                      "comments": {
+                          "de": "Film-Format",
+                          "fr": "Format du film"
                       },
                       "nodes": [
                           {
