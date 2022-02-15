@@ -6,7 +6,6 @@ Project PIA {
 
     *basics entities*
     - locations
-    - places
     - people
     - dates
     - keywords
@@ -50,36 +49,23 @@ Project PIA {
 Table locations {
   id int [pk, increment]
   label varchar
+  
   geonames_id int
-  geonames_url varchar
+  geonames_uri varchar
+  geonames_code varchar
+  geonames_code_name varchar
+  geonames_division_level varchar
+
+  wiki_url varchar
+  geometry varchar
+  
   latitude float
   longitude float
+
   origin varchar
 
-  place_id int [ref: - places.id]
-
   created_at timestamp
   updated_at timestamp
-
-  Note: '''
-    “Location” is defined as “the specific area where a place is situated.”
-  '''
-}
-
-Table places {
-  id int [pk, increment]
-  asv_id varchar
-  label varchar
-
-  collection_id int
-  location_id int [ref: - locations.id]
-
-  created_at timestamp
-  updated_at timestamp
-
-  Note: '''
-    See locations.
-  '''
 }
 
 Table dates {
@@ -509,7 +495,6 @@ Table map_entries {
 
   map_layer_id int
 
-  place_id int
   location_id int
 
   created_at timestamp

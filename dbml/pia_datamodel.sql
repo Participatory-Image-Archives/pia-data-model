@@ -1,26 +1,20 @@
 -- SQL dump generated using DBML (dbml-lang.org)
 -- Database: PostgreSQL
--- Generated at: 2022-02-01T10:07:14.109Z
+-- Generated at: 2022-02-15T09:15:41.376Z
 
 CREATE TABLE "locations" (
   "id" SERIAL PRIMARY KEY,
   "label" varchar,
   "geonames_id" int,
-  "geonames_url" varchar,
+  "geonames_uri" varchar,
+  "geonames_code" varchar,
+  "geonames_code_name" varchar,
+  "geonames_division_level" varchar,
+  "wiki_url" varchar,
+  "geometry" varchar,
   "latitude" float,
   "longitude" float,
   "origin" varchar,
-  "place_id" int,
-  "created_at" timestamp,
-  "updated_at" timestamp
-);
-
-CREATE TABLE "places" (
-  "id" SERIAL PRIMARY KEY,
-  "asv_id" varchar,
-  "label" varchar,
-  "collection_id" int,
-  "location_id" int,
   "created_at" timestamp,
   "updated_at" timestamp
 );
@@ -351,7 +345,6 @@ CREATE TABLE "map_entries" (
   "complex_data" varchar,
   "image_id" int,
   "map_layer_id" int,
-  "place_id" int,
   "location_id" int,
   "created_at" timestamp,
   "updated_at" timestamp
@@ -381,10 +374,6 @@ CREATE TABLE "map_collection" (
   "collection_id" int
 );
 
-ALTER TABLE "locations" ADD FOREIGN KEY ("place_id") REFERENCES "places" ("id");
-
-ALTER TABLE "places" ADD FOREIGN KEY ("location_id") REFERENCES "locations" ("id");
-
 ALTER TABLE "images" ADD FOREIGN KEY ("location_id") REFERENCES "locations" ("id");
 
 ALTER TABLE "images" ADD FOREIGN KEY ("verso_id") REFERENCES "images" ("id");
@@ -402,10 +391,6 @@ ALTER TABLE "albums" ADD FOREIGN KEY ("object_type_id") REFERENCES "object_types
 ALTER TABLE "map_keys" ADD FOREIGN KEY ("map_id") REFERENCES "maps" ("id") ON DELETE CASCADE;
 
 ALTER TABLE "map_entries" ADD FOREIGN KEY ("map_layer_id") REFERENCES "map_layers" ("id") ON DELETE CASCADE;
-
-COMMENT ON TABLE "locations" IS '“Location” is defined as “the specific area where a place is situated.”';
-
-COMMENT ON TABLE "places" IS 'See locations.';
 
 COMMENT ON TABLE "dates" IS 'Type can be either:
   1: date, a simple date with unclear definition (often it designates)
