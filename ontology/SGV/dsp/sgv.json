@@ -3308,12 +3308,28 @@
       ],
       "groups": [
          {
-           "name": "yourproject-editors",
+           "name": "sgv-editors",
            "descriptions": {
-              "en": "Editors for your project"
+              "en": "Editors for the SGV"
             },
            "selfjoin": false,
            "status": true
+         }
+       ],
+       "users": [
+         {
+           "username": "julsraemy",
+           "email": "julien.raemy@unibas.ch",
+           "givenName": "Julien",
+           "familyName": "Raemy",
+           "password": "juls1234",
+           "lang": "de",
+           "groups": [
+             ":sgv-editors"
+           ],
+           "projects": [
+             ":admin"
+           ]
          }
        ],
       "ontologies": [
@@ -3372,7 +3388,7 @@
                         "hasLinkTo",
                         "schema:creator"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                         "en": "Producer/\nCollector",
                         "de": "HerstellerIn/\nSammlerIn",
@@ -3387,7 +3403,7 @@
                         "hasLinkTo",
                         "edm:isRepresentationOf"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                       "en": "Depicted persons/institutions",
                       "de": "Abgebildete \nPersonen/Institutionen",
@@ -3417,7 +3433,7 @@
                         "hasLinkTo",
                         "schema:about"
                     ],
-                    "object": "sgv:Concept",
+                    "object": ":Concept",
                     "labels": {
                         "en": "Concept",
                         "de": "Konzepte",
@@ -3465,9 +3481,9 @@
                         "schema:isPartOf"
                     ],
                     "object": [
-                      "sgv:Object",
-                      "sgv:Dataset",
-                      "sgv:Collection"
+                      ":Object",
+                      ":Dataset",
+                      ":Collection"
                     ],
                     "labels": {
                         "en": "Is part of",
@@ -3537,7 +3553,7 @@
                         "hasLinkTo",
                         "schema:copyrightHolder"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                         "en": "Copyright",
                         "de": "Copyright",
@@ -3552,7 +3568,7 @@
                         "hasLinkTo",
                         "edm:isRelatedTo"
                     ],
-                    "object": "sgv:Object",
+                    "object": ":Object",
                     "labels": {
                         "en": "Visually similar pictures",
                         "de": "\u00c4hnliche Bilder",
@@ -3566,7 +3582,7 @@
                     "super": [
                         "hasLinkTo"
                     ],
-                    "object": "sgv:Object",
+                    "object": ":Object",
                     "labels": {
                         "en": "On the same album page",
                         "de": "Auf derselben Albumseite",
@@ -3581,7 +3597,7 @@
                         "hasLinkTo",
                         "edm:isRelatedTo"
                     ],
-                    "object": "sgv:Object",
+                    "object": ":Object",
                     "labels": {
                         "en": "Verso",
                         "de": "Verso",
@@ -3643,7 +3659,7 @@
                         "hasLinkTo",
                         "schema:relatedTo"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                         "en": "Related to (Person)",
                         "de": "Relativ zu",
@@ -3686,7 +3702,7 @@
                         "hasLinkTo",
                         "schema:birthPlace"
                     ],
-                    "object": "sgv:Place",
+                    "object": ":Place",
                     "labels": {
                         "en": "Birth place",
                         "de": "geboren/gegr\u00fcndet in",
@@ -3716,7 +3732,7 @@
                         "hasLinkTo",
                         "schema:deathPlace"
                     ],
-                    "object": "sgv:Place",
+                    "object": ":Place",
                     "labels": {
                         "en": "Death place",
                         "de": "verstorben/aufgel\u00f6st in",
@@ -3800,7 +3816,7 @@
                         "hasLinkTo",
                         "schema:workExample"
                     ],
-                    "object": "sgv:Object",
+                    "object": ":Object",
                     "labels": {
                         "en": "Example image",
                         "de": "Bildverkn\u00fcpfung"
@@ -3813,7 +3829,7 @@
                         "hasLinkTo",
                         "schema:workExample"
                     ],
-                    "object": "sgv:Object",
+                    "object": ":Object",
                     "labels": {
                         "en": "Example video",
                         "de": "Video Verkn\u00fcpfung"
@@ -3899,7 +3915,7 @@
                         "hasLinkTo",
                         "schema:spatial"
                     ],
-                    "object": "sgv:Place",
+                    "object": ":Place",
                     "labels": {
                         "en": "Place",
                         "de": "Ort",
@@ -3914,7 +3930,7 @@
                         "hasLinkTo",
                         "schema:hasPart"
                     ],
-                    "object": "sgv:Object",
+                    "object": ":Object",
                     "labels": {
                         "en": "has part(s)",
                         "de": "Besteht aus",
@@ -3929,7 +3945,7 @@
                         "hasLinkTo",
                         "schema:recordedAt"
                     ],
-                    "object": "sgv:Event",
+                    "object": ":Event",
                     "labels": {
                         "en": "recorded at",
                         "de": "aufgezeichnet bei",
@@ -3943,7 +3959,7 @@
                         "hasLinkTo",
                         "schema:contributor"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                         "en": "Contributor",
                         "de": "Beitragende",
@@ -4099,7 +4115,7 @@
                         "hasLinkTo",
                         "schema:organizer"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                         "en": "Organizer",
                         "de": "VeranstalterIn",
@@ -4114,7 +4130,7 @@
                         "hasLinkTo",
                         "schema:memberOf"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                         "en": "Member of",
                         "de": "Mitglied von",
@@ -4128,7 +4144,7 @@
                         "hasLinkTo",
                         "schema:employee"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                         "en": "Employee(s)",
                         "de": "Mitarbeiter"
@@ -4141,7 +4157,7 @@
                         "hasLinkTo",
                         "schema:children"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                         "en": "Children",
                         "de": "Kinder",
@@ -4156,7 +4172,7 @@
                         "hasLinkTo",
                         "schema:parent"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                         "en": "Parent",
                         "de": "Eltern",
@@ -4171,7 +4187,7 @@
                         "hasLinkTo",
                         "schema:spouse"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                         "en": "Spouse",
                         "de": "EhepartnerIn",
@@ -4186,7 +4202,7 @@
                         "hasLinkTo",
                         "schema:sibling"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                         "en": "Sibling(s)",
                         "de": "Geschwister",
@@ -4201,7 +4217,7 @@
                         "hasLinkTo",
                         "schema:colleague"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                         "en": "Colleague(s)",
                         "de": "Kolleginnen und Kollegen",
@@ -4216,7 +4232,7 @@
                         "hasLinkTo",
                         "schema:knows"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                         "en": "knows",
                         "de": "kennt",
@@ -4230,7 +4246,7 @@
                         "hasLinkTo",
                         "schema:performerIn"
                     ],
-                    "object": "sgv:Event",
+                    "object": ":Event",
                     "labels": {
                         "en": "has performed at the event",
                         "de": "ist bei dem Event aufgetreten",
@@ -4244,7 +4260,7 @@
                         "hasLinkTo",
                         "schema:location"
                     ],
-                    "object": "sgv:Place",
+                    "object": ":Place",
                     "labels": {
                         "en": "Organisation's headquarters",
                         "de": "Hauptsitz der Organisation",
@@ -4348,7 +4364,7 @@
                         "hasLinkTo",
                         "schema:containedInPlace"
                     ],
-                    "object": "sgv:Place",
+                    "object": ":Place",
                     "labels": {
                         "en": "Contained in (Place)",
                         "de": "Enthalten in (Ort)",
@@ -4362,7 +4378,7 @@
                         "hasLinkTo",
                         "schema:containsPlace"
                     ],
-                    "object": "sgv:Place",
+                    "object": ":Place",
                     "labels": {
                         "en": "Contains (Place)",
                         "de": "Enth\u00e4lt (Ort)",
@@ -4446,7 +4462,7 @@
                         "hasLinkTo",
                         "skos:broader"
                     ],
-                    "object": "sgv:Concept",
+                    "object": ":Concept",
                     "labels": {
                         "en": "Broader concept"
                     },
@@ -4458,7 +4474,7 @@
                         "hasLinkTo",
                         "skos:narrower"
                     ],
-                    "object": "sgv:Concept",
+                    "object": ":Concept",
                     "labels": {
                         "en": "Narrower concept"
                     },
@@ -4470,7 +4486,7 @@
                         "hasLinkTo",
                         "skos:inScheme"
                     ],
-                    "object": "sgv:Concept",
+                    "object": ":Concept",
                     "labels": {
                         "en": "in Scheme"
                     },
@@ -4482,7 +4498,7 @@
                         "hasLinkTo",
                         "skos:topConceptOf"
                     ],
-                    "object": "sgv:Concept",
+                    "object": ":Concept",
                     "labels": {
                         "en": "is a top concept of"
                     },
@@ -4506,7 +4522,7 @@
                         "hasLinkTo",
                         "skos:related"
                     ],
-                    "object": "sgv:Concept",
+                    "object": ":Concept",
                     "labels": {
                         "en": "has related concept",
                         "de": "Verwandtes Konzept",
@@ -4520,7 +4536,7 @@
                         "hasLinkTo",
                         "schema:subEvent"
                     ],
-                    "object": "sgv:Event",
+                    "object": ":Event",
                     "labels": {
                         "en": "has as sub-event(s)",
                         "de": "hat als Subevent(s)",
@@ -4534,7 +4550,7 @@
                         "hasLinkTo",
                         "schema:superEvent"
                     ],
-                    "object": "sgv:Event",
+                    "object": ":Event",
                     "labels": {
                         "en": "is part of the event",
                         "de": "ist Teil des Events",
@@ -4561,7 +4577,7 @@
                         "hasLinkTo",
                         "schema:recordedIn"
                     ],
-                    "object": "sgv:Object",
+                    "object": ":Object",
                     "labels": {
                         "en": "Recorded object",
                         "de": "Aufgezeichnete Objekte",
@@ -4575,7 +4591,7 @@
                         "hasLinkTo",
                         "schema:workFeatured"
                     ],
-                    "object": "sgv:Object",
+                    "object": ":Object",
                     "labels": {
                         "en": "Work featured",
                         "de": "Vorgestelltes Werk",
@@ -4677,10 +4693,10 @@
                         "schema:subjectOf"
                     ],
                     "object": [
-                      "sgv:Object",
-                      "sgv:Dataset",
-                      "sgv:Collection",
-                      "sgv:Event"
+                      ":Object",
+                      ":Dataset",
+                      ":Collection",
+                      ":Event"
                     ],
                     "labels": {
                         "en": "Subject Of",
@@ -5034,10 +5050,7 @@
                         "fr": "Collection",
                         "it": "Collezione"
                     },
-                    "super": [
-                      "Resource",
-                      "schema:Collection"
-                      ],
+                    "super": "Resource",
                     "cardinalities": [
                         {
                             "propname": ":hasSignature",
@@ -5110,69 +5123,64 @@
                             "gui_order": 14
                         },
                         {
-                            "propname": ":hasKeywords",
+                            "propname": ":hasConcept",
                             "cardinality": "0-n",
                             "gui_order": 15
                         },
                         {
-                            "propname": ":hasConcept",
-                            "cardinality": "0-n",
-                            "gui_order": 16
-                        },
-                        {
                             "propname": ":hasPlace",
                             "cardinality": "0-1",
-                            "gui_order": 17
+                            "gui_order": 16
                         },
                         {
                             "propname": ":hasPart",
                             "cardinality": "0-n",
-                            "gui_order": 18
+                            "gui_order": 17
                         },
                         {
                             "propname": ":recordedAt",
                             "cardinality": "0-n",
-                            "gui_order": 19
+                            "gui_order": 18
                         },
                         {
                             "propname": ":hasContributor",
                             "cardinality": "0-n",
-                            "gui_order": 20
+                            "gui_order": 19
                         },
                         {
                             "propname": ":hasPiaUrl",
                             "cardinality": "0-1",
-                            "gui_order": 21
+                            "gui_order": 20
                         },
                         {
                             "propname": ":hasDaschUrl",
                             "cardinality": "0-1",
-                            "gui_order": 22
+                            "gui_order": 21
                         },
                         {
                             "propname": ":hasDateCreated",
                             "cardinality": "0-1",
-                            "gui_order": 23
+                            "gui_order": 22
                         },
                         {
                             "propname": ":hasDateModified",
                             "cardinality": "0-1",
-                            "gui_order": 24
+                            "gui_order": 23
                         },
                         {
                             "propname": ":hasDatePublished",
                             "cardinality": "0-1",
-                            "gui_order": 25
+                            "gui_order": 24
                         },
                         {
                             "propname": ":hasCreativeWorkStatus",
                             "cardinality": "0-1",
-                            "gui_order": 26
+                            "gui_order": 25
                         },
                         {
                             "propname": ":relatedLink",
                             "cardinality": "0-n",
-                            "gui_order": 27
+                            "gui_order": 26
                         }
                     ]
                 },
