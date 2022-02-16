@@ -3323,9 +3323,25 @@
       ],
       "groups": [
          {
-           "name": "sgv-editors",
+           "name": "photo-editors",
            "descriptions": {
-              "en": "Editors for the SGV"
+              "en": "Editors from the the SGV Photo Archive"
+            },
+           "selfjoin": false,
+           "status": true
+         },
+         {
+           "name": "vla-editors",
+           "descriptions": {
+              "en": "Editors from the Volksliedarchiv"
+            },
+           "selfjoin": false,
+           "status": true
+         },
+         {
+           "name": "pia-editors",
+           "descriptions": {
+              "en": "Editors from the PIA research project"
             },
            "selfjoin": false,
            "status": true
@@ -3333,14 +3349,42 @@
        ],
        "users": [
          {
+           "username": "nicole",
+           "email": "nicole.peduzzi@volkskunde.ch",
+           "givenName": "Nicole",
+           "familyName": "Peduzzi",
+           "password": "1234",
+           "lang": "it",
+           "groups": [
+             ":photo-editors"
+           ],
+           "projects": [
+             ":admin"
+           ]
+         },
+         {
+           "username": "johannesmueske",
+           "email": "johannes.mueske@zpkm.uni-freiburg.de",
+           "givenName": "Johannes",
+           "familyName": "Müske",
+           "password": "1234",
+           "lang": "de",
+           "groups": [
+             ":vla-editors"
+           ],
+           "projects": [
+             ":admin"
+           ]
+         },
+         {
            "username": "julsraemy",
            "email": "julien.raemy@unibas.ch",
            "givenName": "Julien",
            "familyName": "Raemy",
-           "password": "juls1234",
-           "lang": "de",
+           "password": "1234",
+           "lang": "fr",
            "groups": [
-             ":sgv-editors"
+             ":pia-editors"
            ],
            "projects": [
              ":admin"
