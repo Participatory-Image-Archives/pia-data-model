@@ -11,12 +11,12 @@
    "project": {
       "shortcode": "0812",
       "shortname": "sgv",
-      "longname": "Photo Archive of the Swiss Society for Folklore Studies (SSFS)",
+      "longname": "Digital Archive of the Swiss Society for Folklore Studies (SSFS)",
       "descriptions": {
-        "de": "Digitales Archiv der Schweizerischen Gesellschaft für Volkskunde (SGV)",
-        "fr": "Archives numériques de la Société suisse des traditions populaires (SSTP)",
-        "en": "Digital Archive of the Swiss Society for Folklore Studies (SSFS)",
-        "it": "Archivio digitale della Società Svizzera per le Tradizioni Popolari (SSTP)"
+        "de": "Digitales Archiv der Schweizerischen Gesellschaft für Volkskunde (SGV), das die Bilddatenbank und das Volksliedarchiv enthält.",
+        "fr": "Archives numériques de la Société suisse des traditions populaires (SSTP) qui comprennent la base de données photographique et les archives des chansons populaires.",
+        "en": "Digital Archive of the Swiss Society for Folklore Studies (SSFS), which contains the image databse and the folk song archive.",
+        "it": "Archivio digitale della Società Svizzera per le Tradizioni Popolari (SSTP), che contiene il database delle immagini e l'archivo delle canzoni poplari."
       },
       "keywords": [
          "SGV",
@@ -26,7 +26,7 @@
          "Photography",
          "Cultural Anthropology",
          "Folklore",
-         "Volksliederarchiv",
+         "Schweizerisches Volksliedarchiv",
          "Switzerland"
       ],
       "lists": [
@@ -3495,17 +3495,16 @@
                         "hasLinkTo",
                         "schema:isPartOf"
                     ],
-                    "object": [
-                      ":Object",
-                      ":Dataset",
-                      ":Collection"
-                    ],
+                    "object": "Resource",
                     "labels": {
                         "en": "Is part of",
                         "de": "Teil von",
                         "fr": "Fait partie de ",
                         "it": "\u00c8 parte di"
                     },
+                    "comments": {
+                          "en": "This property should only be used to assert that an object or a dataset is part of an object, a dataset or a collection. Other resources/classes should not be leveraged."
+                        },
                     "gui_element": "Searchbox"
                 },
                 {
@@ -3649,7 +3648,7 @@
                         "it": "Nome"
                     },
                     "comments": {
-                          "en": "This property will no longer be used in sgv:Concept and both hasPrefLabel and hasAltLabel will be leveraged"
+                          "en": "This property will no longer be used in :Concept and both hasPrefLabel and hasAltLabel will be leveraged"
                         },
                     "gui_element": "SimpleText"
                 },
@@ -4092,7 +4091,7 @@
                     "name": "hasCreativeWorkStatus",
                     "super": [
                         "hasValue",
-                        "schema:CreativeWorkStatus"
+                        "schema:creativeWorkStatus"
                     ],
                     "object": "ListValue",
                     "labels": {
@@ -4707,17 +4706,15 @@
                         "hasLinkTo",
                         "schema:subjectOf"
                     ],
-                    "object": [
-                      ":Object",
-                      ":Dataset",
-                      ":Collection",
-                      ":Event"
-                    ],
+                    "object": "Resource",
                     "labels": {
                         "en": "Subject Of",
                         "de": "Subjekt von",
                         "fr": "Sujet de"
                     },
+                    "comments": {
+                          "en": "This property should be used either to assert that an agent is subject of an object or that a concept is the suject of an another resource."
+                        },
                     "gui_element": "Searchbox"
                 }
             ],
@@ -4730,10 +4727,7 @@
                         "fr": "Objet",
                         "it": "Oggetto"
                     },
-                    "super": [
-                      "Resource",
-                      "schema:CreativeWork"
-                      ],
+                    "super": "Resource",
                     "cardinalities": [
                         {
                             "propname": ":hasSignature",
@@ -4940,10 +4934,7 @@
                         "fr": "Set de donn\u00e9es",
                         "it": "Dataset"
                     },
-                    "super": [
-                      "Resource",
-                      "schema:Dataset"
-                      ],
+                    "super": "Resource",
                     "cardinalities": [
                         {
                             "propname": ":hasTitle",
@@ -5207,10 +5198,7 @@
                         "fr": "Concept",
                         "it": "Concetto"
                     },
-                    "super": [
-                      "Resource",
-                      "skos:Concept"
-                      ],
+                    "super": "Resource",
                     "cardinalities": [
                         {
                             "propname": ":hasDescription",
@@ -5287,10 +5275,7 @@
                         "fr": "Agent",
                         "it": "Agente"
                     },
-                    "super": [
-                      "Resource",
-                      "dct:Agent"
-                      ],
+                    "super": "Resource",
                     "cardinalities": [
                         {
                             "propname": ":hasName",
@@ -5442,10 +5427,7 @@
                         "fr": "Ev\u00e9nement",
                         "it": "Evento"
                     },
-                    "super": [
-                      "Resource",
-                      "schema:Event"
-                      ],
+                    "super": "Resource",
                     "cardinalities": [
                         {
                             "propname": ":hasConcept",
@@ -5532,10 +5514,7 @@
                         "fr": "Lieu",
                         "it": "Luogo"
                     },
-                    "super": [
-                      "Resource",
-                      "schema:Place"
-                    ],
+                    "super": "Resource",
                     "cardinalities": [
                         {
                             "propname": ":hasName",
