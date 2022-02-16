@@ -304,25 +304,37 @@
                   {
                       "name": "S_13333",
                       "labels": {
-                          "de": "16mm, stumm"
+                          "de": "16mm, schwarz/weiss, stumm"
                       }
                   },
                   {
-                      "name": "S_13229",
+                      "name": "35mm",
                       "labels": {
                           "de": "35mm"
                       }
                   },
                   {
-                      "name": "S_13227",
+                      "name": "8mm",
                       "labels": {
                           "de": "8mm"
                       }
                   },
                   {
-                      "name": "S_13230",
+                      "name": "dvd",
                       "labels": {
                           "de": "DVD"
+                      }
+                  },
+                  {
+                      "name": "xdcam",
+                      "labels": {
+                          "de": "Digital (XDCAM), farbig"
+                      }
+                  },
+                  {
+                      "name": "hdv_farbig",
+                      "labels": {
+                          "de": "HDV, farbig"
                       }
                   }
               ]
@@ -3260,60 +3272,6 @@
                               "name": "H_5296",
                               "labels": {
                                   "de": "Andere Druckverfahren"
-                              }
-                          }
-                      ]
-                  },
-                  {
-                      "name": "H_5297",
-                      "labels": {
-                          "de": "Film"
-                      },
-                      "comments": {
-                          "de": "Film-Format",
-                          "fr": "Format du film"
-                      },
-                      "nodes": [
-                          {
-                              "name": "H_5304",
-                              "labels": {
-                                  "de": "16mm, schwarz/weiss, stumm"
-                              }
-                          },
-                          {
-                              "name": "H_5308",
-                              "labels": {
-                                  "de": "16mm, schwarz/weiss und farbig, Magnetton"
-                              }
-                          },
-                          {
-                              "name": "H_5307",
-                              "labels": {
-                                  "de": "16mm, schwarz/weiss, Magnetton"
-                              }
-                          },
-                          {
-                              "name": "H_5309",
-                              "labels": {
-                                  "de": "16mm, farbig, Magnetton"
-                              }
-                          },
-                          {
-                              "name": "H_5310",
-                              "labels": {
-                                  "de": "16mm, farbig, Lichtton"
-                              }
-                          },
-                          {
-                              "name": "H_5314",
-                              "labels": {
-                                  "de": "HDV, farbig"
-                              }
-                          },
-                          {
-                              "name": "H_5315",
-                              "labels": {
-                                  "de": "Digital (XDCAM), farbig"
                               }
                           }
                       ]
