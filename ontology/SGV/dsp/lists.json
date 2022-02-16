@@ -1,6 +1,6 @@
 {
     "Standorte": {
-        "id": "http://rdfh.ch/lists/0812/6jlyqZvZRyu7Oskk-H8kXw",
+        "id": "http://rdfh.ch/lists/0014/NUmHt96FQx-sZ1D_Rv936w",
         "nodes": [
             {
                 "labels": {
@@ -2109,7 +2109,7 @@
         ]
     },
     "additionaltypes": {
-        "id": "http://rdfh.ch/lists/0812/NYa5WI6RS0aGhJjP2KByTw",
+        "id": "http://rdfh.ch/lists/0014/HlqAXUS5Tcy_HE6isXTdMg",
         "nodes": [
             {
                 "labels": {
@@ -2141,7 +2141,7 @@
         ]
     },
     "eventstatus": {
-        "id": "http://rdfh.ch/lists/0812/cZTBl-tWT06lL5xUwX53wg",
+        "id": "http://rdfh.ch/lists/0014/lO4ZZuoKSRuSjV5yHb0rag",
         "nodes": [
             {
                 "labels": {
@@ -2174,7 +2174,7 @@
         ]
     },
     "format": {
-        "id": "http://rdfh.ch/lists/0812/RN4jIEbcRpe5gZ8QGapf7g",
+        "id": "http://rdfh.ch/lists/0014/IAoJFDrBRfOREUDfgj_--Q",
         "nodes": [
             {
                 "labels": {
@@ -2461,7 +2461,7 @@
         ]
     },
     "objectstatus": {
-        "id": "http://rdfh.ch/lists/0812/4DNW2riFQqirfEO5bYxwYQ",
+        "id": "http://rdfh.ch/lists/0014/j1mZQZcvQNqrG67gfQ7LXg",
         "nodes": [
             {
                 "labels": {
@@ -2494,7 +2494,7 @@
         ]
     },
     "objecttype": {
-        "id": "http://rdfh.ch/lists/0812/rwhlOIEfRXOHddXAbR7o6g",
+        "id": "http://rdfh.ch/lists/0014/LE0uww0DQMGdgsq6qKXB5Q",
         "nodes": [
             {
                 "labels": {
@@ -2721,7 +2721,7 @@
         ]
     },
     "sprache": {
-        "id": "http://rdfh.ch/lists/0812/2LIVEooWTde062J8UL15hw",
+        "id": "http://rdfh.ch/lists/0014/K72iAzAkQeaV_kdybtW-fQ",
         "nodes": [
             {
                 "labels": {
@@ -2762,7 +2762,7 @@
         ]
     },
     "technology": {
-        "id": "http://rdfh.ch/lists/0812/b7mE1rvYR-yfgOO8qw922A",
+        "id": "http://rdfh.ch/lists/0014/hnNdhJXoSp6-lZnxZvTA-A",
         "nodes": [
             {
                 "labels": {
