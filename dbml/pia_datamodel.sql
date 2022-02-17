@@ -1,6 +1,6 @@
 -- SQL dump generated using DBML (dbml-lang.org)
 -- Database: PostgreSQL
--- Generated at: 2022-02-15T09:15:41.376Z
+-- Generated at: 2022-02-17T07:51:15.026Z
 
 CREATE TABLE "locations" (
   "id" SERIAL PRIMARY KEY,
@@ -22,8 +22,10 @@ CREATE TABLE "locations" (
 CREATE TABLE "dates" (
   "id" SERIAL PRIMARY KEY,
   "date" date,
+  "end_date" date,
   "date_string" varchar,
   "type" int,
+  "accuracy" int,
   "created_at" timestamp,
   "updated_at" timestamp
 );
@@ -397,7 +399,12 @@ COMMENT ON TABLE "dates" IS 'Type can be either:
   2: start_date, in case of a daterange
   3: end_date, in case of a daterange
   4: birth_date, for a person
-  5: death_date, for a person';
+  5: death_date, for a person
+
+Accuracy:
+  1: to the day
+  2: to the month
+  3: to the year';
 
 COMMENT ON TABLE "people" IS 'A person can have
 - dates (dates, birth, death)

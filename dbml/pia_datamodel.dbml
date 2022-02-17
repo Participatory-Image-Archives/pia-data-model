@@ -71,19 +71,30 @@ Table locations {
 Table dates {
   id int [pk, increment]
   date date
+  end_date date
   date_string varchar
   type int
+  accuracy int
 
   created_at timestamp
   updated_at timestamp
 
   Note: '''
     Type can be either:
-      1: date, a simple date with unclear definition (often it designates)
+      ~~1: date, a simple date with unclear definition (often it designates)
       2: start_date, in case of a daterange
       3: end_date, in case of a daterange
       4: birth_date, for a person
-      5: death_date, for a person
+      5: death_date, for a person~~
+
+      null: date
+      1: birth_date
+      2: death_date
+
+    Accuracy:
+      1: to the day
+      2: to the month
+      3: to the year
   '''
 }
 
