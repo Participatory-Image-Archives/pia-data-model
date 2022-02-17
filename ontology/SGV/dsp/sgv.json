@@ -3724,7 +3724,7 @@
                     "object": ":Place",
                     "labels": {
                         "en": "Birth place",
-                        "de": "geboren/gegr\u00fcndet in",
+                        "de": "geboren/gegründet in",
                         "fr": "Lieu de naissance",
                         "it": "Luogo di nascita"
                     },
@@ -3739,7 +3739,7 @@
                     "object": "DateValue",
                     "labels": {
                         "en": "Death date",
-                        "de": "verstorben/aufgel\u00f6st am",
+                        "de": "verstorben am",
                         "fr": "Date de mort",
                         "it": "Data di morte"
                     },
@@ -3754,7 +3754,7 @@
                     "object": ":Place",
                     "labels": {
                         "en": "Death place",
-                        "de": "verstorben/aufgel\u00f6st in",
+                        "de": "verstorben in",
                         "fr": "Lieu de mort",
                         "it": "Luogo di morte"
                     },
@@ -3769,7 +3769,7 @@
                     "labels": {
                         "en": "Literature",
                         "de": "Literatur",
-                        "fr": "Litt\u00e9rature"
+                        "fr": "Littérature"
                     },
                     "comments": {
                           "en": "This property cannot be mapped to existing vocabularies. It may be deprecated in the future"
@@ -4333,19 +4333,21 @@
                     "gui_element": "SimpleText"
                 },
                 {
-                    "name": "hasNationality",
+                    "name": "hasPlaceOfOrigin",
                     "super": [
-                        "hasValue",
-                        "schema:nationality"
+                        "hasLinkTo"
                     ],
-                    "object": "TextValue",
+                    "object": ":Place",
                     "labels": {
-                        "en": "Nationality",
-                        "de": "Nationalit\u00e4t",
-                        "fr": "Nationalit\u00e9",
-                        "it": "Nazionalit\u00e0"
+                        "en": "Place(s) of origin",
+                        "de": "Heimatort / Herkunft",
+                        "fr": "Lieu(x) d'origine",
+                        "it": "Luogo di origine"
                     },
-                    "gui_element": "SimpleText"
+                    "comments": {
+                          "en": "This property has to be understood in the Swiss context where citizens have a place of origin on their passports, which can complement the HasBirthPlace property."
+                        },
+                    "gui_element": "Searchbox"
                 },
                 {
                     "name": "hasAtlasId",
@@ -5403,7 +5405,7 @@
                             "gui_order": 24
                         },
                         {
-                            "propname": ":hasNationality",
+                            "propname": ":hasPlaceOfOrigin",
                             "cardinality": "0-n",
                             "gui_order": 25
                         },
