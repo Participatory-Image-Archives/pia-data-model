@@ -746,6 +746,47 @@
               ]
           },
           {
+              "name": "instantiationtype",
+              "labels": {
+                  "de": "Instanziierung Art der Digitalisierung bzw. des digital Objekts",
+                  "en": "Instantiation type of the digital surrogate or digital-born object",
+                  "fr": "Type d'instanciation de l'objet numérique"
+              },
+              "comments": {
+                  "de": "Liste zur Angabe des Typs des digitalen Objekts (Bild, Ton, audiovisuell)"
+              },
+              "nodes": [
+                  {
+                      "name": "audio",
+                      "labels": {
+                          "de": "Audio",
+                          "en": "Audio"
+                      }
+                  },
+                  {
+                      "name": "image",
+                      "labels": {
+                          "de": "Bild",
+                          "en": "Image"
+                      }
+                  },
+                  {
+                      "name": "movingimages",
+                      "labels": {
+                          "de": "Bewegte Bilder",
+                          "en": "Moving images"
+                      }
+                  },
+                  {
+                      "name": "3d",
+                      "labels": {
+                          "de": "3D-Objekt",
+                          "en": "3D Object"
+                      }
+                  }
+              ]
+          },
+          {
               "name": "Standorte",
               "labels": {
                   "de": "Standortverwaltung",
@@ -4723,6 +4764,22 @@
                           "en": "This property should be used either to assert that an agent is subject of an object or that a concept is the suject of an another resource."
                         },
                     "gui_element": "Searchbox"
+                },
+                {
+                    "name": "hasInstantiationType",
+                    "super": [
+                        "hasValue"
+                    ],
+                    "object": "ListValue",
+                    "labels": {
+                        "en": "Instantiation Type",
+                        "de": "Instanziierungstyp",
+                        "fr": "Type d'instanciation"
+                    },
+                    "gui_element": "List",
+                    "gui_attributes": {
+                        "hlist": "instantiationtype"
+                    }
                 }
             ],
             "resources": [
@@ -4930,6 +4987,11 @@
                             "propname": ":hasArchiveLocation",
                             "cardinality": "0-n",
                             "gui_order": 39
+                        },
+                        {
+                            "propname": ":hasInstantiationType",
+                            "cardinality": "0-1",
+                            "gui_order": 40
                         }
                     ]
                 },
