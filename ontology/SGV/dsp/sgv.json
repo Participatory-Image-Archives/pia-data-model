@@ -1,31 +1,35 @@
 {
-   "prefixes": {
-      "yourproject": "http://api.test.dasch.swiss/ontology/0812/yourproject/v2",
-      "dct": "http://purl.org/dc/terms/",
-      "edm": "http://www.europeana.eu/schemas/edm/",
-      "ebucore": "http://www.ebu.ch/metadata/ontologies/ebucore/ebucore",
-      "schema": "http://schema.org/",
-      "skos": "http://www.w3.org/2004/02/skos/core#"
-   },
+  "prefixes": {
+     "sgv": "http://api.test.dasch.swiss/ontology/0812/sgv/v2",
+     "dct": "http://purl.org/dc/terms/",
+     "edm": "http://www.europeana.eu/schemas/edm/",
+     "ebucore": "http://www.ebu.ch/metadata/ontologies/ebucore/ebucore",
+     "schema": "http://schema.org/",
+     "skos": "http://www.w3.org/2004/02/skos/core#"
+  },
    "$schema": "https://raw.githubusercontent.com/dasch-swiss/dsp-tools/main/knora/dsplib/schemas/ontology.json",
    "project": {
       "shortcode": "0812",
       "shortname": "sgv",
-      "longname": "Photo Archive of the Swiss Society for Folklore Studies (SSFS)",
+      "longname": "Digital Archive of the Swiss Society for Folklore Studies (SSFS)",
       "descriptions": {
-          "de": "<p><span style=\"font-size:28px\"><strong>&Uuml;ber uns</strong></span></p>\n\n<p>Seit 1896 existiert die Schweizerische Gesellschaft f&uuml;r Volkskunde (SGV). &nbsp;</p>\n\n<p>Seit den 1930er Jahren sammelt sie Fotografien.&nbsp;</p>\n\n<p>Seit 2018 sind diese online zug&auml;nglich! &nbsp;</p>\n\n<p>300&#39;000 fotografische Objekte, 30 Sammlungen, 150 Jahre Fotografiegeschichte! &nbsp;</p>\n\n<p>Von Sumiswald bis Sumatra, von Ambrotypien zu Polyesterfilmen, von Handwerk &uuml;ber Industrie, zu Bauernleben und Stadtb&uuml;rgertum: Das Fotoarchiv der Schweizerischen Gesellschaft f&uuml;r Volkskunde verf&uuml;gt &uuml;ber einen facettenreichen Schatz.&nbsp;</p>\n\n<p>Die Amateurfotografien und professionellen Aufnahmen stammen aus allen Sprachregionen der Schweiz sowie aus zahlreichen L&auml;ndern in Europa, Amerika, Asien, Afrika und Ozeanien.&nbsp;</p>\n\n<p>Seit 2014 wurden in einem von der <a href=\"http://www.volkskunde.ch/sgv.html\" target=\"_blank\">Schweizerischen Gesellschaft f&uuml;r Volkskunde (SGV)</a> initiierten Fotoprojekt&nbsp;rund 105&#39;000 fotografische Objekte aus 17&nbsp;verschiedenen Sammlungen aufgearbeitet. Unter der Leitung von Prof. Dr. Walter Leimgruber und in enger Zusammenarbeit mit dem <a href=\"http://dhlab.unibas.ch\" target=\"_blank\">Digital Humanities Lab</a> der Universit&auml;t Basel sowie dem Atelier f&uuml;r Restaurierung Anklin &amp; Assen&nbsp;wurden diese Objekte konserviert, restauriert, digitalisiert und in einer Datenbank erschlossen.&nbsp;Es ist uns in Anlehnung an <a href=\"http://memoriav.ch\" target=\"_blank\">Memoriav</a> und&nbsp;die <a href=\"http://www.khi.fi.it/de/Declaration\" target=\"_blank\">Florence Declaration</a> somit&nbsp;wichtig, nicht nur einen fachgerechten Umgang mit den digitalen Objekten, sondern&nbsp;auch mit&nbsp;den analogen Objekten zu gew&auml;hrleisten.</p>\n\n<p>Wir laden Sie ein, das SGV-Fotoarchiv auf dieser Webseite in digitaler Form zu durchst&ouml;bern, erforschen, geniessen, hinterfragen und zu erweitern. Haben Sie Fragen oder weitere Informationen zu einem Objekt? Dann melden Sie sich bei uns &ndash; wir freuen uns auf Ihre Nachricht!</p>\n\n<p>&nbsp;</p>\n\n<p>Fotoarchiv der Schweizerischen Gesellschaft f&uuml;r Volkskunde<br />\nSpalenvorstadt 2, 4051 Basel&nbsp;<br />\nT +41 61 207 11 64<br />\narchiv(at)sgv-sstp.ch</p>\n\n<p>&nbsp;</p>\n\n<p><em><span style=\"font-family:inherit; font-size:inherit\"><span style=\"background-color:#FFFF00\">Coronavirus: Basierend auf dem Beschluss des Bundesrats vom 16. M&auml;rz 2020, bleibt das Fotoarchiv der Schweizerischen Gesellschaft f&uuml;r Volkskunde bis auf weiteres geschlossen. Sie erreichen uns weiterhin via obengenannter E-Mail, unter welcher wir Ihre Anfragen gerne beantworten werden. Weitere Informationen werden laufend auf der&nbsp;</span></span><span style=\"border:0px; font-family:inherit; font-size:inherit; font-stretch:inherit; font-style:inherit; font-variant-caps:inherit; line-height:inherit; margin:0px; padding:0px; vertical-align:baseline\"><span style=\"background-color:#FFFF00\"><a href=\"https://www.volkskunde.ch/sgv/aktuell/news/\" rel=\"noopener noreferrer\" style=\"margin: 0px; padding: 0px; border: 0px; font-family: inherit; font-size: inherit; font-style: inherit; font-variant-caps: inherit; font-stretch: inherit; line-height: inherit; vertical-align: baseline;\" target=\"_blank\">Website der SGV</a>&nbsp;</span></span><span style=\"font-family:inherit; font-size:inherit\"><span style=\"background-color:#FFFF00\">unter News publiziert.</span></span></em></p>\n\n<p>&nbsp;</p>\n\n<p><span style=\"font-size:22px\"><strong>Impressum</strong></span></p>\n\n<div>Die rund 300&#39;000 Fotografien der 30 Sammlungen der Schweizerischen Gesellschaft f&uuml;r Volkskunde (SGV) sind auf unterschiedliche Weise urheberrechtlich gesch&uuml;tzt. Kontaktieren Sie uns, wenn Sie bestimmte Bilder f&uuml;r die Forschung oder andere Projekte verwenden wollen:&nbsp;archiv(at)sgv-sstp.ch</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Copyright</strong><br />\n&copy;&nbsp;Schweizerische Gesellschaft f&uuml;r Volkskunde (SGV)</div>\n\n<div>Diese Website und alle dazugeh&ouml;rigen Texte, Fotografien, Videosequenzen, Tondokumente und andere Materialien sind urheberrechtlich gesch&uuml;tzt. Jegliche Verwendung ohne vorherige schriftliche Zustimmung ist nicht gestattet. Der Inhalt dieser Webseite darf nicht zu kommerziellen Zwecken kopiert, verbreitet, ver&auml;ndert oder Dritten zug&auml;nglich gemacht werden.</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Dachorganisation</strong><br />\n<a href=\"http://www.volkskunde.ch/sgv.html\" target=\"_blank\">Schweizerische Gesellschaft f&uuml;r Volkskunde (SGV)</a>&nbsp;<br />\nProjektbezogene Unterst&uuml;tzung: Marius Risi, Sabine Eggmann, Ernst Huber, V&eacute;ronique Hilfiker Durand</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Projektleitung</strong>&nbsp;<br />\nWalter Leimgruber&nbsp;</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Projektkoordination</strong><br />\nNicole Peduzzi Longhitano</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Projektberatung</strong><br />\nRegula Anklin</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Wissenschaftliche Mitarbeit</strong><br />\nStephan Graf, Birgit Huber, Regula Iselin, Uta Karrer, Miriam Kull, Aila &Ouml;zvegyi, Caroline Wiedemer</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Praktika</strong><br />\nLucia Chen, Julia Hohn, Julia Planzer, Dominic Weber</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Zivildienstleistende</strong><br />\nLeandro Do Sul, Ramon R&ouml;thlisberger, Dominic Weber</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Ehrenamtliche Mitarbeit</strong><br />\nVerena Doebele, Annerose Scheidegger, Violanta Spinas,&nbsp;Margrith Werner</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Oral History Partner/-innen</strong><br />\nGennaro Ghirardelli, Anton R&ouml;&ouml;sli, Margrith Werner</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Projektpartner</strong></div>\n\n<div><a href=\"http://dhlab.unibas.ch/\">Digital Humanities Lab, Universit&auml;t Basel (DHLab)</a>&nbsp;</div>\n\n<div>Restaurierung Anklin &amp; Assen, Basel</div>\n\n<div><a href=\"https://kulturwissenschaft.unibas.ch\">Seminar f&uuml;r Kulturwissenschaften und Europ&auml;ische Ethnologie</a>, Universit&auml;t Basel</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Datenbank-Programmierung</strong><br />\nLukas Rosenthaler,&nbsp;<a href=\"http://dhlab.unibas.ch\" target=\"_blank\">DHLab</a>, Basel<br />\nBenjamin Geer, Ivan Subotic, Tobias Schweizer, <a href=\"http://lakto.org/\" target=\"_blank\">Andr&eacute; Kilchenmann</a>, Andreas Aeschlimann, Sepideh Allassi, Tamino Gafner, Vijeinath Tissaveerasingham, Erwin Zbinden</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Webdesign und -entwicklung</strong><br />\nProjektkoordination:&nbsp;<a href=\"http://stephangraf.ch\" target=\"_blank\">Stephan Graf</a></div>\n\n<div>Konzeption, Gestaltung: <a href=\"http://stephangraf.ch\" target=\"_blank\">Stephan Graf</a>, Nicole Peduzzi Longhitano<br />\nGestaltung, Webapp-Entwicklung: Marin Aeschbach,&nbsp;<a href=\"https://www.formwerdung.ch\" target=\"_blank\">Formwerdung</a>, Z&uuml;rich</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Schrift</strong><br />\nLapidar, Fabian Harb,&nbsp;<a href=\"http://abcdinamo.com\" target=\"_blank\">Dinamo Typefaces</a></div>\n\n<div>&nbsp;</div>\n\n<div><strong>Erfassungsressourcen</strong><br />\n<a href=\"https://rm.foto-ch.ch/#/home\" target=\"_blank\">fotoCH</a><br />\n<a href=\"https://www.fotostiftung.ch\" target=\"_blank\">Fotostiftung Schweiz</a></div>\n\n<div><a href=\"http://www.geonames.org\" target=\"_blank\">GeoNames</a></div>\n\n<div>&nbsp;</div>\n\n<div><strong>Konservatorische Begleitung</strong><br />\nRegula Anklin, Atelier f&uuml;r Restaurierung Anklin &amp; Assen, Basel</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Restaurierung</strong><br />\nRegula Anklin, Atelier f&uuml;r Restaurierung Anklin &amp; Assen, Basel</div>\n\n<div>Fiona Eisenhut, Johanna Gr&uuml;ndel, Vai van den Heiligenberg, Gian Luca Hofmann, Corinne Huber, Jonas Kull, Miriam Kull,&nbsp;Emma Lowe</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Digitalisierung</strong><br />\nPeter Fornaro, <a href=\"http://dhlab.unibas.ch/team/\" target=\"_blank\">DHLab</a>, Basel<br />\nAlexandra Tschakert, Daniela Meier, Dominic Stratton, Stefanie Buder</div>\n\n<div>&nbsp;</div>\n\n<div><strong>ICT-Beratung</strong><br />\nMarco Longhitano</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Druckgrafik</strong><br />\nGian Luca Hofmann</div>\n\n<div>&nbsp;</div>\n\n<div><strong>&Uuml;bersetzungen</strong><br />\nNigel Stephenson (EN), V&eacute;ronique Hilfiker Durand (FR), Dante Peduzzi (IT), Benno Conrad (RM),&nbsp;Violanta Spinas (RM)</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Redaktion der deutschen Texte</strong><br />\nV&eacute;ronique Hilfiker Durand</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Haftungsausschluss</strong><br />\nDiese Internetseite enth&auml;lt Verkn&uuml;pfungen zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Die Schweizerische Gesellschaft f&uuml;r Volkskunde (SGV) &uuml;bernimmt keine Haftung f&uuml;r die Richtigkeit der Angaben, Daten und Links. F&uuml;r die Inhalte der externen Webseiten Dritter sind deren Betreiber verantwortlich.</div>\n\n<div>&nbsp;</div>\n\n<div>&nbsp;</div>\n\n<div class=\"citizen-ex__pane\">&nbsp;</div>\n",
-          "fr": "<p><span style=\"font-size:28px\"><strong>Notre profil</strong></span></p>\n\n<p>La Soci&eacute;t&eacute; suisse des traditions populaires (SSTP) existe depuis 1896.&nbsp;</p>\n\n<p>Depuis les ann&eacute;es 1930, elle collectionne des photos.&nbsp;</p>\n\n<p>Depuis 2018, ces derni&egrave;res sont accessibles en ligne !&nbsp;</p>\n\n<p>250&#39;000 objets photographiques, 30 collections, 150 ann&eacute;es d&rsquo;histoire de la photographie !&nbsp;</p>\n\n<p>De Sumiswald &agrave; Sumatra, des ambrotypes au support polyester, de l&rsquo;artisanat &agrave; la vie paysanne et &agrave; la bourgeoisie citadine en passant par l&rsquo;industrie : les Archives photographiques de la Soci&eacute;t&eacute; suisse des traditions populaires disposent d&rsquo;un tr&eacute;sor aux multiples facettes.&nbsp;</p>\n\n<p>Les photos d&rsquo;amateurs et de professionnels nous proviennent de toutes les r&eacute;gions linguistiques de Suisse ainsi que de nombreux pays d&rsquo;Europe, d&rsquo;Am&eacute;rique, d&rsquo;Asie, d&rsquo;Afrique et d&rsquo;Oc&eacute;anie.&nbsp;</p>\n\n<p>Depuis 2014, environ 100&#39;000 objets photographiques issus de 16 collections diff&eacute;rentes ont &eacute;t&eacute; remis en &eacute;tat et r&eacute;pertori&eacute;s dans le cadre d&rsquo;un projet photographique initi&eacute; par la <a href=\"http://www.volkskunde.ch/fr/sgv.html\">Soci&eacute;t&eacute; suisse des traditions populaires (SSTP)</a>. Sous la direction du prof. Dr. Walter Leimgruber et en &eacute;troite collaboration avec le <a href=\"http://dhlab.unibas.ch\" target=\"_blank\">Digital Humanities Lab</a> de l&rsquo;Universit&eacute; de B&acirc;le et l&rsquo;atelier de restauration Anklin &amp; Assen, tous ces objets ont &eacute;t&eacute; conserv&eacute;s, restaur&eacute;s, num&eacute;ris&eacute;s et r&eacute;pertori&eacute;s dans une base de donn&eacute;es. En r&eacute;f&eacute;rence &agrave;&nbsp;<a href=\"http://memoriav.ch/?lang=fr\" target=\"_blank\">Memoriav</a> et &agrave; la <a href=\"http://www.khi.fi.it/de/Declaration\" target=\"_blank\">Florence Declaration</a>, notre pr&eacute;occupation n&rsquo;est pas seulement de respecter un maniement appropri&eacute; avec les objets num&eacute;ris&eacute;s, mais de l&rsquo;assurer &eacute;galement avec les argentiques.&nbsp; &nbsp;</p>\n\n<p>Nous vous invitons &agrave; vous promener virtuellement dans les archives de la SSTP, de les d&eacute;couvrir, d&rsquo;y prendre plaisir, de les questionner et de les compl&eacute;ter. Avez-vous des questions ou disposez-vous d&rsquo;informations suppl&eacute;mentaires sur l&rsquo;un ou l&rsquo;autre objet ? N&rsquo;h&eacute;sitez pas &agrave; nous contacter &ndash; nous serons ravis d&rsquo;avoir de vos nouvelles !&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>Les Archives photographiques de la Soci&eacute;t&eacute; suisse des traditions populaires<br />\nSpalenvorstadt 2, 4051 B&acirc;le&nbsp;<br />\nT +41 61 207 11 64<br />\narchiv-at-sgv-sstp.ch</p>\n\n<p>&nbsp;</p>\n\n<p><span style=\"font-size:22px\"><strong>Mentions l&eacute;gales</strong></span></p>\n\n<div>Les quelques 250&#39;000 photos provenant des 30 collections de la Soci&eacute;t&eacute; suisse des tradition populaires (SSTP) sont prot&eacute;g&eacute;s de diff&eacute;rentes fa&ccedil;ons par des droits d&rsquo;auteur. Contactez-nous si vous souhaitez utiliser des images dans le cadre de votre projet de recherche ou de tout autre projet.</div>\n\n<div>&nbsp;</div>\n\n<div>&nbsp;</div>\n\n<div>\n<p><strong>Copyright</strong><br />\n&copy; Soci&eacute;t&eacute; suisse des traditions populaires<br />\nCe site internet, tous les textes, photographies, graphiques, s&eacute;quences vid&eacute;o, documents audio ainsi que tout autre mat&eacute;riel sont prot&eacute;g&eacute;s par les droits d&rsquo;auteur. Tout usage est express&eacute;ment subordonn&eacute; &agrave; l&rsquo;autorisation &eacute;crite pr&eacute;alable. Il est interdit de copier, divulguer, modifier ou de mettre &agrave; la disposition de tiers le contenu de ce site internet &agrave; de fins commerciales.<br />\n&nbsp;</p>\n\n<p><strong>Organisation fa&icirc;ti&egrave;re</strong><br />\n<a href=\"http://www.volkskunde.ch/fr/sgv.html\">Soci&eacute;t&eacute; suisse des traditions populaires (SSTP)</a><br />\nSoutien relatif au projet : Marius Risi, Sabine Eggmann, Ernst Huber, V&eacute;ronique Hilfiker Durand<br />\n&nbsp;</p>\n\n<p><strong>Directeur de projet&nbsp;&nbsp;</strong><br />\nWalter Leimgruber&nbsp;</p>\n</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Coordination</strong><br />\nNicole Peduzzi Longhitano</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Conseils en gestion du projet</strong><br />\nRegula Anklin</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Collaborateurs et collaboratrices scientifiques</strong></div>\n\n<div>Stephan Graf, Birgit Huber, Regula Iselin, Uta Karrer, Aila &Ouml;zvegyi, Caroline Wiedemer</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Stagiaires</strong><br />\nLucia Chen, Julia Hohn, Julia Planzer, Dominic Weber</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Civilistes</strong><br />\nLeandro Do Sul, Ramon R&ouml;thlisberger, Dominic Weber</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Collaboratrices b&eacute;n&eacute;voles</strong><br />\nVerena Doebele, Annerose Scheidegger</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Transmission orale</strong><br />\nGennaro Ghirardelli, Anton R&ouml;&ouml;sli, Margrith Werner</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Partenaires techniques</strong></div>\n\n<div><a href=\"http://dhlab.unibas.ch/\">Digital Humanities Lab, Universit&eacute; de&nbsp;B&acirc;le (DHLab)</a>&nbsp;</div>\n\n<div>Restaurierung Anklin &amp; Assen, B&acirc;le</div>\n\n<div><a href=\"http://kulturwissenschaft.unibas.ch\">S&eacute;minaire d&rsquo;anthropologie culturelle et ethnologie europ&eacute;enne</a>, Universit&eacute; de B&acirc;le</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Programmation de la base de donn&eacute;es</strong><br />\nLukas Rosenthaler,&nbsp;<a href=\"http://dhlab.unibas.ch\" target=\"_blank\">DHLab</a>, B&acirc;le<br />\nBenjamin Geer, Ivan Subotic, Tobias Schweizer,&nbsp;<a href=\"http://lakto.org/\" target=\"_blank\">Andr&eacute; Kilchenmann</a>, Andreas Aeschlimann, Sepideh Allassi, Tamino Gafner, Vijeinath Tissaveerasingham, Erwin&nbsp;Zbinden</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Design et d&eacute;veloppment du site internet</strong><br />\nConception, graphisme et coordination :&nbsp;<a href=\"http://stephangraf.ch\" target=\"_blank\">Stephan Graf</a><br />\nGraphisme et d&eacute;veloppment de l&#39;application internet :&nbsp;Marin Aeschbach,&nbsp;<a href=\"https://www.formwerdung.ch\" target=\"_blank\">Formwerdung</a>, Zurich</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Typo</strong><br />\n&quot;Lapidar&quot;, Fabian Harb,&nbsp;<a href=\"http://abcdinamo.com\" target=\"_blank\">Dinamo Typefaces</a></div>\n\n<div>&nbsp;</div>\n\n<div><strong>Ressources de saisie</strong><br />\n<a href=\"https://fr.foto-ch.ch/#/home\" target=\"_blank\">fotoCH</a><br />\n<a href=\"https://www.fotostiftung.ch/fr/\" target=\"_blank\">Fotostiftung Schweiz</a></div>\n\n<div><a href=\"http://www.geonames.org\" target=\"_blank\">GeoNames</a></div>\n\n<div>&nbsp;</div>\n\n<div><strong>Suivi conservatoire</strong><br />\nRegula Anklin, Atelier de restauration Anklin &amp; Assen, B&acirc;le</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Restauration</strong><br />\nRegula Anklin, Atelier de restauration Anklin &amp; Assen, B&acirc;le&nbsp;<br />\nMirjam Anklin, Fiona Eisenhut, Johanna Gr&uuml;ndel, Vai van den Heiligenberg, Gian Luca Hofmann, Corinne Huber, Jonas Kull, Emma Lowe</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Num&eacute;risation</strong><br />\nPeter Fornaro,&nbsp;<a href=\"http://dhlab.unibas.ch/team/\" target=\"_blank\">DHLab</a>, Basel<br />\nAlexandra Tschakert, Daniela Meier, Dominic Stratton, Stefanie Buder</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Conseil ICT</strong><br />\nMarco Longhitano</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Gravure</strong><br />\nGian Luca Hofmann</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Traductions</strong><br />\nNigel Stephenson (EN), V&eacute;ronique Hilfiker Durand (FR), Dante Peduzzi (IT), Benno Conrad (RM),&nbsp;Violanta Spinas (RM)</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Relecture des textes allemands</strong><br />\nV&eacute;ronique Hilfiker Durand</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Clause de non-responsabilit&eacute;</strong><br />\nCe site internet contient des liens &agrave; des sites ext&eacute;rieurs. Nous n&rsquo;avons aucune influence sur le contenu de ces derniers. La Soci&eacute;t&eacute; suisse des traditions populaires d&eacute;cline toute responsabilit&eacute; concernant la pertinence des informations, des donn&eacute;es et des liens. Uniquement les op&eacute;rateurs des sites tiers sont responsables du contenu de leurs sites.</div>\n\n<div>&nbsp;</div>\n\n<div>&nbsp;</div>\n\n<div class=\"citizen-ex__pane\">&nbsp;</div>\n\n<div class=\"citizen-ex__pane\">&nbsp;</div>\n\n<div class=\"citizen-ex__pane\">&nbsp;</div>\n",
-          "it": "<p><span style=\"font-size:28px\"><strong>Chi siamo</strong></span></p>\n\n<p>La Societ&agrave; Svizzera per le Tradizioni Popolari (SSTP) esiste dal 1896.&nbsp;</p>\n\n<p>Dal 1930 la Societ&agrave; raccoglie fotografie.&nbsp;</p>\n\n<p>Dal 2018 sono disponibili anche in rete!&nbsp;</p>\n\n<p>250&#39;000 oggetti fotografici, 30 collezioni, 150 anni di storia della fotografia!&nbsp;&nbsp;</p>\n\n<p>Da Sumiswald a Sumatra, dagli ambrotipi ai film su poliestere, dall&rsquo;artigianato all&lsquo;industria, dalla vita rurale a quella cittadina: l&rsquo;archivio fotografico della Societ&agrave; Svizzera per le Tradizioni Popolari custodisce un tesoro molto diversificato.&nbsp;</p>\n\n<p>Le immagini amatoriali e quelle professionali sono state scattate in tutte le regioni linguistiche della Svizzera, cos&igrave; come in diversi paesi dell&rsquo;Europa, America, Asia, Africa e Oceania.&nbsp;</p>\n\n<p>Grazie al progetto fotografico iniziato dalla <a href=\"http://www.volkskunde.ch/en/sgv.html\" target=\"_blank\">Societ&agrave; Svizzera per le Tradizioni popolari</a> nel 2014 sono stati valorizzati e inventarizzati circa 100&#39;000 oggetti fotografici provenienti da 16 collezioni diverse. Sotto la direzione del Prof. Dr. Walter Leimgruber, in stretta collaborazione con il <a href=\"http://dhlab.unibas.ch\" target=\"_blank\">Digital Humanities Lab</a> dell&rsquo;Universit&agrave; di Basilea e dell&lsquo;Atelier di restauro Anklin &amp; Assen, questi oggetti sono stati conservati, restaurati, digitalizzati e catalogati in una banca dati. Ispirandoci a <a href=\"http://memoriav.ch/?lang=it\" target=\"_blank\">Memoriav</a> e alla <a href=\"http://www.khi.fi.it/it/Declaration\">Florence Declaration</a>, garantiamo un approccio professionalmente corretto sia verso gli oggetti fotografici digitalizzati, che verso quelli analogici.&nbsp;</p>\n\n<p>Vi invitiamo a spulciare, esaminare, apprezzare, analizzare criticamente e arricchire in forma digitale questo sito dell&rsquo;archivio fotografico della SSTP. Ha delle domande o necessita di ulteriori informazioni su un determinato oggetto fotografico presentato? Ci contatti direttamente &ndash; le sue segnalazioni saranno ben gradite!&nbsp;&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>Archivio fotografico della Societ&agrave; Svizzera per le Tradizioni Popolari<br />\nSpalenvorstadt 2, 4051 Basel<br />\nT +41 61 207 11 64<br />\narchiv-at-sgv-sstp.ch</p>\n\n<p>&nbsp;</p>\n\n<p><span style=\"font-size:22px\"><strong>Colofone</strong></span></p>\n\n<div>Le circa 250&#39;000 fotografie delle 30 collezioni della Societ&agrave; Svizzera per le Tradizioni Popolari (SSTP) sono protette in diversi modi per quanto riguarda i diritti d&rsquo;autore. Ci contatti se le servono delle immagini specifiche per la ricerca o per altri progetti!</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Copyright</strong><br />\n&copy; Schweizerische Gesellschaft f&uuml;r Volkskunde<br />\nQuesto sito e tutti i testi, fotografie, grafici, sequenze video, documenti sonori e altri materiali sono protetti per quanto riguarda i diritti d&rsquo;autore. Ogni uso senza autorizzazione preventiva &egrave; vietato. I contenuti di questo sito non possono essere usati, copiati, divulgati o modificati per uso commerciale e non possono essere messi a disposizione di terzi.</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Organizzazione mantello\u200b</strong><br />\n<a href=\"http://www.volkskunde.ch/en/sgv.html\">Societ&agrave; Svizzera per le Tradizioni Popolari (SSTP)</a><br />\nSupporto al progetto:&nbsp;Marius Risi, Sabine Eggmann, Ernst Huber, V&eacute;ronique Hilfiker Durand</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Direzione del progetto</strong><br />\nWalter Leimgruber&nbsp;</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Coordinazione del progetto</strong><br />\nNicole Peduzzi Longhitano</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Assistenza al progetto</strong><br />\nRegula Anklin</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Collaborazione scientifica</strong><br />\nStephan Graf, Birgit Huber, Regula Iselin, Uta Karrer, Aila &Ouml;zvegyi, Caroline Wiedemer</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Praticantato</strong><br />\nLucia Chen, Julia Hohn, Julia Planzer, Dominic Weber</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Servizio civile</strong><br />\nLeandro Do Sul, Ramon R&ouml;thlisberger, Dominic Weber</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Volontariato</strong><br />\nVerena Doebele, Annerose Scheidegger</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Partner per la Oral History</strong><br />\nGennaro Ghirardelli, Anton R&ouml;&ouml;sli, Margrith Werner</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Partner del progetto</strong></div>\n\n<div><a href=\"http://dhlab.unibas.ch/\">Digital Humanities Lab, Universit&agrave; di&nbsp;Basilea (DHLab)</a>&nbsp;</div>\n\n<div>Restaurierung Anklin &amp; Assen, Basilea</div>\n\n<div><a href=\"https://kulturwissenschaft.unibas.ch\">Seminar f&uuml;r Kulturwissenschaften und Europ&auml;ische Ethnologie</a>, Universit&agrave; di Basilea</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Programmazione per la banca dati</strong><br />\nLukas Rosenthaler,&nbsp;<a href=\"http://dhlab.unibas.ch\" target=\"_blank\">DHLab</a>, Basilea<br />\nBenjamin Geer, Ivan Subotic, Tobias Schweizer,&nbsp;<a href=\"http://lakto.org/\" target=\"_blank\">Andr&eacute; Kilchenmann</a>, Andreas Aeschlimann, Sepideh Allassi, Tamino Gafner, Vijeinath Tissaveerasingham, Erwin&nbsp;Zbinden</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Web design e sviluppo web</strong><br />\nConcezione, realizzazione e coordinazione:&nbsp;<a href=\"http://stephangraf.ch\" target=\"_blank\">Stephan Graf</a><br />\nRealizzazione e sviluppo dell&#39;applicazione web: Marin Aeschbach,&nbsp;<a href=\"https://www.formwerdung.ch\" target=\"_blank\">Formwerdung</a>, Zurigo</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Carattere</strong><br />\n&quot;Lapidar&quot;, Fabian Harb,&nbsp;<a href=\"http://abcdinamo.com\" target=\"_blank\">Dinamo Typefaces</a></div>\n\n<div>&nbsp;</div>\n\n<div><strong>Fronti per l&#39;inventariazione</strong><br />\n<a href=\"https://it.foto-ch.ch/#/home\" target=\"_blank\">fotoCH</a><br />\n<a href=\"https://www.fotostiftung.ch/it/\" target=\"_blank\">Fotostiftung Schweiz</a></div>\n\n<div><a href=\"http://www.geonames.org\" target=\"_blank\">GeoNames</a></div>\n\n<div>&nbsp;</div>\n\n<div><strong>Consulenza per la conservazione</strong><br />\nRegula Anklin , Atelier f&uuml;r Restaurierung Anklin &amp; Assen, Basilea</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Restauro</strong><br />\nRegula Anklin, Atelier f&uuml;r Restaurierung Anklin &amp; Assen, Basilea<br />\nMirjam Anklin, Fiona Eisenhut, Johanna Gr&uuml;ndel, Vai van den Heiligenberg, Gian Luca Hofmann, Corinne Huber, Jonas Kull, Emma Lowe</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Digitalizzazione</strong><br />\nPeter Fornaro,&nbsp;<a href=\"http://dhlab.unibas.ch/team/\" target=\"_blank\">DHLab</a>, Basilea<br />\nAlexandra Tschakert, Daniela Meier, Dominic Stratton, Stefanie Buder</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Consulenza ICT</strong><br />\nMarco Longhitano</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Grafica</strong><br />\nGian Luca Hofmann</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Traduzioni</strong><br />\nNigel Stephenson (EN), V&eacute;ronique Hilfiker Durand (FR), Dante Peduzzi (IT), Benno Conrad (RM),&nbsp;Violanta Spinas (RM)</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Redazione per i testi in lingua tedesca</strong><br />\nV&eacute;ronique Hilfiker Durand<br />\n&nbsp;</div>\n\n<div><strong>Dichiarazione liberatoria</strong><br />\nQuesto sito internet permette connessioni con siti esterni e contenuti sui quali non abbiamo nessun influsso. La Societ&agrave; Svizzera per le Tradizioni Popolari non si assume nessuna responsabilit&agrave; per la correttezza delle indicazioni, dati o links di siti esterni gestiti da terzi. Questi ultimi restano gli unici responsabili dei loro siti.</div>\n\n<div>&nbsp;</div>\n\n<div>&nbsp;</div>\n\n<div class=\"citizen-ex__pane\">&nbsp;</div>\n\n<div class=\"citizen-ex__pane\">&nbsp;</div>\n",
-          "en": "<p><span style=\"font-size:28px\"><strong>About us</strong></span></p>\n\n<p>The Swiss Society for Folk Studies has been on the go since 1896.&nbsp;</p>\n\n<p>And been collecting photographs since the 1930s.&nbsp;</p>\n\n<p>As from 2018 the photographs are accessible online!&nbsp;</p>\n\n<p>250,000 photographic objects, 30 collections, 150 years of photographic history!&nbsp;&nbsp;</p>\n\n<p>From Sumiswald to Sumatra, from ambrotypes to polyester film, from artisanal to industrial production, from rural peasants to urban citizens: the photo archive of the Swiss Society for Folk Studies covers them all and offers many a hidden treasure.&nbsp;&nbsp;</p>\n\n<p>The amateur and professional photographs are from all language regions in Switzerland and countries across Europe, America, Asia, Africa, and Oceania.&nbsp;&nbsp;</p>\n\n<p>In a photo project initiated by the <a href=\"http://www.volkskunde.ch/sgv.html\">Swiss Society for Folk Studies</a> in 2014, one hundred thousand photographic objects from sixteen collections have been processed. Under the direction of Prof. Dr. Walter Leimgruber and in close collaboration with the <a href=\"http://dhlab.unibas.ch/\" target=\"_blank\">Digital Humanities Lab of the University of Basel</a> and the restoration studio Anklin &amp; Assen, the objects were conserved, restored, digitized, and documented in a database. Following <a href=\"http://memoriav.ch/\">Memoriav</a> and the <a href=\"http://www.khi.fi.it/en/Declaration\">Florence Decloration</a> we deem it important not only to handle the digital objects with care but also to safeguard the corresponding analogue objects.&nbsp;</p>\n\n<p>Feel free to browse, explore, enjoy, question, even extend the SSFS/SGV photo archive on this website. If you have any questions or require additional information, please don&rsquo;t hesitate to contact us &ndash; we are happy to help und look forward to hearing from you!&nbsp;</p>\n\n<p>&nbsp;</p>\n\n<p>Photo archive of the Swiss Society for Folk Studies<br />\nSpalenvorstadt 2, 4051 Basel&nbsp;<br />\nPhone +41 61 207 11 64&nbsp;<br />\narchiv-at-sgv-sstp.ch</p>\n\n<p>&nbsp;</p>\n\n<p><span style=\"font-size:22px\"><strong>Imprint</strong></span></p>\n\n<p>The 250,000 photographic objects from the 30 collections held by the Swiss Society for Folk Studies (SSFS/SGV) are protected by copyright in numerous ways. Please contact us if you wish to use a specific image for research or some other purpose.<br />\n&nbsp;</p>\n\n<p><strong>Copyright</strong><br />\n&copy; Schweizerische Gesellschaft f&uuml;r Volkskunde&nbsp;<br />\nThe website and the related texts, photographs, graphics, video clips, sound documents, and other materials are protected by copyright. Any form of use in absence of prior consent is forbidden. The contents of this website must no be copied, distributed, modified, or made available to third parties for commercial purposes.<br />\n&nbsp;</p>\n\n<p><strong>Holding organization</strong><br />\nSwiss Society for Folk Studies<br />\nProject-related support: Marius Risi, Sabine Eggmann, Ernst Huber, V&eacute;ronique Hilfiker Durand<br />\n&nbsp;</p>\n\n<p><strong>Head of project</strong><br />\nWalter Leimgruber<br />\n&nbsp;</p>\n\n<p><strong>Project coordination</strong><br />\nNicole Peduzzi Longhitano<br />\n&nbsp;</p>\n\n<p><strong>Project consultant</strong><br />\nRegula Anklin<br />\n&nbsp;</p>\n\n<p><strong>Research associates</strong><br />\nStephan Graf, Birgit Huber, Regula Iselin, Uta Karrer, Aila &Ouml;zvegyi, Caroline Wiedemer<br />\n&nbsp;</p>\n\n<p><strong>Interns</strong><br />\nLucia Chen, Julia Hohn, Julia Planzer, Dominic Weber<br />\n&nbsp;</p>\n\n<p><strong>Civil service associates</strong><br />\nLeandro Do Sul, Ramon R&ouml;thlisberger, Dominic Weber<br />\n&nbsp;</p>\n\n<p><strong>Volunteers</strong><br />\nVerena Doebele, Annerose Scheidegger<br />\n&nbsp;</p>\n\n<p><strong>Oral history partners</strong><br />\nGennaro Ghirardelli, Anton R&ouml;&ouml;sli, Margrith Werner<br />\n&nbsp;</p>\n\n<p><strong>Project partners</strong><br />\n<a href=\"http://dhlab.unibas.ch/\" target=\"_blank\">Digital Humanities Lab, Universit&auml;t Basel (DHLab)</a><br />\nRestaurierung Anklin &amp; Assen, Basel<br />\n<a href=\"https://kulturwissenschaft.philhist.unibas.ch/de/home/\" target=\"_blank\">Institute of Cultural Anthropology and European Ethnology</a>, University of Basel<br />\n&nbsp;</p>\n\n<p><strong>Database programming</strong><br />\nLukas Rosenthaler, DHLab, Basel<br />\nBenjamin Geer, Ivan Subotic, Tobias Schweizer, <a href=\"https://milchkannen.ch/\" target=\"_blank\">Andr&eacute; Kilchenmann</a>, Andreas Aeschlimann, Sepideh Allassi, Tamino Gafner, Vijeinath Tissaveerasingham, Erwin Zbinden<br />\n&nbsp;</p>\n\n<p><strong>Web design and development</strong><br />\nConception, design and coordination: <a href=\"http://stephangraf.ch\" target=\"_blank\">Stephan Graf</a><br />\nDesign and webapp development: Marin Aeschbach, <a href=\"https://www.formwerdung.ch/\" target=\"_blank\">Formwerdung</a>, Zurich<br />\n&nbsp;</p>\n\n<p><strong>Typeface</strong><br />\n&quot;Lapidar&quot;, Fabian Harb, <a href=\"http://abcdinamo.com/\" target=\"_blank\">Dinamo Typefaces</a><br />\n&nbsp;</p>\n\n<p><strong>Collection&nbsp;resources</strong><br />\n<a href=\"http://www.geonames.org/\" target=\"_blank\">GeoNames</a><br />\n<a href=\"https://en.foto-ch.ch/#/home\" target=\"_blank\">fotoCH</a><br />\n<a href=\"https://www.fotostiftung.ch/en/\" target=\"_blank\">Fotostiftung Switzerland</a><br />\n&nbsp;</p>\n\n<p><strong>Conservatory support</strong><br />\nRegula Anklin, Restoration Studio Anklin &amp; Assen, Basel<br />\n&nbsp;</p>\n\n<p><strong>Restoration</strong><br />\nRegula Anklin, Restoration Studio Anklin &amp; Assen, Basel<br />\nMirjam Anklin, Fiona Eisenhut, Johanna Gr&uuml;ndel, Vai van den Heiligenberg, Gian Luca Hofmann, Corinne Huber, Jonas Kull, Emma Lowe<br />\n&nbsp;</p>\n\n<p><strong>Digitization</strong><br />\nPeter Fornaro, DHLab, Basel<br />\nAlexandra Tschakert, Daniela Meier, Dominic Stratton, Stefanie Buder<br />\n&nbsp;</p>\n\n<p><strong>ICT consultant</strong><br />\nMarco Longhitano<br />\n&nbsp;</p>\n\n<p><strong>Printed graphic work</strong><br />\nGian Luca Hofmann<br />\n&nbsp;</p>\n\n<p><strong>Translations</strong><br />\nNigel Stephenson (EN), V&eacute;ronique Hilfiker Durand (FR), Dante Peduzzi (IT), Benno Conrad (RM),Violanta Spinas (RM)<br />\n&nbsp;</p>\n\n<p><strong>Editor</strong><br />\nV&eacute;ronique Hilfiker Durand<br />\n&nbsp;</p>\n\n<p><strong>Disclaimer</strong><br />\nThis website contains links to external, third party websites the contents of which we have no influence on. Swiss Society for Folk Studies assumes no liability for the accuracy of the information, data, and links listed there. Liability for the contents of external, third party websites lies in the responsibility of the respective website owners.&nbsp;&nbsp;</p>\n\n<p><br />\n&nbsp;</p>\n\n<div class=\"citizen-ex__pane\">&nbsp;</div>\n\n<div class=\"citizen-ex__pane\">&nbsp;</div>\n",
-          "rm": "<p><span style=\"font-size:28px\"><strong>Sur da nus</strong></span></p>\n\n<p>Dapi il 1896 datti la Societad Svizra per las Tradiziuns Popularas.</p>\n\n<p>Dapi ils onns 1930 rimna ella fotografias.</p>\n\n<p>Dapi il 2018 &egrave;n questas accessiblas online!<br />\n<br />\n250&lsquo;000 objects da fotografia, 30 collecziuns, 150 onns istorgia da fotografia!<br />\n<br />\nDa Sumiswald fin a Sumatra, da tips dad ambrotypias &nbsp;a films da poliester, da masteranza sur l&rsquo;industria, a vita purila e burgaisia da citad: L&rsquo;archiv da fotos da la Societad Svizra per las Tradiziuns Popularas dispona dad in stgazi ritg da fassettas.&nbsp;</p>\n\n<p>Las fotografias da fotografs amaturs e da fotografs da professiun derivan da tut las regiuns linguisticas da la Svizra sco era da numerus pajais in Europa, America, Asia, Africa ed Oceania.&nbsp;</p>\n\n<p>Dapi il 2014 &egrave;n vegnids elavurads radund 100&lsquo;000 objects da fotografia or da 16 differentas collecziuns. I sa tracta dad in project da fotos inizi&agrave; da la <a href=\"http://www.volkskunde.ch/sgv.html\">Societad Svizra per las Tradiziuns Popularas (SSTP)</a>. Sut la direcziun da prof. dr. Walter Leimgruber ed in stretga collavuraziun cun il <a href=\"http://dhlab.unibas.ch\">Digital Humanities Lab</a> da l&rsquo;Universitad da Basilea sco era l&rsquo;atelier per restauraziun Anklin &amp; Assen, &egrave;n vegnids quests objects conservads, restaurads, digitalisads e registrads en ina banca da datas. Igl &egrave; damai impurtant per nus, sa basond sin <a href=\"http://memoriav.ch\" target=\"_blank\">Memoriav</a> e la <a href=\"http://www.khi.fi.it/de/Declaration\" target=\"_blank\">Florence Declaration</a>, da na betg be tractar ils objects digitals da moda cumpetenta, mabain era da garantir quai cun ils objects analogs.</p>\n\n<p>Nus envidain Vus da svutrar, perscrutar, giudair, metter en dumonda, extender l&rsquo;archiv da fotos da la SSTP sin questa pagina d&rsquo;internet en furma digitala. Vais Vus dumondas u ulteriuras infurmaziuns davart in object? Lura s&rsquo;annunziai tar nus &ndash; nus ans allegrain da Vossa nova!</p>\n\n<p>&nbsp;</p>\n\n<p>Fotoarchiv der Schweizerischen Gesellschaft f&uuml;r Volkskunde<br />\nSpalenvorstadt 2, 4051 Basel&nbsp;<br />\nT +41 61 207 11 64<br />\narchiv-at-sgv-sstp.ch</p>\n\n<p>&nbsp;</p>\n\n<p><span style=\"font-size:22px\"><strong>Impressum</strong></span></p>\n\n<div>Las radund 250&lsquo;000 fotografias da las 30 collecziuns da la Societad Svizra per las Tradiziuns Popularas (SSTP) &egrave;n protegidas da differenta maniera cun ils dretgs d&rsquo;autur. Ans contactai, sche Vus vulais far diever da maletgs specifics per la perscrutaziun u per auters projects.<br />\n&nbsp;</div>\n\n<div><strong>Copyright</strong><br />\n&copy;&nbsp;Schweizerische Gesellschaft f&uuml;r Volkskunde (SGV)</div>\n\n<div>Questa pagina d&rsquo;internet e tut ils texts appartegnents, las fotografias, graficas, sequenzas da video, documents da tun ed auters materials &egrave;n protegids cun ils dretgs d&rsquo;autur. Mintga utilisaziun senza acconsentiment en scrit preliminar n&rsquo;&egrave; betg permessa. Il cuntegn da questa pagina d&rsquo;internet na dastga betg vegnir copiada, derasada, midada u rendida accessibla a terzas persunas per scopos commerzials.</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Organisaziun da tetg\u200b</strong><br />\n<a href=\"http://www.volkskunde.ch/sgv.html\">Societad Svizra per las Tradiziuns Popularas (SSTP)</a><br />\nSustegn orient&agrave; ad in project: Marius Risi, Sabine Eggmann, Ernst Huber, V&eacute;ronique Hilfiker Durand</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Direcziun da project&nbsp;</strong><br />\nWalter Leimgruber&nbsp;</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Coordinaziun da project</strong><br />\nNicole Peduzzi Longhitano</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Cussegliaziun da project</strong><br />\nRegula Anklin</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Collavuraziun scientifica</strong><br />\nStephan Graf, Birgit Huber, Regula Iselin, Uta Karrer, Aila &Ouml;zvegyi, Caroline Wiedemer</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Pratica</strong><br />\nLucia Chen, Julia Hohn, Julia Planzer, Dominic Weber</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Civilists</strong><br />\nLeandro Do Sul, Ramon R&ouml;thlisberger, Dominic Weber</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Collavuraziun en uffizi d&lsquo;onur</strong><br />\nVerena Doebele, Annerose Scheidegger</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Partenari(a)s dad Oral History</strong><br />\nGennaro Ghirardelli, Anton R&ouml;&ouml;sli, Margrith Werner</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Partenaris da projects</strong></div>\n\n<div><a href=\"http://dhlab.unibas.ch/\">Digital Humanities Lab, Universitad da Basilea&nbsp;(DHLab)</a>&nbsp;</div>\n\n<div>Restaurierung Anklin &amp; Assen, Basel</div>\n\n<div><a href=\"https://kulturwissenschaft.unibas.ch\">Seminar f&uuml;r Kulturwissenschaften und Europ&auml;ische Ethnologie</a>, Universtad da Basilea</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Banca da datas-programmaziun</strong><br />\nLukas Rosenthaler,&nbsp;<a href=\"http://dhlab.unibas.ch\" target=\"_blank\">DHLab</a>, Basilea<br />\nBenjamin Geer, Ivan Subotic, Tobias Schweizer, <a href=\"http://lakto.org/\" target=\"_blank\">Andr&eacute; Kilchenmann</a>, Andreas Aeschlimann, Sepideh Allassi, Tamino Gafner, Vijeinath Tissaveerasingham, Erwin&nbsp;Zbinden</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Design e svilup dal web</strong><br />\nKonzeption,&nbsp;Gestaltung und Koordination: <a href=\"http://stephangraf.ch\" target=\"_blank\">Stephan Graf</a><br />\nGestaltung und Webapp-Entwicklung: Marin Aeschbach,&nbsp;<a href=\"https://www.formwerdung.ch\" target=\"_blank\">Formwerdung</a>, Z&uuml;rich</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Scrittira</strong><br />\n&quot;Lapidar&quot;, Fabian Harb,&nbsp;<a href=\"http://abcdinamo.com\" target=\"_blank\">Dinamo Typefaces</a></div>\n\n<div>&nbsp;</div>\n\n<div><strong>Ressursas da registrar (endatar)\u200b</strong><br />\n<a href=\"https://de.foto-ch.ch/#/home\" target=\"_blank\">fotoCH</a><br />\n<a href=\"https://www.fotostiftung.ch\" target=\"_blank\">Fotostiftung Schweiz</a></div>\n\n<div><a href=\"http://www.geonames.org\" target=\"_blank\">GeoNames</a></div>\n\n<div>&nbsp;</div>\n\n<div><strong>Accumpagnament conservatoric</strong><br />\nRegula Anklin , Atelier f&uuml;r Restaurierung Anklin &amp; Assen, Basel</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Restauraziun</strong><br />\nRegula Anklin, Atelier f&uuml;r Restaurierung Anklin &amp; Assen, Basel<br />\nMirjam Anklin, Fiona Eisenhut, Johanna Gr&uuml;ndel, Vai van den Heiligenberg, Gian Luca Hofmann, Corinne Huber, Jonas Kull, Emma Lowe</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Digitalisaziun</strong><br />\nPeter Fornaro, <a href=\"http://dhlab.unibas.ch/team/\" target=\"_blank\">DHLab</a>, Basel<br />\nAlexandra Tschakert, Daniela Meier, Dominic Stratton, Stefanie Buder</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Cussegliaziun ICT</strong><br />\nMarco Longhitano</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Stampa grafica</strong><br />\nGian Luca Hofmann</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Translaziuns</strong><br />\nNigel Stephenson (EN), V&eacute;ronique Hilfiker Durand (FR), Dante Peduzzi (IT), Benno Conrad (RM), Violanta Spinas (RM)&nbsp;</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Redacziun</strong><br />\nV&eacute;ronique Hilfiker Durand</div>\n\n<div>&nbsp;</div>\n\n<div><strong>Exclusiun da responsabladad</strong><br />\nQuesta pagina d&rsquo;internet cuntegna connexiuns cun paginas d&rsquo;internet da terzs. Sin ils cuntegns da questas n&rsquo;avain nus nagina influenza. La Societad Svizra per las Tradiziuns Popularas na surpiglia nagina responsabladad per la correctadad da questas indicaziuns, datas e links. Per ils cuntegns da las paginas d&rsquo;internet externas da terzs &egrave;n responsabels lur gestiunaris.</div>\n\n<div>&nbsp;</div>\n\n<div class=\"citizen-ex__pane\">&nbsp;</div>\n"
+        "de": "Digitales Archiv der Schweizerischen Gesellschaft für Volkskunde (SGV), das die Bilddatenbank und das Volksliedarchiv enthält.",
+        "fr": "Archives numériques de la Société suisse des traditions populaires (SSTP) qui comprennent la base de données photographique et les archives des chansons populaires.",
+        "en": "Digital Archive of the Swiss Society for Folklore Studies (SSFS), which contains the image databse and the folk song archive.",
+        "it": "Archivio digitale della Società Svizzera per le Tradizioni Popolari (SSTP), che contiene il database delle immagini e l'archivo delle canzoni poplari."
       },
       "keywords": [
          "SGV",
          "SSFS",
+         "SSTP",
          "Ethnology",
          "Photography",
+         "Music",
          "Cultural Anthropology",
          "Folklore",
+         "Schweizerisches Volksliedarchiv",
+         "Participatory Knowledge Practices in Analogue and Digital Image Archives",
+         "PIA",
          "Switzerland"
       ],
       "lists": [
@@ -303,25 +307,37 @@
                   {
                       "name": "S_13333",
                       "labels": {
-                          "de": "16mm, stumm"
+                          "de": "16mm, schwarz/weiss, stumm"
                       }
                   },
                   {
-                      "name": "S_13229",
+                      "name": "35mm",
                       "labels": {
                           "de": "35mm"
                       }
                   },
                   {
-                      "name": "S_13227",
+                      "name": "8mm",
                       "labels": {
                           "de": "8mm"
                       }
                   },
                   {
-                      "name": "S_13230",
+                      "name": "dvd",
                       "labels": {
                           "de": "DVD"
+                      }
+                  },
+                  {
+                      "name": "xdcam",
+                      "labels": {
+                          "de": "Digital (XDCAM), farbig"
+                      }
+                  },
+                  {
+                      "name": "hdv_farbig",
+                      "labels": {
+                          "de": "HDV, farbig"
                       }
                   }
               ]
@@ -567,45 +583,42 @@
                   "en": "Languages",
                   "fr": "Langues"
               },
+            "comments": {
+                "de": "Sprache der Ressource"
+            },
               "nodes": [
                   {
-                      "name": "S_13244",
-                      "labels": {
-                          "de": "--"
-                      }
-                  },
-                  {
-                      "name": "S_13232",
+                      "name": "de",
                       "labels": {
                           "de": "deutsch"
                       }
                   },
                   {
-                      "name": "S_13236",
+                      "name": "dial",
                       "labels": {
                           "de": "dialekt"
                       }
                   },
                   {
-                      "name": "S_13235",
+                      "name": "eng",
                       "labels": {
                           "de": "englisch"
                       }
                   },
                   {
-                      "name": "S_13233",
+                      "name": "fr",
                       "labels": {
                           "de": "franz\u00f6sisch"
                       }
                   },
                   {
-                      "name": "S_13234",
+                      "name": "it",
                       "labels": {
                           "de": "italienisch"
                       }
                   },
                   {
-                      "name": "S_13231",
+                      "name": "stumm",
                       "labels": {
                           "de": "stumm"
                       }
@@ -615,9 +628,12 @@
           {
               "name": "additionaltypes",
               "labels": {
-                  "de": "Zusatztypen zu sgv:Agent",
-                  "en": "Additional Types for sgv:Agent",
-                  "fr": "Types additionnels pour sgv:Agent"
+                  "de": "Zusatztypen zu :Agent",
+                  "en": "Additional Types for :Agent",
+                  "fr": "Types additionnels pour :Agent"
+              },
+              "comments": {
+                  "de": "Liste, um den Typ von Agent anzugeben. "
               },
               "nodes": [
                   {
@@ -654,6 +670,9 @@
               "labels": {
                   "de": "Status des Events",
                   "en": "Event Status"
+              },
+              "comments": {
+                  "de": "Liste, um die Art des Events anzugeben. "
               },
               "nodes": [
                   {
@@ -692,11 +711,14 @@
                   "de": "Status des Objekts",
                   "en": "Object Status"
               },
+              "comments": {
+                  "de": "Liste, um den Status des Objekts anzugeben. "
+              },
               "nodes": [
                   {
                       "name": "tobereviewed",
                       "labels": {
-                          "de": "Zu pr\u00fen",
+                          "de": "Zu prüfen",
                           "en": "To be reviewed"
                       }
                   },
@@ -2847,6 +2869,10 @@
                   "fr": "Technique / Media",
                   "it": "Supporto"
               },
+              "comments": {
+                  "de": "Fototechnik oder Vorlage des Objekts",
+                  "fr": "Technique ou media de l'objet"
+              },
               "nodes": [
                   {
                       "name": "H_1175",
@@ -3252,68 +3278,78 @@
                               }
                           }
                       ]
-                  },
-                  {
-                      "name": "H_5297",
-                      "labels": {
-                          "de": "Film"
-                      },
-                      "nodes": [
-                          {
-                              "name": "H_5304",
-                              "labels": {
-                                  "de": "16mm, schwarz/weiss, stumm"
-                              }
-                          },
-                          {
-                              "name": "H_5308",
-                              "labels": {
-                                  "de": "16mm, schwarz/weiss und farbig, Magnetton"
-                              }
-                          },
-                          {
-                              "name": "H_5307",
-                              "labels": {
-                                  "de": "16mm, schwarz/weiss, Magnetton"
-                              }
-                          },
-                          {
-                              "name": "H_5309",
-                              "labels": {
-                                  "de": "16mm, farbig, Magnetton"
-                              }
-                          },
-                          {
-                              "name": "H_5310",
-                              "labels": {
-                                  "de": "16mm, farbig, Lichtton"
-                              }
-                          },
-                          {
-                              "name": "H_5314",
-                              "labels": {
-                                  "de": "HDV, farbig"
-                              }
-                          },
-                          {
-                              "name": "H_5315",
-                              "labels": {
-                                  "de": "Digital (XDCAM), farbig"
-                              }
-                          }
-                      ]
                   }
               ]
           }
       ],
       "groups": [
          {
-           "name": "yourproject-editors",
+           "name": "photo-editors",
            "descriptions": {
-              "en": "Editors for your project"
+              "en": "Editors from the the SGV Photo Archive"
             },
            "selfjoin": false,
            "status": true
+         },
+         {
+           "name": "vla-editors",
+           "descriptions": {
+              "en": "Editors from the Volksliedarchiv"
+            },
+           "selfjoin": false,
+           "status": true
+         },
+         {
+           "name": "pia-editors",
+           "descriptions": {
+              "en": "Editors from the PIA research project"
+            },
+           "selfjoin": false,
+           "status": true
+         }
+       ],
+       "users": [
+         {
+           "username": "nicole",
+           "email": "nicole.peduzzi@volkskunde.ch",
+           "givenName": "Nicole",
+           "familyName": "Peduzzi",
+           "password": "1234",
+           "lang": "it",
+           "groups": [
+             ":photo-editors"
+           ],
+           "projects": [
+             ":admin"
+           ]
+         },
+         {
+           "username": "johannesmueske",
+           "email": "johannes.mueske@zpkm.uni-freiburg.de",
+           "givenName": "Johannes",
+           "familyName": "Müske",
+           "password": "1234",
+           "lang": "de",
+           "groups": [
+             ":vla-editors"
+           ],
+           "projects": [
+             ":admin"
+           ]
+         },
+         {
+           "username": "julsraemy",
+           "email": "julien.raemy@unibas.ch",
+           "givenName": "Julien",
+           "familyName": "Raemy",
+           "password": "1234",
+           "lang": "fr",
+           "groups": [
+             ":pia-editors"
+           ],
+           "projects": [
+             ":admin"
+           ]
          }
        ],
       "ontologies": [
@@ -3372,7 +3408,7 @@
                         "hasLinkTo",
                         "schema:creator"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                         "en": "Producer/\nCollector",
                         "de": "HerstellerIn/\nSammlerIn",
@@ -3387,7 +3423,7 @@
                         "hasLinkTo",
                         "edm:isRepresentationOf"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                       "en": "Depicted persons/institutions",
                       "de": "Abgebildete \nPersonen/Institutionen",
@@ -3417,7 +3453,7 @@
                         "hasLinkTo",
                         "schema:about"
                     ],
-                    "object": "sgv:Concept",
+                    "object": ":Concept",
                     "labels": {
                         "en": "Concept",
                         "de": "Konzepte",
@@ -3464,17 +3500,16 @@
                         "hasLinkTo",
                         "schema:isPartOf"
                     ],
-                    "object": [
-                      "sgv:Object",
-                      "sgv:Dataset",
-                      "sgv:Collection"
-                    ],
+                    "object": "Resource",
                     "labels": {
                         "en": "Is part of",
                         "de": "Teil von",
                         "fr": "Fait partie de ",
                         "it": "\u00c8 parte di"
                     },
+                    "comments": {
+                          "en": "This property should only be used to assert that an object or a dataset is part of an object, a dataset or a collection. Other resources/classes should not be leveraged."
+                        },
                     "gui_element": "Searchbox"
                 },
                 {
@@ -3537,7 +3572,7 @@
                         "hasLinkTo",
                         "schema:copyrightHolder"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                         "en": "Copyright",
                         "de": "Copyright",
@@ -3552,7 +3587,7 @@
                         "hasLinkTo",
                         "edm:isRelatedTo"
                     ],
-                    "object": "sgv:Object",
+                    "object": ":Object",
                     "labels": {
                         "en": "Visually similar pictures",
                         "de": "\u00c4hnliche Bilder",
@@ -3566,7 +3601,7 @@
                     "super": [
                         "hasLinkTo"
                     ],
-                    "object": "sgv:Object",
+                    "object": ":Object",
                     "labels": {
                         "en": "On the same album page",
                         "de": "Auf derselben Albumseite",
@@ -3581,7 +3616,7 @@
                         "hasLinkTo",
                         "edm:isRelatedTo"
                     ],
-                    "object": "sgv:Object",
+                    "object": ":Object",
                     "labels": {
                         "en": "Verso",
                         "de": "Verso",
@@ -3618,7 +3653,7 @@
                         "it": "Nome"
                     },
                     "comments": {
-                          "en": "This property will no longer be used in sgv:Concept and both hasPrefLabel and hasAltLabel will be leveraged"
+                          "en": "This property will no longer be used in :Concept and both hasPrefLabel and hasAltLabel will be leveraged"
                         },
                     "gui_element": "SimpleText"
                 },
@@ -3643,7 +3678,7 @@
                         "hasLinkTo",
                         "schema:relatedTo"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                         "en": "Related to (Person)",
                         "de": "Relativ zu",
@@ -3686,7 +3721,7 @@
                         "hasLinkTo",
                         "schema:birthPlace"
                     ],
-                    "object": "sgv:Place",
+                    "object": ":Place",
                     "labels": {
                         "en": "Birth place",
                         "de": "geboren/gegr\u00fcndet in",
@@ -3716,7 +3751,7 @@
                         "hasLinkTo",
                         "schema:deathPlace"
                     ],
-                    "object": "sgv:Place",
+                    "object": ":Place",
                     "labels": {
                         "en": "Death place",
                         "de": "verstorben/aufgel\u00f6st in",
@@ -3800,7 +3835,7 @@
                         "hasLinkTo",
                         "schema:workExample"
                     ],
-                    "object": "sgv:Object",
+                    "object": ":Object",
                     "labels": {
                         "en": "Example image",
                         "de": "Bildverkn\u00fcpfung"
@@ -3813,7 +3848,7 @@
                         "hasLinkTo",
                         "schema:workExample"
                     ],
-                    "object": "sgv:Object",
+                    "object": ":Object",
                     "labels": {
                         "en": "Example video",
                         "de": "Video Verkn\u00fcpfung"
@@ -3899,7 +3934,7 @@
                         "hasLinkTo",
                         "schema:spatial"
                     ],
-                    "object": "sgv:Place",
+                    "object": ":Place",
                     "labels": {
                         "en": "Place",
                         "de": "Ort",
@@ -3914,7 +3949,7 @@
                         "hasLinkTo",
                         "schema:hasPart"
                     ],
-                    "object": "sgv:Object",
+                    "object": ":Object",
                     "labels": {
                         "en": "has part(s)",
                         "de": "Besteht aus",
@@ -3929,7 +3964,7 @@
                         "hasLinkTo",
                         "schema:recordedAt"
                     ],
-                    "object": "sgv:Event",
+                    "object": ":Event",
                     "labels": {
                         "en": "recorded at",
                         "de": "aufgezeichnet bei",
@@ -3943,7 +3978,7 @@
                         "hasLinkTo",
                         "schema:contributor"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                         "en": "Contributor",
                         "de": "Beitragende",
@@ -4061,7 +4096,7 @@
                     "name": "hasCreativeWorkStatus",
                     "super": [
                         "hasValue",
-                        "schema:CreativeWorkStatus"
+                        "schema:creativeWorkStatus"
                     ],
                     "object": "ListValue",
                     "labels": {
@@ -4099,7 +4134,7 @@
                         "hasLinkTo",
                         "schema:organizer"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                         "en": "Organizer",
                         "de": "VeranstalterIn",
@@ -4114,7 +4149,7 @@
                         "hasLinkTo",
                         "schema:memberOf"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                         "en": "Member of",
                         "de": "Mitglied von",
@@ -4128,7 +4163,7 @@
                         "hasLinkTo",
                         "schema:employee"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                         "en": "Employee(s)",
                         "de": "Mitarbeiter"
@@ -4141,7 +4176,7 @@
                         "hasLinkTo",
                         "schema:children"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                         "en": "Children",
                         "de": "Kinder",
@@ -4156,7 +4191,7 @@
                         "hasLinkTo",
                         "schema:parent"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                         "en": "Parent",
                         "de": "Eltern",
@@ -4171,7 +4206,7 @@
                         "hasLinkTo",
                         "schema:spouse"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                         "en": "Spouse",
                         "de": "EhepartnerIn",
@@ -4186,7 +4221,7 @@
                         "hasLinkTo",
                         "schema:sibling"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                         "en": "Sibling(s)",
                         "de": "Geschwister",
@@ -4201,7 +4236,7 @@
                         "hasLinkTo",
                         "schema:colleague"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                         "en": "Colleague(s)",
                         "de": "Kolleginnen und Kollegen",
@@ -4216,7 +4251,7 @@
                         "hasLinkTo",
                         "schema:knows"
                     ],
-                    "object": "sgv:Agent",
+                    "object": ":Agent",
                     "labels": {
                         "en": "knows",
                         "de": "kennt",
@@ -4230,7 +4265,7 @@
                         "hasLinkTo",
                         "schema:performerIn"
                     ],
-                    "object": "sgv:Event",
+                    "object": ":Event",
                     "labels": {
                         "en": "has performed at the event",
                         "de": "ist bei dem Event aufgetreten",
@@ -4244,7 +4279,7 @@
                         "hasLinkTo",
                         "schema:location"
                     ],
-                    "object": "sgv:Place",
+                    "object": ":Place",
                     "labels": {
                         "en": "Organisation's headquarters",
                         "de": "Hauptsitz der Organisation",
@@ -4348,7 +4383,7 @@
                         "hasLinkTo",
                         "schema:containedInPlace"
                     ],
-                    "object": "sgv:Place",
+                    "object": ":Place",
                     "labels": {
                         "en": "Contained in (Place)",
                         "de": "Enthalten in (Ort)",
@@ -4362,7 +4397,7 @@
                         "hasLinkTo",
                         "schema:containsPlace"
                     ],
-                    "object": "sgv:Place",
+                    "object": ":Place",
                     "labels": {
                         "en": "Contains (Place)",
                         "de": "Enth\u00e4lt (Ort)",
@@ -4446,7 +4481,7 @@
                         "hasLinkTo",
                         "skos:broader"
                     ],
-                    "object": "sgv:Concept",
+                    "object": ":Concept",
                     "labels": {
                         "en": "Broader concept"
                     },
@@ -4458,7 +4493,7 @@
                         "hasLinkTo",
                         "skos:narrower"
                     ],
-                    "object": "sgv:Concept",
+                    "object": ":Concept",
                     "labels": {
                         "en": "Narrower concept"
                     },
@@ -4470,7 +4505,7 @@
                         "hasLinkTo",
                         "skos:inScheme"
                     ],
-                    "object": "sgv:Concept",
+                    "object": ":Concept",
                     "labels": {
                         "en": "in Scheme"
                     },
@@ -4482,7 +4517,7 @@
                         "hasLinkTo",
                         "skos:topConceptOf"
                     ],
-                    "object": "sgv:Concept",
+                    "object": ":Concept",
                     "labels": {
                         "en": "is a top concept of"
                     },
@@ -4506,7 +4541,7 @@
                         "hasLinkTo",
                         "skos:related"
                     ],
-                    "object": "sgv:Concept",
+                    "object": ":Concept",
                     "labels": {
                         "en": "has related concept",
                         "de": "Verwandtes Konzept",
@@ -4520,7 +4555,7 @@
                         "hasLinkTo",
                         "schema:subEvent"
                     ],
-                    "object": "sgv:Event",
+                    "object": ":Event",
                     "labels": {
                         "en": "has as sub-event(s)",
                         "de": "hat als Subevent(s)",
@@ -4534,7 +4569,7 @@
                         "hasLinkTo",
                         "schema:superEvent"
                     ],
-                    "object": "sgv:Event",
+                    "object": ":Event",
                     "labels": {
                         "en": "is part of the event",
                         "de": "ist Teil des Events",
@@ -4561,7 +4596,7 @@
                         "hasLinkTo",
                         "schema:recordedIn"
                     ],
-                    "object": "sgv:Object",
+                    "object": ":Object",
                     "labels": {
                         "en": "Recorded object",
                         "de": "Aufgezeichnete Objekte",
@@ -4575,7 +4610,7 @@
                         "hasLinkTo",
                         "schema:workFeatured"
                     ],
-                    "object": "sgv:Object",
+                    "object": ":Object",
                     "labels": {
                         "en": "Work featured",
                         "de": "Vorgestelltes Werk",
@@ -4676,17 +4711,15 @@
                         "hasLinkTo",
                         "schema:subjectOf"
                     ],
-                    "object": [
-                      "sgv:Object",
-                      "sgv:Dataset",
-                      "sgv:Collection",
-                      "sgv:Event"
-                    ],
+                    "object": "Resource",
                     "labels": {
                         "en": "Subject Of",
                         "de": "Subjekt von",
                         "fr": "Sujet de"
                     },
+                    "comments": {
+                          "en": "This property should be used either to assert that an agent is subject of an object or that a concept is the suject of an another resource."
+                        },
                     "gui_element": "Searchbox"
                 }
             ],
@@ -4699,10 +4732,7 @@
                         "fr": "Objet",
                         "it": "Oggetto"
                     },
-                    "super": [
-                      "Resource",
-                      "schema:CreativeWork"
-                      ],
+                    "super": "Resource",
                     "cardinalities": [
                         {
                             "propname": ":hasSignature",
@@ -4909,10 +4939,7 @@
                         "fr": "Set de donn\u00e9es",
                         "it": "Dataset"
                     },
-                    "super": [
-                      "Resource",
-                      "schema:Dataset"
-                      ],
+                    "super": "Resource",
                     "cardinalities": [
                         {
                             "propname": ":hasTitle",
@@ -5034,10 +5061,7 @@
                         "fr": "Collection",
                         "it": "Collezione"
                     },
-                    "super": [
-                      "Resource",
-                      "schema:Collection"
-                      ],
+                    "super": "Resource",
                     "cardinalities": [
                         {
                             "propname": ":hasSignature",
@@ -5110,69 +5134,64 @@
                             "gui_order": 14
                         },
                         {
-                            "propname": ":hasKeywords",
+                            "propname": ":hasConcept",
                             "cardinality": "0-n",
                             "gui_order": 15
                         },
                         {
-                            "propname": ":hasConcept",
-                            "cardinality": "0-n",
-                            "gui_order": 16
-                        },
-                        {
                             "propname": ":hasPlace",
                             "cardinality": "0-1",
-                            "gui_order": 17
+                            "gui_order": 16
                         },
                         {
                             "propname": ":hasPart",
                             "cardinality": "0-n",
-                            "gui_order": 18
+                            "gui_order": 17
                         },
                         {
                             "propname": ":recordedAt",
                             "cardinality": "0-n",
-                            "gui_order": 19
+                            "gui_order": 18
                         },
                         {
                             "propname": ":hasContributor",
                             "cardinality": "0-n",
-                            "gui_order": 20
+                            "gui_order": 19
                         },
                         {
                             "propname": ":hasPiaUrl",
                             "cardinality": "0-1",
-                            "gui_order": 21
+                            "gui_order": 20
                         },
                         {
                             "propname": ":hasDaschUrl",
                             "cardinality": "0-1",
-                            "gui_order": 22
+                            "gui_order": 21
                         },
                         {
                             "propname": ":hasDateCreated",
                             "cardinality": "0-1",
-                            "gui_order": 23
+                            "gui_order": 22
                         },
                         {
                             "propname": ":hasDateModified",
                             "cardinality": "0-1",
-                            "gui_order": 24
+                            "gui_order": 23
                         },
                         {
                             "propname": ":hasDatePublished",
                             "cardinality": "0-1",
-                            "gui_order": 25
+                            "gui_order": 24
                         },
                         {
                             "propname": ":hasCreativeWorkStatus",
                             "cardinality": "0-1",
-                            "gui_order": 26
+                            "gui_order": 25
                         },
                         {
                             "propname": ":relatedLink",
                             "cardinality": "0-n",
-                            "gui_order": 27
+                            "gui_order": 26
                         }
                     ]
                 },
@@ -5184,10 +5203,7 @@
                         "fr": "Concept",
                         "it": "Concetto"
                     },
-                    "super": [
-                      "Resource",
-                      "skos:Concept"
-                      ],
+                    "super": "Resource",
                     "cardinalities": [
                         {
                             "propname": ":hasDescription",
@@ -5264,10 +5280,7 @@
                         "fr": "Agent",
                         "it": "Agente"
                     },
-                    "super": [
-                      "Resource",
-                      "dct:Agent"
-                      ],
+                    "super": "Resource",
                     "cardinalities": [
                         {
                             "propname": ":hasName",
@@ -5419,10 +5432,7 @@
                         "fr": "Ev\u00e9nement",
                         "it": "Evento"
                     },
-                    "super": [
-                      "Resource",
-                      "schema:Event"
-                      ],
+                    "super": "Resource",
                     "cardinalities": [
                         {
                             "propname": ":hasConcept",
@@ -5509,10 +5519,7 @@
                         "fr": "Lieu",
                         "it": "Luogo"
                     },
-                    "super": [
-                      "Resource",
-                      "schema:Place"
-                    ],
+                    "super": "Resource",
                     "cardinalities": [
                         {
                             "propname": ":hasName",
