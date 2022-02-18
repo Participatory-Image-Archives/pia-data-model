@@ -4,6 +4,7 @@
      "dct": "http://purl.org/dc/terms/",
      "edm": "http://www.europeana.eu/schemas/edm/",
      "ebucore": "http://www.ebu.ch/metadata/ontologies/ebucore/ebucore",
+     "rico": "https://www.ica.org/standards/RiC/ontology#",
      "schema": "http://schema.org/",
      "skos": "http://www.w3.org/2004/02/skos/core#"
   },
@@ -13,9 +14,9 @@
       "shortname": "sgv",
       "longname": "Digital Archive of the Swiss Society for Folklore Studies (SSFS)",
       "descriptions": {
-        "de": "Digitales Archiv der Schweizerischen Gesellschaft für Volkskunde (SGV), das die Bilddatenbank und das Volksliedarchiv enthält.",
-        "fr": "Archive numérique de la Société suisse des traditions populaires (SSTP) qui comprend la base de données photographique et les archives des chansons populaires.",
-        "en": "Digital Archive of the Swiss Society for Folklore Studies (SSFS), which contains the image databse and the folk song archive.",
+        "de": "Digitales Archiv der Schweizerischen Gesellschaft für Volkskunde (SGV), welches das Fotoarchiv und das Volksliedarchiv (VLA) umfasst.",
+        "fr": "Archive numérique de la Société suisse des traditions populaires (SSTP) qui comprend les archives photographique et les archives des chansons populaires.",
+        "en": "Digital Archive of the Swiss Society for Folklore Studies (SSFS), which contains the image and the folk song archives.",
         "it": "Archivio digitale della Società Svizzera per le Tradizioni Popolari (SSTP), che contiene il database delle immagini e l'archivo delle canzoni poplari."
       },
       "keywords": [
@@ -590,37 +591,64 @@
                   {
                       "name": "de",
                       "labels": {
-                          "de": "deutsch"
+                          "de": "Deutsch",
+                          "en": "German",
+                          "fr": "Allemand",
+                          "it": "Tedesco"
                       }
                   },
                   {
                       "name": "dial",
                       "labels": {
-                          "de": "dialekt"
+                          "de": "Dialekt",
+                          "en": "Dialect",
+                          "fr": "Dialecte",
+                          "it": "Dialetto"
                       }
                   },
                   {
-                      "name": "eng",
+                      "name": "en",
                       "labels": {
-                          "de": "englisch"
+                          "de": "Englisch",
+                          "en": "English",
+                          "fr": "Anglais",
+                          "it": "Inglese"
                       }
                   },
                   {
                       "name": "fr",
                       "labels": {
-                          "de": "franz\u00f6sisch"
+                          "de": "Französisch",
+                          "en": "French",
+                          "fr": "Français",
+                          "it": "Francese"
                       }
                   },
                   {
                       "name": "it",
                       "labels": {
-                          "de": "italienisch"
+                          "de": "Italienisch",
+                          "en": "Italian",
+                          "fr": "Italien",
+                          "it": "Italiano"
                       }
                   },
                   {
                       "name": "stumm",
                       "labels": {
-                          "de": "stumm"
+                          "de": "stumm",
+                          "en": "mute",
+                          "fr": "muet",
+                          "it": "muto"
+                      }
+                  },
+                  {
+                      "name": "rm",
+                      "labels": {
+                          "de": "Bündnerromanisch",
+                          "en": "Romansh",
+                          "fr": "Romanche",
+                          "it": "Romancio"
                       }
                   }
               ]
@@ -741,47 +769,6 @@
                       "labels": {
                           "de": "Validiert",
                           "en": "Approved"
-                      }
-                  }
-              ]
-          },
-          {
-              "name": "instantiationtype",
-              "labels": {
-                  "de": "Instanziierung Art der Digitalisierung bzw. des digital Objekts",
-                  "en": "Instantiation type of the digital surrogate or digital-born object",
-                  "fr": "Type d'instanciation de l'objet numérique"
-              },
-              "comments": {
-                  "de": "Liste zur Angabe des Typs des digitalen Objekts (Bild, Ton, audiovisuell)"
-              },
-              "nodes": [
-                  {
-                      "name": "audio",
-                      "labels": {
-                          "de": "Audio",
-                          "en": "Audio"
-                      }
-                  },
-                  {
-                      "name": "image",
-                      "labels": {
-                          "de": "Bild",
-                          "en": "Image"
-                      }
-                  },
-                  {
-                      "name": "movingimages",
-                      "labels": {
-                          "de": "Bewegte Bilder",
-                          "en": "Moving images"
-                      }
-                  },
-                  {
-                      "name": "3d",
-                      "labels": {
-                          "de": "3D-Objekt",
-                          "en": "3D Object"
                       }
                   }
               ]
@@ -3358,7 +3345,8 @@
            "password": "1234",
            "lang": "it",
            "groups": [
-             ":photo-editors"
+             ":photo-editors",
+             ":pia-editors"
            ],
            "projects": [
              ":admin"
@@ -3396,7 +3384,7 @@
       "ontologies": [
          {
             "name": "sgv",
-            "label": "SSFS Ontology",
+            "label": "SSFS Ontology for image-based resources",
             "properties": [
                 {
                     "name": "hasSignature",
@@ -3675,7 +3663,7 @@
                     "labels": {
                         "en": "Sequence number",
                         "de": "Sequenznummer",
-                        "fr": "Num\u00e9ro de s\u00e9quence",
+                        "fr": "Numéro de séquence",
                         "it": "Numero di scala"
                     },
                     "gui_element": "Spinbox"
@@ -3723,7 +3711,7 @@
                     "labels": {
                         "en": "Related to (Person)",
                         "de": "Relativ zu",
-                        "fr": "Relatif \u00e0"
+                        "fr": "Relatif à"
                     },
                     "gui_element": "Searchbox"
                 },
@@ -3750,7 +3738,7 @@
                     "object": "DateValue",
                     "labels": {
                         "en": "Birth date",
-                        "de": "geboren/gegr\u00fcndet am",
+                        "de": "geboren/gegründet am",
                         "fr": "Date de naissance",
                         "it": "Data di nascita"
                     },
@@ -3879,7 +3867,7 @@
                     "object": ":Object",
                     "labels": {
                         "en": "Example image",
-                        "de": "Bildverkn\u00fcpfung"
+                        "de": "Bildverknüpfung"
                     },
                     "gui_element": "Searchbox"
                 },
@@ -4766,19 +4754,22 @@
                     "gui_element": "Searchbox"
                 },
                 {
-                    "name": "hasInstantiationType",
+                    "name": "isInstantiationOf",
                     "super": [
-                        "hasValue"
+                        "hasLinkTo",
+                        "rico:isInstantiationOf"
                     ],
-                    "object": "ListValue",
+                    "object": ":Object",
                     "labels": {
-                        "en": "Instantiation Type",
-                        "de": "Instanziierungstyp",
-                        "fr": "Type d'instanciation"
+                        "en": "is an instantiation Of",
+                        "de": "ist eine Instanziierung von",
+                        "fr": "est une instanciation de",
+                        "it": "è un'istanza di"
                     },
-                    "gui_element": "List",
-                    "gui_attributes": {
-                        "hlist": "instantiationtype"
+                    "comments": {
+                          "en": "This property is only to be leveraged to link a digital file to sgv:Object."
+                        },
+                    "gui_element": "Searchbox"
                     }
                 }
             ],
@@ -4987,11 +4978,6 @@
                             "propname": ":hasArchiveLocation",
                             "cardinality": "0-n",
                             "gui_order": 39
-                        },
-                        {
-                            "propname": ":hasInstantiationType",
-                            "cardinality": "0-1",
-                            "gui_order": 40
                         }
                     ]
                 },
@@ -5639,6 +5625,57 @@
                             "propname": ":sameAs",
                             "cardinality": "0-n",
                             "gui_order": 11
+                        }
+                    ]
+                },
+                {
+                    "name": "ImageInstantiation",
+                    "labels": {
+                        "en": "Image",
+                        "de": "Bild",
+                        "fr": "Image",
+                        "it": "Immagine"
+                    },
+                    "super": "StillImageRepresentation",
+                    "cardinalities": [
+                        {
+                            "propname": ":isInstantiationOf",
+                            "cardinality": "1",
+                            "gui_order": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "AudioInstantiation",
+                    "labels": {
+                        "en": "Audio",
+                        "de": "Audio",
+                        "fr": "Audio",
+                        "it": "Audio"
+                    },
+                    "super": "AudioRepresentation",
+                    "cardinalities": [
+                        {
+                            "propname": ":isInstantiationOf",
+                            "cardinality": "1",
+                            "gui_order": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "MovingImageInstantiation",
+                    "labels": {
+                        "en": "Moving Images",
+                        "de": "Bewegte Bilder",
+                        "fr": "Images en mouvement",
+                        "it": "Immagine in movimento"
+                    },
+                    "super": "MovingImageRepresentation",
+                    "cardinalities": [
+                        {
+                            "propname": ":isInstantiationOf",
+                            "cardinality": "1",
+                            "gui_order": 1
                         }
                     ]
                 }
