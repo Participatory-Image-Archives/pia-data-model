@@ -31,6 +31,7 @@
          "Schweizerisches Volksliedarchiv",
          "Participatory Knowledge Practices in Analogue and Digital Image Archives",
          "PIA",
+         "Folkfestival",
          "Switzerland"
       ],
       "lists": [
@@ -344,15 +345,316 @@
               ]
           },
           {
+            "name": "instruments",
+            "labels": {
+              "de": "Instrumente"
+            },
+            "comments": {
+              "en": "instruments"
+            },
+            "nodes": [
+              {
+                "name": "Autoharp",
+                "labels": {
+                  "de": "Autoharp"
+                },
+                "comments": {
+                  "en": "Autoharp"
+                }
+              },
+              {
+                "name": "Banjo",
+                "labels": {
+                  "de": "Banjo"
+                },
+                "comments": {
+                  "en": "Banjo"
+                }
+              },
+              {
+                "name": "Bass",
+                "labels": {
+                  "de": "Bass"
+                },
+                "comments": {
+                  "en": "Bass"
+                }
+              },
+              {
+                "name": "Bassblockflöte",
+                "labels": {
+                  "de": "Bassblockflöte"
+                },
+                "comments": {
+                  "en": "Bassblockflöte"
+                }
+              },
+              {
+                "name": "Chor",
+                "labels": {
+                  "de": "Chor"
+                },
+                "comments": {
+                  "en": "Chor"
+                }
+              },
+              {
+                "name": "Dudelsack",
+                "labels": {
+                  "de": "Dudelsack"
+                },
+                "comments": {
+                  "en": "Dudelsack"
+                }
+              },
+              {
+                "name": "E-Bass",
+                "labels": {
+                  "de": "E-Bass"
+                },
+                "comments": {
+                  "en": "E-Bass"
+                }
+              },
+              {
+                "name": "Fidel",
+                "labels": {
+                  "de": "Fidel"
+                },
+                "comments": {
+                  "en": "Fidel"
+                }
+              },
+              {
+                "name": "Flöte",
+                "labels": {
+                  "de": "Flöte"
+                },
+                "comments": {
+                  "en": "Flöte"
+                }
+              },
+              {
+                "name": "Geige",
+                "labels": {
+                  "de": "Geige"
+                },
+                "comments": {
+                  "en": "Geige"
+                }
+              },
+              {
+                "name": "Gesang",
+                "labels": {
+                  "de": "Gesang"
+                },
+                "comments": {
+                  "en": "Gesang"
+                }
+              },
+              {
+                "name": "Gitarre",
+                "labels": {
+                  "de": "Gitarre"
+                },
+                "comments": {
+                  "en": "Gitarre"
+                }
+              },
+              {
+                "name": "Kazoo",
+                "labels": {
+                  "de": "Kazoo"
+                },
+                "comments": {
+                  "en": "Kazoo"
+                }
+              },
+              {
+                "name": "Löffel",
+                "labels": {
+                  "de": "Löffel"
+                },
+                "comments": {
+                  "en": "Löffel"
+                }
+              },
+              {
+                "name": "Mandoline",
+                "labels": {
+                  "de": "Mandoline"
+                },
+                "comments": {
+                  "en": "Mandoline"
+                }
+              },
+              {
+                "name": "Maultrommel",
+                "labels": {
+                  "de": "Maultrommel"
+                },
+                "comments": {
+                  "en": "Maultrommel"
+                }
+              },
+              {
+                "name": "Mundharmonika",
+                "labels": {
+                  "de": "Mundharmonika"
+                },
+                "comments": {
+                  "en": "Mundharmonika"
+                }
+              },
+              {
+                "name": "Perkussion",
+                "labels": {
+                  "de": "Perkussion"
+                },
+                "comments": {
+                  "en": "Perkussion"
+                }
+              },
+              {
+                "name": "Piano",
+                "labels": {
+                  "de": "Piano"
+                },
+                "comments": {
+                  "en": "Piano"
+                }
+              },
+              {
+                "name": "Querflöte",
+                "labels": {
+                  "de": "Querflöte"
+                },
+                "comments": {
+                  "en": "Querflöte"
+                }
+              },
+              {
+                "name": "Sitar",
+                "labels": {
+                  "de": "Sitar"
+                },
+                "comments": {
+                  "en": "Sitar"
+                }
+              },
+              {
+                "name": "Sprecher",
+                "labels": {
+                  "de": "Sprecher"
+                },
+                "comments": {
+                  "en": "Sprecher"
+                }
+              },
+              {
+                "name": "Tabla",
+                "labels": {
+                  "de": "Tabla"
+                },
+                "comments": {
+                  "en": "Tabla"
+                }
+              },
+              {
+                "name": "Tin Whistle",
+                "labels": {
+                  "de": "Tin Whistle"
+                },
+                "comments": {
+                  "en": "Tin Whistle"
+                }
+              },
+              {
+                "name": "Trommel",
+                "labels": {
+                  "de": "Trommel"
+                },
+                "comments": {
+                  "en": "Trommel"
+                }
+              },
+              {
+                "name": "Waschbrett",
+                "labels": {
+                  "de": "Waschbrett"
+                },
+                "comments": {
+                  "en": "Waschbrett"
+                }
+              },
+              {
+                "name": "Zuberbass",
+                "labels": {
+                  "de": "Zuberbass"
+                },
+                "comments": {
+                  "en": "Zuberbass"
+                }
+              }
+            ]
+          },
+          {
+            "name": "musicgenre",
+            "labels": {
+              "de": "Objektart"
+            },
+            "comments": {
+              "en": "musicgenre"
+            },
+            "nodes": [
+              {
+                "name": "Instrumental",
+                "labels": {
+                  "de": "Stück (nur Musik)"
+                },
+                "comments": {
+                  "en": "Instrumental"
+                }
+              },
+              {
+                "name": "Lied (Musik+Text)",
+                "labels": {
+                  "de": "Lied (Musik+Text)"
+                },
+                "comments": {
+                  "en": "Lied (Musik+Text)"
+                }
+              }
+            ]
+          },
+          {
               "name": "objecttype",
               "labels": {
-                  "de": "Objekttyp",
-                  "en": "Type of object"
+                  "de": "Objekttyp / Originalträger",
+                  "en": "Type of object / carrier"
               },
               "comments": {
                   "de": "Typ des Objekts"
               },
               "nodes": [
+                {
+                  "name": "Magnettonband",
+                  "labels": {
+                    "de": "Magnettonband"
+                  },
+                  "comments": {
+                    "en": "Magnettonband"
+                  }
+                },
+                {
+                  "name": "Musikkassette",
+                  "labels": {
+                    "de": "Musikkassette"
+                  },
+                  "comments": {
+                    "en": "Musikkassette"
+                  }
+                },
                   {
                       "name": "S_11216",
                       "labels": {
@@ -3390,7 +3692,7 @@
       "ontologies": [
          {
             "name": "sgv",
-            "label": "SSFS Ontology for image-based resources",
+            "label": "SSFS Data Model for image-based and audio resources",
             "properties": [
                 {
                     "name": "hasSignature",
@@ -4760,23 +5062,56 @@
                     "gui_element": "Searchbox"
                 },
                 {
-                    "name": "isInstantiationOf",
+                    "name": "hasImageInstantiation",
                     "super": [
-                        "hasLinkTo",
-                        "rico:isInstantiationOf"
+                        "hasRepresentation"
                     ],
-                    "object": ":Object",
+                    "object": ":ImageInstantiation",
                     "labels": {
-                        "en": "is an instantiation Of",
-                        "de": "ist eine Instanziierung von",
-                        "fr": "est une instanciation de",
-                        "it": "è un'istanza di"
+                        "en": "has instantiation (Image)",
+                        "de": "hat Instanziierung (Bild)",
+                        "fr": "a comme instanciation (Image)",
+                        "it": "a come istanza (Immagine)"
                     },
                     "comments": {
-                          "en": "This property is only to be leveraged to link a digital file to sgv:Object."
+                          "en": "This property is link a an object to an image representation."
                         },
                     "gui_element": "Searchbox"
-                    }
+                  },
+                  {
+                      "name": "hasAudioInstantiation",
+                      "super": [
+                          "hasRepresentation"
+                      ],
+                      "object": ":AudioInstantiation",
+                      "labels": {
+                          "en": "has instantiation (Audio)",
+                          "de": "hat Instanziierung (Audio)",
+                          "fr": "a comme instanciation (Audio)",
+                          "it": "a come istanza (Audio)"
+                      },
+                      "comments": {
+                            "en": "This property is link a an object to an audio representation."
+                          },
+                      "gui_element": "Searchbox"
+                    },
+                    {
+                        "name": "hasMovingImageInstantiation",
+                        "super": [
+                            "hasRepresentation"
+                        ],
+                        "object": ":MovingImageInstantiation",
+                        "labels": {
+                            "en": "has instantiation (Moving Image)",
+                            "de": "hat Instanziierung (Bild)",
+                            "fr": "a comme instanciation (Image)",
+                            "it": "a come istanza (Immagine)"
+                        },
+                        "comments": {
+                              "en": "This property is link a an object to a moving image representation."
+                            },
+                        "gui_element": "Searchbox"
+                        }
             ],
             "resources": [
                 {
@@ -4983,6 +5318,21 @@
                             "propname": ":hasArchiveLocation",
                             "cardinality": "0-n",
                             "gui_order": 39
+                        },
+                        {
+                            "propname": ":hasImageInstantiation",
+                            "cardinality": "0-n",
+                            "gui_order": 40
+                        },
+                        {
+                            "propname": ":hasAudioInstantiation",
+                            "cardinality": "0-n",
+                            "gui_order": 41
+                        },
+                        {
+                            "propname": ":hasMovingImageInstantiation",
+                            "cardinality": "0-n",
+                            "gui_order": 42
                         }
                     ]
                 },
@@ -5644,7 +5994,7 @@
                     "super": "StillImageRepresentation",
                     "cardinalities": [
                         {
-                            "propname": ":isInstantiationOf",
+                            "propname": ":hasSignature",
                             "cardinality": "1",
                             "gui_order": 1
                         }
@@ -5661,7 +6011,7 @@
                     "super": "AudioRepresentation",
                     "cardinalities": [
                         {
-                            "propname": ":isInstantiationOf",
+                            "propname": ":hasSignature",
                             "cardinality": "1",
                             "gui_order": 1
                         }
@@ -5678,7 +6028,7 @@
                     "super": "MovingImageRepresentation",
                     "cardinalities": [
                         {
-                            "propname": ":isInstantiationOf",
+                            "propname": ":hasSignature",
                             "cardinality": "1",
                             "gui_order": 1
                         }
