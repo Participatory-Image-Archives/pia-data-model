@@ -601,10 +601,13 @@
           {
             "name": "musicgenre",
             "labels": {
-              "de": "Objektart"
+              "de": "Gattung (Musik)",
+              "en": "Music genre",
+              "fr": "Genre de musique",
+              "it": "Genere musicale"
             },
             "comments": {
-              "en": "musicgenre"
+              "en": "Music genre"
             },
             "nodes": [
               {
@@ -631,7 +634,8 @@
               "name": "objecttype",
               "labels": {
                   "de": "Objekttyp / Originalträger",
-                  "en": "Type of object / carrier"
+                  "en": "Type of object / carrier",
+                  "fr": "Type d'objet / Support d'origine"
               },
               "comments": {
                   "de": "Typ des Objekts"
@@ -3202,12 +3206,12 @@
               "labels": {
                   "de": "Fototechnik / Vorlage",
                   "en": "Phototechnics / Medium",
-                  "fr": "Technique / Media",
-                  "it": "Supporto"
+                  "fr": "Technique / Media (Photographie)",
+                  "it": "Tecnico / Media (Fotografia)"
               },
               "comments": {
                   "de": "Fototechnik oder Vorlage des Objekts",
-                  "fr": "Technique ou media de l'objet"
+                  "fr": "Technique photographique"
               },
               "nodes": [
                   {
@@ -5103,9 +5107,9 @@
                         "object": ":MovingImageInstantiation",
                         "labels": {
                             "en": "has instantiation (Moving Image)",
-                            "de": "hat Instanziierung (Bild)",
-                            "fr": "a comme instanciation (Image)",
-                            "it": "a come istanza (Immagine)"
+                            "de": "hat Instanziierung (Bewegte Bilder)",
+                            "fr": "a comme instanciation (Images en mouvement)",
+                            "it": "a come istanza (Immagine in movimento)"
                         },
                         "comments": {
                               "en": "This property is link a an object to a moving image representation."
