@@ -574,6 +574,12 @@
                       "labels": {
                           "de": "Zeitungsartikel"
                       }
+                  },
+                  {
+                      "name": "tonbildschau",
+                      "labels": {
+                          "de": "Tonbildschau"
+                      }
                   }
               ]
           },
