@@ -341,7 +341,10 @@
           {
             "name": "instruments",
             "labels": {
-              "de": "Instrumente"
+              "de": "Instrumente",
+              "en": "Instruments",
+              "fr": "Instruments",
+              "it": "Strumenti"
             },
             "comments": {
               "en": "instruments"
@@ -3819,7 +3822,7 @@
       "ontologies": [
          {
             "name": "sgv",
-            "label": "SSFS Data Model for image-based and audio resources",
+            "label": "SSFS Data Model for image-based resources",
             "properties": [
                 {
                     "name": "hasSignature",
@@ -5985,6 +5988,11 @@
                             "propname": ":hasWorkFeatured",
                             "cardinality": "0-n",
                             "gui_order": 15
+                        },
+                        {
+                            "propname": ":hasPlace",
+                            "cardinality": "0-n",
+                            "gui_order": 16
                         }
                     ]
                 },
