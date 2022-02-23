@@ -4,6 +4,7 @@
      "dct": "http://purl.org/dc/terms/",
      "edm": "http://www.europeana.eu/schemas/edm/",
      "ebucore": "http://www.ebu.ch/metadata/ontologies/ebucore/ebucore",
+     "rico": "https://www.ica.org/standards/RiC/ontology#",
      "schema": "http://schema.org/",
      "skos": "http://www.w3.org/2004/02/skos/core#"
   },
@@ -13,9 +14,9 @@
       "shortname": "sgv",
       "longname": "Digital Archive of the Swiss Society for Folklore Studies (SSFS)",
       "descriptions": {
-        "de": "Digitales Archiv der Schweizerischen Gesellschaft für Volkskunde (SGV), das die Bilddatenbank und das Volksliedarchiv enthält.",
-        "fr": "Archives numériques de la Société suisse des traditions populaires (SSTP) qui comprennent la base de données photographique et les archives des chansons populaires.",
-        "en": "Digital Archive of the Swiss Society for Folklore Studies (SSFS), which contains the image databse and the folk song archive.",
+        "de": "Digitales Archiv der Schweizerischen Gesellschaft für Volkskunde (SGV), welches das Fotoarchiv und das Volksliedarchiv (VLA) umfasst.",
+        "fr": "Archive numérique de la Société suisse des traditions populaires (SSTP) qui comprend les archives photographique et les archives des chansons populaires.",
+        "en": "Digital Archive of the Swiss Society for Folklore Studies (SSFS), which contains the image and the folk song archives.",
         "it": "Archivio digitale della Società Svizzera per le Tradizioni Popolari (SSTP), che contiene il database delle immagini e l'archivo delle canzoni poplari."
       },
       "keywords": [
@@ -30,6 +31,7 @@
          "Schweizerisches Volksliedarchiv",
          "Participatory Knowledge Practices in Analogue and Digital Image Archives",
          "PIA",
+         "Folkfestival",
          "Switzerland"
       ],
       "lists": [
@@ -281,12 +283,6 @@
                       }
                   },
                   {
-                      "name": "S_13243",
-                      "labels": {
-                          "de": "--"
-                      }
-                  },
-                  {
                       "name": "S_13228",
                       "labels": {
                           "de": "16mm"
@@ -343,15 +339,323 @@
               ]
           },
           {
+            "name": "instruments",
+            "labels": {
+              "de": "Instrumente",
+              "en": "Instruments",
+              "fr": "Instruments",
+              "it": "Strumenti"
+            },
+            "comments": {
+              "en": "instruments"
+            },
+            "nodes": [
+              {
+                "name": "Autoharp",
+                "labels": {
+                  "de": "Autoharp"
+                },
+                "comments": {
+                  "en": "Autoharp"
+                }
+              },
+              {
+                "name": "Banjo",
+                "labels": {
+                  "de": "Banjo"
+                },
+                "comments": {
+                  "en": "Banjo"
+                }
+              },
+              {
+                "name": "Bass",
+                "labels": {
+                  "de": "Bass"
+                },
+                "comments": {
+                  "en": "Bass"
+                }
+              },
+              {
+                "name": "Bassblockflöte",
+                "labels": {
+                  "de": "Bassblockflöte"
+                },
+                "comments": {
+                  "en": "Bassblockflöte"
+                }
+              },
+              {
+                "name": "Chor",
+                "labels": {
+                  "de": "Chor"
+                },
+                "comments": {
+                  "en": "Chor"
+                }
+              },
+              {
+                "name": "Dudelsack",
+                "labels": {
+                  "de": "Dudelsack"
+                },
+                "comments": {
+                  "en": "Dudelsack"
+                }
+              },
+              {
+                "name": "E-Bass",
+                "labels": {
+                  "de": "E-Bass"
+                },
+                "comments": {
+                  "en": "E-Bass"
+                }
+              },
+              {
+                "name": "Fidel",
+                "labels": {
+                  "de": "Fidel"
+                },
+                "comments": {
+                  "en": "Fidel"
+                }
+              },
+              {
+                "name": "Flöte",
+                "labels": {
+                  "de": "Flöte"
+                },
+                "comments": {
+                  "en": "Flöte"
+                }
+              },
+              {
+                "name": "Geige",
+                "labels": {
+                  "de": "Geige"
+                },
+                "comments": {
+                  "en": "Geige"
+                }
+              },
+              {
+                "name": "Gesang",
+                "labels": {
+                  "de": "Gesang"
+                },
+                "comments": {
+                  "en": "Gesang"
+                }
+              },
+              {
+                "name": "Gitarre",
+                "labels": {
+                  "de": "Gitarre"
+                },
+                "comments": {
+                  "en": "Gitarre"
+                }
+              },
+              {
+                "name": "Kazoo",
+                "labels": {
+                  "de": "Kazoo"
+                },
+                "comments": {
+                  "en": "Kazoo"
+                }
+              },
+              {
+                "name": "Löffel",
+                "labels": {
+                  "de": "Löffel"
+                },
+                "comments": {
+                  "en": "Löffel"
+                }
+              },
+              {
+                "name": "Mandoline",
+                "labels": {
+                  "de": "Mandoline"
+                },
+                "comments": {
+                  "en": "Mandoline"
+                }
+              },
+              {
+                "name": "Maultrommel",
+                "labels": {
+                  "de": "Maultrommel"
+                },
+                "comments": {
+                  "en": "Maultrommel"
+                }
+              },
+              {
+                "name": "Mundharmonika",
+                "labels": {
+                  "de": "Mundharmonika"
+                },
+                "comments": {
+                  "en": "Mundharmonika"
+                }
+              },
+              {
+                "name": "Perkussion",
+                "labels": {
+                  "de": "Perkussion"
+                },
+                "comments": {
+                  "en": "Perkussion"
+                }
+              },
+              {
+                "name": "Piano",
+                "labels": {
+                  "de": "Piano"
+                },
+                "comments": {
+                  "en": "Piano"
+                }
+              },
+              {
+                "name": "Querflöte",
+                "labels": {
+                  "de": "Querflöte"
+                },
+                "comments": {
+                  "en": "Querflöte"
+                }
+              },
+              {
+                "name": "Sitar",
+                "labels": {
+                  "de": "Sitar"
+                },
+                "comments": {
+                  "en": "Sitar"
+                }
+              },
+              {
+                "name": "Sprecher",
+                "labels": {
+                  "de": "Sprecher"
+                },
+                "comments": {
+                  "en": "Sprecher"
+                }
+              },
+              {
+                "name": "Tabla",
+                "labels": {
+                  "de": "Tabla"
+                },
+                "comments": {
+                  "en": "Tabla"
+                }
+              },
+              {
+                "name": "Tin Whistle",
+                "labels": {
+                  "de": "Tin Whistle"
+                },
+                "comments": {
+                  "en": "Tin Whistle"
+                }
+              },
+              {
+                "name": "Trommel",
+                "labels": {
+                  "de": "Trommel"
+                },
+                "comments": {
+                  "en": "Trommel"
+                }
+              },
+              {
+                "name": "Waschbrett",
+                "labels": {
+                  "de": "Waschbrett"
+                },
+                "comments": {
+                  "en": "Waschbrett"
+                }
+              },
+              {
+                "name": "Zuberbass",
+                "labels": {
+                  "de": "Zuberbass"
+                },
+                "comments": {
+                  "en": "Zuberbass"
+                }
+              }
+            ]
+          },
+          {
+            "name": "musicgenre",
+            "labels": {
+              "de": "Gattung (Musik)",
+              "en": "Music genre",
+              "fr": "Genre de musique",
+              "it": "Genere musicale"
+            },
+            "comments": {
+              "en": "Music genre"
+            },
+            "nodes": [
+              {
+                "name": "Instrumental",
+                "labels": {
+                  "de": "Stück (nur Musik)"
+                },
+                "comments": {
+                  "en": "Instrumental"
+                }
+              },
+              {
+                "name": "Lied (Musik+Text)",
+                "labels": {
+                  "de": "Lied (Musik+Text)"
+                },
+                "comments": {
+                  "en": "Lied (Musik+Text)"
+                }
+              }
+            ]
+          },
+          {
               "name": "objecttype",
               "labels": {
-                  "de": "Objekttyp",
-                  "en": "Type of object"
+                  "de": "Objekttyp / Originalträger",
+                  "en": "Type of object / carrier",
+                  "fr": "Type d'objet / Support d'origine"
               },
               "comments": {
                   "de": "Typ des Objekts"
               },
               "nodes": [
+                {
+                  "name": "Magnettonband",
+                  "labels": {
+                    "de": "Magnettonband"
+                  },
+                  "comments": {
+                    "en": "Magnettonband"
+                  }
+                },
+                {
+                  "name": "Musikkassette",
+                  "labels": {
+                    "de": "Musikkassette"
+                  },
+                  "comments": {
+                    "en": "Musikkassette"
+                  }
+                },
                   {
                       "name": "S_11216",
                       "labels": {
@@ -573,6 +877,12 @@
                       "labels": {
                           "de": "Zeitungsartikel"
                       }
+                  },
+                  {
+                      "name": "tonbildschau",
+                      "labels": {
+                          "de": "Tonbildschau"
+                      }
                   }
               ]
           },
@@ -590,50 +900,78 @@
                   {
                       "name": "de",
                       "labels": {
-                          "de": "deutsch"
+                          "de": "Deutsch",
+                          "en": "German",
+                          "fr": "Allemand",
+                          "it": "Tedesco"
                       }
                   },
                   {
                       "name": "dial",
                       "labels": {
-                          "de": "dialekt"
+                          "de": "Dialekt",
+                          "en": "Dialect",
+                          "fr": "Dialecte",
+                          "it": "Dialetto"
                       }
                   },
                   {
-                      "name": "eng",
+                      "name": "en",
                       "labels": {
-                          "de": "englisch"
+                          "de": "Englisch",
+                          "en": "English",
+                          "fr": "Anglais",
+                          "it": "Inglese"
                       }
                   },
                   {
                       "name": "fr",
                       "labels": {
-                          "de": "franz\u00f6sisch"
+                          "de": "Französisch",
+                          "en": "French",
+                          "fr": "Français",
+                          "it": "Francese"
                       }
                   },
                   {
                       "name": "it",
                       "labels": {
-                          "de": "italienisch"
+                          "de": "Italienisch",
+                          "en": "Italian",
+                          "fr": "Italien",
+                          "it": "Italiano"
                       }
                   },
                   {
                       "name": "stumm",
                       "labels": {
-                          "de": "stumm"
+                          "de": "stumm",
+                          "en": "mute",
+                          "fr": "muet",
+                          "it": "muto"
+                      }
+                  },
+                  {
+                      "name": "rm",
+                      "labels": {
+                          "de": "Bündnerromanisch",
+                          "en": "Romansh",
+                          "fr": "Romanche",
+                          "it": "Romancio"
                       }
                   }
               ]
           },
           {
-              "name": "additionaltypes",
+              "name": "agenttypes",
               "labels": {
-                  "de": "Zusatztypen zu :Agent",
-                  "en": "Additional Types for :Agent",
-                  "fr": "Types additionnels pour :Agent"
+                  "de": "Zusatztypen für Agenten",
+                  "en": "Additional Types for Agents",
+                  "fr": "Types additionnels pour les Agents",
+                  "it": "Tipi addizionali per Agenti"
               },
               "comments": {
-                  "de": "Liste, um den Typ von Agent anzugeben. "
+                  "de": "Liste, um den Typ von Agent anzugeben."
               },
               "nodes": [
                   {
@@ -669,38 +1007,161 @@
               "name": "eventstatus",
               "labels": {
                   "de": "Status des Events",
-                  "en": "Event Status"
+                  "en": "Event Status",
+                  "fr": "Statut de l'événement",
+                  "it": "Stato dell'evento"
               },
               "comments": {
-                  "de": "Liste, um die Art des Events anzugeben. "
+                  "de": "Liste, um den Status eines Events anzugeben. "
               },
               "nodes": [
                   {
                       "name": "scheduled",
                       "labels": {
                           "de": "Geplant",
-                          "en": "Scheduled"
+                          "en": "Scheduled",
+                          "fr": "Planifié",
+                          "it": "Pianificato"
+                      }
+                  },
+                  {
+                      "name": "postponed",
+                      "labels": {
+                          "de": "Verschoben",
+                          "en": "Postponed",
+                          "fr": "Reporté",
+                          "it": "Rinviato"
                       }
                   },
                   {
                       "name": "ongoing",
                       "labels": {
                           "de": "Laufend",
-                          "en": "Ongoing"
+                          "en": "Ongoing",
+                          "fr": "En cours",
+                          "it": "In corso"
                       }
                   },
                   {
                       "name": "cancelled",
                       "labels": {
                           "de": "Abgesagt",
-                          "en": "Cancelled"
+                          "en": "Cancelled",
+                          "fr": "Annulé",
+                          "it": "Cancellato"
                       }
                   },
                   {
                       "name": "done",
                       "labels": {
                           "de": "Erledigt",
-                          "en": "Done"
+                          "en": "Done",
+                          "fr": "Terminé",
+                          "it": "Completato"
+                      }
+                  }
+              ]
+          },
+          {
+              "name": "eventtype",
+              "labels": {
+                  "de": "Typ des Events",
+                  "en": "Event Type",
+                  "fr": "Type d'événement",
+                  "it": "Tipo di evento"
+              },
+              "comments": {
+                  "de": "Liste, um die From des Events anzugeben."
+              },
+              "nodes": [
+                  {
+                      "name": "exhibition",
+                      "labels": {
+                          "de": "Austellung",
+                          "en": "Exhibition",
+                          "fr": "Exposition",
+                          "it": "Esposizione"
+                      }
+                  },
+                  {
+                      "name": "call",
+                      "labels": {
+                          "de": "Call zur Einreichung",
+                          "en": "Call for submissions",
+                          "fr": "Appel à contributions",
+                          "it": "Invito a partecipare"
+                      }
+                  },
+                  {
+                      "name": "crowdsourcing",
+                      "labels": {
+                          "de": "Crowdsourcing",
+                          "en": "Crowdsourcing",
+                          "fr": "Crowdsourcing",
+                          "it": "Crowdsourcing"
+                      }
+                  },
+                  {
+                      "name": "upload",
+                      "labels": {
+                          "de": "Persönlicher Hochladen",
+                          "en": "Individual upload",
+                          "fr": "Téléversement personnel",
+                          "it": "Upload personale"
+                      }
+                  },
+                  {
+                      "name": "story",
+                      "labels": {
+                          "de": "Story",
+                          "en": "Story",
+                          "fr": "Story",
+                          "it": "Story"
+                      }
+                  },
+                  {
+                      "name": "concert",
+                      "labels": {
+                          "de": "Konzert",
+                          "en": "Concert",
+                          "fr": "Concert",
+                          "it": "Concerto"
+                      }
+                  },
+                  {
+                      "name": "festival",
+                      "labels": {
+                          "de": "Festival",
+                          "en": "Festival",
+                          "fr": "Festival",
+                          "it": "Festival"
+                      }
+                  },
+                  {
+                      "name": "researchproject",
+                      "labels": {
+                          "de": "Forschungsprojekt",
+                          "en": "Research Project",
+                          "fr": "Projet de recherche",
+                          "it": "Progetto di ricerca"
+                      }
+                  },
+                  {
+                      "name": "digitisation",
+                      "labels": {
+                          "de": "Digitalisierung",
+                          "en": "Digitisation",
+                          "fr": "Numérisation",
+                          "it": "Digitalizzazione"
+                      }
+                  },
+                  {
+                      "name": "conservation_restoration",
+                      "labels": {
+                          "de": "Konservierung und Restaurierung",
+                          "en": "Conservation and restoration",
+                          "fr": "Conservation et restauration",
+                          "it": "Conservazione e restauro"
                       }
                   }
               ]
@@ -719,28 +1180,32 @@
                       "name": "tobereviewed",
                       "labels": {
                           "de": "Zu prüfen",
-                          "en": "To be reviewed"
+                          "en": "To be reviewed",
+                          "fr": "A examiner"
                       }
                   },
                   {
                       "name": "underreview",
                       "labels": {
                           "de": "Wird gerade evaluiert",
-                          "en": "Under review"
+                          "en": "Under review",
+                          "fr": "En cours d'examen"
                       }
                   },
                   {
                       "name": "rejected",
                       "labels": {
                           "de": "Abgelehnt",
-                          "en": "Rejected"
+                          "en": "Rejected",
+                          "fr": "Rejeté"
                       }
                   },
                   {
                       "name": "approved",
                       "labels": {
                           "de": "Validiert",
-                          "en": "Approved"
+                          "en": "Approved",
+                          "fr": "Approuvé"
                       }
                   }
               ]
@@ -749,10 +1214,11 @@
               "name": "Standorte",
               "labels": {
                   "de": "Standortverwaltung",
-                  "en": "Archive Location"
+                  "en": "Archive Location",
+                  "fr": "Emplacement de la pièce d'archives"
               },
               "comments": {
-                  "de": "Standortverwaltung f\u00fcr Best\u00e4nde der Schweizerischen Gesellschaft f\u00fcr Volkskunde (SGV)"
+                  "de": "Standortverwaltung für Bestände der Schweizerischen Gesellschaft für Volkskunde (SGV)"
               },
               "nodes": [
                   {
@@ -2866,12 +3332,12 @@
               "labels": {
                   "de": "Fototechnik / Vorlage",
                   "en": "Phototechnics / Medium",
-                  "fr": "Technique / Media",
-                  "it": "Supporto"
+                  "fr": "Technique / Media (Photographie)",
+                  "it": "Tecnico / Media (Fotografia)"
               },
               "comments": {
                   "de": "Fototechnik oder Vorlage des Objekts",
-                  "fr": "Technique ou media de l'objet"
+                  "fr": "Technique photographique"
               },
               "nodes": [
                   {
@@ -3317,7 +3783,8 @@
            "password": "1234",
            "lang": "it",
            "groups": [
-             ":photo-editors"
+             ":photo-editors",
+             ":pia-editors"
            ],
            "projects": [
              ":admin"
@@ -3355,7 +3822,7 @@
       "ontologies": [
          {
             "name": "sgv",
-            "label": "SSFS Ontology",
+            "label": "SSFS Data Model for image-based resources",
             "properties": [
                 {
                     "name": "hasSignature",
@@ -3634,7 +4101,7 @@
                     "labels": {
                         "en": "Sequence number",
                         "de": "Sequenznummer",
-                        "fr": "Num\u00e9ro de s\u00e9quence",
+                        "fr": "Numéro de séquence",
                         "it": "Numero di scala"
                     },
                     "gui_element": "Spinbox"
@@ -3682,7 +4149,7 @@
                     "labels": {
                         "en": "Related to (Person)",
                         "de": "Relativ zu",
-                        "fr": "Relatif \u00e0"
+                        "fr": "Relatif à"
                     },
                     "gui_element": "Searchbox"
                 },
@@ -3709,7 +4176,7 @@
                     "object": "DateValue",
                     "labels": {
                         "en": "Birth date",
-                        "de": "geboren/gegr\u00fcndet am",
+                        "de": "geboren/gegründet am",
                         "fr": "Date de naissance",
                         "it": "Data di nascita"
                     },
@@ -3724,7 +4191,7 @@
                     "object": ":Place",
                     "labels": {
                         "en": "Birth place",
-                        "de": "geboren/gegr\u00fcndet in",
+                        "de": "geboren/gegründet in",
                         "fr": "Lieu de naissance",
                         "it": "Luogo di nascita"
                     },
@@ -3739,7 +4206,7 @@
                     "object": "DateValue",
                     "labels": {
                         "en": "Death date",
-                        "de": "verstorben/aufgel\u00f6st am",
+                        "de": "verstorben am",
                         "fr": "Date de mort",
                         "it": "Data di morte"
                     },
@@ -3754,7 +4221,7 @@
                     "object": ":Place",
                     "labels": {
                         "en": "Death place",
-                        "de": "verstorben/aufgel\u00f6st in",
+                        "de": "verstorben in",
                         "fr": "Lieu de mort",
                         "it": "Luogo di morte"
                     },
@@ -3769,7 +4236,7 @@
                     "labels": {
                         "en": "Literature",
                         "de": "Literatur",
-                        "fr": "Litt\u00e9rature"
+                        "fr": "Littérature"
                     },
                     "comments": {
                           "en": "This property cannot be mapped to existing vocabularies. It may be deprecated in the future"
@@ -3838,7 +4305,7 @@
                     "object": ":Object",
                     "labels": {
                         "en": "Example image",
-                        "de": "Bildverkn\u00fcpfung"
+                        "de": "Bildverknüpfung"
                     },
                     "gui_element": "Searchbox"
                 },
@@ -3970,6 +4437,9 @@
                         "de": "aufgezeichnet bei",
                         "fr": "enregistr\u00e9 \u00e0"
                     },
+                    "comments": {
+                          "en": "The Event where the work was recorded. Inverse property of recordedIn."
+                        },
                     "gui_element": "Searchbox"
                 },
                 {
@@ -4000,20 +4470,8 @@
                         "fr": "PIA URL",
                         "it": "PIA URL"
                     },
-                    "gui_element": "SimpleText"
-                },
-                {
-                    "name": "hasDaschUrl",
-                    "super": [
-                        "hasValue",
-                        "schema:url"
-                    ],
-                    "object": "UriValue",
-                    "labels": {
-                        "en": "DaSCH URL",
-                        "de": "DaSCH URL",
-                        "fr": "DaSCH URL",
-                        "it": "DaSCH URL"
+                    "comments" : {
+                      "en": "URL of the same item on the PIA interface"
                     },
                     "gui_element": "SimpleText"
                 },
@@ -4333,19 +4791,21 @@
                     "gui_element": "SimpleText"
                 },
                 {
-                    "name": "hasNationality",
+                    "name": "hasPlaceOfOrigin",
                     "super": [
-                        "hasValue",
-                        "schema:nationality"
+                        "hasLinkTo"
                     ],
-                    "object": "TextValue",
+                    "object": ":Place",
                     "labels": {
-                        "en": "Nationality",
-                        "de": "Nationalit\u00e4t",
-                        "fr": "Nationalit\u00e9",
-                        "it": "Nazionalit\u00e0"
+                        "en": "Place(s) of origin",
+                        "de": "Heimatort / Herkunft",
+                        "fr": "Lieu(x) d'origine",
+                        "it": "Luogo di origine"
                     },
-                    "gui_element": "SimpleText"
+                    "comments": {
+                          "en": "This property has to be understood in the Swiss context where citizens have a place of origin on their passports, which can complement the HasBirthPlace property."
+                        },
+                    "gui_element": "Searchbox"
                 },
                 {
                     "name": "hasAtlasId",
@@ -4573,7 +5033,7 @@
                     "labels": {
                         "en": "is part of the event",
                         "de": "ist Teil des Events",
-                        "fr": "fait partie de l'\u00e9v\u00e9nement"
+                        "fr": "fait partie de l'événement"
                     },
                     "gui_element": "Searchbox"
                 },
@@ -4582,13 +5042,16 @@
                     "super": [
                         "hasValue"
                     ],
-                    "object": "TextValue",
+                    "object": "ListValue",
                     "labels": {
                         "en": "Event Type",
                         "de": "Art des Events",
-                        "fr": "Type d'\u00e9v\u00e9nement"
+                        "fr": "Type d'événement"
                     },
-                    "gui_element": "SimpleText"
+                    "gui_element": "List",
+                    "gui_attributes": {
+                        "hlist": "eventtype"
+                    }
                 },
                 {
                     "name": "recordedIn",
@@ -4600,7 +5063,7 @@
                     "labels": {
                         "en": "Recorded object",
                         "de": "Aufgezeichnete Objekte",
-                        "fr": "Objet(s) r\u00e9pertori\u00e9(s)"
+                        "fr": "Objet(s) répertorié(s)"
                     },
                     "gui_element": "Searchbox"
                 },
@@ -4616,6 +5079,9 @@
                         "de": "Vorgestelltes Werk",
                         "fr": "Objets pr\u00e9sent\u00e9s"
                     },
+                    "comments": {
+                          "en": "A work featured in some event, e.g. exhibited in an museum, in a storytelling resource, in a PIA call, etc."
+                        },
                     "gui_element": "Searchbox"
                 },
                 {
@@ -4630,6 +5096,9 @@
                         "de": "Gleiche Ressource",
                         "fr": "Ressource similaire"
                     },
+                    "comments": {
+                          "en": "URL of a reference Web page that unambiguously indicates the item's identity."
+                        },
                     "gui_element": "SimpleText"
                 },
                 {
@@ -4640,10 +5109,13 @@
                     ],
                     "object": "UriValue",
                     "labels": {
-                        "en": "Related link",
-                        "de": "Zugeh\u00f6riger Link",
-                        "fr": "Lien apparent\u00e9"
+                        "en": "Related URLs",
+                        "de": "Verwandte URL-Links",
+                        "fr": "Liens URL apparenté"
                     },
+                    "comments": {
+                          "en": "Related URL of this item such as the representation of the object on the SGV Archive Website or a link to a IIIF-compliant resource (IIIF Manifest or Collection)."
+                        },
                     "gui_element": "SimpleText"
                 },
                 {
@@ -4656,53 +5128,30 @@
                     "labels": {
                         "en": "License",
                         "de": "Lizenz",
-                        "fr": "Licence"
+                        "fr": "Licence",
+                        "it": "Licenza"
                     },
+                    "comments": {
+                          "en": "Please use one of the Creative Commons URL."
+                        },
                     "gui_element": "SimpleText"
                 },
                 {
-                    "name": "hasContentUrl",
-                    "super": [
-                        "hasValue",
-                        "schema:contentUrl"
-                    ],
-                    "object": "UriValue",
-                    "labels": {
-                        "en": "Content URL",
-                        "de": "Objekt-URL",
-                        "fr": "URL de l'objet"
-                    },
-                    "gui_element": "SimpleText"
-                },
-                {
-                    "name": "hasThumbnailUrl",
-                    "super": [
-                        "hasValue",
-                        "schema:thumbnailUrl"
-                    ],
-                    "object": "UriValue",
-                    "labels": {
-                        "en": "Thumbnail URL",
-                        "de": "Vorschaubild-URL",
-                        "fr": "URL de la vignette"
-                    },
-                    "gui_element": "SimpleText"
-                },
-                {
-                    "name": "hasAdditionalType",
+                    "name": "hasAgentType",
                     "super": [
                         "hasValue",
                         "schema:additionalType"
                     ],
                     "object": "ListValue",
                     "labels": {
-                        "en": "Additional Type",
-                        "de": "Zus\u00e4tzlicher Typ",
-                        "fr": "Type additionnel"
+                        "en": "Agent type",
+                        "de": "Agententyp",
+                        "fr": "Type d'agent",
+                        "it": "Tipo di agente"
                     },
                     "gui_element": "List",
                     "gui_attributes": {
-                        "hlist": "additionaltypes"
+                        "hlist": "agenttypes"
                     }
                 },
                 {
@@ -4718,10 +5167,61 @@
                         "fr": "Sujet de"
                     },
                     "comments": {
-                          "en": "This property should be used either to assert that an agent is subject of an object or that a concept is the suject of an another resource."
+                          "en": "This property should be used either to assert that 1) an Agent is subject of an Object or 2) that a Concept is the suject of an Object, a Dataset, a Collection or an Event."
                         },
                     "gui_element": "Searchbox"
-                }
+                },
+                {
+                    "name": "hasImageRepresentation",
+                    "super": [
+                        "hasRepresentation"
+                    ],
+                    "object": ":ImageRepresentation",
+                    "labels": {
+                        "en": "has Representation (Image)",
+                        "de": "hat Repräsentation (Bild)",
+                        "fr": "a comme représentation (Image)",
+                        "it": "ha come rappresentazione (Immagine)"
+                    },
+                    "comments": {
+                          "en": "This property is link a an object to an image representation."
+                        },
+                    "gui_element": "Searchbox"
+                  },
+                  {
+                      "name": "hasAudioRepresentation",
+                      "super": [
+                          "hasRepresentation"
+                      ],
+                      "object": ":AudioRepresentation",
+                      "labels": {
+                          "en": "has Representation (Audio)",
+                          "de": "hat Repräsentation (Audio)",
+                          "fr": "a comme représentation (Audio)",
+                          "it": "ha come rappresentazione (Audio)"
+                      },
+                      "comments": {
+                            "en": "This property is link a an object to an audio representation."
+                          },
+                      "gui_element": "Searchbox"
+                    },
+                    {
+                        "name": "hasMovingImageRepresentation",
+                        "super": [
+                            "hasRepresentation"
+                        ],
+                        "object": ":MovingImageRepresentation",
+                        "labels": {
+                            "en": "has Representation (Moving Image)",
+                            "de": "hat Repräsentation (Bewegte Bilder)",
+                            "fr": "a comme représentation (Images en mouvement)",
+                            "it": "ha come rappresentazione (Immagine in movimento)"
+                        },
+                        "comments": {
+                              "en": "This property is link a an object to a moving image representation."
+                            },
+                        "gui_element": "Searchbox"
+                        }
             ],
             "resources": [
                 {
@@ -4875,59 +5375,54 @@
                             "gui_order": 28
                         },
                         {
-                            "propname": ":hasDaschUrl",
+                            "propname": ":hasDateCreated",
                             "cardinality": "0-1",
                             "gui_order": 29
                         },
                         {
-                            "propname": ":hasDateCreated",
+                            "propname": ":hasDateModified",
                             "cardinality": "0-1",
                             "gui_order": 30
                         },
                         {
-                            "propname": ":hasDateModified",
+                            "propname": ":hasDatePublished",
                             "cardinality": "0-1",
                             "gui_order": 31
                         },
                         {
-                            "propname": ":hasDatePublished",
+                            "propname": ":hasCreativeWorkStatus",
                             "cardinality": "0-1",
                             "gui_order": 32
                         },
                         {
-                            "propname": ":hasCreativeWorkStatus",
-                            "cardinality": "0-1",
-                            "gui_order": 33
-                        },
-                        {
                             "propname": ":relatedLink",
                             "cardinality": "0-n",
-                            "gui_order": 34
-                        },
-                        {
-                            "propname": ":hasLicense",
-                            "cardinality": "0-1",
-                            "gui_order": 35
-                        },
-                        {
-                            "propname": ":hasContentUrl",
-                            "cardinality": "0-n",
-                            "gui_order": 36
-                        },
-                        {
-                            "propname": ":hasThumbnailUrl",
-                            "cardinality": "0-n",
-                            "gui_order": 37
+                            "gui_order": 33
                         },
                         {
                             "propname": ":hasComment",
                             "cardinality": "0-n",
-                            "gui_order": 38
+                            "gui_order": 34
                         },
                         {
                             "propname": ":hasArchiveLocation",
                             "cardinality": "0-n",
-                            "gui_order": 39
+                            "gui_order": 35
+                        },
+                        {
+                            "propname": ":hasImageRepresentation",
+                            "cardinality": "0-n",
+                            "gui_order": 36
+                        },
+                        {
+                            "propname": ":hasAudioRepresentation",
+                            "cardinality": "0-n",
+                            "gui_order": 37
+                        },
+                        {
+                            "propname": ":hasMovingImageRepresentation",
+                            "cardinality": "0-n",
+                            "gui_order": 38
                         }
                     ]
                 },
@@ -5037,19 +5532,9 @@
                             "gui_order": 19
                         },
                         {
-                            "propname": ":hasLicense",
-                            "cardinality": "0-1",
-                            "gui_order": 20
-                        },
-                        {
                             "propname": ":hasArchiveLocation",
                             "cardinality": "0-n",
-                            "gui_order": 21
-                        },
-                        {
-                            "propname": ":hasDaschUrl",
-                            "cardinality": "0-1",
-                            "gui_order": 22
+                            "gui_order": 20
                         }
                     ]
                 },
@@ -5164,34 +5649,29 @@
                             "gui_order": 20
                         },
                         {
-                            "propname": ":hasDaschUrl",
+                            "propname": ":hasDateCreated",
                             "cardinality": "0-1",
                             "gui_order": 21
                         },
                         {
-                            "propname": ":hasDateCreated",
+                            "propname": ":hasDateModified",
                             "cardinality": "0-1",
                             "gui_order": 22
                         },
                         {
-                            "propname": ":hasDateModified",
+                            "propname": ":hasDatePublished",
                             "cardinality": "0-1",
                             "gui_order": 23
                         },
                         {
-                            "propname": ":hasDatePublished",
+                            "propname": ":hasCreativeWorkStatus",
                             "cardinality": "0-1",
                             "gui_order": 24
                         },
                         {
-                            "propname": ":hasCreativeWorkStatus",
-                            "cardinality": "0-1",
-                            "gui_order": 25
-                        },
-                        {
                             "propname": ":relatedLink",
                             "cardinality": "0-n",
-                            "gui_order": 26
+                            "gui_order": 25
                         }
                     ]
                 },
@@ -5403,7 +5883,7 @@
                             "gui_order": 24
                         },
                         {
-                            "propname": ":hasNationality",
+                            "propname": ":hasPlaceOfOrigin",
                             "cardinality": "0-n",
                             "gui_order": 25
                         },
@@ -5413,7 +5893,7 @@
                             "gui_order": 26
                         },
                         {
-                            "propname": ":hasAdditionalType",
+                            "propname": ":hasAgentType",
                             "cardinality": "0-1",
                             "gui_order": 27
                         },
@@ -5508,6 +5988,11 @@
                             "propname": ":hasWorkFeatured",
                             "cardinality": "0-n",
                             "gui_order": 15
+                        },
+                        {
+                            "propname": ":hasPlace",
+                            "cardinality": "0-n",
+                            "gui_order": 16
                         }
                     ]
                 },
@@ -5575,6 +6060,57 @@
                             "propname": ":sameAs",
                             "cardinality": "0-n",
                             "gui_order": 11
+                        }
+                    ]
+                },
+                {
+                    "name": "ImageRepresentation",
+                    "labels": {
+                        "en": "Image",
+                        "de": "Bild",
+                        "fr": "Image",
+                        "it": "Immagine"
+                    },
+                    "super": "StillImageRepresentation",
+                    "cardinalities": [
+                        {
+                            "propname": ":hasLicense",
+                            "cardinality": "1",
+                            "gui_order": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "AudioRepresentation",
+                    "labels": {
+                        "en": "Audio",
+                        "de": "Audio",
+                        "fr": "Audio",
+                        "it": "Audio"
+                    },
+                    "super": "AudioRepresentation",
+                    "cardinalities": [
+                        {
+                            "propname": ":hasLicense",
+                            "cardinality": "1",
+                            "gui_order": 1
+                        }
+                    ]
+                },
+                {
+                    "name": "MovingImageRepresentation",
+                    "labels": {
+                        "en": "Moving Images",
+                        "de": "Bewegte Bilder",
+                        "fr": "Images en mouvement",
+                        "it": "Immagine in movimento"
+                    },
+                    "super": "MovingImageRepresentation",
+                    "cardinalities": [
+                        {
+                            "propname": ":hasLicense",
+                            "cardinality": "1",
+                            "gui_order": 1
                         }
                     ]
                 }
