@@ -81,15 +81,8 @@ Table dates {
 
   Note: '''
     Type can be either:
-      ~~1: date, a simple date with unclear definition (often it designates)
-      2: start_date, in case of a daterange
-      3: end_date, in case of a daterange
       4: birth_date, for a person
-      5: death_date, for a person~~
-
-      null: date
-      1: birth_date
-      2: death_date
+      5: death_date, for a person
 
     Accuracy:
       1: to the day
@@ -135,6 +128,9 @@ Table comments {
 Table documents {
   id int [pk, increment]
   label varchar
+
+  signature_id varchar
+  comment text
   
   file_name varchar
   original_file_name varchar

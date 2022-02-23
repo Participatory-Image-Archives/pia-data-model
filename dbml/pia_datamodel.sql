@@ -1,6 +1,6 @@
 -- SQL dump generated using DBML (dbml-lang.org)
 -- Database: PostgreSQL
--- Generated at: 2022-02-17T07:51:15.026Z
+-- Generated at: 2022-02-23T10:33:13.455Z
 
 CREATE TABLE "locations" (
   "id" SERIAL PRIMARY KEY,
@@ -64,6 +64,8 @@ CREATE TABLE "comments" (
 CREATE TABLE "documents" (
   "id" SERIAL PRIMARY KEY,
   "label" varchar,
+  "signature_id" varchar,
+  "comment" text,
   "file_name" varchar,
   "original_file_name" varchar,
   "base_path" varchar,
@@ -395,9 +397,6 @@ ALTER TABLE "map_keys" ADD FOREIGN KEY ("map_id") REFERENCES "maps" ("id") ON DE
 ALTER TABLE "map_entries" ADD FOREIGN KEY ("map_layer_id") REFERENCES "map_layers" ("id") ON DELETE CASCADE;
 
 COMMENT ON TABLE "dates" IS 'Type can be either:
-  1: date, a simple date with unclear definition (often it designates)
-  2: start_date, in case of a daterange
-  3: end_date, in case of a daterange
   4: birth_date, for a person
   5: death_date, for a person
 
