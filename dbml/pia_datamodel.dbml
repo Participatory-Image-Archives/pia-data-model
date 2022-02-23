@@ -128,13 +128,12 @@ Table comments {
 Table documents {
   id int [pk, increment]
   label varchar
-
-  signature_id varchar
-  comment text
   
   file_name varchar
   original_file_name varchar
   base_path varchar
+
+  comment text
   
   created_at timestamp
   updated_at timestamp
@@ -148,6 +147,11 @@ Table document_collection {
 Table document_image {
   document_id int
   image_id int
+}
+
+Table document_set {
+  document_id int
+  set_id int
 }
 
 Table people {
@@ -382,16 +386,13 @@ Table collection_alt_label {
 Table sets {
   id int [pk, increment]
   label varchar
+
   description varchar
   signatures varchar
-
-  collection_id int
 
   created_at timestamp
   updated_at timestamp
 }
-
-Ref: collections.id - sets.collection_id [delete: cascade]
 
 Table albums {
   id int [pk, increment]

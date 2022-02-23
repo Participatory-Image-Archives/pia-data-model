@@ -1,6 +1,6 @@
 -- SQL dump generated using DBML (dbml-lang.org)
 -- Database: PostgreSQL
--- Generated at: 2022-02-23T10:33:13.455Z
+-- Generated at: 2022-02-23T11:05:36.748Z
 
 CREATE TABLE "locations" (
   "id" SERIAL PRIMARY KEY,
@@ -64,11 +64,10 @@ CREATE TABLE "comments" (
 CREATE TABLE "documents" (
   "id" SERIAL PRIMARY KEY,
   "label" varchar,
-  "signature_id" varchar,
-  "comment" text,
   "file_name" varchar,
   "original_file_name" varchar,
   "base_path" varchar,
+  "comment" text,
   "created_at" timestamp,
   "updated_at" timestamp
 );
@@ -81,6 +80,11 @@ CREATE TABLE "document_collection" (
 CREATE TABLE "document_image" (
   "document_id" int,
   "image_id" int
+);
+
+CREATE TABLE "document_set" (
+  "document_id" int,
+  "set_id" int
 );
 
 CREATE TABLE "people" (
@@ -264,7 +268,6 @@ CREATE TABLE "sets" (
   "label" varchar,
   "description" varchar,
   "signatures" varchar,
-  "collection_id" int,
   "created_at" timestamp,
   "updated_at" timestamp
 );
@@ -387,8 +390,6 @@ ALTER TABLE "images" ADD FOREIGN KEY ("object_type_id") REFERENCES "object_types
 ALTER TABLE "images" ADD FOREIGN KEY ("model_id") REFERENCES "models" ("id");
 
 ALTER TABLE "images" ADD FOREIGN KEY ("format_id") REFERENCES "formats" ("id");
-
-ALTER TABLE "sets" ADD FOREIGN KEY ("collection_id") REFERENCES "collections" ("id") ON DELETE CASCADE;
 
 ALTER TABLE "albums" ADD FOREIGN KEY ("object_type_id") REFERENCES "object_types" ("id");
 
