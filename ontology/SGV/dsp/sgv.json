@@ -1190,6 +1190,83 @@
               ]
           },
           {
+              "name": "creativecommons",
+              "labels": {
+                  "de": "Creative-Commons-Lizenz (CC)",
+                  "en": "Creative Commons (CC) Licences",
+                  "fr": "Licences Creative Commons (CC)",
+                  "it": "Licenze Creative Commons (CC)"
+              },
+              "comments": {
+                  "de": "Creative Commons (CC)"
+              },
+              "nodes": [
+                  {
+                      "name": "CC-BY",
+                      "labels": {
+                          "en": "https://creativecommons.org/licenses/by/4.0/"
+                      },
+                      "comments": {
+                        "en": "CC BY. This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use."
+                      }
+                  },
+                  {
+                      "name": "CC-BY-SA",
+                      "labels": {
+                          "en": "https://creativecommons.org/licenses/by-sa/4.0/"
+                      },
+                      "comments": {
+                        "en": "CC BY-SA. This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms."
+                      }
+                  },
+                  {
+                      "name": "CC-BY-NC",
+                      "labels": {
+                          "en": "https://creativecommons.org/licenses/by-nc/4.0/"
+                      },
+                      "comments": {
+                        "en": "CC BY-NC. This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. "
+                      }
+                  },
+                  {
+                      "name": "CC-BY-NC-SA",
+                      "labels": {
+                          "en": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+                      },
+                      "comments": {
+                        "en": "CC BY-NC-SA. This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build upon the material, you must license the modified material under identical terms."
+                      }
+                  },
+                  {
+                      "name": "CC-BY-ND",
+                      "labels": {
+                          "en": "https://creativecommons.org/licenses/by-nd/4.0/"
+                      },
+                      "comments": {
+                        "en": "CC BY-ND. This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, and only so long as attribution is given to the creator. The license allows for commercial use."
+                      }
+                  },
+                  {
+                      "name": "CC-BY-NC-ND",
+                      "labels": {
+                          "en": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+                      },
+                      "comments": {
+                        "en": "CC BY-NC-ND. This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, for noncommercial purposes only, and only so long as attribution is given to the creator."
+                      }
+                  },
+                  {
+                      "name": "CC0",
+                      "labels": {
+                          "en": "https://creativecommons.org/publicdomain/zero/1.0/"
+                      },
+                      "comments": {
+                        "en": "CC0 (aka CC Zero) is a public dedication tool, which allows creators to give up their copyright and put their works into the worldwide public domain. CC0 allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, with no conditions."
+                      }
+                  }
+              ]
+          },
+          {
               "name": "objectstatus",
               "labels": {
                   "de": "Status des Objekts",
@@ -4174,6 +4251,21 @@
                     "gui_element": "SimpleText"
                 },
                 {
+                    "name": "hasGeoname",
+                    "super": [
+                        "hasValue",
+                        "schema:location"
+                    ],
+                    "object": "GeonameValue",
+                    "labels": {
+                        "en": "Name (GeoNames)",
+                        "de": "Name (GeoNames)",
+                        "fr": "Nom (GeoNames)",
+                        "it": "Nome (GeoNames)"
+                    },
+                    "gui_element": "Geonames"
+                },
+                {
                     "name": "hasDescription",
                     "super": [
                         "hasValue",
@@ -5039,7 +5131,7 @@
                         "hasValue",
                         "schema:license"
                     ],
-                    "object": "UriValue",
+                    "object": "ListValue",
                     "labels": {
                         "en": "License",
                         "de": "Lizenz",
@@ -5047,9 +5139,12 @@
                         "it": "Licenza"
                     },
                     "comments": {
-                          "en": "Please use one of the Creative Commons URL."
+                          "en": "Please choose one of the Creative Commons URL."
                         },
-                    "gui_element": "SimpleText"
+                    "gui_element": "List",
+                    "gui_attributes": {
+                        "hlist": "creativecommons"
+                    }
                 },
                 {
                     "name": "hasAgentType",
@@ -5081,9 +5176,6 @@
                         "de": "Subjekt von",
                         "fr": "Sujet de"
                     },
-                    "comments": {
-                          "en": "This property should be used either to assert that 1) an Agent is subject of an Object or 2) that a Concept is the suject of an Object, a Dataset, a Collection or an Event."
-                        },
                     "gui_element": "Searchbox"
                 },
                 {
@@ -5161,7 +5253,7 @@
                         },
                         {
                             "propname": ":hasDate",
-                            "cardinality": "0-1",
+                            "cardinality": "0-n",
                             "gui_order": 3
                         },
                         {
@@ -5377,59 +5469,54 @@
                             "gui_order": 6
                         },
                         {
-                            "propname": ":hasObjectType",
+                            "propname": ":hasCopyrightHolder",
                             "cardinality": "0-n",
                             "gui_order": 7
                         },
                         {
-                            "propname": ":hasCopyrightHolder",
+                            "propname": ":hasDescription",
                             "cardinality": "0-n",
                             "gui_order": 8
                         },
                         {
-                            "propname": ":hasDescription",
-                            "cardinality": "0-n",
-                            "gui_order": 9
-                        },
-                        {
                             "propname": ":hasPlace",
                             "cardinality": "0-1",
-                            "gui_order": 10
+                            "gui_order": 9
                         },
                         {
                             "propname": ":hasPart",
                             "cardinality": "0-n",
-                            "gui_order": 11
+                            "gui_order": 10
                         },
                         {
                             "propname": ":recordedAt",
                             "cardinality": "0-n",
-                            "gui_order": 12
+                            "gui_order": 11
                         },
                         {
                             "propname": ":hasContributor",
                             "cardinality": "0-n",
-                            "gui_order": 13
+                            "gui_order": 12
                         },
                         {
                             "propname": ":hasPiaUrl",
                             "cardinality": "0-1",
-                            "gui_order": 14
+                            "gui_order": 13
                         },
                         {
                             "propname": ":hasCreativeWorkStatus",
                             "cardinality": "0-1",
-                            "gui_order": 15
+                            "gui_order": 14
                         },
                         {
                             "propname": ":relatedLink",
                             "cardinality": "0-n",
-                            "gui_order": 16
+                            "gui_order": 15
                         },
                         {
                             "propname": ":hasArchiveLocation",
                             "cardinality": "0-n",
-                            "gui_order": 17
+                            "gui_order": 16
                         }
                     ]
                 },
@@ -5780,13 +5867,13 @@
                     "super": "Resource",
                     "cardinalities": [
                         {
-                            "propname": ":hasConcept",
-                            "cardinality": "0-n",
+                            "propname": ":hasName",
+                            "cardinality": "1",
                             "gui_order": 1
                         },
                         {
-                            "propname": ":hasName",
-                            "cardinality": "1",
+                            "propname": ":hasConcept",
+                            "cardinality": "0-n",
                             "gui_order": 2
                         },
                         {
@@ -5795,8 +5882,8 @@
                             "gui_order": 3
                         },
                         {
-                            "propname": ":hasDuration",
-                            "cardinality": "0-1",
+                            "propname": ":hasOrganizer",
+                            "cardinality": "0-n",
                             "gui_order": 4
                         },
                         {
@@ -5820,39 +5907,34 @@
                             "gui_order": 8
                         },
                         {
-                            "propname": ":hasOrganizer",
+                            "propname": ":hasSubEvent",
                             "cardinality": "0-n",
                             "gui_order": 9
                         },
                         {
-                            "propname": ":hasSubEvent",
-                            "cardinality": "0-n",
-                            "gui_order": 10
-                        },
-                        {
                             "propname": ":hasSuperEvent",
                             "cardinality": "0-1",
-                            "gui_order": 11
+                            "gui_order": 10
                         },
                         {
                             "propname": ":hasEventType",
                             "cardinality": "0-n",
-                            "gui_order": 12
+                            "gui_order": 11
                         },
                         {
                             "propname": ":recordedIn",
                             "cardinality": "0-n",
-                            "gui_order": 13
+                            "gui_order": 12
                         },
                         {
                             "propname": ":hasWorkFeatured",
                             "cardinality": "0-n",
-                            "gui_order": 14
+                            "gui_order": 13
                         },
                         {
                             "propname": ":hasPlace",
                             "cardinality": "0-n",
-                            "gui_order": 15
+                            "gui_order": 14
                         }
                     ]
                 },
@@ -5867,48 +5949,48 @@
                     "super": "Resource",
                     "cardinalities": [
                         {
-                            "propname": ":hasName",
-                            "cardinality": "1",
+                            "propname": ":hasGeoname",
+                            "cardinality": "0-1",
                             "gui_order": 1
-                        },
-                        {
-                            "propname": ":hasDescription",
-                            "cardinality": "0-n",
-                            "gui_order": 2
                         },
                         {
                             "propname": ":hasAlternateName",
                             "cardinality": "0-n",
+                            "gui_order": 2
+                        },
+                        {
+                            "propname": ":hasDescription",
+                            "cardinality": "0-n",
                             "gui_order": 3
-                        },
-                        {
-                            "propname": ":hasPiaUrl",
-                            "cardinality": "0-1",
-                            "gui_order": 4
-                        },
-                        {
-                            "propname": ":hasAtlasId",
-                            "cardinality": "0-1",
-                            "gui_order": 5
                         },
                         {
                             "propname": ":hasAddress",
                             "cardinality": "0-1",
-                            "gui_order": 6
+                            "gui_order": 4
                         },
                         {
                             "propname": ":hasLatitude",
                             "cardinality": "0-1",
-                            "gui_order": 7
+                            "gui_order": 5
                         },
                         {
                             "propname": ":hasLongitude",
                             "cardinality": "0-1",
-                            "gui_order": 8
+                            "gui_order": 6
                         },
                         {
                             "propname": ":sameAs",
                             "cardinality": "0-n",
+                            "gui_order": 7
+                        },
+                        {
+                            "propname": ":hasAtlasId",
+                            "cardinality": "0-1",
+                            "gui_order": 8
+                        },
+                        {
+                            "propname": ":hasPiaUrl",
+                            "cardinality": "0-1",
                             "gui_order": 9
                         }
                     ]
@@ -6189,7 +6271,7 @@
                "name": "hasRecordingPlace",
                "super": [
                  "hasValue",
-                 "schema:spatial"
+                 "schema:location"
                ],
                "object": "GeonameValue",
                "labels": {
@@ -6201,6 +6283,10 @@
              },
              {
                "name": "hasStage",
+               "super": [
+                 "hasValue",
+                 "schema:spatial"
+               ],
                "object": "TextValue",
                "labels": {
                  "de": "Bühne",
