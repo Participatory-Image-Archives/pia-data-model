@@ -6047,7 +6047,7 @@
          },
          {
            "name": "sva",
-           "label": "SVA (Schweizerische Volksliedarchiv) Data Model for audio-based resources",
+           "label": "SVA (Schweizerisches Volksliedarchiv) Data Model for audio-based resources",
            "properties": [
              {
                  "name": "hasSignature",
