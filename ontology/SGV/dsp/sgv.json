@@ -14,7 +14,7 @@
       "shortname": "sgv",
       "longname": "Digital Archive of the Swiss Society for Folklore Studies (SSFS)",
       "descriptions": {
-        "de": "Digitales Archiv der Schweizerischen Gesellschaft für Volkskunde (SGV), welches das Fotoarchiv und das Volksliedarchiv (VLA) umfasst.",
+        "de": "Digitales Archiv der Schweizerischen Gesellschaft für Volkskunde (SGV), welches das Fotoarchiv und das Volksliedarchiv umfasst.",
         "fr": "Archive numérique de la Société suisse des traditions populaires (SSTP) qui comprend les archives photographique et les archives des chansons populaires.",
         "en": "Digital Archive of the Swiss Society for Folklore Studies (SSFS), which contains the image and the folk song archives.",
         "it": "Archivio digitale della Società Svizzera per le Tradizioni Popolari (SSTP), che contiene il database delle immagini e l'archivo delle canzoni poplari."
@@ -3858,7 +3858,7 @@
            "status": true
          },
          {
-           "name": "vla-editors",
+           "name": "sva-editors",
            "descriptions": {
               "en": "Editors from the Volksliedarchiv"
             },
@@ -3898,7 +3898,7 @@
            "password": "1234",
            "lang": "de",
            "groups": [
-             ":vla-editors"
+             ":sva-editors"
            ],
            "projects": [
              ":admin"
@@ -3922,7 +3922,7 @@
       "ontologies": [
          {
             "name": "sgv",
-            "label": "SSFS Data Model for image-based resources",
+            "label": "SSFS/SGV (Schweizerische Gesellschaft für Volkskunde) Data Model for image-based resources",
             "properties": [
                 {
                     "name": "hasSignature",
@@ -4245,9 +4245,6 @@
                         "fr": "Nom",
                         "it": "Nome"
                     },
-                    "comments": {
-                          "en": "This property will no longer be used in :Concept and both hasPrefLabel and hasAltLabel will be leveraged"
-                        },
                     "gui_element": "SimpleText"
                 },
                 {
@@ -5653,58 +5650,58 @@
                     "super": "Resource",
                     "cardinalities": [
                         {
-                            "propname": ":hasDescription",
+                            "propname": ":hasPrefLabel",
                             "cardinality": "0-1",
                             "gui_order": 1
                         },
                         {
-                            "propname": ":hasPiaUrl",
-                            "cardinality": "0-1",
+                            "propname": ":hasAltLabel",
+                            "cardinality": "0-n",
                             "gui_order": 2
                         },
                         {
-                            "propname": ":hasPrefLabel",
+                            "propname": ":hasDescription",
                             "cardinality": "0-1",
                             "gui_order": 3
                         },
                         {
-                            "propname": ":hasAltLabel",
+                            "propname": ":hasScopeNote",
                             "cardinality": "0-n",
                             "gui_order": 4
                         },
                         {
-                            "propname": ":hasScopeNote",
-                            "cardinality": "0-n",
-                            "gui_order": 5
-                        },
-                        {
                             "propname": ":hasBroaderConcept",
                             "cardinality": "0-1",
-                            "gui_order": 6
+                            "gui_order": 5
                         },
                         {
                             "propname": ":hasNarrowerConcept",
                             "cardinality": "0-n",
-                            "gui_order": 7
+                            "gui_order": 6
                         },
                         {
                             "propname": ":inScheme",
                             "cardinality": "0-1",
-                            "gui_order": 8
+                            "gui_order": 7
                         },
                         {
                             "propname": ":topConceptOf",
                             "cardinality": "0-n",
-                            "gui_order": 9
+                            "gui_order": 8
                         },
                         {
                             "propname": ":hasCloseMatch",
                             "cardinality": "0-n",
-                            "gui_order": 10
+                            "gui_order": 9
                         },
                         {
                             "propname": ":hasRelatedConcept",
                             "cardinality": "0-n",
+                            "gui_order": 10
+                        },
+                        {
+                            "propname": ":hasPiaUrl",
+                            "cardinality": "0-1",
                             "gui_order": 11
                         },
                         {
@@ -6049,8 +6046,8 @@
             ]
          },
          {
-           "name": "vla",
-           "label": "VLA (Volksliedarchiv) Data Model for audio-based resources",
+           "name": "sva",
+           "label": "SVA (Schweizerische Volksliedarchiv) Data Model for audio-based resources",
            "properties": [
              {
                  "name": "hasSignature",
