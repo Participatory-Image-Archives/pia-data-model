@@ -6004,7 +6004,7 @@
                     "cardinalities": [
                         {
                             "propname": ":hasLicense",
-                            "cardinality": "1",
+                            "cardinality": "0-1",
                             "gui_order": 1
                         }
                     ]
@@ -6021,7 +6021,7 @@
                     "cardinalities": [
                         {
                             "propname": ":hasLicense",
-                            "cardinality": "1",
+                            "cardinality": "0-1",
                             "gui_order": 1
                         }
                     ]
@@ -6038,7 +6038,7 @@
                     "cardinalities": [
                         {
                             "propname": ":hasLicense",
-                            "cardinality": "1",
+                            "cardinality": "0-1",
                             "gui_order": 1
                         }
                     ]
