@@ -5690,12 +5690,12 @@
                             "gui_order": 8
                         },
                         {
-                            "propname": ":hasCloseMatch",
+                            "propname": ":hasRelatedConcept",
                             "cardinality": "0-n",
                             "gui_order": 9
                         },
                         {
-                            "propname": ":hasRelatedConcept",
+                            "propname": ":hasCloseMatch",
                             "cardinality": "0-n",
                             "gui_order": 10
                         },
