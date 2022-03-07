@@ -6662,9 +6662,14 @@
                    "gui_order": 20
                  },
                  {
+                   "propname": ":isPartOf",
+                   "cardinality": "0-n",
+                   "gui_order": 21
+                 },
+                 {
                    "propname": ":hasCopyrightHolder",
                    "cardinality": "1",
-                   "gui_order": 21
+                   "gui_order": 22
                  }
                ]
              },
