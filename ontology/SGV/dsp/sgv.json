@@ -6227,7 +6227,7 @@
                "name": "hasInstruments",
                "object": "ListValue",
                "labels": {
-                 "de": "Besetzung/Instrumente",
+                 "de": "Instrumente",
                  "en": "Instruments",
                  "fr": "Instruments"
                },
