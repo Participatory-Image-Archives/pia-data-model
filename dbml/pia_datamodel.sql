@@ -1,6 +1,6 @@
 -- SQL dump generated using DBML (dbml-lang.org)
 -- Database: PostgreSQL
--- Generated at: 2022-02-23T11:05:36.748Z
+-- Generated at: 2022-03-10T10:04:44.539Z
 
 CREATE TABLE "locations" (
   "id" SERIAL PRIMARY KEY,
@@ -266,8 +266,9 @@ CREATE TABLE "collection_alt_label" (
 CREATE TABLE "sets" (
   "id" SERIAL PRIMARY KEY,
   "label" varchar,
-  "description" varchar,
   "signatures" varchar,
+  "origin" varchar,
+  "description" varchar,
   "created_at" timestamp,
   "updated_at" timestamp
 );

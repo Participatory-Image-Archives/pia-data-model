@@ -387,8 +387,9 @@ Table sets {
   id int [pk, increment]
   label varchar
 
-  description varchar
   signatures varchar
+  origin varchar
+  description varchar
 
   created_at timestamp
   updated_at timestamp
