@@ -14,7 +14,7 @@
       "shortname": "sgv",
       "longname": "Digital Archive of the Swiss Society for Folklore Studies (SSFS)",
       "descriptions": {
-        "de": "Digitales Archiv der Schweizerischen Gesellschaft für Volkskunde (SGV), welches das Fotoarchiv und das Volksliedarchiv (VLA) umfasst.",
+        "de": "Digitales Archiv der Schweizerischen Gesellschaft für Volkskunde (SGV), welches das Fotoarchiv und das Volksliedarchiv umfasst.",
         "fr": "Archive numérique de la Société suisse des traditions populaires (SSTP) qui comprend les archives photographique et les archives des chansons populaires.",
         "en": "Digital Archive of the Swiss Society for Folklore Studies (SSFS), which contains the image and the folk song archives.",
         "it": "Archivio digitale della Società Svizzera per le Tradizioni Popolari (SSTP), che contiene il database delle immagini e l'archivo delle canzoni poplari."
@@ -596,21 +596,22 @@
             ]
           },
           {
-            "name": "musicgenre",
+            "name": "lyrics",
             "labels": {
-              "de": "Gattung (Musik)",
-              "en": "Music genre",
-              "fr": "Genre de musique",
-              "it": "Genere musicale"
+              "de": "Stück / Lied",
+              "en": "Instrumental music / Music with lyrics",
+              "fr": "Musique instrumentale / avec paroles"
             },
             "comments": {
-              "en": "Music genre"
+              "en": "Does the song have lyrics or is it only instrumental?"
             },
             "nodes": [
               {
                 "name": "Instrumental",
                 "labels": {
-                  "de": "Stück (nur Musik)"
+                  "de": "Stück (nur Musik)",
+                  "en": "Instrumental music",
+                  "fr": "Musique instrumentale"
                 },
                 "comments": {
                   "en": "Instrumental"
@@ -619,10 +620,12 @@
               {
                 "name": "Lied (Musik+Text)",
                 "labels": {
-                  "de": "Lied (Musik+Text)"
+                  "de": "Lied (Musik+Text)",
+                  "en": "Song with lyrics",
+                  "fr": "Chanson avec des paroles"
                 },
                 "comments": {
-                  "en": "Lied (Musik+Text)"
+                  "en": "Song with lyrics"
                 }
               }
             ]
@@ -639,27 +642,47 @@
               },
               "nodes": [
                 {
-                  "name": "Magnettonband",
+                  "name": "Audio",
                   "labels": {
-                    "de": "Magnettonband"
+                    "de": "Audio"
                   },
-                  "comments": {
-                    "en": "Magnettonband"
-                  }
+                  "nodes": [
+                    {
+                      "name": "Magnettonband",
+                      "labels": {
+                        "de": "Magnettonband"
+                      }
+                    },
+                    {
+                      "name": "Musikkassette",
+                      "labels": {
+                        "de": "Musikkassette"
+                      }
+                    }
+                  ]
                 },
                 {
-                  "name": "Musikkassette",
-                  "labels": {
-                    "de": "Musikkassette"
-                  },
-                  "comments": {
-                    "en": "Musikkassette"
-                  }
+                    "name": "Feldnotizen",
+                    "labels": {
+                        "de": "Feldnotizen"
+                    }
+                },
+                {
+                    "name": "Karteikarte",
+                    "labels": {
+                        "de": "Karteikarte"
+                    }
+                },
+                {
+                    "name": "Feldaufnahme",
+                    "labels": {
+                        "de": "Feldaufnahme"
+                    }
                 },
                   {
-                      "name": "S_11216",
+                      "name": "Liedzettel",
                       "labels": {
-                          "de": "Alben"
+                          "de": "Liedzettel"
                       }
                   },
                   {
@@ -1162,6 +1185,83 @@
                           "en": "Conservation and restoration",
                           "fr": "Conservation et restauration",
                           "it": "Conservazione e restauro"
+                      }
+                  }
+              ]
+          },
+          {
+              "name": "creativecommons",
+              "labels": {
+                  "de": "Creative-Commons-Lizenz (CC)",
+                  "en": "Creative Commons (CC) Licences",
+                  "fr": "Licences Creative Commons (CC)",
+                  "it": "Licenze Creative Commons (CC)"
+              },
+              "comments": {
+                  "de": "Creative Commons (CC)"
+              },
+              "nodes": [
+                  {
+                      "name": "https://creativecommons.org/licenses/by/4.0/",
+                      "labels": {
+                          "en": "CC BY 4.0"
+                      },
+                      "comments": {
+                        "en": "CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use."
+                      }
+                  },
+                  {
+                      "name": "https://creativecommons.org/licenses/by-sa/4.0/",
+                      "labels": {
+                          "en": "CC BY-SA 4.0"
+                      },
+                      "comments": {
+                        "en": "CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, so long as attribution is given to the creator. The license allows for commercial use. If you remix, adapt, or build upon the material, you must license the modified material under identical terms."
+                      }
+                  },
+                  {
+                      "name": "https://creativecommons.org/licenses/by-nc/4.0/",
+                      "labels": {
+                          "en": "CC BY-NC 4.0"
+                      },
+                      "comments": {
+                        "en": "CC BY-NC 4.0 (https://creativecommons.org/licenses/by-nc/4.0/). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. "
+                      }
+                  },
+                  {
+                      "name": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+                      "labels": {
+                          "en": "CC BY-NC-SA 4.0"
+                      },
+                      "comments": {
+                        "en": "CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/). This license allows reusers to distribute, remix, adapt, and build upon the material in any medium or format for noncommercial purposes only, and only so long as attribution is given to the creator. If you remix, adapt, or build upon the material, you must license the modified material under identical terms."
+                      }
+                  },
+                  {
+                      "name": "https://creativecommons.org/licenses/by-nd/4.0/",
+                      "labels": {
+                          "en": "CC BY-ND 4.0"
+                      },
+                      "comments": {
+                        "en": "CC BY-ND 4.0 (https://creativecommons.org/licenses/by-nd/4.0/). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, and only so long as attribution is given to the creator. The license allows for commercial use."
+                      }
+                  },
+                  {
+                      "name": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+                      "labels": {
+                          "en": "CC BY-NC-ND 4.0"
+                      },
+                      "comments": {
+                        "en": "CC BY-NC-ND 4.0 (https://creativecommons.org/licenses/by-nc-nd/4.0/). This license allows reusers to copy and distribute the material in any medium or format in unadapted form only, for noncommercial purposes only, and only so long as attribution is given to the creator."
+                      }
+                  },
+                  {
+                      "name": "https://creativecommons.org/publicdomain/zero/1.0/",
+                      "labels": {
+                          "en": "Creative Commons Public Domain Dedication (CC0)"
+                      },
+                      "comments": {
+                        "en": "Creative Commons Public Domain Dedication (CC0), known as CC Zero (https://creativecommons.org/publicdomain/zero/1.0/). CC0 is a public dedication tool, which allows creators to give up their copyright and put their works into the worldwide public domain. CC0 allows reusers to distribute, remix, adapt, and build upon the material in any medium or format, with no conditions."
                       }
                   }
               ]
@@ -3758,7 +3858,7 @@
            "status": true
          },
          {
-           "name": "vla-editors",
+           "name": "sva-editors",
            "descriptions": {
               "en": "Editors from the Volksliedarchiv"
             },
@@ -3798,7 +3898,7 @@
            "password": "1234",
            "lang": "de",
            "groups": [
-             ":vla-editors"
+             ":sva-editors"
            ],
            "projects": [
              ":admin"
@@ -3822,7 +3922,7 @@
       "ontologies": [
          {
             "name": "sgv",
-            "label": "SSFS Data Model for image-based resources",
+            "label": "SSFS/SGV (Schweizerische Gesellschaft für Volkskunde) Data Model for image-based resources",
             "properties": [
                 {
                     "name": "hasSignature",
@@ -3909,7 +4009,7 @@
                     "labels": {
                         "en": "Keywords",
                         "de": "Schlagworte",
-                        "fr": "Mots-cl\u00e9s",
+                        "fr": "Mots-clés",
                         "it": "Parola chiave"
                     },
                     "gui_element": "SimpleText"
@@ -3967,16 +4067,43 @@
                         "hasLinkTo",
                         "schema:isPartOf"
                     ],
-                    "object": "Resource",
+                    "object": ":Object",
                     "labels": {
-                        "en": "Is part of",
-                        "de": "Teil von",
-                        "fr": "Fait partie de ",
-                        "it": "\u00c8 parte di"
+                        "en": "is Part Of",
+                        "de": "ist Teil von",
+                        "fr": "Fait partie de",
+                        "it": "è parte di"
                     },
-                    "comments": {
-                          "en": "This property should only be used to assert that an object or a dataset is part of an object, a dataset or a collection. Other resources/classes should not be leveraged."
-                        },
+                    "gui_element": "Searchbox"
+                },
+                {
+                    "name": "hasCollection",
+                    "super": [
+                        "hasLinkTo",
+                        "schema:isPartOf"
+                    ],
+                    "object": ":Collection",
+                    "labels": {
+                        "en": "Collection",
+                        "de": "Sammlung",
+                        "fr": "Collection",
+                        "it": "Collezione"
+                    },
+                    "gui_element": "Searchbox"
+                },
+                {
+                    "name": "hasDataset",
+                    "super": [
+                        "hasLinkTo",
+                        "schema:isPartOf"
+                    ],
+                    "object": ":Dataset",
+                    "labels": {
+                        "en": "Dataset",
+                        "de": "Datensatz",
+                        "fr": "Set de données",
+                        "it": "Dataset"
+                    },
                     "gui_element": "Searchbox"
                 },
                 {
@@ -3987,9 +4114,9 @@
                     ],
                     "object": "ListValue",
                     "labels": {
-                        "en": "Type of object",
-                        "de": "Objekttyp",
-                        "fr": "Type d'objet",
+                        "en": "Type of object / Carrier",
+                        "de": "Objekttyp / Originalträger",
+                        "fr": "Type d'objet / Support d'origine",
                         "it": "Tipologia di obiettivo"
                     },
                     "gui_element": "List",
@@ -4007,8 +4134,7 @@
                     "labels": {
                         "en": "Technique / Medium",
                         "de": "Vorlage",
-                        "fr": "Technique / Media",
-                        "it": "Supporto"
+                        "fr": "Technique / Media"
                     },
                     "gui_element": "List",
                     "gui_attributes": {
@@ -4119,10 +4245,22 @@
                         "fr": "Nom",
                         "it": "Nome"
                     },
-                    "comments": {
-                          "en": "This property will no longer be used in :Concept and both hasPrefLabel and hasAltLabel will be leveraged"
-                        },
                     "gui_element": "SimpleText"
+                },
+                {
+                    "name": "hasGeoname",
+                    "super": [
+                        "hasValue",
+                        "schema:location"
+                    ],
+                    "object": "GeonameValue",
+                    "labels": {
+                        "en": "Name (GeoNames)",
+                        "de": "Name (GeoNames)",
+                        "fr": "Nom (GeoNames)",
+                        "it": "Nome (GeoNames)"
+                    },
+                    "gui_element": "Geonames"
                 },
                 {
                     "name": "hasDescription",
@@ -4147,7 +4285,7 @@
                     ],
                     "object": ":Agent",
                     "labels": {
-                        "en": "Related to (Person)",
+                        "en": "Related to (Agent)",
                         "de": "Relativ zu",
                         "fr": "Relatif à"
                     },
@@ -4349,7 +4487,7 @@
                     "labels": {
                         "en": "Duration",
                         "de": "Dauer",
-                        "fr": "Dur\u00e9e"
+                        "fr": "Durée"
                     },
                     "gui_element": "SimpleText"
                 },
@@ -4474,81 +4612,6 @@
                       "en": "URL of the same item on the PIA interface"
                     },
                     "gui_element": "SimpleText"
-                },
-                {
-                    "name": "hasDateCreated",
-                    "super": [
-                        "hasValue",
-                        "schema:dateCreated"
-                    ],
-                    "object": "DateValue",
-                    "labels": {
-                        "en": "Created Date",
-                        "de": "Erstelldatum",
-                        "fr": "Date de cr\u00e9ation",
-                        "it": "Data di creazione"
-                    },
-                    "gui_element": "Date"
-                },
-                {
-                    "name": "hasDateModified",
-                    "super": [
-                        "hasValue",
-                        "schema:dateModified"
-                    ],
-                    "object": "DateValue",
-                    "labels": {
-                        "en": "Modified Date",
-                        "de": "Ge\u00e4ndertes Datum",
-                        "fr": "Date de modification",
-                        "it": "Data della modifica"
-                    },
-                    "gui_element": "Date"
-                },
-                {
-                    "name": "hasDatePublished",
-                    "super": [
-                        "hasValue",
-                        "schema:datePublished"
-                    ],
-                    "object": "DateValue",
-                    "labels": {
-                        "en": "Publication Date",
-                        "de": "Ver\u00f6ffentlichungsdatum",
-                        "fr": "Date de publication",
-                        "it": "Data di pubblicazione"
-                    },
-                    "gui_element": "Date"
-                },
-                {
-                    "name": "hasStartDate",
-                    "super": [
-                        "hasValue",
-                        "schema:startDate"
-                    ],
-                    "object": "DateValue",
-                    "labels": {
-                        "en": "Start Date",
-                        "de": "Anfangsdatum",
-                        "fr": "Date de d\u00e9but",
-                        "it": "Data di inizio"
-                    },
-                    "gui_element": "Date"
-                },
-                {
-                    "name": "hasEndDate",
-                    "super": [
-                        "hasValue",
-                        "schema:endDate"
-                    ],
-                    "object": "DateValue",
-                    "labels": {
-                        "en": "End Date",
-                        "de": "Enddatum",
-                        "fr": "Date de fin",
-                        "it": "Data di fine"
-                    },
-                    "gui_element": "Date"
                 },
                 {
                     "name": "hasCreativeWorkStatus",
@@ -4747,20 +4810,6 @@
                     "gui_element": "Searchbox"
                 },
                 {
-                    "name": "hasLegalName",
-                    "super": [
-                        "hasValue",
-                        "schema:legalName"
-                    ],
-                    "object": "TextValue",
-                    "labels": {
-                        "en": "Legal Name",
-                        "de": "Juristischer Name",
-                        "fr": "Nom l\u00e9gal"
-                    },
-                    "gui_element": "SimpleText"
-                },
-                {
                     "name": "hasGivenName",
                     "super": [
                         "hasValue",
@@ -4791,23 +4840,6 @@
                     "gui_element": "SimpleText"
                 },
                 {
-                    "name": "hasPlaceOfOrigin",
-                    "super": [
-                        "hasLinkTo"
-                    ],
-                    "object": ":Place",
-                    "labels": {
-                        "en": "Place(s) of origin",
-                        "de": "Heimatort / Herkunft",
-                        "fr": "Lieu(x) d'origine",
-                        "it": "Luogo di origine"
-                    },
-                    "comments": {
-                          "en": "This property has to be understood in the Swiss context where citizens have a place of origin on their passports, which can complement the HasBirthPlace property."
-                        },
-                    "gui_element": "Searchbox"
-                },
-                {
                     "name": "hasAtlasId",
                     "super": [
                         "hasValue",
@@ -4836,34 +4868,6 @@
                         "it": "Indirizzo"
                     },
                     "gui_element": "SimpleText"
-                },
-                {
-                    "name": "containedInPlace",
-                    "super": [
-                        "hasLinkTo",
-                        "schema:containedInPlace"
-                    ],
-                    "object": ":Place",
-                    "labels": {
-                        "en": "Contained in (Place)",
-                        "de": "Enthalten in (Ort)",
-                        "fr": "Contenu dans (Lieu)"
-                    },
-                    "gui_element": "Searchbox"
-                },
-                {
-                    "name": "containsPlace",
-                    "super": [
-                        "hasLinkTo",
-                        "schema:containsPlace"
-                    ],
-                    "object": ":Place",
-                    "labels": {
-                        "en": "Contains (Place)",
-                        "de": "Enth\u00e4lt (Ort)",
-                        "fr": "Contient (Lieu)"
-                    },
-                    "gui_element": "Searchbox"
                 },
                 {
                     "name": "hasLatitude",
@@ -5124,7 +5128,7 @@
                         "hasValue",
                         "schema:license"
                     ],
-                    "object": "UriValue",
+                    "object": "ListValue",
                     "labels": {
                         "en": "License",
                         "de": "Lizenz",
@@ -5132,9 +5136,12 @@
                         "it": "Licenza"
                     },
                     "comments": {
-                          "en": "Please use one of the Creative Commons URL."
+                          "en": "Please choose one of the Creative Commons URL."
                         },
-                    "gui_element": "SimpleText"
+                    "gui_element": "List",
+                    "gui_attributes": {
+                        "hlist": "creativecommons"
+                    }
                 },
                 {
                     "name": "hasAgentType",
@@ -5160,15 +5167,12 @@
                         "hasLinkTo",
                         "schema:subjectOf"
                     ],
-                    "object": "Resource",
+                    "object": ":Object",
                     "labels": {
                         "en": "Subject Of",
                         "de": "Subjekt von",
                         "fr": "Sujet de"
                     },
-                    "comments": {
-                          "en": "This property should be used either to assert that 1) an Agent is subject of an Object or 2) that a Concept is the suject of an Object, a Dataset, a Collection or an Event."
-                        },
                     "gui_element": "Searchbox"
                 },
                 {
@@ -5275,154 +5279,149 @@
                             "gui_order": 8
                         },
                         {
-                            "propname": ":isPartOf",
+                            "propname": ":hasCollection",
                             "cardinality": "0-n",
                             "gui_order": 9
                         },
                         {
-                            "propname": ":hasObjectType",
+                            "propname": ":hasDataset",
                             "cardinality": "0-n",
                             "gui_order": 10
                         },
                         {
-                            "propname": ":hasMedium",
+                            "propname": ":hasObjectType",
                             "cardinality": "0-n",
                             "gui_order": 11
                         },
                         {
-                            "propname": ":hasFormat",
+                            "propname": ":hasMedium",
                             "cardinality": "0-n",
                             "gui_order": 12
                         },
                         {
-                            "propname": ":hasCopyrightHolder",
+                            "propname": ":hasFormat",
                             "cardinality": "0-n",
                             "gui_order": 13
                         },
                         {
-                            "propname": ":isVisuallySimilarTo",
+                            "propname": ":hasCopyrightHolder",
                             "cardinality": "0-n",
                             "gui_order": 14
                         },
                         {
-                            "propname": ":hasOnAlbumPage",
-                            "cardinality": "0-1",
+                            "propname": ":isVisuallySimilarTo",
+                            "cardinality": "0-n",
                             "gui_order": 15
                         },
                         {
-                            "propname": ":hasVerso",
+                            "propname": ":hasOnAlbumPage",
                             "cardinality": "0-1",
                             "gui_order": 16
                         },
                         {
-                            "propname": ":hasSeqNr",
+                            "propname": ":hasVerso",
                             "cardinality": "0-1",
                             "gui_order": 17
                         },
                         {
-                            "propname": ":hasDescription",
-                            "cardinality": "0-n",
+                            "propname": ":hasSeqNr",
+                            "cardinality": "0-1",
                             "gui_order": 18
                         },
                         {
-                            "propname": ":isInLanguage",
+                            "propname": ":hasDescription",
                             "cardinality": "0-n",
                             "gui_order": 19
                         },
                         {
-                            "propname": ":hasDuration",
-                            "cardinality": "0-1",
+                            "propname": ":isInLanguage",
+                            "cardinality": "0-n",
                             "gui_order": 20
                         },
                         {
-                            "propname": ":hasFps",
+                            "propname": ":hasDuration",
                             "cardinality": "0-1",
                             "gui_order": 21
                         },
                         {
-                            "propname": ":hasInterval",
+                            "propname": ":hasFps",
                             "cardinality": "0-1",
                             "gui_order": 22
                         },
                         {
-                            "propname": ":hasIndexing",
+                            "propname": ":hasInterval",
                             "cardinality": "0-1",
                             "gui_order": 23
                         },
                         {
-                            "propname": ":hasPlace",
+                            "propname": ":hasIndexing",
                             "cardinality": "0-1",
                             "gui_order": 24
                         },
                         {
-                            "propname": ":hasPart",
-                            "cardinality": "0-n",
+                            "propname": ":hasPlace",
+                            "cardinality": "0-1",
                             "gui_order": 25
                         },
                         {
-                            "propname": ":recordedAt",
+                            "propname": ":hasPart",
                             "cardinality": "0-n",
                             "gui_order": 26
                         },
                         {
-                            "propname": ":hasContributor",
+                            "propname": ":isPartOf",
                             "cardinality": "0-n",
                             "gui_order": 27
                         },
                         {
-                            "propname": ":hasPiaUrl",
-                            "cardinality": "0-1",
+                            "propname": ":recordedAt",
+                            "cardinality": "0-n",
                             "gui_order": 28
                         },
                         {
-                            "propname": ":hasDateCreated",
-                            "cardinality": "0-1",
+                            "propname": ":hasContributor",
+                            "cardinality": "0-n",
                             "gui_order": 29
                         },
                         {
-                            "propname": ":hasDateModified",
+                            "propname": ":hasPiaUrl",
                             "cardinality": "0-1",
                             "gui_order": 30
                         },
                         {
-                            "propname": ":hasDatePublished",
+                            "propname": ":hasCreativeWorkStatus",
                             "cardinality": "0-1",
                             "gui_order": 31
                         },
                         {
-                            "propname": ":hasCreativeWorkStatus",
-                            "cardinality": "0-1",
-                            "gui_order": 32
-                        },
-                        {
                             "propname": ":relatedLink",
                             "cardinality": "0-n",
-                            "gui_order": 33
+                            "gui_order": 32
                         },
                         {
                             "propname": ":hasComment",
                             "cardinality": "0-n",
-                            "gui_order": 34
+                            "gui_order": 33
                         },
                         {
                             "propname": ":hasArchiveLocation",
                             "cardinality": "0-n",
-                            "gui_order": 35
+                            "gui_order": 34
                         },
                         {
                             "propname": ":hasImageRepresentation",
                             "cardinality": "0-n",
-                            "gui_order": 36
+                            "gui_order": 35
                         },
                         {
                             "propname": ":hasAudioRepresentation",
                             "cardinality": "0-n",
-                            "gui_order": 37
+                            "gui_order": 36
                         },
                         {
                             "propname": ":hasMovingImageRepresentation",
                             "cardinality": "0-n",
-                            "gui_order": 38
+                            "gui_order": 37
                         }
                     ]
                 },
@@ -5462,79 +5461,59 @@
                             "gui_order": 5
                         },
                         {
-                            "propname": ":isPartOf",
+                            "propname": ":hasCollection",
                             "cardinality": "0-n",
                             "gui_order": 6
                         },
                         {
-                            "propname": ":hasObjectType",
+                            "propname": ":hasCopyrightHolder",
                             "cardinality": "0-n",
                             "gui_order": 7
                         },
                         {
-                            "propname": ":hasCopyrightHolder",
+                            "propname": ":hasDescription",
                             "cardinality": "0-n",
                             "gui_order": 8
                         },
                         {
-                            "propname": ":hasDescription",
-                            "cardinality": "0-n",
-                            "gui_order": 9
-                        },
-                        {
                             "propname": ":hasPlace",
                             "cardinality": "0-1",
-                            "gui_order": 10
+                            "gui_order": 9
                         },
                         {
                             "propname": ":hasPart",
                             "cardinality": "0-n",
-                            "gui_order": 11
+                            "gui_order": 10
                         },
                         {
                             "propname": ":recordedAt",
                             "cardinality": "0-n",
-                            "gui_order": 12
+                            "gui_order": 11
                         },
                         {
                             "propname": ":hasContributor",
                             "cardinality": "0-n",
-                            "gui_order": 13
+                            "gui_order": 12
                         },
                         {
                             "propname": ":hasPiaUrl",
                             "cardinality": "0-1",
-                            "gui_order": 14
-                        },
-                        {
-                            "propname": ":hasDateCreated",
-                            "cardinality": "0-1",
-                            "gui_order": 15
-                        },
-                        {
-                            "propname": ":hasDateModified",
-                            "cardinality": "0-1",
-                            "gui_order": 16
-                        },
-                        {
-                            "propname": ":hasDatePublished",
-                            "cardinality": "0-1",
-                            "gui_order": 17
+                            "gui_order": 13
                         },
                         {
                             "propname": ":hasCreativeWorkStatus",
                             "cardinality": "0-1",
-                            "gui_order": 18
+                            "gui_order": 14
                         },
                         {
                             "propname": ":relatedLink",
                             "cardinality": "0-n",
-                            "gui_order": 19
+                            "gui_order": 15
                         },
                         {
                             "propname": ":hasArchiveLocation",
                             "cardinality": "0-n",
-                            "gui_order": 20
+                            "gui_order": 16
                         }
                     ]
                 },
@@ -5649,29 +5628,14 @@
                             "gui_order": 20
                         },
                         {
-                            "propname": ":hasDateCreated",
+                            "propname": ":hasCreativeWorkStatus",
                             "cardinality": "0-1",
                             "gui_order": 21
                         },
                         {
-                            "propname": ":hasDateModified",
-                            "cardinality": "0-1",
-                            "gui_order": 22
-                        },
-                        {
-                            "propname": ":hasDatePublished",
-                            "cardinality": "0-1",
-                            "gui_order": 23
-                        },
-                        {
-                            "propname": ":hasCreativeWorkStatus",
-                            "cardinality": "0-1",
-                            "gui_order": 24
-                        },
-                        {
                             "propname": ":relatedLink",
                             "cardinality": "0-n",
-                            "gui_order": 25
+                            "gui_order": 22
                         }
                     ]
                 },
@@ -5686,47 +5650,47 @@
                     "super": "Resource",
                     "cardinalities": [
                         {
-                            "propname": ":hasDescription",
+                            "propname": ":hasPrefLabel",
                             "cardinality": "0-1",
                             "gui_order": 1
                         },
                         {
-                            "propname": ":hasPiaUrl",
-                            "cardinality": "0-1",
+                            "propname": ":hasAltLabel",
+                            "cardinality": "0-n",
                             "gui_order": 2
                         },
                         {
-                            "propname": ":hasPrefLabel",
+                            "propname": ":hasDescription",
                             "cardinality": "0-1",
                             "gui_order": 3
                         },
                         {
-                            "propname": ":hasAltLabel",
+                            "propname": ":hasScopeNote",
                             "cardinality": "0-n",
                             "gui_order": 4
                         },
                         {
-                            "propname": ":hasScopeNote",
-                            "cardinality": "0-n",
-                            "gui_order": 5
-                        },
-                        {
                             "propname": ":hasBroaderConcept",
                             "cardinality": "0-1",
-                            "gui_order": 6
+                            "gui_order": 5
                         },
                         {
                             "propname": ":hasNarrowerConcept",
                             "cardinality": "0-n",
-                            "gui_order": 7
+                            "gui_order": 6
                         },
                         {
                             "propname": ":inScheme",
                             "cardinality": "0-1",
-                            "gui_order": 8
+                            "gui_order": 7
                         },
                         {
                             "propname": ":topConceptOf",
+                            "cardinality": "0-n",
+                            "gui_order": 8
+                        },
+                        {
+                            "propname": ":hasRelatedConcept",
                             "cardinality": "0-n",
                             "gui_order": 9
                         },
@@ -5736,19 +5700,14 @@
                             "gui_order": 10
                         },
                         {
-                            "propname": ":hasRelatedConcept",
-                            "cardinality": "0-n",
+                            "propname": ":hasPiaUrl",
+                            "cardinality": "0-1",
                             "gui_order": 11
                         },
                         {
                             "propname": ":sameAs",
                             "cardinality": "0-n",
                             "gui_order": 12
-                        },
-                        {
-                            "propname": ":isSubjectOf",
-                            "cardinality": "0-n",
-                            "gui_order": 13
                         }
                     ]
                 },
@@ -5868,39 +5827,29 @@
                             "gui_order": 21
                         },
                         {
-                            "propname": ":hasLegalName",
+                            "propname": ":hasGivenName",
                             "cardinality": "0-1",
                             "gui_order": 22
                         },
                         {
-                            "propname": ":hasGivenName",
+                            "propname": ":hasFamilyName",
                             "cardinality": "0-1",
                             "gui_order": 23
                         },
                         {
-                            "propname": ":hasFamilyName",
-                            "cardinality": "0-1",
-                            "gui_order": 24
-                        },
-                        {
-                            "propname": ":hasPlaceOfOrigin",
-                            "cardinality": "0-n",
-                            "gui_order": 25
-                        },
-                        {
                             "propname": ":sameAs",
                             "cardinality": "0-n",
-                            "gui_order": 26
+                            "gui_order": 24
                         },
                         {
                             "propname": ":hasAgentType",
                             "cardinality": "0-1",
-                            "gui_order": 27
+                            "gui_order": 25
                         },
                         {
                             "propname": ":isSubjectOf",
                             "cardinality": "0-n",
-                            "gui_order": 28
+                            "gui_order": 26
                         }
                     ]
                 },
@@ -5915,13 +5864,13 @@
                     "super": "Resource",
                     "cardinalities": [
                         {
-                            "propname": ":hasConcept",
-                            "cardinality": "0-n",
+                            "propname": ":hasName",
+                            "cardinality": "1",
                             "gui_order": 1
                         },
                         {
-                            "propname": ":hasName",
-                            "cardinality": "1",
+                            "propname": ":hasConcept",
+                            "cardinality": "0-n",
                             "gui_order": 2
                         },
                         {
@@ -5930,8 +5879,8 @@
                             "gui_order": 3
                         },
                         {
-                            "propname": ":hasDuration",
-                            "cardinality": "0-1",
+                            "propname": ":hasOrganizer",
+                            "cardinality": "0-n",
                             "gui_order": 4
                         },
                         {
@@ -5945,54 +5894,44 @@
                             "gui_order": 6
                         },
                         {
-                            "propname": ":hasStartDate",
+                            "propname": ":hasDate",
                             "cardinality": "0-1",
                             "gui_order": 7
                         },
                         {
-                            "propname": ":hasEndDate",
+                            "propname": ":hasEventStatus",
                             "cardinality": "0-1",
                             "gui_order": 8
                         },
                         {
-                            "propname": ":hasEventStatus",
-                            "cardinality": "0-1",
-                            "gui_order": 9
-                        },
-                        {
-                            "propname": ":hasOrganizer",
-                            "cardinality": "0-n",
-                            "gui_order": 10
-                        },
-                        {
                             "propname": ":hasSubEvent",
                             "cardinality": "0-n",
-                            "gui_order": 11
+                            "gui_order": 9
                         },
                         {
                             "propname": ":hasSuperEvent",
                             "cardinality": "0-1",
-                            "gui_order": 12
+                            "gui_order": 10
                         },
                         {
                             "propname": ":hasEventType",
                             "cardinality": "0-n",
-                            "gui_order": 13
+                            "gui_order": 11
                         },
                         {
                             "propname": ":recordedIn",
                             "cardinality": "0-n",
-                            "gui_order": 14
+                            "gui_order": 12
                         },
                         {
                             "propname": ":hasWorkFeatured",
                             "cardinality": "0-n",
-                            "gui_order": 15
+                            "gui_order": 13
                         },
                         {
                             "propname": ":hasPlace",
                             "cardinality": "0-n",
-                            "gui_order": 16
+                            "gui_order": 14
                         }
                     ]
                 },
@@ -6007,59 +5946,49 @@
                     "super": "Resource",
                     "cardinalities": [
                         {
-                            "propname": ":hasName",
-                            "cardinality": "1",
+                            "propname": ":hasGeoname",
+                            "cardinality": "0-1",
                             "gui_order": 1
-                        },
-                        {
-                            "propname": ":hasDescription",
-                            "cardinality": "0-n",
-                            "gui_order": 2
                         },
                         {
                             "propname": ":hasAlternateName",
                             "cardinality": "0-n",
+                            "gui_order": 2
+                        },
+                        {
+                            "propname": ":hasDescription",
+                            "cardinality": "0-n",
                             "gui_order": 3
-                        },
-                        {
-                            "propname": ":hasPiaUrl",
-                            "cardinality": "0-1",
-                            "gui_order": 4
-                        },
-                        {
-                            "propname": ":hasAtlasId",
-                            "cardinality": "0-1",
-                            "gui_order": 5
                         },
                         {
                             "propname": ":hasAddress",
                             "cardinality": "0-1",
-                            "gui_order": 6
-                        },
-                        {
-                            "propname": ":containedInPlace",
-                            "cardinality": "0-1",
-                            "gui_order": 7
-                        },
-                        {
-                            "propname": ":containsPlace",
-                            "cardinality": "0-n",
-                            "gui_order": 8
+                            "gui_order": 4
                         },
                         {
                             "propname": ":hasLatitude",
                             "cardinality": "0-1",
-                            "gui_order": 9
+                            "gui_order": 5
                         },
                         {
                             "propname": ":hasLongitude",
                             "cardinality": "0-1",
-                            "gui_order": 10
+                            "gui_order": 6
                         },
                         {
                             "propname": ":sameAs",
                             "cardinality": "0-n",
-                            "gui_order": 11
+                            "gui_order": 7
+                        },
+                        {
+                            "propname": ":hasAtlasId",
+                            "cardinality": "0-1",
+                            "gui_order": 8
+                        },
+                        {
+                            "propname": ":hasPiaUrl",
+                            "cardinality": "0-1",
+                            "gui_order": 9
                         }
                     ]
                 },
@@ -6075,7 +6004,7 @@
                     "cardinalities": [
                         {
                             "propname": ":hasLicense",
-                            "cardinality": "1",
+                            "cardinality": "0-1",
                             "gui_order": 1
                         }
                     ]
@@ -6092,7 +6021,7 @@
                     "cardinalities": [
                         {
                             "propname": ":hasLicense",
-                            "cardinality": "1",
+                            "cardinality": "0-1",
                             "gui_order": 1
                         }
                     ]
@@ -6109,12 +6038,745 @@
                     "cardinalities": [
                         {
                             "propname": ":hasLicense",
-                            "cardinality": "1",
+                            "cardinality": "0-1",
                             "gui_order": 1
                         }
                     ]
                 }
             ]
+         },
+         {
+           "name": "sva",
+           "label": "SVA (Schweizerisches Volksliedarchiv) Data Model for audio-based resources",
+           "properties": [
+             {
+                 "name": "hasSignature",
+                 "super": [
+                     "hasValue",
+                     "schema:identifier"
+                 ],
+                 "object": "TextValue",
+                 "labels": {
+                     "en": "Signature",
+                     "de": "Signatur",
+                     "fr": "Cote",
+                     "it": "Segnatura"
+                 },
+                 "gui_element": "SimpleText"
+             },
+             {
+               "name": "hasTitle",
+               "super": [
+                   "hasValue",
+                   "schema:name"
+               ],
+               "object": "TextValue",
+               "labels": {
+                 "de": "Titel",
+                 "en": "Title",
+                 "fr": "Titre"
+               },
+               "gui_element": "SimpleText"
+             },
+             {
+               "name": "hasDuration",
+               "super": [
+                   "hasValue",
+                   "schema:duration"
+               ],
+               "object": "TextValue",
+               "labels": {
+                 "de": "Dauer",
+                 "en": "Duration",
+                 "fr": "Durée"
+               },
+               "gui_element": "SimpleText"
+             },
+             {
+                 "name": "hasRecordingDate",
+                 "super": [
+                     "hasValue",
+                     "schema:temporal"
+                 ],
+                 "object": "DateValue",
+                 "labels": {
+                     "en": "Recording date",
+                     "de": "Aufnahmedatum",
+                     "fr": "Daten d'enregistrement"
+                 },
+                 "gui_element": "Date"
+             },
+             {
+                 "name": "hasDate",
+                 "super": [
+                     "hasValue",
+                     "schema:temporal"
+                 ],
+                 "object": "DateValue",
+                 "labels": {
+                     "en": "Date",
+                     "de": "Datum",
+                     "fr": "Date",
+                     "it": "Data"
+                 },
+                 "gui_element": "Date"
+             },
+             {
+               "name": "hasPerformer",
+               "super": [
+                 "hasLinkTo",
+                 "schema:contributor"
+               ],
+               "object": ":Agent",
+               "labels": {
+                 "de": "Interpret:innen",
+                 "en": "Performer",
+                 "fr": "Interprète"
+               },
+               "gui_element": "Searchbox"
+             },
+             {
+               "name": "hasOrigin",
+               "object": "TextValue",
+               "labels": {
+                 "de": "Herkunft",
+                 "en": "Origin",
+                 "fr": "Origine"
+               },
+               "gui_element": "SimpleText"
+             },
+             {
+               "name": "hasIncipit",
+               "object": "TextValue",
+               "labels": {
+                 "de": "Incipit"
+               },
+               "gui_element": "Richtext"
+             },
+             {
+               "name": "hasOldNr",
+               "object": "TextValue",
+               "labels": {
+                 "de": "Alte Signatur Tonband",
+                 "en": "Former identifier",
+                 "fr": "Ancien identifiant"
+               },
+               "gui_element": "SimpleText"
+             },
+             {
+               "name": "hasSongNr",
+               "super": [
+                   "hasValue",
+                   "schema:identifier"
+               ],
+               "object": "TextValue",
+               "labels": {
+                 "de": "Liednummer",
+                 "en": "Song number",
+                 "fr": "Numéro de la chanson"
+               },
+               "gui_element": "SimpleText"
+             },
+             {
+               "name": "hasObjectType",
+               "super": [
+                   "hasValue",
+                   "schema:material"
+               ],
+               "object": "ListValue",
+               "labels": {
+                   "en": "Type of object / Carrier",
+                   "de": "Objekttyp / Originalträger",
+                   "fr": "Type d'objet / Support d'origine",
+                   "it": "Tipologia di obiettivo"
+               },
+               "gui_element": "List",
+               "gui_attributes": {
+                   "hlist": "objecttype"
+               }
+             },
+             {
+               "name": "hasLyrics",
+               "object": "ListValue",
+               "labels": {
+                 "de": "Stück / Lied",
+                 "en": "Instrumental / Music with lyrics",
+                 "fr": "Musique instrumentale / avec paroles"
+               },
+               "gui_element": "List",
+               "gui_attributes": {
+                   "hlist": "lyrics"
+               }
+             },
+             {
+                 "name": "hasKeywords",
+                 "super": [
+                     "hasValue",
+                     "schema:keywords"
+                 ],
+                 "object": "TextValue",
+                 "labels": {
+                     "en": "Keywords",
+                     "de": "Schlagworte",
+                     "fr": "Mots-cl\u00e9s",
+                     "it": "Parola chiave"
+                 },
+                 "gui_element": "SimpleText"
+             },
+             {
+               "name": "hasInstruments",
+               "object": "ListValue",
+               "labels": {
+                 "de": "Instrumente",
+                 "en": "Instruments",
+                 "fr": "Instruments"
+               },
+               "gui_element": "List",
+               "gui_attributes": {
+                   "hlist": "instruments"
+               }
+             },
+             {
+               "name": "hasComposer",
+               "super": [
+                   "hasLinkTo",
+                   "schema:creator"
+               ],
+               "object": ":Agent",
+               "labels": {
+                 "de": "Komponist:in",
+                 "en": "Composer",
+                 "fr": "Compositeur/Compositrice"
+               },
+               "gui_element": "Searchbox"
+             },
+             {
+               "name": "hasSongwriter",
+               "super": [
+                 "hasLinkTo",
+                 "schema:creator"
+               ],
+               "object": ":Agent",
+               "labels": {
+                 "de": "Texter:in",
+                 "en": "Songwriter",
+                 "fr": "Auteur-compositeur"
+               },
+               "gui_element": "Searchbox"
+             },
+             {
+               "name": "hasRecordingPlace",
+               "super": [
+                 "hasValue",
+                 "schema:location"
+               ],
+               "object": "GeonameValue",
+               "labels": {
+                 "de": "Aufnahmeort",
+                 "en": "Recording Place",
+                 "fr": "Lieu d'enregistrement"
+               },
+               "gui_element": "Geonames"
+             },
+             {
+               "name": "hasStage",
+               "super": [
+                 "hasValue",
+                 "schema:spatial"
+               ],
+               "object": "TextValue",
+               "labels": {
+                 "de": "Bühne",
+                 "en": "Stage",
+                 "fr": "Scène"
+               },
+               "gui_element": "SimpleText"
+             },
+             {
+                 "name": "hasAudioRepresentation",
+                 "super": [
+                     "hasRepresentation"
+                 ],
+                 "object": ":AudioRepresentation",
+                 "labels": {
+                     "en": "has Representation (Audio)",
+                     "de": "hat Repräsentation (Audio)",
+                     "fr": "a comme représentation (Audio)",
+                     "it": "ha come rappresentazione (Audio)"
+                 },
+                 "comments": {
+                       "en": "This property is link a an object to an audio representation."
+                     },
+                 "gui_element": "Searchbox"
+               },
+             {
+               "name": "IsStreamingAllowed",
+               "object": "BooleanValue",
+               "labels": {
+                 "de": "Streaming erlaubt",
+                 "en": "Streaming allowed",
+                 "fr": "Streaming autorisé"
+               },
+               "gui_element": "Checkbox"
+             },
+             {
+                 "name": "hasComment",
+                 "super": [
+                     "hasValue"
+                 ],
+                 "object": "TextValue",
+                 "labels": {
+                     "en": "Comments",
+                     "de": "Kommentare",
+                     "fr": "Commentaires",
+                     "it": "Commentaires"
+                 },
+                 "gui_element": "Textarea"
+             },
+             {
+               "name": "hasSimilarTracks",
+               "object": "TextValue",
+               "labels": {
+                 "de": "Ähnliche Lieder/Stücke",
+                 "en": "Similar Tracks",
+                 "fr": "Chansons similaires"
+               },
+               "gui_element": "SimpleText"
+             },
+             {
+               "name": "hasCollection",
+               "super": [
+                   "hasLinkTo",
+                   "schema:isPartOf"
+               ],
+               "object": ":Collection",
+               "labels": {
+                 "de": "Sammlung",
+                 "en": "Collection",
+                 "fr": "Collection"
+               },
+               "gui_element": "Searchbox"
+             },
+             {
+               "name": "isPartOf",
+               "super": [
+                   "hasValue",
+                   "schema:isPartOf"
+               ],
+               "object": "TextValue",
+               "labels": {
+                 "de": "Ist ein Teil von",
+                 "en": "Is part of",
+                 "fr": "Fait partie de"
+               },
+               "gui_element": "SimpleText"
+             },
+             {
+                 "name": "hasCopyrightHolder",
+                 "super": [
+                     "hasLinkTo",
+                     "schema:copyrightHolder"
+                 ],
+                 "object": ":Agent",
+                 "labels": {
+                     "en": "Copyright",
+                     "de": "Copyright",
+                     "fr": "Droits d'auteur",
+                     "it": "Dritti d'autore"
+                 },
+                 "gui_element": "Searchbox"
+             },
+             {
+               "name": "hasName",
+               "object": "TextValue",
+               "labels": {
+                 "de": "Name",
+                 "en": "Name",
+                 "fr": "Nom"
+               },
+               "gui_element": "SimpleText"
+             },
+             {
+                 "name": "hasAgentType",
+                 "super": [
+                     "hasValue",
+                     "schema:additionalType"
+                 ],
+                 "object": "ListValue",
+                 "labels": {
+                     "en": "Agent type",
+                     "de": "Agententyp",
+                     "fr": "Type d'agent",
+                     "it": "Tipo di agente"
+                 },
+                 "gui_element": "List",
+                 "gui_attributes": {
+                     "hlist": "agenttypes"
+                 }
+             },
+             {
+                 "name": "hasDescription",
+                 "super": [
+                     "hasValue",
+                     "schema:description"
+                 ],
+                 "object": "TextValue",
+                 "labels": {
+                     "en": "Description",
+                     "de": "Beschreibung",
+                     "fr": "Description",
+                     "it": "Descrizione"
+                 },
+                 "gui_element": "Richtext"
+             },
+             {
+                 "name": "hasBirthDate",
+                 "super": [
+                     "hasValue",
+                     "schema:birthDate"
+                 ],
+                 "object": "DateValue",
+                 "labels": {
+                     "en": "Birth date",
+                     "de": "geboren/gegründet am",
+                     "fr": "Date de naissance",
+                     "it": "Data di nascita"
+                 },
+                 "gui_element": "Date"
+             },
+             {
+                 "name": "hasBirthPlace",
+                 "super": [
+                     "hasValue",
+                     "schema:birthPlace"
+                 ],
+                 "object": "GeonameValue",
+                 "labels": {
+                     "en": "Birth place",
+                     "de": "geboren/gegründet in",
+                     "fr": "Lieu de naissance",
+                     "it": "Luogo di nascita"
+                 },
+                 "gui_element": "Geonames"
+             },
+             {
+                 "name": "hasDeathDate",
+                 "super": [
+                     "hasValue",
+                     "schema:deathDate"
+                 ],
+                 "object": "DateValue",
+                 "labels": {
+                     "en": "Death date",
+                     "de": "verstorben am",
+                     "fr": "Date de mort",
+                     "it": "Data di morte"
+                 },
+                 "gui_element": "Date"
+             },
+             {
+                 "name": "hasDeathPlace",
+                 "super": [
+                     "hasValue",
+                     "schema:deathPlace"
+                 ],
+                 "object": "GeonameValue",
+                 "labels": {
+                     "en": "Death place",
+                     "de": "verstorben in",
+                     "fr": "Lieu de mort",
+                     "it": "Luogo di morte"
+                 },
+                 "gui_element": "Geonames"
+             },
+             {
+                 "name": "isMemberOf",
+                 "super": [
+                     "hasLinkTo",
+                     "schema:memberOf"
+                 ],
+                 "object": ":Agent",
+                 "labels": {
+                     "en": "Member of",
+                     "de": "Mitglied von",
+                     "fr": "Membre de"
+                 },
+                 "gui_element": "Searchbox"
+             },
+             {
+                 "name": "relatedTo",
+                 "super": [
+                     "hasLinkTo",
+                     "schema:relatedTo"
+                 ],
+                 "object": ":Agent",
+                 "labels": {
+                     "en": "Related to (Agent)",
+                     "de": "Relativ zu",
+                     "fr": "Relatif à"
+                 },
+                 "gui_element": "Searchbox"
+             },
+             {
+                 "name": "sameAs",
+                 "super": [
+                     "hasValue",
+                     "schema:sameAs"
+                 ],
+                 "object": "UriValue",
+                 "labels": {
+                     "en": "Same as",
+                     "de": "Gleiche Ressource",
+                     "fr": "Ressource similaire"
+                 },
+                 "comments": {
+                       "en": "URL of a reference Web page that unambiguously indicates the item's identity."
+                     },
+                 "gui_element": "SimpleText"
+             }
+           ],
+           "resources": [
+             {
+               "name": "AudioRepresentation",
+               "labels": {
+                 "de": "Audio",
+                 "en": "Audio",
+                 "fr": "Audio"
+               },
+               "super": "AudioRepresentation",
+               "cardinalities": [
+                 {
+                   "propname": ":IsStreamingAllowed",
+                   "cardinality": "1",
+                   "gui_order": 1
+                 }
+               ]
+             },
+             {
+               "name": "Object",
+               "labels": {
+                 "de": "Objekt",
+                 "en": "Object",
+                 "fr": "Objet"
+               },
+               "super": "Resource",
+               "cardinalities": [
+                 {
+                   "propname": ":hasSignature",
+                   "cardinality": "1",
+                   "gui_order": 1
+                 },
+                 {
+                   "propname": ":hasTitle",
+                   "cardinality": "0-1",
+                   "gui_order": 2
+                 },
+                 {
+                   "propname": ":hasDuration",
+                   "cardinality": "0-1",
+                   "gui_order": 3
+                 },
+                 {
+                   "propname": ":hasRecordingDate",
+                   "cardinality": "0-1",
+                   "gui_order": 4
+                 },
+                 {
+                   "propname": ":hasPerformer",
+                   "cardinality": "0-n",
+                   "gui_order": 5
+                 },
+                 {
+                   "propname": ":hasIncipit",
+                   "cardinality": "0-1",
+                   "gui_order": 6
+                 },
+                 {
+                   "propname": ":hasOldNr",
+                   "cardinality": "0-1",
+                   "gui_order": 7
+                 },
+                 {
+                   "propname": ":hasSongNr",
+                   "cardinality": "0-1",
+                   "gui_order": 8
+                 },
+                 {
+                   "propname": ":hasObjectType",
+                   "cardinality": "0-1",
+                   "gui_order": 9
+                 },
+                 {
+                   "propname": ":hasLyrics",
+                   "cardinality": "0-1",
+                   "gui_order": 10
+                 },
+                 {
+                   "propname": ":hasKeywords",
+                   "cardinality": "0-n",
+                   "gui_order": 11
+                 },
+                 {
+                   "propname": ":hasInstruments",
+                   "cardinality": "0-n",
+                   "gui_order": 12
+                 },
+                 {
+                   "propname": ":hasComposer",
+                   "cardinality": "0-n",
+                   "gui_order": 13
+                 },
+                 {
+                   "propname": ":hasSongwriter",
+                   "cardinality": "0-n",
+                   "gui_order": 14
+                 },
+                 {
+                   "propname": ":hasRecordingPlace",
+                   "cardinality": "0-1",
+                   "gui_order": 15
+                 },
+                 {
+                   "propname": ":hasStage",
+                   "cardinality": "0-1",
+                   "gui_order": 16
+                 },
+                 {
+                   "propname": ":hasAudioRepresentation",
+                   "cardinality": "0-n",
+                   "gui_order": 17
+                 },
+                 {
+                   "propname": ":hasComment",
+                   "cardinality": "0-1",
+                   "gui_order": 18
+                 },
+                 {
+                   "propname": ":hasSimilarTracks",
+                   "cardinality": "0-n",
+                   "gui_order": 19
+                 },
+                 {
+                   "propname": ":hasCollection",
+                   "cardinality": "0-n",
+                   "gui_order": 20
+                 },
+                 {
+                   "propname": ":isPartOf",
+                   "cardinality": "0-n",
+                   "gui_order": 21
+                 },
+                 {
+                   "propname": ":hasCopyrightHolder",
+                   "cardinality": "1",
+                   "gui_order": 22
+                 }
+               ]
+             },
+             {
+                 "name": "Collection",
+                 "labels": {
+                     "en": "Collection",
+                     "de": "Sammlung",
+                     "fr": "Collection",
+                     "it": "Collezione"
+                 },
+                 "super": "Resource",
+                 "cardinalities": [
+                     {
+                         "propname": ":hasSignature",
+                         "cardinality": "1",
+                         "gui_order": 1
+                     },
+                     {
+                         "propname": ":hasTitle",
+                         "cardinality": "1-n",
+                         "gui_order": 2
+                     },
+                     {
+                         "propname": ":hasDate",
+                         "cardinality": "0-1",
+                         "gui_order": 3
+                     },
+                     {
+                         "propname": ":hasDescription",
+                         "cardinality": "0-1",
+                         "gui_order": 4
+                     },
+                     {
+                         "propname": ":hasKeywords",
+                         "cardinality": "0-n",
+                         "gui_order": 5
+                     }
+                 ]
+             },
+             {
+                 "name": "Agent",
+                 "labels": {
+                     "en": "Agent and Context",
+                     "de": "Agent und Kontext",
+                     "fr": "Agent et Contexte"
+                 },
+                 "super": "Resource",
+                 "cardinalities": [
+                     {
+                         "propname": ":hasName",
+                         "cardinality": "1-n",
+                         "gui_order": 1
+                     },
+                     {
+                         "propname": ":hasOrigin",
+                         "cardinality": "0-n",
+                         "gui_order": 2
+                     },
+                     {
+                         "propname": ":hasAgentType",
+                         "cardinality": "0-1",
+                         "gui_order": 3
+                     },
+                     {
+                         "propname": ":hasDescription",
+                         "cardinality": "0-1",
+                         "gui_order": 4
+                     },
+                     {
+                         "propname": ":hasBirthDate",
+                         "cardinality": "0-1",
+                         "gui_order": 5
+                     },
+                     {
+                         "propname": ":hasBirthPlace",
+                         "cardinality": "0-1",
+                         "gui_order": 6
+                     },
+                     {
+                         "propname": ":hasDeathDate",
+                         "cardinality": "0-1",
+                         "gui_order": 7
+                     },
+                     {
+                         "propname": ":hasDeathPlace",
+                         "cardinality": "0-1",
+                         "gui_order": 8
+                     },
+                     {
+                         "propname": ":isMemberOf",
+                         "cardinality": "0-n",
+                         "gui_order": 9
+                     },
+                     {
+                         "propname": ":relatedTo",
+                         "cardinality": "0-1",
+                         "gui_order": 10
+                     },
+                     {
+                         "propname": ":sameAs",
+                         "cardinality": "0-n",
+                         "gui_order": 11
+                     }
+                 ]
+             }
+           ]
          }
       ]
    }
