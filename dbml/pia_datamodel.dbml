@@ -465,6 +465,8 @@ Table map_layers {
   label varchar
 
   map_id int
+  zoom_min int
+  zoom_max int
 
   created_at timestamp
   updated_at timestamp
