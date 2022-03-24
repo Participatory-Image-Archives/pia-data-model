@@ -1,0 +1,51 @@
+{
+    "@context": "http://iiif.io/api/presentation/3/context.json",
+    "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/collection_boilerplate01.json",
+    "type": "Collection",
+    "label": {
+      "de": [
+        "Label Collection of Collections"
+      ]
+    },
+    "summary": {
+        "en": [
+          "IIIF top-level Collection from the SSFS"
+        ]
+      },
+    "logo": [
+        {
+          "id": "https://pia-iiif.dhlab.unibas.ch/SGV_logo.jp2/full/max/0/default.jpg",
+          "type": "Image",
+          "format": "image/jpeg",
+          "height": 149,
+          "width": 500,
+          "service": [
+            {
+              "id": "https://pia-iiif.dhlab.unibas.ch/SGV_logo.jp2",
+              "type": "ImageService3",
+              "profile": "level2"
+            }
+          ]
+        }
+      ],
+    "items": [
+      {
+        "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/collection01.json",
+        "type": "Collection",
+        "label": {
+          "de": [
+            "Label 1"
+          ]
+        }
+      },
+      {
+        "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/collection02.json",
+        "type": "Collection",
+        "label": {
+          "de": [
+            "Label 2"
+          ]
+        }
+      }
+    ]
+  }

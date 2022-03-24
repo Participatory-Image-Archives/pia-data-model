@@ -1,0 +1,51 @@
+{
+    "@context": "http://iiif.io/api/presentation/3/context.json",
+    "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/collection_boilerplate01.json",
+    "type": "Collection",
+    "label": {
+      "de": [
+        "Label Collection of Manifests"
+      ]
+    },
+    "summary": {
+        "en": [
+          "IIIF Collection of Manifests from the SSFS"
+        ]
+      },
+    "logo": [
+        {
+          "id": "https://pia-iiif.dhlab.unibas.ch/SGV_logo.jp2/full/max/0/default.jpg",
+          "type": "Image",
+          "format": "image/jpeg",
+          "height": 149,
+          "width": 500,
+          "service": [
+            {
+              "id": "https://pia-iiif.dhlab.unibas.ch/SGV_logo.jp2",
+              "type": "ImageService3",
+              "profile": "level2"
+            }
+          ]
+        }
+      ],
+    "items": [
+      {
+        "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate01.json",
+        "type": "Manifest",
+        "label": {
+          "de": [
+            "Label 1"
+          ]
+        }
+      },
+      {
+        "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate02.json",
+        "type": "Manifest",
+        "label": {
+          "de": [
+            "Label 2"
+          ]
+        }
+      }
+    ]
+  }
