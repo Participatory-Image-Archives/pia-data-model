@@ -128,7 +128,7 @@
         "Socité Suisse des Traditions populaires (SSTP). CC BY-NC-ND 4.0"
       ],
       "it": [
-        "SocietàSvizzera per le Tradizioni Popolari (SSTP). CC BY-NC-ND 4.0"
+        "Società Svizzera per le Tradizioni Popolari (SSTP). CC BY-NC-ND 4.0"
       ],
       "en": [
         "Swiss Society for Folklore Studies (SSFS). CC BY-NC-ND 4.0"
@@ -156,10 +156,10 @@
       "id": "https://pia-iiif.dhlab.unibas.ch/server/SGV_12N_00001/canvas/p1",
       "type": "Canvas",
       "label": {
-    "none": [
-      "SGV_12N_00001"
-    ]
-  },
+      "none": [
+        "SGV_12N_00001"
+      ]
+    },
       "height": 4252,
       "width": 4190,
       "items": [
