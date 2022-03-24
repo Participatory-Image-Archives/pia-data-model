@@ -123,6 +123,18 @@
       ]
     }
   },
+  "homepage": [
+    {
+      "id": "https://archiv.sgv-sstp.ch/resource/422236",
+      "type": "Text",
+      "label": {
+        "en": [
+          "Homepage of SGV_12N_00001"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
   "provider": [
     {
       "id": "https://d-nb.info/gnd/1186091584",
@@ -149,7 +161,9 @@
             "de"
           ]
         }
-      ],
+      ]
+    }
+  ],  
   "logo": [
     {
       "id": "https://pia-iiif.dhlab.unibas.ch/SGV_logo.jp2/full/max/0/default.jpg",
