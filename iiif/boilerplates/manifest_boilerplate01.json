@@ -123,6 +123,22 @@
       ]
     }
   },
+  "logo": [
+    {
+      "id": "https://pia-iiif.dhlab.unibas.ch/SGV_logo.jp2/full/max/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg",
+      "height": 149,
+      "width": 500,
+      "service": [
+        {
+          "id": "https://pia-iiif.dhlab.unibas.ch/SGV_logo.jp2",
+          "type": "ImageService3",
+          "profile": "level2"
+        }
+      ]
+    }
+  ],
   "items": [
     {
       "id": "https://pia-something.ch/iiif/boilerplate01/canvas/p1",
