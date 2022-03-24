@@ -123,6 +123,50 @@
       ]
     }
   },
+  "homepage": [
+    {
+      "id": "https://archiv.sgv-sstp.ch/resource/473518",
+      "type": "Text",
+      "label": {
+        "en": [
+          "Homepage of SGV_10P_00010"
+        ]
+      },
+      "format": "text/html"
+    }
+  ],
+  "provider": [
+    {
+      "id": "https://d-nb.info/gnd/1186091584",
+      "type": "Agent",
+      "label": {
+        "de": [
+          "Schweizerische Gesellschaft für Volkskunde. Fotoarchiv"
+        ]
+      },
+      "homepage": [
+        {
+          "id": "https://archiv.sgv-sstp.ch/",
+          "type": "Text",
+          "label": {
+            "en": [
+              "SSFS Photo archives"
+            ],
+            "de": [
+              "SGV Fotoarchiv"
+            ],
+            "fr": [
+              "Archives de la SSTP"
+            ]
+          },
+          "format": "text/html",
+          "language": [
+            "de"
+          ]
+        }
+      ]
+    }
+  ], 
   "logo": [
         {
           "id": "https://pia-iiif.dhlab.unibas.ch/SGV_logo.jp2/full/max/0/default.jpg",
