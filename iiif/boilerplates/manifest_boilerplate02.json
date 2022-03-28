@@ -159,7 +159,22 @@
       ]
     }
   ],
+  "thumbnail": [
+    {
+      "id": "https://pia-iiif.dhlab.unibas.ch/SGV_12/SGV_12N_00001.jp2/full/80,/0/default.jpg",
+      "type": "Image",
+      "format": "image/jpeg",
+      "service": [
+        {
+          "id": "https://pia-iiif.dhlab.unibas.ch/SGV_12/SGV_12N_00001.jp2",
+          "type": "ImageService3",
+          "profile": "level2"
+        }
+      ]
+    }
+  ],
   "viewingDirection": "left-to-right",
+  "navDate": "1937-01-01T00:00:00+00:00",
   "items": [
     {
       "id": "https://localhost:1025/server/canvas/p1",
