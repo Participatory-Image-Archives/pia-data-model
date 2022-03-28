@@ -159,6 +159,7 @@
       ]
     }
   ],
+  "viewingDirection": "left-to-right",
   "items": [
     {
       "id": "https://localhost:1025/server/canvas/p1",
