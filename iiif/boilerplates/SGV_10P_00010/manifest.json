@@ -183,6 +183,7 @@
           ]
         }
       ],
+  "viewingDirection": "left-to-right",    
   "items": [
     {
       "id": "https://pia-iiif.dhlab.unibas.ch/server/SGV_10P_00010/canvas/p1",

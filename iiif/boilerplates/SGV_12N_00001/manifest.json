@@ -195,6 +195,7 @@
           ]
         }
       ],
+  "viewingDirection": "left-to-right",
   "items": [
     {
       "id": "https://pia-iiif.dhlab.unibas.ch/server/SGV_12N_00001/canvas/p1",
