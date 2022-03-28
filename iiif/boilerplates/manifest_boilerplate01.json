@@ -135,6 +135,18 @@
       "format": "text/html"
     }
   ],
+  "seeAlso": [
+    {
+      "id": "https://pia-api.dhlab.unibas.ch/api/v1/images/12033",
+      "type": "Dataset",
+      "label": {
+        "en": [
+          "PIA API"
+        ]
+      },
+      "format": "application/json"
+    }
+  ],
   "provider": [
     {
       "id": "https://d-nb.info/gnd/1186091584",
