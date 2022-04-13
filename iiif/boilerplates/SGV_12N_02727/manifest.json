@@ -1,18 +1,18 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://pia-iiif.dhlab.unibas.ch/server/SGV_12N_00001/manifest.json",
+  "id": "https://pia-iiif.dhlab.unibas.ch/server/SGV_12N_02727/manifest.json",
   "type": "Manifest",
   "label": {
     "de": [
-      "PIA IIIF Manifest Boilerplate 1: IIIF Manifest with a single image"
+      "PIA IIIF Manifest of SGV_12N_02727"
     ]
   },
   "summary": {
     "en": [
-      "One image of the Schwyzer Fasnacht in 1937 photographed by Ernst Brunner"
+      "Picture taken by Ernst Brunner in Dübendorf, Switzerland"
     ],
     "de": [
-      "Ein Bild der Schwyzer Fasnacht im Jahr 1937 fotografiert von Ernst Brunner"
+      "Bild fotografiert von Ernst Brunner in Dübendorf, Schweiz"
     ]
   },
   "metadata": [
@@ -24,7 +24,7 @@
       },
       "value": {
         "de": [
-          "[Schwyzer Fasnacht]"
+          "[Menschenmasse und Propellerflugzeuge]"
         ]
       }
     },
@@ -48,7 +48,7 @@
       },
       "value": {
         "de": [
-          "1937"
+          "unbekannt"
         ]
       }
     },
@@ -60,7 +60,7 @@
       },
       "value": {
         "de": [
-          "Schwyz"
+          "Dübendorf"
         ]
       }
     },
@@ -96,7 +96,7 @@
       },
       "value": {
         "de": [
-          "SGV_12N_00001"
+          "SGV_12N_02727"
         ]
       }
     },
@@ -108,7 +108,19 @@
       },
       "value": {
         "de": [
-          "AA 1"
+          "BC 27"
+        ]
+      }
+    },
+    {
+      "label": {
+        "de": [
+          "Kommentar"
+        ]
+      },
+      "value": {
+        "de": [
+          "Das Bild ist der folgenden Kategorie zugeordnet: Reise und Verkehr - Flugzeug"
         ]
       }
     }
@@ -137,11 +149,11 @@
   },
   "homepage": [
     {
-      "id": "https://archiv.sgv-sstp.ch/resource/422236",
+      "id": "https://archiv.sgv-sstp.ch/resource/424962",
       "type": "Text",
       "label": {
         "en": [
-          "Homepage of SGV_12N_00001"
+          "Homepage of SGV_12N_02727"
         ]
       },
       "format": "text/html"
@@ -149,7 +161,7 @@
   ],
   "seeAlso": [
     {
-      "id": "https://pia-api.dhlab.unibas.ch/api/v1/images/12033",
+      "id": "https://pia-api.dhlab.unibas.ch/api/v1/images/14759",
       "type": "Dataset",
       "label": {
         "en": [
@@ -209,12 +221,12 @@
       ],
       "thumbnail": [
         {
-          "id": "https://pia-iiif.dhlab.unibas.ch/SGV_12/SGV_12N_00001.jp2/full/80,/0/default.jpg",
+          "id": "https://pia-iiif.dhlab.unibas.ch/SGV_12/SGV_12N_02727.jp2/full/80,/0/default.jpg",
           "type": "Image",
           "format": "image/jpeg",
           "service": [
             {
-              "id": "https://pia-iiif.dhlab.unibas.ch/SGV_12/SGV_12N_00001.jp2",
+              "id": "https://pia-iiif.dhlab.unibas.ch/SGV_12/SGV_12N_02727.jp2",
               "type": "ImageService3",
               "profile": "level2"
             }
@@ -222,42 +234,41 @@
         }
       ],
   "viewingDirection": "left-to-right",
-  "navDate": "1937-01-01T00:00:00+00:00",
   "items": [
     {
-      "id": "https://pia-iiif.dhlab.unibas.ch/server/SGV_12N_00001/canvas/p1",
+      "id": "https://pia-iiif.dhlab.unibas.ch/server/SGV_12N_02727/canvas/p1",
       "type": "Canvas",
       "label": {
       "none": [
-        "SGV_12N_00001"
+        "SGV_12N_02727"
       ]
     },
-      "height": 4252,
-      "width": 4190,
+      "height": 4562,
+      "width": 4401,
       "items": [
         {
-          "id": "https://pia-iiif.dhlab.unibas.ch/server/SGV_12N_00001/canvas/p1/1",
+          "id": "https://pia-iiif.dhlab.unibas.ch/server/SGV_12N_02727/canvas/p1/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://pia-iiif.dhlab.unibas.ch/server/SGV_12N_00001/annotation/p0001-image",
+              "id": "https://pia-iiif.dhlab.unibas.ch/server/SGV_12N_02727/annotation/p0001-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
-                "id": "https://pia-iiif.dhlab.unibas.ch/SGV_12/SGV_12N_00001.jp2/full/max/0/default.jpg",
+                "id": "https://pia-iiif.dhlab.unibas.ch/SGV_12/SGV_12N_02727.jp2/full/max/0/default.jpg",
                 "type": "Image",
                 "format": "image/jpeg",
-                "height": 4252,
-                "width": 4190,
+                "height": 4562,
+                "width": 4401,
                 "service": [
                   {
-                    "id": "https://pia-iiif.dhlab.unibas.ch/SGV_12/SGV_12N_00001.jp2",
+                    "id": "https://pia-iiif.dhlab.unibas.ch/SGV_12/SGV_12N_02727.jp2",
                     "type": "ImageService3",
                     "profile": "level2"
                   }
                 ]
               },
-              "target": "https://pia-iiif.dhlab.unibas.ch/server/SGV_12N_00001/canvas/p1/1"
+              "target": "https://pia-iiif.dhlab.unibas.ch/server/SGV_12N_02727/canvas/p1/1"
             }
           ]
         }
