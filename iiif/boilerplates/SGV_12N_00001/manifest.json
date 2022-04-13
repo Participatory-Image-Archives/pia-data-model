@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https:///pia-iiif.dhlab.unibas.ch/server/SGV_12N_00001/manifest.json",
+  "id": "https://pia-iiif.dhlab.unibas.ch/server/SGV_12N_00001/manifest.json",
   "type": "Manifest",
   "label": {
     "de": [
