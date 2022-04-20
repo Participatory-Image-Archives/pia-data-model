@@ -62,20 +62,20 @@
       ],
     "items": [
       {
-        "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate01.json",
+        "id": "https://iiif.participatory-archives.ch/12033/manifest.json",
         "type": "Manifest",
         "label": {
           "de": [
-            "Label 1"
+            "[Schwyzer Fasnacht]"
           ]
         }
       },
       {
-        "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate02.json",
+        "id": "https://iiif.participatory-archives.ch/12034/manifest.json",
         "type": "Manifest",
         "label": {
           "de": [
-            "Label 2"
+            "[Schwyzer Fasnacht]"
           ]
         }
       }
