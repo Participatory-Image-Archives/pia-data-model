@@ -4,12 +4,12 @@
     "type": "Collection",
     "label": {
       "de": [
-        "SGV_12 (Ernst Brunner)"
+        "SGV_10 (Familie Kreis)"
       ]
     },
     "summary": {
         "en": [
-          "IIIF Collection of Manifests from the SGV_12 Ernst Brunner Collection"
+          "IIIF Collection of Manifests from the SGV_10 Familie Kreis Collection"
         ]
       },
       "provider": [
@@ -62,20 +62,29 @@
       ],
     "items": [
       {
-        "id": "https://iiif.participatory-archives.ch/12033/manifest.json",
+        "id": "https://iiif.participatory-archives.ch/1/manifest.json",
         "type": "Manifest",
         "label": {
           "de": [
-            "[Schwyzer Fasnacht]"
+            "[Porträt von Hermann Kreis]"
           ]
         }
       },
       {
-        "id": "https://iiif.participatory-archives.ch/12034/manifest.json",
+        "id": "https://iiif.participatory-archives.ch/2/manifest.json",
         "type": "Manifest",
         "label": {
           "de": [
-            "[Schwyzer Fasnacht]"
+            "[Porträt von Hermann Kreis]"
+          ]
+        }
+      },
+      {
+        "id": "https://iiif.participatory-archives.ch/3/manifest.json",
+        "type": "Manifest",
+        "label": {
+          "de": [
+            "[Porträt von Emilie und Hermann Kreis-Martz]"
           ]
         }
       }
