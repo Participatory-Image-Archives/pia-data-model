@@ -1,15 +1,18 @@
 {
     "@context": "http://iiif.io/api/presentation/3/context.json",
-    "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/collection_boilerplate01.json",
+    "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/toplevelcollection_boilerplate.json",
     "type": "Collection",
     "label": {
       "de": [
-        "Label Collection of Collections"
+        "Kollektion von IIIF Kollektionen des SGV Fotoarchivs"
+      ],
+      "en": [
+        "Collections of IIIF Collections from the SSFS Photo Archives"
       ]
     },
     "summary": {
         "en": [
-          "IIIF top-level Collection from the SSFS"
+          "IIIF top-level Collection from the SSFS Photo Archives"
         ]
       },
       "provider": [
@@ -62,7 +65,7 @@
       ],
     "items": [
       {
-        "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/collection01.json",
+        "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/collection_boilerplate01.json",
         "type": "Collection",
         "label": {
           "de": [
@@ -71,7 +74,7 @@
         }
       },
       {
-        "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/collection02.json",
+        "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/collection_boilerplate02.json",
         "type": "Collection",
         "label": {
           "de": [
