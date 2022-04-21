@@ -4,12 +4,12 @@
     "type": "Collection",
     "label": {
       "de": [
-        "SGV_12 (Ernst Brunner)"
+        "Label Collection of Collections"
       ]
     },
     "summary": {
         "en": [
-          "IIIF Collection of Manifests from the SGV_12 Ernst Brunner Collection"
+          "IIIF top-level Collection from the SSFS"
         ]
       },
       "provider": [
@@ -62,20 +62,20 @@
       ],
     "items": [
       {
-        "id": "https://iiif.participatory-archives.ch/12033/manifest.json",
-        "type": "Manifest",
+        "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/collection01.json",
+        "type": "Collection",
         "label": {
           "de": [
-            "[Schwyzer Fasnacht]"
+            "Label 1"
           ]
         }
       },
       {
-        "id": "https://iiif.participatory-archives.ch/12034/manifest.json",
-        "type": "Manifest",
+        "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/collection02.json",
+        "type": "Collection",
         "label": {
           "de": [
-            "[Schwyzer Fasnacht]"
+            "Label 2"
           ]
         }
       }
