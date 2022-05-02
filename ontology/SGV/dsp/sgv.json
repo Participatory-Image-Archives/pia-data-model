@@ -3855,14 +3855,6 @@
            "status": true
          },
          {
-           "name": "sva-editors",
-           "descriptions": {
-              "en": "Editors from the Volksliedarchiv"
-            },
-           "selfjoin": false,
-           "status": true
-         },
-         {
            "name": "pia-editors",
            "descriptions": {
               "en": "Editors from the PIA research project"
@@ -3882,20 +3874,6 @@
            "groups": [
              ":photo-editors",
              ":pia-editors"
-           ],
-           "projects": [
-             ":admin"
-           ]
-         },
-         {
-           "username": "johannesmueske",
-           "email": "johannes.mueske@zpkm.uni-freiburg.de",
-           "givenName": "Johannes",
-           "familyName": "Müske",
-           "password": "1234",
-           "lang": "de",
-           "groups": [
-             ":sva-editors"
            ],
            "projects": [
              ":admin"
