@@ -5220,7 +5220,7 @@
                         },
                         {
                             "propname": ":hasTitle",
-                            "cardinality": "0-1",
+                            "cardinality": "0-n",
                             "gui_order": 2
                         },
                         {
