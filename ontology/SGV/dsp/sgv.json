@@ -4080,6 +4080,23 @@
                     "gui_element": "SimpleText"
                 },
                 {
+                    "name": "hasFamily",
+                    "super": [
+                        "hasValue"
+                    ],
+                    "object": "TextValue",
+                    "labels": {
+                        "en": "Family Member",
+                        "de": "Familienmitglied",
+                        "fr": "Membre de la famille",
+                        "it": "Membro della famiglia"
+                    },
+                    "comments": {
+                        "en": "This property should be deprecated in favour of relatedTo"
+                      },
+                    "gui_element": "SimpleText"
+                },
+                {
                     "name": "hasIndexing",
                     "super": [
                         "hasValue"
@@ -5472,124 +5489,129 @@
                             "gui_order": 2
                         },
                         {
-                            "propname": ":relatedTo",
+                            "propname": ":hasFamily",
                             "cardinality": "0-1",
                             "gui_order": 3
                         },
                         {
+                            "propname": ":relatedTo",
+                            "cardinality": "0-1",
+                            "gui_order": 4
+                        },
+                        {
                             "propname": ":hasJobTitle",
                             "cardinality": "0-n",
-                            "gui_order": 4
+                            "gui_order": 5
                         },
                         {
                             "propname": ":hasBirthDate",
                             "cardinality": "0-1",
-                            "gui_order": 5
+                            "gui_order": 6
                         },
                         {
                             "propname": ":hasBirthPlace",
                             "cardinality": "0-1",
-                            "gui_order": 6
+                            "gui_order": 7
                         },
                         {
                             "propname": ":hasDeathDate",
                             "cardinality": "0-1",
-                            "gui_order": 7
+                            "gui_order": 8
                         },
                         {
                             "propname": ":hasDeathPlace",
                             "cardinality": "0-1",
-                            "gui_order": 8
+                            "gui_order": 9
                         },
                         {
                             "propname": ":hasComment",
                             "cardinality": "0-n",
-                            "gui_order": 9
+                            "gui_order": 10
                         },
                         {
                             "propname": ":hasLiterature",
                             "cardinality": "0-n",
-                            "gui_order": 10
+                            "gui_order": 11
                         },
                         {
                             "propname": ":hasPiaUrl",
                             "cardinality": "0-1",
-                            "gui_order": 11
+                            "gui_order": 12
                         },
                         {
                             "propname": ":isMemberOf",
                             "cardinality": "0-n",
-                            "gui_order": 12
+                            "gui_order": 13
                         },
                         {
                             "propname": ":hasEmployee",
                             "cardinality": "0-n",
-                            "gui_order": 13
+                            "gui_order": 14
                         },
                         {
                             "propname": ":hasChildren",
                             "cardinality": "0-n",
-                            "gui_order": 14
+                            "gui_order": 15
                         },
                         {
                             "propname": ":hasParent",
                             "cardinality": "0-n",
-                            "gui_order": 15
+                            "gui_order": 16
                         },
                         {
                             "propname": ":hasSpouse",
                             "cardinality": "0-n",
-                            "gui_order": 16
+                            "gui_order": 17
                         },
                         {
                             "propname": ":hasSibling",
                             "cardinality": "0-n",
-                            "gui_order": 17
+                            "gui_order": 18
                         },
                         {
                             "propname": ":hasColleague",
                             "cardinality": "0-n",
-                            "gui_order": 18
+                            "gui_order": 19
                         },
                         {
                             "propname": ":knows",
                             "cardinality": "0-n",
-                            "gui_order": 19
+                            "gui_order": 20
                         },
                         {
                             "propname": ":performerIn",
                             "cardinality": "0-n",
-                            "gui_order": 20
+                            "gui_order": 21
                         },
                         {
                             "propname": ":isLocated",
                             "cardinality": "0-n",
-                            "gui_order": 21
+                            "gui_order": 22
                         },
                         {
                             "propname": ":hasGivenName",
                             "cardinality": "0-1",
-                            "gui_order": 22
+                            "gui_order": 23
                         },
                         {
                             "propname": ":hasFamilyName",
                             "cardinality": "0-1",
-                            "gui_order": 23
+                            "gui_order": 24
                         },
                         {
                             "propname": ":sameAs",
                             "cardinality": "0-n",
-                            "gui_order": 24
+                            "gui_order": 25
                         },
                         {
                             "propname": ":hasAgentType",
                             "cardinality": "0-1",
-                            "gui_order": 25
+                            "gui_order": 26
                         },
                         {
                             "propname": ":isSubjectOf",
                             "cardinality": "0-n",
-                            "gui_order": 26
+                            "gui_order": 27
                         }
                     ]
                 },
