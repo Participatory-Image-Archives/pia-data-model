@@ -3945,10 +3945,10 @@
                     ],
                     "object": "GeonameValue",
                     "labels": {
-                        "en": "Name (GeoNames)",
-                        "de": "Name (GeoNames)",
-                        "fr": "Nom (GeoNames)",
-                        "it": "Nome (GeoNames)"
+                        "en": "Place (GeoNames)",
+                        "de": "Ort (GeoNames)",
+                        "fr": "Lieu (GeoNames)",
+                        "it": "Luogo (GeoNames)"
                     },
                     "comments": {
                         "en": "Legacy proprety that could be deprecated"
@@ -5069,64 +5069,69 @@
                             "gui_order": 24
                         },
                         {
-                            "propname": ":hasPart",
-                            "cardinality": "0-n",
+                            "propname": ":hasGeography",
+                            "cardinality": "0-1",
                             "gui_order": 25
                         },
                         {
-                            "propname": ":isPartOf",
+                            "propname": ":hasPart",
                             "cardinality": "0-n",
                             "gui_order": 26
                         },
                         {
-                            "propname": ":recordedAt",
+                            "propname": ":isPartOf",
                             "cardinality": "0-n",
                             "gui_order": 27
                         },
                         {
-                            "propname": ":hasContributor",
+                            "propname": ":recordedAt",
                             "cardinality": "0-n",
                             "gui_order": 28
                         },
                         {
-                            "propname": ":hasPiaUrl",
-                            "cardinality": "0-1",
+                            "propname": ":hasContributor",
+                            "cardinality": "0-n",
                             "gui_order": 29
                         },
                         {
-                            "propname": ":hasCreativeWorkStatus",
+                            "propname": ":hasPiaUrl",
                             "cardinality": "0-1",
                             "gui_order": 30
                         },
                         {
-                            "propname": ":relatedLink",
-                            "cardinality": "0-n",
+                            "propname": ":hasCreativeWorkStatus",
+                            "cardinality": "0-1",
                             "gui_order": 31
                         },
                         {
-                            "propname": ":hasComment",
+                            "propname": ":relatedLink",
                             "cardinality": "0-n",
                             "gui_order": 32
                         },
                         {
-                            "propname": ":hasArchiveLocation",
+                            "propname": ":hasComment",
                             "cardinality": "0-n",
                             "gui_order": 33
                         },
                         {
-                            "propname": ":hasImageRepresentation",
+                            "propname": ":hasArchiveLocation",
                             "cardinality": "0-n",
                             "gui_order": 34
                         },
                         {
-                            "propname": ":hasAudioRepresentation",
+                            "propname": ":hasImageRepresentation",
                             "cardinality": "0-n",
                             "gui_order": 35
                         },
                         {
-                            "propname": ":hasMovingImageRepresentation",
+                            "propname": ":hasAudioRepresentation",
                             "cardinality": "0-n",
                             "gui_order": 36
+                        },
+                        {
+                            "propname": ":hasMovingImageRepresentation",
+                            "cardinality": "0-n",
+                            "gui_order": 37
                         }
                     ]
                 },
