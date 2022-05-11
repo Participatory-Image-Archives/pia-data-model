@@ -336,298 +336,6 @@
               ]
           },
           {
-            "name": "instruments",
-            "labels": {
-              "de": "Instrumente",
-              "en": "Instruments",
-              "fr": "Instruments",
-              "it": "Strumenti"
-            },
-            "comments": {
-              "en": "instruments"
-            },
-            "nodes": [
-              {
-                "name": "Autoharp",
-                "labels": {
-                  "de": "Autoharp"
-                },
-                "comments": {
-                  "en": "Autoharp"
-                }
-              },
-              {
-                "name": "Banjo",
-                "labels": {
-                  "de": "Banjo"
-                },
-                "comments": {
-                  "en": "Banjo"
-                }
-              },
-              {
-                "name": "Bass",
-                "labels": {
-                  "de": "Bass"
-                },
-                "comments": {
-                  "en": "Bass"
-                }
-              },
-              {
-                "name": "Bassblockflöte",
-                "labels": {
-                  "de": "Bassblockflöte"
-                },
-                "comments": {
-                  "en": "Bassblockflöte"
-                }
-              },
-              {
-                "name": "Chor",
-                "labels": {
-                  "de": "Chor"
-                },
-                "comments": {
-                  "en": "Chor"
-                }
-              },
-              {
-                "name": "Dudelsack",
-                "labels": {
-                  "de": "Dudelsack"
-                },
-                "comments": {
-                  "en": "Dudelsack"
-                }
-              },
-              {
-                "name": "E-Bass",
-                "labels": {
-                  "de": "E-Bass"
-                },
-                "comments": {
-                  "en": "E-Bass"
-                }
-              },
-              {
-                "name": "Fidel",
-                "labels": {
-                  "de": "Fidel"
-                },
-                "comments": {
-                  "en": "Fidel"
-                }
-              },
-              {
-                "name": "Flöte",
-                "labels": {
-                  "de": "Flöte"
-                },
-                "comments": {
-                  "en": "Flöte"
-                }
-              },
-              {
-                "name": "Geige",
-                "labels": {
-                  "de": "Geige"
-                },
-                "comments": {
-                  "en": "Geige"
-                }
-              },
-              {
-                "name": "Gesang",
-                "labels": {
-                  "de": "Gesang"
-                },
-                "comments": {
-                  "en": "Gesang"
-                }
-              },
-              {
-                "name": "Gitarre",
-                "labels": {
-                  "de": "Gitarre"
-                },
-                "comments": {
-                  "en": "Gitarre"
-                }
-              },
-              {
-                "name": "Kazoo",
-                "labels": {
-                  "de": "Kazoo"
-                },
-                "comments": {
-                  "en": "Kazoo"
-                }
-              },
-              {
-                "name": "Löffel",
-                "labels": {
-                  "de": "Löffel"
-                },
-                "comments": {
-                  "en": "Löffel"
-                }
-              },
-              {
-                "name": "Mandoline",
-                "labels": {
-                  "de": "Mandoline"
-                },
-                "comments": {
-                  "en": "Mandoline"
-                }
-              },
-              {
-                "name": "Maultrommel",
-                "labels": {
-                  "de": "Maultrommel"
-                },
-                "comments": {
-                  "en": "Maultrommel"
-                }
-              },
-              {
-                "name": "Mundharmonika",
-                "labels": {
-                  "de": "Mundharmonika"
-                },
-                "comments": {
-                  "en": "Mundharmonika"
-                }
-              },
-              {
-                "name": "Perkussion",
-                "labels": {
-                  "de": "Perkussion"
-                },
-                "comments": {
-                  "en": "Perkussion"
-                }
-              },
-              {
-                "name": "Piano",
-                "labels": {
-                  "de": "Piano"
-                },
-                "comments": {
-                  "en": "Piano"
-                }
-              },
-              {
-                "name": "Querflöte",
-                "labels": {
-                  "de": "Querflöte"
-                },
-                "comments": {
-                  "en": "Querflöte"
-                }
-              },
-              {
-                "name": "Sitar",
-                "labels": {
-                  "de": "Sitar"
-                },
-                "comments": {
-                  "en": "Sitar"
-                }
-              },
-              {
-                "name": "Sprecher",
-                "labels": {
-                  "de": "Sprecher"
-                },
-                "comments": {
-                  "en": "Sprecher"
-                }
-              },
-              {
-                "name": "Tabla",
-                "labels": {
-                  "de": "Tabla"
-                },
-                "comments": {
-                  "en": "Tabla"
-                }
-              },
-              {
-                "name": "Tin Whistle",
-                "labels": {
-                  "de": "Tin Whistle"
-                },
-                "comments": {
-                  "en": "Tin Whistle"
-                }
-              },
-              {
-                "name": "Trommel",
-                "labels": {
-                  "de": "Trommel"
-                },
-                "comments": {
-                  "en": "Trommel"
-                }
-              },
-              {
-                "name": "Waschbrett",
-                "labels": {
-                  "de": "Waschbrett"
-                },
-                "comments": {
-                  "en": "Waschbrett"
-                }
-              },
-              {
-                "name": "Zuberbass",
-                "labels": {
-                  "de": "Zuberbass"
-                },
-                "comments": {
-                  "en": "Zuberbass"
-                }
-              }
-            ]
-          },
-          {
-            "name": "lyrics",
-            "labels": {
-              "de": "Stück / Lied",
-              "en": "Instrumental music / Music with lyrics",
-              "fr": "Musique instrumentale / avec paroles"
-            },
-            "comments": {
-              "en": "Does the song have lyrics or is it only instrumental?"
-            },
-            "nodes": [
-              {
-                "name": "Instrumental",
-                "labels": {
-                  "de": "Stück (nur Musik)",
-                  "en": "Instrumental music",
-                  "fr": "Musique instrumentale"
-                },
-                "comments": {
-                  "en": "Instrumental"
-                }
-              },
-              {
-                "name": "Lied (Musik+Text)",
-                "labels": {
-                  "de": "Lied (Musik+Text)",
-                  "en": "Song with lyrics",
-                  "fr": "Chanson avec des paroles"
-                },
-                "comments": {
-                  "en": "Song with lyrics"
-                }
-              }
-            ]
-          },
-          {
               "name": "objecttype",
               "labels": {
                   "de": "Objekttyp / Originalträger",
@@ -5339,7 +5047,7 @@
                             "gui_order": 22
                         },
                         {
-                            "propname": ":hasInterval",
+                            "propname": ":hasRestoration",
                             "cardinality": "0-1",
                             "gui_order": 23
                         },
@@ -5399,19 +5107,61 @@
                             "gui_order": 34
                         },
                         {
+                            "propname": ":hasRestoration",
+                            "cardinality": "0-1",
+                            "gui_order": 36
+                        },
+                        {
                             "propname": ":hasImageRepresentation",
                             "cardinality": "0-n",
-                            "gui_order": 35
+                            "gui_order": 37
                         },
                         {
                             "propname": ":hasAudioRepresentation",
                             "cardinality": "0-n",
-                            "gui_order": 36
+                            "gui_order": 38
                         },
                         {
                             "propname": ":hasMovingImageRepresentation",
                             "cardinality": "0-n",
-                            "gui_order": 37
+                            "gui_order": 39
+                        }
+                    ]
+                },
+                {
+                    "name": "Sequence",
+                    "labels": {
+                        "en": "Sequence",
+                        "de": "Sequenz",
+                        "fr": "S\u00e9quence",
+                        "it": "Sequenza"
+                    },
+                    "super": "Resource",
+                    "cardinalities": [
+                        {
+                            "propname": ":hasTitle",
+                            "cardinality": "0-1",
+                            "gui_order": 1
+                        },
+                        {
+                            "propname": ":hasInterval",
+                            "cardinality": "0-1",
+                            "gui_order": 2
+                        },
+                        {
+                            "propname": ":describesSequenceOf",
+                            "cardinality": "0-1",
+                            "gui_order": 3
+                        },
+                        {
+                            "propname": ":isRepresentationOf",
+                            "cardinality": "0-n",
+                            "gui_order": 4
+                        },
+                        {
+                            "propname": ":hasDescription",
+                            "cardinality": "0-n",
+                            "gui_order": 5
                         }
                     ]
                 },
