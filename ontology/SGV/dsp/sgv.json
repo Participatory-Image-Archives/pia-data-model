@@ -3938,7 +3938,7 @@
                     "gui_element": "SimpleText"
                 },
                 {
-                    "name": "hasGeoname",
+                    "name": "hasGeography",
                     "super": [
                         "hasValue",
                         "schema:location"
@@ -3950,6 +3950,9 @@
                         "fr": "Nom (GeoNames)",
                         "it": "Nome (GeoNames)"
                     },
+                    "comments": {
+                        "en": "Legacy proprety that could be deprecated"
+                      },
                     "gui_element": "Geonames"
                 },
                 {
@@ -5690,7 +5693,7 @@
                     "super": "Resource",
                     "cardinalities": [
                         {
-                            "propname": ":hasGeoname",
+                            "propname": ":hasGeography",
                             "cardinality": "0-1",
                             "gui_order": 1
                         },
