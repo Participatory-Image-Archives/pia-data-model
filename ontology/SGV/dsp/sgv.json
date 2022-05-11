@@ -391,6 +391,12 @@
                       }
                   },
                   {
+                    "name": "S_11216",
+                    "labels": {
+                        "de": "Alben"
+                    }
+                  },
+                  {
                       "name": "S_11362",
                       "labels": {
                           "de": "Albumseiten"
@@ -3888,20 +3894,6 @@
                     "gui_element": "Searchbox"
                 },
                 {
-                    "name": "hasOnAlbumPage",
-                    "super": [
-                        "hasLinkTo"
-                    ],
-                    "object": ":Object",
-                    "labels": {
-                        "en": "On the same album page",
-                        "de": "Auf derselben Albumseite",
-                        "fr": "Sur la m\u00eame page d'album",
-                        "it": "Sulla stessa pagina dell'album"
-                    },
-                    "gui_element": "Searchbox"
-                },
-                {
                     "name": "hasVerso",
                     "super": [
                         "hasLinkTo",
@@ -5029,119 +5021,109 @@
                             "gui_order": 15
                         },
                         {
-                            "propname": ":hasOnAlbumPage",
+                            "propname": ":hasVerso",
                             "cardinality": "0-1",
                             "gui_order": 16
                         },
                         {
-                            "propname": ":hasVerso",
+                            "propname": ":hasSeqNr",
                             "cardinality": "0-1",
                             "gui_order": 17
                         },
                         {
-                            "propname": ":hasSeqNr",
-                            "cardinality": "0-1",
-                            "gui_order": 18
-                        },
-                        {
                             "propname": ":hasDescription",
                             "cardinality": "0-n",
-                            "gui_order": 19
+                            "gui_order": 18
                         },
                         {
                             "propname": ":isInLanguage",
                             "cardinality": "0-n",
-                            "gui_order": 20
+                            "gui_order": 19
                         },
                         {
                             "propname": ":hasDuration",
                             "cardinality": "0-1",
-                            "gui_order": 21
+                            "gui_order": 20
                         },
                         {
                             "propname": ":hasFps",
                             "cardinality": "0-1",
-                            "gui_order": 22
+                            "gui_order": 21
                         },
                         {
                             "propname": ":hasRestoration",
                             "cardinality": "0-1",
-                            "gui_order": 23
+                            "gui_order": 22
                         },
                         {
                             "propname": ":hasIndexing",
                             "cardinality": "0-1",
-                            "gui_order": 24
+                            "gui_order": 23
                         },
                         {
                             "propname": ":hasPlace",
                             "cardinality": "0-1",
-                            "gui_order": 25
+                            "gui_order": 24
                         },
                         {
                             "propname": ":hasPart",
                             "cardinality": "0-n",
-                            "gui_order": 26
+                            "gui_order": 25
                         },
                         {
                             "propname": ":isPartOf",
                             "cardinality": "0-n",
-                            "gui_order": 27
+                            "gui_order": 26
                         },
                         {
                             "propname": ":recordedAt",
                             "cardinality": "0-n",
-                            "gui_order": 28
+                            "gui_order": 27
                         },
                         {
                             "propname": ":hasContributor",
                             "cardinality": "0-n",
-                            "gui_order": 29
+                            "gui_order": 28
                         },
                         {
                             "propname": ":hasPiaUrl",
                             "cardinality": "0-1",
-                            "gui_order": 30
+                            "gui_order": 29
                         },
                         {
                             "propname": ":hasCreativeWorkStatus",
                             "cardinality": "0-1",
-                            "gui_order": 31
+                            "gui_order": 30
                         },
                         {
                             "propname": ":relatedLink",
                             "cardinality": "0-n",
-                            "gui_order": 32
+                            "gui_order": 31
                         },
                         {
                             "propname": ":hasComment",
                             "cardinality": "0-n",
-                            "gui_order": 33
+                            "gui_order": 32
                         },
                         {
                             "propname": ":hasArchiveLocation",
                             "cardinality": "0-n",
-                            "gui_order": 34
-                        },
-                        {
-                            "propname": ":hasRestoration",
-                            "cardinality": "0-1",
-                            "gui_order": 36
+                            "gui_order": 33
                         },
                         {
                             "propname": ":hasImageRepresentation",
                             "cardinality": "0-n",
-                            "gui_order": 37
+                            "gui_order": 34
                         },
                         {
                             "propname": ":hasAudioRepresentation",
                             "cardinality": "0-n",
-                            "gui_order": 38
+                            "gui_order": 35
                         },
                         {
                             "propname": ":hasMovingImageRepresentation",
                             "cardinality": "0-n",
-                            "gui_order": 39
+                            "gui_order": 36
                         }
                     ]
                 },
