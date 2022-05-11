@@ -4052,6 +4052,21 @@
                     "gui_element": "Searchbox"
                 },
                 {
+                    "name": "describesSequenceOf",
+                    "super": [
+                        "hasLinkTo",
+                        "schema:isPartOf"
+                    ],
+                    "object": ":Object",
+                    "labels": {
+                        "en": "Describes the sequence of",
+                        "de": "Beschreibt die Sequenz von",
+                        "fr": "Décrit la séquence de",
+                        "it": "Descrive la sequenza di"
+                    },
+                    "gui_element": "Searchbox"
+                },
+                {
                     "name": "hasCollection",
                     "super": [
                         "hasLinkTo",
