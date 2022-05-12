@@ -4532,66 +4532,6 @@
                     "gui_element": "SimpleText"
                 },
                 {
-                    "name": "hasAtlasId",
-                    "super": [
-                        "hasValue",
-                        "schema:identifier"
-                    ],
-                    "object": "TextValue",
-                    "labels": {
-                        "en": "Atlas ID",
-                        "de": "Atlas-ID",
-                        "fr": "Num\u00e9ro Atlas",
-                        "it": "Numero Atlas"
-                    },
-                    "gui_element": "SimpleText"
-                },
-                {
-                    "name": "hasAddress",
-                    "super": [
-                        "hasValue",
-                        "schema:address"
-                    ],
-                    "object": "TextValue",
-                    "labels": {
-                        "en": "Address",
-                        "de": "Adresse",
-                        "fr": "Adresse",
-                        "it": "Indirizzo"
-                    },
-                    "gui_element": "SimpleText"
-                },
-                {
-                    "name": "hasLatitude",
-                    "super": [
-                        "hasValue",
-                        "schema:latitude"
-                    ],
-                    "object": "DecimalValue",
-                    "labels": {
-                        "en": "Latitude",
-                        "de": "Breitengrad",
-                        "fr": "Latitude",
-                        "it": "Latitudine"
-                    },
-                    "gui_element": "SimpleText"
-                },
-                {
-                    "name": "hasLongitude",
-                    "super": [
-                        "hasValue",
-                        "schema:longitude"
-                    ],
-                    "object": "DecimalValue",
-                    "labels": {
-                        "en": "Longitude",
-                        "de": "L\u00e4ngengrad",
-                        "fr": "Longitude",
-                        "it": "Longitudine"
-                    },
-                    "gui_element": "SimpleText"
-                },
-                {
                     "name": "hasPrefLabel",
                     "super": [
                         "hasValue",
