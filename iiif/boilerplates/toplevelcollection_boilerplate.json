@@ -3,18 +3,10 @@
     "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/toplevelcollection_boilerplate.json",
     "type": "Collection",
     "label": {
-      "de": [
-        "Kollektion von IIIF Kollektionen des SGV Fotoarchivs"
-      ],
       "en": [
-        "Collections of IIIF Collections from the SSFS Photo Archives"
+        "IIIF-top-level Collection from the SSFS Photo Archives"
       ]
     },
-    "summary": {
-        "en": [
-          "IIIF top-level Collection from the SSFS Photo Archives"
-        ]
-      },
       "provider": [
         {
           "id": "https://d-nb.info/gnd/1186091584",
