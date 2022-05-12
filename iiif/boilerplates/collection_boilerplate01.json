@@ -3,15 +3,10 @@
     "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/collection_boilerplate01.json",
     "type": "Collection",
     "label": {
-      "de": [
-        "IIIF Manifests aus der Sammlung SGV_10 (Familie Kreis)"
+      "en": [
+        "IIIF Collection of Manifests from the SGV_10 Familie Kreis Collection"
       ]
     },
-    "summary": {
-        "en": [
-          "IIIF Collection of Manifests from the SGV_10 Familie Kreis Collection"
-        ]
-      },
       "provider": [
         {
           "id": "https://d-nb.info/gnd/1186091584",
