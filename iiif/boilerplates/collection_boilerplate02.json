@@ -3,15 +3,10 @@
     "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/collection_boilerplate02.json",
     "type": "Collection",
     "label": {
-      "de": [
-        "IIIF Manifests aus der Sammlung SGV_12 (Ernst Brunner)"
+      "en": [
+        "IIIF Collection of Manifests from the SGV_12 Ernst Brunner Collection"
       ]
     },
-    "summary": {
-        "en": [
-          "IIIF Collection of Manifests from the SGV_12 Ernst Brunner Collection"
-        ]
-      },
       "provider": [
         {
           "id": "https://d-nb.info/gnd/1186091584",
