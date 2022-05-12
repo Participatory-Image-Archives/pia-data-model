@@ -3938,21 +3938,18 @@
                     "gui_element": "SimpleText"
                 },
                 {
-                    "name": "hasGeography",
+                    "name": "hasPlace",
                     "super": [
                         "hasValue",
                         "schema:location"
                     ],
                     "object": "GeonameValue",
                     "labels": {
-                        "en": "Place (GeoNames)",
-                        "de": "Ort (GeoNames)",
-                        "fr": "Lieu (GeoNames)",
-                        "it": "Luogo (GeoNames)"
+                        "en": "Place",
+                        "de": "Ort",
+                        "fr": "Lieu",
+                        "it": "Luogo"
                     },
-                    "comments": {
-                        "en": "Legacy proprety that could be deprecated"
-                      },
                     "gui_element": "Geonames"
                 },
                 {
@@ -4016,17 +4013,17 @@
                 {
                     "name": "hasBirthPlace",
                     "super": [
-                        "hasLinkTo",
+                        "hasValue",
                         "schema:birthPlace"
                     ],
-                    "object": ":Place",
+                    "object": "GeonameValue",
                     "labels": {
                         "en": "Birth place",
                         "de": "geboren/gegründet in",
                         "fr": "Lieu de naissance",
                         "it": "Luogo di nascita"
                     },
-                    "gui_element": "Searchbox"
+                    "gui_element": "Geonames"
                 },
                 {
                     "name": "hasDeathDate",
@@ -4046,17 +4043,17 @@
                 {
                     "name": "hasDeathPlace",
                     "super": [
-                        "hasLinkTo",
+                        "hasValue",
                         "schema:deathPlace"
                     ],
-                    "object": ":Place",
+                    "object": "GeonameValue",
                     "labels": {
                         "en": "Death place",
                         "de": "verstorben in",
                         "fr": "Lieu de mort",
                         "it": "Luogo di morte"
                     },
-                    "gui_element": "Searchbox"
+                    "gui_element": "Geonames"
                 },
                 {
                     "name": "hasLiterature",
@@ -4242,21 +4239,6 @@
                         "fr": "Nom alternatif"
                     },
                     "gui_element": "SimpleText"
-                },
-                {
-                    "name": "hasPlace",
-                    "super": [
-                        "hasLinkTo",
-                        "schema:spatial"
-                    ],
-                    "object": ":Place",
-                    "labels": {
-                        "en": "Place",
-                        "de": "Ort",
-                        "fr": "Lieu",
-                        "it": "Luogo"
-                    },
-                    "gui_element": "Searchbox"
                 },
                 {
                     "name": "hasPart",
@@ -4507,17 +4489,17 @@
                 {
                     "name": "isLocated",
                     "super": [
-                        "hasLinkTo",
+                        "hasValue",
                         "schema:location"
                     ],
-                    "object": ":Place",
+                    "object": "GeonameValue",
                     "labels": {
                         "en": "Organisation's headquarters",
                         "de": "Hauptsitz der Organisation",
                         "fr": "Si\u00e8ge de l'organisation",
                         "it": "Sede dell'organizzazione"
                     },
-                    "gui_element": "Searchbox"
+                    "gui_element": "Geonames"
                 },
                 {
                     "name": "hasGivenName",
@@ -5684,63 +5666,6 @@
                             "propname": ":hasPlace",
                             "cardinality": "0-n",
                             "gui_order": 14
-                        }
-                    ]
-                },
-                {
-                    "name": "Place",
-                    "labels": {
-                        "en": "Place",
-                        "de": "Ort",
-                        "fr": "Lieu",
-                        "it": "Luogo"
-                    },
-                    "super": "Resource",
-                    "cardinalities": [
-                        {
-                            "propname": ":hasGeography",
-                            "cardinality": "0-1",
-                            "gui_order": 1
-                        },
-                        {
-                            "propname": ":hasAlternateName",
-                            "cardinality": "0-n",
-                            "gui_order": 2
-                        },
-                        {
-                            "propname": ":hasDescription",
-                            "cardinality": "0-n",
-                            "gui_order": 3
-                        },
-                        {
-                            "propname": ":hasAddress",
-                            "cardinality": "0-1",
-                            "gui_order": 4
-                        },
-                        {
-                            "propname": ":hasLatitude",
-                            "cardinality": "0-1",
-                            "gui_order": 5
-                        },
-                        {
-                            "propname": ":hasLongitude",
-                            "cardinality": "0-1",
-                            "gui_order": 6
-                        },
-                        {
-                            "propname": ":sameAs",
-                            "cardinality": "0-n",
-                            "gui_order": 7
-                        },
-                        {
-                            "propname": ":hasAtlasId",
-                            "cardinality": "0-1",
-                            "gui_order": 8
-                        },
-                        {
-                            "propname": ":hasPiaUrl",
-                            "cardinality": "0-1",
-                            "gui_order": 9
                         }
                     ]
                 },
