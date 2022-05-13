@@ -4,7 +4,7 @@
   "type": "Manifest",
   "label": {
     "en": [
-      "PIA IIIF Manifest Boilerplate 1: IIIF Manifest with a single image"
+      "[Schwyzer Fasnacht]"
     ]
   },
   "summary": {
@@ -31,24 +31,48 @@
     {
       "label": {
         "de": [
-          "Hersteller"
+          "Alte Nummer"
         ]
       },
       "value": {
         "de": [
-          "Brunner, Ernst"
+          "AA 1"
         ]
       }
     },
     {
       "label": {
         "de": [
-          "Datum"
+          "Sammlung"
         ]
       },
       "value": {
         "de": [
-          "1937"
+          "SGV_12"
+        ]
+      }
+    },
+    {
+      "label": {
+        "de": [
+          "Modeltyp"
+        ]
+      },
+      "value": {
+        "de": [
+          "schwarz/weiss"
+        ]
+      }
+    },
+    {
+      "label": {
+        "de": [
+          "Format"
+        ]
+      },
+      "value": {
+        "de": [
+          "6 x 6 cm: 6 x 6,3 cm"
         ]
       }
     },
@@ -67,41 +91,17 @@
     {
       "label": {
         "de": [
-          "Sammlung"
+          "Datum"
         ]
       },
       "value": {
         "de": [
-          "SGV_12 Ernst Brunner"
-        ]
-      }
-    },
-    {
-      "label": {
-        "de": [
-          "Objekttyp"
-        ]
-      },
-      "value": {
-        "de": [
-          "Negativ schwarz/weiss, 6x6 cm"
-        ]
-      }
-    },
-    {
-      "label": {
-        "en": [
-          "Signatur"
-        ]
-      },
-      "value": {
-        "en": [
-          "SGV_12N_00001. Alte Bildnumer: AA 1"
+          "1937"
         ]
       }
     }
   ],
-  "rights": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "rights": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
   "requiredStatement": {
     "label": {
       "de": [
@@ -110,43 +110,19 @@
     },
     "value": {
       "de": [
-        "Schweizerische Gesellschaft für Volkskunde (SGV). CC BY-NC-ND 4.0"
+        "Schweizerische Gesellschaft für Volkskunde (SGV)"
       ],
       "fr": [
-        "Socité Suisse des Traditions populaires (SSTP). CC BY-NC-ND 4.0"
+        "Socité Suisse des Traditions populaires (SSTP)"
       ],
       "it": [
-        "Società Svizzera per le Tradizioni Popolari (SSTP). CC BY-NC-ND 4.0"
+        "Società Svizzera per le Tradizioni Popolari (SSTP)"
       ],
       "en": [
-        "Swiss Society for Folklore Studies (SSFS). CC BY-NC-ND 4.0"
+        "Swiss Society for Folklore Studies (SSFS)"
       ]
     }
   },
-  "homepage": [
-    {
-      "id": "https://archiv.sgv-sstp.ch/resource/422236",
-      "type": "Text",
-      "label": {
-        "en": [
-          "Homepage of SGV_12N_00001"
-        ]
-      },
-      "format": "text/html"
-    }
-  ],
-  "seeAlso": [
-    {
-      "id": "https://pia-api.dhlab.unibas.ch/api/v1/images/12033",
-      "type": "Dataset",
-      "label": {
-        "en": [
-          "PIA API"
-        ]
-      },
-      "format": "application/json"
-    }
-  ],
   "provider": [
     {
       "id": "https://d-nb.info/gnd/1186091584",
@@ -178,17 +154,17 @@
         }
       ]
     }
-  ],  
+  ],
   "logo": [
     {
-      "id": "https://pia-iiif.dhlab.unibas.ch/SGV_logo.jp2/full/max/0/default.jpg",
+      "id": "https://sipi.participatory-archives.ch/SGV_logo.jp2/full/max/0/default.jpg",
       "type": "Image",
       "format": "image/jpeg",
       "height": 149,
       "width": 500,
       "service": [
         {
-          "id": "https://pia-iiif.dhlab.unibas.ch/SGV_logo.jp2",
+          "id": "https://sipi.participatory-archives.ch/SGV_logo.jp2",
           "type": "ImageService3",
           "profile": "level2"
         }
@@ -197,12 +173,12 @@
   ],
   "thumbnail": [
     {
-      "id": "https://pia-iiif.dhlab.unibas.ch/SGV_12/SGV_12N_00001.jp2/full/80,/0/default.jpg",
+      "id": "https://sipi.participatory-archives.ch/SGV_12/SGV_12N_00001.jp2/full/80,/0/default.jpg",
       "type": "Image",
       "format": "image/jpeg",
       "service": [
         {
-          "id": "https://pia-iiif.dhlab.unibas.ch/SGV_12/SGV_12N_00001.jp2",
+          "id": "https://sipi.participatory-archives.ch/SGV_12/SGV_12N_00001.jp2",
           "type": "ImageService3",
           "profile": "level2"
         }
@@ -210,59 +186,64 @@
     }
   ],
   "viewingDirection": "left-to-right",
-  "navDate": "1937-01-01T00:00:00+00:00",
   "items": [
     {
-      "id": "https://pia-something.ch/iiif/boilerplate01/canvas/p1",
+      "id": "https://iiif.participatory-archives.ch/12033/canvas/p1",
       "type": "Canvas",
       "label": {
-    "none": [
-      "SGV_12N_00001"
-    ]
-  },
-      "height": 4190,
-      "width": 4252,
+        "none": [
+          "SGV_12N_00001"
+        ]
+      },
+      "height": 4252,
+      "width": 4190,
       "items": [
         {
-          "id": "https://pia-iiif.dhlab.unibas.ch/server/SGV_12N_00001/canvas/p1",
-          "type": "Canvas",
-          "label": {
-          "none": [
-            "SGV_12N_00001"
-          ]
-        },
-          "height": 4252,
-          "width": 4190,
+          "id": "https://iiif.participatory-archives.ch/12033/canvas/p1/1",
+          "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://pia-iiif.dhlab.unibas.ch/server/SGV_12N_00001/canvas/p1/1",
+              "id": "https://iiif.participatory-archives.ch/12033/annotation/p0001-image",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://sipi.participatory-archives.ch/SGV_12/SGV_12N_00001.jp2/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 4252,
+                "width": 4190,
+                "service": [
+                  {
+                    "id": "https://sipi.participatory-archives.ch/SGV_12/SGV_12N_00001.jp2",
+                    "type": "ImageService3",
+                    "profile": "level2"
+                  }
+                ]
+              },
+              "target": "https://iiif.participatory-archives.ch/12033/canvas/p1"
+            }
+          ],
+          "annotations": [
+            {
+              "id": "https://julsraemy.github.io/annonatate/annotations/12033-p1-list.json",
               "type": "AnnotationPage",
-              "items": [
-                {
-                  "id": "https://pia-iiif.dhlab.unibas.ch/server/SGV_12N_00001/annotation/p0001-image",
-                  "type": "Annotation",
-                  "motivation": "painting",
-                  "body": {
-                    "id": "https://pia-iiif.dhlab.unibas.ch/SGV_12/SGV_12N_00001.jp2/full/max/0/default.jpg",
-                    "type": "Image",
-                    "format": "image/jpeg",
-                    "height": 4252,
-                    "width": 4190,
-                    "service": [
-                      {
-                        "id": "https://pia-iiif.dhlab.unibas.ch/SGV_12/SGV_12N_00001.jp2",
-                        "type": "ImageService3",
-                        "profile": "level2"
-                      }
-                    ]
-                  },
-                  "target": "https://pia-iiif.dhlab.unibas.ch/server/SGV_12N_00001/canvas/p1/1"
-                }
-              ]
+              "target": "https://iiif.participatory-archives.ch/12033/canvas/p1"
             }
           ]
         }
       ]
+    }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://data.participatory-archives.ch/api/v1/images/12033",
+      "type": "Dataset",
+      "label": {
+        "en": [
+          "PIA JSON API"
+        ]
+      },
+      "format": "application/vnd.api+json"
     }
   ]
 }
