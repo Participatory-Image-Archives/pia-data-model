@@ -4150,22 +4150,25 @@
                     "object": ":Object",
                     "labels": {
                         "en": "Example image",
-                        "de": "Bildverknüpfung"
+                        "de": "Bildverknüpfung",
+                        "fr": "Image témoin",
                     },
                     "gui_element": "Searchbox"
                 },
                 {
-                    "name": "hasDefaultVideo",
+                    "name": "hasEmbeddedVideo",
                     "super": [
-                        "hasLinkTo",
+                        "hasValue",
                         "schema:workExample"
                     ],
-                    "object": ":Object",
+                    "object": "TextValue",
                     "labels": {
-                        "en": "Example video",
-                        "de": "Video Verkn\u00fcpfung"
+                        "en": "Embedded video",
+                        "de": "Eingebettetes Video",
+                        "fr": "Vidéo intégrée",
+                        "it": "Video incorporato"
                     },
-                    "gui_element": "Searchbox"
+                    "gui_element": "SimpleText"
                 },
                 {
                     "name": "isInLanguage",
@@ -5252,7 +5255,7 @@
                             "gui_order": 11
                         },
                         {
-                            "propname": ":hasDefaultVideo",
+                            "propname": ":hasEmbeddedVideo",
                             "cardinality": "0-1",
                             "gui_order": 12
                         },
