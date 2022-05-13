@@ -4229,20 +4229,6 @@
                     "gui_element": "Interval"
                 },
                 {
-                    "name": "hasAlternateName",
-                    "super": [
-                        "hasValue",
-                        "schema:alternateName"
-                    ],
-                    "object": "TextValue",
-                    "labels": {
-                        "en": "Alternative name",
-                        "de": "Alternativname",
-                        "fr": "Nom alternatif"
-                    },
-                    "gui_element": "SimpleText"
-                },
-                {
                     "name": "hasPart",
                     "super": [
                         "hasLinkTo",
