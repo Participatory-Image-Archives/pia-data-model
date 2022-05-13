@@ -225,7 +225,7 @@
           ],
           "annotations": [
             {
-              "id": "https://julsraemy.github.io/annonatate/annotations/12033-p1-list.json",
+              "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/annotations_boilerplate01.json",
               "type": "AnnotationPage",
               "target": "https://iiif.participatory-archives.ch/12033/canvas/p1"
             }
