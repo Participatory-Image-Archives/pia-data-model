@@ -4151,7 +4151,7 @@
                     "labels": {
                         "en": "Example image",
                         "de": "Bildverknüpfung",
-                        "fr": "Image témoin",
+                        "fr": "Image témoin"
                     },
                     "gui_element": "Searchbox"
                 },
