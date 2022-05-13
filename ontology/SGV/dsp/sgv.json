@@ -4165,10 +4165,10 @@
                     "labels": {
                         "en": "Embedded video",
                         "de": "Eingebettetes Video",
-                        "fr": "Vidéo intégrée",
+                        "fr": "Vidéo embarquée",
                         "it": "Video incorporato"
                     },
-                    "gui_element": "SimpleText"
+                    "gui_element": "Richtext"
                 },
                 {
                     "name": "isInLanguage",
