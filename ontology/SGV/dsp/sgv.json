@@ -4063,7 +4063,8 @@
                     "labels": {
                         "en": "Literature",
                         "de": "Literatur",
-                        "fr": "Littérature"
+                        "fr": "Littérature",
+                        "it": "Letteratura"
                     },
                     "comments": {
                           "en": "This property cannot be mapped to existing vocabularies. It may be deprecated in the future"
@@ -4150,7 +4151,8 @@
                     "labels": {
                         "en": "Example image",
                         "de": "Bildverknüpfung",
-                        "fr": "Image témoin"
+                        "fr": "Image témoin",
+                        "it": "Immagine d'esempio"
                     },
                     "gui_element": "Searchbox"
                 },
@@ -4979,69 +4981,64 @@
                             "gui_order": 24
                         },
                         {
-                            "propname": ":hasGeography",
-                            "cardinality": "0-1",
-                            "gui_order": 25
-                        },
-                        {
                             "propname": ":hasPart",
                             "cardinality": "0-n",
-                            "gui_order": 26
+                            "gui_order": 25
                         },
                         {
                             "propname": ":isPartOf",
                             "cardinality": "0-n",
-                            "gui_order": 27
+                            "gui_order": 26
                         },
                         {
                             "propname": ":recordedAt",
                             "cardinality": "0-n",
-                            "gui_order": 28
+                            "gui_order": 27
                         },
                         {
                             "propname": ":hasContributor",
                             "cardinality": "0-n",
-                            "gui_order": 29
+                            "gui_order": 28
                         },
                         {
                             "propname": ":hasPiaUrl",
                             "cardinality": "0-1",
-                            "gui_order": 30
+                            "gui_order": 29
                         },
                         {
                             "propname": ":hasCreativeWorkStatus",
                             "cardinality": "0-1",
-                            "gui_order": 31
+                            "gui_order": 30
                         },
                         {
                             "propname": ":relatedLink",
                             "cardinality": "0-n",
-                            "gui_order": 32
+                            "gui_order": 31
                         },
                         {
                             "propname": ":hasComment",
                             "cardinality": "0-n",
-                            "gui_order": 33
+                            "gui_order": 32
                         },
                         {
                             "propname": ":hasArchiveLocation",
                             "cardinality": "0-n",
-                            "gui_order": 34
+                            "gui_order": 33
                         },
                         {
                             "propname": ":hasImageRepresentation",
                             "cardinality": "0-n",
-                            "gui_order": 35
+                            "gui_order": 34
                         },
                         {
                             "propname": ":hasAudioRepresentation",
                             "cardinality": "0-n",
-                            "gui_order": 36
+                            "gui_order": 35
                         },
                         {
                             "propname": ":hasMovingImageRepresentation",
                             "cardinality": "0-n",
-                            "gui_order": 37
+                            "gui_order": 36
                         }
                     ]
                 },
