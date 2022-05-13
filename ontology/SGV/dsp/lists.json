@@ -1,0 +1,2808 @@
+{
+    "Standorte": {
+        "id": "http://rdfh.ch/lists/0812/XH3pBVRdRF6pAp74bUpqbA",
+        "nodes": [
+            {
+                "H_3140": {
+                    "id": "http://rdfh.ch/lists/0812/Q-EFpJSWSny58UzxRhPicQ",
+                    "nodes": [
+                        {
+                            "H_3141": {
+                                "id": "http://rdfh.ch/lists/0812/VrCwsmYpTNeRewbIm4rLRQ",
+                                "nodes": [
+                                    {
+                                        "H_3148": {
+                                            "id": "http://rdfh.ch/lists/0812/7pVZgbGqTkqHjFVoINYYvA"
+                                        }
+                                    },
+                                    {
+                                        "H_3149": {
+                                            "id": "http://rdfh.ch/lists/0812/m1eushHaS5GKujyaVEtWJQ"
+                                        }
+                                    },
+                                    {
+                                        "H_3150": {
+                                            "id": "http://rdfh.ch/lists/0812/Urcrv-KLTpWxNB8ber8bgw"
+                                        }
+                                    },
+                                    {
+                                        "H_3151": {
+                                            "id": "http://rdfh.ch/lists/0812/uBOqNHRUS3GlrO08WD0-Bg"
+                                        }
+                                    },
+                                    {
+                                        "H_3152": {
+                                            "id": "http://rdfh.ch/lists/0812/Nhj5SWQHR1qtZMJFZ-LZzw"
+                                        }
+                                    },
+                                    {
+                                        "H_3153": {
+                                            "id": "http://rdfh.ch/lists/0812/zk6qYrJeQsC1QmslkGdo3w"
+                                        }
+                                    },
+                                    {
+                                        "H_3491": {
+                                            "id": "http://rdfh.ch/lists/0812/JHWYhoyMR0S_1ME-BCldQA"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "H_3142": {
+                                "id": "http://rdfh.ch/lists/0812/8LrZB2aXTNeePyW0yM3i6Q",
+                                "nodes": [
+                                    {
+                                        "H_3172": {
+                                            "id": "http://rdfh.ch/lists/0812/riOjH-rsQwmxToWdKq2nJw",
+                                            "nodes": [
+                                                {
+                                                    "H_3189": {
+                                                        "id": "http://rdfh.ch/lists/0812/AkRBAw1nQYGs1awsNDT1VQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3190": {
+                                                        "id": "http://rdfh.ch/lists/0812/eVmBv7bwQo2E12YcgRT0XA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3191": {
+                                                        "id": "http://rdfh.ch/lists/0812/yLN1A3I5S8iL9EutrmWbOg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3192": {
+                                                        "id": "http://rdfh.ch/lists/0812/scxNcOlnT5CUjjszV6Tclw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3193": {
+                                                        "id": "http://rdfh.ch/lists/0812/TQH23PflTQCYanvkX_Cs2A"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3194": {
+                                                        "id": "http://rdfh.ch/lists/0812/k3nacvDFQKSfawp8Bz3ppA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3493": {
+                                                        "id": "http://rdfh.ch/lists/0812/CJDPucZ-Sfa1Yk1Pj5dxzw"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3171": {
+                                            "id": "http://rdfh.ch/lists/0812/wyVLzYpDQueWv1J4thaVsA",
+                                            "nodes": [
+                                                {
+                                                    "H_3195": {
+                                                        "id": "http://rdfh.ch/lists/0812/fLB1AlcfQwa4XeWmcpcEmg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3196": {
+                                                        "id": "http://rdfh.ch/lists/0812/5It5exYTSYyHlrH9VrudfQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3197": {
+                                                        "id": "http://rdfh.ch/lists/0812/WPRfQKs-SFOO9aXXgt_olw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3198": {
+                                                        "id": "http://rdfh.ch/lists/0812/KYxJeCFzSB6vjfy8mlXOTQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3199": {
+                                                        "id": "http://rdfh.ch/lists/0812/Y91SEqD-RcKKlwNfUffUxQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3200": {
+                                                        "id": "http://rdfh.ch/lists/0812/GqTBZDQTROaBan_qtNdO8g"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3494": {
+                                                        "id": "http://rdfh.ch/lists/0812/oo56AxjOR0OblMHa1t9ZsQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3495": {
+                                                        "id": "http://rdfh.ch/lists/0812/Y1qce4zwR8SM1I7wzdU2rg"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3169": {
+                                            "id": "http://rdfh.ch/lists/0812/nUWKONgjSziFHNYIAVr36Q",
+                                            "nodes": [
+                                                {
+                                                    "H_3201": {
+                                                        "id": "http://rdfh.ch/lists/0812/DkK_kcTtS_mtdLHLyUAAZA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3202": {
+                                                        "id": "http://rdfh.ch/lists/0812/D_YbN4HjSTWyGsIhGWOTtw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3203": {
+                                                        "id": "http://rdfh.ch/lists/0812/dKgLtK0mQLelDShIQfaGjQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3204": {
+                                                        "id": "http://rdfh.ch/lists/0812/Th74AgUPSqWO9-oYivb5CA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3205": {
+                                                        "id": "http://rdfh.ch/lists/0812/Ys8r2g_cQcmKz97QQNloZw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3206": {
+                                                        "id": "http://rdfh.ch/lists/0812/xktu7eAXShi7rqLtPo8-0Q"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3496": {
+                                                        "id": "http://rdfh.ch/lists/0812/y9b6OPmvSqiBvqpDoc71pA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3497": {
+                                                        "id": "http://rdfh.ch/lists/0812/j-je5HvxQpejaEtU0ijGbw"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3170": {
+                                            "id": "http://rdfh.ch/lists/0812/pg3qC3aoQBenPwTZY6fRIw",
+                                            "nodes": [
+                                                {
+                                                    "H_3207": {
+                                                        "id": "http://rdfh.ch/lists/0812/egS7aSl_T4esJFg8A3ucWg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3208": {
+                                                        "id": "http://rdfh.ch/lists/0812/pI5iXfeMSZ630TcM2sfzYg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3209": {
+                                                        "id": "http://rdfh.ch/lists/0812/RJ3Sl2OwQdOwfWACzqT0Cw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3210": {
+                                                        "id": "http://rdfh.ch/lists/0812/OR1UwO_0SSiEPzNG3RRyPA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3211": {
+                                                        "id": "http://rdfh.ch/lists/0812/RsQhPkwQQ9yiEOPJSufkbw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3212": {
+                                                        "id": "http://rdfh.ch/lists/0812/Ran6w4u-RD2mEDKr7qW1mg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3499": {
+                                                        "id": "http://rdfh.ch/lists/0812/JW6ZpnllSbmAB1gFbmaABA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3500": {
+                                                        "id": "http://rdfh.ch/lists/0812/fQ2wo-PDRoq8y6AnqM1chg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3501": {
+                                                        "id": "http://rdfh.ch/lists/0812/dvEIM8iWQNWOuWPmHK8lOg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3502": {
+                                                        "id": "http://rdfh.ch/lists/0812/WYwDpQonQqKz4TcAWMlFfg"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3492": {
+                                            "id": "http://rdfh.ch/lists/0812/SZTcM77aSOSy_25HdbQN2Q",
+                                            "nodes": [
+                                                {
+                                                    "H_3503": {
+                                                        "id": "http://rdfh.ch/lists/0812/GwbTm673QFmf26esaRt0bw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3504": {
+                                                        "id": "http://rdfh.ch/lists/0812/9PFTB-afQdm5ZYjGsp25iA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3505": {
+                                                        "id": "http://rdfh.ch/lists/0812/RKnvpGlURO6HLXgWvCrclw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3506": {
+                                                        "id": "http://rdfh.ch/lists/0812/E9kHTaYOTYuyR3fQC9JBYw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3507": {
+                                                        "id": "http://rdfh.ch/lists/0812/MACm9zxIReaxV81s0sN4mw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3508": {
+                                                        "id": "http://rdfh.ch/lists/0812/scG4ZeufTzaD2fPySn3IyA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3509": {
+                                                        "id": "http://rdfh.ch/lists/0812/RaitBXORTEyBsXLY906Y2g"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3510": {
+                                                        "id": "http://rdfh.ch/lists/0812/mdSZjx5eS3O_hd9PkJeZqg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3511": {
+                                                        "id": "http://rdfh.ch/lists/0812/OIQzzvcqSVeq2HVQ1Wj6TA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3512": {
+                                                        "id": "http://rdfh.ch/lists/0812/chOHOy-LSDuQq1euL6m7zA"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3161": {
+                                            "id": "http://rdfh.ch/lists/0812/Id45XIoJTVyE6hdyFpfgNw"
+                                        }
+                                    },
+                                    {
+                                        "H_3162": {
+                                            "id": "http://rdfh.ch/lists/0812/X1TdIIMeTQSeDtkjV7ZPKA"
+                                        }
+                                    },
+                                    {
+                                        "H_3163": {
+                                            "id": "http://rdfh.ch/lists/0812/n1RqdTpnQ5ehCSIbg1cvaA"
+                                        }
+                                    },
+                                    {
+                                        "H_3164": {
+                                            "id": "http://rdfh.ch/lists/0812/WAkc5lJmTiSdP3AwDE-oKA"
+                                        }
+                                    },
+                                    {
+                                        "H_3165": {
+                                            "id": "http://rdfh.ch/lists/0812/npPvOMeESAmrEA8q2LMUUw"
+                                        }
+                                    },
+                                    {
+                                        "H_3166": {
+                                            "id": "http://rdfh.ch/lists/0812/faxotlHvTj2sFqsFco8CJQ"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "H_3143": {
+                                "id": "http://rdfh.ch/lists/0812/00hv7tEHSuObRfU7whDmAw",
+                                "nodes": [
+                                    {
+                                        "H_3173": {
+                                            "id": "http://rdfh.ch/lists/0812/nSIdlg2lQhee0jQkiNSNEg",
+                                            "nodes": [
+                                                {
+                                                    "H_3175": {
+                                                        "id": "http://rdfh.ch/lists/0812/LCCo3RfDRc-nng_9cQdW2g"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3176": {
+                                                        "id": "http://rdfh.ch/lists/0812/wpzmI4afQcm71rJsXvIfZg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3177": {
+                                                        "id": "http://rdfh.ch/lists/0812/HSxtRTzPQSCTwEy0f6cwcA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3178": {
+                                                        "id": "http://rdfh.ch/lists/0812/OjgAGEhAR2eE1GbnX3SuaA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3179": {
+                                                        "id": "http://rdfh.ch/lists/0812/ezxKY1fBS8OfV3yYzEGeVw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3180": {
+                                                        "id": "http://rdfh.ch/lists/0812/lasf_HgqS5utvQBV8dUPlw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3181": {
+                                                        "id": "http://rdfh.ch/lists/0812/cYe5LqWoT6qcDwyrNQxZfw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3182": {
+                                                        "id": "http://rdfh.ch/lists/0812/5_3roLJCR6Sc0AHS3FI_fQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3183": {
+                                                        "id": "http://rdfh.ch/lists/0812/5ZWDn2gDTj6VqJve2Ly3XA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3184": {
+                                                        "id": "http://rdfh.ch/lists/0812/t-XPBvYISyGPeitqiGUROg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3185": {
+                                                        "id": "http://rdfh.ch/lists/0812/LhuYP9hETSqwvxs5-2DySw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3186": {
+                                                        "id": "http://rdfh.ch/lists/0812/zrrsAeVhTm2yAHE7DasPBg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3187": {
+                                                        "id": "http://rdfh.ch/lists/0812/-guYBEhAR5uWBh9ACmZ9mw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3188": {
+                                                        "id": "http://rdfh.ch/lists/0812/fOrsg4bdRwixemQgLvFjZw"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "H_3144": {
+                                "id": "http://rdfh.ch/lists/0812/De7_v2CNTLyAPI8hpnIXSg",
+                                "nodes": [
+                                    {
+                                        "H_3219": {
+                                            "id": "http://rdfh.ch/lists/0812/L9h3CAtIRryHkSpnHbrXKw",
+                                            "nodes": [
+                                                {
+                                                    "H_3233": {
+                                                        "id": "http://rdfh.ch/lists/0812/SmgZFpmCQV2_19mCQj6koQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3234": {
+                                                        "id": "http://rdfh.ch/lists/0812/eNcHpgjYQwqi3ySHP4TGOg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3235": {
+                                                        "id": "http://rdfh.ch/lists/0812/Yg2Hq1m8SQu17So3CR3TBw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3236": {
+                                                        "id": "http://rdfh.ch/lists/0812/vw5eNiJ1QVOsFV-Yi3VD1A"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3237": {
+                                                        "id": "http://rdfh.ch/lists/0812/GeDBOQOXRSSDDCiwtYqB-w"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3238": {
+                                                        "id": "http://rdfh.ch/lists/0812/i_Y_qa3rQ4iZnqSKPfPrBw"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3220": {
+                                            "id": "http://rdfh.ch/lists/0812/lSz5Te3uSAKruxuTwSpXCQ",
+                                            "nodes": [
+                                                {
+                                                    "H_3239": {
+                                                        "id": "http://rdfh.ch/lists/0812/unu0Ux2jSgufIIxLfg-XTA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3240": {
+                                                        "id": "http://rdfh.ch/lists/0812/ty7nEcD4RqeCHcG30ORHNQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3241": {
+                                                        "id": "http://rdfh.ch/lists/0812/wDp92ZLASAmogcsYyF8pjw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3242": {
+                                                        "id": "http://rdfh.ch/lists/0812/dgB62VENTlyoundNiaSZBg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3243": {
+                                                        "id": "http://rdfh.ch/lists/0812/g7qsUSTYSvS047jtDXkbPw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3244": {
+                                                        "id": "http://rdfh.ch/lists/0812/EA3SdVjLRdCFpu8E9l-uaA"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3221": {
+                                            "id": "http://rdfh.ch/lists/0812/vmr1COQbSFmCe9ANfGyOTw",
+                                            "nodes": [
+                                                {
+                                                    "H_3245": {
+                                                        "id": "http://rdfh.ch/lists/0812/7yvB5pITRPqqsxj4BfSOvA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3246": {
+                                                        "id": "http://rdfh.ch/lists/0812/sqWvouYAS6u8h-SC7vF9QQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3247": {
+                                                        "id": "http://rdfh.ch/lists/0812/TM3a2g4rSSaE6wqlVLO3RA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3248": {
+                                                        "id": "http://rdfh.ch/lists/0812/cxiD0MAnSS2fxgRnvQBjDg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3249": {
+                                                        "id": "http://rdfh.ch/lists/0812/MLdA4hsCReOaoI7_xOpsRg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3250": {
+                                                        "id": "http://rdfh.ch/lists/0812/RzHCQ8C-RPmrIVtqFa5l1g"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3224": {
+                                            "id": "http://rdfh.ch/lists/0812/z_a6kKBESS6XC0k06chPkw"
+                                        }
+                                    },
+                                    {
+                                        "H_3225": {
+                                            "id": "http://rdfh.ch/lists/0812/d5dgxIBFTR-RMxybxiMUNQ"
+                                        }
+                                    },
+                                    {
+                                        "H_3226": {
+                                            "id": "http://rdfh.ch/lists/0812/hSuXO2wwStGQn1Qi8MTG6Q"
+                                        }
+                                    },
+                                    {
+                                        "H_3227": {
+                                            "id": "http://rdfh.ch/lists/0812/GVPQjUqUQCCMzVRF2AuFUw"
+                                        }
+                                    },
+                                    {
+                                        "H_3228": {
+                                            "id": "http://rdfh.ch/lists/0812/xyuN30_YQVWN29Te1OMEjw"
+                                        }
+                                    },
+                                    {
+                                        "H_3229": {
+                                            "id": "http://rdfh.ch/lists/0812/jg5k7qU5SLCr0ilKqddfBg"
+                                        }
+                                    },
+                                    {
+                                        "H_3230": {
+                                            "id": "http://rdfh.ch/lists/0812/Rjt082X7TkapR89JUmpJ0A"
+                                        }
+                                    },
+                                    {
+                                        "H_3231": {
+                                            "id": "http://rdfh.ch/lists/0812/GF_IFCknQzOzH4Sgt7gIxg"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "H_3146": {
+                                "id": "http://rdfh.ch/lists/0812/-rQQ5VmYR5u0n7iR8ZSuIg",
+                                "nodes": [
+                                    {
+                                        "H_3263": {
+                                            "id": "http://rdfh.ch/lists/0812/jO0NnlY1QKSUR6FPl-qaKA",
+                                            "nodes": [
+                                                {
+                                                    "H_3294": {
+                                                        "id": "http://rdfh.ch/lists/0812/6dixirXLS-yYcXEwQHPPdw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3295": {
+                                                        "id": "http://rdfh.ch/lists/0812/0bJfwL1kQPKEmE4SNQHolA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3296": {
+                                                        "id": "http://rdfh.ch/lists/0812/rxhyt-p8SkivxMhWCHdKYw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3297": {
+                                                        "id": "http://rdfh.ch/lists/0812/T5C6HKq5S9qo0FJCRG-4Qg"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3264": {
+                                            "id": "http://rdfh.ch/lists/0812/ROAci2JGSzOHC_bU22PjzQ",
+                                            "nodes": [
+                                                {
+                                                    "H_3298": {
+                                                        "id": "http://rdfh.ch/lists/0812/Gc8ASm1ZQ261i_MVzwRxww"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3299": {
+                                                        "id": "http://rdfh.ch/lists/0812/Zsi-nuunRqqFjxkdJrwDcg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3300": {
+                                                        "id": "http://rdfh.ch/lists/0812/EiYfsFEfQOOOETc78-4Kwg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3301": {
+                                                        "id": "http://rdfh.ch/lists/0812/iP7uVE5BRfqjCMjdqJbgBw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3302": {
+                                                        "id": "http://rdfh.ch/lists/0812/miDNKvG3StKH9GIlNzarSw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3303": {
+                                                        "id": "http://rdfh.ch/lists/0812/oJuWrBcARmSTGDEJK9jhxA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3304": {
+                                                        "id": "http://rdfh.ch/lists/0812/PsE5KE21TASocP4ak92Xbw"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3265": {
+                                            "id": "http://rdfh.ch/lists/0812/yR7PHKaTSWGExkLQRhS_Wg",
+                                            "nodes": [
+                                                {
+                                                    "H_3305": {
+                                                        "id": "http://rdfh.ch/lists/0812/fB5BHHrNS_6ZoSvl-7_Ecw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3306": {
+                                                        "id": "http://rdfh.ch/lists/0812/wxoGmsLpTFCmgOn12nW1Ow"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3307": {
+                                                        "id": "http://rdfh.ch/lists/0812/cscYDLCtQW6DXGPaPjLVGg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3308": {
+                                                        "id": "http://rdfh.ch/lists/0812/H3wTREpxRfSfh9eBRRF1eA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3309": {
+                                                        "id": "http://rdfh.ch/lists/0812/aof4bg1lT66Pj6ttyOJJ_A"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3266": {
+                                            "id": "http://rdfh.ch/lists/0812/ctJkwzZPTmmiUApHhkZxWg",
+                                            "nodes": [
+                                                {
+                                                    "H_3310": {
+                                                        "id": "http://rdfh.ch/lists/0812/IdjFlETiTiuV9rdgHqmbrQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3311": {
+                                                        "id": "http://rdfh.ch/lists/0812/E8zlg5_5RxKzOGQxapACPA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3312": {
+                                                        "id": "http://rdfh.ch/lists/0812/IMm1wZIpTpiNL4f-kIqP1Q"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3313": {
+                                                        "id": "http://rdfh.ch/lists/0812/XjSWV09ySrCz3wiAdtiq2Q"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3314": {
+                                                        "id": "http://rdfh.ch/lists/0812/yMb0tCWBQwm7X9LTmD_a3A"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3315": {
+                                                        "id": "http://rdfh.ch/lists/0812/b_mHngqDSjiwsl0UE9tIgA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3316": {
+                                                        "id": "http://rdfh.ch/lists/0812/mUFMODxoQjeCckRSkHcwxg"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3267": {
+                                            "id": "http://rdfh.ch/lists/0812/yZ7wCQFpTKilSqG13F9bRQ",
+                                            "nodes": [
+                                                {
+                                                    "H_3317": {
+                                                        "id": "http://rdfh.ch/lists/0812/ncj0BYo_QXCLz1wVxoIg2g"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3318": {
+                                                        "id": "http://rdfh.ch/lists/0812/eGPDR7miRZG9nyuJ2qEDmA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3319": {
+                                                        "id": "http://rdfh.ch/lists/0812/1iZ0Q3niRPWoiIAjqheXWA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3320": {
+                                                        "id": "http://rdfh.ch/lists/0812/YJct2gCoRSCanfzAOHdbXw"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3268": {
+                                            "id": "http://rdfh.ch/lists/0812/QYBEwbJVRYydZM5Llwy-kw",
+                                            "nodes": [
+                                                {
+                                                    "H_3321": {
+                                                        "id": "http://rdfh.ch/lists/0812/LeAjHEQCS5meWbeAVN_rHA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3322": {
+                                                        "id": "http://rdfh.ch/lists/0812/dGzfF4lfRgCodk7VH0q6uA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3323": {
+                                                        "id": "http://rdfh.ch/lists/0812/c1Zd34bCRjaCSiBFnpUuOg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3324": {
+                                                        "id": "http://rdfh.ch/lists/0812/HALCopDNT_uqGGQxpndhzw"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3269": {
+                                            "id": "http://rdfh.ch/lists/0812/WmZHux-VTEy2m_coDYtFwg",
+                                            "nodes": [
+                                                {
+                                                    "H_3325": {
+                                                        "id": "http://rdfh.ch/lists/0812/U7Di02EeRy-InZoI2uoQIg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3326": {
+                                                        "id": "http://rdfh.ch/lists/0812/81dxP83iRUuBjhTSKkruvw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3327": {
+                                                        "id": "http://rdfh.ch/lists/0812/7-3SjIwVTLuRtb8k1CfRkg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3328": {
+                                                        "id": "http://rdfh.ch/lists/0812/-43uLJiMTRGti3AVAnMRKQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3329": {
+                                                        "id": "http://rdfh.ch/lists/0812/l0End8qiQkyKzsr6JTZi0A"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3330": {
+                                                        "id": "http://rdfh.ch/lists/0812/Xxid6ULrSL6Qyhw93fz9cg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3331": {
+                                                        "id": "http://rdfh.ch/lists/0812/35ueum_8Szm5AWIMqVl6_w"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3332": {
+                                                        "id": "http://rdfh.ch/lists/0812/KdCaSwSRTKuhUOg-OdY5pA"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3270": {
+                                            "id": "http://rdfh.ch/lists/0812/7NRXpU6jQ0Sjvd9mmqe2Kw",
+                                            "nodes": [
+                                                {
+                                                    "H_3333": {
+                                                        "id": "http://rdfh.ch/lists/0812/8kd1QycxTMuUrzxp4wBe4Q"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3334": {
+                                                        "id": "http://rdfh.ch/lists/0812/JwksEPTdQb6LjK9Q4EuPaA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3335": {
+                                                        "id": "http://rdfh.ch/lists/0812/0D-oSUy8Rd2w_I4fgX9kdw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3336": {
+                                                        "id": "http://rdfh.ch/lists/0812/x3U-_ouTQ4yjxQJqPncKlA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3337": {
+                                                        "id": "http://rdfh.ch/lists/0812/nItG22qMTsyHyq8imWdiDA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3338": {
+                                                        "id": "http://rdfh.ch/lists/0812/64_Y4avuQwyd_H-kYkZuuQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3339": {
+                                                        "id": "http://rdfh.ch/lists/0812/REjRw2ZtQJalPrMqXnyjJw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3340": {
+                                                        "id": "http://rdfh.ch/lists/0812/-C_iGA2DQGi1ydw0_zV3jQ"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3271": {
+                                            "id": "http://rdfh.ch/lists/0812/qKYFdOV9R9iOb22INsEWmQ",
+                                            "nodes": [
+                                                {
+                                                    "H_3341": {
+                                                        "id": "http://rdfh.ch/lists/0812/DqNPe9fARga6x0sWUj3zMg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3342": {
+                                                        "id": "http://rdfh.ch/lists/0812/5GmURzIYQm6aMmmGMZrdiw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3343": {
+                                                        "id": "http://rdfh.ch/lists/0812/fU80s-3SSR2PZC6cH3eanQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3344": {
+                                                        "id": "http://rdfh.ch/lists/0812/vKhFk7RqS46SSQUN7nC67Q"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3345": {
+                                                        "id": "http://rdfh.ch/lists/0812/YFTNCRvQSo6fqxsCT75aVA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3346": {
+                                                        "id": "http://rdfh.ch/lists/0812/Bp3IioWJTM22CriC2qakhw"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3272": {
+                                            "id": "http://rdfh.ch/lists/0812/YCVt-IU6RDqsxmyQd2mHiw",
+                                            "nodes": [
+                                                {
+                                                    "H_3347": {
+                                                        "id": "http://rdfh.ch/lists/0812/hw0FRC8nT_ystAlxUFuhUw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3348": {
+                                                        "id": "http://rdfh.ch/lists/0812/3LTi1yb8R3GhUdFG1fw97g"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3349": {
+                                                        "id": "http://rdfh.ch/lists/0812/E0TorDzMSL20HWDO5oluFg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3350": {
+                                                        "id": "http://rdfh.ch/lists/0812/2jWlTXjUTiO75ZOHio4jFA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3351": {
+                                                        "id": "http://rdfh.ch/lists/0812/LNUJ7Gq_ScmfIr6XU7Z8fA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3352": {
+                                                        "id": "http://rdfh.ch/lists/0812/NpyLo1ueRBqIFwn2sK51ww"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3353": {
+                                                        "id": "http://rdfh.ch/lists/0812/Kzq3gRUzSHC_jjutiW7G6w"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3273": {
+                                            "id": "http://rdfh.ch/lists/0812/PCsJpMLJS_mStregJBzsSw",
+                                            "nodes": [
+                                                {
+                                                    "H_3354": {
+                                                        "id": "http://rdfh.ch/lists/0812/bSYfdmIpTZ2B5WsguyfdKA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3356": {
+                                                        "id": "http://rdfh.ch/lists/0812/5bnjFzGqSb6URl5PwLT18g"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3357": {
+                                                        "id": "http://rdfh.ch/lists/0812/XC7VNN90RjeVRxtzaEttlA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3358": {
+                                                        "id": "http://rdfh.ch/lists/0812/8zf9XkIFTcGVrb3eO6UAyw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3359": {
+                                                        "id": "http://rdfh.ch/lists/0812/-KgT-dfEQ52kLYKOwsEluw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3360": {
+                                                        "id": "http://rdfh.ch/lists/0812/zA-AN3e1SJ6NGoz77dDZUw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3361": {
+                                                        "id": "http://rdfh.ch/lists/0812/OhENp65mS_id-AMm8Evj-g"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3274": {
+                                            "id": "http://rdfh.ch/lists/0812/ZXgLWRidSuaqzKPI4yPBKw",
+                                            "nodes": [
+                                                {
+                                                    "H_3362": {
+                                                        "id": "http://rdfh.ch/lists/0812/GzxvehgYRJaPwzcKfzN-Gw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3363": {
+                                                        "id": "http://rdfh.ch/lists/0812/fQuKYDd1RaSGLC8kYIZMCw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3364": {
+                                                        "id": "http://rdfh.ch/lists/0812/EGeR2U-ORpOkCHPU3_6_nQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3365": {
+                                                        "id": "http://rdfh.ch/lists/0812/jdiQSJlLSjaOdtAexuFXlA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3366": {
+                                                        "id": "http://rdfh.ch/lists/0812/GEfkKgK5TmWCxrZZ0dBypQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3367": {
+                                                        "id": "http://rdfh.ch/lists/0812/zrP1DsCjTtSZgJmY04_rtQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3368": {
+                                                        "id": "http://rdfh.ch/lists/0812/GYG4NO9sTtGoQDYSdTZzKg"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3275": {
+                                            "id": "http://rdfh.ch/lists/0812/Gmbr3cslQRepJ7gnOn-OGA",
+                                            "nodes": [
+                                                {
+                                                    "H_3369": {
+                                                        "id": "http://rdfh.ch/lists/0812/4Nz89R_FRDmcW9ljeQ2egA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3370": {
+                                                        "id": "http://rdfh.ch/lists/0812/S_73iS9mQ4OE1dZDKbs9vg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3371": {
+                                                        "id": "http://rdfh.ch/lists/0812/WJCKZxB1TDG-XX1PqQC7sQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3372": {
+                                                        "id": "http://rdfh.ch/lists/0812/-ERkYyeuQ9yFzybNynmxoA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3373": {
+                                                        "id": "http://rdfh.ch/lists/0812/eclCXnIKTHy5puftbW67mg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3374": {
+                                                        "id": "http://rdfh.ch/lists/0812/05cgrXIOSNaV6BClWvF7zg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3375": {
+                                                        "id": "http://rdfh.ch/lists/0812/wN0i6i-WRMKBqt-DQ7NKfA"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3276": {
+                                            "id": "http://rdfh.ch/lists/0812/VuK6ThisT5GdbTqhA8-pIA",
+                                            "nodes": [
+                                                {
+                                                    "H_3376": {
+                                                        "id": "http://rdfh.ch/lists/0812/sZFSWjsUT-uAhAs4tyDdog"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3377": {
+                                                        "id": "http://rdfh.ch/lists/0812/2TJKaStrR-OaBVkYap-DIQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3378": {
+                                                        "id": "http://rdfh.ch/lists/0812/srRRrgIIR-2xLvT2kvt59w"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3379": {
+                                                        "id": "http://rdfh.ch/lists/0812/X-aDBAz0S0yLLIzsoeRlVg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3380": {
+                                                        "id": "http://rdfh.ch/lists/0812/O8aFYKfDToui1iLyGaaahA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3381": {
+                                                        "id": "http://rdfh.ch/lists/0812/fwF3USV0T1ycfwo-APrwnw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3382": {
+                                                        "id": "http://rdfh.ch/lists/0812/6nrGwYK0TDOJs0RqYouPVw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3383": {
+                                                        "id": "http://rdfh.ch/lists/0812/dJ5Ew7eCR1K1SSybR2A4VA"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3277": {
+                                            "id": "http://rdfh.ch/lists/0812/0vCHnkVwQ8yDzcBk92g7-Q",
+                                            "nodes": [
+                                                {
+                                                    "H_3384": {
+                                                        "id": "http://rdfh.ch/lists/0812/BcMlfFrPQ5K0AysrOZ6m-g"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3385": {
+                                                        "id": "http://rdfh.ch/lists/0812/88pqYOZ7SjWDGitLYmpRug"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3386": {
+                                                        "id": "http://rdfh.ch/lists/0812/trGq9Y7lQCCx36QID5Qbww"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3387": {
+                                                        "id": "http://rdfh.ch/lists/0812/O6pWadkuS6itzHbBS4-yww"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3388": {
+                                                        "id": "http://rdfh.ch/lists/0812/IGRh3MKcTkGilxV0IcIGVA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3389": {
+                                                        "id": "http://rdfh.ch/lists/0812/v5ncYpdeROevtDHs65hF1w"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3390": {
+                                                        "id": "http://rdfh.ch/lists/0812/SQwfthAjRJ-9GlK08bbZdQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3391": {
+                                                        "id": "http://rdfh.ch/lists/0812/-GtxP1OUSvyBbeOpV6TpPw"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3278": {
+                                            "id": "http://rdfh.ch/lists/0812/kEFIV6SvRQWnn02MklG7kQ",
+                                            "nodes": [
+                                                {
+                                                    "H_3392": {
+                                                        "id": "http://rdfh.ch/lists/0812/_kM-sutNThuwhSyesVcGuA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3393": {
+                                                        "id": "http://rdfh.ch/lists/0812/6zinmcxnQEqyXE5UCFBohg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3394": {
+                                                        "id": "http://rdfh.ch/lists/0812/5MXl6ByaSLGJzpqJwtbtMA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3395": {
+                                                        "id": "http://rdfh.ch/lists/0812/xUycjYsHSJ6TvzV9Y7rp0Q"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3396": {
+                                                        "id": "http://rdfh.ch/lists/0812/Eenss_5bSIKIlk_ZrcAYvw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3397": {
+                                                        "id": "http://rdfh.ch/lists/0812/8GZwcE0CRzyJwvegNg6EHg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3398": {
+                                                        "id": "http://rdfh.ch/lists/0812/SRIs499JTAmxd0jztpVlpA"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3279": {
+                                            "id": "http://rdfh.ch/lists/0812/Vrb6uKggROOhpzxuIoSP_A",
+                                            "nodes": [
+                                                {
+                                                    "H_3399": {
+                                                        "id": "http://rdfh.ch/lists/0812/wDxPkh5bTouI-oC422cbxA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3400": {
+                                                        "id": "http://rdfh.ch/lists/0812/YYBiLdsjQyiu2loU7cDmLQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3401": {
+                                                        "id": "http://rdfh.ch/lists/0812/BNE6HvjmT4eAdBGJj-WFHg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3402": {
+                                                        "id": "http://rdfh.ch/lists/0812/ScS4ma2yQCmz0U1uDCEaVg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3403": {
+                                                        "id": "http://rdfh.ch/lists/0812/kOpYgyJZSeyRe9-4-q38xA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3404": {
+                                                        "id": "http://rdfh.ch/lists/0812/l2J_hTkKT42fX21zbLyScA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3405": {
+                                                        "id": "http://rdfh.ch/lists/0812/8_c7ofd6TLSXLyq_Iasgcw"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3280": {
+                                            "id": "http://rdfh.ch/lists/0812/yKIwtxQVQwS7eXrCicNBXw",
+                                            "nodes": [
+                                                {
+                                                    "H_3406": {
+                                                        "id": "http://rdfh.ch/lists/0812/hoG5k9nYREyQi8TvlDbLMQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3407": {
+                                                        "id": "http://rdfh.ch/lists/0812/u-PoQ2hEQ2Omk0wQG9Jdqg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3408": {
+                                                        "id": "http://rdfh.ch/lists/0812/WViqNHbcScahJyziSOM1Mw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3409": {
+                                                        "id": "http://rdfh.ch/lists/0812/XinkLGXtQYOuug-jqUMFWg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3410": {
+                                                        "id": "http://rdfh.ch/lists/0812/1BD-q1P9TP2Rk8ThfX9D1Q"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3411": {
+                                                        "id": "http://rdfh.ch/lists/0812/zOvjm421T2eVJMZrs7qYeg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3412": {
+                                                        "id": "http://rdfh.ch/lists/0812/WOhN9MkST9CFxUDFOf_Qew"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3413": {
+                                                        "id": "http://rdfh.ch/lists/0812/i2cFo7IrRv6TMxIVj8VdYg"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3281": {
+                                            "id": "http://rdfh.ch/lists/0812/OdvDe2YHRrSSLDOdE0ACjQ",
+                                            "nodes": [
+                                                {
+                                                    "H_3414": {
+                                                        "id": "http://rdfh.ch/lists/0812/jMK5iJZkRpuIiAXX_5sxrA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3415": {
+                                                        "id": "http://rdfh.ch/lists/0812/CIcruzRGQkWV8Cv1tJPtww"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3416": {
+                                                        "id": "http://rdfh.ch/lists/0812/mGBqHFmFQNSIrcf2TzPVBw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3417": {
+                                                        "id": "http://rdfh.ch/lists/0812/_4WYhvsES5-MNScdHVVWmA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3418": {
+                                                        "id": "http://rdfh.ch/lists/0812/d_npRWLaSOqSxs085-uXCA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3419": {
+                                                        "id": "http://rdfh.ch/lists/0812/RUIXz6ZoTNyx9q_gQCE6ow"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3420": {
+                                                        "id": "http://rdfh.ch/lists/0812/ALk2XlkpQLOkbSKY0QfNag"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3421": {
+                                                        "id": "http://rdfh.ch/lists/0812/OPyGfyWcQRivw48bcucVoA"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3282": {
+                                            "id": "http://rdfh.ch/lists/0812/__NYMtU_SOSw8ZJAORgZMw",
+                                            "nodes": [
+                                                {
+                                                    "H_3422": {
+                                                        "id": "http://rdfh.ch/lists/0812/df7VMThjQX-_BP_zKvDXjQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3423": {
+                                                        "id": "http://rdfh.ch/lists/0812/e0SU9lmNSSKPheWrEwSJ6g"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3424": {
+                                                        "id": "http://rdfh.ch/lists/0812/NKXL_ueUST65Rg47s11RHA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3425": {
+                                                        "id": "http://rdfh.ch/lists/0812/DHib73znSTi7009u_TK59g"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3426": {
+                                                        "id": "http://rdfh.ch/lists/0812/T0t6jzVCS3eQnrAkGtkg_w"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3427": {
+                                                        "id": "http://rdfh.ch/lists/0812/DdysyS25SiOEBnYPepvKDA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3428": {
+                                                        "id": "http://rdfh.ch/lists/0812/bXbyUGSYRcm_DYAhw1sa5w"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3429": {
+                                                        "id": "http://rdfh.ch/lists/0812/8qgpgiQJSGOdILxw197fBw"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3285": {
+                                            "id": "http://rdfh.ch/lists/0812/k193xJqtQIq2kPvQcjc7Vg",
+                                            "nodes": [
+                                                {
+                                                    "H_3430": {
+                                                        "id": "http://rdfh.ch/lists/0812/_iDrXDkxRq2RnLeZxUmkOw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3431": {
+                                                        "id": "http://rdfh.ch/lists/0812/xDhGuUdZTXi_qmEtcmLSvg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3432": {
+                                                        "id": "http://rdfh.ch/lists/0812/08iYQcw7Qy-76Si2yh4-ig"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3433": {
+                                                        "id": "http://rdfh.ch/lists/0812/BkgHrGW1Sq6l5-WrocYMJQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3434": {
+                                                        "id": "http://rdfh.ch/lists/0812/D4nE5If5R7mRr34JALDbgg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3435": {
+                                                        "id": "http://rdfh.ch/lists/0812/dDs65SvTSLe5u0Qfzt97FA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3436": {
+                                                        "id": "http://rdfh.ch/lists/0812/udmbC6YgQOORtjwxjnG7ng"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3437": {
+                                                        "id": "http://rdfh.ch/lists/0812/OU2cMoolSvqG7ucx8DzolQ"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3286": {
+                                            "id": "http://rdfh.ch/lists/0812/J3jrrm8xSm2TlNtj7fN8JQ",
+                                            "nodes": [
+                                                {
+                                                    "H_3438": {
+                                                        "id": "http://rdfh.ch/lists/0812/eYhUjMW3QNmN0ocTcxSEVA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3439": {
+                                                        "id": "http://rdfh.ch/lists/0812/pLynqFVDTG-ei8mmsZjTfg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3440": {
+                                                        "id": "http://rdfh.ch/lists/0812/uTqCo_E-QhyAEdKkvDH77Q"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3441": {
+                                                        "id": "http://rdfh.ch/lists/0812/ZGdk5fliS6qOOBFxu2rEUw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3442": {
+                                                        "id": "http://rdfh.ch/lists/0812/-gfW2627S-i24ZaIlTJsWg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3443": {
+                                                        "id": "http://rdfh.ch/lists/0812/lGosp2wxRv2f7HwJuLl8kQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3444": {
+                                                        "id": "http://rdfh.ch/lists/0812/W4DqM2SFS0qzYnHu7vgOWA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3445": {
+                                                        "id": "http://rdfh.ch/lists/0812/4pBamwPfQN2sWS4iEvfh_Q"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3287": {
+                                            "id": "http://rdfh.ch/lists/0812/kxzbjWJpR8uWoAbBz4SF8A",
+                                            "nodes": [
+                                                {
+                                                    "H_3446": {
+                                                        "id": "http://rdfh.ch/lists/0812/p9hAu2GIRHy8qEuKNBnJLQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3447": {
+                                                        "id": "http://rdfh.ch/lists/0812/yWj29VwHS8qRpJFIpRDmSw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3448": {
+                                                        "id": "http://rdfh.ch/lists/0812/Op5sDbwqTA2n8iF2HaE4lQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3449": {
+                                                        "id": "http://rdfh.ch/lists/0812/5MnIxUosTIquYrKKXvpXaQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3450": {
+                                                        "id": "http://rdfh.ch/lists/0812/fej7fpX5R_i_gPfdkL2Skw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3451": {
+                                                        "id": "http://rdfh.ch/lists/0812/91nm7GalRFeX6ElnAuXIvw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3452": {
+                                                        "id": "http://rdfh.ch/lists/0812/aaV7GSMWQ26YHbgs34A75g"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3453": {
+                                                        "id": "http://rdfh.ch/lists/0812/K9noUxW_TVyhTbEHspL-rw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3454": {
+                                                        "id": "http://rdfh.ch/lists/0812/QLptSRMqShGxb6YeOjf9Jw"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3288": {
+                                            "id": "http://rdfh.ch/lists/0812/S2vbU4LgSMGHTGGpqXtZgg",
+                                            "nodes": [
+                                                {
+                                                    "H_3455": {
+                                                        "id": "http://rdfh.ch/lists/0812/F0aIOg6uSDCfkrZ5jG1yhA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3456": {
+                                                        "id": "http://rdfh.ch/lists/0812/_SuF_SD0SO-NEYrto92tdA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3457": {
+                                                        "id": "http://rdfh.ch/lists/0812/so5Di266RTSS5SRfFDIvCQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3458": {
+                                                        "id": "http://rdfh.ch/lists/0812/t1UEukemSRWCKPNX3VFTRw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3459": {
+                                                        "id": "http://rdfh.ch/lists/0812/y1Es5n67TNOv_GU9Luu7Ag"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3460": {
+                                                        "id": "http://rdfh.ch/lists/0812/Pb7Jkl63QuSBlNNFLW8guw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3461": {
+                                                        "id": "http://rdfh.ch/lists/0812/hLpGpSjES0qzA-z_Ed4wkg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3462": {
+                                                        "id": "http://rdfh.ch/lists/0812/5Nq1lYZaQhWVfYXKw9fXDA"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3289": {
+                                            "id": "http://rdfh.ch/lists/0812/hWu19xk0Rj-HNKMZUf16xg",
+                                            "nodes": [
+                                                {
+                                                    "H_3463": {
+                                                        "id": "http://rdfh.ch/lists/0812/CGhl5j-CR0CDiIUXoJjqjw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3464": {
+                                                        "id": "http://rdfh.ch/lists/0812/9Kxplb0MTXGAckF_K79qTw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3465": {
+                                                        "id": "http://rdfh.ch/lists/0812/S28eQHkdQnafiEBqA8ot-w"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3466": {
+                                                        "id": "http://rdfh.ch/lists/0812/1zRopL5MRWOJDxDn09rdqQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3467": {
+                                                        "id": "http://rdfh.ch/lists/0812/mHkNySz0TRm4OO0LOYENMA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3468": {
+                                                        "id": "http://rdfh.ch/lists/0812/a40s8XFHR2Wzs_Rqs92bjw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3469": {
+                                                        "id": "http://rdfh.ch/lists/0812/C-dzq80UQ0mvm09O__bNcQ"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3470": {
+                                                        "id": "http://rdfh.ch/lists/0812/4TznqE9dSVKcJF7WTg6MDw"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3290": {
+                                            "id": "http://rdfh.ch/lists/0812/VpRxjU3MRNWCjDQWhPzNWA",
+                                            "nodes": [
+                                                {
+                                                    "H_3471": {
+                                                        "id": "http://rdfh.ch/lists/0812/e2hf9LLfShysusDORf5Ruw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3472": {
+                                                        "id": "http://rdfh.ch/lists/0812/ticqQAvsRl6EsvdCXL9dgA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3473": {
+                                                        "id": "http://rdfh.ch/lists/0812/Xj5kqnzGTKqqDAiGza6DCA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3474": {
+                                                        "id": "http://rdfh.ch/lists/0812/B3eeYayaQ6e9xkDfk5ihKg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3475": {
+                                                        "id": "http://rdfh.ch/lists/0812/WerRCdpzT12gajNes1BXmA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3476": {
+                                                        "id": "http://rdfh.ch/lists/0812/BK-FVIrcTZaWMWqnmHD6PA"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3291": {
+                                            "id": "http://rdfh.ch/lists/0812/eVJrr4r7QCyu1RRrXpCnvQ",
+                                            "nodes": [
+                                                {
+                                                    "H_3477": {
+                                                        "id": "http://rdfh.ch/lists/0812/O2HSGPpGQH6z7Bp6Sp7Kfg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3478": {
+                                                        "id": "http://rdfh.ch/lists/0812/pJvcZSEyQxiFQWbM87ZIZg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3479": {
+                                                        "id": "http://rdfh.ch/lists/0812/oP3wX_yBT-WnNIbF1MyTTA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3480": {
+                                                        "id": "http://rdfh.ch/lists/0812/YiTFq5GXQaK7RSb2NYAH3A"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3481": {
+                                                        "id": "http://rdfh.ch/lists/0812/i-s_dKHYRZWxdPphwcqsCw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3482": {
+                                                        "id": "http://rdfh.ch/lists/0812/YlhXyIPAQNOM9gAnNevsXg"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3292": {
+                                            "id": "http://rdfh.ch/lists/0812/qlIzTMwmQceHi6wUMJdsEQ",
+                                            "nodes": [
+                                                {
+                                                    "H_3483": {
+                                                        "id": "http://rdfh.ch/lists/0812/mHerus9KSty4dZuttRdx-w"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3484": {
+                                                        "id": "http://rdfh.ch/lists/0812/NHIwo5GjRjGpZMifRvyqdg"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3485": {
+                                                        "id": "http://rdfh.ch/lists/0812/iqQD5RVrRWWPFjD4jfVeyw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3486": {
+                                                        "id": "http://rdfh.ch/lists/0812/Pccb1A9nTyuFQT-Ooezp2g"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_3293": {
+                                            "id": "http://rdfh.ch/lists/0812/xrfcNyYyQvanjjw8FWV1DQ",
+                                            "nodes": [
+                                                {
+                                                    "H_3487": {
+                                                        "id": "http://rdfh.ch/lists/0812/9-quPQsJRu-deTkvOxAZtA"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3488": {
+                                                        "id": "http://rdfh.ch/lists/0812/hfOUOqtbRkuLvDjpMc0eEw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3489": {
+                                                        "id": "http://rdfh.ch/lists/0812/Pd3xXACxR5ilmRxwS8wwOw"
+                                                    }
+                                                },
+                                                {
+                                                    "H_3490": {
+                                                        "id": "http://rdfh.ch/lists/0812/BbX2tZy9RLCBHcdOm34V2w"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "agenttypes": {
+        "id": "http://rdfh.ch/lists/0812/c6QMG0L6TV-qzv2JoaqGPw",
+        "nodes": [
+            {
+                "person": {
+                    "id": "http://rdfh.ch/lists/0812/C69Vx8adSl-XalAoom2Djg"
+                }
+            },
+            {
+                "organization": {
+                    "id": "http://rdfh.ch/lists/0812/JHA1yuyyTMSer-VS8CHCcw"
+                }
+            },
+            {
+                "group": {
+                    "id": "http://rdfh.ch/lists/0812/GJ0xnbqcQjqsEj2R0BW0-w"
+                }
+            }
+        ]
+    },
+    "creativecommons": {
+        "id": "http://rdfh.ch/lists/0812/uukiC7sBStC7Jf5yhJHptQ",
+        "nodes": [
+            {
+                "https://creativecommons.org/licenses/by/4.0/": {
+                    "id": "http://rdfh.ch/lists/0812/gpgjr6ALQl2qkfcUs1fLmQ"
+                }
+            },
+            {
+                "https://creativecommons.org/licenses/by-sa/4.0/": {
+                    "id": "http://rdfh.ch/lists/0812/Uy6BA2tLQ0-FpElqZRaOQA"
+                }
+            },
+            {
+                "https://creativecommons.org/licenses/by-nc/4.0/": {
+                    "id": "http://rdfh.ch/lists/0812/e4l50xbhQyaSvXev2FJbHQ"
+                }
+            },
+            {
+                "https://creativecommons.org/licenses/by-nc-sa/4.0/": {
+                    "id": "http://rdfh.ch/lists/0812/sB5w1Y_HQqaxwRf2ll0peg"
+                }
+            },
+            {
+                "https://creativecommons.org/licenses/by-nd/4.0/": {
+                    "id": "http://rdfh.ch/lists/0812/QYO9l71AQX-hzib2451fmA"
+                }
+            },
+            {
+                "https://creativecommons.org/licenses/by-nc-nd/4.0/": {
+                    "id": "http://rdfh.ch/lists/0812/23mRSu1RRYC81uXPzP2bZg"
+                }
+            },
+            {
+                "https://creativecommons.org/publicdomain/zero/1.0/": {
+                    "id": "http://rdfh.ch/lists/0812/isMKXlBqSkyLrq86xbQ3XQ"
+                }
+            }
+        ]
+    },
+    "eventstatus": {
+        "id": "http://rdfh.ch/lists/0812/7KE6aXQMQpyjZeqVnyy6oA",
+        "nodes": [
+            {
+                "scheduled": {
+                    "id": "http://rdfh.ch/lists/0812/5oCygp0vS5addh2O8FNT2g"
+                }
+            },
+            {
+                "postponed": {
+                    "id": "http://rdfh.ch/lists/0812/s9mTvhjqSXqUrqnlM8cijg"
+                }
+            },
+            {
+                "ongoing": {
+                    "id": "http://rdfh.ch/lists/0812/vkv3lORGQxSK5JFhPvZ6yA"
+                }
+            },
+            {
+                "cancelled": {
+                    "id": "http://rdfh.ch/lists/0812/8H57gleQR5aeMrGIAapINw"
+                }
+            },
+            {
+                "done": {
+                    "id": "http://rdfh.ch/lists/0812/ByT5qX7rSkugakmq0BDu6g"
+                }
+            }
+        ]
+    },
+    "eventtype": {
+        "id": "http://rdfh.ch/lists/0812/TB6mscicQfKAO6leSIdTsw",
+        "nodes": [
+            {
+                "exhibition": {
+                    "id": "http://rdfh.ch/lists/0812/XO-yY0yrQ2u16Rw9uHepSQ"
+                }
+            },
+            {
+                "call": {
+                    "id": "http://rdfh.ch/lists/0812/Fs8U5iIgSwi4tsJD-l3zJQ"
+                }
+            },
+            {
+                "crowdsourcing": {
+                    "id": "http://rdfh.ch/lists/0812/1QnnKrpKRNGxipbvf56nyQ"
+                }
+            },
+            {
+                "upload": {
+                    "id": "http://rdfh.ch/lists/0812/2bmG2AQwQp6bUVyxSw2QSQ"
+                }
+            },
+            {
+                "story": {
+                    "id": "http://rdfh.ch/lists/0812/zwovUz9yStyB-OmyCorxrA"
+                }
+            },
+            {
+                "concert": {
+                    "id": "http://rdfh.ch/lists/0812/gfrpD598SW2VBwZmrjbybA"
+                }
+            },
+            {
+                "festival": {
+                    "id": "http://rdfh.ch/lists/0812/DtIOpfr9RTigDVu62PECHQ"
+                }
+            },
+            {
+                "researchproject": {
+                    "id": "http://rdfh.ch/lists/0812/rSL_BArqSwKJHtOjNPYI4A"
+                }
+            },
+            {
+                "digitisation": {
+                    "id": "http://rdfh.ch/lists/0812/Z_3Zov_HQSil_AZkY2_89w"
+                }
+            },
+            {
+                "conservation_restoration": {
+                    "id": "http://rdfh.ch/lists/0812/8I3MyhX3R52eVdSgzKIAEg"
+                }
+            }
+        ]
+    },
+    "format": {
+        "id": "http://rdfh.ch/lists/0812/UX-AXvy5QimggsqwNEh-3g",
+        "nodes": [
+            {
+                "S_1834": {
+                    "id": "http://rdfh.ch/lists/0812/yAv-TE-6TfCVKnuIeJ5jPQ"
+                }
+            },
+            {
+                "S_1815": {
+                    "id": "http://rdfh.ch/lists/0812/6m-IXXZvSamrF-aCwo3L_A"
+                }
+            },
+            {
+                "S_1925": {
+                    "id": "http://rdfh.ch/lists/0812/7fVX7yHyThy57KmfsjB1Rg"
+                }
+            },
+            {
+                "S_1816": {
+                    "id": "http://rdfh.ch/lists/0812/TslfjhDwQ6C5Zb-NGhB_1w"
+                }
+            },
+            {
+                "S_1817": {
+                    "id": "http://rdfh.ch/lists/0812/o0--hGZmQouWszC2tBPSDg"
+                }
+            },
+            {
+                "S_1818": {
+                    "id": "http://rdfh.ch/lists/0812/H_gfsauNTiyxPvEyErOuAQ"
+                }
+            },
+            {
+                "S_1820": {
+                    "id": "http://rdfh.ch/lists/0812/Nbh4JGd5TSu0A0DfUa1s9g"
+                }
+            },
+            {
+                "S_2004": {
+                    "id": "http://rdfh.ch/lists/0812/XQoMJ7QfQxuRUdLxS7_L1w"
+                }
+            },
+            {
+                "S_1821": {
+                    "id": "http://rdfh.ch/lists/0812/wTDBGPDnSNGxYhAFqPX6rQ"
+                }
+            },
+            {
+                "S_1809": {
+                    "id": "http://rdfh.ch/lists/0812/poZQA0VCQECaRXp5gSiX8w"
+                }
+            },
+            {
+                "S_13499": {
+                    "id": "http://rdfh.ch/lists/0812/nVqEYHuWTseDk6KHW1qutw"
+                }
+            },
+            {
+                "S_13498": {
+                    "id": "http://rdfh.ch/lists/0812/XUx2vL95S-KyE2eiJt-BiQ"
+                }
+            },
+            {
+                "S_1842": {
+                    "id": "http://rdfh.ch/lists/0812/Bx3LLQLHQDSZbXFl53PQ8Q"
+                }
+            },
+            {
+                "S_1822": {
+                    "id": "http://rdfh.ch/lists/0812/c8LEPsAeTdaVjmD9_iDxSQ"
+                }
+            },
+            {
+                "S_1823": {
+                    "id": "http://rdfh.ch/lists/0812/abVE0Vw3ThKR5NZN-elCKg"
+                }
+            },
+            {
+                "S_1824": {
+                    "id": "http://rdfh.ch/lists/0812/i4vCI73ATca307E4SI2cBw"
+                }
+            },
+            {
+                "S_1846": {
+                    "id": "http://rdfh.ch/lists/0812/W0RLloT3SbK_XCVcGuIjZA"
+                }
+            },
+            {
+                "S_1810": {
+                    "id": "http://rdfh.ch/lists/0812/C4a-GsAoQRq5Geq7_2Q8cg"
+                }
+            },
+            {
+                "S_1811": {
+                    "id": "http://rdfh.ch/lists/0812/nu3lMlP7QAyQgA0Zlowk8g"
+                }
+            },
+            {
+                "S_1863": {
+                    "id": "http://rdfh.ch/lists/0812/-cONSkJqTduva1VfS_UyDw"
+                }
+            },
+            {
+                "S_1812": {
+                    "id": "http://rdfh.ch/lists/0812/4UkeyFC9Qjmv0BlGk6m2Bw"
+                }
+            },
+            {
+                "S_1862": {
+                    "id": "http://rdfh.ch/lists/0812/vFuwXTI6RVy9g27T_eErJg"
+                }
+            },
+            {
+                "S_1833": {
+                    "id": "http://rdfh.ch/lists/0812/7fc9Fsj0TtWnl2S-96jNiA"
+                }
+            },
+            {
+                "S_1845": {
+                    "id": "http://rdfh.ch/lists/0812/MfRujrn4TdC_ad-R1R7tZg"
+                }
+            },
+            {
+                "S_1829": {
+                    "id": "http://rdfh.ch/lists/0812/GcOummO1Sx2tHldta5z-7A"
+                }
+            },
+            {
+                "S_1813": {
+                    "id": "http://rdfh.ch/lists/0812/9cry-sf_S_WuMZOB29r8Bw"
+                }
+            },
+            {
+                "S_1814": {
+                    "id": "http://rdfh.ch/lists/0812/ZfXBwdxNROmYrOg6v9gB3A"
+                }
+            },
+            {
+                "S_1860": {
+                    "id": "http://rdfh.ch/lists/0812/B13D6w7ZSJuQ4jIJnaBVDg"
+                }
+            },
+            {
+                "S_1847": {
+                    "id": "http://rdfh.ch/lists/0812/s0h5UBP3S0ahbd94AiGmEQ"
+                }
+            },
+            {
+                "S_1861": {
+                    "id": "http://rdfh.ch/lists/0812/sSmPb8yyQMu6S0VGYEt40g"
+                }
+            },
+            {
+                "S_1849": {
+                    "id": "http://rdfh.ch/lists/0812/0DlRgYllS0yA1xn4szmR9g"
+                }
+            },
+            {
+                "S_1848": {
+                    "id": "http://rdfh.ch/lists/0812/k6NC0VrIRa24BXrCIcOq_g"
+                }
+            },
+            {
+                "S_1825": {
+                    "id": "http://rdfh.ch/lists/0812/QrRtiVFiSSG15c1ktN1FYw"
+                }
+            },
+            {
+                "S_1827": {
+                    "id": "http://rdfh.ch/lists/0812/Z5txf6OwTKSv1fVnKnI9-A"
+                }
+            },
+            {
+                "S_1826": {
+                    "id": "http://rdfh.ch/lists/0812/gj6a4X0cRJezm7UqynNSVA"
+                }
+            },
+            {
+                "S_1819": {
+                    "id": "http://rdfh.ch/lists/0812/iEfx9eLbSKCblVoJHZKOow"
+                }
+            },
+            {
+                "S_11077": {
+                    "id": "http://rdfh.ch/lists/0812/BmfdIRDSQLayT1A_kUDRmg"
+                }
+            },
+            {
+                "S_11075": {
+                    "id": "http://rdfh.ch/lists/0812/gIaG0znBSha4XftcWoqX6Q"
+                }
+            },
+            {
+                "S_11076": {
+                    "id": "http://rdfh.ch/lists/0812/VMIiCrErSIqWYN-n3POWqw"
+                }
+            },
+            {
+                "S_13228": {
+                    "id": "http://rdfh.ch/lists/0812/Xzl-h-DkRO-tmVI8e83YZg"
+                }
+            },
+            {
+                "S_13332": {
+                    "id": "http://rdfh.ch/lists/0812/YP3CdnoUR-KRGhkdkmYl6Q"
+                }
+            },
+            {
+                "S_13331": {
+                    "id": "http://rdfh.ch/lists/0812/xU95xUbrSzebe5F9OFTD6g"
+                }
+            },
+            {
+                "S_13333": {
+                    "id": "http://rdfh.ch/lists/0812/k3WNMpXIQxGG7ERAvsrVPw"
+                }
+            },
+            {
+                "35mm": {
+                    "id": "http://rdfh.ch/lists/0812/7Y8obXlWRk-2OqnGjJkbpQ"
+                }
+            },
+            {
+                "8mm": {
+                    "id": "http://rdfh.ch/lists/0812/tfKF_UZ_QXKkCmmdlCxahw"
+                }
+            },
+            {
+                "dvd": {
+                    "id": "http://rdfh.ch/lists/0812/iGTdwZ3JQIep3SUkmE6jhQ"
+                }
+            },
+            {
+                "xdcam": {
+                    "id": "http://rdfh.ch/lists/0812/CCvD4MTUT9iQpWQ0Y5MkSA"
+                }
+            },
+            {
+                "hdv_farbig": {
+                    "id": "http://rdfh.ch/lists/0812/V3_oUuj6RVCgbtDoL1ovXQ"
+                }
+            }
+        ]
+    },
+    "objectstatus": {
+        "id": "http://rdfh.ch/lists/0812/8y9frXkFQDaZVKoy0EPCgQ",
+        "nodes": [
+            {
+                "tobereviewed": {
+                    "id": "http://rdfh.ch/lists/0812/l73dTy9pRo2anS-iRPyT5A"
+                }
+            },
+            {
+                "underreview": {
+                    "id": "http://rdfh.ch/lists/0812/bDPv3E6FR661Qv5fwzO12w"
+                }
+            },
+            {
+                "rejected": {
+                    "id": "http://rdfh.ch/lists/0812/h3M0cSeTRj-oekW1p3Cccw"
+                }
+            },
+            {
+                "approved": {
+                    "id": "http://rdfh.ch/lists/0812/AeL5-JUZRWK-gp8xjkrVEQ"
+                }
+            }
+        ]
+    },
+    "objecttype": {
+        "id": "http://rdfh.ch/lists/0812/9URvEleWQsyzmlBWZSFBMg",
+        "nodes": [
+            {
+                "Audio": {
+                    "id": "http://rdfh.ch/lists/0812/snDPKYrgR8OlU2rA5px-JA",
+                    "nodes": [
+                        {
+                            "Magnettonband": {
+                                "id": "http://rdfh.ch/lists/0812/zA6JieFiT9ymqctQP18hmg"
+                            }
+                        },
+                        {
+                            "Musikkassette": {
+                                "id": "http://rdfh.ch/lists/0812/VUdwpIQ4T1iG15qKGX0PXQ"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "Feldnotizen": {
+                    "id": "http://rdfh.ch/lists/0812/JfRZrwUXQV2slDh7v6ZksQ"
+                }
+            },
+            {
+                "Karteikarte": {
+                    "id": "http://rdfh.ch/lists/0812/Da3BdM54RUq8NX8eJBQRsw"
+                }
+            },
+            {
+                "Feldaufnahme": {
+                    "id": "http://rdfh.ch/lists/0812/sUqwkU-LQ5S0ExjgZKv08g"
+                }
+            },
+            {
+                "Liedzettel": {
+                    "id": "http://rdfh.ch/lists/0812/Srje0DG4TSO2cydAzOnmgg"
+                }
+            },
+            {
+                "S_11216": {
+                    "id": "http://rdfh.ch/lists/0812/RqfXeZZjSxKqHuWDogAT8w"
+                }
+            },
+            {
+                "S_11362": {
+                    "id": "http://rdfh.ch/lists/0812/mSwsI0GJQN6R4aiLQXNNfw"
+                }
+            },
+            {
+                "S_12742": {
+                    "id": "http://rdfh.ch/lists/0812/EVFINGKoSeetDLMiV4ugaA"
+                }
+            },
+            {
+                "S_11221": {
+                    "id": "http://rdfh.ch/lists/0812/hgIxvVwQRLi3ZuLuH3bkFQ"
+                }
+            },
+            {
+                "S_11224": {
+                    "id": "http://rdfh.ch/lists/0812/JybszJhmQcShP5L0rA6x1w"
+                }
+            },
+            {
+                "S_11213": {
+                    "id": "http://rdfh.ch/lists/0812/CFHX3DanSce9KV1Fms-u8g"
+                }
+            },
+            {
+                "S_11214": {
+                    "id": "http://rdfh.ch/lists/0812/6ZTSs6ExSWy9jMtJM5tCTw"
+                }
+            },
+            {
+                "S_11210": {
+                    "id": "http://rdfh.ch/lists/0812/6sGwsxhhTYyi_U76AgkJCA"
+                }
+            },
+            {
+                "S_11265": {
+                    "id": "http://rdfh.ch/lists/0812/cfF7cuNLTA-YkXxdnmyiVw"
+                }
+            },
+            {
+                "S_11228": {
+                    "id": "http://rdfh.ch/lists/0812/9C1ZA2xkS_u062tLGzrTAA"
+                }
+            },
+            {
+                "S_11208": {
+                    "id": "http://rdfh.ch/lists/0812/U8Z1QYeqQ32STqAFu3eEww"
+                }
+            },
+            {
+                "S_11327": {
+                    "id": "http://rdfh.ch/lists/0812/uotg_hK6QxO832JG-_-Vbw"
+                }
+            },
+            {
+                "S_11230": {
+                    "id": "http://rdfh.ch/lists/0812/rPlgUmnqQiG_Rbc0yikqkw"
+                }
+            },
+            {
+                "S_11225": {
+                    "id": "http://rdfh.ch/lists/0812/RmuONUBXQVWTfJqqgf4fIA"
+                }
+            },
+            {
+                "S_11226": {
+                    "id": "http://rdfh.ch/lists/0812/E3Xqey1yQ1y4GSSeEboF9A"
+                }
+            },
+            {
+                "S_11217": {
+                    "id": "http://rdfh.ch/lists/0812/u1ZDpXmYT4Kv-0DimDOW-g"
+                }
+            },
+            {
+                "S_13294": {
+                    "id": "http://rdfh.ch/lists/0812/4R8WHEOwR_--c2v8CXZFNA"
+                }
+            },
+            {
+                "S_13357": {
+                    "id": "http://rdfh.ch/lists/0812/N0wCzfnCTpChgZKZcZXkzA"
+                }
+            },
+            {
+                "S_11275": {
+                    "id": "http://rdfh.ch/lists/0812/ZtLmbUy7SgCXmcmpl8NY8Q"
+                }
+            },
+            {
+                "S_11220": {
+                    "id": "http://rdfh.ch/lists/0812/TpdKEeZVQIyA-dVlw0Fczg"
+                }
+            },
+            {
+                "S_12741": {
+                    "id": "http://rdfh.ch/lists/0812/OIy_rlSvTwWyDkms7gYtSg"
+                }
+            },
+            {
+                "S_11227": {
+                    "id": "http://rdfh.ch/lists/0812/d8XubVk6QT27LvfprNlzeA"
+                }
+            },
+            {
+                "S_11211": {
+                    "id": "http://rdfh.ch/lists/0812/iOEopqvqTyCICcL4nUiH3A"
+                }
+            },
+            {
+                "S_11223": {
+                    "id": "http://rdfh.ch/lists/0812/zxQQ1I_ZTRKWiqSghtTG2A"
+                }
+            },
+            {
+                "S_11257": {
+                    "id": "http://rdfh.ch/lists/0812/S7CYFeXwQ0ajtkad12gLGg"
+                }
+            },
+            {
+                "S_11209": {
+                    "id": "http://rdfh.ch/lists/0812/xOFakxoaRKOYU1-oUZCvGA"
+                }
+            },
+            {
+                "S_11215": {
+                    "id": "http://rdfh.ch/lists/0812/QN_6EA_kTW2aNxsFc2nI3A"
+                }
+            },
+            {
+                "S_11266": {
+                    "id": "http://rdfh.ch/lists/0812/ZAQQIBS2TvSvi-od8C0AfA"
+                }
+            },
+            {
+                "S_11274": {
+                    "id": "http://rdfh.ch/lists/0812/uSCCXxk0ReejJa6dKoBjpg"
+                }
+            },
+            {
+                "S_11218": {
+                    "id": "http://rdfh.ch/lists/0812/r44hn-kbS6CIZT_v7MrS7g"
+                }
+            },
+            {
+                "S_11212": {
+                    "id": "http://rdfh.ch/lists/0812/PsdbIp6mRi69TmmBNcGkhA"
+                }
+            },
+            {
+                "S_11219": {
+                    "id": "http://rdfh.ch/lists/0812/afIHmcKsSOC6CeyerBUMEw"
+                }
+            },
+            {
+                "S_11229": {
+                    "id": "http://rdfh.ch/lists/0812/KdcHprhqRq2MFg0aQEp4-w"
+                }
+            },
+            {
+                "S_12743": {
+                    "id": "http://rdfh.ch/lists/0812/kfzHaGE2T1Wwik9W0glrVQ"
+                }
+            },
+            {
+                "S_12744": {
+                    "id": "http://rdfh.ch/lists/0812/mcKF7SU9R2yLgtwjrp5UqQ"
+                }
+            },
+            {
+                "S_12948": {
+                    "id": "http://rdfh.ch/lists/0812/fJQIjaN4TKeq8c4GpZ9zjg"
+                }
+            },
+            {
+                "S_11222": {
+                    "id": "http://rdfh.ch/lists/0812/by-oh9mSSBiPuhjI-qmq4g"
+                }
+            },
+            {
+                "tonbildschau": {
+                    "id": "http://rdfh.ch/lists/0812/2CsU3EXtQB2BxvrCGlXseQ"
+                }
+            }
+        ]
+    },
+    "sprache": {
+        "id": "http://rdfh.ch/lists/0812/S8b5lYE9RUiripGCBWweeg",
+        "nodes": [
+            {
+                "de": {
+                    "id": "http://rdfh.ch/lists/0812/tL17SYMKTbuQVxvcdC-9zA"
+                }
+            },
+            {
+                "dial": {
+                    "id": "http://rdfh.ch/lists/0812/DjAE6cw2RMKNcJFvV0mPOQ"
+                }
+            },
+            {
+                "en": {
+                    "id": "http://rdfh.ch/lists/0812/PVeoPdAYThm9F-VKMBNv8w"
+                }
+            },
+            {
+                "fr": {
+                    "id": "http://rdfh.ch/lists/0812/WYzHbumxRNirLOsThXyWzQ"
+                }
+            },
+            {
+                "it": {
+                    "id": "http://rdfh.ch/lists/0812/PIS7mgOoRQak9-qWUpMzVQ"
+                }
+            },
+            {
+                "stumm": {
+                    "id": "http://rdfh.ch/lists/0812/UZMfO7mKRjWZqKYiTT0fOQ"
+                }
+            },
+            {
+                "rm": {
+                    "id": "http://rdfh.ch/lists/0812/HOWwYSbjRxqPX9Ao6enyLg"
+                }
+            }
+        ]
+    },
+    "technology": {
+        "id": "http://rdfh.ch/lists/0812/-xaUBVAzQW2eQduQO17mZw",
+        "nodes": [
+            {
+                "H_1175": {
+                    "id": "http://rdfh.ch/lists/0812/6xg1SqzAQMCy_MsVJsXFtw",
+                    "nodes": [
+                        {
+                            "H_1177": {
+                                "id": "http://rdfh.ch/lists/0812/ppUnOfLWQQKOWs_lorACWQ",
+                                "nodes": [
+                                    {
+                                        "H_1179": {
+                                            "id": "http://rdfh.ch/lists/0812/ELjJ-a5zRQ2VRbxMw2ySzg"
+                                        }
+                                    },
+                                    {
+                                        "H_1183": {
+                                            "id": "http://rdfh.ch/lists/0812/0fkt0BzDQIeS0B6hr20Uvg"
+                                        }
+                                    },
+                                    {
+                                        "H_1185": {
+                                            "id": "http://rdfh.ch/lists/0812/YsuCrY20TU-ruqezQYSkIg"
+                                        }
+                                    },
+                                    {
+                                        "H_1186": {
+                                            "id": "http://rdfh.ch/lists/0812/V0D-pIK1QsqcPLhaUmCmGQ"
+                                        }
+                                    },
+                                    {
+                                        "H_1187": {
+                                            "id": "http://rdfh.ch/lists/0812/klKqLooaSAqO46NLDaSKxw"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "H_1178": {
+                                "id": "http://rdfh.ch/lists/0812/N4Rcrx8QS4Sv_rUbbCluJQ",
+                                "nodes": [
+                                    {
+                                        "H_1181": {
+                                            "id": "http://rdfh.ch/lists/0812/fjdH4pjQT1qlicAtG6Vb-w"
+                                        }
+                                    },
+                                    {
+                                        "H_1182": {
+                                            "id": "http://rdfh.ch/lists/0812/JYuNidNvTYWvA73dTwzrrw"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "H_1176": {
+                    "id": "http://rdfh.ch/lists/0812/mvH7jjiZS--RLbzmWkOrAA",
+                    "nodes": [
+                        {
+                            "H_1188": {
+                                "id": "http://rdfh.ch/lists/0812/Y5ngYgPCTDmbqEJOUiGv7A",
+                                "nodes": [
+                                    {
+                                        "H_1194": {
+                                            "id": "http://rdfh.ch/lists/0812/lV8doqdxQsuDOdLfpD_wMg"
+                                        }
+                                    },
+                                    {
+                                        "H_1195": {
+                                            "id": "http://rdfh.ch/lists/0812/UXX46L2CTkCast8nGdoZIw"
+                                        }
+                                    },
+                                    {
+                                        "H_1196": {
+                                            "id": "http://rdfh.ch/lists/0812/FBpi3ByvSSukowOLYqj1JA"
+                                        }
+                                    },
+                                    {
+                                        "H_1197": {
+                                            "id": "http://rdfh.ch/lists/0812/IkAjy-YMRsmWumw62Tu4yQ"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "H_1189": {
+                                "id": "http://rdfh.ch/lists/0812/TKIYbdSAR86CIqBkF5Cvyg",
+                                "nodes": [
+                                    {
+                                        "H_1198": {
+                                            "id": "http://rdfh.ch/lists/0812/qYDpQDGTTESiHAW6kVZvWQ",
+                                            "nodes": [
+                                                {
+                                                    "H_2629": {
+                                                        "id": "http://rdfh.ch/lists/0812/NqYxyCj3RXyHQWb4Xfmkfw"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_1199": {
+                                            "id": "http://rdfh.ch/lists/0812/2FRHfVXgSWyRpTDbHtH_2A"
+                                        }
+                                    },
+                                    {
+                                        "H_1200": {
+                                            "id": "http://rdfh.ch/lists/0812/xvAcRpSvSMuLfQb9yIZi_w"
+                                        }
+                                    },
+                                    {
+                                        "H_1201": {
+                                            "id": "http://rdfh.ch/lists/0812/aCzDzu3YTbyHICq8O5WsRg"
+                                        }
+                                    },
+                                    {
+                                        "H_1202": {
+                                            "id": "http://rdfh.ch/lists/0812/AUfBYWY3Tk-ptdVEl5UWGQ"
+                                        }
+                                    },
+                                    {
+                                        "H_1203": {
+                                            "id": "http://rdfh.ch/lists/0812/dgirxs3DTAyoXm8GRtcT_A"
+                                        }
+                                    },
+                                    {
+                                        "H_1204": {
+                                            "id": "http://rdfh.ch/lists/0812/2sN1qRXnTDGpbjY84sHPdA"
+                                        }
+                                    },
+                                    {
+                                        "H_4562": {
+                                            "id": "http://rdfh.ch/lists/0812/HUUGRPB_Se-HS6Hf1StihA"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "H_1190": {
+                                "id": "http://rdfh.ch/lists/0812/RIltpLrkQR6ywjkhWv7-vA",
+                                "nodes": [
+                                    {
+                                        "H_1206": {
+                                            "id": "http://rdfh.ch/lists/0812/XKqNor2mQX6AorO0kv4i6A"
+                                        }
+                                    },
+                                    {
+                                        "H_1207": {
+                                            "id": "http://rdfh.ch/lists/0812/2JXec_3bT86CWfWc3oId2g"
+                                        }
+                                    },
+                                    {
+                                        "H_1208": {
+                                            "id": "http://rdfh.ch/lists/0812/MQcF2uxDQUqxmHwvdz7M8w"
+                                        }
+                                    },
+                                    {
+                                        "H_2631": {
+                                            "id": "http://rdfh.ch/lists/0812/U8Pd92FoT5mxPw53zkg1-Q"
+                                        }
+                                    },
+                                    {
+                                        "H_1209": {
+                                            "id": "http://rdfh.ch/lists/0812/VhK1E5TJTIiPs21FSSStrg"
+                                        }
+                                    },
+                                    {
+                                        "H_1210": {
+                                            "id": "http://rdfh.ch/lists/0812/3uDjZAE5RkKk3RsX__SvFA"
+                                        }
+                                    },
+                                    {
+                                        "H_1211": {
+                                            "id": "http://rdfh.ch/lists/0812/C7D2zCuySOeSG9gZocjwHw"
+                                        }
+                                    },
+                                    {
+                                        "H_1212": {
+                                            "id": "http://rdfh.ch/lists/0812/mtvHaRLiQZ-qM6P3mAm-pw"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "H_1191": {
+                                "id": "http://rdfh.ch/lists/0812/g9n6ZoplQLiRv7LJes_XVg",
+                                "nodes": [
+                                    {
+                                        "H_1213": {
+                                            "id": "http://rdfh.ch/lists/0812/_LFAvbqkRSGUCaEe-tYTOg"
+                                        }
+                                    },
+                                    {
+                                        "H_1214": {
+                                            "id": "http://rdfh.ch/lists/0812/IMxM9xIkQ3ymNw9-XWlnuw"
+                                        }
+                                    },
+                                    {
+                                        "H_1228": {
+                                            "id": "http://rdfh.ch/lists/0812/WswumCXOSkqFD6Tc-1bJtQ"
+                                        }
+                                    },
+                                    {
+                                        "H_1229": {
+                                            "id": "http://rdfh.ch/lists/0812/sB3GoxtaQUKWp_azibB2TQ"
+                                        }
+                                    },
+                                    {
+                                        "H_1230": {
+                                            "id": "http://rdfh.ch/lists/0812/amw3XYu4Rna3PUooI8kLaw"
+                                        }
+                                    },
+                                    {
+                                        "H_1231": {
+                                            "id": "http://rdfh.ch/lists/0812/FPuWYYoJSdOVqlKPdawf6w"
+                                        }
+                                    },
+                                    {
+                                        "H_1232": {
+                                            "id": "http://rdfh.ch/lists/0812/pkkT8gO1Rc-xBUzy3R4l_w"
+                                        }
+                                    },
+                                    {
+                                        "H_1233": {
+                                            "id": "http://rdfh.ch/lists/0812/S1fFloNXSOem8xmrehhw9w"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "H_1192": {
+                                "id": "http://rdfh.ch/lists/0812/SOT9S3WNSi-c9zPgCegFxA",
+                                "nodes": [
+                                    {
+                                        "H_2630": {
+                                            "id": "http://rdfh.ch/lists/0812/E0RrRqIRTGeAhs7iEBdl5A"
+                                        }
+                                    },
+                                    {
+                                        "H_1216": {
+                                            "id": "http://rdfh.ch/lists/0812/QL56nHX0ROKtC46I7BMWIg",
+                                            "nodes": [
+                                                {
+                                                    "H_2724": {
+                                                        "id": "http://rdfh.ch/lists/0812/TqfvYn4_Q_qayHOA2XGZzQ"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "H_1217": {
+                                            "id": "http://rdfh.ch/lists/0812/8urChnFnS8-BcIAveIAJ_Q"
+                                        }
+                                    },
+                                    {
+                                        "H_1218": {
+                                            "id": "http://rdfh.ch/lists/0812/Ib4mrwu3SH--6XXMd3OH2A"
+                                        }
+                                    },
+                                    {
+                                        "H_1219": {
+                                            "id": "http://rdfh.ch/lists/0812/0Pxq0WOmQl2zak7KO1uNcg"
+                                        }
+                                    },
+                                    {
+                                        "H_1220": {
+                                            "id": "http://rdfh.ch/lists/0812/bw8hJPIyRbyRemiA0drL0Q"
+                                        }
+                                    },
+                                    {
+                                        "H_1221": {
+                                            "id": "http://rdfh.ch/lists/0812/zGyvZ6UwQsWXQd6xnPPU9g"
+                                        }
+                                    },
+                                    {
+                                        "H_1223": {
+                                            "id": "http://rdfh.ch/lists/0812/5k7VR-hyQuCB6P6lNjp6Aw"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "H_1235": {
+                                "id": "http://rdfh.ch/lists/0812/MyFWS5c9Rj6qSdIGAobLnw",
+                                "nodes": [
+                                    {
+                                        "H_1236": {
+                                            "id": "http://rdfh.ch/lists/0812/Kqaz0LaUQ1OTIvYTXnxtqw"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "H_1237": {
+                                "id": "http://rdfh.ch/lists/0812/ofSFZvOlRBC_4QWOOu6nfA"
+                            }
+                        },
+                        {
+                            "H_1193": {
+                                "id": "http://rdfh.ch/lists/0812/_EUvqUd6TV28or_8b_RA0Q",
+                                "nodes": [
+                                    {
+                                        "H_1225": {
+                                            "id": "http://rdfh.ch/lists/0812/g6g3rt7EQZS9qETisj2k3A"
+                                        }
+                                    },
+                                    {
+                                        "H_1226": {
+                                            "id": "http://rdfh.ch/lists/0812/TvWHxRftRBu5XlpBbfY6aA"
+                                        }
+                                    },
+                                    {
+                                        "H_1227": {
+                                            "id": "http://rdfh.ch/lists/0812/YoUHAX72SsqBUoTuhpek4A"
+                                        }
+                                    },
+                                    {
+                                        "H_2623": {
+                                            "id": "http://rdfh.ch/lists/0812/KdxRL2H8SPSgwpamRNGOpg"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "H_5296": {
+                                "id": "http://rdfh.ch/lists/0812/8Ne-oGsoQRWLY3dszbTypw"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
