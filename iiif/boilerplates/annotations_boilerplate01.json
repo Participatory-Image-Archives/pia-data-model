@@ -37,7 +37,7 @@
                 "value": "xywh=51.68513107299805,159.93475341796875,1138.893482208252,4050.3792114257812"
             },
             "dcterms:isPartOf": {
-                "id": "https://vitrivr.github.io/annonatate/manifests/iiif.participatory-archives.ch/12033/manifest.json",
+                "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate01.json",
                 "type": "Manifest"
             }
         },
@@ -78,7 +78,7 @@
                 "value": "xywh=1019.9330444335938,1741.183349609375,858.3328247070312,2027.076171875"
             },
             "dcterms:isPartOf": {
-                "id": "https://vitrivr.github.io/annonatate/manifests/iiif.participatory-archives.ch/12033/manifest.json",
+                "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate01.json",
                 "type": "Manifest"
             }
         },
