@@ -30,7 +30,7 @@
             }
         ],
         "target": {
-            "source": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/annotations_boilerplate01/canvas/p1",
+            "source": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate01/canvas/p1",
             "selector": {
                 "type": "FragmentSelector",
                 "conformsTo": "http://www.w3.org/TR/media-frags/",
@@ -71,7 +71,7 @@
             }
         ],
         "target": {
-            "source": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/annotations_boilerplate01/canvas/p1",
+            "source": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate01/canvas/p1",
             "selector": {
                 "type": "FragmentSelector",
                 "conformsTo": "http://www.w3.org/TR/media-frags/",
