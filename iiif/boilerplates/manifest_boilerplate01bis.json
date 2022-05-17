@@ -101,7 +101,7 @@
       }
     }
   ],
-  "rights": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "rights": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
   "requiredStatement": {
     "label": {
       "de": [
@@ -231,7 +231,7 @@
                 {
                 "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate01bis/p0001-tag",  
                 "type": "Annotation",
-                "motivaton": "tagging",
+                "motivation": "tagging",
                 "body": {
                   "type": "TextualBody",
                   "value": "Person 99.6%",
