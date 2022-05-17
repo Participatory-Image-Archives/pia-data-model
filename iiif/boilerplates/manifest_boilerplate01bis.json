@@ -232,38 +232,13 @@
                 "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate01bis/p0001-tag",  
                 "type": "Annotation",
                 "motivaton": "tagging",
-                "body": [
-                    {
-                        "type": "TextualBody",
-                        "value": "Person 99.6%",
-                        "purpose": "commenting",
-                        "creator": {
-                            "id": "vitrivr",
-                            "name": "Object Detection"
-                        },
-                        "created": "2022-05-13T07:37:15.114Z",
-                        "modified": "2022-05-13T07:37:24.818Z"
-                    },
-                    {
-                        "type": "TextualBody",
-                        "value": "Object Detection (vitrivr)",
-                        "purpose": "tagging",
-                        "creator": {
-                            "id": "vitrivr",
-                            "name": "Object Detection"
-                        },
-                        "created": "2022-05-13T07:37:51.704Z",
-                        "modified": "2022-05-13T07:37:56.821Z"
-                    }
-                ],
-                "target": {
-                    "source": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate01/canvas/p1",
-                    "selector": {
-                        "type": "FragmentSelector",
-                        "conformsTo": "http://www.w3.org/TR/media-frags/",
-                        "value": "xywh=51.68513107299805,159.93475341796875,1138.893482208252,4050.3792114257812"
-                    }
-                }
+                "body": {
+                  "type": "TextualBody",
+                  "value": "Person 99.6%",
+                  "language": "en",
+                  "format": "text/plain"
+                },
+                "target": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate01/canvas/p1#xywh=51.68513107299805,159.93475341796875,1138.893482208252,4050.3792114257812"
             }
           ]
         }
