@@ -1,6 +1,6 @@
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate01.json",
+  "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate01bis.json",
   "type": "Manifest",
   "label": {
     "en": [
@@ -188,7 +188,7 @@
   "viewingDirection": "left-to-right",
   "items": [
     {
-      "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate01/canvas/p1",
+      "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate01bis/canvas/p1",
       "type": "Canvas",
       "label": {
         "none": [
@@ -199,11 +199,11 @@
       "width": 4190,
       "items": [
         {
-          "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate01/canvas/p1/1",
+          "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate01bis/canvas/p1/1",
           "type": "AnnotationPage",
           "items": [
             {
-              "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate01/p0001-image",
+              "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate01bis/p0001-image",
               "type": "Annotation",
               "motivation": "painting",
               "body": {
@@ -220,15 +220,88 @@
                   }
                 ]
               },
-              "target": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate01/canvas/p1"
+              "target": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate01bis/canvas/p1"
             }
           ],
           "annotations": [
             {
-              "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/annotations_boilerplate01.json",
+              "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate01bis/page/p1/1",
               "type": "AnnotationPage",
-              "target": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate01/canvas/p1"
-            }
+              "items": [{
+                "type": "Annotation",
+                "body": [
+                    {
+                        "type": "TextualBody",
+                        "value": "Person 99.6%",
+                        "purpose": "commenting",
+                        "creator": {
+                            "id": "vitrivr",
+                            "name": "Object Detection"
+                        },
+                        "created": "2022-05-13T07:37:15.114Z",
+                        "modified": "2022-05-13T07:37:24.818Z"
+                    },
+                    {
+                        "type": "TextualBody",
+                        "value": "Object Detection (vitrivr)",
+                        "purpose": "tagging",
+                        "creator": {
+                            "id": "vitrivr",
+                            "name": "Object Detection"
+                        },
+                        "created": "2022-05-13T07:37:51.704Z",
+                        "modified": "2022-05-13T07:37:56.821Z"
+                    }
+                ],
+                "target": {
+                    "source": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate01/canvas/p1",
+                    "selector": {
+                        "type": "FragmentSelector",
+                        "conformsTo": "http://www.w3.org/TR/media-frags/",
+                        "value": "xywh=51.68513107299805,159.93475341796875,1138.893482208252,4050.3792114257812"
+                    }
+                },
+                "@context": "http://www.w3.org/ns/anno.jsonld",
+                "motivation": "commenting"
+            },
+            {
+              "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate01bis/page/p1/2",
+              "type": "Annotation",
+              "body": [
+                  {
+                      "type": "TextualBody",
+                      "value": "Person 99.9%",
+                      "purpose": "commenting",
+                      "creator": {
+                          "id": "vitrivr",
+                          "name": "Object Detection"
+                      },
+                      "created": "2022-05-13T07:38:35.645Z",
+                      "modified": "2022-05-13T07:38:39.472Z"
+                  },
+                  {
+                      "type": "TextualBody",
+                      "value": "Object Detection (vitrivr)",
+                      "purpose": "tagging",
+                      "creator": {
+                          "id": "vitrivr",
+                          "name": "Object Detection"
+                      },
+                      "created": "2022-05-13T07:38:41.788Z",
+                      "modified": "2022-05-13T07:38:48.072Z"
+                  }
+              ],
+              "target": {
+                  "source": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/manifest_boilerplate01/canvas/p1",
+                  "selector": {
+                      "type": "FragmentSelector",
+                      "conformsTo": "http://www.w3.org/TR/media-frags/",
+                      "value": "xywh=1019.9330444335938,1741.183349609375,858.3328247070312,2027.076171875"
+                  }
+              },
+              "@context": "http://www.w3.org/ns/anno.jsonld",
+              "motivation": "commenting"
+          }
           ]
         }
       ]

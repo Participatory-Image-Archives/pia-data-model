@@ -44,7 +44,8 @@
         "@context": "http://www.w3.org/ns/anno.jsonld",
         "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/annotations_boilerplate01/canvas/p1/annopage/1",
         "motivation": "commenting"
-    },{
+    },
+    {
         "type": "Annotation",
         "body": [
             {
@@ -85,4 +86,5 @@
         "@context": "http://www.w3.org/ns/anno.jsonld",
         "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/annotations_boilerplate01/canvas/p1/annopage/2",
         "motivation": "commenting"
-    }] }
+    }
+    ] }
