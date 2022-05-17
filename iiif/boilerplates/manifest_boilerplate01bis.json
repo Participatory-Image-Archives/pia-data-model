@@ -263,9 +263,7 @@
                         "conformsTo": "http://www.w3.org/TR/media-frags/",
                         "value": "xywh=51.68513107299805,159.93475341796875,1138.893482208252,4050.3792114257812"
                     }
-                },
-                "@context": "http://www.w3.org/ns/anno.jsonld",
-                "motivation": "commenting"
+                }
             }
           ]
         }
