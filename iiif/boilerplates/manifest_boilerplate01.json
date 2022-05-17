@@ -188,7 +188,7 @@
   "viewingDirection": "left-to-right",
   "items": [
     {
-      "id": "https://iiif.participatory-archives.ch/12033/canvas/p1",
+      "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/annotations_boilerplate01/canvas/p1",
       "type": "Canvas",
       "label": {
         "none": [
@@ -199,7 +199,7 @@
       "width": 4190,
       "items": [
         {
-          "id": "https://iiif.participatory-archives.ch/12033/canvas/p1/1",
+          "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/annotations_boilerplate01/canvas/p1/1",
           "type": "AnnotationPage",
           "items": [
             {
@@ -220,14 +220,14 @@
                   }
                 ]
               },
-              "target": "https://iiif.participatory-archives.ch/12033/canvas/p1"
+              "target": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/annotations_boilerplate01/canvas/p1"
             }
           ],
           "annotations": [
             {
               "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/annotations_boilerplate01.json",
               "type": "AnnotationPage",
-              "target": "https://iiif.participatory-archives.ch/12033/canvas/p1"
+              "target": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/annotations_boilerplate01/canvas/p1"
             }
           ]
         }

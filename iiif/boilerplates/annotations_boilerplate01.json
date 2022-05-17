@@ -30,7 +30,7 @@
             }
         ],
         "target": {
-            "source": "https://iiif.participatory-archives.ch/12033/canvas/p1",
+            "source": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/annotations_boilerplate01/canvas/p1",
             "selector": {
                 "type": "FragmentSelector",
                 "conformsTo": "http://www.w3.org/TR/media-frags/",
@@ -42,7 +42,7 @@
             }
         },
         "@context": "http://www.w3.org/ns/anno.jsonld",
-        "id": "4a28d7d2-9c96-4f01-bef1-8d214eb28a13.json",
+        "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/annotations_boilerplate01/canvas/p1/annopage/1",
         "motivation": "commenting"
     },{
         "type": "Annotation",
@@ -71,7 +71,7 @@
             }
         ],
         "target": {
-            "source": "https://iiif.participatory-archives.ch/12033/canvas/p1",
+            "source": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/annotations_boilerplate01/canvas/p1",
             "selector": {
                 "type": "FragmentSelector",
                 "conformsTo": "http://www.w3.org/TR/media-frags/",
@@ -83,6 +83,6 @@
             }
         },
         "@context": "http://www.w3.org/ns/anno.jsonld",
-        "id": "0dd9bf0b-a147-412a-911f-4bf36eac9af7.json",
+        "id": "https://raw.githubusercontent.com/Participatory-Image-Archives/pia-data-model/main/iiif/boilerplates/annotations_boilerplate01/canvas/p1/annopage/2",
         "motivation": "commenting"
     }] }
