@@ -56,7 +56,7 @@ grant all privileges on all sequences in schema public to {user};
 
 ## Licenses and citation
 ### To cite this repository
-Demleitner A., Raemy J.A. (2021). PIA Data Model.
+Demleitner A., Raemy J.A. (2022). PIA Data Model.
 [![DOI](https://zenodo.org/badge/363361989.svg)](https://zenodo.org/badge/latestdoi/363361989) 
 
 Or, alternatively, use the "Cite this repository" function 
