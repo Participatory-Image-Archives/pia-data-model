@@ -1,5 +1,5 @@
 # PIA Data Model
-Data model for the [_Participatory Knowledge Practices in Analogue and Digital Image Archives_ (PIA)](https://github.com/Participatory-Image-Archives/) project.
+Data model for the [_Participatory Knowledge Practices in Analogue and Digital Image Archives_ (PIA)](https://about.participatory-archives.ch) project.
 
 ## Contents
 - [Description](#description)
