@@ -59,9 +59,21 @@ def main():
             for i in range(6):
                 prop.append('')
 
+            # check if image or moving image representation
+            type = 'Image'
+            filetype = obj[0][5]
+
+            if filetype == '':
+                continue
+
+            filetype = obj[0][5].rsplit('.', 1)[1]
+
+            if 'mp4' in filetype:
+                type = 'MovingImage'
+
             # hasImageRepresentation;text-prop;;SGV_09P_05312-rep;utf8;;prop-default
 
-            prop.append('hasImageRepresentation')
+            prop.append('has'+type+'Representation')
             prop.append('text-prop')
             prop.append('')
             prop.append(obj[0][2]+'-rep')
@@ -79,11 +91,11 @@ def main():
             image_representation = []
 
             image_representation.append(obj[0][2]+'-rep')
-            image_representation.append(':ImageRepresentation')
+            image_representation.append(':'+type+'Representation')
             image_representation.append(obj[0][2])
             image_representation.append('')
             image_representation.append('res-default')
-            image_representation.append('sgv.dir/images/'+obj[0][2]+'.TIF')
+            image_representation.append(obj[0][5])
 
             for i in range(213):
                 image_representation.append('')
