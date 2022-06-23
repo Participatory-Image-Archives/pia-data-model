@@ -9,10 +9,13 @@ def main():
 
     filename = args.file
 
+    print('Fixing linebreaks in CSV file.')
+
     # fix newlines in cells before starting to work on it
     with open (filename, 'r' ) as f:
         content = f.read()
-        csv_string = re.sub(r'([^;])\n', r'\1\\n', content, flags = re.M)
+        csv_string = re.sub(r'([^;];)[\n]+', r'\1\\n', content, flags = re.M)
+        csv_string = re.sub(r'([^;])\n', r'\1\\n', csv_string, flags = re.M)
         csv_lines = csv_string.splitlines()
 
     data = []
@@ -30,11 +33,17 @@ def main():
     current_parent = []
     current_index  = -1
 
+    print('Opening CSV file for reading.')
+
     # parse file into proper data structure
     datareader = csv.reader(csv_lines)
 
+    print('Parsing CSV file into data structure.')
+
     for row in datareader:
 
+        if current_index % 100000 == 0:
+            print('Parsed '+str(current_index)+' lines.')
         current_index += 1
 
         data_row = row[0].split(';')
@@ -48,7 +57,12 @@ def main():
 
         current_parent.append(data_row)
 
+    obj_count = 1
+
     for obj in data:
+
+        obj_count += 1
+        print('Worked through '+str(obj_count)+' of '+str(len(data))+' objects.')
 
         if obj[0][1] == ':Object':
 
@@ -56,7 +70,14 @@ def main():
             dataset = ''
             signature_parts = obj[0][2].split('_')
 
+            if len(signature_parts) < 3:
+                continue
+
             collection = signature_parts[1]
+
+            if collection != '17D' or collection != '17N':
+                continue
+
             object_id = int(signature_parts[2])
 
             if collection == '17D':
@@ -120,18 +141,19 @@ def main():
     data = data + [[dataset_a]]
     data = data + [[dataset_b]]
 
-    # construct csv string to write out
-    csv_out = ''
+    print('Writing appended CSV file.')
+
+    csv_data = []
 
     for obj in data:
         for line in obj:
-            csv_out = csv_out + ';'.join(line) + '\n'
+            csv_data.append(line)
 
     new_filename = filename.rsplit('.', 1)[0]+'_ds.csv'
 
-    text_file = open(new_filename, 'w')
-    text_file.write(csv_out)
-    text_file.close()
+    with open(new_filename, 'w+') as csv_file:
+        csv_writer = csv.writer(csv_file, delimiter=';')
+        csv_writer.writerows(csv_data)
 
 if __name__ == '__main__':
     main()
