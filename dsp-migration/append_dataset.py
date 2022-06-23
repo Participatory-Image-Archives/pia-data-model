@@ -75,7 +75,7 @@ def main():
 
             collection = signature_parts[1]
 
-            if collection != '17D' or collection != '17N':
+            if collection != '17D' and collection != '17N':
                 continue
 
             object_id = int(signature_parts[2])
