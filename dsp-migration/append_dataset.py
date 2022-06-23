@@ -16,7 +16,6 @@ def main():
         csv_lines = csv_string.splitlines()
 
     data = []
-    image_representations = []
 
     '''
     data
@@ -53,19 +52,42 @@ def main():
 
         if obj[0][1] == ':Object':
 
+            # check if object needs to have dataset relation attached
+            dataset = ''
+            signature_parts = obj[0][2].split('_')
+
+            collection = signature_parts[1]
+            object_id = int(signature_parts[2])
+
+            if collection == '17D':
+                if object_id >= 1 and object_id <= 372:
+                    dataset = 'dataset_a'
+
+                if object_id >= 373 and object_id <= 379:
+                    dataset = 'dataset_b'
+            
+            if signature_parts[1] == '17N':
+                if object_id >= 1 and object_id <= 840:
+                    dataset = 'dataset_a'
+
+                if object_id >= 841 and object_id <= 1248:
+                    dataset = 'dataset_b'
+
+            if dataset == '':
+                continue
+
             # create propery that needs to be appended
             prop = []
 
             for i in range(6):
                 prop.append('')
 
-            # hasImageRepresentation;text-prop;;SGV_09P_05312-rep;utf8;;prop-default
-
-            prop.append('hasImageRepresentation')
-            prop.append('text-prop')
+            # hasDataset;resptr-prop;;sgv_17_set_a;;;prop-default
+            prop.append('hasDataset')
+            prop.append('resptr-prop')
             prop.append('')
-            prop.append(obj[0][2]+'-rep')
-            prop.append('utf8')
+            prop.append(dataset)
+            prop.append('')
             prop.append('')
             prop.append('prop-default')
 
@@ -74,23 +96,29 @@ def main():
 
             obj.append(prop)
 
-            # create new image representation object
-            # SGV_09P_05312-rep;:ImageRepresentation;SGV_09P_05312;;res-default;sgv.dir/images/SGV_09P_05312.TIF
-            image_representation = []
+    # create new dataset objects
+    # sgv_17_set_a;:Dataset;sgv_17_set_a;;res-default
+    dataset_a = []
+    dataset_b = []
 
-            image_representation.append(obj[0][2]+'-rep')
-            image_representation.append(':ImageRepresentation')
-            image_representation.append(obj[0][2])
-            image_representation.append('')
-            image_representation.append('res-default')
-            image_representation.append('sgv.dir/images/'+obj[0][2]+'.TIF')
+    dataset_a.append('sgv_17_set_a')
+    dataset_a.append(':Dataset')
+    dataset_a.append('sgv_17_set_a')
+    dataset_a.append('')
+    dataset_a.append('res-default')
 
-            for i in range(213):
-                image_representation.append('')
+    dataset_b.append('sgv_17_set_b')
+    dataset_b.append(':Dataset')
+    dataset_b.append('sgv_17_set_b')
+    dataset_b.append('')
+    dataset_b.append('res-default')
 
-            image_representations.append([image_representation])
+    for i in range(214):
+        dataset_a.append('')
+        dataset_b.append('')
 
-    data = data + image_representations
+    data = data + [[dataset_a]]
+    data = data + [[dataset_b]]
 
     # construct csv string to write out
     csv_out = ''
@@ -99,13 +127,11 @@ def main():
         for line in obj:
             csv_out = csv_out + ';'.join(line) + '\n'
 
-    new_filename = filename.rsplit('.', 1)[0]+'_ir.csv'
+    new_filename = filename.rsplit('.', 1)[0]+'_ds.csv'
 
     text_file = open(new_filename, 'w')
     text_file.write(csv_out)
     text_file.close()
-        
-
 
 if __name__ == '__main__':
     main()
