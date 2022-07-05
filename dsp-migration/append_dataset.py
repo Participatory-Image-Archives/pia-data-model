@@ -9,15 +9,6 @@ def main():
 
     filename = args.file
 
-    print('Fixing linebreaks in CSV file.')
-
-    # fix newlines in cells before starting to work on it
-    with open (filename, 'r' ) as f:
-        content = f.read()
-        csv_string = re.sub(r'([^;];)[\n]+', r'\1\\n', content, flags = re.M)
-        csv_string = re.sub(r'([^;])\n', r'\1\\n', csv_string, flags = re.M)
-        csv_lines = csv_string.splitlines()
-
     data = []
 
     '''
@@ -33,29 +24,25 @@ def main():
     current_parent = []
     current_index  = -1
 
-    print('Opening CSV file for reading.')
-
-    # parse file into proper data structure
-    datareader = csv.reader(csv_lines)
-
     print('Parsing CSV file into data structure.')
 
-    for row in datareader:
+    with open (filename) as f:
+        datareader = csv.reader(f, delimiter=';', quotechar='"')
 
-        if current_index % 100000 == 0:
-            print('Parsed '+str(current_index)+' lines.')
-        current_index += 1
+        for row in datareader:
 
-        data_row = row[0].split(';')
+            if current_index % 100000 == 0:
+                print('Parsed '+str(current_index)+' lines.')
+            current_index += 1
 
-        if(data_row[0] != ''):
+            if(row[0] != ''):
 
-            # reset object
-            if current_index > 0:
-                data.append(current_parent)
-                current_parent = []
+                # reset object
+                if current_index > 0:
+                    data.append(current_parent)
+                    current_parent = []
 
-        current_parent.append(data_row)
+            current_parent.append(row)
 
     obj_count = 1
 
