@@ -3593,6 +3593,49 @@
            ]
          },
          {
+            "username": "birgit",
+            "email": "birgit.huber@unibas.ch",
+            "givenName": "Birgit",
+            "familyName": "Huber",
+            "password": "1234",
+            "lang": "de",
+            "groups": [
+              ":photo-editors",
+              ":pia-editors"
+            ],
+            "projects": [
+              ":admin"
+            ]
+          },
+          {
+            "username": "murielle",
+            "email": "m.cornut@unibas.ch",
+            "givenName": "Murielle",
+            "familyName": "Cornut",
+            "password": "1234",
+            "lang": "de",
+            "groups": [
+              ":pia-editors"
+            ],
+            "projects": [
+              ":member"
+            ]
+          },
+          {
+            "username": "fabienne",
+            "email": "fabienne.luethi@unibas.ch",
+            "givenName": "Fabienne",
+            "familyName": "Lüthi",
+            "password": "1234",
+            "lang": "de",
+            "groups": [
+              ":pia-editors"
+            ],
+            "projects": [
+              ":member"
+            ]
+          },
+         {
            "username": "julsraemy",
            "email": "julien.raemy@unibas.ch",
            "givenName": "Julien",
@@ -3600,12 +3643,27 @@
            "password": "1234",
            "lang": "fr",
            "groups": [
-             ":pia-editors"
+            ":photo-editors", 
+            ":pia-editors"
            ],
            "projects": [
              ":admin"
            ]
-         }
+         },
+         {
+            "username": "adrian",
+            "email": "adrian.demleitner@unibas.ch",
+            "givenName": "Adrian",
+            "familyName": "Demleitner",
+            "password": "1234",
+            "lang": "de",
+            "groups": [
+             ":pia-editors"
+            ],
+            "projects": [
+              ":admin"
+            ]
+          }
        ],
       "ontologies": [
          {
