@@ -57,23 +57,23 @@ def main():
     # main objects
     agents = []
     agents_header = [
-        'schema:identifier',                    # id
-        'schema:name',                          # hasName
-        'schema:description',                   # hasDescription
-        'schema:relatedTo',                     # hasFamily
-        'schema:jobTitle',                      # hasJob
-        'schema:birthDate',                     # hasBirthdate
-        'schema:birthPlace ^^resource:item',    # hasBirthplace
-        'schema:deathDate',                     # hasDeathdate
-        'schema:deathPlace ^^resource:item',    # hasDeathplace
-        'schema:comment',                       # hasComment, hasLiterature
+        'schema:identifier',                        # id
+        'schema:name',                              # hasName
+        'schema:description ^^html',                # hasDescription
+        'schema:relatedTo',                         # hasFamily
+        'schema:jobTitle',                          # hasJob
+        'schema:birthDate ^^timestamp ; interval',  # hasBirthdate
+        'schema:birthPlace ^^item',                 # hasBirthplace
+        'schema:deathDate ^^timestamp ; interval',  # hasDeathdate
+        'schema:deathPlace ^^item',                 # hasDeathplace
+        'schema:comment',                           # hasComment, hasLiterature
     ]
 
     concepts = []
     concepts_header = [
-        'schema:identifier',    #id
-        'schema:name',          #hasPrefLabel
-        'schema:description',   #hasDescription
+        'schema:identifier',            #id
+        'schema:name',                  #hasPrefLabel
+        'schema:description ^^html',    #hasDescription
     ]
 
     albums = []
@@ -82,13 +82,13 @@ def main():
     collections_header = [
         'schema:identifier',                        # hasSignature
         'schema:name',                              # hasTitle
-        'schema:temporal',                          # hasDate
-        'schema:creator ^^resource:item',           # hasCreator
+        'schema:temporal ^^timestamp ; interval',   # hasDate
+        'schema:creator ^^item',                    # hasCreator
         'schema:keywords',                          # hasKeywords
-        'schema:about ^^resource:item',             # hasConcept
+        'schema:about ^^item',                      # hasConcept
         'schema:comment',                           # hasComment, hasLiterature
-        'schema:copyrightHolder ^^resource:item',   # hasCopyright
-        'schema:description',                       # hasDescription
+        'schema:copyrightHolder ^^item',            # hasCopyright
+        'schema:description ^^html',                # hasDescription
         'schema:spatial',                           # hasArchiveLocation
         # '',                     # hasIndexing
         # '',                     # hasRestoration
@@ -100,20 +100,20 @@ def main():
     objects_header = [
         'schema:identifier',                        # hasSignature, hasOldnr
         'schema:name',                              # hasTitle
-        'schema:temporal',                          # hasDate
-        'schema:location ^^resource:item',          # hasPlace
-        'schema:creator ^^resource:item',           # hasCreator
-        'edm:isRepresentationOf ^^resource:item',   # isRepresentationOf schould be edm: not schema:
+        'schema:temporal ^^timestamp ; interval',   # hasDate
+        'schema:location ^^item',                   # hasPlace
+        'schema:creator ^^item',                    # hasCreator
+        'edm:isRepresentationOf ^^item',            # isRepresentationOf schould be edm: not schema:
         'schema:keywords',                          # hasKeywords
-        'schema:about ^^resource:item',             # hasConcept
+        'schema:about ^^item',                      # hasConcept
         'schema:comment',                           # hasComment
         'schema:isPartOf',                          # hasIn_collection, hasPart_of
-        'schema:material ^^resource:item',          # hasObjectType
-        'schema:artMedium ^^resource:item',         # hasMedium
-        'schema:size ^^resource:item',              # hasFormat
-        'schema:copyrightHolder ^^resource:item',   # hasCopyright
+        'schema:material ^^item',                   # hasObjectType
+        'schema:artMedium ^^item',                  # hasMedium
+        'schema:size ^^item',                       # hasFormat
+        'schema:copyrightHolder ^^item',            # hasCopyright
         'schema:image ^^uri',                       # iiif image
-        'schema:geo ^^geometry:geography:coordinates',
+        'schema:geo ^^coordinates',
         # 'edm:isRelatedTo',                        # hasRef_img
         # 'edm:isRelatedTo',                        # hasverso
     ]
@@ -127,8 +127,8 @@ def main():
         'schema:longitude',
         'schema:elevation',
         'pia:population',
-        'schema:geo ^^geometry:geography:coordinates',
-        'pia:geometry ^^geometry:geometry',
+        'schema:geo ^^coordinates',
+        'pia:geometry ^^geometry',
         'schema:url ^^uri',
     ]
 
@@ -193,13 +193,13 @@ def main():
             agent = {
                 'schema:identifier': obj[0][0],
                 'schema:name': '',
-                'schema:description': '',
+                'schema:description ^^html': '',
                 'schema:relatedTo': '',
                 'schema:jobTitle': '',
-                'schema:birthDate': '',
-                'schema:birthPlace ^^resource:item': '',
-                'schema:deathDate': '',
-                'schema:deathPlace ^^resource:item': '',
+                'schema:birthDate ^^timestamp ; interval': '',
+                'schema:birthPlace ^^item': '',
+                'schema:deathDate ^^timestamp ; interval': '',
+                'schema:deathPlace ^^item': '',
                 'schema:comment': '',
             }
 
@@ -211,27 +211,27 @@ def main():
                 if prop[6] == 'hasName':
                     agent['schema:name'] = value
                 elif prop[6] == 'hasDescription':
-                    agent['schema:description'] = value
+                    agent['schema:description ^^html'] = value
                 elif prop[6] == 'hasFamily':
                     agent['schema:relatedTo'] = value
                 elif prop[6] == 'hasJobTitle':
                     agent['schema:jobTitle'] = value
                 elif prop[6] == 'hasBirthDate':
-                    agent['schema:birthDate'] = value
+                    agent['schema:birthDate ^^timestamp ; interval'] = clean_date(value)
                 elif prop[6] == 'hasBirthPlace':
                     if not any(place['schema:identifier'] == 'place_'+prop[9] for place in places):
                         place = add_place(prop[9])
                         if place:
                             places.append(place)
-                    agent['schema:birthPlace ^^resource:item'] = 'place_'+prop[9]
+                    agent['schema:birthPlace ^^item'] = 'place_'+prop[9]
                 elif prop[6] == 'hasDeathDate':
-                    agent['schema:deathDate'] = value
+                    agent['schema:deathDate ^^timestamp ; interval'] = clean_date(value)
                 elif prop[6] == 'hasDeathPlace':
                     if not any(place['schema:identifier'] == 'place_'+prop[9] for place in places):
                         place = add_place(prop[9])
                         if place:
                             places.append(place)
-                    agent['schema:deathPlace ^^resource:item'] = 'place_'+prop[9]
+                    agent['schema:deathPlace ^^item'] = 'place_'+prop[9]
                 elif prop[6] == 'hasComment':
                     comments.append(value)
                 elif prop[6] == 'hasLiterature':
@@ -245,7 +245,7 @@ def main():
             concept = {
                 'schema:identifier': obj[0][0],
                 'schema:name': '',
-                'schema:description': '',
+                'schema:description ^^html': '',
             }
 
             for prop in obj:
@@ -254,7 +254,7 @@ def main():
                 if prop[6] == 'hasName':
                     concept['schema:name'] = value
                 elif prop[6] == 'hasDescription':
-                    concept['schema:description'] = value
+                    concept['schema:description ^^html'] = value
             
             concepts.append(concept)
 
@@ -263,13 +263,13 @@ def main():
             collection = {
                 'schema:identifier': '',
                 'schema:name': '',
-                'schema:temporal': '',
-                'schema:creator ^^resource:item': '',
+                'schema:temporal ^^timestamp ; interval': '',
+                'schema:creator ^^item': '',
                 'schema:keywords': '',
-                'schema:about ^^resource:item': '',
+                'schema:about ^^item': '',
                 'schema:comment': '',
-                'schema:copyrightHolder ^^resource:item': '',
-                'schema:description': '',
+                'schema:copyrightHolder ^^item': '',
+                'schema:description ^^html': '',
                 'schema:spatial': '',
             }
 
@@ -283,19 +283,19 @@ def main():
                 elif prop[6] == 'hasTitle':
                     collection['schema:name'] = value
                 elif prop[6] == 'hasDate':
-                    collection['schema:temporal'] = value
+                    collection['schema:temporal ^^timestamp ; interval'] = clean_date(value)
                 elif prop[6] == 'hasCreator':
-                    collection['schema:creator ^^resource:item'] = value
+                    collection['schema:creator ^^item'] = value
                 elif prop[6] == 'hasKeywords':
                     collection['schema:keywords'] = value
                 elif prop[6] == 'hasConcept':
-                    collection['schema:about ^^resource:item'] = value
+                    collection['schema:about ^^item'] = value
                 elif prop[6] == 'hasComment':
                     comments.append(value)
                 elif prop[6] == 'hasCopyrightHolder':
-                    collection['schema:copyrightHolder ^^resource:item'] = value
+                    collection['schema:copyrightHolder ^^item'] = value
                 elif prop[6] == 'hasDescription':
-                    collection['schema:description'] = value
+                    collection['schema:description ^^html'] = value
                 elif prop[6] == 'hasLiterature':
                     comments.append(value)
                 elif prop[6] == 'hasArchiveLocation':
@@ -309,20 +309,20 @@ def main():
             objct = {
                 'schema:identifier': '',
                 'schema:name': '',
-                'schema:temporal': '',
-                'schema:location ^^resource:item': '',
-                'schema:creator ^^resource:item': '',
-                'edm:isRepresentationOf ^^resource:item': '',
+                'schema:temporal ^^timestamp ; interval': '',
+                'schema:location ^^item': '',
+                'schema:creator ^^item': '',
+                'edm:isRepresentationOf ^^item': '',
                 'schema:keywords': '',
-                'schema:about ^^resource:item': '',
+                'schema:about ^^item': '',
                 'schema:comment': '',
                 'schema:isPartOf': '',
-                'schema:material ^^resource:item': '',
-                'schema:artMedium ^^resource:item': '',
-                'schema:size ^^resource:item': '',
-                'schema:copyrightHolder ^^resource:item': '',
+                'schema:material ^^item': '',
+                'schema:artMedium ^^item': '',
+                'schema:size ^^item': '',
+                'schema:copyrightHolder ^^item': '',
                 'schema:image ^^uri': '',
-                'schema:geo ^^geometry:geography:coordinates': '',
+                'schema:geo ^^coordinates': '',
             }
 
             ids = []
@@ -336,26 +336,26 @@ def main():
                 elif prop[6] == 'hasTitle':
                     objct['schema:name'] = value
                 elif prop[6] == 'hasDate':
-                    objct['schema:temporal'] = value
+                    objct['schema:temporal ^^timestamp ; interval'] = clean_date(value)
                 elif prop[6] == 'hasPlace':
                     if not any(place['schema:identifier'] == 'place_'+prop[9] for place in places):
                         place = add_place(prop[9])
                         if place:
                             places.append(place)
-                            objct['schema:geo ^^geometry:geography:coordinates'] = place['schema:geo ^^geometry:geography:coordinates']
+                            objct['schema:geo ^^coordinates'] = place['schema:geo ^^coordinates']
                     else:
                         for place in places:
                             if place['schema:identifier'] == 'place_'+prop[9]:
-                                objct['schema:geo ^^geometry:geography:coordinates'] = place['schema:geo ^^geometry:geography:coordinates']
-                    objct['schema:location ^^resource:item'] = 'place_'+prop[9]
+                                objct['schema:geo ^^coordinates'] = place['schema:geo ^^coordinates']
+                    objct['schema:location ^^item'] = 'place_'+prop[9]
                 elif prop[6] == 'hasCreator':
-                    objct['schema:creator ^^resource:item'] = value
+                    objct['schema:creator ^^item'] = value
                 elif prop[6] == 'isRepresentationOf':
-                    objct['edm:isRepresentationOf ^^resource:item'] = value
+                    objct['edm:isRepresentationOf ^^item'] = value
                 elif prop[6] == 'hasKeywords':
                     objct['schema:keywords'] = value
                 elif prop[6] == 'hasConcept':
-                    objct['schema:about ^^resource:item'] = value
+                    objct['schema:about ^^item'] = value
                 elif prop[6] == 'hasComment':
                     objct['schema:comment'] = value
                 elif prop[6] == 'hasOldnr':
@@ -365,13 +365,13 @@ def main():
                 elif prop[6] == 'isPartOfAlbum':
                     partof.append(value)
                 elif prop[6] == 'hasObjectType':
-                    objct['schema:material ^^resource:item'] = value
+                    objct['schema:material ^^item'] = value
                 elif prop[6] == 'hasMedium':
-                    objct['schema:artMedium ^^resource:item'] = value
+                    objct['schema:artMedium ^^item'] = value
                 elif prop[6] == 'hasFormat':
-                    objct['schema:size ^^resource:item'] = value
-                elif prop[6] == 'hasCopyrightHolder ^^resource:item':
-                    objct['schema:copyrightHolder ^^resource:item'] = value
+                    objct['schema:size ^^item'] = value
+                elif prop[6] == 'hasCopyrightHolder ^^item':
+                    objct['schema:copyrightHolder ^^item'] = value
 
             collection = 'SGV_10'
 
@@ -497,11 +497,11 @@ def add_place(id):
         return {
             'schema:identifier': 'place_'+id,
             'schema:name': label,
-            'schema:geo ^^geometry:geography:coordinates': str(geonames_data.findtext('lat', default = 0))
+            'schema:geo ^^coordinates': str(geonames_data.findtext('lat', default = 0))
                 +','+str(geonames_data.findtext('lng', default = 0)),
             'schema:elevation': geonames_data.findtext('elevation', default = 0),
             'pia:population': geonames_data.findtext('population', default = 0),
-            'pia:geometry ^^geometry:geometry': geometry,
+            'pia:geometry ^^geometry': geometry,
             'schema:url ^^uri': '|'.join(uris)
         }
     
@@ -560,6 +560,13 @@ def resolve_geonames(id):
     else:
 
         return None
+
+def clean_date(date_str):
+    date_str = date_str.replace('GREGORIAN:', '')
+    date_str = date_str.replace('CE:', '')
+    date_str = date_str.replace(':', '/')
+
+    return date_str
 
 if __name__ == '__main__':
     main()
