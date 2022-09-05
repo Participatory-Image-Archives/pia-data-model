@@ -113,7 +113,7 @@ def main():
         'schema:size ^^item',                       # hasFormat
         'schema:copyrightHolder ^^item',            # hasCopyright
         'schema:image ^^uri',                       # iiif image
-        'schema:geo ^^coordinates',
+        'schema:geo ^^geometry:geography:coordinates',
         # 'edm:isRelatedTo',                        # hasRef_img
         # 'edm:isRelatedTo',                        # hasverso
     ]
@@ -127,7 +127,7 @@ def main():
         'schema:longitude',
         'schema:elevation',
         'pia:population',
-        'schema:geo ^^coordinates',
+        'schema:geo ^^geometry:geography:coordinates',
         'pia:geometry ^^geometry',
         'schema:url ^^uri',
     ]
@@ -322,7 +322,7 @@ def main():
                 'schema:size ^^item': '',
                 'schema:copyrightHolder ^^item': '',
                 'schema:image ^^uri': '',
-                'schema:geo ^^coordinates': '',
+                'schema:geo ^^geometry:geography:coordinates': '',
             }
 
             ids = []
@@ -342,11 +342,11 @@ def main():
                         place = add_place(prop[9])
                         if place:
                             places.append(place)
-                            objct['schema:geo ^^coordinates'] = place['schema:geo ^^coordinates']
+                            objct['schema:geo ^^geometry:geography:coordinates'] = place['schema:geo ^^geometry:geography:coordinates']
                     else:
                         for place in places:
                             if place['schema:identifier'] == 'place_'+prop[9]:
-                                objct['schema:geo ^^coordinates'] = place['schema:geo ^^coordinates']
+                                objct['schema:geo ^^geometry:geography:coordinates'] = place['schema:geo ^^geometry:geography:coordinates']
                     objct['schema:location ^^item'] = 'place_'+prop[9]
                 elif prop[6] == 'hasCreator':
                     objct['schema:creator ^^item'] = value
@@ -497,7 +497,7 @@ def add_place(id):
         return {
             'schema:identifier': 'place_'+id,
             'schema:name': label,
-            'schema:geo ^^coordinates': str(geonames_data.findtext('lat', default = 0))
+            'schema:geo ^^geometry:geography:coordinates': str(geonames_data.findtext('lat', default = 0))
                 +','+str(geonames_data.findtext('lng', default = 0)),
             'schema:elevation': geonames_data.findtext('elevation', default = 0),
             'pia:population': geonames_data.findtext('population', default = 0),
