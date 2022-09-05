@@ -9,6 +9,7 @@
 
 '''
 import argparse, csv, json, os, re, requests, urllib
+from shapely.geometry import shape
 from lxml import etree as et
 
 with open('swiss_boundaries/swissBOUNDARIES3D_1_3_TLM_BEZIRKSGEBIET.geojson') as f:
@@ -54,77 +55,81 @@ def main():
             current_parent.append(row)
 
     # main objects
-    agents = []                 # schema:agent
+    agents = []
     agents_header = [
-        'schema:identifier',    # id
-        'schema:name',          # hasName
-        'schema:description',   # hasDescription
-        'schema:relatedTo',     # hasFamily
-        'schema:jobTitle',      # hasJob
-        'schema:birthDate',     # hasBirthdate
+        'schema:identifier',                    # id
+        'schema:name',                          # hasName
+        'schema:description',                   # hasDescription
+        'schema:relatedTo',                     # hasFamily
+        'schema:jobTitle',                      # hasJob
+        'schema:birthDate',                     # hasBirthdate
         'schema:birthPlace ^^resource:item',    # hasBirthplace
-        'schema:deathDate',     # hasDeathdate
+        'schema:deathDate',                     # hasDeathdate
         'schema:deathPlace ^^resource:item',    # hasDeathplace
-        'schema:comment',       # hasComment, hasLiterature
+        'schema:comment',                       # hasComment, hasLiterature
     ]
 
-    concepts = []               # schema:concept
+    concepts = []
     concepts_header = [
         'schema:identifier',    #id
         'schema:name',          #hasPrefLabel
         'schema:description',   #hasDescription
     ]
 
-    albums = []                 #
+    albums = []
 
-    collections = []            # schema:collection
+    collections = []
     collections_header = [
-        'schema:identifier',    # hasSignature
-        'schema:name',          # hasTitle
-        'schema:temporal',      # hasDate
-        'schema:creator',       # hasPerson
-        'schema:keywords',      # hasSubject
-        'schema:about',         # hasTag
-        'schema:comment',       # hasComment, hasLiterature
-        'schema:copyrightHolder', # hasCopyright
-        'schema:description',   # hasDescription
+        'schema:identifier',                        # hasSignature
+        'schema:name',                              # hasTitle
+        'schema:temporal',                          # hasDate
+        'schema:creator ^^resource:item',           # hasCreator
+        'schema:keywords',                          # hasKeywords
+        'schema:about ^^resource:item',             # hasConcept
+        'schema:comment',                           # hasComment, hasLiterature
+        'schema:copyrightHolder ^^resource:item',   # hasCopyright
+        'schema:description',                       # hasDescription
+        'schema:spatial',                           # hasArchiveLocation
         # '',                     # hasIndexing
         # '',                     # hasRestoration
-        'schema:spatial',       # hasStandorte
         #'schema:workExample',   # hasDefault_image
         #'schema:workExample',   # hasEmbedded_video
     ]
 
-    objects = []        # schema:object
+    objects = []
     objects_header = [
-        'schema:identifier',    # hasSignature, hasOldnr
-        'schema:name',          # hasTitle
-        'schema:temporal',      # hasDate
-        'schema:location ^^resource:item',      # hasPlace
-        'schema:creator ^^resource:item',       # hasCreator
-        'schema:isRepresentationOf ^^resource:item', # isRepresentationOf|hasConcept, schould be edm: not schema:
-        'schema:keywords',      # hasKeywords
-        'schema:about',         # hasTag
-        'schema:comment',       # hasComment
-        'schema:isPartOf ^^resource:item',      # hasIn_collection, hasPart_of
-        'schema:material ^^resource:item',      # hasObjectType
-        'schema:artMedium ^^resource:item',     # hasMedium
-        'schema:size ^^resource:item',          # hasFormat
-        'schema:copyrightHolder ^^resource:item', # hasCopyright
-        # 'edm:isRelatedTo',      # hasRef_img
-        # 'edm:isRelatedTo',      # hasverso
+        'schema:identifier',                        # hasSignature, hasOldnr
+        'schema:name',                              # hasTitle
+        'schema:temporal',                          # hasDate
+        'schema:location ^^resource:item',          # hasPlace
+        'schema:creator ^^resource:item',           # hasCreator
+        'edm:isRepresentationOf ^^resource:item',   # isRepresentationOf schould be edm: not schema:
+        'schema:keywords',                          # hasKeywords
+        'schema:about ^^resource:item',             # hasConcept
+        'schema:comment',                           # hasComment
+        'schema:isPartOf',                          # hasIn_collection, hasPart_of
+        'schema:material ^^resource:item',          # hasObjectType
+        'schema:artMedium ^^resource:item',         # hasMedium
+        'schema:size ^^resource:item',              # hasFormat
+        'schema:copyrightHolder ^^resource:item',   # hasCopyright
+        'schema:image ^^uri',                       # iiif image
+        'schema:geo ^^geometry:geography:coordinates',
+        # 'edm:isRelatedTo',                        # hasRef_img
+        # 'edm:isRelatedTo',                        # hasverso
     ]
 
     # secondary objects
     places = []         # schema:location
     places_header = [
-        'schema:identifier',    # id
-        'schema:name',          # 
-        'schema:latitude',      # 
-        'schema:longitude',     # 
-        'schema:elevation',      # 
-        'schema:geo',           # geometry
-        'schema:url',           # geonames_uri, wiki_uri
+        'schema:identifier',
+        'schema:name',
+        'schema:latitude',
+        'schema:longitude',
+        'schema:elevation',
+        'pia:population',
+        'schema:geo ^^geometry:geography:coordinates',
+        'pia:geometry ^^geometry:geometry',
+        'schema:url ^^uri',
     ]
 
     # list objects
@@ -253,17 +258,17 @@ def main():
             
             concepts.append(concept)
 
-        if obj[0][1] == ':Collection' and obj[0][2] in ['SGV_10', 'SGV_12']:
+        if obj[0][1] == ':Collection': #  and obj[0][2] in ['SGV_10', 'SGV_12']
 
             collection = {
                 'schema:identifier': '',
                 'schema:name': '',
                 'schema:temporal': '',
-                'schema:creator': '',
+                'schema:creator ^^resource:item': '',
                 'schema:keywords': '',
-                'schema:about': '',
+                'schema:about ^^resource:item': '',
                 'schema:comment': '',
-                'schema:copyrightHolder': '',
+                'schema:copyrightHolder ^^resource:item': '',
                 'schema:description': '',
                 'schema:spatial': '',
             }
@@ -279,21 +284,21 @@ def main():
                     collection['schema:name'] = value
                 elif prop[6] == 'hasDate':
                     collection['schema:temporal'] = value
-                elif prop[6] == 'hasPerson':
-                    collection['schema:creator'] = value
-                elif prop[6] == 'hasSubject':
+                elif prop[6] == 'hasCreator':
+                    collection['schema:creator ^^resource:item'] = value
+                elif prop[6] == 'hasKeywords':
                     collection['schema:keywords'] = value
-                elif prop[6] == 'hasTag':
-                    collection['schema:about'] = value
+                elif prop[6] == 'hasConcept':
+                    collection['schema:about ^^resource:item'] = value
                 elif prop[6] == 'hasComment':
                     comments.append(value)
-                elif prop[6] == 'hasCopyright':
-                    collection['schema:copyrightHolder'] = value
+                elif prop[6] == 'hasCopyrightHolder':
+                    collection['schema:copyrightHolder ^^resource:item'] = value
                 elif prop[6] == 'hasDescription':
                     collection['schema:description'] = value
                 elif prop[6] == 'hasLiterature':
                     comments.append(value)
-                elif prop[6] == 'hasStandorte':
+                elif prop[6] == 'hasArchiveLocation':
                     collection['schema:spatial'] = value
             
             collection['schema:comment'] = '|'.join(comments)
@@ -307,15 +312,17 @@ def main():
                 'schema:temporal': '',
                 'schema:location ^^resource:item': '',
                 'schema:creator ^^resource:item': '',
-                'schema:isRepresentationOf ^^resource:item': '',
+                'edm:isRepresentationOf ^^resource:item': '',
                 'schema:keywords': '',
-                'schema:about': '',
+                'schema:about ^^resource:item': '',
                 'schema:comment': '',
-                'schema:isPartOf ^^resource:item': '',
+                'schema:isPartOf': '',
                 'schema:material ^^resource:item': '',
                 'schema:artMedium ^^resource:item': '',
                 'schema:size ^^resource:item': '',
                 'schema:copyrightHolder ^^resource:item': '',
+                'schema:image ^^uri': '',
+                'schema:geo ^^geometry:geography:coordinates': '',
             }
 
             ids = []
@@ -335,15 +342,20 @@ def main():
                         place = add_place(prop[9])
                         if place:
                             places.append(place)
+                            objct['schema:geo ^^geometry:geography:coordinates'] = place['schema:geo ^^geometry:geography:coordinates']
+                    else:
+                        for place in places:
+                            if place['schema:identifier'] == 'place_'+prop[9]:
+                                objct['schema:geo ^^geometry:geography:coordinates'] = place['schema:geo ^^geometry:geography:coordinates']
                     objct['schema:location ^^resource:item'] = 'place_'+prop[9]
                 elif prop[6] == 'hasCreator':
                     objct['schema:creator ^^resource:item'] = value
                 elif prop[6] == 'isRepresentationOf':
-                    objct['schema:isRepresentationOf ^^resource:item'] = value
+                    objct['edm:isRepresentationOf ^^resource:item'] = value
                 elif prop[6] == 'hasKeywords':
                     objct['schema:keywords'] = value
-                elif prop[6] == 'hasTag':
-                    objct['schema:about'] = value
+                elif prop[6] == 'hasConcept':
+                    objct['schema:about ^^resource:item'] = value
                 elif prop[6] == 'hasComment':
                     objct['schema:comment'] = value
                 elif prop[6] == 'hasOldnr':
@@ -358,11 +370,18 @@ def main():
                     objct['schema:artMedium ^^resource:item'] = value
                 elif prop[6] == 'hasFormat':
                     objct['schema:size ^^resource:item'] = value
-                elif prop[6] == 'hasCopyright':
+                elif prop[6] == 'hasCopyrightHolder ^^resource:item':
                     objct['schema:copyrightHolder ^^resource:item'] = value
+
+            collection = 'SGV_10'
+
+            if 'SGV_12' in obj[0][2]:
+                collection = 'SGV_12'
+
+            objct['schema:image ^^uri'] = 'http://sipi.participatory-archives.ch/'+collection+'/'+obj[0][2]+'.jp2'
             
             objct['schema:identifier'] = '|'.join(ids)
-            objct['schema:isPartOf ^^resource:item'] = '|'.join(partof)
+            objct['schema:isPartOf'] = '|'.join(partof)
             objects.append(objct)
 
     with open('agents.csv', 'w+') as csvfile:
@@ -468,21 +487,22 @@ def add_place(id):
         if geonames_division_level == '2':
             for feature in districts['features']:
                 if str(feature['properties']['BEZIRKSNUM']) == str(geonames_data.findtext('adminCode2')):
-                    geometry = json.dumps(feature['geometry'])
+                    geometry = shape(feature['geometry']).wkt
 
         if geonames_division_level == '3':
             for feature in territories['features']:
                 if str(feature['properties']['BFS_NUMMER']) == str(geonames_data.findtext('adminCode3')):
-                    geometry = json.dumps(feature['geometry'])
+                    geometry = shape(feature['geometry']).wkt
         
         return {
             'schema:identifier': 'place_'+id,
             'schema:name': label,
-            'schema:latitude': geonames_data.findtext('lat', default = 0),
-            'schema:longitude': geonames_data.findtext('lng', default = 0),
+            'schema:geo ^^geometry:geography:coordinates': str(geonames_data.findtext('lat', default = 0))
+                +','+str(geonames_data.findtext('lng', default = 0)),
             'schema:elevation': geonames_data.findtext('elevation', default = 0),
-            'schema:geo': geometry,
-            'schema:url': '|'.join(uris)
+            'pia:population': geonames_data.findtext('population', default = 0),
+            'pia:geometry ^^geometry:geometry': geometry,
+            'schema:url ^^uri': '|'.join(uris)
         }
     
     else:
