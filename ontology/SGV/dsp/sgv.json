@@ -3828,7 +3828,7 @@
                         "hasLinkTo",
                         "schema:isPartOf"
                     ],
-                    "object": ":Object",
+                    "object": ":MovingImageRepresentation",
                     "labels": {
                         "en": "Describes the sequence of",
                         "de": "Beschreibt die Sequenz von",
