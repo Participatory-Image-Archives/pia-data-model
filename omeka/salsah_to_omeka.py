@@ -96,7 +96,8 @@ def main():
         #'schema:workExample',   # hasEmbedded_video
     ]
 
-    objects = []
+    objects_sgv_10 = []
+    objects_sgv_12 = []
     objects_header = [
         'schema:identifier',                        # hasSignature, hasOldnr
         'schema:name',                              # hasTitle
@@ -327,8 +328,10 @@ def main():
 
             ids = []
             partof = []
+            append = True
 
             for prop in obj:
+
                 value = merge_values(prop)
 
                 if prop[6] == 'hasSignature':
@@ -382,7 +385,21 @@ def main():
             
             objct['schema:identifier'] = '|'.join(ids)
             objct['schema:isPartOf'] = '|'.join(partof)
-            objects.append(objct)
+
+            append = True
+
+            objects = objects_sgv_10
+
+            if 'SGV_12' in objct['schema:identifier']:
+                objects = objects_sgv_12
+
+            for o in objects:
+                if objct['schema:identifier'] == o['schema:identifier']:
+                    append = False
+                # TODO: Merge new properties into existing object
+
+            if append:
+                objects.append(objct)
 
     with open('agents.csv', 'w+') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames = agents_header, delimiter=';')
@@ -399,10 +416,15 @@ def main():
         writer.writeheader()
         writer.writerows(collections)
 
-    with open('objects.csv', 'w+') as csvfile:
+    with open('objects_sgv_10.csv', 'w+') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames = objects_header, delimiter=';')
         writer.writeheader()
-        writer.writerows(objects)
+        writer.writerows(objects_sgv_10)
+
+    with open('objects_sgv_12.csv', 'w+') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames = objects_header, delimiter=';')
+        writer.writeheader()
+        writer.writerows(objects_sgv_12)
 
     with open('places.csv', 'w+') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames = places_header, delimiter=';')
