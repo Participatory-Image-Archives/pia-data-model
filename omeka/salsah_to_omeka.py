@@ -41,7 +41,7 @@ def main():
 
         for row in datareader:
 
-            if current_index % 100000 == 0:
+            if current_index % 25000 == 0:
                 print('Parsed '+str(current_index)+' lines.')
             current_index += 1
 
@@ -82,7 +82,7 @@ def main():
     collections_header = [
         'schema:identifier',                        # hasSignature
         'schema:name',                              # hasTitle
-        'schema:temporal ^^timestamp ; interval',   # hasDate
+        'schema:temporal ^^timestamp ; interval ; literal',   # hasDate
         'schema:creator ^^item',                    # hasCreator
         'schema:keywords',                          # hasKeywords
         'schema:about ^^item',                      # hasConcept
@@ -96,27 +96,28 @@ def main():
         #'schema:workExample',   # hasEmbedded_video
     ]
 
+    objects_sgv_04 = []
     objects_sgv_10 = []
     objects_sgv_12 = []
     objects_header = [
-        'schema:identifier',                        # hasSignature, hasOldnr
-        'schema:name',                              # hasTitle
-        'schema:temporal ^^timestamp ; interval',   # hasDate
-        'schema:location ^^item',                   # hasPlace
-        'schema:creator ^^item',                    # hasCreator
-        'edm:isRepresentationOf ^^item',            # isRepresentationOf schould be edm: not schema:
-        'schema:keywords',                          # hasKeywords
-        'schema:about ^^item',                      # hasConcept
-        'schema:comment',                           # hasComment
-        'schema:isPartOf',                          # hasIn_collection, hasPart_of
-        'schema:material ^^item',                   # hasObjectType
-        'schema:artMedium ^^item',                  # hasMedium
-        'schema:size ^^item',                       # hasFormat
-        'schema:copyrightHolder ^^item',            # hasCopyright
-        'schema:image ^^uri',                       # iiif image
+        'schema:identifier',                                # hasSignature, hasOldnr
+        'schema:name',                                      # hasTitle
+        'schema:temporal ^^timestamp ; interval ; literal', # hasDate
+        'schema:location ^^item',                           # hasPlace
+        'schema:creator ^^item',                            # hasCreator
+        'edm:isRepresentationOf ^^item',                    # isRepresentationOf schould be edm: not schema:
+        'schema:keywords',                                  # hasKeywords
+        'schema:about ^^item',                              # hasConcept
+        'schema:comment',                                   # hasComment
+        'schema:isPartOf',                                  # hasIn_collection, hasPart_of
+        'schema:material ^^item',                           # hasObjectType
+        'schema:artMedium ^^item',                          # hasMedium
+        'schema:size ^^item',                               # hasFormat
+        'schema:copyrightHolder ^^item',                    # hasCopyright
+        'schema:image ^^uri',                               # iiif image
         'schema:geo ^^geometry:geography:coordinates',
-        # 'edm:isRelatedTo',                        # hasRef_img
-        # 'edm:isRelatedTo',                        # hasverso
+        # 'edm:isRelatedTo',                                # hasRef_img
+        # 'edm:isRelatedTo',                                # hasverso
     ]
 
     # secondary objects
@@ -182,12 +183,14 @@ def main():
                 }
             )
 
+    print('Start building data objects.')
     obj_count = 1
 
     for obj in data:
 
+        if obj_count % 1000 == 0:
+            print('Worked through '+str(obj_count)+' of '+str(len(data))+' objects.')
         obj_count += 1
-        print('Worked through '+str(obj_count)+' of '+str(len(data))+' objects.')
 
         if obj[0][1] == ':Agent':
 
@@ -264,7 +267,7 @@ def main():
             collection = {
                 'schema:identifier': '',
                 'schema:name': '',
-                'schema:temporal ^^timestamp ; interval': '',
+                'schema:temporal ^^timestamp ; interval ; literal': '',
                 'schema:creator ^^item': '',
                 'schema:keywords': '',
                 'schema:about ^^item': '',
@@ -284,7 +287,7 @@ def main():
                 elif prop[6] == 'hasTitle':
                     collection['schema:name'] = value
                 elif prop[6] == 'hasDate':
-                    collection['schema:temporal ^^timestamp ; interval'] = clean_date(value)
+                    collection['schema:temporal ^^timestamp ; interval ; literal'] = clean_date(value)
                 elif prop[6] == 'hasCreator':
                     collection['schema:creator ^^item'] = value
                 elif prop[6] == 'hasKeywords':
@@ -305,12 +308,12 @@ def main():
             collection['schema:comment'] = '|'.join(comments)
             collections.append(collection)
 
-        if obj[0][1] == ':Object' and any(x in obj[0][2] for x in ['SGV_10', 'SGV_12']):
+        if obj[0][1] == ':Object' and any(x in obj[0][2] for x in ['SGV_04', 'SGV_10', 'SGV_12']):
 
             objct = {
                 'schema:identifier': '',
                 'schema:name': '',
-                'schema:temporal ^^timestamp ; interval': '',
+                'schema:temporal ^^timestamp ; interval ; literal': '',
                 'schema:location ^^item': '',
                 'schema:creator ^^item': '',
                 'edm:isRepresentationOf ^^item': '',
@@ -339,7 +342,7 @@ def main():
                 elif prop[6] == 'hasTitle':
                     objct['schema:name'] = value
                 elif prop[6] == 'hasDate':
-                    objct['schema:temporal ^^timestamp ; interval'] = clean_date(value)
+                    objct['schema:temporal ^^timestamp ; interval ; literal'] = clean_date(value)
                 elif prop[6] == 'hasPlace':
                     if not any(place['schema:identifier'] == 'place_'+prop[9] for place in places):
                         place = add_place(prop[9])
@@ -361,7 +364,7 @@ def main():
                     objct['schema:about ^^item'] = value
                 elif prop[6] == 'hasComment':
                     objct['schema:comment'] = value
-                elif prop[6] == 'hasOldnr':
+                elif prop[6] == 'hasOldNr':
                     ids.append(value)
                 elif prop[6] == 'hasCollection':
                     partof.append(value)
@@ -375,11 +378,14 @@ def main():
                     objct['schema:size ^^item'] = value
                 elif prop[6] == 'hasCopyrightHolder ^^item':
                     objct['schema:copyrightHolder ^^item'] = value
-
+            
             collection = 'SGV_10'
 
             if 'SGV_12' in obj[0][2]:
                 collection = 'SGV_12'
+
+            if 'SGV_04' in obj[0][2]:
+                collection = 'SGV_04'
 
             objct['schema:image ^^uri'] = 'http://sipi.participatory-archives.ch/'+collection+'/'+obj[0][2]+'.jp2'
             
@@ -392,6 +398,9 @@ def main():
 
             if 'SGV_12' in objct['schema:identifier']:
                 objects = objects_sgv_12
+
+            if 'SGV_04' in objct['schema:identifier']:
+                objects = objects_sgv_04
 
             for o in objects:
                 if objct['schema:identifier'] == o['schema:identifier']:
@@ -415,6 +424,11 @@ def main():
         writer = csv.DictWriter(csvfile, fieldnames = collections_header, delimiter=';')
         writer.writeheader()
         writer.writerows(collections)
+
+    with open('objects_sgv_04.csv', 'w+') as csvfile:
+        writer = csv.DictWriter(csvfile, fieldnames = objects_header, delimiter=';')
+        writer.writeheader()
+        writer.writerows(objects_sgv_04)
 
     with open('objects_sgv_10.csv', 'w+') as csvfile:
         writer = csv.DictWriter(csvfile, fieldnames = objects_header, delimiter=';')
