@@ -5145,7 +5145,7 @@
                     "labels": {
                         "en": "Dataset",
                         "de": "Datensatz",
-                        "fr": "Set de donn\u00e9es",
+                        "fr": "Set de données",
                         "it": "Dataset"
                     },
                     "super": [
