@@ -4261,6 +4261,21 @@
                     "gui_element": "SimpleText"
                 },
                 {
+                    "name": "hasWeight",
+                    "super": [
+                        "hasValue",
+                        "schema:weight"
+                    ],
+                    "object": "TextValue",
+                    "labels": {
+                        "en": "Weight",
+                        "de": "Gewicht",
+                        "fr": "Poids",
+                        "it": "Peso"
+                    },
+                    "gui_element": "SimpleText"
+                },
+                {
                     "name": "hasFps",
                     "super": [
                         "hasValue",
@@ -5082,19 +5097,24 @@
                             "gui_order": 32
                         },
                         {
-                            "propname": ":hasArchiveLocation",
-                            "cardinality": "0-n",
+                            "propname": ":hasWeight",
+                            "cardinality": "0-1",
                             "gui_order": 33
                         },
                         {
-                            "propname": ":hasImageRepresentation",
+                            "propname": ":hasArchiveLocation",
                             "cardinality": "0-n",
                             "gui_order": 34
                         },
                         {
-                            "propname": ":hasAudioRepresentation",
+                            "propname": ":hasImageRepresentation",
                             "cardinality": "0-n",
                             "gui_order": 35
+                        },
+                        {
+                            "propname": ":hasAudioRepresentation",
+                            "cardinality": "0-n",
+                            "gui_order": 36
                         },
                         {
                             "propname": ":hasMovingImageRepresentation",
