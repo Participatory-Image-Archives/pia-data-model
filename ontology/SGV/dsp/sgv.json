@@ -3651,10 +3651,10 @@
            ]
          },
          {
-            "username": "adrian",
-            "email": "adrian.demleitner@unibas.ch",
-            "givenName": "Adrian",
-            "familyName": "Demleitner",
+            "username": "fabian",
+            "email": "fa.frei@unibas.ch",
+            "givenName": "Fabian",
+            "familyName": "Frei",
             "password": "1234",
             "lang": "de",
             "groups": [
