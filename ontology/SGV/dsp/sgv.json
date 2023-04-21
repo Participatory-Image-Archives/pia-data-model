@@ -4916,7 +4916,10 @@
                         "fr": "Objet",
                         "it": "Oggetto"
                     },
-                    "super": "Resource",
+                    "super": [
+                        "Resource",
+                        "schema:CreativeWork"
+                    ], 
                     "cardinalities": [
                         {
                             "propname": ":hasSignature",
@@ -5145,7 +5148,10 @@
                         "fr": "Set de donn\u00e9es",
                         "it": "Dataset"
                     },
-                    "super": "Resource",
+                    "super": [
+                        "Resource",
+                        "schema:Dataset"
+                    ], 
                     "cardinalities": [
                         {
                             "propname": ":hasTitle",
@@ -5237,7 +5243,10 @@
                         "fr": "Collection",
                         "it": "Collezione"
                     },
-                    "super": "Resource",
+                    "super": [
+                        "Resource",
+                        "schema:Collection"
+                    ], 
                     "cardinalities": [
                         {
                             "propname": ":hasSignature",
@@ -5359,7 +5368,10 @@
                         "fr": "Concept",
                         "it": "Concetto"
                     },
-                    "super": "Resource",
+                    "super": [
+                        "Resource",
+                        "skos:Concept"
+                    ], 
                     "cardinalities": [
                         {
                             "propname": ":hasPrefLabel",
@@ -5431,7 +5443,10 @@
                         "fr": "Agent",
                         "it": "Agente"
                     },
-                    "super": "Resource",
+                    "super": [
+                        "Resource",
+                        "dct:Agent"
+                    ], 
                     "cardinalities": [
                         {
                             "propname": ":hasName",
@@ -5578,7 +5593,10 @@
                         "fr": "Ev\u00e9nement",
                         "it": "Evento"
                     },
-                    "super": "Resource",
+                    "super": [
+                        "Resource",
+                        "schema:Event"
+                    ], 
                     "cardinalities": [
                         {
                             "propname": ":hasName",
