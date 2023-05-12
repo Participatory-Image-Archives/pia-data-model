@@ -697,6 +697,107 @@
               ]
           },
           {
+            "name": "asvplace",
+            "labels": {
+                "de": "ASV Survey Place",
+                "en": "ASV-Belegort",
+                "fr": "ASV - Lieu d'enquête"
+            },
+          "comments": {
+              "en": "Survey Place for the ASV Collection (SGV_05)"
+          },
+            "nodes": [
+                {
+                    "name": "1_Cartigny",
+                    "labels": {
+                        "de": "1 Cartigny",
+                        "en": "1 Cartigny",
+                        "fr": "1 Cartigny",
+                        "it": "1 Cartigny"
+                    }
+                },
+                {
+                    "name": "10_Morges",
+                    "labels": {
+                        "de": "10 Morges",
+                        "en": "10 Morges",
+                        "fr": "10 Morges",
+                        "it": "10 Morges"
+                    }
+                },
+                {
+                    "name": "100_Rheinfelden",
+                    "labels": {
+                        "de": "100 Rheinfelden",
+                        "en": "100 Rheinfelden",
+                        "fr": "100 Rheinfelden",
+                        "it": "100 Rheinfelden"
+                    }
+                },
+                {
+                    "name": "101_Stein",
+                    "labels": {
+                        "de": "101 Stein",
+                        "en": "101 Stein",
+                        "fr": "101 Stein",
+                        "it": "101 Stein"
+                    }
+                },
+                {
+                    "name": "102_Laufenburg",
+                    "labels": {
+                        "de": "102 Laufenburg",
+                        "en": "102 Laufenburg",
+                        "fr": "102 Laufenburg",
+                        "it": "102 Laufenburg"
+                    }
+                },
+                {
+                    "name": "103_Frick",
+                    "labels": {
+                        "de": "103 Frick",
+                        "en": "103 Frick",
+                        "fr": "103 Frick",
+                        "it": "103 Frick"
+                    }
+                },
+                {
+                    "name": "104_Pratteln",
+                    "labels": {
+                        "de": "104 Pratteln",
+                        "en": "104 Pratteln",
+                        "fr": "104 Pratteln",
+                        "it": "104 Pratteln"
+                    }
+                }
+            ]
+        },
+        {
+            "name": "asvquestion",
+            "labels": {
+                "de": "ASV Question number",
+                "en": "ASV-Fragenummer",
+                "fr": "ASV - Numéro de question"
+            },
+          "comments": {
+              "en": "Question Number for the ASV Collection (SGV_05)"
+          },
+            "nodes": [
+                {
+                    "name": "asv-frage1",
+                    "labels": {
+                        "de": "1. Gruss- und Anredeformeln bei besonderen Gelegenheiten und Beschäftigungen"
+                    }
+                },
+                {
+                    "name": "asv-frage2",
+                    "labels": {
+                        "de": "2. Grussformeln zu verschiedenen Tagezeiten beim Begegnen und Abschiednehmen"
+                    }
+                }
+            ]
+        },
+          {
               "name": "agenttypes",
               "labels": {
                   "de": "Zusatztypen für Agenten",
@@ -4255,7 +4356,7 @@
                     ],
                     "object": "ListValue",
                     "labels": {
-                        "en": "ASV Place",
+                        "en": "ASV Survey Place",
                         "de": "ASV-Belegort",
                         "fr": "ASV - Lieu d'enquête"
                     },
