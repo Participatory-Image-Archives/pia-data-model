@@ -4310,6 +4310,20 @@
                     "gui_element": "SimpleText"
                 },
                 {
+                    "name": "isDerivedFrom",
+                    "super": [
+                        "hasLinkTo",
+                        "dct:source"
+                    ],
+                    "object": ":Object",
+                    "labels": {
+                        "en": "is derived from (Negative/Positive)",
+                        "de": "stammt aus (Negativ/Positiv)",
+                        "fr": "est dérivé de (Négatif/Positif)"
+                    },
+                    "gui_element": "Searchbox"
+                },
+                {
                     "name": "hasFps",
                     "super": [
                         "hasValue",
@@ -5146,24 +5160,29 @@
                             "gui_order": 35
                         },
                         {
-                            "propname": ":hasArchiveLocation",
-                            "cardinality": "0-n",
+                            "propname": ":isDerivedFrom",
+                            "cardinality": "0-1",
                             "gui_order": 36
                         },
                         {
-                            "propname": ":hasImageRepresentation",
+                            "propname": ":hasArchiveLocation",
                             "cardinality": "0-n",
                             "gui_order": 37
                         },
                         {
-                            "propname": ":hasAudioRepresentation",
+                            "propname": ":hasImageRepresentation",
                             "cardinality": "0-n",
                             "gui_order": 38
                         },
                         {
-                            "propname": ":hasMovingImageRepresentation",
+                            "propname": ":hasAudioRepresentation",
                             "cardinality": "0-n",
                             "gui_order": 39
+                        },
+                        {
+                            "propname": ":hasMovingImageRepresentation",
+                            "cardinality": "0-n",
+                            "gui_order": 40
                         }
                     ]
                 },
