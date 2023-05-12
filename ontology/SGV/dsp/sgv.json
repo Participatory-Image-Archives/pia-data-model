@@ -4248,6 +4248,39 @@
                     }
                 },
                 {
+                    "name": "hasASVplace",
+                    "super": [
+                        "hasValue",
+                        "schema:spatial"
+                    ],
+                    "object": "ListValue",
+                    "labels": {
+                        "en": "ASV Place",
+                        "de": "ASV-Belegort",
+                        "fr": "ASV - Lieu d'enquête"
+                    },
+                    "gui_element": "List",
+                    "gui_attributes": {
+                        "hlist": "asvplace"
+                    }
+                },
+                {
+                    "name": "hasASVquestion",
+                    "super": [
+                        "hasValue"
+                    ],
+                    "object": "ListValue",
+                    "labels": {
+                        "en": "ASV Question number",
+                        "de": "ASV-Fragenummer",
+                        "fr": "ASV - Numéro de question"
+                    },
+                    "gui_element": "List",
+                    "gui_attributes": {
+                        "hlist": "asvquestion"
+                    }
+                },
+                {
                     "name": "hasDuration",
                     "super": [
                         "hasValue",
@@ -5099,28 +5132,38 @@
                         },
                         {
                             "propname": ":hasWeight",
-                            "cardinality": "0-1",
+                            "cardinality": "0-n",
                             "gui_order": 33
+                        },
+                        {
+                            "propname": ":hasASVplace",
+                            "cardinality": "0-1",
+                            "gui_order": 34
+                        },
+                        {
+                            "propname": ":hasASVquestion",
+                            "cardinality": "0-1",
+                            "gui_order": 35
                         },
                         {
                             "propname": ":hasArchiveLocation",
                             "cardinality": "0-n",
-                            "gui_order": 34
+                            "gui_order": 36
                         },
                         {
                             "propname": ":hasImageRepresentation",
                             "cardinality": "0-n",
-                            "gui_order": 35
+                            "gui_order": 37
                         },
                         {
                             "propname": ":hasAudioRepresentation",
                             "cardinality": "0-n",
-                            "gui_order": 36
+                            "gui_order": 38
                         },
                         {
                             "propname": ":hasMovingImageRepresentation",
                             "cardinality": "0-n",
-                            "gui_order": 36
+                            "gui_order": 39
                         }
                     ]
                 },
