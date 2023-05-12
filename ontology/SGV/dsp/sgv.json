@@ -6,7 +6,8 @@
      "ebucore": "http://www.ebu.ch/metadata/ontologies/ebucore/ebucore",
      "rico": "https://www.ica.org/standards/RiC/ontology#",
      "schema": "http://schema.org/",
-     "skos": "http://www.w3.org/2004/02/skos/core#"
+     "skos": "http://www.w3.org/2004/02/skos/core#",
+     "vir": "http://w3id.org/vir#"
   },
    "$schema": "https://raw.githubusercontent.com/dasch-swiss/dsp-tools/main/knora/dsplib/schemas/ontology.json",
    "project": {
@@ -3954,7 +3955,7 @@
                     "name": "hasVerso",
                     "super": [
                         "hasLinkTo",
-                        "edm:isRelatedTo"
+                        "vir:K8i_has_verso"
                     ],
                     "object": ":Object",
                     "labels": {
