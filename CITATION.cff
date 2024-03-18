@@ -8,7 +8,7 @@ authors:
   given-names: "Julien Antoine"
   orcid: "https://orcid.org/0000-0002-4711-5759"
 title: "PIA Data Model"
-version: 0.3.1
+version: 0.9
 doi: 10.5281/zenodo.5142605
-date-released: 2022-05-24
+date-released: 2024-03-18
 url: "https://github.com/Participatory-Image-Archives/pia-data-model"
