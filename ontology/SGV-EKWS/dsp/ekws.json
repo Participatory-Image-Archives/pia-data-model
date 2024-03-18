@@ -1,0 +1,5456 @@
+{
+    "knora-api:lastModificationDate": {
+        "@value": "2024-03-14T14:36:32.320695736Z",
+        "@type": "xsd:dateTimeStamp"
+    },
+    "rdfs:label": "CAS/EKWS (Empirische Kulturwissenschaft Schweiz) Data Model for image-based resources",
+    "@graph": [
+        {
+            "knora-api:isResourceClass": true,
+            "rdfs:label": "Agent",
+            "knora-api:canBeInstantiated": true,
+            "rdfs:subClassOf": [
+                {
+                    "@id": "knora-api:Resource"
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:arkUrl"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:attachedToProject"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:attachedToUser"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:creationDate"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deleteComment"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deleteDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deletedBy"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasIncomingLinkValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasPermissions"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasStandoffLinkTo"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasStandoffLinkToValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:isDeleted"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:lastModificationDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:userHasPermission"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:versionArkUrl"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:versionDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "rdfs:label"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasName"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 1
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasDescription"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 2
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasFamily"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 3
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:relatedTo"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 4
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:relatedToValue"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 4
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasJobTitle"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 5
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasBirthDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 6
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasBirthPlace"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 7
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasDeathDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 8
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasDeathPlace"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 9
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasComment"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 10
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasLiterature"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 11
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasPiaUrl"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 12
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:isMemberOf"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 13
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:isMemberOfValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 13
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasEmployee"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 14
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasEmployeeValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 14
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasChildren"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 15
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasChildrenValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 15
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasParent"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 16
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasParentValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 16
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasSpouse"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 17
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasSpouseValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 17
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasSibling"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 18
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasSiblingValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 18
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasColleague"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 19
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasColleagueValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 19
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:knows"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 20
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:knowsValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 20
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:performerIn"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 21
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:performerInValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 21
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:isLocated"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 22
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasGivenName"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 23
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasFamilyName"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 24
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:sameAs"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 25
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasAgentType"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 26
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:isSubjectOf"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 27
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:isSubjectOfValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 27
+                }
+            ],
+            "@type": "owl:Class",
+            "@id": "ekws:Agent"
+        },
+        {
+            "knora-api:isResourceClass": true,
+            "rdfs:label": "Audio",
+            "knora-api:canBeInstantiated": true,
+            "rdfs:subClassOf": [
+                {
+                    "@id": "knora-api:AudioRepresentation"
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:arkUrl"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:attachedToProject"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:attachedToUser"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:creationDate"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deleteComment"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deleteDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deletedBy"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasAudioFileValue"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasIncomingLinkValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasPermissions"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasStandoffLinkTo"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasStandoffLinkToValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:isDeleted"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:lastModificationDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:userHasPermission"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:versionArkUrl"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:versionDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "rdfs:label"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasLicense"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 1
+                }
+            ],
+            "@type": "owl:Class",
+            "@id": "ekws:AudioRepresentation"
+        },
+        {
+            "knora-api:isResourceClass": true,
+            "rdfs:label": "Collection",
+            "knora-api:canBeInstantiated": true,
+            "rdfs:subClassOf": [
+                {
+                    "@id": "knora-api:Resource"
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:arkUrl"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:attachedToProject"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:attachedToUser"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:creationDate"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deleteComment"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deleteDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deletedBy"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasIncomingLinkValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasPermissions"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasStandoffLinkTo"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasStandoffLinkToValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:isDeleted"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:lastModificationDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:userHasPermission"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:versionArkUrl"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:versionDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "rdfs:label"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasSignature"
+                    },
+                    "owl:cardinality": 1,
+                    "salsah-gui:guiOrder": 1
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasTitle"
+                    },
+                    "owl:minCardinality": 1,
+                    "salsah-gui:guiOrder": 2
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasCreator"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 3
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasCreatorValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 3
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 4
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasDescription"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 5
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasIndexing"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 6
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasRestoration"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 7
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasComment"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 8
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasLiterature"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 9
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasArchiveLocation"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 10
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasDefaultImage"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 11
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasDefaultImageValue"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 11
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasEmbeddedVideo"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 12
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasKeywords"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 13
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasCopyrightHolder"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 14
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasCopyrightHolderValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 14
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasConcept"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 15
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasConceptValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 15
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasPlace"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 16
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasPart"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 17
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasPartValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 17
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:recordedAt"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 18
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:recordedAtValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 18
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasContributor"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 19
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasContributorValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 19
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasPiaUrl"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 20
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasCreativeWorkStatus"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 21
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:relatedLink"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 22
+                }
+            ],
+            "@type": "owl:Class",
+            "@id": "ekws:Collection"
+        },
+        {
+            "knora-api:isResourceClass": true,
+            "rdfs:label": "Concept",
+            "knora-api:canBeInstantiated": true,
+            "rdfs:subClassOf": [
+                {
+                    "@id": "knora-api:Resource"
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:arkUrl"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:attachedToProject"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:attachedToUser"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:creationDate"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deleteComment"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deleteDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deletedBy"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasIncomingLinkValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasPermissions"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasStandoffLinkTo"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasStandoffLinkToValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:isDeleted"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:lastModificationDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:userHasPermission"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:versionArkUrl"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:versionDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "rdfs:label"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasPrefLabel"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 1
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasAltLabel"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 2
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasDescription"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 3
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasScopeNote"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 4
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasBroaderConcept"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 5
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasBroaderConceptValue"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 5
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:inScheme"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 7
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:inSchemeValue"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 7
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:topConceptOf"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 8
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:topConceptOfValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 8
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasRelatedConcept"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 9
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasRelatedConceptValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 9
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasCloseMatch"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 10
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasPiaUrl"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 11
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:sameAs"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 12
+                }
+            ],
+            "@type": "owl:Class",
+            "@id": "ekws:Concept"
+        },
+        {
+            "knora-api:isResourceClass": true,
+            "rdfs:label": "Set de données",
+            "knora-api:canBeInstantiated": true,
+            "rdfs:subClassOf": [
+                {
+                    "@id": "knora-api:Resource"
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:arkUrl"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:attachedToProject"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:attachedToUser"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:creationDate"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deleteComment"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deleteDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deletedBy"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasIncomingLinkValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasPermissions"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasStandoffLinkTo"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasStandoffLinkToValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:isDeleted"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:lastModificationDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:userHasPermission"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:versionArkUrl"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:versionDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "rdfs:label"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasTitle"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 1
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasCreator"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 2
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasCreatorValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 2
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:isRepresentationOf"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 3
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:isRepresentationOfValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 3
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasKeywords"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 4
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasConcept"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 5
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasConceptValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 5
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasCollection"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 6
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasCollectionValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 6
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasCopyrightHolder"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 7
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasCopyrightHolderValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 7
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasDescription"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 8
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasPlace"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 9
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasPart"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 10
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasPartValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 10
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasContributor"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 12
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasContributorValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 12
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasPiaUrl"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 13
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasCreativeWorkStatus"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 14
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:relatedLink"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 15
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasArchiveLocation"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 16
+                }
+            ],
+            "@type": "owl:Class",
+            "@id": "ekws:Dataset"
+        },
+        {
+            "knora-api:isResourceClass": true,
+            "rdfs:label": "Evénement",
+            "knora-api:canBeInstantiated": true,
+            "rdfs:subClassOf": [
+                {
+                    "@id": "knora-api:Resource"
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:arkUrl"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:attachedToProject"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:attachedToUser"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:creationDate"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deleteComment"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deleteDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deletedBy"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasIncomingLinkValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasPermissions"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasStandoffLinkTo"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasStandoffLinkToValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:isDeleted"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:lastModificationDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:userHasPermission"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:versionArkUrl"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:versionDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "rdfs:label"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasName"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 1
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasConcept"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 2
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasConceptValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 2
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasDescription"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 3
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasOrganizer"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 4
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasOrganizerValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 4
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasContributor"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 5
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasContributorValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 5
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasPiaUrl"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 6
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 7
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasEventStatus"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 8
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasSuperEvent"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 10
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasSuperEventValue"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 10
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasEventType"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 11
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:recordedIn"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 12
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:recordedInValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 12
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasWorkFeatured"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 13
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasWorkFeaturedValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 13
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasPlace"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 14
+                }
+            ],
+            "@type": "owl:Class",
+            "@id": "ekws:Event"
+        },
+        {
+            "knora-api:isResourceClass": true,
+            "rdfs:label": "Image",
+            "knora-api:canBeInstantiated": true,
+            "rdfs:subClassOf": [
+                {
+                    "@id": "knora-api:StillImageRepresentation"
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:arkUrl"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:attachedToProject"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:attachedToUser"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:creationDate"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deleteComment"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deleteDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deletedBy"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasIncomingLinkValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasPermissions"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasStandoffLinkTo"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasStandoffLinkToValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasStillImageFileValue"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:isDeleted"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:lastModificationDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:userHasPermission"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:versionArkUrl"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:versionDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "rdfs:label"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasLicense"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 1
+                }
+            ],
+            "@type": "owl:Class",
+            "@id": "ekws:ImageRepresentation"
+        },
+        {
+            "knora-api:isResourceClass": true,
+            "rdfs:label": "Images en mouvement",
+            "knora-api:canBeInstantiated": true,
+            "rdfs:subClassOf": [
+                {
+                    "@id": "knora-api:MovingImageRepresentation"
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:arkUrl"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:attachedToProject"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:attachedToUser"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:creationDate"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deleteComment"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deleteDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deletedBy"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasIncomingLinkValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasMovingImageFileValue"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasPermissions"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasStandoffLinkTo"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasStandoffLinkToValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:isDeleted"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:lastModificationDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:userHasPermission"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:versionArkUrl"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:versionDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "rdfs:label"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasLicense"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 1
+                }
+            ],
+            "@type": "owl:Class",
+            "@id": "ekws:MovingImageRepresentation"
+        },
+        {
+            "knora-api:isResourceClass": true,
+            "rdfs:label": "Objet",
+            "knora-api:canBeInstantiated": true,
+            "rdfs:subClassOf": [
+                {
+                    "@id": "knora-api:Resource"
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:arkUrl"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:attachedToProject"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:attachedToUser"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:creationDate"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deleteComment"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deleteDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deletedBy"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasIncomingLinkValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasPermissions"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasStandoffLinkTo"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasStandoffLinkToValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:isDeleted"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:lastModificationDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:userHasPermission"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:versionArkUrl"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:versionDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "rdfs:label"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasSignature"
+                    },
+                    "owl:cardinality": 1,
+                    "salsah-gui:guiOrder": 1
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasTitle"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 2
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasDate"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 3
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasCreator"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 4
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasCreatorValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 4
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:isRepresentationOf"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 5
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:isRepresentationOfValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 5
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasKeywords"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 6
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasConcept"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 7
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasConceptValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 7
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasOldNr"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 8
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasCollection"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 9
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasCollectionValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 9
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasDataset"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 10
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasDatasetValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 10
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasObjectType"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 11
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasMedium"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 12
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasFormat"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 13
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasCopyrightHolder"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 14
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasCopyrightHolderValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 14
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasWeight"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 15
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:isVisuallySimilarTo"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 16
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:isVisuallySimilarToValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 16
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasVerso"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 17
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasVersoValue"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 17
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasSeqNr"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 18
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasDescription"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 19
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:isInLanguage"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 20
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasDuration"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 21
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasFps"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 22
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasRestoration"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 23
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasIndexing"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 24
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasPlace"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 25
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasPart"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 26
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasPartValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 26
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:isPartOf"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 27
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:isPartOfValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 27
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:recordedAt"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 28
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:recordedAtValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 28
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasContributor"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 29
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasContributorValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 29
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasASVplace"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 30
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasASVquestion"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 31
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasPiaUrl"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 32
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasCreativeWorkStatus"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 33
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:relatedLink"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 34
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasComment"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 35
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasArchiveLocation"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 36
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasImageRepresentation"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 37
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasImageRepresentationValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 37
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasAudioRepresentation"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 38
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasAudioRepresentationValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 38
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasMovingImageRepresentation"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 39
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasMovingImageRepresentationValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 39
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:isDerivedFrom"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 40
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:isDerivedFromValue"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 40
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasEnquetequestion"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 41
+                }
+            ],
+            "@type": "owl:Class",
+            "@id": "ekws:Object"
+        },
+        {
+            "knora-api:isResourceClass": true,
+            "rdfs:label": "Séquence",
+            "knora-api:canBeInstantiated": true,
+            "rdfs:subClassOf": [
+                {
+                    "@id": "knora-api:Resource"
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:arkUrl"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:attachedToProject"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:attachedToUser"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:creationDate"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deleteComment"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deleteDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:deletedBy"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasIncomingLinkValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasPermissions"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasStandoffLinkTo"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasStandoffLinkToValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:isDeleted"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:lastModificationDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:userHasPermission"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:versionArkUrl"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:versionDate"
+                    },
+                    "owl:maxCardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "rdfs:label"
+                    },
+                    "owl:cardinality": 1,
+                    "knora-api:isInherited": true
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasTitle"
+                    },
+                    "owl:maxCardinality": 1,
+                    "salsah-gui:guiOrder": 1
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:hasSequenceBounds"
+                    },
+                    "owl:cardinality": 1,
+                    "salsah-gui:guiOrder": 2
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:isSequenceOf"
+                    },
+                    "owl:cardinality": 1,
+                    "salsah-gui:guiOrder": 3
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "knora-api:isSequenceOfValue"
+                    },
+                    "owl:cardinality": 1,
+                    "salsah-gui:guiOrder": 3
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:isRepresentationOf"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 4
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:isRepresentationOfValue"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 4
+                },
+                {
+                    "@type": "owl:Restriction",
+                    "owl:onProperty": {
+                        "@id": "ekws:hasDescription"
+                    },
+                    "owl:minCardinality": 0,
+                    "salsah-gui:guiOrder": 5
+                }
+            ],
+            "@type": "owl:Class",
+            "@id": "ekws:Sequence"
+        },
+        {
+            "rdfs:label": "ASV - Lieu d'enquête",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:TextValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:SimpleText"
+            },
+            "@id": "ekws:hasASVplace"
+        },
+        {
+            "rdfs:label": "ASV - Numéro de question",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:TextValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:SimpleText"
+            },
+            "@id": "ekws:hasASVquestion"
+        },
+        {
+            "rdfs:label": "Type d'agent",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/additionalType"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "salsah-gui:guiAttribute": "hlist=<http://rdfh.ch/lists/0812/9GGJWDG2TfikZR-91uBSfg>",
+            "knora-api:objectType": {
+                "@id": "knora-api:ListValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:List"
+            },
+            "@id": "ekws:hasAgentType"
+        },
+        {
+            "rdfs:label": "Terme non descripteur (rejeté)",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://www.w3.org/2004/02/skos/core#altLabel"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:TextValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:SimpleText"
+            },
+            "@id": "ekws:hasAltLabel"
+        },
+        {
+            "rdfs:label": "Lieu de conservation",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/spatial"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "rdfs:comment": "This property isn't really leveraged at the moment. It could be an opportunity to use it when the SSFS Photo Archive will have to be moved out.",
+            "@type": "owl:ObjectProperty",
+            "salsah-gui:guiAttribute": "hlist=<http://rdfh.ch/lists/0812/IKlMxFQ7Q5GM5cFq1TlnAw>",
+            "knora-api:objectType": {
+                "@id": "knora-api:ListValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:List"
+            },
+            "@id": "ekws:hasArchiveLocation"
+        },
+        {
+            "rdfs:label": "a comme représentation (Audio)",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasRepresentation"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:AudioRepresentation"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasAudioRepresentation",
+            "knora-api:isLinkProperty": true,
+            "rdfs:comment": "This property is link a an object to an audio representation."
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "a comme représentation (Audio)",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasRepresentationValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "rdfs:comment": "This property is link a an object to an audio representation.",
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasAudioRepresentationValue"
+        },
+        {
+            "rdfs:label": "Date de naissance",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/birthDate"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:DateValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Date"
+            },
+            "@id": "ekws:hasBirthDate"
+        },
+        {
+            "rdfs:label": "Lieu de naissance",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/birthPlace"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:GeonameValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Geonames"
+            },
+            "@id": "ekws:hasBirthPlace"
+        },
+        {
+            "rdfs:label": "Broader concept",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://www.w3.org/2004/02/skos/core#broader"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Concept"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasBroaderConcept"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Broader concept",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasBroaderConceptValue"
+        },
+        {
+            "rdfs:label": "Enfant(s)",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://schema.org/children"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Agent"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasChildren"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Enfant(s)",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasChildrenValue"
+        },
+        {
+            "rdfs:label": "Close match",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://www.w3.org/2004/02/skos/core#closeMatch"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:UriValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:SimpleText"
+            },
+            "@id": "ekws:hasCloseMatch"
+        },
+        {
+            "rdfs:label": "Collègues",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://schema.org/colleague"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Agent"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasColleague"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Collègues",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasColleagueValue"
+        },
+        {
+            "rdfs:label": "Collection",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://schema.org/isPartOf"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Collection"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasCollection"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Collection",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasCollectionValue"
+        },
+        {
+            "rdfs:label": "Commentaires",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "rdfs:comment": "This property cannot be mapped to existing vocabularies. It may be deprecated in the future",
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:TextValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Textarea"
+            },
+            "@id": "ekws:hasComment"
+        },
+        {
+            "rdfs:label": "Concept",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://schema.org/about"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Concept"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasConcept"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Concept",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasConceptValue"
+        },
+        {
+            "rdfs:label": "Contributeur",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://schema.org/contributor"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Agent"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasContributor"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Contributeur",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasContributorValue"
+        },
+        {
+            "rdfs:label": "Droits d'auteur",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://schema.org/copyrightHolder"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Agent"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasCopyrightHolder"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Droits d'auteur",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasCopyrightHolderValue"
+        },
+        {
+            "rdfs:label": "Statut de l'objet",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/creativeWorkStatus"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "salsah-gui:guiAttribute": "hlist=<http://rdfh.ch/lists/0812/hQNXsyTsTci3fmDLG9qSOg>",
+            "knora-api:objectType": {
+                "@id": "knora-api:ListValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:List"
+            },
+            "@id": "ekws:hasCreativeWorkStatus"
+        },
+        {
+            "rdfs:label": "Auteur/\ncollectionneur-trice",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://schema.org/creator"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Agent"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasCreator"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Auteur/\ncollectionneur-trice",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasCreatorValue"
+        },
+        {
+            "rdfs:label": "Set de données",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://schema.org/isPartOf"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Dataset"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasDataset"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Set de données",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasDatasetValue"
+        },
+        {
+            "rdfs:label": "Date",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/temporal"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:DateValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Date"
+            },
+            "@id": "ekws:hasDate"
+        },
+        {
+            "rdfs:label": "Date de mort",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/deathDate"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:DateValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Date"
+            },
+            "@id": "ekws:hasDeathDate"
+        },
+        {
+            "rdfs:label": "Lieu de mort",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/deathPlace"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:GeonameValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Geonames"
+            },
+            "@id": "ekws:hasDeathPlace"
+        },
+        {
+            "rdfs:label": "Image témoin",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://schema.org/workExample"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Object"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasDefaultImage"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Image témoin",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasDefaultImageValue"
+        },
+        {
+            "rdfs:label": "Description",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/description"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:TextValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Richtext"
+            },
+            "@id": "ekws:hasDescription"
+        },
+        {
+            "rdfs:label": "Durée",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/duration"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:TextValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:SimpleText"
+            },
+            "@id": "ekws:hasDuration"
+        },
+        {
+            "rdfs:label": "Vidéo embarquée",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/workExample"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:TextValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Richtext"
+            },
+            "@id": "ekws:hasEmbeddedVideo"
+        },
+        {
+            "rdfs:label": "Employee(s)",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://schema.org/employee"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Agent"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasEmployee"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Employee(s)",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasEmployeeValue"
+        },
+        {
+            "rdfs:label": "Enquête - Numéro de question",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:TextValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:SimpleText"
+            },
+            "@id": "ekws:hasEnquetequestion"
+        },
+        {
+            "rdfs:label": "Statut de l'événement",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/eventStatus"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "salsah-gui:guiAttribute": "hlist=<http://rdfh.ch/lists/0812/0qHyTSXFSSKd2AobuzEpkQ>",
+            "knora-api:objectType": {
+                "@id": "knora-api:ListValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:List"
+            },
+            "@id": "ekws:hasEventStatus"
+        },
+        {
+            "rdfs:label": "Type d'événement",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "salsah-gui:guiAttribute": "hlist=<http://rdfh.ch/lists/0812/P37I1DvSSk-C-JHKw5tgcg>",
+            "knora-api:objectType": {
+                "@id": "knora-api:ListValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:List"
+            },
+            "@id": "ekws:hasEventType"
+        },
+        {
+            "rdfs:label": "Membre de la famille",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "rdfs:comment": "This property should be deprecated in favour of relatedTo",
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:TextValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:SimpleText"
+            },
+            "@id": "ekws:hasFamily"
+        },
+        {
+            "rdfs:label": "Nom de famille",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/familyName"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:TextValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:SimpleText"
+            },
+            "@id": "ekws:hasFamilyName"
+        },
+        {
+            "rdfs:label": "Format",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/size"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "salsah-gui:guiAttribute": "hlist=<http://rdfh.ch/lists/0812/qmZBEjOZT2a83mOQEGTjcA>",
+            "knora-api:objectType": {
+                "@id": "knora-api:ListValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:List"
+            },
+            "@id": "ekws:hasFormat"
+        },
+        {
+            "rdfs:label": "Images par seconde",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://www.ebu.ch/metadata/ontologies/ebucore/ebucoreframeRate"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:DecimalValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:SimpleText"
+            },
+            "@id": "ekws:hasFps"
+        },
+        {
+            "rdfs:label": "Prénom",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/givenName"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:TextValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:SimpleText"
+            },
+            "@id": "ekws:hasGivenName"
+        },
+        {
+            "rdfs:label": "a comme représentation (Image)",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasRepresentation"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:ImageRepresentation"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasImageRepresentation",
+            "knora-api:isLinkProperty": true,
+            "rdfs:comment": "This property is link a an object to an image representation."
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "a comme représentation (Image)",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasRepresentationValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "rdfs:comment": "This property is link a an object to an image representation.",
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasImageRepresentationValue"
+        },
+        {
+            "rdfs:label": "Notes de catalogage et d'indexation",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "rdfs:comment": "This property cannot be mapped to existing vocabularies. It may be deprecated in the future",
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:TextValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Richtext"
+            },
+            "@id": "ekws:hasIndexing"
+        },
+        {
+            "rdfs:label": "Profession",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/jobTitle"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:TextValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:SimpleText"
+            },
+            "@id": "ekws:hasJobTitle"
+        },
+        {
+            "rdfs:label": "Mots-clés",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/keywords"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:TextValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:SimpleText"
+            },
+            "@id": "ekws:hasKeywords"
+        },
+        {
+            "rdfs:label": "Licence",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/license"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "rdfs:comment": "Please choose one of the Creative Commons URL.",
+            "@type": "owl:ObjectProperty",
+            "salsah-gui:guiAttribute": "hlist=<http://rdfh.ch/lists/0812/InuSSQ7CTfOwIo-dtW8WYQ>",
+            "knora-api:objectType": {
+                "@id": "knora-api:ListValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:List"
+            },
+            "@id": "ekws:hasLicense"
+        },
+        {
+            "rdfs:label": "Littérature",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "rdfs:comment": "This property cannot be mapped to existing vocabularies. It may be deprecated in the future",
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:TextValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:SimpleText"
+            },
+            "@id": "ekws:hasLiterature"
+        },
+        {
+            "rdfs:label": "Technique / Media",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/artMedium"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "salsah-gui:guiAttribute": "hlist=<http://rdfh.ch/lists/0812/lWrhpK9AR4eRjRTL3jBPyQ>",
+            "knora-api:objectType": {
+                "@id": "knora-api:ListValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:List"
+            },
+            "@id": "ekws:hasMedium"
+        },
+        {
+            "rdfs:label": "a comme représentation (Images en mouvement)",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasRepresentation"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:MovingImageRepresentation"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasMovingImageRepresentation",
+            "knora-api:isLinkProperty": true,
+            "rdfs:comment": "This property is link a an object to a moving image representation."
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "a comme représentation (Images en mouvement)",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasRepresentationValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "rdfs:comment": "This property is link a an object to a moving image representation.",
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasMovingImageRepresentationValue"
+        },
+        {
+            "rdfs:label": "Nom",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/name"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:TextValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:SimpleText"
+            },
+            "@id": "ekws:hasName"
+        },
+        {
+            "rdfs:label": "Narrower concept",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://www.w3.org/2004/02/skos/core#narrower"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Concept"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasNarrowerConcept"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Narrower concept",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasNarrowerConceptValue"
+        },
+        {
+            "rdfs:label": "Type d'objet / Support d'origine",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/material"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "salsah-gui:guiAttribute": "hlist=<http://rdfh.ch/lists/0812/9aXX_Wm5TUyeI8PEgNEegw>",
+            "knora-api:objectType": {
+                "@id": "knora-api:ListValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:List"
+            },
+            "@id": "ekws:hasObjectType"
+        },
+        {
+            "rdfs:label": "Ancien identifiant",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/identifier"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:TextValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:SimpleText"
+            },
+            "@id": "ekws:hasOldNr"
+        },
+        {
+            "rdfs:label": "Organisateur/Organisatrice",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://schema.org/organizer"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Agent"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasOrganizer"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Organisateur/Organisatrice",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasOrganizerValue"
+        },
+        {
+            "rdfs:label": "Parent(s)",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://schema.org/parent"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Agent"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasParent"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Parent(s)",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasParentValue"
+        },
+        {
+            "rdfs:label": "Est composé-e de",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://schema.org/hasPart"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Object"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasPart"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Est composé-e de",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasPartValue"
+        },
+        {
+            "rdfs:label": "PIA URL",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/url"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "rdfs:comment": "URL of the same item on the PIA interface",
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:UriValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:SimpleText"
+            },
+            "@id": "ekws:hasPiaUrl"
+        },
+        {
+            "rdfs:label": "Lieu",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/location"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:GeonameValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Geonames"
+            },
+            "@id": "ekws:hasPlace"
+        },
+        {
+            "rdfs:label": "Terme préféré/retenu",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:TextValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:SimpleText"
+            },
+            "@id": "ekws:hasPrefLabel"
+        },
+        {
+            "rdfs:label": "Terme associé",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://www.w3.org/2004/02/skos/core#related"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Concept"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasRelatedConcept"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Terme associé",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasRelatedConceptValue"
+        },
+        {
+            "rdfs:label": "Notes de conservation et restauration",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "rdfs:comment": "This property cannot be mapped to existing vocabularies. It may be deprecated in the future",
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:TextValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Textarea"
+            },
+            "@id": "ekws:hasRestoration"
+        },
+        {
+            "rdfs:label": "Scope note",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://www.w3.org/2004/02/skos/core#scopeNote"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:TextValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:SimpleText"
+            },
+            "@id": "ekws:hasScopeNote"
+        },
+        {
+            "rdfs:label": "Numéro de séquence",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:seqnum"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:IntValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:SimpleText"
+            },
+            "@id": "ekws:hasSeqNr"
+        },
+        {
+            "rdfs:label": "Frère(s) et sœur(s)",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://schema.org/sibling"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Agent"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasSibling"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Frère(s) et sœur(s)",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasSiblingValue"
+        },
+        {
+            "rdfs:label": "Cote",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/identifier"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:TextValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:SimpleText"
+            },
+            "@id": "ekws:hasSignature"
+        },
+        {
+            "rdfs:label": "Conjoint-e",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://schema.org/spouse"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Agent"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasSpouse"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Conjoint-e",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasSpouseValue"
+        },
+        {
+            "rdfs:label": "a comme sous-événement(s)",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://schema.org/subEvent"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Event"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasSubEvent"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "a comme sous-événement(s)",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasSubEventValue"
+        },
+        {
+            "rdfs:label": "fait partie de l'événement",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://schema.org/superEvent"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Event"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasSuperEvent"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "fait partie de l'événement",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasSuperEventValue"
+        },
+        {
+            "rdfs:label": "Titre",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/name"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:TextValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:SimpleText"
+            },
+            "@id": "ekws:hasTitle"
+        },
+        {
+            "rdfs:label": "Verso",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://www.europeana.eu/schemas/edm/isRelatedTo"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Object"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasVerso"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Verso",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasVersoValue"
+        },
+        {
+            "rdfs:label": "Poids",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:TextValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:SimpleText"
+            },
+            "@id": "ekws:hasWeight"
+        },
+        {
+            "rdfs:label": "Objets présentés",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://schema.org/workFeatured"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Object"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasWorkFeatured",
+            "knora-api:isLinkProperty": true,
+            "rdfs:comment": "A work featured in some event, e.g. exhibited in an museum, in a storytelling resource, in a PIA call, etc."
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Objets présentés",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "rdfs:comment": "A work featured in some event, e.g. exhibited in an museum, in a storytelling resource, in a PIA call, etc.",
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:hasWorkFeaturedValue"
+        },
+        {
+            "rdfs:label": "in Scheme",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://www.w3.org/2004/02/skos/core#inScheme"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Concept"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:inScheme"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "in Scheme",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:inSchemeValue"
+        },
+        {
+            "rdfs:label": "est dérivé de (Négatif/Positif)",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkTo"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Object"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:isDerivedFrom",
+            "knora-api:subjectType": {
+                "@id": "ekws:Object"
+            },
+            "knora-api:isLinkProperty": true
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "est dérivé de (Négatif/Positif)",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:subjectType": {
+                "@id": "ekws:Object"
+            },
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:isDerivedFromValue"
+        },
+        {
+            "rdfs:label": "Langue",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/inLanguage"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "salsah-gui:guiAttribute": "hlist=<http://rdfh.ch/lists/0812/RDiNFxHUSeaKZeRMNvMxtQ>",
+            "knora-api:objectType": {
+                "@id": "knora-api:ListValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:List"
+            },
+            "@id": "ekws:isInLanguage"
+        },
+        {
+            "rdfs:label": "Siège de l'organisation",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/location"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:GeonameValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Geonames"
+            },
+            "@id": "ekws:isLocated"
+        },
+        {
+            "rdfs:label": "Membre de",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://schema.org/memberOf"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Agent"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:isMemberOf"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Membre de",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:isMemberOfValue"
+        },
+        {
+            "rdfs:label": "Fait partie de",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://schema.org/isPartOf"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Object"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:isPartOf"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Fait partie de",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:isPartOfValue"
+        },
+        {
+            "rdfs:label": "Personnes/Institutions représentées",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://www.europeana.eu/schemas/edm/isRepresentationOf"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Agent"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:isRepresentationOf"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Personnes/Institutions représentées",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:isRepresentationOfValue"
+        },
+        {
+            "rdfs:label": "Sujet de",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://schema.org/subjectOf"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Object"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:isSubjectOf"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Sujet de",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:isSubjectOfValue"
+        },
+        {
+            "rdfs:label": "Images semblables",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://www.europeana.eu/schemas/edm/isRelatedTo"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Object"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:isVisuallySimilarTo"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Images semblables",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:isVisuallySimilarToValue"
+        },
+        {
+            "rdfs:label": "connaît",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://schema.org/knows"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Agent"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:knows"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "connaît",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:knowsValue"
+        },
+        {
+            "rdfs:label": "s'est produit-e lors de l'événement",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://schema.org/performerIn"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Event"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:performerIn"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "s'est produit-e lors de l'événement",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:performerInValue"
+        },
+        {
+            "rdfs:label": "enregistré à",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://schema.org/recordedAt"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Event"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:recordedAt",
+            "knora-api:isLinkProperty": true,
+            "rdfs:comment": "The Event where the work was recorded. Inverse property of recordedIn."
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "enregistré à",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "rdfs:comment": "The Event where the work was recorded. Inverse property of recordedIn.",
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:recordedAtValue"
+        },
+        {
+            "rdfs:label": "Objet(s) répertorié(s)",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://schema.org/recordedIn"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Object"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:recordedIn"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Objet(s) répertorié(s)",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:recordedInValue"
+        },
+        {
+            "rdfs:label": "Liens URL apparenté",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/relatedLink"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "rdfs:comment": "Related URL of this item such as the representation of the object on the EKWS Archive Website or a link to a IIIF-compliant resource (IIIF Manifest or Collection).",
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:UriValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:SimpleText"
+            },
+            "@id": "ekws:relatedLink"
+        },
+        {
+            "rdfs:label": "Relatif à",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://schema.org/relatedTo"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Agent"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:relatedTo"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "Relatif à",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:relatedToValue"
+        },
+        {
+            "rdfs:label": "Ressource similaire",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasValue"
+                },
+                {
+                    "@id": "http://schema.org/sameAs"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "rdfs:comment": "URL of a reference Web page that unambiguously indicates the item's identity.",
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:UriValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:SimpleText"
+            },
+            "@id": "ekws:sameAs"
+        },
+        {
+            "rdfs:label": "is a top concept of",
+            "rdfs:subPropertyOf": [
+                {
+                    "@id": "knora-api:hasLinkTo"
+                },
+                {
+                    "@id": "http://www.w3.org/2004/02/skos/core#topConceptOf"
+                }
+            ],
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "knora-api:isLinkProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "ekws:Concept"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:topConceptOf"
+        },
+        {
+            "knora-api:isLinkValueProperty": true,
+            "rdfs:label": "is a top concept of",
+            "rdfs:subPropertyOf": {
+                "@id": "knora-api:hasLinkToValue"
+            },
+            "knora-api:isEditable": true,
+            "knora-api:isResourceProperty": true,
+            "@type": "owl:ObjectProperty",
+            "knora-api:objectType": {
+                "@id": "knora-api:LinkValue"
+            },
+            "salsah-gui:guiElement": {
+                "@id": "salsah-gui:Searchbox"
+            },
+            "@id": "ekws:topConceptOfValue"
+        }
+    ],
+    "knora-api:attachedToProject": {
+        "@id": "http://rdfh.ch/projects/Wacpqk4-SfujXYw5EeUoCw"
+    },
+    "@type": "owl:Ontology",
+    "@id": "http://api.dasch.swiss/ontology/0812/ekws/v2",
+    "@context": {
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "knora-api": "http://api.knora.org/ontology/knora-api/v2#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "salsah-gui": "http://api.knora.org/ontology/salsah-gui/v2#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "ekws": "http://api.dasch.swiss/ontology/0812/ekws/v2#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
+    }
+}
