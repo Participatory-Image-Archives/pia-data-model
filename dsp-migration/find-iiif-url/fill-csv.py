@@ -27,6 +27,7 @@ for _, qr_row in query_results_df.iterrows():
     if not target_row.empty:
         index = target_row.index[0]
         target_df.at[index, 'dsp-url'] = dsp_url
+        target_df.at[index, 'dsp-iiif-image-api'] = qr_row['ImageAPI']
         target_df.at[index, 'dsp-iiif-image-api-info'] = qr_row['ImageAPIinfo']
         target_df.at[index, 'dsp-iiif-image-api-full'] = qr_row['ImageAPIfull']
 
